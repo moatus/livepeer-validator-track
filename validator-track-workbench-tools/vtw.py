@@ -202,7 +202,7 @@ SOURCE_SNAPSHOTS = {"$:/vtw/source/SRC-LP20": ("SRC-LP20", LITEPAPER)}
 # Reserved terms are allowed only when stage is exactly one of these.
 OPEN_STAGES = frozenset({"M3", "M4", "M5"})
 TASK_FIELDS = ("stage", "introduced_by", "last_changed_by", "task", "carried_to")
-NARRATIVE_FIELDS = ("text", "starting_point", "overview", "basis", "statement")
+NARRATIVE_FIELDS = ("text", "starting_point", "overview", "basis", "statement", "paper_note")
 NARRATIVE_REF = re.compile(r'<<r (?:"([^"]+)"|(\S+?))>>|tiddler="([^"]+)"')
 
 

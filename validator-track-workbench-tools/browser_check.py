@@ -395,6 +395,24 @@ with sync_playwright() as p:
     check("a provision's source reference is visible and lands on the cited line", ref.startswith("L") and hl and hl[0] == ref.lstrip("L").split("–")[0] and in_view(page, "#lp-cited"), f"{ref} -> {hl}")
     page.evaluate("$tw.wiki.deleteTiddler('$:/temp/vtw/lp-cite')")
 
+    # ---- notes on the paper's text, shown on the records they concern ----
+    noted = page.evaluate("$tw.wiki.filterTiddlers('[has[paper_note]!is[system]sort[title]]')")
+    note_bad = []
+    for t in noted:
+        note = navigate(page, t).locator(".vtw-header .vtw-papernote")
+        if note.count() != 1 or note.locator("a.tc-tiddlylink[href='#SRC-LP20']", has_text="all notes").count() != 1 \
+                or not note.locator("a.tc-tiddlylink[href='#SRC-LP20']", has_text="line").count() \
+                or note.locator("a.tc-tiddlylink-missing").count():
+            note_bad.append(t)
+    check("each note on the paper's text shows on its record's page, with a line link and a link back to the full list",
+          noted and not note_bad and navigate(page, "RL-10").locator(".vtw-papernote").count() == 0, f"{noted} bad={note_bad}")
+    if "RL-30" in noted:
+        navigate(page, "RL-30").locator(".vtw-papernote a.tc-tiddlylink[href='#SRC-LP20']", has_text="lines").first.click()
+        page.wait_for_timeout(700)
+        hl = page.evaluate("() => [...document.querySelectorAll('.vtw-lptext .vtw-lphl .vtw-lpn')].map(e => e.textContent.trim())")
+        check("a line link in a record's note opens the paper at those lines", hl == ["109", "224"] and in_view(page, "#lp-cited"), str(hl))
+        page.evaluate("$tw.wiki.deleteTiddler('$:/temp/vtw/lp-cite')")
+
     # ---- role guides ----
     h = navigate(page, "Home")
     roles = h.locator(".vtw-roles a").all_text_contents()
