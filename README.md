@@ -1,6 +1,8 @@
 # Network Engineering SPE II — Validator Track
 
-The public research and delivery hub for the validator track of Network Engineering SPE II, led by Shane (@moatus). The work builds on the Livepeer 2.0 litepaper: clarify its objectives and assumptions, test its economics, develop a validator-track expansion, and evaluate a practical review workflow.
+The public research and delivery hub for the validator track of Network Engineering SPE II, led by Shane (@moatus). The work builds on the Livepeer 2.0 litepaper: understand its objectives and mechanisms, test its assumptions, evaluate whether and where to expand it, test what is recommended, and hand off a practical validator workflow.
+
+The project tests the litepaper's protocol mechanics: rewards, validation, delegation, emissions, buyback and governance. The paper's market case and its agent-layer vision are context; they are not under test.
 
 - [Project board](https://github.com/users/moatus/projects/1)
 - [Milestone overview](MILESTONES.md)
@@ -34,11 +36,11 @@ Inside, the litepaper is described as twelve mechanisms. Each mechanism page exp
 
 Findings, conclusions and proposed critical questions in the workbench are research drafts, labelled by how firmly they are held (assumption, inference, hypothesis, supported by the text). They are not accepted deliverables, and none is a protocol decision.
 
-**Tools.** [`validator-track-workbench-tools/`](validator-track-workbench-tools/) holds `vtw.py` (export, import, lint and diff for the workbench), a browser check, a word-budget check and unit tests. The baseline accounting workbook that the workbench's reward-arithmetic check reproduces is in [`experiments/m1/baseline-accounting/`](experiments/m1/baseline-accounting/).
+**Tools.** [`validator-track-workbench-tools/`](validator-track-workbench-tools/) holds `vtw.py` (export, import, lint and diff for the workbench), a browser check, a word-budget check and unit tests; its README explains how to edit the workbench. The workbench's reward-arithmetic check comes from the baseline accounting workbook in [`experiments/m1/baseline-accounting/`](experiments/m1/baseline-accounting/): `build.py` generates the workbook and `verify.py` checks it.
 
 ## Working structure
 
-Five native milestones group the work: litepaper foundation, incentive and evidence tests, litepaper expansion, bounded validation, then pilot and handoff. Each has a tracking issue and a Project overview card. Task issues are linked as sub-issues and assigned to the same native milestone. Each task records a question, expected artifact, completion criteria, dependencies and reviewed deliverables. The milestones describe the reasoning path; useful work can overlap across them.
+Five native milestones group the work: litepaper foundation, incentive and evidence tests, an evaluation of whether and where to expand the litepaper, bounded validation, then pilot and handoff. Each has a tracking issue and a Project overview card. Task issues are linked as sub-issues and assigned to the same native milestone. Each task records a question, expected artifact, completion criteria, dependencies and reviewed deliverables. The milestones describe the reasoning path; useful work can overlap across them.
 
 Implementation can live in other repositories. Keep one delivery issue here that links to the upstream issue, PR and resulting artifact; avoid copying the same discussion and progress into two trackers.
 

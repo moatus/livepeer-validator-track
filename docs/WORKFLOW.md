@@ -3,7 +3,7 @@
 ## Task to deliverable
 
 1. State the question and expected artifact in a task issue; link the milestone and prerequisites.
-2. Produce the smallest artifact that answers the question. Research reports, diagrams, models, datasets, specifications and test results are all valid outputs. A few transparent litepaper examples can establish a conditional concern. Broader cooperative, market and adversarial cases belong with the proposed litepaper expansion when they inform a design choice.
+2. Produce the smallest artifact that answers the question. Research reports, diagrams, models, datasets, specifications and test results are all valid outputs. A few transparent litepaper examples can establish a conditional concern. Broader cooperative, market and adversarial cases belong in M3, where they inform whether and where to expand the litepaper.
 3. Record methods, sources, assumptions, findings, limitations and reproduction instructions where applicable.
 4. Obtain the agreed review. Reviewer identity and acceptance criteria should be explicit; do not invent a reviewer or infer acceptance from silence.
 5. Add the accepted artifact version to the issue's Deliverables table, the Project Artifact field and the deliverable register. Link a PR separately if it records review.
@@ -25,7 +25,7 @@ Each issue includes the question, source/version basis, expected artifact, compl
 
 Project Status tracks work: Todo, In Progress, Done. Artifact review tracks Not submitted, In review, Accepted or Changes requested. A failed hypothesis or documented evidence limitation can be a completed research outcome if it answers the question and passes review. Accepted research is not approval to deploy or change protocol economics.
 
-Keep a path from source to recommendation: litepaper objective or provision, assumption, concern, evidence, proposed addition and unresolved decision. Current-system impact checks should identify relevant deployed versions and include contracts, off-chain components and participant workflows as appropriate. If evidence shows an existing mechanism needs revision, record that explicitly. Detailed engineering estimates are unnecessary for early checkpoints.
+Keep a path from source to recommendation: litepaper objective or provision, assumption, concern, evidence, recommendation (no change, a clarification or a litepaper expansion) and unresolved decision. Current-system impact checks should identify relevant deployed versions and include contracts, off-chain components and participant workflows as appropriate. If evidence shows an existing mechanism needs revision, record that explicitly. Detailed engineering estimates are unnecessary for early checkpoints.
 
 ## Milestones and dates
 

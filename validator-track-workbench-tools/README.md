@@ -1,13 +1,36 @@
-# Validator-track workbench tools (local, private)
+# Validator-track workbench tools
 
-Helpers for `validator-track-workbench.html` at the repository root. Not a build step. The wiki is the only editable record set.
-
-Read the [workbench agent runbook](../validator-track-workbench-agent-runbook.md) for the research approach, mechanism and critical-gate structure, system incentive reconstruction, milestone handoffs, and migration guidance. The runbook defines the target research organization; the historical migrations below describe earlier versions.
+Helpers for `validator-track-workbench.html` at the repository root. They are not a build step: the workbench file is the only editable record set.
 
 - `vtw.py` — `export`, `import` (upsert, with a backup first; `--expect-sha` refuses to write if the file changed), `remove`, `lint` (ID patterns, required fields, vocabularies, reference targets and types, reciprocal pairs, source line ranges, litepaper hash, M1/M2 scope terms), `diff` (record-level, field-level), `counts`. The schema is read from the wiki's own `$:/vtw/schema/*`, `$:/vtw/relations` and `$:/vtw/participants` tiddlers.
-- `browser_check.py` — Playwright check against a **copy**: `uv run --no-project --with playwright python3 browser_check.py /tmp/copy.html`.
-- `migrations/` — one-time 2026-09-28 scripts, kept for provenance; do not edit them to change records. Edit the wiki. The `m1_*` seed scripts produced the initial tiddlers from the litepaper and the M1.1 v0.3 drafts. `m1_restructure_2026_09_28.py` reorganized the path around five questions (Orientation, M1.1 compute, M1.2 data, M1.3 judges, M2.1 behaviour, M2.2 rule or not) and added mechanism stories, questions for humans and contributor notes. `m1_feedback_revision_2026_09_28.py` applied review feedback: `resolved_by` / `spec_settles` / `still_to_test` / `reviewed_by` replace `fix_by_rule`, each concept gains a `requires` chain, and all narrative uses a neutral, impersonal voice. `m1_mechanism_architecture_2026_09_28.py` made mechanisms (`MX`) and critical questions (`GT`) the organizing records and set the path to M1.1–M2.3. `m1_readiness_fixes_2026_09_28.py` and `m1_readiness_fixes2_2026_09_28.py` prepared the current-system map (M1.4). `m1_review_fixes_2026_09_28.py` made chain items carry a basis label instead of defaulting to required.
-- Reference copy before the restructure: `../archive_work/validator-track-workbench-v1-2026-09-28.html` (local, git-ignored). Not edited.
-- `backups/` — automatic pre-write copies.
+- `browser_check.py` — Playwright check of reading structure, rendering, saving and reloading, run against a **copy** of the workbench.
+- `word_budget.py` — visible words on Home, each step page and each mechanism page.
+- `shots.py` — full-page screenshots of a copy, for reviewing layout.
+- `twpage.py` — shared Playwright helpers for the three scripts above.
+- `tests/` — unit tests for `vtw.py`.
+- `backups/` — automatic copies that `vtw.py import` and `remove` write before changing the file. Not tracked by git.
 
-One writer at a time: save and close or reload the browser before an agent writes, and reopen afterwards.
+## How to edit the workbench
+
+1. Open `validator-track-workbench.html` in a web browser. Nothing needs to be installed. The workbench's Conventions page sets out the record types, fields, writing rules and editing protocol; read it before changing records.
+2. Small edits can be made in the browser. Saving downloads a new HTML file: move it over `validator-track-workbench.html`, then reopen that file.
+3. Scripted edits go through `vtw.py`, from the repository root. A change set is a JSON list of whole tiddlers in the export format. Never search and replace over the HTML.
+
+   ```bash
+   python3 validator-track-workbench-tools/vtw.py export validator-track-workbench.html --out records.json
+   sha256sum validator-track-workbench.html
+   python3 validator-track-workbench-tools/vtw.py import validator-track-workbench.html changes.json --expect-sha SHA256
+   python3 validator-track-workbench-tools/vtw.py diff before.html validator-track-workbench.html
+   ```
+
+4. Run the checks before proposing a change. Lint should report 0 errors and 0 warnings. The browser check needs a copy, because it saves and edits the file it opens.
+
+   ```bash
+   python3 validator-track-workbench-tools/vtw.py lint validator-track-workbench.html
+   cd validator-track-workbench-tools
+   python3 -m unittest discover -s tests
+   cp ../validator-track-workbench.html /tmp/workbench-copy.html
+   uv run --no-project --with playwright python3 browser_check.py /tmp/workbench-copy.html
+   ```
+
+One writer at a time: save and close (or reload) the browser copy before a script writes the file, and reopen it afterwards.

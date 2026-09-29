@@ -1,4 +1,4 @@
-"""Build the local M1.1 litepaper accounting workbook. Requires XlsxWriter."""
+"""Build the M1.1 litepaper accounting workbook from docs/litepaper-2.0.md. Requires XlsxWriter."""
 
 from __future__ import annotations
 
@@ -9,8 +9,8 @@ import xlsxwriter
 
 
 ROOT = Path(__file__).resolve().parents[3]
-SOURCE = ROOT.parent / "litepaper-2.0.md"
-OUTPUT = ROOT / "deliverables/m1/litepaper-baseline-accounting.xlsx"
+SOURCE = ROOT / "docs" / "litepaper-2.0.md"
+OUTPUT = Path(__file__).resolve().parent / "litepaper-baseline-accounting.xlsx"
 SOURCE_SHA256 = "5fc153408fb636d9750788ae987ada6daaa9fc3df3e44f70cadde51a6158fb71"
 UNDEFINED = "undefined/needs rule"
 CHECK = "check inputs"
@@ -92,7 +92,7 @@ def build():
     ins = wb.add_worksheet("Inputs")
     setup(ins, {0: 31, 1: 18, 2: 19, 3: 23, 4: 75, 7: 24, 8: 71}, (4, 1), "A1:I27")
     ins.write("A1", "M1.1 | Baseline inputs", title)
-    ins.merge_range("A2:E3", f"{VERSION} · Draft / local / unpublished. Automated QA passed; human milestone review pending. Blue cells are proposed starting values from the litepaper or illustrative modeling choices. One round; no fee-linked emissions rule.", subtitle)
+    ins.merge_range("A2:E3", f"{VERSION} · Draft, not reviewed. Automated QA passed; human milestone review pending. Blue cells are proposed starting values from the litepaper or illustrative modeling choices. One round; no fee-linked emissions rule.", subtitle)
     for c, h in enumerate(("Parameter", "Value", "Unit", "Status", "Basis / limit")):
         ins.write(3, c, h, head)
     input_rows = [
@@ -185,7 +185,7 @@ def build():
     ov = wb.add_worksheet("Ledger & limits")
     setup(ov, {0: 39, 1: 22, 2: 25, 3: 82}, (5, 1), "A1:D35")
     ov.write("A1", "Round ledger | separate units", title)
-    ov.merge_range("A2:D3", f"{VERSION} · Draft / local / unpublished. Automated QA is distinct from pending human milestone review. This reconstructs proposed starting values, not deployed behavior or an accepted protocol decision.", subtitle)
+    ov.merge_range("A2:D3", f"{VERSION} · Draft, not reviewed. Automated QA is distinct from pending human milestone review. This reconstructs proposed starting values, not deployed behavior or an accepted protocol decision.", subtitle)
     for c, h in enumerate(("Line", "Value", "Unit", "Meaning / treatment")):
         ov.write(4, c, h, head)
     ledger = [
@@ -313,7 +313,7 @@ def build():
     src = wb.add_worksheet("Source & decisions")
     setup(src, {0: 25, 1: 28, 2: 78, 3: 80}, (5, 1), "A1:D29")
     src.write("A1", "Source, interpretation, missing rules", title)
-    src.merge_range("A2:D3", f"Primary local source: Doug Petkanics, Livepeer 2.0 Litepaper (Sept 2026), ../litepaper-2.0.md from repository root; SHA-256 {actual}. From deliverables/m1 the relative path is ../../../litepaper-2.0.md. Canonical public publication/link is unresolved.", subtitle)
+    src.merge_range("A2:D3", f"Primary source: Doug Petkanics, Livepeer 2.0 Litepaper (Sept 2026), snapshot docs/litepaper-2.0.md in the livepeer-validator-track repository; SHA-256 {actual}. Line references are to that snapshot.", subtitle)
     for c, h in enumerate(("Classification", "Paper heading / lines", "What the paper says", "Workbook treatment or decision needed")): src.write(4, c, h, head)
     source_rows = [
         ("Explicit paper", "Design Principles, 31–38", "Rewards should follow honest work; active roles; governance adjustability; explainable mechanisms.", "Objective only. Payment and execution are not themselves proof of independent demand or economic value."),
@@ -335,7 +335,7 @@ def build():
     for row, values in enumerate(source_rows, 6):
         for col, value in enumerate(values): src.write(row-1, col, value, note)
         src.set_row(row-1, 61)
-    src.merge_range("A22:D24", "This baseline distinguishes the litepaper's provisions from accounting interpretations and research hypotheses. It identifies missing rules without proposing successor mechanisms. Publication of the canonical litepaper source remains unresolved, so local heading and line references plus SHA-256 are supplied for reproducibility.", note_yellow)
+    src.merge_range("A22:D24", "This baseline distinguishes the litepaper's provisions from accounting interpretations and research hypotheses. It identifies missing rules without proposing successor mechanisms. Heading and line references to the docs/litepaper-2.0.md snapshot, with its SHA-256, are supplied for reproducibility.", note_yellow)
     wb.close()
     return OUTPUT
 

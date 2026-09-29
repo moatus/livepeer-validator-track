@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Tiddler-aware helper for the private validator-track workbench (TiddlyWiki 5).
+"""Tiddler-aware helper for the validator-track workbench (TiddlyWiki 5).
 
 Local authoring aid only. It is not a build step and not a second database:
 the workbench HTML is the single editable record set.
@@ -130,9 +130,9 @@ def schema_from(tiddlers: dict[str, dict]) -> tuple[dict, dict, list[str]]:
     return types, relations, participants
 
 
-# Reserved vocabulary for the M1/M2 disclosure boundary. The public part is below; further
-# terms live in a local, git-excluded file (one regular expression per line) so that
-# unpublished vocabulary is not published through this tool.
+# Reserved vocabulary for the M1/M2 scope rule: terms that belong to later milestones.
+# An optional local file of additional reserved terms (one regular expression per line,
+# '#' for comments) extends the list when present; without it, lint checks the terms below.
 LOCAL_RESERVED_TERMS = Path(__file__).resolve().parent / "reserved-terms.local.txt"
 
 

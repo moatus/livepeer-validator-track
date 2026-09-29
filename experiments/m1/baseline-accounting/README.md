@@ -1,10 +1,10 @@
 # M1.1 baseline accounting workbook
 
-Version: **v0.3 · 2026-09-26**. Status: **Draft / local / unpublished**. Automated QA is reported below; human milestone review and acceptance are pending. This workbook supports the M1.1 baseline map; it is not an accepted economic rule or an empirical finding.
+Version: **v0.3 · 2026-09-26**. Status: **Draft, not reviewed**. Automated QA is reported below; human milestone review and acceptance are pending. This workbook supports workbench step M1.1; it is not an accepted economic rule or an empirical finding.
 
 ## Source and scope
 
-Primary source: Doug Petkanics, *Livepeer 2.0 Litepaper* (Sept 2026), local file `../../../litepaper-2.0.md` from `deliverables/m1/` (repository root: `../litepaper-2.0.md`). SHA-256: `5fc153408fb636d9750788ae987ada6daaa9fc3df3e44f70cadde51a6158fb71`. A canonical public source location is unresolved. The workbook's **Source & decisions** sheet gives headings and line references. Source provisions, accounting interpretations and research hypotheses are distinguished explicitly.
+Primary source: Doug Petkanics, *Livepeer 2.0 Litepaper* (Sept 2026), the snapshot in this repository at [`docs/litepaper-2.0.md`](../../../docs/litepaper-2.0.md). SHA-256: `5fc153408fb636d9750788ae987ada6daaa9fc3df3e44f70cadde51a6158fb71`. The workbook's **Source & decisions** sheet gives headings and line references to that snapshot. Source provisions, accounting interpretations and research hypotheses are distinguished explicitly.
 
 The modeled identity is a **reconstruction** from **Node operators: permissionless entry, rewards capped by stake (MFS)**, lines 51–63; **The top nodes by stake can register as validators**, lines 79–90; and **Appendix → Accounting Identities / Parameters**, lines 207–233:
 
@@ -16,7 +16,9 @@ The entered LPT budget is an **authorized/entered emission envelope**, not an es
 
 ## Reproduce and use
 
-Requires Python 3.10+ and `xlsxwriter==3.2.9`; verification also uses `openpyxl==3.1.5`. No system software installation is needed. From repository root, with `uv` available:
+`build.py` generates the workbook from `docs/litepaper-2.0.md`, and `verify.py` checks it. The build writes `experiments/m1/baseline-accounting/litepaper-baseline-accounting.xlsx`; the generated file is not committed, so build it before verifying or opening it.
+
+Requires Python 3.10+ and `xlsxwriter==3.2.9`; verification also uses `openpyxl==3.1.5`. No system software installation is needed. From the repository root, with `uv` available:
 
 ```bash
 uv run --no-project --with xlsxwriter==3.2.9 python3 experiments/m1/baseline-accounting/build.py
@@ -24,11 +26,13 @@ uv run --no-project --with xlsxwriter==3.2.9 --with openpyxl==3.1.5 python3 expe
 uv run --no-project --with xlsxwriter==3.2.9 --with openpyxl==3.1.5 python3 experiments/m1/baseline-accounting/recalculate.py
 ```
 
-The third command is an **optional spreadsheet recalculation regression check** and requires LibreOffice on `PATH`; the workbook and normal generator do not. It edits copies in an isolated temporary directory, uses a timeout, and leaves the deliverable unchanged. The build refuses a changed source SHA so citations can be reviewed first. Open `deliverables/m1/litepaper-baseline-accounting.xlsx` in a spreadsheet application. Blue cells on **Inputs**, **One-variable** and **Pass-through margin** are editable. Invalid types, missing values, negative amounts and out-of-range shares display `check inputs`; valid zero network denominators display `undefined/needs rule`. A zero fee cut or retention with positive pass-through costs displays `no finite break-even`. The saved file includes formula caches for the default case and requests recalculation on open; `openpyxl` itself does not recalculate edited formulas.
+The third command is an **optional spreadsheet recalculation regression check** and requires LibreOffice on `PATH`; the workbook and normal generator do not. It edits copies in an isolated temporary directory, uses a timeout, and leaves the generated workbook unchanged. The build refuses a changed source SHA so citations can be reviewed first. Open `experiments/m1/baseline-accounting/litepaper-baseline-accounting.xlsx` in a spreadsheet application. Blue cells on **Inputs**, **One-variable** and **Pass-through margin** are editable. Invalid types, missing values, negative amounts and out-of-range shares display `check inputs`; valid zero network denominators display `undefined/needs rule`. A zero fee cut or retention with positive pass-through costs displays `no finite break-even`. The saved file includes formula caches for the default case and requests recalculation on open; `openpyxl` itself does not recalculate edited formulas.
 
 **v0.2 automated QA:** seven independent arithmetic fixtures, 222 saved formulas with nonempty caches, default accounting and 14 sensitivity rows, and 25 LibreOffice recalculation cases passed. The recalculation cases cover text, blank, negative and formula-error inputs; invalid fee/emission shares and scores; invalid sensitivity and pass-through inputs; zero fee retention/cut; and valid zero network denominators. This automated result is **not human review or milestone acceptance**.
 
 **v0.3 scope revision:** wording is confined to the litepaper baseline and its unresolved questions. The fixed input budget is an analytical control, not a proposed replacement rule. Accounting formulas and scenarios are unchanged.
+
+**2026-09-29 source path:** `build.py` reads the litepaper from `docs/litepaper-2.0.md` (same SHA-256) and writes the workbook beside the scripts. Formulas, inputs and results are unchanged.
 
 ## Default one-round example
 

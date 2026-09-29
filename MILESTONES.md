@@ -2,14 +2,14 @@
 
 Owner: Shane (@moatus). [Project board](https://github.com/users/moatus/projects/1). Target dates are **to agree**. M1 is in progress and M2 has received its first handoff; M3–M5 are planned. No research deliverables have been accepted yet. The M1 and M2 work is drafted in the [research workbench](validator-track-workbench.html) (see the [README](README.md#research-workbench)).
 
-Research path: **understand the litepaper → test its assumptions → develop the validator-track expansion → test the expansion → hand off a validator workflow**. The expansion gives the litepaper's goals and mechanisms more detail, with proposed additions grounded in evidence. Work may overlap across milestones.
+Research path: **understand the litepaper → test its assumptions → evaluate whether and where to expand it → test what is recommended → hand off a validator workflow**. M3 looks at areas the litepaper leaves unaddressed, and at areas where the M1 and M2 findings show its mechanisms working against its own goals. For each, it decides whether a litepaper expansion is warranted and what it would be. "No expansion needed" and "clarify the existing rule" are valid outcomes. Work may overlap across milestones.
 
 | Milestone | Intended outcome | Tracking | Target date | Accepted deliverables |
 | --- | --- | --- | --- | --- |
 | [M1 — Objectives, assumptions and validation requirements](https://github.com/moatus/livepeer-validator-track/milestone/1) | Baseline, required claims, early threats and current-system map. | [#1](https://github.com/moatus/livepeer-validator-track/issues/1) | To agree | None |
 | [M2 — Test litepaper incentives and evidence limits](https://github.com/moatus/livepeer-validator-track/milestone/2) | Substantiate material concerns and evidence limits. | [#2](https://github.com/moatus/livepeer-validator-track/issues/2) | To agree | None |
-| [M3 — Litepaper expansion and integration map](https://github.com/moatus/livepeer-validator-track/milestone/3) | Develop and assess an economic and validation expansion of the litepaper. | [#3](https://github.com/moatus/livepeer-validator-track/issues/3) | To agree | None |
-| [M4 — Bounded economic and work-validation tests](https://github.com/moatus/livepeer-validator-track/milestone/4) | Test consequential assumptions and reviewer methods. | [#4](https://github.com/moatus/livepeer-validator-track/issues/4) | To agree | None |
+| [M3 — Evaluate where the litepaper could be expanded](https://github.com/moatus/livepeer-validator-track/milestone/3) | Decide whether and where a litepaper expansion is warranted, and what it would be. | [#3](https://github.com/moatus/livepeer-validator-track/issues/3) | To agree | None |
+| [M4 — Bounded economic and work-validation tests](https://github.com/moatus/livepeer-validator-track/milestone/4) | Test the litepaper's consequential assumptions, anything M3 recommends, and reviewer methods. | [#4](https://github.com/moatus/livepeer-validator-track/issues/4) | To agree | None |
 | [M5 — Validator workflow pilot and delivery handoff](https://github.com/moatus/livepeer-validator-track/milestone/5) | Exercise a bounded workflow and hand off supported recommendations. | [#5](https://github.com/moatus/livepeer-validator-track/issues/5) | To agree | None |
 
 ## M1 — Objectives, assumptions and validation requirements
@@ -37,22 +37,22 @@ Use small worked examples to test the litepaper's material economic assumptions.
 | [M2.2 — Assess evidence for material claims and scenarios](https://github.com/moatus/livepeer-validator-track/issues/9) | Workbench step M2.2, "Testing the critical questions" | Not started; tests proposed |
 | [M2.3 — Consolidate findings and design requirements](https://github.com/moatus/livepeer-validator-track/issues/15) | Workbench step M2.3, "What would resolve each concern?" | Not started |
 
-## M3 — Litepaper expansion and integration map
+## M3 — Evaluate where the litepaper could be expanded
 
-Explore additions that give the litepaper's economic and validation goals practical form: reward integrity, open market participation, participant incentives, credible validation and implementation. Develop a proposed expansion with explicit roles and unresolved decisions. Model scenarios only where they clarify a design choice or failure boundary.
+Start from the M1 and M2 findings. Identify the areas the litepaper leaves unaddressed, and the areas where its mechanisms work against its own goals: reward integrity, open market participation, participant incentives, credible validation and implementation. For each, evaluate whether a litepaper expansion is warranted and what it would be. "No expansion needed" and "clarify the existing rule" are valid outcomes. Model scenarios only for the options worth pursuing, and only where they clarify a design choice or failure boundary.
 
-**Completion:** An assessment of possible additions to the litepaper; a proposed validator-track expansion; small cooperative, ordinary-market and selected adversarial scenarios or equivalent worked cases; and an integration map tracing **current system → litepaper**, **litepaper → expanded design** and **current system → expanded design** across contracts, off-chain components, workflows and migration considerations. Identify what M4 should test and where an addition needs a corresponding adjustment to an existing mechanism.
+**Completion:** A list of gaps and conflicts with the evidence for each; an evaluation of the options for each, with participant incentives and a recommendation; small cooperative, ordinary-market and selected adversarial scenarios, or equivalent worked cases, for the options worth pursuing; and, for any recommended expansion, an integration map tracing **current system → litepaper**, **litepaper → recommended expansion** and **current system → recommended expansion** across contracts, off-chain components, workflows and migration considerations. Identify what M4 should test, and where a recommendation adjusts an existing mechanism.
 
 | Task | Planned artifact |
 | --- | --- |
-| [M3.1 — Explore economic and validation additions to the litepaper](https://github.com/moatus/livepeer-validator-track/issues/11) | `deliverables/m3/expansion-options.md` |
-| [M3.2 — Develop the litepaper expansion and participant incentives](https://github.com/moatus/livepeer-validator-track/issues/12) | `deliverables/m3/litepaper-expansion.md` |
-| [M3.3 — Explore expanded design scenarios and test priorities](https://github.com/moatus/livepeer-validator-track/issues/17) | `deliverables/m3/expansion-scenarios.md` |
-| [M3.4 — Map the litepaper expansion onto the current system](https://github.com/moatus/livepeer-validator-track/issues/13) | `deliverables/m3/expansion-integration-map.md` |
+| [M3.1 — Identify gaps and conflicts that could warrant an expansion](https://github.com/moatus/livepeer-validator-track/issues/11) | `deliverables/m3/gaps-and-conflicts.md` |
+| [M3.2 — Evaluate expansion options and participant incentives](https://github.com/moatus/livepeer-validator-track/issues/12) | `deliverables/m3/expansion-evaluation.md` |
+| [M3.3 — Explore scenarios for the options worth pursuing](https://github.com/moatus/livepeer-validator-track/issues/17) | `deliverables/m3/option-scenarios.md` |
+| [M3.4 — Map any recommended expansion onto the current system](https://github.com/moatus/livepeer-validator-track/issues/13) | `deliverables/m3/integration-map.md` |
 
 ## M4 — Bounded economic and work-validation tests
 
-Test consequential assumptions of the proposed litepaper expansion and validator judgments. A small table, calculation or targeted experiment suffices if it answers the question. Useful service-validation tests can begin before every economic choice is settled.
+Test the litepaper's consequential assumptions, whatever M3 recommends (if anything), and validator judgments. A small table, calculation or targeted experiment suffices if it answers the question. Useful service-validation tests can begin before every economic choice is settled.
 
 **Completion:** Selected cooperative, market-pressure and adversarial cases; bounded work-integrity, quality or availability tests; and a draft procedure for evidence, uncertainty, disagreement and service failures. Record negative results, reviewer cost and relevant false positives.
 

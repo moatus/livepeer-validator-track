@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Checks for the Task G copy of vtw.py.
+"""Checks for vtw.py.
 
-Stage rule (see also REPORT.md): reserved vocabulary is allowed only on a
+Stage rule: reserved vocabulary is allowed only on a
 non-system record whose stage field is exactly "M3", "M4" or "M5".
 "m3", "M3x", "M6" and any padded value such as " M3" are protected
 (unrecognized). A missing, empty or whitespace-only stage is protected
