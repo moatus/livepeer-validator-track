@@ -31,8 +31,8 @@ from pathlib import Path
 
 STORE_RE = re.compile(r'(<script class="tiddlywiki-tiddler-store" type="application/json">)(.*?)(</script>)', re.S)
 BACKUP_DIR = Path(__file__).resolve().parent / "backups"
-# The litepaper snapshot lives in the local workspace, the parent of this repository.
-LITEPAPER = Path(__file__).resolve().parents[2] / "litepaper-2.0.md"
+# The litepaper snapshot the workbench cites (docs/litepaper-2.0.md in this repository).
+LITEPAPER = Path(__file__).resolve().parents[1] / "docs" / "litepaper-2.0.md"
 
 # ---------------------------------------------------------------- store access
 
