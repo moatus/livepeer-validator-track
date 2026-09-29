@@ -12,7 +12,29 @@ The public research and delivery hub for the validator track of Network Engineer
 - [Decision log](docs/DECISIONS.md)
 - [SPE pre-proposal](https://forum.livepeer.org/t/pre-proposal-network-engineering-spe-ii/3344)
 
-The milestone and task structure is in place. Research findings, models and test results will be added as reviewable artifacts as the work progresses. A planned artifact path is not a delivered artifact. Target dates and reviewers remain to be agreed.
+The milestone and task structure is in place, and the M1 and M2 research is under way in the [research workbench](#research-workbench). It is a working draft: nothing in it has been reviewed or accepted yet. Target dates and reviewers remain to be agreed.
+
+## Research workbench
+
+[`validator-track-workbench.html`](validator-track-workbench.html) holds the M1 and M2 research as one linked, browsable record set. It is a single TiddlyWiki file: download it and open it in a web browser; nothing needs to be installed. It works offline.
+
+It follows the litepaper through the milestone steps M1.1 to M2.3:
+
+| Step | Task | Workbench status |
+| --- | --- | --- |
+| M1.1 How the architecture works, mechanism by mechanism | [#6](https://github.com/moatus/livepeer-validator-track/issues/6) | Drafted, not reviewed |
+| M1.2 What each mechanism depends on, and its critical questions | [#7](https://github.com/moatus/livepeer-validator-track/issues/7) | In progress: worked sample on three mechanisms |
+| M1.3 Which cases matter most | [#8](https://github.com/moatus/livepeer-validator-track/issues/8) | In progress: cases ranked for three critical questions, none run |
+| M1.4 What exists today, and what would need to be built | [#14](https://github.com/moatus/livepeer-validator-track/issues/14) | Drafted, not reviewed; deployed behaviour not checked |
+| M2.1 How the mechanisms behave together | [#10](https://github.com/moatus/livepeer-validator-track/issues/10) | Handoff from M1 received; nothing run |
+| M2.2 Testing the critical questions | [#9](https://github.com/moatus/livepeer-validator-track/issues/9) | Not started; tests proposed |
+| M2.3 What would resolve each concern? | [#15](https://github.com/moatus/livepeer-validator-track/issues/15) | Not started |
+
+Inside, the litepaper is described as twelve mechanisms. Each mechanism page explains the mechanism in plain words, lists its parts, and marks what the paper states and what is still to be defined or decided (design questions). It also asks whether the mechanism could work as intended (critical questions, tested against concrete cases and their legitimate lookalikes), and records what exists in today's Livepeer system. Step pages tell the story of each milestone step; role guides summarise what changes for node operators, delegators and validators. Citations of the litepaper open the cited lines of the embedded snapshot. Start with "How to read this workbench" on its home page.
+
+Findings, conclusions and proposed critical questions in the workbench are research drafts, labelled by how firmly they are held (assumption, inference, hypothesis, supported by the text). They are not accepted deliverables, and none is a protocol decision.
+
+**Tools.** [`validator-track-workbench-tools/`](validator-track-workbench-tools/) holds `vtw.py` (export, import, lint and diff for the workbench), a browser check, a word-budget check and unit tests. The baseline accounting workbook that the workbench's reward-arithmetic check reproduces is in [`experiments/m1/baseline-accounting/`](experiments/m1/baseline-accounting/).
 
 ## Working structure
 
@@ -24,4 +46,4 @@ Research conclusions and protocol adoption are different decisions. Record evide
 
 ## Research and deliverables
 
-Use task issues to frame questions and link results. Put research reports, specifications and diagrams in [`deliverables/`](deliverables/), and reproducible models, fixtures and tests in [`experiments/`](experiments/). The [deliverable register](deliverables/README.md) links reviewed results to milestones; the Project board shows current work. Cite sources, assumptions, versions and limits so others can inspect or reproduce the findings.
+Use task issues to frame questions and link results. The M1 and M2 research lives in the [research workbench](#research-workbench); a reviewed version is recorded by commit. Put other reports, specifications and diagrams in [`deliverables/`](deliverables/), and reproducible models, fixtures and tests in [`experiments/`](experiments/). The [deliverable register](deliverables/README.md) links reviewed results to milestones; the Project board shows current work. Cite sources, assumptions, versions and limits so others can inspect or reproduce the findings.

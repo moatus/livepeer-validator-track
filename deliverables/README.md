@@ -1,6 +1,6 @@
 # Deliverable register
 
-No research artifacts are recorded as accepted yet. This repository currently contains coordination documents and templates only.
+No research artifacts are recorded as accepted yet. The M1 and M2 research is drafted in the [research workbench](../validator-track-workbench.html) at the repository root; when a step is reviewed, record its exact commit here.
 
 | Milestone | Task | Artifact | Finding or capability established | Exact version | Review / date |
 | --- | --- | --- | --- | --- | --- |

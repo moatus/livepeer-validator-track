@@ -11,7 +11,8 @@
 
 ## Where artifacts live
 
-- Reports, diagrams and specifications: under `deliverables/`, organized by milestone and linked from their task issues.
+- M1 and M2 research: the research workbench, `validator-track-workbench.html` at the repository root. Each milestone step is a workbench page backed by linked records. Cite a reviewed step by commit permalink to the file plus the step name.
+- Reports, diagrams and specifications: under `deliverables/`, organized by milestone and linked from their task issues. Later milestones may still use separate files.
 - Reproducible models, scripts and bounded fixtures: under `experiments/`, with an explanation and result link.
 - PDFs, recordings and large datasets: a suitable release asset or durable external location. Record access, version and any retention limits. A temporary CI download is not a durable acceptance record.
 - Implementation elsewhere: link the upstream issue or PR and the actual delivered artifact or release from the track's delivery issue.

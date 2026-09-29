@@ -1,6 +1,6 @@
 # Milestone overview
 
-Owner: Shane (@moatus). [Project board](https://github.com/users/moatus/projects/1). Target dates are **to agree**. M1 is in progress; M2–M5 are planned. No research deliverables have been accepted yet.
+Owner: Shane (@moatus). [Project board](https://github.com/users/moatus/projects/1). Target dates are **to agree**. M1 is in progress and M2 has received its first handoff; M3–M5 are planned. No research deliverables have been accepted yet. The M1 and M2 work is drafted in the [research workbench](validator-track-workbench.html) (see the [README](README.md#research-workbench)).
 
 Research path: **understand the litepaper → test its assumptions → develop the validator-track expansion → test the expansion → hand off a validator workflow**. The expansion gives the litepaper's goals and mechanisms more detail, with proposed additions grounded in evidence. Work may overlap across milestones.
 
@@ -18,12 +18,12 @@ Use the Livepeer 2.0 litepaper as the design foundation. Separate its desired ou
 
 **Completion:** A concise baseline map, claim/evidence decision note, representative attack and legitimate scenarios, and a versioned current-system → litepaper impact map covering contracts, off-chain components and participant roles. Mark unresolved choices and unknowns.
 
-| Task | Planned artifact |
-| --- | --- |
-| [M1.1 — Map litepaper objectives, mechanisms and incentives](https://github.com/moatus/livepeer-validator-track/issues/6) | `deliverables/m1/litepaper-baseline-map.md` |
-| [M1.2 — Determine what reward eligibility needs to establish](https://github.com/moatus/livepeer-validator-track/issues/7) | `deliverables/m1/claim-evidence-decision-note.md` |
-| [M1.3 — Define adversarial scenarios and legitimate lookalikes](https://github.com/moatus/livepeer-validator-track/issues/8) | `deliverables/m1/initial-threat-scenarios.md` |
-| [M1.4 — Map the current system to the litepaper](https://github.com/moatus/livepeer-validator-track/issues/14) | `deliverables/m1/current-to-litepaper-impact-map.md` |
+| Task | Artifact | Status |
+| --- | --- | --- |
+| [M1.1 — Map litepaper objectives, mechanisms and incentives](https://github.com/moatus/livepeer-validator-track/issues/6) | Workbench step M1.1, "How the architecture works, mechanism by mechanism" | Drafted; not submitted for review |
+| [M1.2 — Determine what reward eligibility needs to establish](https://github.com/moatus/livepeer-validator-track/issues/7) | Workbench step M1.2, "What each mechanism depends on, and its critical questions" | In progress; not submitted |
+| [M1.3 — Define adversarial scenarios and legitimate lookalikes](https://github.com/moatus/livepeer-validator-track/issues/8) | Workbench step M1.3, "Which cases matter most" | In progress; not submitted |
+| [M1.4 — Map the current system to the litepaper](https://github.com/moatus/livepeer-validator-track/issues/14) | Workbench step M1.4, "What exists today, and what would need to be built" | Drafted; not submitted for review |
 
 ## M2 — Test litepaper incentives and evidence limits
 
@@ -31,11 +31,11 @@ Use small worked examples to test the litepaper's material economic assumptions.
 
 **Completion:** Reproducible examples with explicit assumptions and limits, a focused assessment of what validators can observe, and a findings register linking litepaper provisions, assumptions, evidence, current-system implications and design questions. Distinguish modeled vulnerability from observed prevalence.
 
-| Task | Planned artifact |
-| --- | --- |
-| [M2.1 — Test litepaper incentives with bounded examples](https://github.com/moatus/livepeer-validator-track/issues/10) | `deliverables/m2/litepaper-incentive-examples.md` |
-| [M2.2 — Assess evidence for material claims and scenarios](https://github.com/moatus/livepeer-validator-track/issues/9) | `deliverables/m2/focused-evidence-assessment.md` |
-| [M2.3 — Consolidate findings and design requirements](https://github.com/moatus/livepeer-validator-track/issues/15) | `deliverables/m2/findings-and-requirements.md` |
+| Task | Artifact | Status |
+| --- | --- | --- |
+| [M2.1 — Test litepaper incentives with bounded examples](https://github.com/moatus/livepeer-validator-track/issues/10) | Workbench step M2.1, "How the mechanisms behave together" | Handoff from M1 received; nothing run |
+| [M2.2 — Assess evidence for material claims and scenarios](https://github.com/moatus/livepeer-validator-track/issues/9) | Workbench step M2.2, "Testing the critical questions" | Not started; tests proposed |
+| [M2.3 — Consolidate findings and design requirements](https://github.com/moatus/livepeer-validator-track/issues/15) | Workbench step M2.3, "What would resolve each concern?" | Not started |
 
 ## M3 — Litepaper expansion and integration map
 
@@ -76,4 +76,4 @@ Exercise the supported claim-to-review-to-consequence workflow. Identify what th
 
 ## Reporting and scope
 
-Planned paths become links only after artifacts exist. Record source versions, assumptions, findings, limits and reviewed artifact versions in task issues and the [deliverable register](deliverables/README.md). Add research, models and test results here as reviewable artifacts. Keep findings, recommendations and protocol decisions distinct. Update this overview when accepted artifacts or milestone decisions change. Confirm dates before setting native milestone due dates.
+M1 and M2 artifacts are steps of the research workbench; a reviewed version is recorded by commit. Planned paths for later milestones become links only after artifacts exist. Record source versions, assumptions, findings, limits and reviewed artifact versions in task issues and the [deliverable register](deliverables/README.md). Add research, models and test results here as reviewable artifacts. Keep findings, recommendations and protocol decisions distinct. Update this overview when accepted artifacts or milestone decisions change. Confirm dates before setting native milestone due dates.
