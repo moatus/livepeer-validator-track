@@ -2,7 +2,7 @@
 
 Owner: Shane (@moatus). [Project board](https://github.com/users/moatus/projects/1). Target dates are **to agree**. M1 is in progress and M2 has received its first handoff; M3–M5 are planned. No research deliverables have been accepted yet. The M1 and M2 work is drafted in the [research workbench](validator-track-workbench.html) (see the [README](README.md#research-workbench)).
 
-Research path: **understand the litepaper → test its assumptions → evaluate whether and where to expand it → test what is recommended → hand off a validator workflow**. M3 looks at areas the litepaper leaves unaddressed, and at areas where the M1 and M2 findings show its mechanisms working against its own goals. For each, it decides whether a litepaper expansion is warranted and what it would be. "No expansion needed" and "clarify the existing rule" are valid outcomes. Work may overlap across milestones.
+Research path: **understand the litepaper → test its assumptions → evaluate whether and where to expand it → test what is recommended → hand off a validator workflow**. M3 takes two kinds of input: concerns the M2 tests leave unresolved after plausible completions of the paper are compared, and areas the litepaper leaves unaddressed or where its mechanisms work against its own goals. For each, it decides whether a litepaper expansion is warranted and what it would be. "No expansion needed" and "clarify the existing rule" are valid outcomes. Work may overlap across milestones.
 
 | Milestone | Intended outcome | Tracking | Target date | Accepted deliverables |
 | --- | --- | --- | --- | --- |
@@ -14,34 +14,34 @@ Research path: **understand the litepaper → test its assumptions → evaluate 
 
 ## M1 — Objectives, assumptions and validation requirements
 
-Use the Livepeer 2.0 litepaper as the design foundation. Separate its desired outcomes from proposed mechanisms and assumptions. Explain the intended cooperative flow of payments, rewards, costs and participant incentives. Identify claims reward eligibility relies on, what evidence could establish them, and where even perfect execution evidence would leave an economic problem. Inspect current Livepeer components enough to show the scale of the litepaper's changes.
+Use the Livepeer 2.0 litepaper as the design foundation. Separate its desired outcomes from proposed mechanisms and assumptions. Explain the intended cooperative flow of payments, rewards, costs and participant incentives. Examine each mechanism for what its success depends on that is not yet established, including the claims reward eligibility relies on, what evidence could establish them, and where even perfect execution evidence would leave an economic problem. Inspect current Livepeer components enough to show the scale of the litepaper's changes.
 
-**Completion:** A concise baseline map, claim/evidence decision note, representative attack and legitimate scenarios, and a versioned current-system → litepaper impact map covering contracts, off-chain components and participant roles. Mark unresolved choices and unknowns.
+**Completion:** A baseline of the twelve mechanisms; a pass through each mechanism with the calculation, observation, inference, authority, incentive and social lenses, with proposed critical questions wherever its success depends on something not yet established; representative attack and legitimate scenarios; and a versioned current-system → litepaper impact map covering contracts, off-chain components and participant roles. Mark unresolved choices and unknowns.
 
 | Task | Artifact | Status |
 | --- | --- | --- |
 | [M1.1 — Map litepaper objectives, mechanisms and incentives](https://github.com/moatus/livepeer-validator-track/issues/6) | Workbench step M1.1, "How the architecture works, mechanism by mechanism" | Drafted; not submitted for review |
-| [M1.2 — Determine what reward eligibility needs to establish](https://github.com/moatus/livepeer-validator-track/issues/7) | Workbench step M1.2, "What each mechanism depends on, and its critical questions" | In progress; not submitted |
+| [M1.2 — Identify what each mechanism depends on and its critical questions](https://github.com/moatus/livepeer-validator-track/issues/7) | Workbench step M1.2, "What each mechanism depends on, and its critical questions" | In progress; not submitted |
 | [M1.3 — Define adversarial scenarios and legitimate lookalikes](https://github.com/moatus/livepeer-validator-track/issues/8) | Workbench step M1.3, "Which cases matter most" | In progress; not submitted |
 | [M1.4 — Map the current system to the litepaper](https://github.com/moatus/livepeer-validator-track/issues/14) | Workbench step M1.4, "What exists today, and what would need to be built" | Drafted; not submitted for review |
 
 ## M2 — Test litepaper incentives and evidence limits
 
-Use small worked examples to test the litepaper's material economic assumptions. Begin with intended cooperative behavior, then vary a pivotal condition or strategic action. Stop when an example supports or rejects the specific concern; a full network simulation is unnecessary. Examine only evidence relevant to those concerns.
+Reassemble the mechanisms from the M1 handoff into one system: participants and their overlapping roles, their choices, information, timing and payoffs. Rank what to test. Then test the critical questions in that order, with small economic examples and focused evidence inquiries. Begin with intended cooperative behavior, then vary a pivotal condition or strategic action. Stop when a test supports or rejects the specific concern; a full network simulation is unnecessary. Examine only evidence relevant to those concerns.
 
-**Completion:** Reproducible examples with explicit assumptions and limits, a focused assessment of what validators can observe, and a findings register linking litepaper provisions, assumptions, evidence, current-system implications and design questions. Distinguish modeled vulnerability from observed prevalence.
+**Completion:** A reconstruction of the combined system with a ranked list of what to test; reproducible economic examples and focused evidence inquiries with explicit assumptions and limits, including what validators can observe; and a consolidated record of what the tests show and what would resolve each concern (a specification, better evidence, a change in incentives or a policy choice), linking litepaper provisions, assumptions, evidence, current-system implications and design questions. Distinguish modeled vulnerability from observed prevalence. Hand M3 the concerns that remain unresolved and the areas the paper leaves unaddressed.
 
 | Task | Artifact | Status |
 | --- | --- | --- |
-| [M2.1 — Test litepaper incentives with bounded examples](https://github.com/moatus/livepeer-validator-track/issues/10) | Workbench step M2.1, "How the mechanisms behave together" | Handoff from M1 received; nothing run |
-| [M2.2 — Assess evidence for material claims and scenarios](https://github.com/moatus/livepeer-validator-track/issues/9) | Workbench step M2.2, "Testing the critical questions" | Not started; tests proposed |
+| [M2.1 — Reconstruct how the mechanisms behave together](https://github.com/moatus/livepeer-validator-track/issues/10) | Workbench step M2.1, "How the mechanisms behave together" | Handoff from M1 received; nothing run |
+| [M2.2 — Test the critical questions](https://github.com/moatus/livepeer-validator-track/issues/9) | Workbench step M2.2, "Testing the critical questions" | Not started; tests proposed |
 | [M2.3 — Consolidate findings and design requirements](https://github.com/moatus/livepeer-validator-track/issues/15) | Workbench step M2.3, "What would resolve each concern?" | Not started |
 
 ## M3 — Evaluate where the litepaper could be expanded
 
-Start from the M1 and M2 findings. Identify the areas the litepaper leaves unaddressed, and the areas where its mechanisms work against its own goals: reward integrity, open market participation, participant incentives, credible validation and implementation. For each, evaluate whether a litepaper expansion is warranted and what it would be. "No expansion needed" and "clarify the existing rule" are valid outcomes. Model scenarios only for the options worth pursuing, and only where they clarify a design choice or failure boundary.
+Start from the M1 and M2 findings. M3 receives two kinds of input: concerns the M2 tests leave unresolved after plausible completions of the paper are compared on their tradeoffs, and areas the litepaper leaves unaddressed or where its mechanisms work against its own goals: reward integrity, open market participation, participant incentives, credible validation and implementation. Specification details that the paper plainly implies remain design questions for build work; they enter M3 only if they amount to an unaddressed area. For each input, evaluate whether a litepaper expansion is warranted and what it would be. "No expansion needed" and "clarify the existing rule" are valid outcomes. Model scenarios only for the options worth pursuing, and only where they clarify a design choice or failure boundary.
 
-**Completion:** A list of gaps and conflicts with the evidence for each; an evaluation of the options for each, with participant incentives and a recommendation; small cooperative, ordinary-market and selected adversarial scenarios, or equivalent worked cases, for the options worth pursuing; and, for any recommended expansion, an integration map tracing **current system → litepaper**, **litepaper → recommended expansion** and **current system → recommended expansion** across contracts, off-chain components, workflows and migration considerations. Identify what M4 should test, and where a recommendation adjusts an existing mechanism.
+**Completion:** A list of the unresolved concerns, gaps and conflicts, with the evidence for each; an evaluation of the options for each, with participant incentives and a recommendation; small cooperative, ordinary-market and selected adversarial scenarios, or equivalent worked cases, for the options worth pursuing; and, for any recommended expansion, an integration map tracing **current system → litepaper**, **litepaper → recommended expansion** and **current system → recommended expansion** across contracts, off-chain components, workflows and migration considerations. Identify what M4 should test, and where a recommendation adjusts an existing mechanism.
 
 | Task | Planned artifact |
 | --- | --- |
