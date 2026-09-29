@@ -1,0 +1,17 @@
+# Local working material: archived drafts, process logs and scratch copies. Not published.
+/archive_work/
+
+# Automatic workbench backups written by vtw.py import (hundreds of MB).
+/validator-track-workbench-tools/backups/
+
+# Python and test caches
+__pycache__/
+*.pyc
+
+# Local agent context. Never commit or publish it.
+/AGENTS.md
+/agents.md
+
+# Internal agent runbook and local lint vocabulary. Internal only; never publish.
+/validator-track-workbench-agent-runbook.md
+/validator-track-workbench-tools/reserved-terms.local.txt
