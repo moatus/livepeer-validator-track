@@ -324,6 +324,12 @@ with sync_playwright() as p:
           "answer to \"rewards should follow real work\"" in lp.inner_text() and lp.locator("details.vtw-details").count() == 1
           and "Conclusions" in lp.inner_text() and "Design questions" in lp.inner_text())
 
+    gtp = navigate(page, "GT-03")
+    check("a critical question's own page shows its cases and what would change the assessment, before Record details",
+          gtp.locator(".vtw-gt-page .vtw-caselist li").count() >= 5
+          and gtp.locator(".vtw-gt-page details.vtw-gtd > summary", has_text="What would change the assessment").count() == 1
+          and gtp.locator(".vtw-gt-page details.vtw-gtd > summary", has_text="If it resolves badly").count() == 1)
+
     # ---- mechanisms: layout v2 (stored in the file) ----
     v2 = navigate(page, "MX-06")
     page.evaluate("document.querySelectorAll('[data-tiddler-title=\"MX-06\"] details').forEach(d => d.open = false)")
@@ -345,6 +351,8 @@ with sync_playwright() as p:
           and v2.locator(".vtw-caselist li").count() >= 5 and v2.locator(".vtw-look").count() >= 1
           and v2.locator(".vtw-gt details.vtw-gtd:not([open]) > summary", has_text="What would change the assessment").count() == n_gt
           and v2.locator(".vtw-gt details.vtw-gtd:not([open]) > summary", has_text="If it resolves badly").count() == n_gt)
+    check("critical question cards on a mechanism page link their paper citations",
+          v2.locator(".vtw-gt details.vtw-gtd a.vtw-cite").count() >= 1)
     chips = v2.locator("button.vtw-chip").all_inner_texts()
     check("four chips: design questions, critical questions, cases, today",
           len(chips) == 4 and chips[3].strip() == "Today: none found", str(chips))
