@@ -1,6 +1,6 @@
 # Milestone overview
 
-Owner: Shane (@moatus). [Project board](https://github.com/users/moatus/projects/1). Target dates are **to agree**. M1 is in progress and M2 has received its first handoff; M3–M5 are planned. No research deliverables have been accepted yet. The M1 and M2 work is drafted in the [research workbench](validator-track-workbench.html) (see the [README](README.md#research-workbench)).
+Owner: Shane (@moatus). [Project board](https://github.com/users/moatus/projects/1). Target dates are **to agree**. M1 is drafted and awaiting review, and M2 has received its handoff; M3–M5 are planned. No research deliverables have been accepted yet. The M1 and M2 work is drafted in the [research workbench](validator-track-workbench.html) (see the [README](README.md#research-workbench)).
 
 Research path: **understand the litepaper → test its assumptions → evaluate whether and where to expand it → test what is recommended → hand off a validator workflow**. M3 takes two kinds of input: concerns the M2 tests leave unresolved after plausible completions of the paper are compared, and areas the litepaper leaves unaddressed or where its mechanisms work against its own goals. For each, it decides whether a litepaper expansion is warranted and what it would be. "No expansion needed" and "clarify the existing rule" are valid outcomes. Work may overlap across milestones.
 
@@ -16,13 +16,13 @@ Research path: **understand the litepaper → test its assumptions → evaluate 
 
 Use the Livepeer 2.0 litepaper as the design foundation. Separate its desired outcomes from proposed mechanisms and assumptions. Explain the intended cooperative flow of payments, rewards, costs and participant incentives. Examine each mechanism for what its success depends on that is not yet established, including the claims reward eligibility relies on, what evidence could establish them, and where even perfect execution evidence would leave an economic problem. Inspect current Livepeer components enough to show the scale of the litepaper's changes.
 
-**Completion:** A baseline of the twelve mechanisms; a pass through each mechanism with the calculation, observation, inference, authority, incentive and social lenses, with proposed critical questions wherever its success depends on something not yet established; representative attack and legitimate scenarios; and a versioned current-system → litepaper impact map covering contracts, off-chain components and participant roles. Mark unresolved choices and unknowns.
+**Completion:** A baseline of the twelve mechanisms; a pass through each mechanism with eight lenses (calculation, observation, inference, policy and authority, individual incentives, collective behaviour, social and operational effects, and system feedback), with proposed critical questions wherever its success depends on something not yet established; representative attack and legitimate scenarios; and a versioned current-system → litepaper impact map covering contracts, off-chain components and participant roles. Mark unresolved choices and unknowns.
 
 | Task | Artifact | Status |
 | --- | --- | --- |
 | [M1.1 — Map litepaper objectives, mechanisms and incentives](https://github.com/moatus/livepeer-validator-track/issues/6) | Workbench step M1.1, "How the architecture works, mechanism by mechanism" | Drafted; not submitted for review |
-| [M1.2 — Identify what each mechanism depends on and its critical questions](https://github.com/moatus/livepeer-validator-track/issues/7) | Workbench step M1.2, "What each mechanism depends on, and its critical questions" | In progress; not submitted |
-| [M1.3 — Define adversarial scenarios and legitimate lookalikes](https://github.com/moatus/livepeer-validator-track/issues/8) | Workbench step M1.3, "Which cases matter most" | In progress; not submitted |
+| [M1.2 — Identify what each mechanism depends on and its critical questions](https://github.com/moatus/livepeer-validator-track/issues/7) | Workbench step M1.2, "What each mechanism depends on, and its critical questions" | Drafted; not submitted for review |
+| [M1.3 — Define adversarial scenarios and legitimate lookalikes](https://github.com/moatus/livepeer-validator-track/issues/8) | Workbench step M1.3, "Which cases matter most" | Drafted; not submitted for review |
 | [M1.4 — Map the current system to the litepaper](https://github.com/moatus/livepeer-validator-track/issues/14) | Workbench step M1.4, "What exists today, and what would need to be built" | Drafted; not submitted for review |
 
 ## M2 — Test litepaper incentives and evidence limits

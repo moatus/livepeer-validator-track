@@ -25,8 +25,8 @@ It follows the litepaper through the milestone steps M1.1 to M2.3:
 | Step | Task | Workbench status |
 | --- | --- | --- |
 | M1.1 How the architecture works, mechanism by mechanism | [#6](https://github.com/moatus/livepeer-validator-track/issues/6) | Drafted, not reviewed |
-| M1.2 What each mechanism depends on, and its critical questions | [#7](https://github.com/moatus/livepeer-validator-track/issues/7) | In progress: worked sample on three mechanisms |
-| M1.3 Which cases matter most | [#8](https://github.com/moatus/livepeer-validator-track/issues/8) | In progress: cases ranked for three critical questions, none run |
+| M1.2 What each mechanism depends on, and its critical questions | [#7](https://github.com/moatus/livepeer-validator-track/issues/7) | Drafted, not reviewed: lens results for all twelve mechanisms; nine proposed critical questions |
+| M1.3 Which cases matter most | [#8](https://github.com/moatus/livepeer-validator-track/issues/8) | Drafted, not reviewed: ranked cases for all nine critical questions, none run |
 | M1.4 What exists today, and what would need to be built | [#14](https://github.com/moatus/livepeer-validator-track/issues/14) | Drafted, not reviewed; deployed behaviour not checked |
 | M2.1 How the mechanisms behave together | [#10](https://github.com/moatus/livepeer-validator-track/issues/10) | Handoff from M1 received; nothing run |
 | M2.2 Testing the critical questions | [#9](https://github.com/moatus/livepeer-validator-track/issues/9) | Not started; tests proposed |
