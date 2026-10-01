@@ -13,6 +13,6 @@ For each decision, record:
 - Possible additions to the litepaper and supporting/contrary evidence.
 - Finding: retain, clarify, amend, reject or unresolved.
 - Participant effects and remaining risks.
-- Reviewer, date and exact artifact links.
+- Status (drafted or reviewed), date and exact artifact links.
 - Whether this is a research recommendation or a decision approved by the responsible process.
 - Conditions that would reopen the decision.

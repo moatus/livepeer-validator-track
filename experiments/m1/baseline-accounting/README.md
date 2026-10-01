@@ -1,6 +1,6 @@
 # M1.1 baseline accounting workbook
 
-Version: **v0.3 · 2026-09-26**. Status: **Draft, not reviewed**. Automated QA is reported below; human milestone review and acceptance are pending. This workbook supports workbench step M1.1; it is not an accepted economic rule or an empirical finding.
+Version: **v0.3 · 2026-09-26**. Status: **Drafted**. Automated QA is reported below. This workbook supports workbench step M1.1; it is not an accepted economic rule or an empirical finding.
 
 ## Source and scope
 

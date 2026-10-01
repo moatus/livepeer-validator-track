@@ -336,10 +336,10 @@ with sync_playwright() as p:
     v2t = v2.inner_text()
     heads = page.evaluate("""() => [...document.querySelectorAll('[data-tiddler-title="MX-06"] h2.vtw-mxh')].map(h => h.textContent.trim())""")
     check("MX-06 (layout v2) renders the mechanism sections in order", heads == MX_SECTIONS, str(heads))
-    check("v2 page: no earlier header or rollup, one review note, parts table with coloured basis labels",
+    check("v2 page: no earlier header or rollup, no draft note once reviewed, parts table with coloured basis labels",
           v2.locator(".vtw-header").count() == 0
           and page.evaluate("() => [...document.querySelectorAll('[data-tiddler-title=\"MX-06\"] .vtw-rsec')].filter(e => !e.closest('details')).length") == 0
-          and v2.locator(".vtw-mx > .vtw-note", has_text="not yet reviewed").count() == 1
+          and v2.locator(".vtw-mx > .vtw-note", has_text="not yet reviewed").count() == 0
           and v2.locator(".vtw-parts-wrap table").count() == 1
           and v2.locator(".vtw-parts-wrap .vtw-basis-required").count() >= 1
           and v2.locator(".vtw-parts-wrap .vtw-prov:not([class*='vtw-basis-'])").count() == 0)

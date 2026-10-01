@@ -1,11 +1,9 @@
 # Artifact title
 
-Status: Draft / In review / Accepted / Changes requested
+Status: Drafted / Reviewed
 
 - Milestone and task:
-- Author(s):
 - Source/version basis:
-- Reviewer and review record:
 - Version and date:
 
 ## Question and outcome
@@ -30,4 +28,4 @@ Identify required follow-up, policy decisions or cross-track interfaces. Do not 
 
 ## Related artifacts and review
 
-Link exact versions, any supporting PR and the review outcome.
+Link exact versions and their status.

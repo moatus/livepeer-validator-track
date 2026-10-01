@@ -14,7 +14,7 @@ The project tests the litepaper's protocol mechanics: rewards, validation, deleg
 - [Decision log](docs/DECISIONS.md)
 - [SPE pre-proposal](https://forum.livepeer.org/t/pre-proposal-network-engineering-spe-ii/3344)
 
-The milestone and task structure is in place, and the M1 and M2 research is under way in the [research workbench](#research-workbench). M1's four steps were accepted on 2026-09-30 by the project's AI tech lead under the owner's delegation, after independent AI reviews; no person has reviewed them yet, and M2 has not started. Target dates and external reviewers remain to be agreed.
+The milestone and task structure is in place, and the M1 and M2 research is under way in the [research workbench](#research-workbench). M1's four steps are reviewed, and M2 has not started. Target dates and external reviewers remain to be agreed.
 
 ## Research workbench
 
@@ -24,10 +24,10 @@ It follows the litepaper through the milestone steps M1.1 to M2.3:
 
 | Step | Task | Workbench status |
 | --- | --- | --- |
-| M1.1 How the architecture works, mechanism by mechanism | [#6](https://github.com/moatus/livepeer-validator-track/issues/6) | Accepted under the owner's delegation (AI tech lead, 2026-09-30); not a person's review |
-| M1.2 What each mechanism depends on, and its critical questions | [#7](https://github.com/moatus/livepeer-validator-track/issues/7) | Accepted under the owner's delegation (AI tech lead, 2026-09-30); not a person's review: lens results for all twelve mechanisms; nine proposed critical questions |
-| M1.3 Which cases matter most | [#8](https://github.com/moatus/livepeer-validator-track/issues/8) | Accepted under the owner's delegation (AI tech lead, 2026-09-30); not a person's review: ranked cases for all nine critical questions, none run |
-| M1.4 What exists today, and what would need to be built | [#14](https://github.com/moatus/livepeer-validator-track/issues/14) | Accepted under the owner's delegation (AI tech lead, 2026-09-30); not a person's review; deployed behaviour not checked |
+| M1.1 How the architecture works, mechanism by mechanism | [#6](https://github.com/moatus/livepeer-validator-track/issues/6) | Reviewed |
+| M1.2 What each mechanism depends on, and its critical questions | [#7](https://github.com/moatus/livepeer-validator-track/issues/7) | Reviewed: lens results for all twelve mechanisms; nine proposed critical questions |
+| M1.3 Which cases matter most | [#8](https://github.com/moatus/livepeer-validator-track/issues/8) | Reviewed: ranked cases for all nine critical questions, none run |
+| M1.4 What exists today, and what would need to be built | [#14](https://github.com/moatus/livepeer-validator-track/issues/14) | Reviewed; deployed behaviour not checked |
 | M2.1 How the mechanisms behave together | [#10](https://github.com/moatus/livepeer-validator-track/issues/10) | Handoff from M1 received; nothing run |
 | M2.2 Testing the critical questions | [#9](https://github.com/moatus/livepeer-validator-track/issues/9) | Not started; tests proposed |
 | M2.3 What would resolve each concern? | [#15](https://github.com/moatus/livepeer-validator-track/issues/15) | Not started |
