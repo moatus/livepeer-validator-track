@@ -14,7 +14,7 @@ The project tests the litepaper's protocol mechanics: rewards, validation, deleg
 - [Decision log](docs/DECISIONS.md)
 - [SPE pre-proposal](https://forum.livepeer.org/t/pre-proposal-network-engineering-spe-ii/3344)
 
-The milestone and task structure is in place, and the M1 and M2 research is under way in the [research workbench](#research-workbench). It is a working draft: nothing in it has been reviewed or accepted yet. Target dates and reviewers remain to be agreed.
+The milestone and task structure is in place, and the M1 and M2 research is under way in the [research workbench](#research-workbench). M1's four steps were accepted on 2026-09-30 by the project's AI tech lead under the owner's delegation, after independent AI reviews; no person has reviewed them yet, and M2 has not started. Target dates and external reviewers remain to be agreed.
 
 ## Research workbench
 
@@ -24,17 +24,17 @@ It follows the litepaper through the milestone steps M1.1 to M2.3:
 
 | Step | Task | Workbench status |
 | --- | --- | --- |
-| M1.1 How the architecture works, mechanism by mechanism | [#6](https://github.com/moatus/livepeer-validator-track/issues/6) | Drafted, not reviewed |
-| M1.2 What each mechanism depends on, and its critical questions | [#7](https://github.com/moatus/livepeer-validator-track/issues/7) | Drafted, not reviewed: lens results for all twelve mechanisms; nine proposed critical questions |
-| M1.3 Which cases matter most | [#8](https://github.com/moatus/livepeer-validator-track/issues/8) | Drafted, not reviewed: ranked cases for all nine critical questions, none run |
-| M1.4 What exists today, and what would need to be built | [#14](https://github.com/moatus/livepeer-validator-track/issues/14) | Drafted, not reviewed; deployed behaviour not checked |
+| M1.1 How the architecture works, mechanism by mechanism | [#6](https://github.com/moatus/livepeer-validator-track/issues/6) | Accepted under the owner's delegation (AI tech lead, 2026-09-30); not a person's review |
+| M1.2 What each mechanism depends on, and its critical questions | [#7](https://github.com/moatus/livepeer-validator-track/issues/7) | Accepted under the owner's delegation (AI tech lead, 2026-09-30); not a person's review: lens results for all twelve mechanisms; nine proposed critical questions |
+| M1.3 Which cases matter most | [#8](https://github.com/moatus/livepeer-validator-track/issues/8) | Accepted under the owner's delegation (AI tech lead, 2026-09-30); not a person's review: ranked cases for all nine critical questions, none run |
+| M1.4 What exists today, and what would need to be built | [#14](https://github.com/moatus/livepeer-validator-track/issues/14) | Accepted under the owner's delegation (AI tech lead, 2026-09-30); not a person's review; deployed behaviour not checked |
 | M2.1 How the mechanisms behave together | [#10](https://github.com/moatus/livepeer-validator-track/issues/10) | Handoff from M1 received; nothing run |
 | M2.2 Testing the critical questions | [#9](https://github.com/moatus/livepeer-validator-track/issues/9) | Not started; tests proposed |
 | M2.3 What would resolve each concern? | [#15](https://github.com/moatus/livepeer-validator-track/issues/15) | Not started |
 
 Inside, the litepaper is described as twelve mechanisms. Each mechanism page explains the mechanism in plain words, lists its parts, and marks what the paper states and what is still to be defined or decided (design questions). It also asks whether the mechanism could work as intended (critical questions, tested against concrete cases and their legitimate lookalikes), and records what exists in today's Livepeer system. Step pages tell the story of each milestone step; role guides summarise what changes for node operators, delegators and validators. Citations of the litepaper open the cited lines of the embedded snapshot, which matches [`docs/litepaper-2.0.md`](docs/litepaper-2.0.md). The snapshot is verbatim. Two files the paper references, `mechanism-flow-diagram.svg` and `emissions-schedule.md`, are not yet released by its authors. Start with "How to read this workbench" on its home page.
 
-Findings, conclusions and proposed critical questions in the workbench are research drafts, labelled by how firmly they are held (assumption, inference, hypothesis, supported by the text). They are not accepted deliverables, and none is a protocol decision.
+Findings, conclusions and proposed critical questions in the workbench are research drafts, labelled by how firmly they are held (assumption, inference, hypothesis, supported by the text). M1's steps are accepted as research deliverables (see the [deliverable register](deliverables/README.md)); acceptance records that the research is fit to build on, not that any finding is proven, and none is a protocol decision.
 
 **Tools.** [`validator-track-workbench-tools/`](validator-track-workbench-tools/) holds `vtw.py` (show and find to read and search the workbench from a terminal; export, import, lint and diff to edit it), a browser check, a word-budget check and unit tests; its README explains how to edit the workbench. The workbench's reward-arithmetic check comes from the baseline accounting workbook in [`experiments/m1/baseline-accounting/`](experiments/m1/baseline-accounting/): `build.py` generates the workbook and `verify.py` checks it.
 
