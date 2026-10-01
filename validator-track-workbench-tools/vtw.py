@@ -10,10 +10,20 @@ the workbench HTML is the single editable record set.
   vtw.py lint    WIKI                          ID references, schema, vocabularies, scope
   vtw.py diff    OLD NEW                       record-level, field-level changes (HTML or JSON)
   vtw.py counts  WIKI
+  vtw.py show    WIKI TITLE... [--fields F,...]  readable text of whole tiddlers
+  vtw.py find    WIKI PATTERN [-i] [--type T,...] [--field F,...] [-l] [--max N]
+                                               regex search, one snippet per match
+
+show and find read only the workbench's own tiddlers (records, pages and
+$:/vtw/), never the TiddlyWiki core, so their output stays small. Use them to
+read or search the workbench instead of grep or reading the HTML directly:
+the core sits on one line of about 2 MB that a text search can match.
 
 Only the JSON tiddler store inside the HTML is rewritten, in the same form as a
 TiddlyWiki 5 browser save (one tiddler per line, sorted by title, "<" escaped).
 The HTML shell, boot code and the $:/core plugin are left byte-for-byte intact.
+Only a browser save regenerates the shell (page title, head markup such as the
+note for agents); lint warns when the shell no longer matches the store.
 One writer at a time: save and close (or reload) the browser before running
 import/remove, and reopen the file afterwards before the next browser save.
 """
@@ -27,6 +37,7 @@ import json
 import re
 import shutil
 import sys
+from html import unescape
 from pathlib import Path
 
 STORE_RE = re.compile(r'(<script class="tiddlywiki-tiddler-store" type="application/json">)(.*?)(</script>)', re.S)
@@ -551,8 +562,26 @@ def lint_tiddlers(tiddlers: dict[str, dict]) -> tuple[list[str], list[str], int]
     return errors, warnings, len(records)
 
 
+def shell_warnings(shell: str, tiddlers: dict[str, dict]) -> list[str]:
+    """The HTML around the tiddler store is written only by a browser save; import
+    and remove leave it byte-for-byte. Warn when it no longer reflects the store:
+    raw markup for the head (such as the note for agents) and the page title."""
+    out = []
+    for title, t in sorted(tiddlers.items()):
+        if "$:/tags/RawMarkup" in parse_list(t.get("tags")) and t.get("text", "") not in shell:
+            out.append(f"{title}: text is not in the file's <head>; save once from a browser to write it")
+    site = tiddlers.get("$:/SiteTitle", {}).get("text", "")
+    m = re.search(r"<title>(.*?)</title>", shell, re.S)
+    if site and not (m and site in unescape(m.group(1))):
+        out.append(f"$:/SiteTitle: the file's <title> does not show {site!r}; save once from a browser to write it")
+    return out
+
+
 def lint(path: Path) -> int:
     errors, warnings, n = lint_tiddlers(load_tiddlers(path))
+    if path.suffix != ".json":
+        html, m, _ = read_store(path)
+        warnings += shell_warnings(html[:m.start(2)] + html[m.end(2):], load_tiddlers(path))
     for e in errors:
         print("ERROR  ", e)
     for w in warnings:
@@ -604,6 +633,93 @@ def counts(path: Path) -> None:
         print(f"{rt:4} {by.get(rt, 0):4}  {types[rt].get('plural', '')}")
 
 
+# ---------------------------------------------------------------- show and find
+
+# Editor metadata: not useful when reading a tiddler.
+READ_SKIP_FIELDS = ("created", "modified", "modifier", "creator", "revision", "bag")
+SNIPPET = 70  # characters of context each side of a match
+
+
+def is_workbench(title: str) -> bool:
+    """Records, pages and $:/vtw/ tiddlers; not the TiddlyWiki core, themes or runtime state."""
+    return not is_system(title) or title.startswith("$:/vtw/")
+
+
+def split_names(values: list[str] | None) -> list[str]:
+    """--fields a,b --fields c -> [a, b, c]."""
+    return [v.strip() for arg in values or [] for v in arg.split(",") if v.strip()]
+
+
+def show_text(tiddlers: dict[str, dict], titles: list[str], fields: list[str] | None = None) -> tuple[str, list[str]]:
+    """Readable text of whole tiddlers, and the titles that were not found."""
+    out, missing = [], []
+    for title in titles:
+        t = tiddlers.get(title)
+        if t is None or not is_workbench(title):
+            missing.append(title)
+            continue
+        cap = t.get("caption", "")
+        out.append(f"== {title}" + (f"  {cap}" if cap else ""))
+        names = fields if fields else [k for k in t if k not in READ_SKIP_FIELDS and k != "title"]
+        for k in names:
+            if k not in t:
+                continue
+            v = str(t[k])
+            if "\n" in v:
+                out.append(f"{k}:")
+                out.extend("    " + line for line in v.splitlines())
+            else:
+                out.append(f"{k}: {v}")
+        out.append("")
+    return "\n".join(out), missing
+
+
+def find_hits(tiddlers: dict[str, dict], pattern: str, ignore_case: bool = False,
+              types: list[str] | None = None, fields: list[str] | None = None) -> list[tuple[str, str, int | None, str]]:
+    """(title, field, line, snippet) for every match in the workbench's own tiddlers.
+
+    line is the 1-based line within the field when the field has several lines
+    (for the embedded litepaper, that is the paper's line number), else None.
+    """
+    cre = re.compile(pattern, re.I if ignore_case else 0)
+    hits = []
+    for title in sorted(tiddlers):
+        t = tiddlers[title]
+        if not is_workbench(title) or (types and t.get("record_type") not in types):
+            continue
+        for k in sorted(t):
+            if k in READ_SKIP_FIELDS or (fields and k not in fields):
+                continue
+            v = str(t[k])
+            lines = v.splitlines() or [v]
+            for n, line in enumerate(lines, 1):
+                for m in cre.finditer(line):
+                    a, b = max(0, m.start() - SNIPPET), min(len(line), m.end() + SNIPPET)
+                    snip = " ".join(line[a:b].split())
+                    snip = ("…" if a else "") + snip + ("…" if b < len(line) else "")
+                    hits.append((title, k, n if len(lines) > 1 else None, snip))
+    return hits
+
+
+def find(path: Path, pattern: str, ignore_case: bool, types: list[str], fields: list[str],
+         titles_only: bool, limit: int) -> int:
+    tiddlers = load_tiddlers(path)
+    hits = find_hits(tiddlers, pattern, ignore_case, types, fields)
+    titles = list(dict.fromkeys(h[0] for h in hits))
+    if titles_only:
+        for title in titles:
+            cap = tiddlers[title].get("caption", "")
+            print(title + (f"  {cap}" if cap else ""))
+    else:
+        for title, k, n, snip in hits[:limit]:
+            print(f"{title}.{k}" + (f":{n}" if n else "") + f"  {snip}")
+        if len(hits) > limit:
+            print(f"… {len(hits) - limit} more matches not shown (narrow with --type/--field, use -l, or raise --max)")
+    sys.stdout.flush()
+    print(f"{len(hits)} matches in {len(titles)} tiddlers", file=sys.stderr)
+    return 0 if hits else 1
+
+
 # ---------------------------------------------------------------- main
 
 def main() -> int:
@@ -615,6 +731,14 @@ def main() -> int:
     p = sub.add_parser("lint"); p.add_argument("wiki", type=Path)
     p = sub.add_parser("diff"); p.add_argument("old", type=Path); p.add_argument("new", type=Path)
     p = sub.add_parser("counts"); p.add_argument("wiki", type=Path)
+    p = sub.add_parser("show"); p.add_argument("wiki", type=Path); p.add_argument("titles", nargs="+")
+    p.add_argument("--fields", action="append", help="only these fields, comma separated")
+    p = sub.add_parser("find"); p.add_argument("wiki", type=Path); p.add_argument("pattern", help="Python regular expression")
+    p.add_argument("-i", "--ignore-case", action="store_true")
+    p.add_argument("--type", action="append", help="only these record types, comma separated (e.g. GT,SC)")
+    p.add_argument("--field", action="append", help="only these fields, comma separated")
+    p.add_argument("-l", "--titles-only", action="store_true", help="list matching tiddlers with their captions")
+    p.add_argument("--max", type=int, default=100, help="most matches to print (default 100)")
     args = ap.parse_args()
 
     if args.cmd == "export":
@@ -662,6 +786,18 @@ def main() -> int:
         diff(args.old, args.new)
     elif args.cmd == "counts":
         counts(args.wiki)
+    elif args.cmd == "show":
+        text, missing = show_text(load_tiddlers(args.wiki), args.titles, split_names(args.fields))
+        print(text, end="")
+        if missing:
+            print(f"not found (or not a workbench tiddler): {missing}", file=sys.stderr)
+            return 1
+    elif args.cmd == "find":
+        try:
+            return find(args.wiki, args.pattern, args.ignore_case, split_names(args.type),
+                        split_names(args.field), args.titles_only, args.max)
+        except re.error as e:
+            sys.exit(f"invalid pattern {args.pattern!r}: {e}")
     return 0
 
 

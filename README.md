@@ -36,7 +36,7 @@ Inside, the litepaper is described as twelve mechanisms. Each mechanism page exp
 
 Findings, conclusions and proposed critical questions in the workbench are research drafts, labelled by how firmly they are held (assumption, inference, hypothesis, supported by the text). They are not accepted deliverables, and none is a protocol decision.
 
-**Tools.** [`validator-track-workbench-tools/`](validator-track-workbench-tools/) holds `vtw.py` (export, import, lint and diff for the workbench), a browser check, a word-budget check and unit tests; its README explains how to edit the workbench. The workbench's reward-arithmetic check comes from the baseline accounting workbook in [`experiments/m1/baseline-accounting/`](experiments/m1/baseline-accounting/): `build.py` generates the workbook and `verify.py` checks it.
+**Tools.** [`validator-track-workbench-tools/`](validator-track-workbench-tools/) holds `vtw.py` (show and find to read and search the workbench from a terminal; export, import, lint and diff to edit it), a browser check, a word-budget check and unit tests; its README explains how to edit the workbench. The workbench's reward-arithmetic check comes from the baseline accounting workbook in [`experiments/m1/baseline-accounting/`](experiments/m1/baseline-accounting/): `build.py` generates the workbook and `verify.py` checks it.
 
 ## Working structure
 

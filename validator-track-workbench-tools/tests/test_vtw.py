@@ -491,3 +491,83 @@ class NewStepFields(unittest.TestCase):
                 store["M1.2"] = rec
                 errors, _, _ = vtw.lint_tiddlers(store)
                 self.assertTrue(any(e.startswith(f"M1.2.{field}: retired vocabulary") for e in errors), field)
+
+
+class ShowAndFind(unittest.TestCase):
+    """Read-only commands: workbench tiddlers only, never the TiddlyWiki core."""
+
+    STORE = {
+        "GT-01": {"title": "GT-01", "record_type": "GT", "caption": "Does the evidence warrant it?",
+                  "question": "Can the delay carry the load?", "modified": "20260930000000000"},
+        "SC-01": {"title": "SC-01", "record_type": "SC", "caption": "Outside purchase",
+                  "situation": "A customer pays; no delay applies."},
+        "Home": {"title": "Home", "text": "First line\nThe delay is seven rounds."},
+        "$:/vtw/source/SRC-LP20": {"title": "$:/vtw/source/SRC-LP20", "text": "one\ntwo\nthe rewards delay"},
+        "$:/core": {"title": "$:/core", "text": "var delay = 1;"},
+        "$:/StoryList": {"title": "$:/StoryList", "list": "delay"},
+    }
+
+    def test_show_prints_fields_without_editor_metadata(self):
+        text, missing = vtw.show_text(self.STORE, ["GT-01"])
+        self.assertEqual(missing, [])
+        self.assertIn("== GT-01  Does the evidence warrant it?", text)
+        self.assertIn("question: Can the delay carry the load?", text)
+        self.assertNotIn("modified", text)
+
+    def test_show_selected_fields_and_multiline_values(self):
+        text, _ = vtw.show_text(self.STORE, ["GT-01", "Home"], ["question", "text"])
+        self.assertNotIn("caption:", text)
+        self.assertIn("text:\n    First line\n    The delay is seven rounds.", text)
+
+    def test_show_refuses_core_and_reports_missing(self):
+        text, missing = vtw.show_text(self.STORE, ["$:/core", "NOPE", "SC-01"])
+        self.assertEqual(missing, ["$:/core", "NOPE"])
+        self.assertNotIn("var delay", text)
+        self.assertIn("== SC-01", text)
+
+    def test_find_skips_core_and_runtime_tiddlers(self):
+        titles = {h[0] for h in vtw.find_hits(self.STORE, "delay")}
+        self.assertEqual(titles, {"GT-01", "SC-01", "Home", "$:/vtw/source/SRC-LP20"})
+
+    def test_find_reports_line_numbers_for_multiline_fields(self):
+        hits = {(h[0], h[1]): h[2] for h in vtw.find_hits(self.STORE, "delay")}
+        self.assertEqual(hits[("$:/vtw/source/SRC-LP20", "text")], 3)
+        self.assertEqual(hits[("Home", "text")], 2)
+        self.assertIsNone(hits[("GT-01", "question")])
+
+    def test_find_filters_by_type_field_and_case(self):
+        self.assertEqual([h[0] for h in vtw.find_hits(self.STORE, "delay", types=["SC"])], ["SC-01"])
+        self.assertEqual([h[1] for h in vtw.find_hits(self.STORE, "delay", fields=["question"])], ["question"])
+        self.assertEqual(vtw.find_hits(self.STORE, "DELAY"), [])
+        self.assertEqual(len(vtw.find_hits(self.STORE, "DELAY", ignore_case=True)), 4)
+
+    def test_find_snippet_is_bounded(self):
+        store = {"FR-01": {"title": "FR-01", "statement": "x" * 500 + " delay " + "y" * 500}}
+        (_, _, _, snip), = vtw.find_hits(store, "delay")
+        self.assertTrue(snip.startswith("…") and snip.endswith("…"))
+        self.assertLessEqual(len(snip), 2 * vtw.SNIPPET + len("delay") + 2)
+
+    def test_find_on_the_workbench_never_returns_the_core(self):
+        titles = {h[0] for h in vtw.find_hits(vtw.load_tiddlers(MAIN), "function")}
+        self.assertTrue(titles)
+        self.assertFalse(any(t.startswith("$:/") and not t.startswith("$:/vtw/") for t in titles))
+
+
+class ShellWarnings(unittest.TestCase):
+    """The HTML shell changes only on a browser save; lint says when it is stale."""
+
+    STORE = {
+        "$:/SiteTitle": {"title": "$:/SiteTitle", "text": "Validator track workbench"},
+        "$:/vtw/agent-note": {"title": "$:/vtw/agent-note", "tags": "$:/tags/RawMarkup", "text": "<!-- note -->"},
+    }
+
+    def test_current_shell_is_quiet(self):
+        shell = "<head><title>Validator track workbench — sub</title>\n<!-- note -->\n</head>"
+        self.assertEqual(vtw.shell_warnings(shell, self.STORE), [])
+
+    def test_stale_note_and_title_warn(self):
+        shell = "<head><title>My TiddlyWiki — a non-linear personal web notebook</title></head>"
+        warns = vtw.shell_warnings(shell, self.STORE)
+        self.assertEqual(len(warns), 2)
+        self.assertTrue(warns[0].startswith("$:/vtw/agent-note: text is not in the file's <head>"))
+        self.assertTrue(warns[1].startswith("$:/SiteTitle: the file's <title>"))
