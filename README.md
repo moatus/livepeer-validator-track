@@ -38,6 +38,15 @@ Findings, conclusions and proposed critical questions in the workbench are resea
 
 **Tools.** [`validator-track-workbench-tools/`](validator-track-workbench-tools/) holds `vtw.py` (show and find to read and search the workbench from a terminal; export, import, lint and diff to edit it), a browser check, a word-budget check and unit tests; its README explains how to edit the workbench. The workbench's reward-arithmetic check comes from the baseline accounting workbook in [`experiments/m1/baseline-accounting/`](experiments/m1/baseline-accounting/): `build.py` generates the workbook and `verify.py` checks it.
 
+## Listening guides
+
+These supporting review guides summarize M1.1–M1.4 for listening, each labeled about twelve minutes. They retain their source basis at commit `eec258d`; the workbench and deliverable register hold the research and its reviewed versions.
+
+- [M1.1 — Architecture and mechanisms](deliverables/m1/reviewer-resources/m1.1-review-listening-guide-short.md)
+- [M1.2 — Dependencies and critical questions](deliverables/m1/reviewer-resources/m1.2-review-listening-guide-short.md)
+- [M1.3 — Scenarios and legitimate lookalikes](deliverables/m1/reviewer-resources/m1.3-review-listening-guide-short.md)
+- [M1.4 — Current system to litepaper map](deliverables/m1/reviewer-resources/m1.4-review-listening-guide-short.md)
+
 ## Working structure
 
 Five native milestones group the work: litepaper foundation, incentive and evidence tests, an evaluation of whether and where to expand the litepaper, bounded validation, then pilot and handoff. Each has a tracking issue and a Project overview card. Task issues are linked as sub-issues and assigned to the same native milestone. Each task records a question, expected artifact, completion criteria, dependencies and reviewed deliverables. The milestones describe the reasoning path; useful work can overlap across them.
