@@ -42,10 +42,10 @@ Findings, conclusions and proposed critical questions in the workbench are resea
 
 These supporting review guides summarize M1.1–M1.4 for listening, each labeled about twelve minutes. They retain their source basis at commit `eec258d`; the workbench and deliverable register hold the research and its reviewed versions.
 
-- [M1.1 — Architecture and mechanisms](deliverables/m1/reviewer-resources/m1.1-review-listening-guide-short.md)
-- [M1.2 — Dependencies and critical questions](deliverables/m1/reviewer-resources/m1.2-review-listening-guide-short.md)
-- [M1.3 — Scenarios and legitimate lookalikes](deliverables/m1/reviewer-resources/m1.3-review-listening-guide-short.md)
-- [M1.4 — Current system to litepaper map](deliverables/m1/reviewer-resources/m1.4-review-listening-guide-short.md)
+- [M1.1 — Architecture and mechanisms](docs/reviewer-resources/m1.1-review-listening-guide-short.md)
+- [M1.2 — Dependencies and critical questions](docs/reviewer-resources/m1.2-review-listening-guide-short.md)
+- [M1.3 — Scenarios and legitimate lookalikes](docs/reviewer-resources/m1.3-review-listening-guide-short.md)
+- [M1.4 — Current system to litepaper map](docs/reviewer-resources/m1.4-review-listening-guide-short.md)
 
 ## Working structure
 
