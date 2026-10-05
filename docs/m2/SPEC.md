@@ -1,6 +1,6 @@
 # M2 specification: test litepaper incentives and evidence limits
 
-Version **0.4 · 2026-10-05**. Status: **drafted**. Revision history is at the end. Owner: Shane (@moatus).
+Version **0.5 · 2026-10-05**. Status: **drafted**. Revision history is at the end. Owner: Shane (@moatus).
 
 This specification says what M2 must produce and specifies its first unit of work, Slice 1, in enough detail for an agent to carry it out. How the work is run, reviewed and handed between agents is in the [runbook](RUNBOOK.md). The milestone's definition is in [MILESTONES.md](../../MILESTONES.md#m2--test-litepaper-incentives-and-evidence-limits); this file does not change it.
 
@@ -281,6 +281,7 @@ Each stage's retrospective (runbook §9) reports on the runbook parts it used. B
 | Illustrative network scale: the paper's year-0 figures, $1.1M fees and $35M mint per year | Confirmed by the owner, 2026-10-05 |
 | Run logs and handoff notes | Kept local, outside the public repository (runbook §7.4); the owner may migrate them once the process is settled. Decided by the owner, 2026-10-05 |
 | Gate reviewers | A fresh agent reviews each stage of a slice run as it finishes; the owner reviews the slice before any step is marked reviewed |
+| Branching | Work stays off `main`. `m2` is the integration branch; each slice runs on `m2-slice-NN-<slug>` and merges into `m2` after owner review. Decided by the owner, 2026-10-05 |
 | Publishing | Agents commit to the slice branch locally; pushes, PRs and issue comments only with owner approval |
 | `carried_to` for M2.3 conclusions | Open. Default: `carried_to: M2`, with the disposition in the statement. Alternative: add an M3 stage page to the workbench so that conclusions can name M3 |
 | Order of runs | Slice 1 (pilot), then P1 (stake movement speed) as a short second run, subject to a data-access decision; then Slice 2 onward |
@@ -293,3 +294,4 @@ Each stage's retrospective (runbook §9) reports on the runbook parts it used. B
 | 0.2 | 2026-10-05 | Owner decisions recorded: year-0 scale; run logs local |
 | 0.3 | 2026-10-05 | Slice 1 rescoped as a pilot to test the runbook: one evidence pair, a reduced sweep, deferred items (§5.9), process coverage (§5.10); P1 proposed as the second run |
 | 0.4 | 2026-10-05 | Fixes from an independent review: ID blocks for parallel stages, register column written by Stage D, `R_y` handling, concrete fixtures, marginal and average returns, `q*` defined, emissions labels, validator share assumption, Stage C files and columns, `carried_to` default, pilot outputs as CSV/Markdown |
+| 0.5 | 2026-10-05 | Branching decision recorded (§6) |

@@ -1,6 +1,6 @@
 # M2 runbook
 
-Version **0.4 · 2026-10-05**. Status: **drafted**. Owner: Shane (@moatus).
+Version **0.5 · 2026-10-05**. Status: **drafted**. Owner: Shane (@moatus).
 
 How M2 work is picked up, carried out, reviewed, handed on and improved. What M2 must produce, and Slice 1 in detail, are in the [specification](SPEC.md). Different agents may run different stages; this runbook is written so that each can start cold.
 
@@ -34,11 +34,11 @@ Open slice → A Reconstruct → Gate A → B Model ┐
           → Owner review → Register and report → Retrospective → Runbook update
 ```
 
-1. **Open the slice** (orchestrator or owner). Create the branch `m2/slice-NN-<slug>` from an up-to-date `main`. Copy `../validator-track-runs/m2/_TEMPLATE.md` to `../validator-track-runs/m2/slice-NN.md`, then fill in the header and the status table. Confirm that the owner has settled the decisions in specification §6. Commit the run log in the run-log repository: `M2 slice NN: open run log`.
+1. **Open the slice** (orchestrator or owner). Create the branch `m2-slice-NN-<slug>` from an up-to-date `m2` (§7.1). Copy `../validator-track-runs/m2/_TEMPLATE.md` to `../validator-track-runs/m2/slice-NN.md`, then fill in the header and the status table. Confirm that the owner has settled the decisions in specification §6. Commit the run log in the run-log repository: `M2 slice NN: open run log`.
 2. **Stage A.** It must pass Gate A before B or C starts, because both depend on its register.
 3. **Stages B and C** may run in parallel, by different agents, on the same branch in the same working tree. Each edits only its own experiment folder and its own records, takes IDs only from its reserved block (specification §5.7), stages only its own paths (`git add <paths>`, never `git add -A` or `git commit -a`), and leaves pages owned by other stages alone. Workbench writes are serialized (§4.1).
 4. **Stage D** starts when both B and C have passed their gates, or when the slice omits one.
-5. **Owner review.** The owner reviews the slice's changes to the step pages. Only then may a step's status become `reviewed` (§7.3).
+5. **Owner review.** The owner reviews the slice's changes to the step pages. Only then may a step's status become `reviewed` (§7.3), and only then is the slice branch merged into `m2` (§7.1).
 6. **Retrospective and runbook update** (§9) happen before the next slice opens.
 
 **The first slice is a pilot** (specification §5). Its purpose includes testing this runbook, so every stage's retrospective is mandatory and specific, and the runbook update after it is required before Slice 2 opens. Where possible, assign Stages B, C and D to different agents so that cold pickup is tested.
@@ -165,7 +165,7 @@ uv run --no-project --with playwright python3 word_budget.py /tmp/workbench-word
 
 ### 7.1 Branches and commits
 
-One branch per slice: `m2/slice-NN-<slug>`. Make normal commits only: no force-push and no history rewriting. End commit messages with the attribution line the environment provides. Never stage local-only agent context files.
+M2 work happens outside `main`. The integration branch is `m2`; it holds the specification, this runbook and every merged slice. Each slice gets its own branch, `m2-slice-NN-<slug>`, created from `m2` (a hyphen, not a slash: Git cannot hold both `m2` and `m2/…`). After the owner has reviewed a slice, the slice branch is merged into `m2` with a merge commit; never rebase or squash it. When and how `m2` reaches `main` is the owner's decision. Make normal commits only: no force-push and no history rewriting. End commit messages with the attribution line the environment provides. Never stage local-only agent context files.
 
 ### 7.2 Publishing
 
@@ -219,3 +219,4 @@ Agents propose runbook changes in the run log. They edit this file only when ass
 | 0.2 | 2026-10-05 | Run logs moved out of the public repository to a local run-log repository (§0, §2, §3.4, §7.2, §7.4) | Owner decision |
 | 0.3 | 2026-10-05 | Slice 1 designated a pilot: mandatory retrospectives, required runbook update, different agents per stage where possible (§2) | Owner decision (specification 0.3) |
 | 0.4 | 2026-10-05 | Fixes from an independent review: rules for parallel stages (shared tree, own paths, re-export under the lock, ID blocks); relative run-log path and main-clone rule (§7.4, §7.5); `step_status` stays in progress across slices; word budget and separate check copies; unit-test command; Gate B exemptions; `reviewed_by` only by the owner or a named human; scope-scan wording | Independent review of specification 0.3 and runbook 0.3 |
+| 0.5 | 2026-10-05 | Branching: `m2` is the integration branch; slices use `m2-slice-NN-<slug>` from `m2` and merge back after owner review (§2, §7.1) | Owner decision |
