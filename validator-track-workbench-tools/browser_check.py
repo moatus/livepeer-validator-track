@@ -129,9 +129,21 @@ with sync_playwright() as p:
     check("the Next column reads each step's own next line, not the following step's title",
           nxt == [page.evaluate("s => $tw.wiki.getTiddler(s).fields.step_next || '—'", s) for s in path]
           and not any(n == c for n, c in zip(nxt, caps[1:])), str(nxt))
+    linked = h.locator("table.vtw-stand .vtw-produced a, table.vtw-stand .vtw-produced button").count()
+    # The zero case must not depend on some step still lacking outputs: empty the last step's
+    # outputs in the page, check the zero rendering, then restore the field.
+    last, stand = path[-1], '[data-tiddler-title="Home"] table.vtw-stand'
+    saved_outputs = page.evaluate("s => $tw.wiki.getTiddler(s).fields.step_outputs || ''", last)
+    page.evaluate("s => $tw.wiki.addTiddler(new $tw.Tiddler($tw.wiki.getTiddler(s), {step_outputs: ''}))", last)
+    try:
+        page.wait_for_function("sel => (document.querySelector(sel) || {innerText: ''}).innerText.includes('None recorded yet')", arg=stand, timeout=5000)
+        zero_ok = True
+    except Exception:
+        zero_ok = False
+    page.evaluate("([s, v]) => $tw.wiki.addTiddler(new $tw.Tiddler($tw.wiki.getTiddler(s), {step_outputs: v}))", [last, saved_outputs])
+    page.wait_for_timeout(200)
     check("Produced counts link somewhere and zero reads None recorded yet",
-          h.locator("table.vtw-stand .vtw-produced a, table.vtw-stand .vtw-produced button").count() >= 3
-          and "None recorded yet" in h.locator("table.vtw-stand").inner_text())
+          linked >= 3 and zero_ok, f"links={linked} zero={zero_ok}")
     check("at most five headline conclusions, caption links only",
           1 <= h.locator("ul.vtw-headlines li").count() <= 5 and h.locator("ul.vtw-headlines .vtw-status").count() == 0)
     check("a legend sits where step badges first appear on Home",
