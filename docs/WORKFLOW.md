@@ -29,7 +29,7 @@ Keep a path from source to recommendation: litepaper objective or provision, ass
 
 ## Milestones and dates
 
-Native repository milestones are the grouping and due-date record. Overview issues summarize the outcome and link their task sub-issues. Keep the Markdown overview consistent at reporting points. Target dates are not yet agreed; do not interpret the reporting setup deadline as every milestone's delivery date.
+Native repository milestones are the grouping and due-date record. Overview issues summarize the outcome and link their task sub-issues. Keep the Markdown overview consistent at reporting points. M2–M5 target dates are agreed and listed in [MILESTONES.md](../MILESTONES.md). The Project Target date field mirrors milestone deadlines on overview cards; task dates can be set separately when agreed. Milestone budgets are listed in the native milestone descriptions, overview issues and Markdown overview, and mirrored in the Project Budget (USD) field on overview cards. Do not interpret the reporting setup deadline as every milestone's delivery date.
 
 This repository is the validator track's research and reporting hub. Tasks implemented elsewhere need one reporting issue here linking the authoritative external work. Do not duplicate full milestones or artifacts across repositories simply to show them on a board.
 
