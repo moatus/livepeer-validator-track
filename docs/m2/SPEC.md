@@ -1,6 +1,6 @@
 # M2 specification: test litepaper incentives and evidence limits
 
-Version **0.5 · 2026-10-05**. Status: **drafted**. Revision history is at the end. Owner: Shane (@moatus).
+Version **0.6 · 2026-10-06**. Status: **drafted**. Revision history is at the end. Owner: Shane (@moatus).
 
 This specification says what M2 must produce and specifies its first unit of work, Slice 1, in enough detail for an agent to carry it out. How the work is run, reviewed and handed between agents is in the [runbook](RUNBOOK.md). The milestone's definition is in [MILESTONES.md](../../MILESTONES.md#m2--test-litepaper-incentives-and-evidence-limits); this file does not change it.
 
@@ -87,12 +87,12 @@ The two halves are reported separately (SC-07 requires this). A positive return 
 | --- | --- |
 | Critical questions | GT-03 (full), GT-01 (its smallest test, for SC-07 beside SC-23) |
 | Cases | SC-07, SC-23, SC-01; SC-06 for context only (its arithmetic matches SC-23; its evidence pair belongs to Slice 2); claim timing SC-14, SC-15, SC-22 |
-| Findings | FR-01, FR-19, FR-23, FR-24, FR-26, FR-35, FR-40, FR-41, FR-45 |
+| Findings | FR-01, FR-19, FR-23, FR-24, FR-26, FR-35, FR-40, FR-41, FR-42, FR-45 |
 | Design questions | VD-05, VD-06, VD-09, VD-12, VD-14, VD-15, VD-19 |
 | Conclusions | CN-05, CN-07, CN-17, CN-19, CN-20 |
 | Claims | CL-01, CL-02, CL-03, CL-05, CL-06, CL-07 |
 | Experiment | EX-01 and `experiments/m1/baseline-accounting/` |
-| Litepaper | L51–63, L79–90, L107–109, L117–121, L128–172, L205–235 |
+| Litepaper | L51–63, L79–90, L107–109, L117–121, L128–172, L196, L205–235. Two passages carry most of the weight and should be quoted, not paraphrased with emphasis: L172 (the stake cap and the emissions cap do not stop a larger share of a fixed pool; "that's what validator scoring and the 7-round rewards delay are for") and L109 (the delay is argued for a one-round fee spike) |
 | Step page | M2.1 "Reconstruction checklist from the M1 sample" (rules to state, consequences counted once, timeline) |
 
 ### 5.3 Stage A — Reconstruct the slice (M2.1)
@@ -113,8 +113,9 @@ Produce, on the M2.1 step page:
 2. **Control map** for three setups: an independent customer (SC-01), an integrated organization that controls payer and node (SC-07, SC-23), and the same organization with outside delegators. The third setup is mapped but not modelled in the pilot (§5.9). For each: who controls customer funds, routing, operator addresses, stake, the reward claim and outside reward recipients.
 3. **Timeline** for the slice: the job and settlement in round n, fee attribution, stake snapshot, evidence arrival, score updates, the first claimable round n+7, a later claim, and the 21-round stake movement.
 4. **Intended relationships checked.** FR-26, FR-19, FR-35, FR-40 and FR-23 set out the paper's reasons. For each, state the condition it needs and whether the slice's tests can assess it.
-5. **Tests confirmed or replaced.** Confirm, amend or replace the proposed tests on GT-03 and GT-01 (SC-07 beside SC-23) against §5.4 and §5.5. Expected amendments, each to be recorded with its reason: GT-01's test begins with SC-06 beside SC-07 and SC-23, and the pilot takes only SC-07 beside SC-23 (SC-06 moves to Slice 2); GT-03's test lists SC-03, SC-04 and outside reward ownership, which the pilot maps but does not model (§5.9). Stage A edits GT-03's and GT-01's `smallest_test` fields to match, and records each amendment in the run log and on the step page.
-6. **One conclusion record** (CN, `task: M2.1`) stating what the reconstruction establishes for this slice and what it hands to Stage B and C.
+5. **Structural overlap noted.** The highest stake ceilings sit with the nodes eligible to validate (FR-42, L81–83). Record, for the `s = 0.20` position in Stage B, whether such a node has room below its ceiling, and hand that to Stage D and Slice 3 as an input. High stake and common ownership are not misconduct, and no real operator is discussed.
+6. **Tests confirmed or replaced.** Confirm, amend or replace the proposed tests on GT-03 and GT-01 (SC-07 beside SC-23) against §5.4 and §5.5. Expected amendments, each to be recorded with its reason: GT-01's test begins with SC-06 beside SC-07 and SC-23, and the pilot takes only SC-07 beside SC-23 (SC-06 moves to Slice 2); GT-03's test lists SC-03, SC-04 and outside reward ownership, which the pilot maps but does not model (§5.9). Stage A edits GT-03's and GT-01's `smallest_test` fields to match, and records each amendment in the run log and on the step page.
+7. **One conclusion record** (CN, `task: M2.1`) stating what the reconstruction establishes for this slice and what it hands to Stage B and C.
 
 ### 5.4 Stage B — Economic example (M2.2): `EX-03` "Self-funded real job: incremental return"
 
@@ -227,8 +228,19 @@ The packet format, the matrix columns and `verify.py` are written to be reused b
 3. Update finding statuses where the results warrant it (for example FR-01 from `hypothesis` to `supported`, `weakened` or `rejected`, under conditions stated in the statement). Updated M1 records keep `stage: M1` and `introduced_by`; set `last_changed_by` to the M2 step.
 4. **Compare plausible completions:** the MFS and appendix readings (VD-06), the three emissions concepts and the control (VD-14), treatment of the unassigned remainder (VD-12), and the narrow and broad self-dealing standards (VD-09). Where a deferred variant (§5.9) could change the comparison, say so, and recommend whether Slice 1b should run. A plausible completion is a choice among options the paper states, or a specification it plainly implies. For each, record whether it resolves the concern or leaves it open, and its cost to honest participants. Do not propose new mechanisms.
 5. Set GT-03's status to `significant`, `not-significant` or `unresolved`, with conditions in `would_change`.
-6. Write CN records (`task: M2.3`): the concern's assessment, its conditions, and its disposition (M3, build list, evidence work or a policy choice), stated in `statement`. Set `carried_to: M2`, because lint accepts only existing stage or task pages and the workbench has no M3 page (§6). List the paper's strengths that the tests leave standing.
-7. Add the slice's M3 handoff items to the M2.3 page.
+6. **Assess each of the paper's defenses against its operating condition.** A defense counts as effective only where its condition is satisfied. Report a defense that works as counterevidence, with its actual reach, rather than dismissing it because it is incomplete elsewhere.
+
+   | Defense | What must be established for it to work in this case |
+   | --- | --- |
+   | Network fee and burn | The unrecovered network half and costs outweigh the extra collectible reward; a positive burn alone is not enough |
+   | Stake ceiling | The relevant share is constrained; its effect on share is distinguished from the pool's size; whether added stake reopens the route, at what cost and delay |
+   | Emissions cap | Pool growth is bounded; separately, whether a larger share of the bounded pool remains attractive |
+   | Claim delay | The extra time yields actionable evidence or changes the payoff; elapsed time is not evidence; the median current at claim applies |
+   | Stake lock | The beneficiary bears an opportunity or liquidity cost large enough to matter; locked principal is not assumed lost |
+   | Honesty scoring | A defined violation can be established at acceptable error, effort and timing, and enough validators have reason to act on it, including validators with room below their own ceilings (FR-42). The paper names this defense for share capture (L172); Stage C supplies the evidence half, and Slice 3 the incentive half |
+
+7. Write CN records (`task: M2.3`): the concern's assessment, its conditions, and its disposition (M3, build list, evidence work or a policy choice), stated in `statement`. Set `carried_to: M2`, because lint accepts only existing stage or task pages and the workbench has no M3 page (§6). List the paper's strengths that the tests leave standing.
+8. Add the slice's M3 handoff items to the M2.3 page.
 
 ### 5.7 Record identifiers
 
@@ -279,10 +291,10 @@ Each stage's retrospective (runbook §9) reports on the runbook parts it used. B
 | --- | --- |
 | Slice 1 scope | Run as a pilot (§5, deferred items in §5.9), including the appendix reading and the evidence stage with one pair. Decided by the owner, 2026-10-05 |
 | Illustrative network scale: the paper's year-0 figures, $1.1M fees and $35M mint per year | Confirmed by the owner, 2026-10-05 |
-| Run logs and handoff notes | Kept local, outside the public repository (runbook §7.4); the owner may migrate them once the process is settled. Decided by the owner, 2026-10-05 |
-| Gate reviewers | A fresh agent reviews each stage of a slice run as it finishes; the owner reviews the slice before any step is marked reviewed |
+| Run logs, briefs and review reports | Kept outside the public repository, in a separate local repository with its own history (runbook §7.4); the owner may publish them once the process is settled. Decided by the owner, 2026-10-05 and 2026-10-06 |
+| Roles | One integrator per slice, the only agent that imports into the workbench and commits; one writer agent per stage; a fresh reviewer of a different model at each gate (runbook §1). For the pilot the owner chose the writer and reviewer models. The owner reviews the slice before any step is marked reviewed. Decided by the owner, 2026-10-06 |
 | Branching | Work stays off `main`. `m2` is the integration branch; each slice runs on `m2-slice-NN-<slug>` and merges into `m2` after owner review. Decided by the owner, 2026-10-05 |
-| Publishing | Agents commit to the slice branch locally; pushes, PRs and issue comments only with owner approval |
+| Publishing | The integrator commits to the slice branch locally; pushes, PRs and issue comments only with owner approval |
 | `carried_to` for M2.3 conclusions | Open. Default: `carried_to: M2`, with the disposition in the statement. Alternative: add an M3 stage page to the workbench so that conclusions can name M3 |
 | Order of runs | Slice 1 (pilot), then P1 (stake movement speed) as a short second run, subject to a data-access decision; then Slice 2 onward |
 
@@ -295,3 +307,4 @@ Each stage's retrospective (runbook §9) reports on the runbook parts it used. B
 | 0.3 | 2026-10-05 | Slice 1 rescoped as a pilot to test the runbook: one evidence pair, a reduced sweep, deferred items (§5.9), process coverage (§5.10); P1 proposed as the second run |
 | 0.4 | 2026-10-05 | Fixes from an independent review: ID blocks for parallel stages, register column written by Stage D, `R_y` handling, concrete fixtures, marginal and average returns, `q*` defined, emissions labels, validator share assumption, Stage C files and columns, `carried_to` default, pilot outputs as CSV/Markdown |
 | 0.5 | 2026-10-05 | Branching decision recorded (§6) |
+| 0.6 | 2026-10-06 | Roles and run-log decisions recorded; FR-42 and the paper's key passages added to Stage A; defense-by-defense assessment added to Stage D |
