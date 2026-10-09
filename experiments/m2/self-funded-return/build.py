@@ -9,7 +9,7 @@ from dataclasses import dataclass, replace
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-SOURCE = HERE.parents[2] / "docs" / "litepaper-2.0.md"
+SOURCE = HERE.parents[2] / "docs" / "sources" / "litepaper-2026-09.md"
 SOURCE_SHA256 = "5fc153408fb636d9750788ae987ada6daaa9fc3df3e44f70cadde51a6158fb71"
 UNDEFINED = "undefined/needs rule"
 CONCEPTS = ("C0", "C1", "C2", "C3")

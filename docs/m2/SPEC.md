@@ -1,8 +1,8 @@
 # M2 specification: test litepaper incentives and evidence limits
 
-Version **0.6 · 2026-10-06**. Status: **drafted**. Revision history is at the end. Owner: Shane (@moatus).
+Version **0.8 · 2026-10-09**. Status: **drafted**. Revision history is at the end. Owner: Shane (@moatus).
 
-This specification says what M2 must produce and specifies its first unit of work, Slice 1, in enough detail for an agent to carry it out. How the work is run, reviewed and handed between agents is in the [runbook](RUNBOOK.md). The milestone's definition is in [MILESTONES.md](../../MILESTONES.md#m2--test-litepaper-incentives-and-evidence-limits); this file does not change it.
+This specification defines M2 and its shared modeling contract. The completed September pilot is preserved in §5; the next active work is [Slice 2](SLICE-02.md), a connected October scenario model. How the work is run, reviewed and handed between agents is in the [runbook](RUNBOOK.md). The milestone's definition is in [MILESTONES.md](../../MILESTONES.md#m2--test-litepaper-incentives-and-evidence-limits); this file does not change it.
 
 ## 1. Purpose and boundary
 
@@ -10,7 +10,7 @@ M2 tests the litepaper. It reassembles the mechanisms M1 took apart, tests the c
 
 Boundaries that hold for every slice:
 
-- **Litepaper only.** M2 examines the paper's own mechanisms and the readings the paper allows. It does not describe or compare against a successor mechanism. A fixed emissions pool, where used, is an analytical control and not a proposed policy.
+- **Litepaper only.** M2 examines the paper's own mechanisms and the readings the paper allows. It does not describe or compare against a successor mechanism. The October paper proposes a fee-independent decaying emissions ceiling; a fixed one-round allowance may represent that schedule at a declared round. The September pilot’s fixed-pool control remains historical, not a claim about October policy.
 - **Small, not simulated.** A table, a calculation or a bounded case comparison that answers its question is enough. No network simulation, agent-based framework or Monte Carlo study is in scope for M2. If a question appears to need one, stop and record why in the run log; the owner decides.
 - **Conditional results.** Every result names the rules, interpretations and assumptions it holds under. A profitable deviation with everyone else held fixed is not an equilibrium and not evidence of prevalence. Modelled vulnerability and observed prevalence are reported separately.
 - **Distinct claims.** Payment, execution, correctness, availability, independent demand and economic value are separate claims (CL-01 to CL-06). The paper's multiplier concerns dishonesty, not service quality.
@@ -28,6 +28,8 @@ M2 is complete when a reviewer can choose any of the nine critical questions (GT
 
 These support the three existing M2 deliverables. They are not a parallel report. Reviewed versions are recorded by commit in the [deliverable register](../../deliverables/README.md), as for M1.
 
+**Connected result required.** M2 also leaves one reusable scenario ledger that connects capability entry, price, outside demand and routing, controlled purchases, execution costs, stake, commissions and validator scores. Later studies amend this ledger or explicitly explain why they cannot. An inventory of independent tests is insufficient. Report job volume, customer spending, network fees, operator and delegator receipts and net income, buyback spending and tokens burned, scheduled ceiling, actual issuance and unminted node allowance, with effects on non-selected operators. [Slice 2](SLICE-02.md) establishes the first bounded implementation; remaining slices test its deferred assumptions.
+
 **"Unresolved" counts as a result** only when the inquiry has identified the missing rule or evidence that leaves it unresolved. A test that was proposed and never run does not count.
 
 ## 3. Methods
@@ -40,6 +42,12 @@ These support the three existing M2 deliverables. They are not a parallel report
 | **Rule reading** | Questions about governance or rule sequencing that need no numbers | A timeline or comparison table on the step page | The stated rule variants and where the result changes between them |
 
 Synthetic case packets can test the logic of a judgment. They cannot establish whether evidence exists in practice, how long review takes, or how often reviewers err. Claims of that kind need inspected sources or a real, bounded exercise.
+
+### Shared measured network baseline
+
+All network-grounded M2 modeling uses the single frozen artifact [`livepeer-arbitrum-2026-10-09-v1.json`](../../experiments/m2/network-snapshot/livepeer-arbitrum-2026-10-09-v1.json), through its [reader and usage contract](../../experiments/m2/network-snapshot/README.md). Record the snapshot ID, content hash, chosen fee series and observation window/round in each result. Keep all pools and relevant fee recipients in network denominators even when modeling only selected operators. Measured current-system facts stay separate from the model's declared litepaper version, costs, scores, ownership assumptions, strategic choices and overrides. Refreshes receive new versions; do not modify the baseline in place. The original Slice 1 illustrative cases and arithmetic fixtures retain their stated inputs and historical results; network-grounded extensions load this shared baseline. The snapshot remains drafted until separately reviewed.
+
+Agent readers use `experiments/m2/network-snapshot/query.py catalog` to discover fields and exact source paths, then retrieve bounded summaries, operator rows, round pools or evidence extracts. Do not ingest the whole snapshot into an agent's context. Bulk calculations use the Python reader locally and return only their outputs; every extract carries the snapshot identity/hash and selected source paths. The [agent access instructions](../../experiments/m2/network-snapshot/README.md#agent-access-without-loading-the-dataset-into-context) define pagination and output limits.
 
 ## 4. How M2 is executed: slices
 
@@ -56,22 +64,36 @@ Each slice has four stages:
 
 A slice may omit B or C where its question needs only one. Every stage ends at a review gate (runbook §6).
 
-### Slice catalogue (proposed order; Stage A of each slice may revise it)
+### Active sequence and preserved study identities
 
-| Slice | Critical questions | Cases | Main methods | Notes |
-| --- | --- | --- | --- | --- |
-| **1 — Self-funded real usage (pilot)** | GT-03; GT-01 for one pair only | SC-07 beside SC-23; SC-01 as the cooperative reference | Economic example; evidence tabletop | Specified in §5 |
-| 1b — Self-funded follow-up | GT-03 | As Slice 1 | Economic example | Run only if Slice 1 shows that a deferred variant (§5.9) could change a sign |
-| 2 — Evidence before the claim | GT-01 (remaining pairs) | SC-07 beside SC-06; SC-16 beside SC-17; SC-11 beside SC-10 | Evidence tabletop | Reuses the Slice 1 packet format |
-| 3 — Will validators score defensibly? | GT-02, GT-09 | SC-09, SC-19, SC-20, SC-21, SC-24, SC-35, SC-36, SC-37 | Small repeated payoff table; seat-control cost table | Uses Slice 1–2 evidence assumptions; GT-09 uses data note P1 |
-| 4 — Defending a reward | GT-06 | SC-25 beside SC-26 | Evidence tabletop; effort and access table | |
-| 5 — Delegation in time | GT-04 | SC-27 beside SC-28; SC-04, SC-08 | Round-by-round example | Uses data note P1 (HQ-01) |
-| 6 — Access to paid work | GT-07 | SC-29, SC-30, SC-31; SC-03, SC-12 | Selection comparison under stated rules | Needs a stated selection rule (CN-21) |
-| 7 — Rule changes while rewards are pending | GT-08 | SC-32, SC-33, SC-34 | Rule reading (timeline) | |
-| 8 — LPT price | GT-10 | SC-38 beside SC-39 | Sensitivity; manipulation cost only where a concrete price source and liquidity assumption exist | |
-| P1 — Current-system data notes | Supports GT-04, GT-09, HQ-03 | — | Data notes | Proposed as the second run, starting with stake movement speed (HQ-01), to test the data-note method and a light run. Then concentration of top stake and the shape of real fee spikes. Data access and any API keys are owner decisions |
+The October preparation is authorized; it does not imply owner acceptance of the pilot or publication. The second numbered slice is now the connected model. Historical references to “Slice 2 — Evidence before the claim” mean the deferred study **E2** below, not the new Slice 2. Existing case and experiment IDs retain their identities.
 
-## 5. Slice 1 — Self-funded real usage (pilot)
+| Slice / study | Critical questions | Cases and method | Sequence and dependency |
+| --- | --- | --- | --- |
+| **1 — Self-funded real usage (September pilot)** | GT-03; GT-01 pair | SC-07 / SC-23; SC-01; EX-03 and EX-04 | Completed stage work; §5 preserves original source and scope. Human acceptance is not inferred. |
+| October reconciliation | GT-03 and affected M1/M2 claims | EX-05; `experiments/m2/october-reconciliation/` | Migration bridge: scheduled ceiling, MFS, non-minting and surviving evidence limits; does not relabel EX-03 as October. |
+| **2 — Capability, pricing and self-funded traffic** | GT-03, GT-07; bounded GT-01, GT-04, GT-10 inputs | [Full brief](SLICE-02.md); EX-06 planned | Next numbered slice. Shared snapshot, cooperative → competition → strategic cases, focused evidence comparison and one bounded response. |
+| **E2 — Evidence before the claim (former Slice 2)** | GT-01 remaining pairs | SC-07 / SC-06; SC-16 / SC-17; SC-11 / SC-10; tabletops | Retained in full. Slice 2 may supply related-party evidence inputs; any pair not actually examined stays pending. Run before relying on these evidence assumptions in Slice 3. |
+| 3 — Will validators score defensibly? | GT-02, GT-09 | SC-09, SC-19–SC-21, SC-24, SC-35–SC-37; payoff and seat-control tables | Uses evidence results and P1 concentration note; feeds tested scores/costs into shared ledger. |
+| 4 — Defending a reward | GT-06 | SC-25 / SC-26; evidence, effort and access | Retained; return burden/evidence limits to ledger. |
+| 5 — Delegation in time | GT-04 | SC-27 / SC-28, SC-04, SC-08; round-by-round example | Uses P1 HQ-01; tests movement assumptions left open by Slice 2. |
+| 6 — Access to paid work | GT-07 | SC-29–SC-31, SC-03, SC-12; selection comparison | Slice 2 handles bounded price/routing inputs; broader access and entry study retained. |
+| 7 — Rule changes while rewards are pending | GT-08 | SC-32–SC-34; rule timeline | Retained under October source. |
+| 8 — LPT price | GT-10 | SC-38 / SC-39; sensitivity | Retained; concrete price-source/liquidity evidence needed for manipulation-cost claims. |
+| P1 — Current-system data notes | GT-04, GT-09, HQ-03 | HQ-01 stake movement speed; concentration and real fee spikes | Retained, resequenced from the proposed second run. Run before dependent claims; the frozen snapshot does not establish movement speed or capability demand. |
+| 1b — Historical follow-up | GT-03 | September deferred variants in §5.9 | Delegation/cost questions move into October Slice 2. C1 ratios/years stay historical and run only for an explicit historical question, not as current October alternatives. |
+
+### Source and interpretation contract
+
+Active work cites [October source](../litepaper-2.0.md), [authoritative PDF](../sources/litepaper-2026-10.pdf), and the source hash. Use PDF page plus section/quotation; line locators refer to that exact extraction only. September `L…` references in §5–6 refer exclusively to [the archived September text](../sources/litepaper-2026-09.md). Never reuse them against October.
+
+October resolves the choice among September emissions concepts by stating a decaying token ceiling, but its appendix still describes work-proportional rewards weighted by scores. Register the surviving main-text/appendix mismatch; do not call it resolved. Main-text MFS is the base reading; keep a bounded appendix comparison or explicitly document which conclusions remain reading-dependent. Distinguish scheduled emission allowance, claimable node rewards, eventual actual mint and unminted node allowance. Validator and treasury portions mint in full under the paper; score application and claim timing must be declared.
+
+Every register row labels scope as **computed**, **stated premise** or **deferred**. Separate sweep inputs from alternate rule readings. A test cannot confirm its own premise. Compare paper-stated or plainly implied completions; identify exploratory choices separately and never credit an uncomputed destination as a defense.
+
+## 5. Slice 1 — Self-funded real usage (historical September pilot)
+
+**Historical specification.** This section records the rules and IDs under which EX-03/EX-04 were produced. Its September source lines, emissions concepts, original slice numbering and future-tense instructions are retained for reproducibility, not as the active work order. The October reconciliation and §4 supersede its current-source assumptions and next-run sequence. Evidence verdicts mean obtainable evidence separates the pair; a procedural cut for failure to explain is a consequence, not proof of separation. Read that clarification with the original §5.5 schema.
 
 Slice 1 has two purposes. Its research purpose is the core stake-cap (MFS) question: does the stake ceiling limit the payoff from paying one's own node for real work, under each reading of the node reward and each emissions concept? Its process purpose is to exercise every part of the runbook once (§5.10). Where the two pull apart, the scope stays small and the deferred items are listed in §5.9.
 
@@ -285,7 +307,9 @@ Each stage's retrospective (runbook §9) reports on the runbook parts it used. B
 | Step-page status fields across M2.1, M2.2 and M2.3 | A, B, C, D |
 | Owner review, then retrospective and runbook update | End of slice |
 
-## 6. Owner decisions for Slice 1
+## 6. Historical owner decisions for Slice 1
+
+These decisions record the pilot. The October migration and Slice 2 preparation supersede the old proposed run order; they do not confer review or publication status.
 
 | Decision | Status |
 | --- | --- |
@@ -308,3 +332,5 @@ Each stage's retrospective (runbook §9) reports on the runbook parts it used. B
 | 0.4 | 2026-10-05 | Fixes from an independent review: ID blocks for parallel stages, register column written by Stage D, `R_y` handling, concrete fixtures, marginal and average returns, `q*` defined, emissions labels, validator share assumption, Stage C files and columns, `carried_to` default, pilot outputs as CSV/Markdown |
 | 0.5 | 2026-10-05 | Branching decision recorded (§6) |
 | 0.6 | 2026-10-06 | Roles and run-log decisions recorded; FR-42 and the paper's key passages added to Stage A; defense-by-defense assessment added to Stage D |
+| 0.7 | 2026-10-09 | Owner requested a single reusable measured network snapshot for M2; added the shared baseline and model citation requirements, preserving the original illustrative pilot |
+| 0.8 | 2026-10-09 | October source boundary and pilot reconciliation; connected scenario accounting; next numbered Slice 2 specified; E2/P1 and all remaining studies preserved; pilot retrospective incorporated without inventing human acceptance |

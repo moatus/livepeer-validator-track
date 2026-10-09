@@ -2,6 +2,8 @@
 
 The M1 and M2 research is kept in the [research workbench](../validator-track-workbench.html) at the repository root; when a step is reviewed, record its exact commit here.
 
+The reviewed entries below remain pinned to their September source and exact commits. Current October M1 amendments, the M2 pilot and its October reconciliation are not newly accepted deliverables; the [current preparation](../docs/m2/SLICE-02.md) leaves their review status explicit.
+
 | Milestone | Task | Artifact | Finding or capability established | Exact version | Status |
 | --- | --- | --- | --- | --- | --- |
 | M1 | [M1.1 (#6)](https://github.com/moatus/livepeer-validator-track/issues/6) | [Workbench step M1.1, "How the architecture works, mechanism by mechanism"](https://github.com/moatus/livepeer-validator-track/blob/2c697f9f5b29911d2fb26fa5b26d76c61f5fdc1a/validator-track-workbench.html) | Twelve mechanisms with parts and design questions; intended relationships with their conditions; a compact cooperative flow; 13 conclusions (CN-01–CN-14, CN-04 superseded) | [`2c697f9`](https://github.com/moatus/livepeer-validator-track/commit/2c697f9f5b29911d2fb26fa5b26d76c61f5fdc1a) | Reviewed |

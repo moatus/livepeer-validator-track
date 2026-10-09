@@ -1,10 +1,12 @@
 # M2.2 self-funded real job: incremental return (EX-03)
 
+**Historical September experiment.** Its original assumptions, arithmetic and line citations are preserved. October supersedes the open emissions concepts and clarifies that unused MFS node allowances are never minted; see the [October reconciliation](../../m2/october-reconciliation/README.md). This experiment is not a current-paper result.
+
 Version **v0.1**. Status **Drafted**. This bounded example asks whether one additional real job returns more to the organization controlling payer and node than it costs, under each litepaper emissions concept and both node-entitlement readings. It implements [SPEC §5.4](../../../docs/m2/SPEC.md). All results are **illustrative** arithmetic; they are neither protocol decisions nor observations of the network.
 
 ## Source and scope
 
-Doug Petkanics, *Livepeer 2.0 Litepaper* (Sept 2026), repository snapshot [docs/litepaper-2.0.md](../../../docs/litepaper-2.0.md), SHA-256 `5fc153408fb636d9750788ae987ada6daaa9fc3df3e44f70cadde51a6158fb71`. The build refuses a changed snapshot. Relevant passages: MFS L55–63; median L84–86; claim-time score L109/L224; separate fee/burn and mint L117–121; open emissions concepts L128–172; appendix distribution L231–235. The workbench's M2.1 register I-01–I-22 supplies the readings. The intended contribution is fees for real, honest work (L35); whether the objective distinguishes reward-seeking real usage from useful internal work remains open.
+Doug Petkanics, *Livepeer 2.0 Litepaper* (Sept 2026), repository snapshot [docs/sources/litepaper-2026-09.md](../../../docs/sources/litepaper-2026-09.md), SHA-256 `5fc153408fb636d9750788ae987ada6daaa9fc3df3e44f70cadde51a6158fb71`. The build refuses a changed snapshot. Relevant passages: MFS L55–63; median L84–86; claim-time score L109/L224; separate fee/burn and mint L117–121; open emissions concepts L128–172; appendix distribution L231–235. The workbench's M2.1 register I-01–I-22 supplies the readings. The intended contribution is fees for real, honest work (L35); whether the objective distinguishes reward-seeking real usage from useful internal work remains open.
 
 The observation boundary is one round of the paper's stated accounting under those readings, with others' choices fixed. No current-system data, equilibrium, prevalence or forecast is supplied. Payment, execution, correctness, availability, independent demand, economic value and dishonesty are distinct claims. Positive return and common ownership do not establish misconduct or what a validator can detect.
 

@@ -17,3 +17,6 @@ __pycache__/
 /experiments/m2/self-funded-return/sensitivity.csv
 /experiments/m2/self-funded-return/sweep.csv
 /experiments/m2/self-funded-return/tables.md
+
+# Human-readable view derived from the authoritative measured JSON input.
+/experiments/m2/network-snapshot/snapshot-view.html

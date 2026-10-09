@@ -43,7 +43,8 @@ from pathlib import Path
 STORE_RE = re.compile(r'(<script class="tiddlywiki-tiddler-store" type="application/json">)(.*?)(</script>)', re.S)
 BACKUP_DIR = Path(__file__).resolve().parent / "backups"
 # The litepaper snapshot the workbench cites (docs/litepaper-2.0.md in this repository).
-LITEPAPER = Path(__file__).resolve().parents[1] / "docs" / "litepaper-2.0.md"
+LITEPAPER = Path(__file__).resolve().parents[1] / "docs" / "sources" / "litepaper-2026-09.md"
+OCTOBER_PAPER = Path(__file__).resolve().parents[1] / "docs" / "litepaper-2.0.md"
 
 # ---------------------------------------------------------------- store access
 
@@ -209,7 +210,10 @@ NON_PROSE_TYPES = frozenset({"text/css", "application/javascript", "application/
 # verified against both the source record and the file, their text field (and
 # only that field) is exempt from the vocabulary rules, because it is the
 # source's own wording. Every other field stays under the normal rules.
-SOURCE_SNAPSHOTS = {"$:/vtw/source/SRC-LP20": ("SRC-LP20", LITEPAPER)}
+SOURCE_SNAPSHOTS = {
+    "$:/vtw/source/SRC-LP20": ("SRC-LP20", LITEPAPER),
+    "$:/vtw/source/SRC-LP20-OCT": ("SRC-LP20-OCT", OCTOBER_PAPER),
+}
 # Reserved terms are allowed only when stage is exactly one of these.
 OPEN_STAGES = frozenset({"M3", "M4", "M5"})
 TASK_FIELDS = ("stage", "introduced_by", "last_changed_by", "task", "carried_to")
@@ -516,7 +520,8 @@ def lint_tiddlers(tiddlers: dict[str, dict]) -> tuple[list[str], list[str], int]
             if not m or m.group(1) not in tiddlers:
                 errors.append(f"{title}: source_ref {part!r} does not start with an existing SRC id")
                 continue
-            if m.group(1) == "SRC-LP20":
+            if m.group(1) in {sid for sid, _ in SOURCE_SNAPSHOTS.values()}:
+                lp_lines = int(tiddlers[m.group(1)].get("lines", "0") or 0)
                 ranges = re.findall(r"L(\d+)(?:[-–](\d+))?", m.group(2))
                 if not ranges:
                     errors.append(f"{title}: source_ref {part!r} has no line locator")
@@ -544,16 +549,19 @@ def lint_tiddlers(tiddlers: dict[str, dict]) -> tuple[list[str], list[str], int]
     # Retired reader vocabulary (errors); the scope rule above is unchanged.
     for title, f in sorted(tiddlers.items()):
         errors.extend(retired_warnings_for(title, f, exempt_text=verified_snapshot(title, f, tiddlers)))
-    # litepaper snapshot identity
-    src = tiddlers.get("SRC-LP20")
-    if not src:
-        errors.append("SRC-LP20 missing")
-    elif LITEPAPER.exists():
-        actual = hashlib.sha256(LITEPAPER.read_bytes()).hexdigest()
-        if actual != src.get("sha256"):
-            errors.append(f"SRC-LP20: litepaper sha256 {actual} != recorded {src.get('sha256')}")
-        if len(LITEPAPER.read_text(encoding="utf-8").splitlines()) != lp_lines:
-            errors.append("SRC-LP20: recorded line count does not match the file")
+    # Each source keeps its own immutable file and line coordinate system.
+    for source_id, source_path in SOURCE_SNAPSHOTS.values():
+        src = tiddlers.get(source_id)
+        if not src:
+            if source_id == "SRC-LP20":
+                errors.append(f"{source_id} missing")
+            continue
+        if source_path.exists():
+            actual = hashlib.sha256(source_path.read_bytes()).hexdigest()
+            if actual != src.get("sha256"):
+                errors.append(f"{source_id}: litepaper sha256 {actual} != recorded {src.get('sha256')}")
+            if str(len(source_path.read_text(encoding="utf-8").splitlines())) != src.get("lines"):
+                errors.append(f"{source_id}: recorded line count does not match the file")
     # Source snapshots: only registered titles may carry source_of, and they
     # must match their source record and file exactly.
     for title, f in sorted(tiddlers.items()):
