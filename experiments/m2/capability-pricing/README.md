@@ -1,5 +1,7 @@
 # EX-06: connected capability, price and network reward comparison
 
+Status: **Drafted; technical checks passed, owner research review pending.**
+
 Under October's scheduled ceiling and network-wide fee share, when do ordinary competition, capability entry and real self-funded jobs change participant receipts, net cash, burn and issuance? This finite ledger connects those choices on one measured network scale. The paper's intended contribution is real, honest work during bootstrapping (October L81–84); the accounting imposes no independent-customer or use-value eligibility criterion. A reward-objective definition remains VD-19.
 
 Addresses are used only to take measured round-4364 fee and stake shares. The roles in the scenarios are synthetic. Nothing here describes what any address owner did or intends; address stake is a proxy and no beneficial owner is identified.
