@@ -1,6 +1,6 @@
 # Slice 2: capability, pricing and self-funded traffic
 
-Status: **prepared, research not started** · 2026-10-09. This is the next numbered M2 slice under [SPEC.md](SPEC.md) and [RUNBOOK.md](RUNBOOK.md). It builds on October reconciliation EX-05 and preserves September EX-03/EX-04. Preparation does not confer human review or protocol adoption.
+Status: **drafted: connected accounting (EX-06) and evidence results (EX-07) consolidated in M2.3; owner research review pending** · 2026-10-10 (prepared 2026-10-09). This is the next numbered M2 slice under [SPEC.md](SPEC.md) and [RUNBOOK.md](RUNBOOK.md). It builds on October reconciliation EX-05 and preserves September EX-03/EX-04. Preparation does not confer human review or protocol adoption.
 
 ## Question and bounded outcome
 

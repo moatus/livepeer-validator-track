@@ -14,7 +14,7 @@ The project tests the litepaper's protocol mechanics: rewards, validation, deleg
 - [Decision log](docs/DECISIONS.md)
 - [SPE pre-proposal](https://forum.livepeer.org/t/pre-proposal-network-engineering-spe-ii/3344)
 
-The milestone and task structure is in place, and the M1 and M2 research is under way in the [research workbench](#research-workbench). M1's September steps have reviewed versions. The October source migration is a new draft; M2's first pilot has completed its stage work, and the [connected second slice](docs/m2/SLICE-02.md) is prepared but not started. Target dates and external reviewers remain to be agreed.
+The milestone and task structure is in place, and the M1 and M2 research is under way in the [research workbench](#research-workbench). M1's September steps have reviewed versions. The October source migration is a new draft; M2's first pilot has completed its stage work, and the [connected second slice](docs/m2/SLICE-02.md) is drafted with reproducible experiments EX-06 and EX-07, pending owner research review. Target dates and external reviewers remain to be agreed.
 
 ## Research workbench
 
