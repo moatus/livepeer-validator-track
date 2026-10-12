@@ -37,7 +37,7 @@ Reassemble the mechanisms from the M1 handoff into one system: participants and 
 | [M2.2 — Test the critical questions](https://github.com/moatus/livepeer-validator-track/issues/9) | Workbench step M2.2, "Testing the critical questions" | In progress: EX-03/EX-04 historical; EX-05 October bridge; Slice 2 EX-06 ledger and EX-07 evidence comparison drafted |
 | [M2.3 — Consolidate findings and design requirements](https://github.com/moatus/livepeer-validator-track/issues/15) | Workbench step M2.3, "What would resolve each concern?" | In progress: pilot consolidated; October reconciliation and Slice 2 connected comparison drafted |
 
-The [M2 specification](docs/m2/SPEC.md) preserves the completed pilot and remaining study identities. [Slice 2](docs/m2/SLICE-02.md), the connected capability/pricing comparison, is drafted and awaits owner research review; original evidence study E2, current-system notes P1 and studies 3–8 remain pending dependencies. This local work does not change issue/board review status or register an accepted M2 deliverable.
+The [M2 specification](docs/m2/SPEC.md) preserves the completed pilot and remaining study identities. [Slice 2](docs/m2/SLICE-02.md), the connected capability/pricing comparison, is drafted and awaits owner research review. [Slice 2b](docs/m2/SLICE-02B.md), strategic self-funding across network conditions, is defined and implementation pending, with [three sequential M2.1/M2.2/M2.3 workloads](docs/m2/SLICE-02B-IMPLEMENTATION.md). Original evidence study E2, current-system notes P1 and studies 3–8 remain pending dependencies. This local work does not change issue/board review status or register an accepted M2 deliverable.
 
 ## M3 — Evaluate where the litepaper could be expanded
 

@@ -1,8 +1,8 @@
 # M2 specification: test litepaper incentives and evidence limits
 
-Version **0.8 · 2026-10-09**. Status: **drafted**. Revision history is at the end. Owner: Shane (@moatus).
+Version **0.9 · 2026-10-12**. Status: **drafted**. Revision history is at the end. Owner: Shane (@moatus).
 
-This specification defines M2 and its shared modeling contract. The completed September pilot is preserved in §5; the next active work is [Slice 2](SLICE-02.md), a connected October scenario model. How the work is run, reviewed and handed between agents is in the [runbook](RUNBOOK.md). The milestone's definition is in [MILESTONES.md](../../MILESTONES.md#m2--test-litepaper-incentives-and-evidence-limits); this file does not change it.
+This specification defines M2 and its shared modeling contract. The completed September pilot is preserved in §5; [Slice 2](SLICE-02.md), the connected October scenario model, is drafted. The next defined follow-up is [Slice 2b](SLICE-02B.md), strategic self-funding across network conditions, with a [three-phase implementation specification](SLICE-02B-IMPLEMENTATION.md). How the work is run, reviewed and handed between agents is in the [runbook](RUNBOOK.md). The milestone's definition is in [MILESTONES.md](../../MILESTONES.md#m2--test-litepaper-incentives-and-evidence-limits); this file does not change it.
 
 ## 1. Purpose and boundary
 
@@ -73,6 +73,7 @@ The October preparation is authorized; it does not imply owner acceptance of the
 | **1 — Self-funded real usage (September pilot)** | GT-03; GT-01 pair | SC-07 / SC-23; SC-01; EX-03 and EX-04 | Completed stage work; §5 preserves original source and scope. Human acceptance is not inferred. |
 | October reconciliation | GT-03 and affected M1/M2 claims | EX-05; `experiments/m2/october-reconciliation/` | Migration bridge: scheduled ceiling, MFS, non-minting and surviving evidence limits; does not relabel EX-03 as October. |
 | **2 — Capability, pricing and self-funded traffic** | GT-03, GT-07; bounded GT-01, GT-04, GT-10 inputs | [Full brief](SLICE-02.md); EX-06, EX-07 drafted | Drafted; owner research review pending. Shared snapshot, cooperative → competition → strategic cases, focused evidence comparison and one bounded response. |
+| **2b — Strategic self-funding across network conditions** | GT-03; bounded GT-01, GT-04, GT-07, GT-10 inputs | [Defined study](SLICE-02B.md); [implementation phases](SLICE-02B-IMPLEMENTATION.md); largest/middle/lower stake, network structure, outside traffic, feasible optima and honest-party losses | Defined; implementation pending. Three sequential M2.1/M2.2/M2.3 writer/reviewer pairs. Extends the shared ledger; preserves original results and E2/P1/studies 3–8. |
 | **E2 — Evidence before the claim (former Slice 2)** | GT-01 remaining pairs | SC-07 / SC-06; SC-16 / SC-17; SC-11 / SC-10; tabletops | Retained in full. Slice 2 may supply related-party evidence inputs; any pair not actually examined stays pending. Run before relying on these evidence assumptions in Slice 3. |
 | 3 — Will validators score defensibly? | GT-02, GT-09 | SC-09, SC-19–SC-21, SC-24, SC-35–SC-37; payoff and seat-control tables | Uses evidence results and P1 concentration note; feeds tested scores/costs into shared ledger. |
 | 4 — Defending a reward | GT-06 | SC-25 / SC-26; evidence, effort and access | Retained; return burden/evidence limits to ledger. |
@@ -90,6 +91,10 @@ Active work cites [October source](../litepaper-2.0.md), [authoritative PDF](../
 October resolves the choice among September emissions concepts by stating a decaying token ceiling, but its appendix still describes work-proportional rewards weighted by scores. Register the surviving main-text/appendix mismatch; do not call it resolved. Main-text MFS is the base reading; keep a bounded appendix comparison or explicitly document which conclusions remain reading-dependent. Distinguish scheduled emission allowance, claimable node rewards, eventual actual mint and unminted node allowance. Validator and treasury portions mint in full under the paper; score application and claim timing must be declared.
 
 Every register row labels scope as **computed**, **stated premise** or **deferred**. Separate sweep inputs from alternate rule readings. A test cannot confirm its own premise. Compare paper-stated or plainly implied completions; identify exploratory choices separately and never credit an uncomputed destination as a defense.
+
+### Slice 2b execution contract
+
+The owner requested Slice 2b's design to be completed before its implementation phases. SLICE-02B.md fixes the finite network/actor/market comparisons and affordable strategic question. Its inputs are materialized in M2.1, tested in M2.2 and consolidated in M2.3; there is no design phase. Each phase has one fresh `gpt-6.1-sol` writer and one fresh `claude-opus-5-5` reviewer. The integrator alone imports and commits. The defined budget is 36 core profiles plus named controls and finite supplements, not an open-ended simulation. Agent gates do not confer owner research review. Exact phases, acceptance and boundary rules are in SLICE-02B-IMPLEMENTATION.md.
 
 ## 5. Slice 1 — Self-funded real usage (historical September pilot)
 
@@ -334,3 +339,4 @@ These decisions record the pilot. The October migration and Slice 2 preparation 
 | 0.6 | 2026-10-06 | Roles and run-log decisions recorded; FR-42 and the paper's key passages added to Stage A; defense-by-defense assessment added to Stage D |
 | 0.7 | 2026-10-09 | Owner requested a single reusable measured network snapshot for M2; added the shared baseline and model citation requirements, preserving the original illustrative pilot |
 | 0.8 | 2026-10-09 | October source boundary and pilot reconciliation; connected scenario accounting; next numbered Slice 2 specified; E2/P1 and all remaining studies preserved; pilot retrospective incorporated without inventing human acceptance |
+| 0.9 | 2026-10-12 | Registered defined Slice 2b and its three implementation workloads; multiple network structures, strategic optima and honest-party impacts; GPT-6.1-Sol writers and Opus 5.5 reviewers; original source-scoped studies and human review boundaries preserved |

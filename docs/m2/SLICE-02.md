@@ -2,6 +2,8 @@
 
 Status: **drafted: connected accounting (EX-06) and evidence results (EX-07) consolidated in M2.3; owner research review pending** · 2026-10-10 (prepared 2026-10-09). This is the next numbered M2 slice under [SPEC.md](SPEC.md) and [RUNBOOK.md](RUNBOOK.md). It builds on October reconciliation EX-05 and preserves September EX-03/EX-04. Preparation does not confer human review or protocol adoption.
 
+The defined follow-up, [Slice 2b](SLICE-02B.md), extends these results with strategic spending, actor ranks and multiple whole-network conditions. Its [implementation plan](SLICE-02B-IMPLEMENTATION.md) has separate M2.1, M2.2 and M2.3 workloads. It preserves this slice's frozen inputs and source-scoped results; no broader test is retrospectively attributed to EX-06 or EX-07.
+
 ## Question and bounded outcome
 
 Under October's scheduled emissions and network-wide fee share, when do capability entry, ordinary price competition and real self-funded jobs change operator income, rewards, burn and actual issuance? What observations could establish the economically relevant distinction between useful niche/internal work, legitimate discounts and the specified alleged violation?

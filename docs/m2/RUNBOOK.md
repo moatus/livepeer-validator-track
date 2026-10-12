@@ -1,8 +1,8 @@
 # M2 runbook
 
-Version **0.7 · 2026-10-09**. Status: **drafted**. Owner: Shane (@moatus).
+Version **0.8 · 2026-10-12**. Status: **drafted**. Owner: Shane (@moatus).
 
-How M2 work is briefed, carried out, reviewed, integrated and improved. What M2 must produce is in the [specification](SPEC.md); [Slice 2](SLICE-02.md) is the next active brief. Different agents carry out different stages; this runbook is written so that each can start cold from its brief.
+How M2 work is briefed, carried out, reviewed, integrated and improved. What M2 must produce is in the [specification](SPEC.md); [Slice 2](SLICE-02.md) is drafted and [Slice 2b](SLICE-02B.md) is defined for the next implementation. Different agents carry out different stages; this runbook is written so that each can start cold from its brief.
 
 ## 0. Read first, in this order
 
@@ -43,6 +43,12 @@ Open slice → A Reconstruct → Gate A → B Model ┐
 7. **Retrospective and runbook update** (§9) happen before the next slice opens.
 
 **The first slice is a pilot** (specification §5). Its purpose includes testing this runbook, so every retrospective is mandatory and specific, and the runbook update after it is required before Slice 2 opens. Use a different writer agent for each stage so that cold pickup is tested.
+
+### Slice 2b: three sequential step workloads
+
+Apply [SLICE-02B-IMPLEMENTATION.md](SLICE-02B-IMPLEMENTATION.md) for this owner-requested follow-up. Its design is already defined. Phase 1 implements Stage A/M2.1; Phase 2 implements Stage B/M2.2 and a bounded interpretation of existing EX-07 evidence; Phase 3 implements Stage D/M2.3. Each workload gets one fresh Codex `gpt-6.1-sol` writer and one fresh Claude `claude-opus-5-5` reviewer, replacing generic model choices for this slice only. No separate Stage C assignment is required because new evidence packets/sources are out of scope; existing evidence is not treated as newly established detection. Gates A, B and D and common checks still apply. If new evidence packets become necessary, amend scope explicitly and apply the tolerance-first Gate C; do not silently expand Phase 2.
+
+The integrator freezes a locally committed candidate after writer self-checks for each Opus review; accepted fixes receive a revised candidate and affected rechecks. Only the integrator imports workbench changes and commits. Phase 2 starts after Phase 1 passes and is integrated; Phase 3 starts after Phase 2 passes and is integrated. Keep human research review, merge and publication boundaries unchanged. Register the six primary assignments and final technical handoff in the native milestone map before execution; planning documents are not an execution record.
 
 ## 3. Stage procedure
 
@@ -180,7 +186,7 @@ After a stage passes its gate and its change set is imported, the integrator run
 
 ### 7.1 Branches and commits
 
-M2 work happens outside `main`. The integration branch is `m2`; it holds the specification, this runbook and every merged slice. Each slice gets its own branch, `m2-slice-NN-<slug>`, from `m2` (a hyphen, not a slash: Git cannot hold both `m2` and `m2/…`). After the owner has reviewed a slice, the integrator merges the slice branch into `m2` with a merge commit; never rebase or squash it. When and how `m2` reaches `main` is the owner's decision. Normal commits only: no force-push and no history rewriting. **October preparation exception:** the owner authorized preparing the next slice from `m2-october-preparation`, based on pilot commit `31edc45`. Slice 2 may branch from that preparation commit without first claiming pilot acceptance or merging into `m2`. This is a local preparation/start-path exception, not publication or review approval.
+M2 work happens outside `main`. The integration branch is `m2`; it holds the specification, this runbook and every merged slice. Each slice gets its own branch, `m2-slice-NN-<slug>`, from `m2` (a hyphen, not a slash: Git cannot hold both `m2` and `m2/…`). After the owner has reviewed a slice, the integrator merges the slice branch into `m2` with a merge commit; never rebase or squash it. When and how `m2` reaches `main` is the owner's decision. Normal commits only: no force-push and no history rewriting. **October preparation exception:** the owner authorized preparing the next slice from `m2-october-preparation`, based on pilot commit `31edc45`. Slice 2 may branch from that preparation commit without first claiming pilot acceptance or merging into `m2`. This is a local preparation/start-path exception, not publication or review approval. **Slice 2b continuation:** the owner requested defining the follow-up and its implementation plan from the existing Slice 2 foundation. Use local branch `m2-slice-02b-strategic-self-funding`, descended from Slice 2 commit `e0c66a69bfea64a5484ffa55bf96535874553bb6`; this does not assert review or merge of either earlier slice.
 
 ### 7.2 Publishing
 
@@ -232,3 +238,4 @@ After each slice, or sooner if a problem blocks later stages, the integrator pro
 | 0.5 | 2026-10-05 | Branching: `m2` integration branch; slices on `m2-slice-NN-<slug>` | Owner decision |
 | 0.6 | 2026-10-06 | Roles changed to integrator, writer and reviewer: only the integrator imports and commits; writers deliver change-set scripts; reviewers are a different model from writers. Brief requirements (§3.1). Finding order and paper framing (§4.3). No references to material outside the repository | Owner decision on roles; alignment with the workbench's existing agent workflow |
 | 0.7 | 2026-10-09 | October source and next-slice handoff; applied pilot lessons on explicit inputs, finite scope, adjacent fields, parallel ownership, evidence verdicts, source checks, scratch backups and rendered review | Owner request to prepare Slice 2; Slice 1 recorded retrospectives |
+| 0.8 | 2026-10-12 | Slice 2b's three sequential step workloads, GPT-6.1-Sol/Opus 5.5 pairs, frozen-candidate review and local branch continuation; existing evidence reused within its scope | Owner request to define Slice 2b and a phased implementation specification |
