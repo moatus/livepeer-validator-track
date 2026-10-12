@@ -1,6 +1,6 @@
 # Slice 2b implementation: three agent workloads
 
-Version **1.0 · 2026-10-12**. Status: **ready for phased implementation; not started**.
+Version **1.1 · 2026-10-12**. Status: **ready for phased implementation; not started**.
 
 The research design is already defined in [SLICE-02B.md](SLICE-02B.md). This specification implements it through M2.1, M2.2 and M2.3. There is no slice-design phase. Read [SPEC.md](SPEC.md), [RUNBOOK.md](RUNBOOK.md), [MILESTONES.md](../../MILESTONES.md) and [WORKFLOW.md](../WORKFLOW.md); the owner's instructions take precedence.
 
@@ -22,9 +22,9 @@ The requested models override generic role defaults. Provider availability was c
 
 One integrator launches all pairs, owns the main workbench, imports approved change sets and is the only committer. Writers produce experiment files plus external change-set scripts/JSON and handoffs; reviewers are report-only. Use the main clone, sequential phases and fresh agents. An implementation writer may handle bounded corrections to its own phase before the same review gate closes.
 
-Before launching this six-assignment job, create the harness's native milestone map with three implementation acceptance milestones and a final technical handoff gate; record six primary assignments plus conditional fixes and local commit order. Map evidence records actual accepted commits and checks. If the interface or a requested model is unavailable, report the specific execution dependency; no substitute process is inferred. Agent gates are technical acceptance, not human research acceptance.
+Before launching this six-assignment job, establish the execution milestone record with three implementation acceptance milestones and a final technical handoff gate; record six primary assignments plus conditional fixes and local commit order. Keep execution interface identifiers with the external run log. Evidence records actual accepted commits and checks. If the required execution interface or a requested model is unavailable, report the specific execution dependency; no substitute process is inferred. Agent gates are technical acceptance, not human research acceptance.
 
-Review a frozen local candidate commit prepared by the integrator after writer self-checks. If changes are needed, the writer supplies fixes, the integrator freezes the revised candidate and Opus rechecks affected acceptance. Proceed only with no unresolved blocker. Maximum three review/fix cycles per phase; diagnose and report remaining blockers at that bound. A clean review needs no extra fixer assignment. Keep review reports and run logs outside the public repository.
+Review a frozen local candidate commit prepared by the integrator after writer self-checks. The candidate contains only writer-owned tracked experiment or reader files; workbench change sets are reviewed on a scratch copy and imported/committed only after the gate passes. If a phase changes only workbench records, the candidate can be the unchanged current commit plus an explicitly hashed external change set and scratch copy. This Slice 2b sequence replaces RUNBOOK §4.5 for these phases. If changes are needed, the writer supplies fixes and the integrator adds new candidate commits or revised external change sets; no amendment, reset or history rewriting. Opus rechecks affected acceptance. A blocked candidate remains local, unaccepted history. Proceed only with no unresolved blocker. Maximum three review/fix cycles per phase; diagnose and report remaining blockers at that bound. A clean review needs no extra fixer assignment. Keep review reports and run logs outside the public repository.
 
 ## Preparation already completed by this specification
 
@@ -41,32 +41,32 @@ Review a frozen local candidate commit prepared by the integrator after writer s
 
 **Writer workload:**
 
-1. Audit EX-03/05/06/07 and document which conditions were varied, fixed or deferred. Carry valid accounting and historical methods forward; do not carry September emissions concepts into October.
-2. Materialize all SLICE-02B definitions in `experiments/m2/strategic-self-funding/inputs.json`, `networks.json` and `scenarios.json`, with units, source pointers/hashes, transformations, parents, actor ranks, paired useful references and permitted bounds. Implement only fixture/schema validation needed to freeze these inputs; no reward, profit or loss outcomes.
-3. Validate the 36 core profiles, aligned controls, measured references, supplementary selection keys, normalized vectors and stable source identities. The new actor's traffic must visibly rebalance the other pools. Explicitly record confounded D/C changes, full-retention upper-bound assumptions and the source ratio outside stress bounds if applicable.
+1. Audit EX-03 to EX-07 and document which conditions were varied, fixed or deferred. Carry valid accounting and historical methods forward; do not carry September emissions concepts into October.
+2. Materialize all SLICE-02B definitions in `experiments/m2/strategic-self-funding/inputs.json`, `networks.json` and `scenarios.json`, with units, source pointers/hashes, transformations, parents, actor ranks, paired useful references and permitted bounds. Commit construction rules and deterministic input-vector hashes in `networks.json`; generated vectors remain ignored. Freeze their serialization and Decimal precision. Implement only fixture/schema validation needed to freeze these inputs; no reward, profit or loss outcomes.
+3. Validate the 36 core profiles, aligned controls, measured references, supplementary selection keys, normalized vectors and stable source identities. The new actor's traffic must visibly rebalance the other pools. Explicitly record confounded D/C changes, full-retention upper-bound assumptions, native victim-retention proxies and the measured ratio above both stress values. Freeze one-round versus fixed-stock budget periods, inclusive capacity boundaries and all supplementary capacity/setup/price rules.
 4. Reserve new EX/FR/FX/CN/register IDs after inspecting occupied IDs. Supply compact control and timeline maps, claimant/retention definitions, budget versus advance-liquidity boundary, reference comparisons and exact source-scoped rule readings.
-5. Prepare changes to M2.1 and GT-03/GT-07 plus relevant VD-06/19 handoffs. Preserve GT-01's original pending study and EX-07 limits. Update only assigned reconstruction fields; outcomes remain blank/pending.
+5. Prepare changes to M2.1 and GT-03/GT-07 plus relevant VD-06/19 handoffs. Include bounded GT-04/GT-10 back-links where delegator-effect and valuation comparisons touch those questions; do not claim their full studies completed. Preserve GT-01's original pending study and EX-07 disclosure/scope limits. Update only assigned reconstruction fields; outcomes remain blank/pending.
 6. Produce a change-set script/JSON, scratch render/checks, implementation report, retrospective and a self-contained Phase 2 handoff. Put these process files in the external run location.
 
 **Scope:** the new experiment's input/fixture files and README; assigned M2.1/GT records through change sets. No edits to frozen sources, earlier experiment inputs/results, main workbench, historical guides or deliverable acceptance.
 
 **Opus gate:** independently validate sums, formulas and actor selections; inspect at least one profile from each structure and both market definitions; check schema coverage of every declared supplement and its finite bounds. Check that balanced controls contain no contradictory headroom override and that no hidden purpose becomes observable evidence. Scratch lint must be 0 errors/0 warnings, workbench unit tests pass, rendered changed pages pass browser/word-budget checks with any declared budget reservation documented. Verify source hashes and adjacent-field consistency.
 
-**Integrator close:** adjudicate findings, import only the accepted reconstruction, locally commit phase files, record evidence in the milestone map and issue the Phase 2 mandate with the frozen inputs and reserved IDs. Phase 1 implementation must not redesign the study; substantive changes return as explicit design amendments.
+**Integrator close:** adjudicate findings, import accepted workbench reconstruction and commit it on top of the accepted candidate/fix commits, record all accepted versions and checks in the execution milestone record, and issue the Phase 2 mandate with the frozen inputs and reserved IDs. Phase 1 implementation must not redesign the study; substantive changes return as explicit design amendments.
 
 ## Phase 2 — M2.2: implement and test the connected strategy ledger
 
 **Concrete result:** one deterministic reproduce command generates the defined strategies, affordable optima, honest-party effects, response comparisons and cohort accounting for every profile, with independent verification and source-scoped findings.
 
-**Hard core:** correctly optimize retained net value within stake, cash-loss and execution-capacity constraints, while calculating all honest participants and pending claims. A profitable sampled point or attacker-only table fails this phase.
+**Hard core:** correctly optimize one-round retained net value within stake-cap and cash-loss constraints, checking execution capacity, while calculating all honest participants and pending claims. Capacity is not claimed to bind an optimum in this design. A profitable sampled point or attacker-only table fails this phase.
 
 **Writer workload:**
 
-1. Build the checked EX-06 accounting adapter, continuous constrained optimizer, piecewise break-even/loss landmarks and finite progression generator. Expose arbitrary selected actor roles without copying a second reward formula. If a contained accounting interface change is necessary, reproduce all original cases and document the exact changed contract before using it.
+1. Build the checked EX-06 accounting adapter, continuous constrained optimizer, piecewise break-even/loss landmarks and finite progression generator. Expose arbitrary selected actor roles without implementing a second reward engine. The closed forms locate stationary points, cap kinks and loss landmarks; every reported payoff and all-pool effect is evaluated through EX-06 `account()`. Independently cross-check the closed-form result at each applicable candidate within the documented 1e-18 tolerance. EX-06's `comparison()` has matching cap-headroom algebra; check agreement rather than silently introducing a different cap rule. If a contained accounting interface change is necessary, reproduce all original cases and document the exact changed contract before using it.
 2. Generate all frozen core/control/supplementary rows. Keep measured/native-retention references separate from standardized full-retention core states. Include useful-internal paired accounting, all 100 pool effects, outside receipts, total issuance/burn and explicit infeasibility/undefined labels.
-3. Implement four-round constant/ramp cash budgets and per-cohort schedules/claims. At each earning round, apply its allowance and feasible cash/capacity boundary; unsold claims remain tokens. Distinguish cash shortfall, pending reward, permanently unavailable allowance and final collected value.
-4. Reuse EX-07 only within its existing claim/evidence scope. Write a compact table separating scenario purpose, obtainable observations, rule-definition dependency and procedural response. No new packets, empirical judgment rates or adverse median behavior are supplied.
-5. Write the experiment README and source-scoped EX/FX/FR records, update M2.2 and relevant critical-question backlinks, and supply Phase 3 with results both strengthening and weakening the concern. Register the actual experiment in `experiments/README.md` and add generated-output ignores.
+3. Implement four-round constant/ramp cash budgets and per-cohort schedules/claims. At each earning round, apply its allowance and feasible cash/capacity boundary; unsold claims remain tokens. Distinguish cash shortfall, pending reward, permanently unavailable allowance and final collected value. Timelines use one fixed initial budget stock and a matched four-round no-purchase baseline. Compare pacing with one-round use of that stock; constant/ramp schedules are not multi-round optima or an emissions-decline test.
+4. Reuse EX-07 only within its existing claim/evidence scope. Write a compact table separating scenario purpose, obtainable observations, rule-definition dependency and procedural response, with a column naming the EX-07 disclosure premise relied on or "not examined". Undisclosed control and unpacketed generic/full-volume conduct inherit no verdict. No new packets, empirical judgment rates or adverse median behavior are supplied.
+5. Write the experiment README and source-scoped EX/FX/FR records, update M2.2 and relevant critical-question backlinks, including bounded GT-04/GT-10 delegator/valuation inputs, and supply Phase 3 with results both strengthening and weakening the concern. Register the actual experiment in `experiments/README.md` and add generated-output ignores.
 6. Deliver source code, independent verifier, change-set script/JSON, checks, report, retrospective and self-contained handoff. Keep generated outputs ignored and process reports external.
 
 **Scope:** new experiment folder, generated ignores and experiment index; assigned M2.2/EX/FX/FR/GT outcome fields through change sets. Earlier experiments remain unchanged unless an identified implementation defect or interface necessity is explicitly adjudicated. Preserve every original source-scoped result unless a demonstrated error requires a documented correction.
@@ -74,13 +74,13 @@ Review a frozen local candidate commit prepared by the integrator after writer s
 **Opus gate:** apply RUNBOOK Gate B and common checks, then:
 
 - Hand-recalculate at least two nontrivial fixtures: a below-cap optimum with victim dilution, and a capped/budget-constrained case. Verify optimality through derivatives/kinks/endpoints, not the builder's own sampled outputs.
-- Reproduce EX-06's original 12 cases and sensitivity outputs against the preserved engine/configuration; rerun EX-03, EX-05 and EX-07 verifiers. A prior verifier pass establishes its actual scope, not broader empirical validity.
+- Reproduce EX-06's original 12 cases and sensitivity outputs against the preserved engine/configuration; rerun EX-03, EX-04, EX-05 and EX-07 verifiers. A prior verifier pass establishes its actual scope, not broader empirical validity.
 - Check fee/stake normalization, receipt conservation, cancellation of internal transfers once, external-owner exclusion, correct schedule, score boundaries, zero fees/rewards, all-pool loss aggregation and identity of matched capability/use accounting.
-- Confirm target-loss spending and reachability, honest stake-cap protection, zero profitable action in the appropriate control, and separation of harm-only spending from profit-seeking conduct.
+- Confirm critical reward/fee ratios, target-loss spending and inclusive reachability, the fee-limited 20% capacity-boundary label, honest stake-cap protection, zero profitable action in the fee-leaning/aligned controls, and separation of harm-only spending from profit-seeking conduct.
 - Check every timeline through first and final claim horizons, budget exhaustion and no use of unsold rewards as cash. Review the meaning of return at each horizon.
 - Perform a clean-checkout rebuild from candidate commit with repository-contained experiment dependencies. Scratch-workbench lint/unit/render checks pass. Evidence reuse supplies no new detection finding.
 
-**Integrator close:** resolve findings, import accepted experiment records and outcomes, locally commit, record accepted checks/commit, and provide Phase 3 the complete result coverage and limitation inventory. Do not label model scenarios observed misconduct.
+**Integrator close:** resolve findings, import accepted workbench experiment records/outcomes and commit them on top of accepted candidate/fix commits, record all accepted versions and checks, and provide Phase 3 the complete result coverage and limitation inventory. Do not label model scenarios observed misconduct.
 
 ## Phase 3 — M2.3: consolidate meaning and revise conclusion scope
 
@@ -90,7 +90,7 @@ Review a frozen local candidate commit prepared by the integrator after writer s
 
 **Writer workload:**
 
-1. Compare actor ranks, own-business headroom, whole-network mismatch and fee scale using the accepted outputs. Explain profitable stopping points separately from maximum entitlement, capital-constrained reach and harm-only spending.
+1. Compare actor ranks, own-business headroom, whole-network mismatch and fee scale using the accepted outputs. Explain profitable stopping points as one-round constrained optima, separately from maximum entitlement, capital-constrained reach and harm-only spending. Explain fixed-stock timeline pacing without claiming a multi-round optimum. State the measured ratio's relation to the named stress regimes and explain their analytic critical boundaries.
 2. State which honest operators lose, how material individual/collective losses become, whether fees or actual issuance change, and what the bounded responses/timelines establish. Do not infer exit, equilibrium or practical response likelihood.
 3. Reassess earlier conclusions: retain source-scoped findings, qualify overbroad formulations, and document any genuine contradiction/correction with exact evidence. Update reconstruction outcome columns and affected adjacent fields/backlinks; do not relabel historical research as October.
 4. Assess fixed ceiling, MFS, network charge, outside retention, execution costs, claims and scoring against their demonstrated operating conditions. Compare main-text/appendix implications without choosing policy. Include no-gain/defensive cases and useful internal work.
@@ -102,7 +102,7 @@ Review a frozen local candidate commit prepared by the integrator after writer s
 
 **Opus gate:** apply RUNBOOK Gate D and common checks. Trace every material statement to a profile/row and its limits. Confirm cross-network differences have the right explanation, identities are anonymous synthetic roles, original source scopes persist, and evidence/intent/value remain distinct. Read the guide as a standalone spoken narrative. Scratch lint/unit/browser/word-budget checks pass; no unresolved substantive finding is carried as acceptance.
 
-**Integrator close:** import/commit accepted consolidation, record evidence and complete the final technical handoff gate. Present the exact local artifact versions and unresolved practical dependencies for owner research review. No push, PR, board edit, merger into `m2`, reviewed-deliverable registration or protocol adoption follows automatically.
+**Integrator close:** import accepted workbench consolidation and commit it on top of accepted candidate/fix commits, record evidence and complete the final technical handoff gate. Present the exact local artifact versions and unresolved practical dependencies for owner research review. No push, PR, board edit, merger into `m2`, reviewed-deliverable registration or protocol adoption follows automatically.
 
 ## Final acceptance and execution handoff
 
