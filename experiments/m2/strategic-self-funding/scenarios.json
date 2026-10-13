@@ -1,0 +1,4425 @@
+{
+  "version": "1.2",
+  "experiment": "EX-08",
+  "order": [
+    "cooperative outside-no-purchase",
+    "matched useful-internal reference",
+    "ordinary market/demand/routing responses",
+    "strategic no-credited-use choices"
+  ],
+  "profiles": [
+    {
+      "id": "R-measured-1-low",
+      "group": "core",
+      "structure": "R",
+      "market": "measured",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "R-measured-1-low:outside-no-purchase",
+        "useful": "R-measured-1-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "R-measured-1-high",
+      "group": "core",
+      "structure": "R",
+      "market": "measured",
+      "actor_rank": 1,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "R-measured-1-high:outside-no-purchase",
+        "useful": "R-measured-1-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "R-measured-50-low",
+      "group": "core",
+      "structure": "R",
+      "market": "measured",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "R-measured-50-low:outside-no-purchase",
+        "useful": "R-measured-50-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "R-measured-50-high",
+      "group": "core",
+      "structure": "R",
+      "market": "measured",
+      "actor_rank": 50,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "R-measured-50-high:outside-no-purchase",
+        "useful": "R-measured-50-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "R-measured-90-low",
+      "group": "core",
+      "structure": "R",
+      "market": "measured",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "R-measured-90-low:outside-no-purchase",
+        "useful": "R-measured-90-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "R-measured-90-high",
+      "group": "core",
+      "structure": "R",
+      "market": "measured",
+      "actor_rank": 90,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "R-measured-90-high:outside-no-purchase",
+        "useful": "R-measured-90-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "R-mid-path-1-low",
+      "group": "core",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "R-mid-path-1-low:outside-no-purchase",
+        "useful": "R-mid-path-1-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "R-mid-path-1-high",
+      "group": "core",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "R-mid-path-1-high:outside-no-purchase",
+        "useful": "R-mid-path-1-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "R-mid-path-50-low",
+      "group": "core",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "R-mid-path-50-low:outside-no-purchase",
+        "useful": "R-mid-path-50-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "R-mid-path-50-high",
+      "group": "core",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 50,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "R-mid-path-50-high:outside-no-purchase",
+        "useful": "R-mid-path-50-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "R-mid-path-90-low",
+      "group": "core",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "R-mid-path-90-low:outside-no-purchase",
+        "useful": "R-mid-path-90-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "R-mid-path-90-high",
+      "group": "core",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 90,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "R-mid-path-90-high:outside-no-purchase",
+        "useful": "R-mid-path-90-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "R-near-parity-1-low",
+      "group": "core",
+      "structure": "R",
+      "market": "near-parity",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "R-near-parity-1-low:outside-no-purchase",
+        "useful": "R-near-parity-1-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "R-near-parity-1-high",
+      "group": "core",
+      "structure": "R",
+      "market": "near-parity",
+      "actor_rank": 1,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "R-near-parity-1-high:outside-no-purchase",
+        "useful": "R-near-parity-1-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "R-near-parity-50-low",
+      "group": "core",
+      "structure": "R",
+      "market": "near-parity",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "R-near-parity-50-low:outside-no-purchase",
+        "useful": "R-near-parity-50-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "R-near-parity-50-high",
+      "group": "core",
+      "structure": "R",
+      "market": "near-parity",
+      "actor_rank": 50,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "R-near-parity-50-high:outside-no-purchase",
+        "useful": "R-near-parity-50-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "R-near-parity-90-low",
+      "group": "core",
+      "structure": "R",
+      "market": "near-parity",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "R-near-parity-90-low:outside-no-purchase",
+        "useful": "R-near-parity-90-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "R-near-parity-90-high",
+      "group": "core",
+      "structure": "R",
+      "market": "near-parity",
+      "actor_rank": 90,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "R-near-parity-90-high:outside-no-purchase",
+        "useful": "R-near-parity-90-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "D-measured-1-low",
+      "group": "core",
+      "structure": "D",
+      "market": "measured",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "D-measured-1-low:outside-no-purchase",
+        "useful": "D-measured-1-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "D-measured-1-high",
+      "group": "core",
+      "structure": "D",
+      "market": "measured",
+      "actor_rank": 1,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "D-measured-1-high:outside-no-purchase",
+        "useful": "D-measured-1-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "D-measured-50-low",
+      "group": "core",
+      "structure": "D",
+      "market": "measured",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "D-measured-50-low:outside-no-purchase",
+        "useful": "D-measured-50-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "D-measured-50-high",
+      "group": "core",
+      "structure": "D",
+      "market": "measured",
+      "actor_rank": 50,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "D-measured-50-high:outside-no-purchase",
+        "useful": "D-measured-50-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "D-measured-90-low",
+      "group": "core",
+      "structure": "D",
+      "market": "measured",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "D-measured-90-low:outside-no-purchase",
+        "useful": "D-measured-90-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "D-measured-90-high",
+      "group": "core",
+      "structure": "D",
+      "market": "measured",
+      "actor_rank": 90,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "D-measured-90-high:outside-no-purchase",
+        "useful": "D-measured-90-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "D-mid-path-1-low",
+      "group": "core",
+      "structure": "D",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "D-mid-path-1-low:outside-no-purchase",
+        "useful": "D-mid-path-1-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "D-mid-path-1-high",
+      "group": "core",
+      "structure": "D",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "D-mid-path-1-high:outside-no-purchase",
+        "useful": "D-mid-path-1-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "D-mid-path-50-low",
+      "group": "core",
+      "structure": "D",
+      "market": "mid-path",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "D-mid-path-50-low:outside-no-purchase",
+        "useful": "D-mid-path-50-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "D-mid-path-50-high",
+      "group": "core",
+      "structure": "D",
+      "market": "mid-path",
+      "actor_rank": 50,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "D-mid-path-50-high:outside-no-purchase",
+        "useful": "D-mid-path-50-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "D-mid-path-90-low",
+      "group": "core",
+      "structure": "D",
+      "market": "mid-path",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "D-mid-path-90-low:outside-no-purchase",
+        "useful": "D-mid-path-90-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "D-mid-path-90-high",
+      "group": "core",
+      "structure": "D",
+      "market": "mid-path",
+      "actor_rank": 90,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "D-mid-path-90-high:outside-no-purchase",
+        "useful": "D-mid-path-90-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "D-near-parity-1-low",
+      "group": "core",
+      "structure": "D",
+      "market": "near-parity",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "D-near-parity-1-low:outside-no-purchase",
+        "useful": "D-near-parity-1-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "D-near-parity-1-high",
+      "group": "core",
+      "structure": "D",
+      "market": "near-parity",
+      "actor_rank": 1,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "D-near-parity-1-high:outside-no-purchase",
+        "useful": "D-near-parity-1-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "D-near-parity-50-low",
+      "group": "core",
+      "structure": "D",
+      "market": "near-parity",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "D-near-parity-50-low:outside-no-purchase",
+        "useful": "D-near-parity-50-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "D-near-parity-50-high",
+      "group": "core",
+      "structure": "D",
+      "market": "near-parity",
+      "actor_rank": 50,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "D-near-parity-50-high:outside-no-purchase",
+        "useful": "D-near-parity-50-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "D-near-parity-90-low",
+      "group": "core",
+      "structure": "D",
+      "market": "near-parity",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "D-near-parity-90-low:outside-no-purchase",
+        "useful": "D-near-parity-90-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "D-near-parity-90-high",
+      "group": "core",
+      "structure": "D",
+      "market": "near-parity",
+      "actor_rank": 90,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "D-near-parity-90-high:outside-no-purchase",
+        "useful": "D-near-parity-90-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "C-measured-1-low",
+      "group": "core",
+      "structure": "C",
+      "market": "measured",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "C-measured-1-low:outside-no-purchase",
+        "useful": "C-measured-1-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "C-measured-1-high",
+      "group": "core",
+      "structure": "C",
+      "market": "measured",
+      "actor_rank": 1,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "C-measured-1-high:outside-no-purchase",
+        "useful": "C-measured-1-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "C-measured-50-low",
+      "group": "core",
+      "structure": "C",
+      "market": "measured",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "C-measured-50-low:outside-no-purchase",
+        "useful": "C-measured-50-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "C-measured-50-high",
+      "group": "core",
+      "structure": "C",
+      "market": "measured",
+      "actor_rank": 50,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "C-measured-50-high:outside-no-purchase",
+        "useful": "C-measured-50-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "C-measured-90-low",
+      "group": "core",
+      "structure": "C",
+      "market": "measured",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "C-measured-90-low:outside-no-purchase",
+        "useful": "C-measured-90-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "C-measured-90-high",
+      "group": "core",
+      "structure": "C",
+      "market": "measured",
+      "actor_rank": 90,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "C-measured-90-high:outside-no-purchase",
+        "useful": "C-measured-90-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "C-mid-path-1-low",
+      "group": "core",
+      "structure": "C",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "C-mid-path-1-low:outside-no-purchase",
+        "useful": "C-mid-path-1-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "C-mid-path-1-high",
+      "group": "core",
+      "structure": "C",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "C-mid-path-1-high:outside-no-purchase",
+        "useful": "C-mid-path-1-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "C-mid-path-50-low",
+      "group": "core",
+      "structure": "C",
+      "market": "mid-path",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "C-mid-path-50-low:outside-no-purchase",
+        "useful": "C-mid-path-50-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "C-mid-path-50-high",
+      "group": "core",
+      "structure": "C",
+      "market": "mid-path",
+      "actor_rank": 50,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "C-mid-path-50-high:outside-no-purchase",
+        "useful": "C-mid-path-50-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "C-mid-path-90-low",
+      "group": "core",
+      "structure": "C",
+      "market": "mid-path",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "C-mid-path-90-low:outside-no-purchase",
+        "useful": "C-mid-path-90-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "C-mid-path-90-high",
+      "group": "core",
+      "structure": "C",
+      "market": "mid-path",
+      "actor_rank": 90,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "C-mid-path-90-high:outside-no-purchase",
+        "useful": "C-mid-path-90-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "C-near-parity-1-low",
+      "group": "core",
+      "structure": "C",
+      "market": "near-parity",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "C-near-parity-1-low:outside-no-purchase",
+        "useful": "C-near-parity-1-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "C-near-parity-1-high",
+      "group": "core",
+      "structure": "C",
+      "market": "near-parity",
+      "actor_rank": 1,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "C-near-parity-1-high:outside-no-purchase",
+        "useful": "C-near-parity-1-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "C-near-parity-50-low",
+      "group": "core",
+      "structure": "C",
+      "market": "near-parity",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "C-near-parity-50-low:outside-no-purchase",
+        "useful": "C-near-parity-50-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "C-near-parity-50-high",
+      "group": "core",
+      "structure": "C",
+      "market": "near-parity",
+      "actor_rank": 50,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "C-near-parity-50-high:outside-no-purchase",
+        "useful": "C-near-parity-50-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "C-near-parity-90-low",
+      "group": "core",
+      "structure": "C",
+      "market": "near-parity",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "C-near-parity-90-low:outside-no-purchase",
+        "useful": "C-near-parity-90-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "C-near-parity-90-high",
+      "group": "core",
+      "structure": "C",
+      "market": "near-parity",
+      "actor_rank": 90,
+      "start": "high",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "C-near-parity-90-high:outside-no-purchase",
+        "useful": "C-near-parity-90-high:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "R-fee-leaning-1-low",
+      "group": "fee-leaning",
+      "structure": "R",
+      "market": "fee-leaning",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "R-fee-leaning-1-low:outside-no-purchase",
+        "useful": "R-fee-leaning-1-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "R-fee-leaning-50-low",
+      "group": "fee-leaning",
+      "structure": "R",
+      "market": "fee-leaning",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "R-fee-leaning-50-low:outside-no-purchase",
+        "useful": "R-fee-leaning-50-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "R-fee-leaning-90-low",
+      "group": "fee-leaning",
+      "structure": "R",
+      "market": "fee-leaning",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "R-fee-leaning-90-low:outside-no-purchase",
+        "useful": "R-fee-leaning-90-low:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "aligned-measured-1",
+      "group": "aligned",
+      "structure": "R",
+      "market": "measured",
+      "actor_rank": 1,
+      "start": "aligned",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "aligned-measured-1:outside-no-purchase",
+        "useful": "aligned-measured-1:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "aligned-measured-50",
+      "group": "aligned",
+      "structure": "R",
+      "market": "measured",
+      "actor_rank": 50,
+      "start": "aligned",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "aligned-measured-50:outside-no-purchase",
+        "useful": "aligned-measured-50:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "aligned-measured-90",
+      "group": "aligned",
+      "structure": "R",
+      "market": "measured",
+      "actor_rank": 90,
+      "start": "aligned",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "aligned-measured-90:outside-no-purchase",
+        "useful": "aligned-measured-90:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "aligned-mid-path-1",
+      "group": "aligned",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "aligned",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "aligned-mid-path-1:outside-no-purchase",
+        "useful": "aligned-mid-path-1:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "aligned-mid-path-50",
+      "group": "aligned",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 50,
+      "start": "aligned",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "aligned-mid-path-50:outside-no-purchase",
+        "useful": "aligned-mid-path-50:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "aligned-mid-path-90",
+      "group": "aligned",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 90,
+      "start": "aligned",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "aligned-mid-path-90:outside-no-purchase",
+        "useful": "aligned-mid-path-90:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "aligned-near-parity-1",
+      "group": "aligned",
+      "structure": "R",
+      "market": "near-parity",
+      "actor_rank": 1,
+      "start": "aligned",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "aligned-near-parity-1:outside-no-purchase",
+        "useful": "aligned-near-parity-1:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "aligned-near-parity-50",
+      "group": "aligned",
+      "structure": "R",
+      "market": "near-parity",
+      "actor_rank": 50,
+      "start": "aligned",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "aligned-near-parity-50:outside-no-purchase",
+        "useful": "aligned-near-parity-50:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "aligned-near-parity-90",
+      "group": "aligned",
+      "structure": "R",
+      "market": "near-parity",
+      "actor_rank": 90,
+      "start": "aligned",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "aligned-near-parity-90:outside-no-purchase",
+        "useful": "aligned-near-parity-90:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "native-measured-1",
+      "group": "native",
+      "structure": "R",
+      "market": "measured",
+      "actor_rank": 1,
+      "start": "native",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "native-measured-1:outside-no-purchase",
+        "useful": "native-measured-1:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "native-measured-50",
+      "group": "native",
+      "structure": "R",
+      "market": "measured",
+      "actor_rank": 50,
+      "start": "native",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "native-measured-50:outside-no-purchase",
+        "useful": "native-measured-50:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "native-measured-90",
+      "group": "native",
+      "structure": "R",
+      "market": "measured",
+      "actor_rank": 90,
+      "start": "native",
+      "parent": null,
+      "overrides": {},
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "native-measured-90:outside-no-purchase",
+        "useful": "native-measured-90:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "retention-R-1",
+      "group": "one-factor",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "R-mid-path-1-low",
+      "overrides": {
+        "w": ".25",
+        "k": "0",
+        "d": "1"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "retention-R-1:outside-no-purchase",
+        "useful": "retention-R-1:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "cost-R-1",
+      "group": "one-factor",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "R-mid-path-1-low",
+      "overrides": {
+        "cost": "1.20"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "cost-R-1:outside-no-purchase",
+        "useful": "cost-R-1:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "valuation-R-1",
+      "group": "one-factor",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "R-mid-path-1-low",
+      "overrides": {
+        "valuation_multiplier": ".10"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "valuation-R-1:outside-no-purchase",
+        "useful": "valuation-R-1:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "schedule-R-1",
+      "group": "one-factor",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "R-mid-path-1-low",
+      "overrides": {
+        "earning_round": 840
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "schedule-R-1:outside-no-purchase",
+        "useful": "schedule-R-1:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "retention-R-50",
+      "group": "one-factor",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": "R-mid-path-50-low",
+      "overrides": {
+        "w": ".25",
+        "k": "0",
+        "d": "1"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "retention-R-50:outside-no-purchase",
+        "useful": "retention-R-50:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "cost-R-50",
+      "group": "one-factor",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": "R-mid-path-50-low",
+      "overrides": {
+        "cost": "1.20"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "cost-R-50:outside-no-purchase",
+        "useful": "cost-R-50:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "valuation-R-50",
+      "group": "one-factor",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": "R-mid-path-50-low",
+      "overrides": {
+        "valuation_multiplier": ".10"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "valuation-R-50:outside-no-purchase",
+        "useful": "valuation-R-50:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "schedule-R-50",
+      "group": "one-factor",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": "R-mid-path-50-low",
+      "overrides": {
+        "earning_round": 840
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "schedule-R-50:outside-no-purchase",
+        "useful": "schedule-R-50:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "retention-R-90",
+      "group": "one-factor",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": "R-mid-path-90-low",
+      "overrides": {
+        "w": ".25",
+        "k": "0",
+        "d": "1"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "retention-R-90:outside-no-purchase",
+        "useful": "retention-R-90:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "cost-R-90",
+      "group": "one-factor",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": "R-mid-path-90-low",
+      "overrides": {
+        "cost": "1.20"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "cost-R-90:outside-no-purchase",
+        "useful": "cost-R-90:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "valuation-R-90",
+      "group": "one-factor",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": "R-mid-path-90-low",
+      "overrides": {
+        "valuation_multiplier": ".10"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "valuation-R-90:outside-no-purchase",
+        "useful": "valuation-R-90:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "schedule-R-90",
+      "group": "one-factor",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": "R-mid-path-90-low",
+      "overrides": {
+        "earning_round": 840
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "schedule-R-90:outside-no-purchase",
+        "useful": "schedule-R-90:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "retention-D-1",
+      "group": "one-factor",
+      "structure": "D",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "D-mid-path-1-low",
+      "overrides": {
+        "w": ".25",
+        "k": "0",
+        "d": "1"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "retention-D-1:outside-no-purchase",
+        "useful": "retention-D-1:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "cost-D-1",
+      "group": "one-factor",
+      "structure": "D",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "D-mid-path-1-low",
+      "overrides": {
+        "cost": "1.20"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "cost-D-1:outside-no-purchase",
+        "useful": "cost-D-1:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "valuation-D-1",
+      "group": "one-factor",
+      "structure": "D",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "D-mid-path-1-low",
+      "overrides": {
+        "valuation_multiplier": ".10"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "valuation-D-1:outside-no-purchase",
+        "useful": "valuation-D-1:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "schedule-D-1",
+      "group": "one-factor",
+      "structure": "D",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "D-mid-path-1-low",
+      "overrides": {
+        "earning_round": 840
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "schedule-D-1:outside-no-purchase",
+        "useful": "schedule-D-1:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "retention-D-50",
+      "group": "one-factor",
+      "structure": "D",
+      "market": "mid-path",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": "D-mid-path-50-low",
+      "overrides": {
+        "w": ".25",
+        "k": "0",
+        "d": "1"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "retention-D-50:outside-no-purchase",
+        "useful": "retention-D-50:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "cost-D-50",
+      "group": "one-factor",
+      "structure": "D",
+      "market": "mid-path",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": "D-mid-path-50-low",
+      "overrides": {
+        "cost": "1.20"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "cost-D-50:outside-no-purchase",
+        "useful": "cost-D-50:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "valuation-D-50",
+      "group": "one-factor",
+      "structure": "D",
+      "market": "mid-path",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": "D-mid-path-50-low",
+      "overrides": {
+        "valuation_multiplier": ".10"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "valuation-D-50:outside-no-purchase",
+        "useful": "valuation-D-50:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "schedule-D-50",
+      "group": "one-factor",
+      "structure": "D",
+      "market": "mid-path",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": "D-mid-path-50-low",
+      "overrides": {
+        "earning_round": 840
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "schedule-D-50:outside-no-purchase",
+        "useful": "schedule-D-50:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "retention-D-90",
+      "group": "one-factor",
+      "structure": "D",
+      "market": "mid-path",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": "D-mid-path-90-low",
+      "overrides": {
+        "w": ".25",
+        "k": "0",
+        "d": "1"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "retention-D-90:outside-no-purchase",
+        "useful": "retention-D-90:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "cost-D-90",
+      "group": "one-factor",
+      "structure": "D",
+      "market": "mid-path",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": "D-mid-path-90-low",
+      "overrides": {
+        "cost": "1.20"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "cost-D-90:outside-no-purchase",
+        "useful": "cost-D-90:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "valuation-D-90",
+      "group": "one-factor",
+      "structure": "D",
+      "market": "mid-path",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": "D-mid-path-90-low",
+      "overrides": {
+        "valuation_multiplier": ".10"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "valuation-D-90:outside-no-purchase",
+        "useful": "valuation-D-90:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "schedule-D-90",
+      "group": "one-factor",
+      "structure": "D",
+      "market": "mid-path",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": "D-mid-path-90-low",
+      "overrides": {
+        "earning_round": 840
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "schedule-D-90:outside-no-purchase",
+        "useful": "schedule-D-90:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "retention-C-1",
+      "group": "one-factor",
+      "structure": "C",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "C-mid-path-1-low",
+      "overrides": {
+        "w": ".25",
+        "k": "0",
+        "d": "1"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "retention-C-1:outside-no-purchase",
+        "useful": "retention-C-1:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "cost-C-1",
+      "group": "one-factor",
+      "structure": "C",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "C-mid-path-1-low",
+      "overrides": {
+        "cost": "1.20"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "cost-C-1:outside-no-purchase",
+        "useful": "cost-C-1:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "valuation-C-1",
+      "group": "one-factor",
+      "structure": "C",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "C-mid-path-1-low",
+      "overrides": {
+        "valuation_multiplier": ".10"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "valuation-C-1:outside-no-purchase",
+        "useful": "valuation-C-1:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "schedule-C-1",
+      "group": "one-factor",
+      "structure": "C",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "C-mid-path-1-low",
+      "overrides": {
+        "earning_round": 840
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "schedule-C-1:outside-no-purchase",
+        "useful": "schedule-C-1:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "retention-C-50",
+      "group": "one-factor",
+      "structure": "C",
+      "market": "mid-path",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": "C-mid-path-50-low",
+      "overrides": {
+        "w": ".25",
+        "k": "0",
+        "d": "1"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "retention-C-50:outside-no-purchase",
+        "useful": "retention-C-50:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "cost-C-50",
+      "group": "one-factor",
+      "structure": "C",
+      "market": "mid-path",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": "C-mid-path-50-low",
+      "overrides": {
+        "cost": "1.20"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "cost-C-50:outside-no-purchase",
+        "useful": "cost-C-50:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "valuation-C-50",
+      "group": "one-factor",
+      "structure": "C",
+      "market": "mid-path",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": "C-mid-path-50-low",
+      "overrides": {
+        "valuation_multiplier": ".10"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "valuation-C-50:outside-no-purchase",
+        "useful": "valuation-C-50:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "schedule-C-50",
+      "group": "one-factor",
+      "structure": "C",
+      "market": "mid-path",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": "C-mid-path-50-low",
+      "overrides": {
+        "earning_round": 840
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "schedule-C-50:outside-no-purchase",
+        "useful": "schedule-C-50:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "retention-C-90",
+      "group": "one-factor",
+      "structure": "C",
+      "market": "mid-path",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": "C-mid-path-90-low",
+      "overrides": {
+        "w": ".25",
+        "k": "0",
+        "d": "1"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "retention-C-90:outside-no-purchase",
+        "useful": "retention-C-90:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "cost-C-90",
+      "group": "one-factor",
+      "structure": "C",
+      "market": "mid-path",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": "C-mid-path-90-low",
+      "overrides": {
+        "cost": "1.20"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "cost-C-90:outside-no-purchase",
+        "useful": "cost-C-90:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "valuation-C-90",
+      "group": "one-factor",
+      "structure": "C",
+      "market": "mid-path",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": "C-mid-path-90-low",
+      "overrides": {
+        "valuation_multiplier": ".10"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "valuation-C-90:outside-no-purchase",
+        "useful": "valuation-C-90:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "schedule-C-90",
+      "group": "one-factor",
+      "structure": "C",
+      "market": "mid-path",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": "C-mid-path-90-low",
+      "overrides": {
+        "earning_round": 840
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "schedule-C-90:outside-no-purchase",
+        "useful": "schedule-C-90:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "appendix-R-1",
+      "group": "appendix",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "R-mid-path-1-low",
+      "overrides": {
+        "reading": "appendix"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "appendix-R-1:outside-no-purchase",
+        "useful": "appendix-R-1:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "niche-R-1",
+      "group": "capability",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "R-mid-path-1-low",
+      "overrides": {
+        "controlled_offer": "niche"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "niche-R-1:outside-no-purchase",
+        "useful": "niche-R-1:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "proportional-double-R-1",
+      "group": "demand",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "R-mid-path-1-low",
+      "overrides": {
+        "outside_response": "proportional-double",
+        "preserve_parent_budget_capacity": true,
+        "action_policy": [
+          "parent-feasible-optimum",
+          "reoptimize"
+        ]
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "proportional-double-R-1:outside-no-purchase",
+        "useful": "proportional-double-R-1:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "concentrated-add-R-1",
+      "group": "demand",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "R-mid-path-1-low",
+      "overrides": {
+        "outside_response": "concentrated-add",
+        "preserve_parent_budget_capacity": true,
+        "action_policy": [
+          "parent-feasible-optimum",
+          "reoptimize"
+        ]
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "concentrated-add-R-1:outside-no-purchase",
+        "useful": "concentrated-add-R-1:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "appendix-R-50",
+      "group": "appendix",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": "R-mid-path-50-low",
+      "overrides": {
+        "reading": "appendix"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "appendix-R-50:outside-no-purchase",
+        "useful": "appendix-R-50:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "niche-R-50",
+      "group": "capability",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": "R-mid-path-50-low",
+      "overrides": {
+        "controlled_offer": "niche"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "niche-R-50:outside-no-purchase",
+        "useful": "niche-R-50:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "proportional-double-R-50",
+      "group": "demand",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": "R-mid-path-50-low",
+      "overrides": {
+        "outside_response": "proportional-double",
+        "preserve_parent_budget_capacity": true,
+        "action_policy": [
+          "parent-feasible-optimum",
+          "reoptimize"
+        ]
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "proportional-double-R-50:outside-no-purchase",
+        "useful": "proportional-double-R-50:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "concentrated-add-R-50",
+      "group": "demand",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 50,
+      "start": "low",
+      "parent": "R-mid-path-50-low",
+      "overrides": {
+        "outside_response": "concentrated-add",
+        "preserve_parent_budget_capacity": true,
+        "action_policy": [
+          "parent-feasible-optimum",
+          "reoptimize"
+        ]
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "concentrated-add-R-50:outside-no-purchase",
+        "useful": "concentrated-add-R-50:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "appendix-R-90",
+      "group": "appendix",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": "R-mid-path-90-low",
+      "overrides": {
+        "reading": "appendix"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "appendix-R-90:outside-no-purchase",
+        "useful": "appendix-R-90:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "niche-R-90",
+      "group": "capability",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": "R-mid-path-90-low",
+      "overrides": {
+        "controlled_offer": "niche"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "niche-R-90:outside-no-purchase",
+        "useful": "niche-R-90:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "proportional-double-R-90",
+      "group": "demand",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": "R-mid-path-90-low",
+      "overrides": {
+        "outside_response": "proportional-double",
+        "preserve_parent_budget_capacity": true,
+        "action_policy": [
+          "parent-feasible-optimum",
+          "reoptimize"
+        ]
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "proportional-double-R-90:outside-no-purchase",
+        "useful": "proportional-double-R-90:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "concentrated-add-R-90",
+      "group": "demand",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 90,
+      "start": "low",
+      "parent": "R-mid-path-90-low",
+      "overrides": {
+        "outside_response": "concentrated-add",
+        "preserve_parent_budget_capacity": true,
+        "action_policy": [
+          "parent-feasible-optimum",
+          "reoptimize"
+        ]
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "concentrated-add-R-90:outside-no-purchase",
+        "useful": "concentrated-add-R-90:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "niche-cost-setup-R-1",
+      "group": "capability",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "R-mid-path-1-low",
+      "overrides": {
+        "controlled_offer": "niche",
+        "cost": ".20",
+        "setup": "2",
+        "setup_when": "x>0; charged once and included in B"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "niche-cost-setup-R-1:outside-no-purchase",
+        "useful": "niche-cost-setup-R-1:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "price-routing-R-1",
+      "group": "price-routing",
+      "structure": "R",
+      "market": "mid-path",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "R-mid-path-1-low",
+      "overrides": {
+        "outside_response": "price-routing",
+        "preserve_parent_budget_capacity": true,
+        "competitor_price": ".5",
+        "route_fraction": ".25",
+        "action_policy": [
+          "parent-feasible-optimum",
+          "reoptimize"
+        ]
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "price-routing-R-1:outside-no-purchase",
+        "useful": "price-routing-R-1:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "B-F-R-measured",
+      "group": "budget",
+      "structure": "R",
+      "market": "measured",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "R-measured-1-low",
+      "overrides": {
+        "budget_fraction": "1"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "B-F-R-measured:outside-no-purchase",
+        "useful": "B-F-R-measured:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "capacity-only-R-measured",
+      "group": "budget",
+      "structure": "R",
+      "market": "measured",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "R-measured-1-low",
+      "overrides": {
+        "cash_bound": null
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "capacity-only-R-measured:outside-no-purchase",
+        "useful": "capacity-only-R-measured:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "B-F-R-near-parity",
+      "group": "budget",
+      "structure": "R",
+      "market": "near-parity",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "R-near-parity-1-low",
+      "overrides": {
+        "budget_fraction": "1"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "B-F-R-near-parity:outside-no-purchase",
+        "useful": "B-F-R-near-parity:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "capacity-only-R-near-parity",
+      "group": "budget",
+      "structure": "R",
+      "market": "near-parity",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "R-near-parity-1-low",
+      "overrides": {
+        "cash_bound": null
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "capacity-only-R-near-parity:outside-no-purchase",
+        "useful": "capacity-only-R-near-parity:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "B-F-D-measured",
+      "group": "budget",
+      "structure": "D",
+      "market": "measured",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "D-measured-1-low",
+      "overrides": {
+        "budget_fraction": "1"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "B-F-D-measured:outside-no-purchase",
+        "useful": "B-F-D-measured:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "capacity-only-D-measured",
+      "group": "budget",
+      "structure": "D",
+      "market": "measured",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "D-measured-1-low",
+      "overrides": {
+        "cash_bound": null
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "capacity-only-D-measured:outside-no-purchase",
+        "useful": "capacity-only-D-measured:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "B-F-D-near-parity",
+      "group": "budget",
+      "structure": "D",
+      "market": "near-parity",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "D-near-parity-1-low",
+      "overrides": {
+        "budget_fraction": "1"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "B-F-D-near-parity:outside-no-purchase",
+        "useful": "B-F-D-near-parity:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "capacity-only-D-near-parity",
+      "group": "budget",
+      "structure": "D",
+      "market": "near-parity",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "D-near-parity-1-low",
+      "overrides": {
+        "cash_bound": null
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "capacity-only-D-near-parity:outside-no-purchase",
+        "useful": "capacity-only-D-near-parity:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "B-F-C-measured",
+      "group": "budget",
+      "structure": "C",
+      "market": "measured",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "C-measured-1-low",
+      "overrides": {
+        "budget_fraction": "1"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "B-F-C-measured:outside-no-purchase",
+        "useful": "B-F-C-measured:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "capacity-only-C-measured",
+      "group": "budget",
+      "structure": "C",
+      "market": "measured",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "C-measured-1-low",
+      "overrides": {
+        "cash_bound": null
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "capacity-only-C-measured:outside-no-purchase",
+        "useful": "capacity-only-C-measured:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "B-F-C-near-parity",
+      "group": "budget",
+      "structure": "C",
+      "market": "near-parity",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "C-near-parity-1-low",
+      "overrides": {
+        "budget_fraction": "1"
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "B-F-C-near-parity:outside-no-purchase",
+        "useful": "B-F-C-near-parity:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "capacity-only-C-near-parity",
+      "group": "budget",
+      "structure": "C",
+      "market": "near-parity",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "C-near-parity-1-low",
+      "overrides": {
+        "cash_bound": null
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "capacity-only-C-near-parity:outside-no-purchase",
+        "useful": "capacity-only-C-near-parity:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "invoice10-measured-fixed-parent-optimum",
+      "group": "invoice-price",
+      "structure": "R",
+      "market": "measured",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "R-measured-1-low",
+      "overrides": {
+        "controlled_offer": "niche",
+        "controlled_price": "10",
+        "action_policy": "fixed-parent-optimum",
+        "preserve_parent_budget_capacity": true
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "invoice10-measured-fixed-parent-optimum:outside-no-purchase",
+        "useful": "invoice10-measured-fixed-parent-optimum:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "invoice10-measured-reoptimize",
+      "group": "invoice-price",
+      "structure": "R",
+      "market": "measured",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "R-measured-1-low",
+      "overrides": {
+        "controlled_offer": "niche",
+        "controlled_price": "10",
+        "action_policy": "reoptimize",
+        "preserve_parent_budget_capacity": true
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "invoice10-measured-reoptimize:outside-no-purchase",
+        "useful": "invoice10-measured-reoptimize:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "invoice10-near-parity-fixed-parent-optimum",
+      "group": "invoice-price",
+      "structure": "R",
+      "market": "near-parity",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "R-near-parity-1-low",
+      "overrides": {
+        "controlled_offer": "niche",
+        "controlled_price": "10",
+        "action_policy": "fixed-parent-optimum",
+        "preserve_parent_budget_capacity": true
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "invoice10-near-parity-fixed-parent-optimum:outside-no-purchase",
+        "useful": "invoice10-near-parity-fixed-parent-optimum:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    },
+    {
+      "id": "invoice10-near-parity-reoptimize",
+      "group": "invoice-price",
+      "structure": "R",
+      "market": "near-parity",
+      "actor_rank": 1,
+      "start": "low",
+      "parent": "R-near-parity-1-low",
+      "overrides": {
+        "controlled_offer": "niche",
+        "controlled_price": "10",
+        "action_policy": "reoptimize",
+        "preserve_parent_budget_capacity": true
+      },
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "units": {
+        "fees": "USDC",
+        "stake": "LPT",
+        "jobs": "divisible normalized jobs",
+        "budget": "USDC incremental net loss",
+        "capacity": "jobs/earning round"
+      },
+      "horizon": 7,
+      "budget_period": "one earning round",
+      "references": {
+        "decline": "invoice10-near-parity-reoptimize:outside-no-purchase",
+        "useful": "invoice10-near-parity-reoptimize:useful-internal",
+        "use_value_per_job": "1"
+      },
+      "outcome_status": "pending"
+    }
+  ],
+  "timelines": [
+    {
+      "id": "timeline-R-1-constant",
+      "parent": "R-mid-path-1-low",
+      "actor_rank": 1,
+      "earning_rounds": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "schedule": "constant",
+      "desired_factors": [
+        ".25",
+        ".25",
+        ".25",
+        ".25"
+      ],
+      "desired_base": "frozen r=0 feasible one-round optimum from Phase 2",
+      "claim_delay": 7,
+      "final_horizon": 10,
+      "budget_period": "one initial stock across all four rounds",
+      "truncation": "min(desired, remaining_stock/leakage, price*original_additional_capacity); nonnegative; no replenishment or token sales",
+      "comparators": [
+        "matched four-round no-purchase baseline",
+        "one-round deployment of same initial B",
+        "constant versus equal-total for pacing only"
+      ],
+      "cap_below_stock_rule": "if xcap < B/L, repeated play cap-bounded each round; no pacing conclusion",
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "outcome_status": "pending"
+    },
+    {
+      "id": "timeline-R-1-escalating",
+      "parent": "R-mid-path-1-low",
+      "actor_rank": 1,
+      "earning_rounds": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "schedule": "escalating",
+      "desired_factors": [
+        ".25",
+        ".50",
+        ".75",
+        "1"
+      ],
+      "desired_base": "frozen r=0 feasible one-round optimum from Phase 2",
+      "claim_delay": 7,
+      "final_horizon": 10,
+      "budget_period": "one initial stock across all four rounds",
+      "truncation": "min(desired, remaining_stock/leakage, price*original_additional_capacity); nonnegative; no replenishment or token sales",
+      "comparators": [
+        "matched four-round no-purchase baseline",
+        "one-round deployment of same initial B",
+        "constant versus equal-total for pacing only"
+      ],
+      "cap_below_stock_rule": "if xcap < B/L, repeated play cap-bounded each round; no pacing conclusion",
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "outcome_status": "pending"
+    },
+    {
+      "id": "timeline-R-1-equal-total",
+      "parent": "R-mid-path-1-low",
+      "actor_rank": 1,
+      "earning_rounds": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "schedule": "equal-total",
+      "desired_factors": [
+        ".10",
+        ".20",
+        ".30",
+        ".40"
+      ],
+      "desired_base": "frozen r=0 feasible one-round optimum from Phase 2",
+      "claim_delay": 7,
+      "final_horizon": 10,
+      "budget_period": "one initial stock across all four rounds",
+      "truncation": "min(desired, remaining_stock/leakage, price*original_additional_capacity); nonnegative; no replenishment or token sales",
+      "comparators": [
+        "matched four-round no-purchase baseline",
+        "one-round deployment of same initial B",
+        "constant versus equal-total for pacing only"
+      ],
+      "cap_below_stock_rule": "if xcap < B/L, repeated play cap-bounded each round; no pacing conclusion",
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "outcome_status": "pending"
+    },
+    {
+      "id": "timeline-R-50-constant",
+      "parent": "R-mid-path-50-low",
+      "actor_rank": 50,
+      "earning_rounds": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "schedule": "constant",
+      "desired_factors": [
+        ".25",
+        ".25",
+        ".25",
+        ".25"
+      ],
+      "desired_base": "frozen r=0 feasible one-round optimum from Phase 2",
+      "claim_delay": 7,
+      "final_horizon": 10,
+      "budget_period": "one initial stock across all four rounds",
+      "truncation": "min(desired, remaining_stock/leakage, price*original_additional_capacity); nonnegative; no replenishment or token sales",
+      "comparators": [
+        "matched four-round no-purchase baseline",
+        "one-round deployment of same initial B",
+        "constant versus equal-total for pacing only"
+      ],
+      "cap_below_stock_rule": "if xcap < B/L, repeated play cap-bounded each round; no pacing conclusion",
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "outcome_status": "pending"
+    },
+    {
+      "id": "timeline-R-50-escalating",
+      "parent": "R-mid-path-50-low",
+      "actor_rank": 50,
+      "earning_rounds": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "schedule": "escalating",
+      "desired_factors": [
+        ".25",
+        ".50",
+        ".75",
+        "1"
+      ],
+      "desired_base": "frozen r=0 feasible one-round optimum from Phase 2",
+      "claim_delay": 7,
+      "final_horizon": 10,
+      "budget_period": "one initial stock across all four rounds",
+      "truncation": "min(desired, remaining_stock/leakage, price*original_additional_capacity); nonnegative; no replenishment or token sales",
+      "comparators": [
+        "matched four-round no-purchase baseline",
+        "one-round deployment of same initial B",
+        "constant versus equal-total for pacing only"
+      ],
+      "cap_below_stock_rule": "if xcap < B/L, repeated play cap-bounded each round; no pacing conclusion",
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "outcome_status": "pending"
+    },
+    {
+      "id": "timeline-R-50-equal-total",
+      "parent": "R-mid-path-50-low",
+      "actor_rank": 50,
+      "earning_rounds": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "schedule": "equal-total",
+      "desired_factors": [
+        ".10",
+        ".20",
+        ".30",
+        ".40"
+      ],
+      "desired_base": "frozen r=0 feasible one-round optimum from Phase 2",
+      "claim_delay": 7,
+      "final_horizon": 10,
+      "budget_period": "one initial stock across all four rounds",
+      "truncation": "min(desired, remaining_stock/leakage, price*original_additional_capacity); nonnegative; no replenishment or token sales",
+      "comparators": [
+        "matched four-round no-purchase baseline",
+        "one-round deployment of same initial B",
+        "constant versus equal-total for pacing only"
+      ],
+      "cap_below_stock_rule": "if xcap < B/L, repeated play cap-bounded each round; no pacing conclusion",
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "outcome_status": "pending"
+    },
+    {
+      "id": "timeline-R-90-constant",
+      "parent": "R-mid-path-90-low",
+      "actor_rank": 90,
+      "earning_rounds": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "schedule": "constant",
+      "desired_factors": [
+        ".25",
+        ".25",
+        ".25",
+        ".25"
+      ],
+      "desired_base": "frozen r=0 feasible one-round optimum from Phase 2",
+      "claim_delay": 7,
+      "final_horizon": 10,
+      "budget_period": "one initial stock across all four rounds",
+      "truncation": "min(desired, remaining_stock/leakage, price*original_additional_capacity); nonnegative; no replenishment or token sales",
+      "comparators": [
+        "matched four-round no-purchase baseline",
+        "one-round deployment of same initial B",
+        "constant versus equal-total for pacing only"
+      ],
+      "cap_below_stock_rule": "if xcap < B/L, repeated play cap-bounded each round; no pacing conclusion",
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "outcome_status": "pending"
+    },
+    {
+      "id": "timeline-R-90-escalating",
+      "parent": "R-mid-path-90-low",
+      "actor_rank": 90,
+      "earning_rounds": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "schedule": "escalating",
+      "desired_factors": [
+        ".25",
+        ".50",
+        ".75",
+        "1"
+      ],
+      "desired_base": "frozen r=0 feasible one-round optimum from Phase 2",
+      "claim_delay": 7,
+      "final_horizon": 10,
+      "budget_period": "one initial stock across all four rounds",
+      "truncation": "min(desired, remaining_stock/leakage, price*original_additional_capacity); nonnegative; no replenishment or token sales",
+      "comparators": [
+        "matched four-round no-purchase baseline",
+        "one-round deployment of same initial B",
+        "constant versus equal-total for pacing only"
+      ],
+      "cap_below_stock_rule": "if xcap < B/L, repeated play cap-bounded each round; no pacing conclusion",
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "outcome_status": "pending"
+    },
+    {
+      "id": "timeline-R-90-equal-total",
+      "parent": "R-mid-path-90-low",
+      "actor_rank": 90,
+      "earning_rounds": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "schedule": "equal-total",
+      "desired_factors": [
+        ".10",
+        ".20",
+        ".30",
+        ".40"
+      ],
+      "desired_base": "frozen r=0 feasible one-round optimum from Phase 2",
+      "claim_delay": 7,
+      "final_horizon": 10,
+      "budget_period": "one initial stock across all four rounds",
+      "truncation": "min(desired, remaining_stock/leakage, price*original_additional_capacity); nonnegative; no replenishment or token sales",
+      "comparators": [
+        "matched four-round no-purchase baseline",
+        "one-round deployment of same initial B",
+        "constant versus equal-total for pacing only"
+      ],
+      "cap_below_stock_rule": "if xcap < B/L, repeated play cap-bounded each round; no pacing conclusion",
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "outcome_status": "pending"
+    },
+    {
+      "id": "timeline-R-1-escalating-delay14",
+      "parent": "R-mid-path-1-low",
+      "actor_rank": 1,
+      "earning_rounds": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "schedule": "escalating",
+      "desired_factors": [
+        ".25",
+        ".50",
+        ".75",
+        "1"
+      ],
+      "desired_base": "frozen r=0 feasible one-round optimum from Phase 2",
+      "claim_delay": 14,
+      "final_horizon": 17,
+      "budget_period": "one initial stock across all four rounds",
+      "truncation": "min(desired, remaining_stock/leakage, price*original_additional_capacity); nonnegative; no replenishment or token sales",
+      "comparators": [
+        "matched four-round no-purchase baseline",
+        "one-round deployment of same initial B",
+        "constant versus equal-total for pacing only"
+      ],
+      "cap_below_stock_rule": "if xcap < B/L, repeated play cap-bounded each round; no pacing conclusion",
+      "status": "illustrative",
+      "scope": "computed",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "outcome_status": "pending",
+      "parent_timeline": "timeline-R-1-escalating"
+    }
+  ],
+  "coverage_counts": {
+    "core": 54,
+    "fee-leaning": 3,
+    "aligned": 9,
+    "native": 3,
+    "one-factor": 36,
+    "appendix": 3,
+    "capability": 4,
+    "demand": 6,
+    "price-routing": 1,
+    "budget": 12,
+    "invoice-price": 4,
+    "timelines": 10
+  },
+  "progression_contract": {
+    "maximum_distinct_points": 8,
+    "points": [
+      "0",
+      ".01 F",
+      ".10 F",
+      "feasible optimum",
+      "feasible endpoint",
+      "stake-cap boundary",
+      "unconstrained optimum",
+      "F harm-only diagnostic"
+    ],
+    "deduplicate": "Decimal equality within verifier tolerance; preserve all origin labels",
+    "infeasible": "retain with explicit diagnostic label; never establish affordable conduct"
+  },
+  "independent_boundaries": [
+    {
+      "id": "above-cap",
+      "stake_share": ".05",
+      "fee_share": ".10",
+      "expect": "zero primary headroom"
+    },
+    {
+      "id": "zero-fees",
+      "total_fees": "0",
+      "expect": "MFS zero-share boundary; appendix undefined"
+    },
+    {
+      "id": "zero-victim",
+      "victim_fee_share": "0",
+      "expect": "undefined relative loss"
+    },
+    {
+      "id": "zero-retention",
+      "t": "0",
+      "expect": "no finite profitable critical ratio"
+    },
+    {
+      "id": "capacity-inclusive",
+      "fraction": ".25",
+      "expect": "exact endpoint accepted"
+    },
+    {
+      "id": "invalid-negative",
+      "value": "-.1",
+      "expect": "rejected"
+    },
+    {
+      "id": "invalid-nonfinite",
+      "value": "NaN",
+      "expect": "rejected"
+    }
+  ],
+  "legacy_replay": {
+    "experiment": "EX-06",
+    "path": "experiments/m2/capability-pricing",
+    "cases": [
+      "S00",
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06",
+      "S07",
+      "S08",
+      "S09",
+      "S10",
+      "S11"
+    ],
+    "sensitivity_groups": [
+      "T-price",
+      "T-cost",
+      "T-score",
+      "T-ownership",
+      "T-valuation",
+      "T-claim",
+      "T-appendix",
+      "T-zero",
+      "T-redistribution"
+    ],
+    "rule": "original configuration/costs/cuts/ownership/scores/claims/valuation unchanged; Phase 2 reproduces before adaptation"
+  },
+  "no_extra_cross_products": true
+}
