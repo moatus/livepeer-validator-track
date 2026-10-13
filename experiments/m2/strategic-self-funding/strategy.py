@@ -1,6 +1,7 @@
 """Closed forms locate finite candidates; EX-06 evaluates every payoff."""
 from decimal import Decimal as D
 from adapter import ZERO, ONE, EPS
+import fixtures
 
 
 def parameters(state):
@@ -16,7 +17,7 @@ def parameters(state):
     # quantization residual is shown in actual shares, never stake acquisition.
     aligned = state['start'] == 'aligned'
     if aligned:
-        assert abs(a-s) <= EPS
+        fixtures.require(abs(a-s) <= EPS, 'aligned declared equality within agreement tolerance')
         cap = ZERO
     head = max(ZERO, s-min(a,s)) if not aligned else ZERO
     if state['reading'] == 'appendix':
@@ -36,6 +37,10 @@ def cash_endpoint(state, par):
     # Inward representable rounding enforces <=; EPS never extends a bound.
     while L*x+K > B:
         x = x.next_minus()
+    # Rounded multiplication can have a one-ulp equality plateau. Maximize the
+    # representable endpoint within the same exact Decimal <= domain, not EPS.
+    while L*x.next_plus()+K <= B:
+        x = x.next_plus()
     return x
 
 
@@ -105,6 +110,8 @@ def collective_landmark(state, target):
     victims = [v for i,v in enumerate(state['vector']) if i != state['actor_rank']-1]
     if p['F'] == 0:
         return None
+    if state['reading']=='appendix':
+        return p['F']*target/(ONE-target) if any(v['outside_fee_usdc']>0 for v in victims) else None
     baseline = sum((min(v['outside_fee_usdc']/p['F'],v['stake']/p['S'])*v['score'] for v in victims), ZERO)
     if baseline == 0:
         return None
@@ -131,6 +138,8 @@ def collective_landmark(state, target):
 def individual_landmark(state, victim, target):
     p = parameters(state)
     g, s = victim['outside_fee_usdc'], victim['stake']/p['S']
+    if state['reading']=='appendix':
+        return p['F']*target/(ONE-target) if p['F'] and g*victim['score']>0 else None
     w = min(g/p['F'],s) if p['F'] else ZERO
     if w*victim['score'] == 0:
         return None

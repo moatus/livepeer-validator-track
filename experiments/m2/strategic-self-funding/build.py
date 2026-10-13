@@ -22,7 +22,8 @@ def provenance(state, vector_hash, manifest):
         source_round=4364, earning_round=state['earning_round'], horizon='earning cohort n+7',
         units='amounts: USDC or USDC-equivalent as named; tokens: LPT; shares/loss: fractions; capacity/jobs: divisible jobs; prices/cost: USDC/job',
         status='illustrative October accounting with measured calibration and native proxies',
-        actor_assumption='native measured cuts/address-ownership proxy' if state['start']=='native' else 'standardized full organizational retention upper bound',
+        actor_assumption='native measured cuts/address-ownership proxy' if state['start']=='native' else
+                         'illustrative quarter-ownership retention override' if state['id'].startswith('retention-') else 'standardized full organizational retention upper bound',
         nonactor_assumption='native measured cuts/address-ownership proxies retained, including synthetic roles',
         purpose='modeler-known reward-seeking real executed work without credited use; no observed misconduct',
         budget_period=state['budget_period'], budget_label='budget convention',
@@ -42,7 +43,11 @@ class Profile:
     def evaluate(self, x, useful=False):
         key = (x,useful)
         if key not in self.cache:
-            self.cache[key] = self.adapter.evaluate(self.state,x,useful=useful,diagnostic=True)
+            s=self.state
+            cash_ok=f.cash_feasible(x,s['controlled_price'],s['controlled_cost'],
+                s['vector'][self.actor]['z'],s['cash_loss_allowance_usdc'],s['setup_if_positive_usdc'])
+            capacity_ok=f.capacity_feasible(x,s['controlled_price'],s['additional_capacity_jobs'])
+            self.cache[key] = self.adapter.evaluate(s,x,useful=useful,diagnostic=not (cash_ok and capacity_ok))
         return self.cache[key]
 
     def increment(self, x):
@@ -106,19 +111,33 @@ def reach(profile,x,optimum):
                      'harm-only spending beyond actor optimum' if meta['feasible'] else 'diagnostic; harm-only or additional funding/capacity required')
 
 
-def build_core():
+def stopping_label(state,optimum,cash_end,capacity_end,endpoint):
+    p=st.parameters(state)
+    if optimum==0: return 'zero action'
+    if optimum==cash_end: return 'budget convention'
+    if optimum==p['cap']: return 'stake cap'
+    if optimum==capacity_end: return 'capacity endpoint'
+    f.require(0<optimum<endpoint and (p['cap'] is None or optimum<p['cap']) and
+              abs(st.derivative(state,optimum))<=EPS,'Interior stop must be a strictly feasible stationary point below cap')
+    return 'interior stationary point'
+
+
+def build_profiles(core_only=True):
     states,cal,manifest,networks,grid = checked_inputs()
     engine = load_engine()
     replay = replay_originals(engine)
     adapter = Adapter(engine,replay)
-    out = f.HERE/'generated/core'
+    out = f.HERE/('generated/core' if core_only else 'generated/full')
     out.mkdir(parents=True,exist_ok=True)
-    summaries,points,landmarks,break_evens = [],[],[],[]
+    summaries,points,landmarks,break_evens,comparisons = [],[],[],[],[]
+    comparison_effects=[]
+    lookup={}
+    definitions={r['id']:r for r in grid['profiles']}
     effects_path = out/'pool-effects.jsonl'
     effects_count = 0
     with effects_path.open('wb') as effects:
         for sid,state in states.items():
-            if state['group'] not in CORE_GROUPS:
+            if core_only and state['group'] not in CORE_GROUPS:
                 continue
             profile = Profile(state,adapter)
             p = profile.par
@@ -146,8 +165,7 @@ def build_core():
             if p['aligned_equality']:
                 dS = ZERO
             critical = p['L']/(p['t']*p['score']*(ONE-p['a'])) if p['t']*p['score']>0 and p['cap']!=0 and p['a']<1 else 'no finite profitable ratio at cap or zero retention/score'
-            stopping = ('zero action' if optimum==0 else 'budget convention' if optimum==cash_end else
-                        'stake cap' if optimum==p['cap'] else 'interior stationary point')
+            stopping = stopping_label(state,optimum,cash_end,capacity_end,endpoint)
             prov = provenance(state,networks['vector_hashes'][sid],manifest)
             summary = dict(**prov,actual_initial_actor_fee_share=p['a'],actual_actor_stake_share=p['s'],
                 actual_initial_fee_minus_stake_share=p['a']-p['s'],aligned_declared_equality=p['aligned_equality'],
@@ -192,7 +210,8 @@ def build_core():
                     useful_reference_network=use_net,useful_reference_parity='all 100 rows identical except actor declared use and net value'))
                 for i,(before,after) in enumerate(zip(base,rows)):
                     loss = before['claimable_lpt']-after['claimable_lpt']
-                    status = lambda r:'fee-limited' if r['fee_share']<r['stake_share'] else 'stake-limited' if r['fee_share']>r['stake_share'] else 'at cap equality'
+                    status = lambda r:('fee-work appendix; no stake cap' if state['reading']=='appendix' else
+                        'fee-limited' if r['fee_share']<r['stake_share'] else 'stake-limited' if r['fee_share']>r['stake_share'] else 'at cap equality')
                     effect = dict(**prov,point=point_id,x_usdc=x,**meta,source_rank=i+1,role='actor' if i==profile.actor else 'honest outside-service role',
                         baseline=before,changed=after,absolute_reward_loss_lpt=loss,
                         relative_reward_loss=loss/before['claimable_lpt'] if before['claimable_lpt'] else 'undefined: zero baseline reward',
@@ -237,12 +256,23 @@ def build_core():
                     item.update(**reach(profile,x,optimum),status='defined',engine_actual_loss_fraction=actual_loss,
                                 actor_net_value_delta_usdc_equivalent=metrics['net_value_delta_usdc_equivalent'])
                 landmarks.append(item)
-    f.require(len(summaries)==69 and Counter(r['group'] for r in summaries)==Counter(core=54,**{'fee-leaning':3,'aligned':9,'native':3}),'Core row inventory')
+            lookup[sid]=summary
+            if state['group'] not in CORE_GROUPS:
+                from supplement import comparison
+                item,extra=comparison(state,profile,summary,lookup[state['parent']],definitions[sid],prov)
+                comparisons.append(item);comparison_effects.extend(extra)
+    expected=69 if core_only else 135
+    f.require(len(summaries)==expected,'Exact frozen profile inventory')
+    if core_only:
+        f.require(Counter(r['group'] for r in summaries)==Counter(core=54,**{'fee-leaning':3,'aligned':9,'native':3}),'Core group inventory')
     write_json(out/'profiles.json',summaries)
     write_jsonl(out/'progressions.jsonl',points)
     write_jsonl(out/'loss-landmarks.jsonl',landmarks)
     write_jsonl(out/'break-even.jsonl',break_evens)
     write_json(out/'legacy-replay.json',replay)
+    if not core_only:
+        write_json(out/'comparisons.json',comparisons)
+        write_jsonl(out/'comparison-pool-effects.jsonl',comparison_effects)
     lines = ['# Strategic self-funding: finite core accounting','',
         'Illustrative one-round October accounting, with measured round-4364 calibration. Native references use actual cuts and address-ownership proxies; other actors use full-retention upper bounds. Unsold LPT value is separate from realized cash.', '',
         '| Profile | Actual fee/stake shares | Ratio | Feasible invoices USDC | Cash loss USDC | Retained net value USDC-equivalent | Stop | Honest reward loss LPT | Unminted share of actor gain |',
@@ -252,18 +282,23 @@ def build_core():
         share=m['previously_unminted_share_of_actor_gain']
         lines.append(f"| {r['profile']} | {r['actual_initial_actor_fee_share']:.8f}/{r['actual_actor_stake_share']:.8f} | {r['scheduled_node_valued_allowance_to_outside_fee_ratio']:.4f} | {r['feasible_optimum']['x_usdc']:.8f} | {-m['cash_delta_usdc']:.8f} | {m['net_value_delta_usdc_equivalent']:.8f} | {r['stopping_reason']} | {m['honest_99_reward_loss_lpt']:.8f} | {share if isinstance(share,str) else format(share,'.6f')} |")
     lines += ['', 'The JSON/JSONL files retain full precision, all 100 pools at every point, useful/no-action references, cash and service feasibility, individual and collective loss thresholds, pending versus actual claims, envelopes, buyback, burn and net supply. Beyond-capacity points are hypothetical accounting only. Common control, profitable real work and anonymous source-linked modeled roles establish no misconduct.', '',
-        '54 core profiles, three fee-leaning confirmations, nine aligned controls and three native references are computed. The 66 supplementary outcomes, ten timelines and evidence-scope table remain uncomputed. E2/P1 and studies 3–8 remain pending.']
+        ('The 69 core/control/reference profiles are computed;66 supplements/timelines/evidence mapping are excluded by this stage boundary.' if core_only else
+         'All135 frozen one-round profiles are computed. Supplementary comparisons retain fixed parent actions where specified and reoptimized actions. Timelines and evidence mapping are in separate files. E2/P1 and studies3–8 remain pending.')]
     (out/'accounting.md').write_text('\n'.join(lines)+'\n')
-    counts=dict(profiles=69,groups=dict(Counter(r['group'] for r in summaries)),progression_points=len(points),
+    counts=dict(profiles=len(summaries),groups=dict(Counter(r['group'] for r in summaries)),progression_points=len(points),
                 pool_effects=effects_count,loss_landmarks=len(landmarks),break_even_landmarks=len(break_evens),
-                supplementary_outcomes=0,timelines=0,evidence_outcomes=0)
+                supplementary_outcomes=len(comparisons),comparison_pool_effects=len(comparison_effects),timelines=0,evidence_outcomes=0)
     hashes={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(out.iterdir()) if p.is_file() and p.name!='manifest.json'}
-    write_json(out/'manifest.json',dict(stage='core-only',counts=counts,calibration=cal,file_sha256=hashes,
+    write_json(out/'manifest.json',dict(stage='core-only' if core_only else 'full-profiles',counts=counts,calibration=cal,file_sha256=hashes,
         frozen_inputs={k:hashlib.sha256((f.HERE/k).read_bytes()).hexdigest() for k in ('inputs.json','networks.json','scenarios.json','fixtures.py')},
         numerical_contract='Decimal 60/ROUND_HALF_EVEN; agreement 1e-18; exact inclusive cash/capacity checks; inward cash-endpoint rounding only',
-        outcome_boundary='69 core/control/confirmation/native rows only; supplements/timelines/evidence table uncomputed'))
-    print(f"Built core: {counts}; outputs experiments/m2/strategic-self-funding/generated/core/")
-    return counts
+        outcome_boundary='69 core/control/reference rows only' if core_only else '135 frozen one-round profiles; timeline/evidence mapping separate'))
+    print(f"Built {'core' if core_only else 'full'}: {counts}; outputs experiments/m2/strategic-self-funding/generated/{'core' if core_only else 'full'}/")
+    return dict(counts=counts,states=states,calibration=cal,manifest=manifest,networks=networks,grid=grid,adapter=adapter,summaries=lookup)
+
+
+def build_core():
+    return build_profiles(True)['counts']
 
 
 if __name__=='__main__':

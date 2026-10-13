@@ -52,6 +52,7 @@ def fixture(N='128',B='20',fees=('10','30','60'),own='1',setup='0',offer='generi
 def independent_fixtures():
     # Expectations below are hand constants, never generated-table inputs.
     from build import Profile
+    from build import stopping_label
     import strategy
     engine=load_engine()
     replay=replay_originals(engine)
@@ -85,6 +86,22 @@ def independent_fixtures():
     near(best['x_usdc'],80,'hand cap kink optimum')
     near(best['net_value_delta_usdc_equivalent'],336,'hand cap kink payoff')
     check(strategy.derivative(cap,D(80),'left')>0 and strategy.derivative(cap,D(80),'right')==D('-.8'),'hand kink slopes')
+    limited=fixture(N='1000');limited['cash_loss_allowance_usdc']=None
+    limited['additional_capacity_jobs']=D(5);limited['vector'][0]['caps']['generic']['capacity']=D(15)
+    lp=Profile(limited,adapter);best,_=lp.optimize(D(5))
+    near(best['x_usdc'],5,'hand no-cash-bound capacity optimum')
+    near(best['net_value_delta_usdc_equivalent'],D(272)/7,'hand capacity endpoint payoff')
+    check(strategy.derivative(limited,D(5))>0 and stopping_label(limited,D(5),None,D(5),D(5))=='capacity endpoint','hand positive endpoint derivative and label')
+    # Independent quadratic fixtures: two positive roots and a tangent root.
+    from independent_math import roots,quantities
+    two=fixture(N='160',setup='8')
+    # .8x²-56x+800 roots are 20 and50, both below cap80.
+    expected=[D(20),D(50)]
+    check(roots(quantities(two))==expected,'independent two setup roots constants')
+    actual=strategy.break_even_roots(two)[0]
+    check(actual==expected,'builder two setup roots constants')
+    tangent=fixture(N='128',setup='3.2')
+    check(roots(quantities(tangent))==[D(20)] and strategy.break_even_roots(tangent)[0]==[D(20)],'independent tangent root constant')
     # Above-cap, zero reward retention and critical equality defend zero action.
     for edge in (fixture(fees=('60','20','20')),fixture(own='0'),fixture(N=str(D(800)/9))):
         ep=Profile(edge,adapter)
@@ -160,7 +177,7 @@ def independent_fixtures():
     return replay
 
 
-def verify():
+def verify(core_only=True):
     CHECKS.clear()
     for name,sha in FROZEN.items():
         check(hashlib.sha256((f.HERE/name).read_bytes()).hexdigest()==sha,'frozen dispatch input hash')
@@ -168,18 +185,21 @@ def verify():
     states,cal=f.materialize(manifest,networks,grid)
     check(all(f.digest(s)==networks['vector_hashes'][sid] for sid,s in states.items()),'frozen vector hashes before accounting')
     original=independent_fixtures()
-    out=f.HERE/'generated/core'
+    out=f.HERE/('generated/core' if core_only else 'generated/full')
     generated=json.loads((out/'manifest.json').read_text())
     for name,sha in generated['file_sha256'].items():
         check(hashlib.sha256((out/name).read_bytes()).hexdigest()==sha,'output file digest')
     profiles=json.loads((out/'profiles.json').read_text())
-    expected={sid for sid,s in states.items() if s['group'] in ('core','fee-leaning','aligned','native')}
-    check(len(profiles)==69 and {r['profile'] for r in profiles}==expected,'exact 69 core inventory')
-    check(Counter(r['group'] for r in profiles)==Counter(core=54,aligned=9,native=3,**{'fee-leaning':3}),'core group counts')
+    expected={sid for sid,s in states.items() if not core_only or s['group'] in ('core','fee-leaning','aligned','native')}
+    check(len(profiles)==len(expected) and {r['profile'] for r in profiles}==expected,'exact frozen profile inventory')
+    check(Counter(r['group'] for r in profiles)==Counter(states[sid]['group'] for sid in expected),'frozen group counts')
     lookup={r['profile']:r for r in profiles}
+    from independent_math import verify_summary,expected_progression
+    independent={}
     for r in profiles:
         state=states[r['profile']];v=state['vector'][state['actor_rank']-1]
         F,S=state['outside_F_usdc'],sum((p['stake'] for p in state['vector']),ZERO)
+        independent[r['profile']]=verify_summary(state,r)
         a,s=v['outside_fee_usdc']/F,v['stake']/S
         near(r['actual_initial_actor_fee_share'],a,'actual monetary fee share')
         near(r['actual_actor_stake_share'],s,'actual monetary stake share')
@@ -191,13 +211,15 @@ def verify():
         near(r['leakage_L'],L,'leakage identity')
         cap=max(ZERO,(s*F-v['outside_fee_usdc'])/(1-s))
         if r['start']=='aligned': cap=ZERO
-        near(r['xcap_usdc'],cap,'cap algebra')
-        near(r['dcap'],max(ZERO,s-min(a,s))/(1-a),'headroom dcap identity')
-        xe=D(r['cash_endpoint_usdc']);B=state['cash_loss_allowance_usdc']
-        check(L*xe<=B,'cash endpoint exact feasibility')
-        near(r['dB'],xe/(F+xe),'budget dilution identity')
+        if state['reading']=='appendix': cap=None
+        if cap is None:check(r['xcap_usdc'] is None,'appendix no cap')
+        else:near(r['xcap_usdc'],cap,'cap algebra')
+        near(r['dcap'],ONE if cap is None else max(ZERO,s-min(a,s))/(1-a),'headroom dcap identity')
+        xe=None if r['cash_endpoint_usdc'] is None else D(r['cash_endpoint_usdc']);B=state['cash_loss_allowance_usdc'];K=state['setup_if_positive_usdc']
+        if xe is not None:check(xe==0 or L*xe+K<=B,'cash endpoint exact feasibility')
+        near(r['dB'],ONE if xe is None else xe/(F+xe),'budget dilution identity')
         near(r['single_fixed_stake_harm_limit'],min(D(r['dcap']),D(r['dB'])),'single fixed stake harm limit')
-        if cap>0 and t>0:
+        if (cap is None or cap>0) and t>0:
             near(r['critical_ratio'],L/(t*(1-a)),'critical reward/fee ratio')
         else:
             check(isinstance(r['critical_ratio'],str) and r['critical_ratio'].startswith('no finite'),'critical ratio undefined/capped')
@@ -208,15 +230,16 @@ def verify():
             check(D(r['added_stake_identity_lpt'])>=0,'no negative stake purchase')
         else:
             check(str(r['added_stake_identity_lpt']).startswith('not applicable'),'below-cap stake identity not applicable')
-        x=D(r['feasible_optimum']['x_usdc']);end=D(r['feasible_endpoint_usdc'])
-        check(0<=x<=end and L*x<=B and x/state['controlled_price']<=state['additional_capacity_jobs'],'optimum inclusive bounds')
+        x=D(r['feasible_optimum']['x_usdc']);end=independent[r['profile']][3]
+        check(0<=x<=end and (B is None or L*x+(K if x>0 else ZERO)<=B) and x/state['controlled_price']<=state['additional_capacity_jobs'],'optimum inclusive bounds')
         # Independently derive the candidate set and objective from the rational
         # increment, rather than call strategy.py or sample a grid.
         choices={ZERO,end}
-        if cap<=end: choices.add(cap)
+        if cap is not None and cap<=end: choices.add(cap)
         stationary=(P*N*t*(F-v['outside_fee_usdc'])/L).sqrt()-F if t>0 else -F
-        if 0<stationary<=cap and stationary<=end: choices.add(stationary)
-        expected_payoff=lambda q:P*N*t*(min((v['outside_fee_usdc']+q)/(F+q),s)-min(a,s))-L*q
+        if 0<stationary and (cap is None or stationary<=cap) and stationary<=end: choices.add(stationary)
+        expected_payoff=lambda q:P*N*t*((v['outside_fee_usdc']+q)/(F+q)-a if cap is None else
+            min((v['outside_fee_usdc']+q)/(F+q),s)-min(a,s))-L*q-(K if q>0 else ZERO)
         best=max(choices,key=lambda q:(expected_payoff(q),-q))
         near(x,best,'independent analytic candidate optimum')
         near(r['feasible_optimum']['net_value_delta_usdc_equivalent'],expected_payoff(x),'independent optimum payoff')
@@ -225,8 +248,8 @@ def verify():
             q=D(candidate['x_usdc'])
             near(candidate['net_value_delta_usdc_equivalent'],expected_payoff(q),'independent candidate payoff')
             uncapped=P*N*t*(F-v['outside_fee_usdc'])/(F+q)**2-L
-            left=uncapped if q<=cap else -L
-            right=uncapped if q<cap else -L
+            left=uncapped if cap is None or q<=cap else -L
+            right=uncapped if cap is None or q<cap else -L
             near(candidate['marginal_left'],left,'independent left derivative')
             near(candidate['marginal_right'],right,'independent right derivative')
         check(x<state['controlled_price']*state['additional_capacity_jobs'],'capacity not binding profitable optimum')
@@ -242,8 +265,10 @@ def verify():
             else: check(str(m['peer_loss_share_of_actor_gain']).startswith('undefined'),'zero gain undefined shares')
     point_lookup={}
     point_counts=Counter()
+    point_sets=defaultdict(set)
     for point in rows(out/'progressions.jsonl'):
         sid=point['profile'];point_counts[sid]+=1;point_lookup[point['point']]=point
+        point_sets[sid].add(D(point['x_usdc']))
         near(point['network']['network_fees_usdc'],D(point['baseline_network']['network_fees_usdc'])+D(point['x_usdc']),'progression denominator')
         check(point['network']==point['useful_reference_network'],'useful all-network parity')
         a,u=point['actor'],point['useful_reference_actor']
@@ -257,6 +282,8 @@ def verify():
         else: check(not point['temporary_capacity_used'],'no D2 at capacity-feasible diagnostics')
         check(point['diagnostic']==(not point['feasible']),'actual diagnostic versus feasible point label')
     check(set(point_counts)==expected and all(1<=n<=8 for n in point_counts.values()),'finite deduplicated progression inventory')
+    for sid,(p,x,u,e) in independent.items():
+        check(point_sets[sid]==expected_progression(p,x,u,e),'complete independent progression selection set')
     aggregate=defaultdict(lambda:defaultdict(lambda:ZERO));seen=defaultdict(set)
     for effect in rows(out/'pool-effects.jsonl'):
         pid=effect['point'];rank=effect['source_rank'];sid=effect['profile'];point=point_lookup[pid]
@@ -265,8 +292,8 @@ def verify():
         F=D(point['baseline_network']['network_fees_usdc']);T=D(point['network']['network_fees_usdc'])
         ss=v['stake']/state['total_stake_lpt'];N=D('.94')*state['scheduled_ceiling_lpt']
         near(new['stake_share'],ss,'all-pool fixed stake')
-        near(new['claimable_lpt'],N*min(D(new['fees_usdc'])/T,ss),'all-pool independent entitlement')
-        near(old['claimable_lpt'],N*min(D(old['fees_usdc'])/F,ss),'all-pool independent baseline')
+        near(new['claimable_lpt'],N*(D(new['fees_usdc'])/T if state['reading']=='appendix' else min(D(new['fees_usdc'])/T,ss)),'all-pool independent entitlement')
+        near(old['claimable_lpt'],N*(D(old['fees_usdc'])/F if state['reading']=='appendix' else min(D(old['fees_usdc'])/F,ss)),'all-pool independent baseline')
         near(effect['absolute_reward_loss_lpt'],D(old['claimable_lpt'])-D(new['claimable_lpt']),'pool absolute loss')
         if D(old['claimable_lpt']):
             near(effect['relative_reward_loss'],D(effect['absolute_reward_loss_lpt'])/D(old['claimable_lpt']),'pool relative loss')
@@ -320,26 +347,34 @@ def verify():
         x=D(r['x_usdc']);target=D(r['target_fraction']);F=state['outside_F_usdc']
         near(r['engine_actual_loss_fraction'],target,'engine target-loss agreement')
         L=D(summary['leakage_L']);B=state['cash_loss_allowance_usdc'];Q=state['additional_capacity_jobs']
-        check(r['cash_feasible']==(L*x<=B) and r['capacity_feasible']==(x/state['controlled_price']<=Q),'landmark exact independent feasibility')
+        K=state['setup_if_positive_usdc']
+        check(r['cash_feasible']==(B is None or L*x+(K if x>0 else ZERO)<=B) and r['capacity_feasible']==(x/state['controlled_price']<=Q),'landmark exact independent feasibility')
         check(r['before_or_at_actor_feasible_optimum']==(x<=D(summary['feasible_optimum']['x_usdc'])),'landmark optimum ordering')
         if r['landmark_kind'].startswith('individual'):
-            v=state['vector'][r['source_rank']-1];w=min(v['outside_fee_usdc']/F,v['stake']/state['total_stake_lpt'])
+            v=state['vector'][r['source_rank']-1];w=v['outside_fee_usdc']/F if state['reading']=='appendix' else min(v['outside_fee_usdc']/F,v['stake']/state['total_stake_lpt'])
             near(x,v['outside_fee_usdc']/(w*(1-target))-F,'independent individual loss root')
-            if v['outside_fee_usdc']/F<=v['stake']/state['total_stake_lpt'] and target==D('.2'):
+            if state['group'] in ('core','native','aligned','fee-leaning') and v['outside_fee_usdc']/F<=v['stake']/state['total_stake_lpt'] and target==D('.2'):
                 check(x==state['controlled_price']*Q and r['capacity_feasible'] and r['capacity_position']=='at the capacity boundary','exact fee-limited 20 percent capacity endpoint')
         else:
-            old=sum((min(v['outside_fee_usdc']/F,v['stake']/state['total_stake_lpt']) for i,v in enumerate(state['vector']) if i!=state['actor_rank']-1),ZERO)
-            new=sum((min(v['outside_fee_usdc']/(F+x),v['stake']/state['total_stake_lpt']) for i,v in enumerate(state['vector']) if i!=state['actor_rank']-1),ZERO)
+            weight=lambda v,denom:v['outside_fee_usdc']/denom if state['reading']=='appendix' else min(v['outside_fee_usdc']/denom,v['stake']/state['total_stake_lpt'])
+            old=sum((weight(v,F) for i,v in enumerate(state['vector']) if i!=state['actor_rank']-1),ZERO)
+            new=sum((weight(v,F+x) for i,v in enumerate(state['vector']) if i!=state['actor_rank']-1),ZERO)
             near((old-new)/old,target,'independent collective piecewise root')
     check(set(landmark_counts)==expected and all(n==300 for n in landmark_counts.values()),'99 individual times 3 plus 3 collective landmarks')
     for r in rows(out/'break-even.jsonl'):
         near(r['net_value_delta_usdc_equivalent'],0,'engine nonzero break-even')
-    check(generated['counts']['supplementary_outcomes']==generated['counts']['timelines']==generated['counts']['evidence_outcomes']==0,'first-stage outcome boundary')
+    if core_only:
+        check(generated['counts']['supplementary_outcomes']==generated['counts']['timelines']==generated['counts']['evidence_outcomes']==0,'core-only outcome boundary')
+    else:
+        from verify_full import supplementary_checks,timeline_checks,evidence_checks
+        supplementary_checks(states,profiles,out,check,near)
+        timeline_checks(states,profiles,grid,out,check,near)
+        evidence_checks(out,check)
     from adapter import write_json
-    write_json(f.HERE/'generated/core-verification.json',dict(status='PASS',assertions=sum(CHECKS.values()),
+    write_json(f.HERE/('generated/core-verification.json' if core_only else 'generated/full-verification.json'),dict(status='PASS',assertions=sum(CHECKS.values()),
         checks=dict(CHECKS),original_replay=original,
-        limits='Arithmetic/provenance/finite accounting only; no empirical validity, hidden-purpose evidence, eligibility policy, detector performance or owner research acceptance. No supplementary outcome or cohort timeline is computed.'))
-    print(f'PASS independent core verifier: {sum(CHECKS.values())} assertions; {len(profiles)} profiles; two nontrivial hand fixtures plus cap, zero, claim, score, schedule, capability/use and ownership boundaries; all-pool conservation and landmarks.')
+        limits='Arithmetic/provenance/finite accounting only; no empirical validity, hidden-purpose evidence, eligibility policy, detector performance or owner research acceptance.'))
+    print(f'PASS independent {"core" if core_only else "full"} verifier: {sum(CHECKS.values())} assertions; {len(profiles)} profiles; independent endpoints/roots/progression and hand fixtures; all-pool conservation/landmarks and declared-stage checks.')
 
 
 if __name__=='__main__':
