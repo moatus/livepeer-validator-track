@@ -2,7 +2,7 @@
 
 Version **0.10 · 2026-10-12**. Status: **drafted**. Owner: Shane (@moatus).
 
-How M2 work is briefed, carried out, reviewed, integrated and improved. What M2 must produce is in the [specification](SPEC.md); [Slice 2](SLICE-02.md) is drafted and [Slice 2b](SLICE-02B.md) is defined for the next implementation. Different agents carry out different stages; this runbook is written so that each can start cold from its brief.
+How M2 work is briefed, carried out, reviewed, integrated and improved. What M2 must produce is in the [specification](SPEC.md); [Slice 2](SLICE-02.md) is drafted and [Slice 2b](SLICE-02B.md) has frozen inputs and technically checked EX-08 accounting; consolidation is drafted for review and owner research review remains pending. Different agents carry out different stages; this runbook is written so that each can start cold from its brief.
 
 ## 0. Read first, in this order
 

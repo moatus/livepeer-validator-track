@@ -1,6 +1,8 @@
 # Slice 2b: strategic self-funding across network conditions
 
-Version **1.2 · 2026-10-12**. Status: **defined; implementation pending; amended before Phase 1 (revision history in §9)**. Owner: Shane (@moatus). This definition records the requested follow-up to [Slice 2](SLICE-02.md); it is not a research result, human acceptance or protocol decision. Its three implementation workloads are in [SLICE-02B-IMPLEMENTATION.md](SLICE-02B-IMPLEMENTATION.md).
+Version **1.2 · 2026-10-12**. Definition status before implementation: **defined; implementation pending; amended before Phase 1 (revision history in §9)**. Owner: Shane (@moatus). This definition records the requested follow-up to [Slice 2](SLICE-02.md); it is not a research result, human acceptance or protocol decision. Its three implementation workloads are in [SLICE-02B-IMPLEMENTATION.md](SLICE-02B-IMPLEMENTATION.md).
+
+**Execution status:** Inputs are reconstructed and [EX-08 accounting](../../experiments/m2/strategic-self-funding/README.md) is implemented and technically checked. Consolidation and the [three-story guide](../reviewer-resources/m2-slice-02b-story-listening-guide.md) are drafted for review; owner research review remains pending. The v1.2 definition, economic contract and revision history below are unchanged.
 
 ## 1. Question and precedent
 

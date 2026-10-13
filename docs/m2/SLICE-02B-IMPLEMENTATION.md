@@ -1,6 +1,8 @@
 # Slice 2b implementation: three agent workloads
 
-Version **1.2 · 2026-10-12**. Status: **ready for phased implementation; not started**. Aligned with SLICE-02B.md 1.2.
+Version **1.2 · 2026-10-12**. Definition status before implementation: **ready for phased implementation; not started**. Aligned with SLICE-02B.md 1.2.
+
+**Execution status:** Frozen inputs and reproducible [EX-08 accounting](../../experiments/m2/strategic-self-funding/README.md) are implemented and technically checked. Consolidation and its [listening guide](../reviewer-resources/m2-slice-02b-story-listening-guide.md) are drafted for review. Owner research review remains pending; the original workload and acceptance definitions below are preserved.
 
 The research design is already defined in [SLICE-02B.md](SLICE-02B.md). This specification implements it through M2.1, M2.2 and M2.3. There is no slice-design phase. Read [SPEC.md](SPEC.md), [RUNBOOK.md](RUNBOOK.md), [MILESTONES.md](../../MILESTONES.md) and [WORKFLOW.md](../WORKFLOW.md); the owner's instructions take precedence.
 
