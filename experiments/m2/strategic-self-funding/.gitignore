@@ -1,2 +1,2 @@
-# Deterministic input vectors; rebuild from the frozen contracts.
-/generated/vectors/
+# Deterministic inputs and ledgers; rebuild from the frozen contracts.
+/generated/
