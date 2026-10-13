@@ -5,6 +5,7 @@ Declared physical capacity and independent cash feasibility always remain visibl
 """
 from copy import deepcopy
 from decimal import Decimal as D, getcontext, ROUND_HALF_EVEN
+from fractions import Fraction
 import hashlib
 import importlib.util
 import json
@@ -24,6 +25,21 @@ FROZEN = {
 }
 ENGINE_PATH = f.ROOT/'experiments/m2/capability-pricing/build.py'
 ENGINE_SHA = '77ca2f5a57425e8968ce0dda70a0bb3c2ca3071e7d5dd068bd5349a4c8d9243b'
+
+
+def cash_feasible(state, x):
+    """Exact affordability from original scalars, never rounded z or L."""
+    actor = state['vector'][state['actor_rank']-1]
+    z = 1-Fraction(actor['d'])+Fraction(actor['d'])*Fraction(actor['w'])
+    leakage = 1-z/2+Fraction(state['controlled_cost'])/Fraction(state['controlled_price'])
+    loss = leakage*Fraction(x)+(Fraction(state['setup_if_positive_usdc']) if x > 0 else 0)
+    budget = state['cash_loss_allowance_usdc']
+    return budget is None or loss <= Fraction(budget)
+
+
+def capacity_feasible(state, x):
+    """Exact physical jobs domain, independent of receipt division rounding."""
+    return Fraction(x) <= Fraction(state['controlled_price'])*Fraction(state['additional_capacity_jobs'])
 
 
 def load_engine():
@@ -80,10 +96,11 @@ class Adapter:
         offer['setup'] = state['setup_if_positive_usdc'] if x > 0 else ZERO
         offer['u'] = ONE if useful else ZERO
         declared = deepcopy(pools)
-        capacity_ok = all(c['q_out']+c['q_self'] <= c['capacity'] for p in pools for c in p['caps'].values())
-        cash_ok = f.cash_feasible(x, state['controlled_price'], state['controlled_cost'],
-                                 state['vector'][actor]['z'], state['cash_loss_allowance_usdc'],
-                                 state['setup_if_positive_usdc'])
+        capacity_ok = capacity_feasible(state, x) and all(
+            Fraction(c['q_out'])+(Fraction(x)/Fraction(state['controlled_price'])
+                if i == actor and name == state['controlled_offer'] else Fraction(c['q_self'])) <= Fraction(c['capacity'])
+            for i,p in enumerate(state['vector']) for name,c in p['caps'].items())
+        cash_ok = cash_feasible(state, x)
         if not capacity_ok:
             f.require(diagnostic, 'Only labelled hypothetical diagnostics may exceed capacity')
             for p in pools:

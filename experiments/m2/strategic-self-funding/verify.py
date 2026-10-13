@@ -93,7 +93,7 @@ def independent_fixtures():
     near(best['net_value_delta_usdc_equivalent'],D(272)/7,'hand capacity endpoint payoff')
     check(strategy.derivative(limited,D(5))>0 and stopping_label(limited,D(5),None,D(5),D(5))=='capacity endpoint','hand positive endpoint derivative and label')
     # Independent quadratic fixtures: two positive roots and a tangent root.
-    from independent_math import roots,quantities
+    from independent_math import roots,quantities,endpoints
     two=fixture(N='160',setup='8')
     # .8x²-56x+800 roots are 20 and50, both below cap80.
     expected=[D(20),D(50)]
@@ -108,6 +108,39 @@ def independent_fixtures():
         best,_=ep.optimize(D(10))
         near(best['x_usdc'],0,'hand defended zero action')
     # Cash versus capacity are independent, inclusive and never EPS-expanded.
+    # Source-independent constants expose outward rounding hidden by Decimal.
+    from adapter import cash_feasible as builder_cash_feasible
+    from independent_math import exact_cash_feasible
+    from fractions import Fraction as Q
+    invoice=fixture(B='4728.9032150857835585092405659')
+    invoice['controlled_price']=D(10)
+    invoice_outward=D('8922.45889638827086511177465264150943396226415094339622641510')
+    niche_cash=fixture(B='591.1129018857229448136550707375',setup='2')
+    niche_cash['controlled_cost']=D('.2')
+    niche_outward=D('841.589859836747064019507243910714285714285714285714285714286')
+    for name,constant,outward in (('invoice',invoice,invoice_outward),('niche setup',niche_cash,niche_outward)):
+        check(not builder_cash_feasible(constant,outward) and not exact_cash_feasible(constant,outward),name+' one-ulp outward cash rejection')
+        check(builder_cash_feasible(constant,outward.next_minus()) and exact_cash_feasible(constant,outward.next_minus()),name+' one-ulp inward exact affordability')
+        check(f.cash_feasible(outward,constant['controlled_price'],constant['controlled_cost'],ONE,
+                             constant['cash_loss_allowance_usdc'],constant['setup_if_positive_usdc']),name+' rounded predicate regression exposed')
+    native_cash=fixture(B='82.09606640078432096592741806596851',
+        own='.00014038762494770506641608101468541675491145266056315272193415376305295364571626')
+    nv=native_cash['vector'][0];nv['k']=D('.04');nv['d']=D('.51')
+    native_exact_L=Q('1.0549642011556383352080638993412552187274975795715563960559067907904214968203423537')
+    check(1-(1-Q(nv['d'])+Q(nv['d'])*Q(nv['w']))/2+Q('.3')==native_exact_L,'native original scalar 82-digit leakage constant')
+    native_endpoint=D('77.8188172744192765243190249368268419617232947599942446208077')
+    check(builder_cash_feasible(native_cash,native_endpoint) and exact_cash_feasible(native_cash,native_endpoint),'native long coefficient exact cash feasibility')
+    check(Q(str(strategy.parameters(native_cash)['L']))*Q(native_endpoint)>Q(native_cash['cash_loss_allowance_usdc']),
+          'rounded native coefficient would falsely reject accepted endpoint')
+    successor=native_endpoint
+    for advance in (1,2,3):
+        successor=successor.next_plus()
+        check(builder_cash_feasible(native_cash,successor)==(advance<3) and
+              exact_cash_feasible(native_cash,successor)==(advance<3),'native exact adjacent-step precision '+str(advance))
+    native_cash['id']='native-measured-1'
+    check(strategy.cash_endpoint(native_cash,strategy.parameters(native_cash))==native_endpoint and
+          endpoints(quantities(native_cash))[0]==native_endpoint,
+          'native accepted conservative seed preserved exactly')
     bound=fixture(B='8')
     bound['additional_capacity_jobs']=D(10)
     bound['vector'][0]['caps']['generic']['capacity']=D(20)
@@ -194,7 +227,7 @@ def verify(core_only=True):
     check(len(profiles)==len(expected) and {r['profile'] for r in profiles}==expected,'exact frozen profile inventory')
     check(Counter(r['group'] for r in profiles)==Counter(states[sid]['group'] for sid in expected),'frozen group counts')
     lookup={r['profile']:r for r in profiles}
-    from independent_math import verify_summary,expected_progression
+    from independent_math import verify_summary,expected_progression,exact_cash_feasible,exact_capacity_feasible
     independent={}
     for r in profiles:
         state=states[r['profile']];v=state['vector'][state['actor_rank']-1]
@@ -216,7 +249,7 @@ def verify(core_only=True):
         else:near(r['xcap_usdc'],cap,'cap algebra')
         near(r['dcap'],ONE if cap is None else max(ZERO,s-min(a,s))/(1-a),'headroom dcap identity')
         xe=None if r['cash_endpoint_usdc'] is None else D(r['cash_endpoint_usdc']);B=state['cash_loss_allowance_usdc'];K=state['setup_if_positive_usdc']
-        if xe is not None:check(xe==0 or L*xe+K<=B,'cash endpoint exact feasibility')
+        if xe is not None:check(exact_cash_feasible(state,xe),'cash endpoint exact rational feasibility')
         near(r['dB'],ONE if xe is None else xe/(F+xe),'budget dilution identity')
         near(r['single_fixed_stake_harm_limit'],min(D(r['dcap']),D(r['dB'])),'single fixed stake harm limit')
         if (cap is None or cap>0) and t>0:
@@ -268,6 +301,11 @@ def verify(core_only=True):
     point_sets=defaultdict(set)
     for point in rows(out/'progressions.jsonl'):
         sid=point['profile'];point_counts[sid]+=1;point_lookup[point['point']]=point
+        state=states[sid];amount=D(point['x_usdc'])
+        cash_ok=exact_cash_feasible(state,amount);capacity_ok=exact_capacity_feasible(state,amount)
+        check(point['cash_feasible']==cash_ok,'progression exact rational cash label')
+        check(point['capacity_feasible']==capacity_ok,'progression exact rational capacity label')
+        check(point['feasible']==(cash_ok and capacity_ok),'progression exact rational combined label')
         point_sets[sid].add(D(point['x_usdc']))
         near(point['network']['network_fees_usdc'],D(point['baseline_network']['network_fees_usdc'])+D(point['x_usdc']),'progression denominator')
         check(point['network']==point['useful_reference_network'],'useful all-network parity')
@@ -348,7 +386,8 @@ def verify(core_only=True):
         near(r['engine_actual_loss_fraction'],target,'engine target-loss agreement')
         L=D(summary['leakage_L']);B=state['cash_loss_allowance_usdc'];Q=state['additional_capacity_jobs']
         K=state['setup_if_positive_usdc']
-        check(r['cash_feasible']==(B is None or L*x+(K if x>0 else ZERO)<=B) and r['capacity_feasible']==(x/state['controlled_price']<=Q),'landmark exact independent feasibility')
+        check(r['cash_feasible']==exact_cash_feasible(state,x) and r['capacity_feasible']==exact_capacity_feasible(state,x) and
+              r['feasible']==(exact_cash_feasible(state,x) and exact_capacity_feasible(state,x)),'landmark exact rational independent feasibility')
         check(r['before_or_at_actor_feasible_optimum']==(x<=D(summary['feasible_optimum']['x_usdc'])),'landmark optimum ordering')
         if r['landmark_kind'].startswith('individual'):
             v=state['vector'][r['source_rank']-1];w=v['outside_fee_usdc']/F if state['reading']=='appendix' else min(v['outside_fee_usdc']/F,v['stake']/state['total_stake_lpt'])

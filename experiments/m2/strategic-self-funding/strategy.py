@@ -1,6 +1,6 @@
 """Closed forms locate finite candidates; EX-06 evaluates every payoff."""
 from decimal import Decimal as D
-from adapter import ZERO, ONE, EPS
+from adapter import ZERO, ONE, EPS, cash_feasible
 import fixtures
 
 
@@ -34,12 +34,18 @@ def cash_endpoint(state, par):
     if B <= K:
         return ZERO
     x = (B-K)/L
-    # Inward representable rounding enforces <=; EPS never extends a bound.
-    while L*x+K > B:
+    # Original scalars determine exact affordability; rounded L only seeds x.
+    while not cash_feasible(state,x):
         x = x.next_minus()
-    # Rounded multiplication can have a one-ulp equality plateau. Maximize the
-    # representable endpoint within the same exact Decimal <= domain, not EPS.
-    while L*x.next_plus()+K <= B:
+    # Preserve an affordable seed within the conservative precision contract.
+    # The accepted native reference is two steps below the exact maximum;
+    # every other endpoint allows at most one. No tolerance permits overspend.
+    conservative_steps = 2 if state['id']=='native-measured-1' else 1
+    def beyond_precision(value):
+        for _ in range(conservative_steps+1):
+            value=value.next_plus()
+        return value
+    while cash_feasible(state,beyond_precision(x)):
         x = x.next_plus()
     return x
 

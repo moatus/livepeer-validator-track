@@ -5,7 +5,7 @@ from decimal import Decimal as D
 import hashlib
 
 import fixtures as f
-from adapter import Adapter, ZERO, ONE, EPS, checked_inputs, load_engine, replay_originals, write_json, write_jsonl
+from adapter import Adapter, ZERO, ONE, EPS, checked_inputs, load_engine, replay_originals, write_json, write_jsonl, cash_feasible, capacity_feasible
 import strategy as st
 
 CORE_GROUPS = {'core', 'fee-leaning', 'aligned', 'native'}
@@ -44,9 +44,8 @@ class Profile:
         key = (x,useful)
         if key not in self.cache:
             s=self.state
-            cash_ok=f.cash_feasible(x,s['controlled_price'],s['controlled_cost'],
-                s['vector'][self.actor]['z'],s['cash_loss_allowance_usdc'],s['setup_if_positive_usdc'])
-            capacity_ok=f.capacity_feasible(x,s['controlled_price'],s['additional_capacity_jobs'])
+            cash_ok=cash_feasible(s,x)
+            capacity_ok=capacity_feasible(s,x)
             self.cache[key] = self.adapter.evaluate(s,x,useful=useful,diagnostic=not (cash_ok and capacity_ok))
         return self.cache[key]
 
@@ -291,7 +290,7 @@ def build_profiles(core_only=True):
     hashes={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(out.iterdir()) if p.is_file() and p.name!='manifest.json'}
     write_json(out/'manifest.json',dict(stage='core-only' if core_only else 'full-profiles',counts=counts,calibration=cal,file_sha256=hashes,
         frozen_inputs={k:hashlib.sha256((f.HERE/k).read_bytes()).hexdigest() for k in ('inputs.json','networks.json','scenarios.json','fixtures.py')},
-        numerical_contract='Decimal 60/ROUND_HALF_EVEN; agreement 1e-18; exact inclusive cash/capacity checks; inward cash-endpoint rounding only',
+        numerical_contract='Decimal 60/ROUND_HALF_EVEN receipts; agreement 1e-18; cash/capacity feasibility by exact fractions from original scalars; affordable cash endpoint at most one representable step below exact maximum, except accepted native-measured-1 at most two; no tolerance-expanded bounds',
         outcome_boundary='69 core/control/reference rows only' if core_only else '135 frozen one-round profiles; timeline/evidence mapping separate'))
     print(f"Built {'core' if core_only else 'full'}: {counts}; outputs experiments/m2/strategic-self-funding/generated/{'core' if core_only else 'full'}/")
     return dict(counts=counts,states=states,calibration=cal,manifest=manifest,networks=networks,grid=grid,adapter=adapter,summaries=lookup)
