@@ -94,6 +94,25 @@ def check_schema(manifest, networks, grid):
     f.require(boundaries['zero-fees']['total_fees']=='0' and boundaries['zero-victim']['victim_fee_share']=='0','Zero fixture inputs')
     f.require(grid['legacy_replay']['cases']==[f'S{i:02d}' for i in range(12)],'Original case dependency')
     f.require(len(set(grid['legacy_replay']['sensitivity_groups']))==9,'Original sensitivity dependency')
+    f.require(manifest['boundaries']['cost_override']=='cost 1.20 applies to all actor generic jobs, including existing outside jobs; incremental comparisons use the matched same-override no-purchase reference; nonactor costs unchanged','Cost-override scope/reference contract')
+    invoice=manifest['phase2_contract']['controlled_invoice_capacity']
+    f.require(invoice['profiles']==['invoice10-measured-fixed-parent-optimum','invoice10-measured-reoptimize','invoice10-near-parity-fixed-parent-optimum','invoice10-near-parity-reoptimize'],'Invoice capacity contract profile coverage')
+    f.require(invoice['base_price_usdc_per_job']=='1' and invoice['controlled_price_usdc_per_job']=='10','Base versus controlled invoice price')
+    f.require(invoice['physical_capacity_jobs']=='preserve parent Qmax=.25 originalF/p_base jobs, p_base=1, in both fixed-fee and reoptimized rows','Preserve parent physical invoice capacity contract')
+    f.require(invoice['fee_capacity_usdc']=='p_controlled*Qmax=2.5 originalF; controlled price changes fee capacity, not physical jobs','Invoice fee-capacity unit contract')
+    f.require(manifest['parameters']['capacity_fraction']['unit']=='F/p_base jobs per earning round; p_base=1; price-only controls preserve parent physical job capacity','Capacity unit qualification')
+    f.require(invoice['offer_allocation']=='niche receives original Qmax once; generic outside price/jobs unchanged and generic capacity outside-only' and invoice['held_fixed']=='original B, generic outside jobs/prices, controlled execution cost .30 USDC/job, setup zero','Invoice offer construction contract')
+    stake = manifest['phase2_contract']['stake_acquisition_identity']
+    f.require(stake['domain']=='actual a>=s only; equality gives 0; above cap gives positive identity; below-cap and high-business a=.90s starts are not applicable' and stake['formula']=='dS=(a*S-S_i)/(1-a)', 'Stake-acquisition domain; no negative purchase')
+    diagnostic = manifest['phase2_contract']['hypothetical_diagnostic_adapter']
+    f.require(set(diagnostic)=={'eligibility','engine_call_capacity','declared_capacity_reporting','feasible_states','feasibility','legacy_precondition','label','implementation_status'},'Diagnostic adapter contract completeness')
+    f.require(diagnostic['eligibility']=='only labelled hypothetical capacity-infeasible diagnostic states; includes beyond-capacity x=F, stake-cap boundaries, unconstrained optima and landmarks','Diagnostic eligibility restriction')
+    f.require(diagnostic['engine_call_capacity']=='for each capacity-infeasible offer, use max(declared per-offer capacity, stipulated q_out+q_self) on an engine-call-only copy passed to unchanged EX-06 account(); preserve original input state','Diagnostic temporary capacity contract')
+    f.require(diagnostic['declared_capacity_reporting']=='report declared Qmax and declared per-offer capacity separately from engine-call-only capacity; never echo temporary engine capacity as feasible service capacity','Declared-capacity reporting contract')
+    f.require(diagnostic['feasible_states']=='feasible optima and endpoints always pass declared capacity unchanged; capacity-feasible but cash-infeasible diagnostics also pass declared capacity unchanged','Feasible-state declared capacity contract')
+    f.require(diagnostic['feasibility']=='adapter independently checks exact inclusive cash and declared-capacity feasibility; account() does not check cash bounds','Independent feasibility contract')
+    f.require(diagnostic['legacy_precondition']=='before diagnostic use reproduce original EX-06 twelve cases and nine sensitivity groups with original declared capacities and unchanged engine bytes','Diagnostic original-case reproduction precondition')
+    f.require(diagnostic['label']=='hypothetical execution beyond declared capacity; no inference of affordability, spare capacity or feasible conduct' and diagnostic['implementation_status']=='contract only; Phase 2 implements and verifies; no Phase 1 accounting or outcomes','Hypothetical diagnostic label/scope')
     ser=networks['serialization']
     f.require(ser['precision']==60 and ser['rounding']=='ROUND_HALF_EVEN' and ser['share_quantum']=='1e-48' and ser['amount_quantum']=='1e-42','Precision contract')
     f.require(ser['tolerance']=='1e-18' and ser['stake_residual_rank']==100,'Residual/tolerance contract')
@@ -105,6 +124,31 @@ def check_schema(manifest, networks, grid):
                       'score':'1','use_value':'1','valuation':'1.71765','burn_price':'1.71765','half_life':'840',
                       'claim_delay':7,'actor_ranks':[1,50,90],'business_starts':{'low':'.25','high':'.90'}}.items():
         f.require(p[key]==value,'Changed frozen parameter '+key)
+
+
+def check_invoice_capacity(states):
+    """Price-only rows preserve physical jobs, with fee capacity 2.5 original F."""
+    ids={f'invoice10-{market}-{action}' for market in ('measured','near-parity')
+         for action in ('fixed-parent-optimum','reoptimize')}
+    f.require({sid for sid,state in states.items() if state['group']=='invoice-price'}==ids,'Exactly four invoice capacity rows')
+    with localcontext() as ctx:
+        ctx.prec=60;ctx.rounding=ROUND_HALF_EVEN
+        for sid in sorted(ids):
+            state=states[sid];parent=states[state['parent']];actor=state['actor_rank']-1
+            original_F=parent['original_F_usdc'];base_price=parent['controlled_price']
+            Q=parent['additional_capacity_jobs'];offer=state['vector'][actor]['caps']['niche']
+            generic=state['vector'][actor]['caps']['generic']
+            parent_generic=parent['vector'][actor]['caps']['generic']
+            f.require(base_price==D(1) and Q==D('.25')*original_F/base_price,sid+': p_base and original physical capacity')
+            f.require(state['original_F_usdc']==original_F and state['additional_capacity_jobs']==Q and offer['capacity']==Q,sid+': parent physical jobs preserved')
+            f.require(offer['p']==state['controlled_price']==D(10) and offer['p']*Q==D('2.5')*original_F,sid+': fee capacity 2.5 original F')
+            f.require(generic==parent_generic | {'capacity':parent_generic['q_out']},sid+': unchanged generic outside offer; capacity outside-only')
+            f.require(generic['capacity']==generic['q_out'] and offer['q_out']==offer['q_self']==D(0),sid+': additional capacity assigned to niche once')
+            f.require(offer['c']==state['controlled_cost']==D('.30') and offer['setup']==state['setup_if_positive_usdc']==D(0),sid+': cost per job and setup unchanged')
+            f.require(state['cash_loss_allowance_usdc']==parent['cash_loss_allowance_usdc'],sid+': original cash-loss allowance')
+            f.require(f.capacity_feasible(original_F,offer['p'],Q),sid+': x=original F invoice capacity boundary')
+            z=state['vector'][actor]['z']
+            f.require(not f.cash_feasible(original_F,offer['p'],offer['c'],z,state['cash_loss_allowance_usdc']),sid+': x=original F cash-infeasible independently')
 
 
 def check_states(states,cal,networks,manifest):
@@ -183,6 +227,11 @@ def check_states(states,cal,networks,manifest):
                 if state['group']=='invoice-price':
                     f.require(vec[actor]['caps']['generic']==parent['vector'][actor]['caps']['generic'] | {'capacity':parent['vector'][actor]['caps']['generic']['q_out']},sid+': generic offer unchanged')
                     f.require(vec[actor]['caps']['niche']['p']==10 and state['controlled_cost']==D('.30'),sid+': niche price10/cost unchanged')
+            if sid.startswith('cost-'):
+                parent=states[state['parent']]
+                f.require(vec[actor]['caps']['generic']['c']==D('1.20'),sid+': all actor generic jobs cost override')
+                f.require(vec[actor]['caps']['generic']['q_out']==parent['vector'][actor]['caps']['generic']['q_out'],sid+': matched outside jobs unchanged')
+                f.require(all(p['caps']['generic']['c']==D('.30') for i,p in enumerate(vec) if i!=actor),sid+': nonactor costs unchanged')
             if state['group'] in ('core','aligned','fee-leaning'):
                 f.require(vec[actor]['t']==vec[actor]['z']==1,sid+': full-retention upper bound')
                 f.require(state['cash_loss_allowance_usdc']==D('.10')*state['original_F_usdc'] and state['additional_capacity_jobs']==D('.25')*state['original_F_usdc'],sid+': diagnostic bounds')
@@ -211,6 +260,19 @@ def boundary_checks(manifest,networks,grid):
         elif what=='timeline':bad['timelines'][0]['final_horizon']=9
         else:bad['profiles'][0]['overrides']={'reward_bonus':'1'}
         expect_rejection(lambda:check_schema(manifest,networks,bad),what)
+    bad=deepcopy(manifest)
+    bad['phase2_contract']['controlled_invoice_capacity']['physical_capacity_jobs']='recalculate using current controlled price'
+    expect_rejection(lambda:check_schema(bad,networks,grid),'invoice physical-capacity contract')
+    for field in ('declared_capacity_reporting','feasible_states','legacy_precondition'):
+        bad=deepcopy(manifest)
+        bad['phase2_contract']['hypothetical_diagnostic_adapter'][field]='removed restriction'
+        expect_rejection(lambda:check_schema(bad,networks,grid),'diagnostic restriction '+field)
+    bad=deepcopy(manifest)
+    bad['phase2_contract']['stake_acquisition_identity']['domain']='all positions, including negative purchases'
+    expect_rejection(lambda:check_schema(bad,networks,grid),'stake purchase domain')
+    bad=deepcopy(manifest)
+    bad['boundaries']['cost_override']='controlled jobs only'
+    expect_rejection(lambda:check_schema(bad,networks,grid),'cost scope/reference')
     with localcontext() as ctx:
         ctx.prec=60
         F=D(100); Q=F/D(4);price=D(1);L=D('.8');B=D(10)
@@ -233,13 +295,23 @@ def check():
     states,cal=f.materialize(manifest,networks,grid)
     check_states(states,cal,networks,manifest)
     boundary_checks(manifest,networks,grid)
+    check_invoice_capacity(states)
+    # Reject a silent tenfold rescaling from p_base=1 to controlled p=10,
+    # independently of hash checks, once for each fixed/reoptimized market row.
+    for sid in sorted(sid for sid,state in states.items() if state['group']=='invoice-price'):
+        bad=deepcopy(states);state=bad[sid];actor=state['actor_rank']-1
+        with localcontext() as ctx:
+            ctx.prec=60
+            state['additional_capacity_jobs']/=D(10)
+            state['vector'][actor]['caps']['niche']['capacity']/=D(10)
+        expect_rejection(lambda:check_invoice_capacity(bad),'invoice capacity rescaled '+sid)
     # Freeze the interface shape without importing/calling the reward engine.
     import ast
     module=ast.parse((f.ROOT/'experiments/m2/capability-pricing/build.py').read_text())
     account=next(n for n in module.body if isinstance(n,ast.FunctionDef) and n.name=='account')
     f.require([a.arg for a in account.args.args]==['pools','ceiling','valuation','burn_price','horizon','reading','node','validator','treasury','node_fee'],'EX-06 accounting interface')
     f.write_vectors(states)
-    print('PASS: 135 frozen 100-pool input vectors (54 core, 3 fee-leaning, 9 aligned, 3 native, 66 supplements); 10 timeline selections; source/dependency/vector hashes; conservation, selections, bounds and negative/undefined contracts; no reward/payoff outcomes.')
+    print('PASS: 135 frozen 100-pool input vectors (54 core, 3 fee-leaning, 9 aligned, 3 native, 66 supplements); 10 timeline selections; source/dependency/vector hashes; conservation, selections, bounds and negative/undefined contracts; four price-only parent-job/fee-capacity rows and rescaling rejection; no reward/payoff outcomes.')
 
 
 if __name__=='__main__':

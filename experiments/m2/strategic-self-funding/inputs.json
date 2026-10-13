@@ -95,7 +95,8 @@
       "unit": "USDC/job",
       "status": "illustrative",
       "source": "docs/m2/SLICE-02B.md v1.2 §5.1",
-      "scope": "stated premise"
+      "scope": "stated premise",
+      "role": "p_base=1 for core/base capacity construction; controlled invoice price is a separate input"
     },
     "cost": {
       "value": ".30",
@@ -148,7 +149,7 @@
     },
     "capacity_fraction": {
       "value": ".25",
-      "unit": "F/p jobs per earning round",
+      "unit": "F/p_base jobs per earning round; p_base=1; price-only controls preserve parent physical job capacity",
       "status": "illustrative",
       "source": "docs/m2/SLICE-02B.md v1.2 §5.1",
       "scope": "stated premise"
@@ -286,9 +287,10 @@
     "one_round_budget": "B=0.10*parent F per earning round; incremental net cash loss after immediate fee recovery, includes setup iff x>0",
     "advance_liquidity": "gross invoices and recovered fees separate; intra-job advance financing unmodeled",
     "timelines": "B is ONE initial stock for four rounds; no replenishment, unsold-token sales or reward compounding",
-    "capacity": "nonactor assigned outside jobs; actor assigned outside jobs plus original additional Qmax; niche receives additional Qmax once; responses update outside capacity but keep original additional Qmax",
+    "capacity": "nonactor assigned outside jobs; actor additional Qmax=.25 originalF/p_base with p_base=1; niche receives Qmax once; responses update outside capacity but keep original physical Qmax; controlled price changes fee capacity, not job capacity",
     "victim_landmarks": "5%,10%,20% inclusive; fee-limited 20% core landmark equals original p*Qmax; recompute after responses",
-    "purpose": "reward-seeking real work without credited internal use is modeler-known premise, not observable evidence; useful pair identical inputs except use value"
+    "purpose": "reward-seeking real work without credited internal use is modeler-known premise, not observable evidence; useful pair identical inputs except use value",
+    "cost_override": "cost 1.20 applies to all actor generic jobs, including existing outside jobs; incremental comparisons use the matched same-override no-purchase reference; nonactor costs unchanged"
   },
   "evidence_boundary": {
     "dependency": "EX-07 existing niche/discount packets only, accurate control/funding disclosure at n+1 and adequate authentic safe useful-case bundle at n+5",
@@ -306,7 +308,7 @@
     "P1 HQ-01 movement speed",
     "Slice 3 validator incentives",
     "Slice 4 defense burden",
-    "Slice 5 added stake cost/availability/delay and delegation response",
+    "delegation-in-time study (study 5) and P1 (HQ-01): added stake cost/availability/delay and delegation response",
     "Slice 6 discovery/new-address access",
     "Slice 7 pending rule changes",
     "Slice 8 price/liquidity/manipulation",
@@ -329,7 +331,40 @@
       "matched useful internal references",
       "fixed-stock cohort collection through final horizons",
       "capped-position dS identity only"
-    ]
+    ],
+    "stake_acquisition_identity": {
+      "domain": "actual a>=s only; equality gives 0; above cap gives positive identity; below-cap and high-business a=.90s starts are not applicable",
+      "formula": "dS=(a*S-S_i)/(1-a)",
+      "interpretation": "arithmetic only; no negative stake-purchase inference; cost, availability, delay and delegation response deferred to the delegation-in-time study (study 5) and P1 (HQ-01)"
+    },
+    "hypothetical_diagnostic_adapter": {
+      "eligibility": "only labelled hypothetical capacity-infeasible diagnostic states; includes beyond-capacity x=F, stake-cap boundaries, unconstrained optima and landmarks",
+      "engine_call_capacity": "for each capacity-infeasible offer, use max(declared per-offer capacity, stipulated q_out+q_self) on an engine-call-only copy passed to unchanged EX-06 account(); preserve original input state",
+      "declared_capacity_reporting": "report declared Qmax and declared per-offer capacity separately from engine-call-only capacity; never echo temporary engine capacity as feasible service capacity",
+      "feasible_states": "feasible optima and endpoints always pass declared capacity unchanged; capacity-feasible but cash-infeasible diagnostics also pass declared capacity unchanged",
+      "feasibility": "adapter independently checks exact inclusive cash and declared-capacity feasibility; account() does not check cash bounds",
+      "legacy_precondition": "before diagnostic use reproduce original EX-06 twelve cases and nine sensitivity groups with original declared capacities and unchanged engine bytes",
+      "label": "hypothetical execution beyond declared capacity; no inference of affordability, spare capacity or feasible conduct",
+      "implementation_status": "contract only; Phase 2 implements and verifies; no Phase 1 accounting or outcomes"
+    },
+    "controlled_invoice_capacity": {
+      "source": "docs/m2/SLICE-02B.md v1.2 §5.1/6; explicit price-only supplemental capacity definition",
+      "status": "illustrative",
+      "profiles": [
+        "invoice10-measured-fixed-parent-optimum",
+        "invoice10-measured-reoptimize",
+        "invoice10-near-parity-fixed-parent-optimum",
+        "invoice10-near-parity-reoptimize"
+      ],
+      "base_price_usdc_per_job": "1",
+      "controlled_price_usdc_per_job": "10",
+      "physical_capacity_jobs": "preserve parent Qmax=.25 originalF/p_base jobs, p_base=1, in both fixed-fee and reoptimized rows",
+      "fee_capacity_usdc": "p_controlled*Qmax=2.5 originalF; controlled price changes fee capacity, not physical jobs",
+      "quantity_jobs": "q_self=x/p_controlled=x/10; per-executed-job cost unchanged",
+      "offer_allocation": "niche receives original Qmax once; generic outside price/jobs unchanged and generic capacity outside-only",
+      "held_fixed": "original B, generic outside jobs/prices, controlled execution cost .30 USDC/job, setup zero",
+      "diagnostic_feasibility": "x=originalF is within declared invoice job capacity but exceeds cash-loss allowance; label cash and capacity independently; do not infer payoff or optimizer result"
+    }
   },
   "id_reservations": {
     "experiment": "EX-08",

@@ -237,7 +237,7 @@
     "invoice10-near-parity-reoptimize": "1c0cf4ab76311f5240e4a740dd9779f32fe917f89f3ef28ceaf924288f4f89a4"
   },
   "contract_hashes": {
-    "inputs.json": "6d45ab42a3803d9872a2aba9947ff32af877847a2bbbe6424c37ac289d1322ed",
+    "inputs.json": "1e4ab4b3a1cbfbfd83d9cb377e762a66f273f154eefeb8e28b33fd799de234db",
     "scenarios.json": "9911ad19828bde1e0fd44ee119ce3566f5a37aee7db0fbad427a07b5fa43af8c",
     "fixtures.py": "1198d6b353a80800db5998f00cc474eb0f655b68d74e806efa96e25eec64148b"
   }
