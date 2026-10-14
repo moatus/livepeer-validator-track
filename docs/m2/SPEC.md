@@ -1,8 +1,8 @@
 # M2 specification: test litepaper incentives and evidence limits
 
-Version **0.10 · 2026-10-12**. Status: **drafted**. Revision history is at the end. Owner: Shane (@moatus).
+Version **0.11 · 2026-10-14**. Status: **drafted**. Revision history is at the end. Owner: Shane (@moatus).
 
-This specification defines M2 and its shared modeling contract. The completed September pilot is preserved in §5; [Slice 2](SLICE-02.md), the connected October scenario model, is drafted. The follow-up [Slice 2b](SLICE-02B.md) has frozen inputs and reproducible accounting with technical checks complete; consolidation is drafted for review and owner research review remains pending. It tests strategic self-funding across network conditions, with a [three-phase implementation specification](SLICE-02B-IMPLEMENTATION.md). How the work is run, reviewed and handed between agents is in the [runbook](RUNBOOK.md). The milestone's definition is in [MILESTONES.md](../../MILESTONES.md#m2--test-litepaper-incentives-and-evidence-limits); this file does not change it.
+This specification defines M2 and its shared modeling contract. The completed September pilot is preserved in §5; [Slice 2](SLICE-02.md), the connected October scenario model, is drafted. The follow-up [Slice 2b](SLICE-02B.md) has frozen inputs and reproducible accounting with technical checks complete; consolidation is drafted for review and owner research review remains pending. It tests strategic self-funding across network conditions, with a [three-phase implementation specification](SLICE-02B-IMPLEMENTATION.md). The remaining program is consolidated into topical slices under §4, with study identities preserved. How the work is run, reviewed and handed between agents is in the [runbook](RUNBOOK.md). The milestone's definition is in [MILESTONES.md](../../MILESTONES.md#m2--test-litepaper-incentives-and-evidence-limits); this file does not change it.
 
 ## 1. Purpose and boundary
 
@@ -19,6 +19,20 @@ Boundaries that hold for every slice:
 ## 2. What a complete M2 leaves behind
 
 M2 is complete when a reviewer can choose any of the nine critical questions (GT-01 to GT-04, GT-06 to GT-10) and find three things: an assessment under stated conditions, a result they can rerun or a table they can trace, and a disposition (build work, more evidence, incentive issue, policy choice, or M3).
+
+**Where each critical question gets its disposition**
+
+| Critical question | Closed by |
+| --- | --- |
+| GT-01 | Purpose half: Slices 1, 2, 2b and EX-04/EX-07 (does not separate). Correctness half: E2. |
+| GT-02 | Slice 3 |
+| GT-03 | Slices 1, 2, 2b |
+| GT-04 | Close pass, using P1 movement data; the SC-27/SC-28 example runs only if P1 shows material movement |
+| GT-06 | E2 |
+| GT-07 | Close pass, using P1's selection-rule note and the EX-06/EX-08 rerouting controls |
+| GT-08 | Close pass, rule reading |
+| GT-09 | Slice 3, using P1 concentration data |
+| GT-10 | Close pass: unresolved, distinct from valuation sensitivity, routed to M4.1 |
 
 | Step | Artifact | Where it lives |
 | --- | --- | --- |
@@ -74,15 +88,18 @@ The October preparation is authorized; it does not imply owner acceptance of the
 | October reconciliation | GT-03 and affected M1/M2 claims | EX-05; `experiments/m2/october-reconciliation/` | Migration bridge: scheduled ceiling, MFS, non-minting and surviving evidence limits; does not relabel EX-03 as October. |
 | **2 — Capability, pricing and self-funded traffic** | GT-03, GT-07; bounded GT-01, GT-04, GT-10 inputs | [Full brief](SLICE-02.md); EX-06, EX-07 drafted | Drafted; owner research review pending. Shared snapshot, cooperative → competition → strategic cases, focused evidence comparison and one bounded response. |
 | **2b — Strategic self-funding across network conditions** | GT-03; bounded GT-01, GT-04, GT-07, GT-10 inputs | [Defined study](SLICE-02B.md); [implementation phases](SLICE-02B-IMPLEMENTATION.md); largest/middle/lower stake, network structure, outside traffic, market scale from measured to fee-dominant, feasible optima and honest-party losses | Inputs reconstructed and EX-08 accounting implemented and technically checked; consolidation drafted for review, owner research review pending. Three sequential M2.1/M2.2/M2.3 workloads. Extends the shared ledger; preserves original results and E2/P1/studies 3–8. |
-| **E2 — Evidence before the claim (former Slice 2)** | GT-01 remaining pairs | SC-07 / SC-06; SC-16 / SC-17; SC-11 / SC-10; tabletops | Retained in full. Slice 2 may supply related-party evidence inputs; any pair not actually examined stays pending. Run before relying on these evidence assumptions in Slice 3. |
-| 3 — Will validators score defensibly? | GT-02, GT-09 | SC-09, SC-19–SC-21, SC-24, SC-35–SC-37; payoff and seat-control tables | Uses evidence results and P1 concentration note; feeds tested scores/costs into shared ledger. |
-| 4 — Defending a reward | GT-06 | SC-25 / SC-26; evidence, effort and access | Retained; return burden/evidence limits to ledger. |
-| 5 — Delegation in time | GT-04 | SC-27 / SC-28, SC-04, SC-08; round-by-round example | Uses P1 HQ-01; tests movement assumptions left open by Slice 2. |
-| 6 — Access to paid work | GT-07 | SC-29–SC-31, SC-03, SC-12; selection comparison | Slice 2 handles bounded price/routing inputs; broader access and entry study retained. |
-| 7 — Rule changes while rewards are pending | GT-08 | SC-32–SC-34; rule timeline | Retained under October source. |
-| 8 — LPT price | GT-10 | SC-38 / SC-39; sensitivity | Retained; concrete price-source/liquidity evidence needed for manipulation-cost claims. |
-| P1 — Current-system data notes | GT-04, GT-09, HQ-03 | HQ-01 stake movement speed; concentration and real fee spikes | Retained, resequenced from the proposed second run. Run before dependent claims; the frozen snapshot does not establish movement speed or capability demand. |
-| 1b — Historical follow-up | GT-03 | September deferred variants in §5.9 | Delegation/cost questions move into October Slice 2. C1 ratios/years stay historical and run only for an explicit historical question, not as current October alternatives. |
+| **P1 — Current-system data notes** | HQ-01, HQ-03; inputs to GT-04, GT-07, GT-09 | Stake movement over a recent window from BondingManager bond, unbond, rebond and transfer events. Stake concentration, and the stake needed to seat a majority of validators when declined seats pass down the rank. The raw redeemed-fee series, so a genuine surge has a measured shape. Today's gateway selection rule, read from go-livepeer. Method: current-system data notes with query scripts and a dated extract. No model. | Runs first. Needs an owner data-access decision for chain history. Its movement result decides whether the GT-04 example runs in the close pass. The frozen snapshot does not establish movement speed or capability demand. |
+| **E2 — Evidence and operator response (absorbs study 4)** | GT-01 correctness half; GT-06 | SC-11 / SC-10 as a tabletop in the EX-04 packet format. SC-16 / SC-17 answered from P1's fee series plus a reading of what the seven-round delay can observe. SC-07 / SC-06 recorded as inheriting the release-testing verdict, with the reason stated. SC-25 / SC-26 followed through notice, response, disclosure and correction before the claim boundary. An inventory of records that exist today (probabilistic tickets, winning tickets, transcoding verification, capability adverts, orchestrator statistics, invoice price per job): who holds each, whether it is public, and which claim CL-01 to CL-07 it bears on. | Opens after the VD-19 decision and after P1. No new synthetic purpose matrices. Bridges directly to M4.2. Keeps "defense burden" as its own conclusion. |
+| **3 — Will validators score defensibly?** | GT-02, GT-09 | SC-09, SC-19–SC-21, SC-24, SC-35–SC-37. One payoff table for a validator choosing to score from evidence, stay lenient, abstain, or join an unsupported low score, under the full-set median and a quorum variant. It states the 1% share split, with compensation declining on the 840-round half-life. A seat-control cost table from P1 concentration. Uses the EX-08 result that unminted node allowance is not redistributed, so zeroing a rival yields no direct reward gain. | Opens after P1 and E2. Its evidence input is the established "does not separate" result. Feeds tested scores and costs into the shared ledger. |
+| **Close — M2 consolidation pass** | GT-04, GT-07, GT-08, GT-10; final M3 handoff | Dispositions for studies 5 to 8 below, assembled from rule readings, P1 and existing results. Final M3 handoff list with the paper's retained strengths beside it. | Last. Satisfies §2 for every critical question. Waits for owner research review of Slices 2 and 2b. |
+| 4 — Defending a reward | GT-06 | Merged into E2. | Identity retained; no separate run. |
+| 5 — Delegation in time | GT-04 | SC-27 / SC-28 as a one-table round-by-round example, using P1's measured movement rate, EX-08 added-stake arithmetic and the 21-round lock. | In the close pass. Runs only if P1 shows material movement. Otherwise the disposition is "unresolved: measured movement negligible", with the measurement cited. |
+| 6 — Access to paid work | GT-07 | Disposition from P1's selection-rule note and the EX-06/EX-08 rerouting controls. | In the close pass. No demand, elasticity or discovery model. |
+| 7 — Rule changes while rewards are pending | GT-08 | SC-32–SC-34 as a rule-reading timeline, no numbers. | In the close pass. Procedure design belongs to M4.3. |
+| 8 — LPT price | GT-10 | Carries EX-08's valuation sensitivity. Disposition: unresolved, distinct from valuation sensitivity; needs a buyback execution design and liquidity evidence. The September mint-price-oracle branch is retired under October, which removes that dependency. | In the close pass; routed to M4.1. |
+| 1b — Historical follow-up | GT-03 | Deferred. Slice 2b's retention, cost, valuation and schedule overrides cover the §5.9 variants under October. | Runs only for an explicit historical question. |
+
+**Stop rule for remaining briefs.** Every remaining brief states three things: the decision the slice could change; the new evidence or mechanism it examines that existing work does not; and the result that would end the inquiry. No further GT-03 modeling runs unless P1 shows stake acquisition is cheap and fast enough to reopen the stake-cap defense.
 
 ### Source and interpretation contract
 
@@ -325,7 +342,7 @@ These decisions record the pilot. The October migration and Slice 2 preparation 
 | Branching | Work stays off `main`. `m2` is the integration branch; each slice runs on `m2-slice-NN-<slug>` and merges into `m2` after owner review. Decided by the owner, 2026-10-05 |
 | Publishing | The integrator commits to the slice branch locally; pushes, PRs and issue comments only with owner approval |
 | `carried_to` for M2.3 conclusions | Open. Default: `carried_to: M2`, with the disposition in the statement. Alternative: add an M3 stage page to the workbench so that conclusions can name M3 |
-| Order of runs | Slice 1 (pilot), then P1 (stake movement speed) as a short second run, subject to a data-access decision; then Slice 2 onward |
+| Order of runs | Slices 1, 2 and 2b completed; then P1, E2, Slice 3, close pass. Decided by the owner, 2026-10-14 |
 
 ## Revision history
 
@@ -341,3 +358,4 @@ These decisions record the pilot. The October migration and Slice 2 preparation 
 | 0.8 | 2026-10-09 | October source boundary and pilot reconciliation; connected scenario accounting; next numbered Slice 2 specified; E2/P1 and all remaining studies preserved; pilot retrospective incorporated without inventing human acceptance |
 | 0.9 | 2026-10-12 | Registered defined Slice 2b and its three implementation workloads; multiple network structures, strategic optima and honest-party impacts; GPT-6.1-Sol writers and Opus 5.5 reviewers; original source-scoped studies and human review boundaries preserved |
 | 0.10 | 2026-10-12 | Slice 2b amended before Phase 1 (SLICE-02B.md 1.2): measured and near-parity market scales in the core, headroom identity, budget convention, equal-total pacing, controlled invoice price, deferred stake acquisition |
+| 0.11 | 2026-10-14 | Remaining program consolidated into topical slices: P1 first, E2 absorbs study 4 and adds operator response and a record inventory, Slice 3 adds declining compensation and seat cost from P1, studies 5–8 move to a close pass with stated dispositions, 1b deferred; per-question disposition table in §2; stop rule for remaining briefs; VD-19 decision required before E2. Owner direction, 2026-10-14 |
