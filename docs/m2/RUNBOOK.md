@@ -1,6 +1,6 @@
 # M2 runbook
 
-Version **0.10 · 2026-10-12**. Status: **drafted**. Owner: Shane (@moatus).
+Version **0.11 · 2026-10-14**. Status: **drafted**. Owner: Shane (@moatus).
 
 How M2 work is briefed, carried out, reviewed, integrated and improved. What M2 must produce is in the [specification](SPEC.md); [Slice 2](SLICE-02.md) is drafted and [Slice 2b](SLICE-02B.md) has frozen inputs and technically checked EX-08 accounting; consolidation is drafted for review and owner research review remains pending. Different agents carry out different stages; this runbook is written so that each can start cold from its brief.
 
@@ -38,7 +38,7 @@ Open slice → A Reconstruct → Gate A → B Model ┐
 2. **For each stage:** the integrator writes the brief (§3.1) and launches the writer; the writer delivers (§3.2–3.4); the integrator launches a fresh reviewer (§6); the integrator decides on the findings, has them fixed, imports the change set, runs the checks and commits (§4).
 3. **Stage A** must pass Gate A and be committed before B or C starts, because both depend on its register.
 4. **Stages B and C** may run in parallel, with different writers in the same working tree. Each writer edits only its own experiment folder and prepares changes only to the records the brief assigns it, using IDs from its reserved block (the active slice brief; specification §5.7 is historical). The integrator imports their change sets one after the other (§4.1). Writers own their assigned progress-table rows; the integrator owns Home, shared summaries, indexes and stale adjacent-field cleanup. Regenerate the second change set against the latest import.
-5. **Stage D** starts when B and C are committed, or when the slice omits one.
+5. **Stage D** starts when B and C are committed, or when the slice omits one. A slice whose method is a current-system data note or a rule reading (specification §3) may omit both B and C: Stage A states the question, sources and access, and Stage D records the result and dispositions.
 6. **Owner review.** The owner reviews the slice. Only then may a step's status become `reviewed` (§7.3), and only then is the slice branch merged into `m2` (§7.1).
 7. **Retrospective and runbook update** (§9) happen before the next slice opens.
 
@@ -241,3 +241,4 @@ After each slice, or sooner if a problem blocks later stages, the integrator pro
 | 0.8 | 2026-10-12 | Slice 2b's three sequential step workloads, GPT-6.1-Sol/Opus 5.5 pairs, frozen-candidate review and local branch continuation; existing evidence reused within its scope | Owner request to define Slice 2b and a phased implementation specification |
 | 0.9 | 2026-10-12 | Clarified Slice 2b candidate versus workbench integration commits, append-only fixes and execution-record wording | Independent preparation review |
 | 0.10 | 2026-10-12 | Slice 2b Phase 2 split into two sequential candidates under one reviewer | Owner-directed amendment of SLICE-02B.md 1.2 |
+| 0.11 | 2026-10-14 | Data-note and rule-reading slices may omit Stages B and C; aligned to specification 0.11 | Owner direction, 2026-10-14 |
