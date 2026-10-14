@@ -1,6 +1,6 @@
 # EX-06: connected capability, price and network reward comparison
 
-Status: **Drafted; technical checks passed, owner research review pending.**
+Status: **Drafted; technical checks passed, reviewed by the owner, 2026-10-14.**
 
 Under October's scheduled ceiling and network-wide fee share, when do ordinary competition, capability entry and real self-funded jobs change participant receipts, net cash, burn and issuance? This finite ledger connects those choices on one measured network scale. The paper's intended contribution is real, honest work during bootstrapping (October L81–84); the accounting imposes no independent-customer or use-value eligibility criterion. A reward-objective definition remains VD-19.
 

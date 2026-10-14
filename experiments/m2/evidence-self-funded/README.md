@@ -2,7 +2,7 @@
 
 **Historical September evidence tabletop.** All `SRC-LP20` line citations refer to the [archived September source](../../../docs/sources/litepaper-2026-09.md). Packets, tolerances and verdicts retain their original scope and are not a test of October. The payment/execution-versus-purpose distinction transfers as a question; October constitution, governance and claim-time provisions require fresh rule mapping before carrying verdicts forward. See the [October reconciliation](../october-reconciliation/README.md).
 
-Status: **Drafted**. This is a synthetic evidence comparison for M2.2/GT-01, with judgments checked by hand. Structural verification is not a deployed validation result or approved scoring policy.
+Status: **Drafted**. This is a synthetic evidence comparison for M2.2/GT-01, with judgments checked by hand. Structural verification is not a deployed validation result or approved scoring policy. Reviewed by the owner, 2026-10-14.
 
 ## Task and question
 

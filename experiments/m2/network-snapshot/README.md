@@ -1,7 +1,7 @@
 # Shared measured network baseline for M2
 
 The single authoritative artifact is **`livepeer-arbitrum-2026-10-09-v1.json`**.
-Status: **drafted**, local and unpublished. It describes the deployed network;
+Status: **drafted**, published with the M2 branch on 2026-10-14. It describes the deployed network;
 it is not a litepaper deployment or an observed self-dealing finding.
 
 Snapshot ID: `livepeer-arbitrum-2026-10-09-v1`.

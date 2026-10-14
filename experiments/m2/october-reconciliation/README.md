@@ -1,6 +1,6 @@
 # EX-05: October Slice 1 reconciliation
 
-Status: **Drafted; technical checks passed, owner research review pending.** This bounded rerun asks whether an additional real, self-funded job can increase retained operator receipts under October's scheduled emissions. It also checks whether proportional fee compression leaves mint unchanged while reducing burn. It prepares the accounting boundary for Slice 2; it does not model capability entry, demand, price competition or equilibrium.
+Status: **Drafted; technical checks passed, reviewed by the owner, 2026-10-14.** This bounded rerun asks whether an additional real, self-funded job can increase retained operator receipts under October's scheduled emissions. It also checks whether proportional fee compression leaves mint unchanged while reducing burn. It prepares the accounting boundary for Slice 2; it does not model capability entry, demand, price competition or equilibrium.
 
 ## Sources and rule interpretations
 
