@@ -80,7 +80,7 @@ A slice may omit B or C where its question needs only one. Every stage ends at a
 
 ### Active sequence and preserved study identities
 
-The October preparation is authorized; it does not imply owner acceptance of the pilot or publication. The second numbered slice is now the connected model. Historical references to “Slice 2 — Evidence before the claim” mean the deferred study **E2** below, not the new Slice 2. Existing case and experiment IDs retain their identities.
+The October preparation was authorized; Slices 1, 2 and 2b are reviewed by the owner (2026-10-14), as the table below records. The second numbered slice is now the connected model. Historical references to “Slice 2 — Evidence before the claim” mean the deferred study **E2** below, not the new Slice 2. Existing case and experiment IDs retain their identities.
 
 | Slice / study | Critical questions | Cases and method | Sequence and dependency |
 | --- | --- | --- | --- |

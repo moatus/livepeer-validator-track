@@ -2,7 +2,7 @@
 
 **Historical September experiment.** Its original assumptions, arithmetic and line citations are preserved. October supersedes the open emissions concepts and clarifies that unused MFS node allowances are never minted; see the [October reconciliation](../../m2/october-reconciliation/README.md). This experiment is not a current-paper result.
 
-Version **v0.1**. Status **Drafted**. This bounded example asks whether one additional real job returns more to the organization controlling payer and node than it costs, under each litepaper emissions concept and both node-entitlement readings. It implements [SPEC §5.4](../../../docs/m2/SPEC.md). All results are **illustrative** arithmetic; they are neither protocol decisions nor observations of the network.
+Version **v0.1**. Status **Reviewed by the owner, 2026-10-14**. This bounded example asks whether one additional real job returns more to the organization controlling payer and node than it costs, under each litepaper emissions concept and both node-entitlement readings. It implements [SPEC §5.4](../../../docs/m2/SPEC.md). All results are **illustrative** arithmetic; they are neither protocol decisions nor observations of the network.
 
 ## Source and scope
 

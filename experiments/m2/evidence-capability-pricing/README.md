@@ -1,6 +1,6 @@
 # EX-07: evidence for capability, pricing and self-funded traffic
 
-Status: **Drafted; technical checks passed, reviewed by the owner, 2026-10-14.** This is a synthetic October evidence comparison for M2.2/GT-01, with substantive judgments checked by hand. It supplies neither approved scoring criteria nor measured detection performance.
+Status: **Reviewed by the owner, 2026-10-14; technical checks passed.** This is a synthetic October evidence comparison for M2.2/GT-01, with substantive judgments checked by hand. It supplies neither approved scoring criteria nor measured detection performance.
 
 ## Question
 
