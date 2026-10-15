@@ -14,7 +14,7 @@ The project tests the litepaper's protocol mechanics: rewards, validation, deleg
 - [Decision log](docs/DECISIONS.md)
 - [SPE pre-proposal](https://forum.livepeer.org/t/pre-proposal-network-engineering-spe-ii/3344)
 
-The milestone and task structure is in place, and the M1 and M2 research is under way in the [research workbench](#research-workbench). M1's September steps have reviewed versions. The October source migration is a new draft. The M2 framework and Slices 1, 2 and 2b are reviewed by the owner (see the [deliverable register](deliverables/README.md)). The remaining program under specification 0.11 (P1, E2, Slice 3 and a consolidation pass) is tracked as task issues (see the [milestone overview](MILESTONES.md)). Target dates and external research reviewers remain to be agreed.
+The milestone and task structure is in place, and the M1 and M2 research is under way in the [research workbench](#research-workbench). M1's September steps have reviewed versions. The October source migration is a new draft. The M2 framework and Slices 1, 2 and 2b are reviewed by the owner (see the [deliverable register](deliverables/README.md)). The remaining program under specification 0.11 (P1, E2, Slice 3 and a consolidation pass) is tracked as task issues in the [milestone overview](MILESTONES.md). M2–M5 deadlines are agreed for 2026: October 19, November 9, December 7 and December 31 respectively. The combined M2–M5 budget is $30,000 USD; per-milestone amounts are listed in the overview. External research reviewers remain to be agreed.
 
 ## Research workbench
 
