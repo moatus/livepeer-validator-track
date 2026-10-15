@@ -3,7 +3,7 @@
 ## Task to deliverable
 
 1. State the question and expected artifact in a task issue; link the milestone and prerequisites.
-2. Produce the smallest artifact that answers the question. Research reports, diagrams, models, datasets, specifications and test results are all valid outputs. A few transparent litepaper examples can establish a conditional concern. Broader cooperative, market and adversarial cases belong in M3, where they inform whether and where to expand the litepaper.
+2. Produce the smallest artifact that answers the question. Research reports, diagrams, models, datasets, specifications and test results are all valid outputs. A few transparent litepaper examples can establish a conditional concern. M2 connects bounded cooperative, ordinary-market and strategic cases under the paper’s rules in one accounting model; it does not require a network simulation. Broader studies of possible changes belong in M3, where they inform whether and where to expand the litepaper.
 3. Record methods, sources, assumptions, findings, limitations and reproduction instructions where applicable.
 4. Review the artifact. Its status moves from drafted to reviewed only when the review is complete; never infer a review from silence.
 5. Add the reviewed artifact version to the issue's Deliverables table, the Project Artifact field and the deliverable register.

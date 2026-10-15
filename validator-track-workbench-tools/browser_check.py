@@ -129,9 +129,21 @@ with sync_playwright() as p:
     check("the Next column reads each step's own next line, not the following step's title",
           nxt == [page.evaluate("s => $tw.wiki.getTiddler(s).fields.step_next || '—'", s) for s in path]
           and not any(n == c for n, c in zip(nxt, caps[1:])), str(nxt))
+    linked = h.locator("table.vtw-stand .vtw-produced a, table.vtw-stand .vtw-produced button").count()
+    # The zero case must not depend on some step still lacking outputs: empty the last step's
+    # outputs in the page, check the zero rendering, then restore the field.
+    last, stand = path[-1], '[data-tiddler-title="Home"] table.vtw-stand'
+    saved_outputs = page.evaluate("s => $tw.wiki.getTiddler(s).fields.step_outputs || ''", last)
+    page.evaluate("s => $tw.wiki.addTiddler(new $tw.Tiddler($tw.wiki.getTiddler(s), {step_outputs: ''}))", last)
+    try:
+        page.wait_for_function("sel => (document.querySelector(sel) || {innerText: ''}).innerText.includes('None recorded yet')", arg=stand, timeout=5000)
+        zero_ok = True
+    except Exception:
+        zero_ok = False
+    page.evaluate("([s, v]) => $tw.wiki.addTiddler(new $tw.Tiddler($tw.wiki.getTiddler(s), {step_outputs: v}))", [last, saved_outputs])
+    page.wait_for_timeout(200)
     check("Produced counts link somewhere and zero reads None recorded yet",
-          h.locator("table.vtw-stand .vtw-produced a, table.vtw-stand .vtw-produced button").count() >= 3
-          and "None recorded yet" in h.locator("table.vtw-stand").inner_text())
+          linked >= 3 and zero_ok, f"links={linked} zero={zero_ok}")
     check("at most five headline conclusions, caption links only",
           1 <= h.locator("ul.vtw-headlines li").count() <= 5 and h.locator("ul.vtw-headlines .vtw-status").count() == 0)
     check("a legend sits where step badges first appear on Home",
@@ -276,6 +288,7 @@ with sync_playwright() as p:
     m22 = navigate(page, "M2.2").inner_text()
     check("M2.2 tests critical questions and points to the moved register", "Testing the critical questions" in m22 and "What would resolve each concern?" in m22)
     r = navigate(page, "M2.3")
+    r.locator("summary", has_text="September source analysis and first-slice record — historical").evaluate("s => s.parentElement.open = true")
     rtxt = r.inner_text()
     kinds = {"specification": "[tag[VD]field:resolved_by[specification]]", "evidence": "[tag[VD]contains:resolved_by[evidence]]",
              "incentive": "[tag[VD]contains:resolved_by[incentives]]", "policy": "[tag[VD]contains:resolved_by[policy]]"}
@@ -336,10 +349,10 @@ with sync_playwright() as p:
     v2t = v2.inner_text()
     heads = page.evaluate("""() => [...document.querySelectorAll('[data-tiddler-title="MX-06"] h2.vtw-mxh')].map(h => h.textContent.trim())""")
     check("MX-06 (layout v2) renders the mechanism sections in order", heads == MX_SECTIONS, str(heads))
-    check("v2 page: no earlier header or rollup, no draft note once reviewed, parts table with coloured basis labels",
+    check("v2 page: no earlier header or rollup, draft note follows status, parts table with coloured basis labels",
           v2.locator(".vtw-header").count() == 0
           and page.evaluate("() => [...document.querySelectorAll('[data-tiddler-title=\"MX-06\"] .vtw-rsec')].filter(e => !e.closest('details')).length") == 0
-          and v2.locator(".vtw-mx > .vtw-note", has_text="not yet reviewed").count() == 0
+          and v2.locator(".vtw-mx > .vtw-note", has_text="not yet reviewed").count() == int(page.evaluate("$tw.wiki.getTiddler('MX-06').fields.status !== 'reviewed'"))
           and v2.locator(".vtw-parts-wrap table").count() == 1
           and v2.locator(".vtw-parts-wrap .vtw-basis-required").count() >= 1
           and v2.locator(".vtw-parts-wrap .vtw-prov:not([class*='vtw-basis-'])").count() == 0)
@@ -367,6 +380,8 @@ with sync_playwright() as p:
         jumps.append(in_view(page, f"#{target}"))
     check("each chip jumps to its section", all(jumps), str(jumps))
     j = navigate(page, "M1.1")
+    j.locator("summary", has_text="September source analysis and first-slice record — historical").evaluate("s => s.parentElement.open = true")
+    j.locator("table.vtw-mxmap").evaluate("e => { for (let p = e.parentElement; p; p = p.parentElement) { if (p.tagName === 'DETAILS') p.open = true; } }")
     j.locator("table.vtw-mxmap tr", has_text=page.evaluate("$tw.wiki.getTiddler('MX-06').fields.caption")).locator("button.vtw-linkbtn").first.click()
     page.wait_for_timeout(600)
     check("a count in the mechanism map opens that section of the mechanism page",
@@ -401,15 +416,15 @@ with sync_playwright() as p:
     page.wait_for_timeout(700)
     hl = page.evaluate("() => [...document.querySelectorAll('.vtw-lptext .vtw-lphl .vtw-lpn')].map(e => e.textContent.trim())")
     check("a provision's source reference is visible and lands on the cited line", ref.startswith("L") and hl and hl[0] == ref.lstrip("L").split("–")[0] and in_view(page, "#lp-cited"), f"{ref} -> {hl}")
-    page.evaluate("$tw.wiki.deleteTiddler('$:/temp/vtw/lp-cite')")
+    page.evaluate("$tw.wiki.filterTiddlers('[prefix[$:/temp/vtw/lp-cite/]]').forEach(t => $tw.wiki.deleteTiddler(t))")
 
     # ---- notes on the paper's text, shown on the records they concern ----
     noted = page.evaluate("$tw.wiki.filterTiddlers('[has[paper_note]!is[system]sort[title]]')")
     note_bad = []
     for t in noted:
         note = navigate(page, t).locator(".vtw-header .vtw-papernote")
-        if note.count() != 1 or note.locator("a.tc-tiddlylink[href='#SRC-LP20']", has_text="all notes").count() != 1 \
-                or not note.locator("a.tc-tiddlylink[href='#SRC-LP20']", has_text="line").count() \
+        if note.count() != 1 or note.locator("a.tc-tiddlylink", has_text="all notes").count() != 1 \
+                or not (note.locator("a.tc-tiddlylink", has_text="line").count() or note.locator("a.vtw-cite").count()) \
                 or note.locator("a.tc-tiddlylink-missing").count():
             note_bad.append(t)
     check("each note on the paper's text shows on its record's page, with a line link and a link back to the full list",
@@ -419,7 +434,23 @@ with sync_playwright() as p:
         page.wait_for_timeout(700)
         hl = page.evaluate("() => [...document.querySelectorAll('.vtw-lptext .vtw-lphl .vtw-lpn')].map(e => e.textContent.trim())")
         check("a line link in a record's note opens the paper at those lines", hl == ["109", "224"] and in_view(page, "#lp-cited"), str(hl))
-        page.evaluate("$tw.wiki.deleteTiddler('$:/temp/vtw/lp-cite')")
+        page.evaluate("$tw.wiki.filterTiddlers('[prefix[$:/temp/vtw/lp-cite/]]').forEach(t => $tw.wiki.deleteTiddler(t))")
+
+    # Source versions have separate targets, bounds and highlight state.
+    if page.evaluate("$tw.wiki.tiddlerExists('SRC-LP20-OCT')"):
+        oct_src = navigate(page, "SRC-LP20-OCT")
+        expected = int(page.evaluate("$tw.wiki.getTiddler('SRC-LP20-OCT').fields.lines"))
+        check("October source renders its own full line count", oct_src.locator(".vtw-lptext .vtw-lpline").count() == expected)
+        page.evaluate("""() => $tw.wiki.addTiddler({title:'Citation version probe',text:'<$link to="SRC-LP20">line 57</$link> <$link to="SRC-LP20-OCT">line 388</$link>'})""")
+        for sid, line in (("SRC-LP20", "57"), ("SRC-LP20-OCT", "388")):
+            probe = navigate(page, "Citation version probe")
+            probe.locator(f"a[href='#{sid}']").click()
+            page.wait_for_timeout(150)
+            frame = page.locator(f".tc-story-river > [data-tiddler-title='{sid}']")
+            got = frame.locator(".vtw-lptext .vtw-lphl .vtw-lpn").all_text_contents()
+            check(f"{sid} citation highlights only its own source line", got == [line], str(got))
+        page.evaluate("$tw.wiki.deleteTiddler('Citation version probe')")
+        page.evaluate("$tw.wiki.filterTiddlers('[prefix[$:/temp/vtw/lp-cite/]]').forEach(t => $tw.wiki.deleteTiddler(t))")
 
     # ---- role guides ----
     h = navigate(page, "Home")

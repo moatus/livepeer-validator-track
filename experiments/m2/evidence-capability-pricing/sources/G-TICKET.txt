@@ -1,0 +1,9 @@
+// Ticket is lottery ticket payment in a probabilistic micropayment protocol
+// The expected value of the ticket constitutes the payment and can be
+// calculated using the ticket's face value and winning probability
+type Ticket struct {
+	// Recipient is the ETH address of recipient
+	Recipient ethcommon.Address
+
+	// Sender is the ETH address of sender
+	Sender ethcommon.Address
