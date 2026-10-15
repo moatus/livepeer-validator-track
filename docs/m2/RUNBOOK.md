@@ -1,8 +1,8 @@
 # M2 runbook
 
-Version **0.11 · 2026-10-14**. Status: **drafted**. Owner: Shane (@moatus).
+Version **0.12 · 2026-10-15**. Status: **drafted**. Owner: Shane (@moatus).
 
-How M2 work is briefed, carried out, reviewed, integrated and improved. What M2 must produce is in the [specification](SPEC.md); [Slice 2](SLICE-02.md) is drafted and [Slice 2b](SLICE-02B.md) has frozen inputs and technically checked EX-08 accounting; consolidation is drafted for review and owner research review remains pending. Different agents carry out different stages; this runbook is written so that each can start cold from its brief.
+How M2 work is briefed, carried out, reviewed, integrated and improved. What M2 must produce is in the [specification](SPEC.md); Slices 1, [2](SLICE-02.md) and [2b](SLICE-02B.md) are reviewed by the owner (2026-10-14); the remaining program is P1, E2, Slice 3 and the consolidation pass under specification 0.13. Different agents carry out different stages; this runbook is written so that each can start cold from its brief.
 
 ## 0. Read first, in this order
 
@@ -242,3 +242,4 @@ After each slice, or sooner if a problem blocks later stages, the integrator pro
 | 0.9 | 2026-10-12 | Clarified Slice 2b candidate versus workbench integration commits, append-only fixes and execution-record wording | Independent preparation review |
 | 0.10 | 2026-10-12 | Slice 2b Phase 2 split into two sequential candidates under one reviewer | Owner-directed amendment of SLICE-02B.md 1.2 |
 | 0.11 | 2026-10-14 | Data-note and rule-reading slices may omit Stages B and C; aligned to specification 0.11 | Owner direction, 2026-10-14 |
+| 0.12 | 2026-10-15 | Introduction records the owner's review of Slices 1, 2 and 2b; aligned to specification 0.13 | Owner direction, 2026-10-15 |
