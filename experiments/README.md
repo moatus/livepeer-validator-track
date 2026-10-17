@@ -14,3 +14,5 @@
 For each experiment, identify its task and question; input versions and access or licensing constraints; method; expected controls; execution instructions; resource or paid-call budget; result artifact; errors and limitations. Separate simulations from measured network observations.
 
 Use bounded fixtures or existing authorized services. Do not upload credentials, customer payloads or unrelated datasets. Model-runner deployment is not a prerequisite for this coordination repository.
+
+- [EX-10: evidence and operator response](m2/evidence-operator-response/README.md) — bounded accepted-term correctness, frozen settlement/delay, inherited purpose, response paths and record access; practical authentication/access remains conditional.
