@@ -1,0 +1,359 @@
+{
+  "code": [
+    {
+      "commit": "9d4f55ecb183b969dbdf1caf0ac25f9c386530fd",
+      "excerpts": [
+        {
+          "line_end": 139,
+          "line_start": 102,
+          "sha256": "5ee14a1b41f2f9de448e696296ed9307ce8abb8029af9fcf95605390fda5c821",
+          "text": "// Ticket is lottery ticket payment in a probabilistic micropayment protocol\n// The expected value of the ticket constitutes the payment and can be\n// calculated using the ticket's face value and winning probability\ntype Ticket struct {\n\t// Recipient is the ETH address of recipient\n\tRecipient ethcommon.Address\n\n\t// Sender is the ETH address of sender\n\tSender ethcommon.Address\n\n\t// FaceValue represents the pay out to\n\t// the recipient if the ticket wins\n\tFaceValue *big.Int\n\n\t// WinProb represents how likely a ticket will win\n\tWinProb *big.Int\n\n\t// SenderNonce is the monotonically increasing counter that makes\n\t// each ticket unique given a particular recipientRand value\n\tSenderNonce uint32\n\n\t// RecipientRandHash is the 32 byte keccak-256 hash commitment to a random number\n\t// provided by the recipient. In order for the recipient to redeem\n\t// a winning ticket, it must reveal the preimage to this hash\n\tRecipientRandHash ethcommon.Hash\n\n\t// CreationRound is the round during which the ticket is created\n\tCreationRound int64\n\n\t// CreationRoundBlockHash is the block hash associated with CreationRound\n\tCreationRoundBlockHash ethcommon.Hash\n\n\t// ParamsExpirationBlock is the block number at which the ticket parameters used\n\t// to create the ticket will no longer be valid\n\tParamsExpirationBlock *big.Int\n\n\tPricePerPixel *big.Rat\n}\n"
+        }
+      ],
+      "full_file_sha256": "875a9ac890531583762b875b39bb9190c02354b044745754ec772e47178f2953",
+      "line_count": 228,
+      "path": "pm/ticket.go",
+      "repository": "go-livepeer"
+    },
+    {
+      "commit": "9d4f55ecb183b969dbdf1caf0ac25f9c386530fd",
+      "excerpts": [
+        {
+          "line_end": 29,
+          "line_start": 8,
+          "sha256": "dfb117c2c80ee777444c1cdc5022347c11c3e41721e248e8c716144643071523",
+          "text": "// TicketStore is an interface which describes an object capable\n// of persisting tickets\ntype TicketStore interface {\n\t// SelectEarliestWinningTicket selects the earliest stored winning ticket for a 'sender'\n\t// which is not yet redeemed\n\tSelectEarliestWinningTicket(sender ethcommon.Address, minCreationRound int64) (*SignedTicket, error)\n\n\t// RemoveWinningTicket removes a ticket\n\tRemoveWinningTicket(ticket *SignedTicket) error\n\n\t// StoreWinningTicket stores a signed ticket\n\tStoreWinningTicket(ticket *SignedTicket) error\n\n\t// MarkWinningTicketRedeemed stores the on-chain transaction hash and timestamp of redemption\n\t// This marks the ticket as being 'redeemed'\n\tMarkWinningTicketRedeemed(ticket *SignedTicket, txHash ethcommon.Hash) error\n\n\t// WinningTicketCount returns the amount of non-redeemed winning tickets for a sender in the TicketStore\n\tWinningTicketCount(sender ethcommon.Address, minCreationRound int64) (int, error)\n\n\t// IsOrchActive returns true if the given orchestrator addr is active in the given round\n\tIsOrchActive(addr ethcommon.Address, round *big.Int) (bool, error)\n"
+        }
+      ],
+      "full_file_sha256": "fabcf940a3a133939c5d64f7f17f6f00f0b7d2b2f91ca20bfc06baf2a9a79494",
+      "line_count": 30,
+      "path": "pm/ticketstore.go",
+      "repository": "go-livepeer"
+    },
+    {
+      "commit": "9d4f55ecb183b969dbdf1caf0ac25f9c386530fd",
+      "excerpts": [
+        {
+          "line_end": 95,
+          "line_start": 41,
+          "sha256": "5e838eb59a0321ee51af10cd46ec0be35f49305bd05bd16d33577a60aa85e976",
+          "text": "\t// ManifestID should go away once we do direct push of video\n\tManifestID core.ManifestID\n\n\t// Bytes of the source video segment\n\tSource *stream.HLSSegment\n\n\t// Rendition parameters to be checked\n\tProfiles []ffmpeg.VideoProfile\n\n\t// Information on the orchestrator that performed the transcoding\n\tOrchestrator *net.OrchestratorInfo\n\n\t// Transcoded result metadata\n\tResults *net.TranscodeData\n\n\t// Rendition locations; typically when the data is in object storage\n\tURIs []string\n\n\t// Cached data when local object storage is used\n\tRenditions [][]byte\n\n\t// External object storage used by broadcaster (can be defined per-stream)\n\tOS drivers.OSSession\n}\n\ntype Results struct {\n\t// Verifier specific score\n\tScore float64\n\n\t// Number of pixels decoded in this result\n\tPixels []int64\n}\n\ntype Verifier interface {\n\tVerify(params *Params) (*Results, error)\n}\n\ntype Policy struct {\n\n\t// Verification function to run\n\tVerifier Verifier\n\n\t// Maximum number of retries until the policy chooses a winner\n\tRetries int\n\n\t// How often to invoke the verifier, on a per-segment basis\n\tSampleRate float64 // XXX for later\n\n\t// How many parallel transcodes to support\n\tRedundancy int // XXX for later\n}\n\ntype SegmentVerifierResults struct {\n\tparams *Params\n\tres    *Results\n"
+        },
+        {
+          "line_end": 155,
+          "line_start": 120,
+          "sha256": "340a7e8d12152462694ce2f900e6fb63e31aeec57c76041cf119d156a0ba4718",
+          "text": "\t}\n\n\tif sv.policy == nil {\n\t\treturn nil, nil\n\t}\n\n\tvar err error\n\tres := &Results{}\n\n\t// TODO Use policy sampling rate to determine whether to invoke verifier.\n\t//      If not, exit early. Seed sample using source data for repeatability!\n\tif sv.policy.Verifier != nil {\n\t\tres, err = sv.policy.Verifier.Verify(params)\n\t}\n\n\t// Check pixel counts\n\tif (err == nil || (err != ErrAudioMismatch && IsRetryable(err))) && res != nil && params.Results != nil {\n\t\tpxls := res.Pixels\n\t\tif len(pxls) != len(params.Results.Segments) {\n\t\t\tpxls, err = countPixelParams(params)\n\t\t}\n\t\tfor i := 0; err == nil && i < len(params.Results.Segments) && i < len(pxls); i++ {\n\t\t\treportedPixels := params.Results.Segments[i].Pixels\n\t\t\tverifiedPixels := pxls[i]\n\t\t\tif reportedPixels != verifiedPixels {\n\t\t\t\terr = ErrPixelMismatch\n\t\t\t}\n\t\t}\n\t}\n\n\tif err == nil {\n\t\t// Verification passed successfully, so use this set of params\n\t\treturn params, nil\n\t}\n\tsv.count++\n\n"
+        },
+        {
+          "line_end": 245,
+          "line_start": 175,
+          "sha256": "e74ac2501de0cdb91023ae64f291ed10eceb9c0bd8f1de883c487679335a6dbc",
+          "text": "\nfunc IsFatal(err error) bool {\n\t_, fatal := err.(Fatal)\n\treturn fatal\n}\n\nfunc IsRetryable(err error) bool {\n\t_, retryable := err.(Retryable)\n\treturn retryable || IsFatal(err)\n}\n\nfunc (sv *SegmentVerifier) sigVerification(params *Params) error {\n\tif params.Orchestrator == nil || params.Orchestrator.Address == nil || params.Orchestrator.TicketParams == nil {\n\t\treturn nil\n\t}\n\n\tif len(params.Results.Segments) != len(params.Renditions) {\n\t\treturn errPMCheckFailed\n\t}\n\n\tsegHashes := make([][]byte, len(params.Renditions))\n\tfor i := range params.Renditions {\n\t\tsegHashes[i] = crypto.Keccak256(params.Renditions[i])\n\t}\n\n\t// Verify the signature against the orchestrator provided address if it exists\n\t// Otherwise verify the signature against the ticket recipient address\n\taddr := ethcommon.BytesToAddress(params.Orchestrator.Address)\n\tif (addr == ethcommon.Address{}) {\n\t\taddr = ethcommon.BytesToAddress(params.Orchestrator.TicketParams.Recipient)\n\t}\n\n\tif !sv.verifySig(\n\t\taddr,\n\t\tcrypto.Keccak256(segHashes...),\n\t\tparams.Results.Sig) {\n\t\tglog.Error(\"Sig check failed\")\n\t\treturn errPMCheckFailed\n\t}\n\treturn nil\n}\n\nfunc countPixelParams(params *Params) ([]int64, error) {\n\n\tif len(params.Results.Segments) != len(params.Renditions) {\n\t\treturn nil, ErrPixelsAbsent\n\t}\n\n\tpxls := make([]int64, len(params.Results.Segments))\n\n\tfor i := 0; i < len(params.Results.Segments); i++ {\n\t\tcount, err := countPixels(params.Renditions[i])\n\t\tif err != nil {\n\t\t\treturn nil, err\n\t\t}\n\t\tpxls[i] = count\n\t}\n\treturn pxls, nil\n}\n\nfunc countPixels(data []byte) (int64, error) {\n\t// write the data to a temp file\n\ttempfile, err := ioutil.TempFile(\"\", common.RandName())\n\tif err != nil {\n\t\treturn 0, fmt.Errorf(\"error creating temp file for pixels verification: %w\", err)\n\t}\n\tdefer os.Remove(tempfile.Name())\n\n\tif _, err := tempfile.Write(data); err != nil {\n\t\ttempfile.Close()\n\t\treturn 0, fmt.Errorf(\"error writing temp file for pixels verification: %w\", err)\n"
+        }
+      ],
+      "full_file_sha256": "59d82e8d63fe49146f65fb1204f398b8b7cb8a702ee40a79518f0773c52ae505",
+      "line_count": 268,
+      "path": "verification/verify.go",
+      "repository": "go-livepeer"
+    },
+    {
+      "commit": "9d4f55ecb183b969dbdf1caf0ac25f9c386530fd",
+      "excerpts": [
+        {
+          "line_end": 182,
+          "line_start": 102,
+          "sha256": "adca245c7823193cd48ccf8833f62ee27fc9c58171989750d270b7adb10b31a2",
+          "text": "message PriceInfo {\n  // price in wei\n  int64 pricePerUnit = 1;\n\n  // Pixels covered in the price\n  // Set price to 1 wei and pixelsPerUnit > 1 to have a smaller price\n  // granularity per pixel than 1 wei\n  int64 pixelsPerUnit = 2;\n\n  // Capability price is for\n  uint32 capability = 3;\n\n  // constraint price is for\n  string constraint = 4;\n}\n\nmessage Capabilities {\n\n  // Bit string of supported features - one bit per feature\n  repeated uint64 bitstring = 1;\n\n  // Bit string of features that are required to be supported\n  repeated uint64 mandatories = 2;\n\n  // Capacity corresponding to each capability\n  map<uint32, uint32> capacities = 3;\n\n  string version = 4;\n\n  Constraints constraints = 5;\n\n  // Non-binary constraints.\n  message Constraints {\n    string minVersion = 1;\n    map<uint32, CapabilityConstraints> PerCapability = 2;\n  }\n\n  // Non-binary capability constraints, such as supported ranges.\n  message CapabilityConstraints {\n    message ModelConstraint {\n      bool warm = 1;\n      uint32 capacity = 2;\n      string runnerVersion = 3;\n      uint32 capacityInUse = 4;\n    }\n\n    map<string, ModelConstraint> models = 1;\n  }\n}\n\n// The orchestrator sends this in response to `GetOrchestrator`, containing\n// miscellaneous data related to the job.\nmessage OrchestratorInfo {\n\n  // URI of the transcoder to use for submitting segments.\n  string transcoder = 1;\n\n  // Parameters for probabilistic micropayment tickets\n  TicketParams ticket_params = 2;\n\n  // Price Info containing the price per pixel to transcode\n  PriceInfo price_info = 3;\n\n  // ETH address that should sign transcoded results\n  bytes address = 4;\n\n  // Features and constraints supported by the orchestrator\n  Capabilities capabilities = 5;\n\n  // Data for transcoding authentication\n  AuthToken auth_token = 6;\n\n  // Information on Orchestrator hardware\n  repeated HardwareInformation hardware = 7;\n\n  // Orchestrator returns info about own input object storage, if it wants it to\n  // be used.\n  repeated OSInfo storage = 32;\n\n  // prices for capabilities\n  repeated PriceInfo capabilities_prices = 33;\n"
+        }
+      ],
+      "full_file_sha256": "aa168d64383dd8bfb95bdfd9476c1734ebd8531702870a8c2fb05209d02035f8",
+      "line_count": 542,
+      "path": "net/lp_rpc.proto",
+      "repository": "go-livepeer"
+    },
+    {
+      "commit": "9d4f55ecb183b969dbdf1caf0ac25f9c386530fd",
+      "excerpts": [
+        {
+          "line_end": 45,
+          "line_start": 18,
+          "sha256": "ffe3b40e590fe55773a7cb23eb873f3f99934f9a695586a3208c39533a7bc02d",
+          "text": "type ModelConstraints map[string]*ModelConstraint\n\ntype ModelConstraint struct {\n\tWarm          bool\n\tCapacity      int\n\tRunnerVersion string\n}\n\ntype Capability int\ntype CapabilityString []uint64\ntype Constraints struct {\n\tminVersion    string\n\tperCapability PerCapabilityConstraints\n}\ntype CapabilityConstraints struct {\n\t// Models contains a *ModelConstraint for each supported model ID\n\tModels ModelConstraints\n}\ntype PerCapabilityConstraints map[Capability]*CapabilityConstraints\ntype Capabilities struct {\n\tbitstring   CapabilityString\n\tmandatories CapabilityString\n\tversion     string\n\tconstraints Constraints\n\tcapacities  map[Capability]int\n\tmutex       sync.Mutex\n}\n\n"
+        }
+      ],
+      "full_file_sha256": "aa29b0bad96e8b757351dddca8e72873b56774f60fbbff3abe10ba5fb3a2d414",
+      "line_count": 835,
+      "path": "core/capabilities.go",
+      "repository": "go-livepeer"
+    },
+    {
+      "commit": "9d4f55ecb183b969dbdf1caf0ac25f9c386530fd",
+      "excerpts": [
+        {
+          "line_end": 98,
+          "line_start": 52,
+          "sha256": "eef9829f4e892b71e055f4afdda2bd6e937c8d084cb6dcd377cdf586ab1c853e",
+          "text": "type Orchestrator interface {\n\tServiceURI() *url.URL\n\tAddress() ethcommon.Address\n\tTranscoderSecret() string\n\tRegistrationSecret() string\n\tSign([]byte) ([]byte, error)\n\tVerifySig(ethcommon.Address, string, []byte) bool\n\tCheckCapacity(core.ManifestID) error\n\tCheckAICapacity(pipeline, modelID string) (bool, chan<- bool)\n\tGetLiveAICapacity(pipeline, modelID string) worker.Capacity\n\tTranscodeSeg(context.Context, *core.SegTranscodingMetadata, *stream.HLSSegment) (*core.TranscodeResult, error)\n\tServeTranscoder(stream net.Transcoder_RegisterTranscoderServer, capacity int, capabilities *net.Capabilities)\n\tTranscoderResults(job int64, res *core.RemoteTranscoderResult)\n\tServeAIWorker(stream net.AIWorker_RegisterAIWorkerServer, capabilities *net.Capabilities, hardware []*net.HardwareInformation)\n\tAIResults(job int64, res *core.RemoteAIWorkerResult)\n\tProcessPayment(ctx context.Context, payment net.Payment, manifestID core.ManifestID) error\n\tTicketParams(sender ethcommon.Address, priceInfo *net.PriceInfo) (*net.TicketParams, error)\n\tPriceInfo(sender ethcommon.Address, manifestID core.ManifestID) (*net.PriceInfo, error)\n\tPriceInfoForCaps(sender ethcommon.Address, manifestID core.ManifestID, caps *net.Capabilities) (*net.PriceInfo, error)\n\tGetCapabilitiesPrices(sender ethcommon.Address) ([]*net.PriceInfo, error)\n\tSufficientBalance(addr ethcommon.Address, manifestID core.ManifestID) bool\n\tDebitFees(addr ethcommon.Address, manifestID core.ManifestID, price *net.PriceInfo, pixels int64)\n\tBalance(addr ethcommon.Address, manifestID core.ManifestID) *big.Rat\n\tCapabilities() *net.Capabilities\n\tAuthToken(sessionID string, expiration int64) *net.AuthToken\n\tCreateStorageForRequest(requestID string) error\n\tGetStorageForRequest(requestID string) (drivers.OSSession, bool)\n\tWorkerHardware() []worker.HardwareInformation\n\tNodes() []string\n\tTextToImage(ctx context.Context, requestID string, req worker.GenTextToImageJSONRequestBody) (interface{}, error)\n\tImageToImage(ctx context.Context, requestID string, req worker.GenImageToImageMultipartRequestBody) (interface{}, error)\n\tImageToVideo(ctx context.Context, requestID string, req worker.GenImageToVideoMultipartRequestBody) (interface{}, error)\n\tUpscale(ctx context.Context, requestID string, req worker.GenUpscaleMultipartRequestBody) (interface{}, error)\n\tAudioToText(ctx context.Context, requestID string, req worker.GenAudioToTextMultipartRequestBody) (interface{}, error)\n\tLLM(ctx context.Context, requestID string, req worker.GenLLMJSONRequestBody) (interface{}, error)\n\tSegmentAnything2(ctx context.Context, requestID string, req worker.GenSegmentAnything2MultipartRequestBody) (interface{}, error)\n\tImageToText(ctx context.Context, requestID string, req worker.GenImageToTextMultipartRequestBody) (interface{}, error)\n\tTextToSpeech(ctx context.Context, requestID string, req worker.GenTextToSpeechJSONRequestBody) (interface{}, error)\n\tLiveVideoToVideo(ctx context.Context, requestID string, req worker.GenLiveVideoToVideoJSONRequestBody) (interface{}, error)\n\tRegisterExternalCapability(extCapability string) (*core.ExternalCapability, error)\n\tRemoveExternalCapability(extCapability string) error\n\tGetUrlForCapability(extCapability string) string\n\tCheckExternalCapabilityCapacity(extCapability string) int64\n\tReserveExternalCapabilityCapacity(extCapability string) error\n\tFreeExternalCapabilityCapacity(extCapability string) error\n\tJobPriceInfo(sender ethcommon.Address, jobCapabiliy string) (*net.PriceInfo, error)\n}\n"
+        },
+        {
+          "line_end": 546,
+          "line_start": 510,
+          "sha256": "bf163238bf1b58374e7ba3ec27f917112c2d4564650d318854ebc912fa783cc8",
+          "text": "func fixedPriceInfo(node *core.LivepeerNode, sender ethcommon.Address, manifestID core.ManifestID) (*net.PriceInfo, bool, error) {\n\tif node == nil || node.Balances == nil {\n\t\treturn nil, false, nil\n\t}\n\tfixedPrice := node.Balances.FixedPrice(sender, manifestID)\n\tif fixedPrice == nil {\n\t\treturn nil, false, nil\n\t}\n\tif !fixedPrice.Num().IsInt64() || !fixedPrice.Denom().IsInt64() {\n\t\treturn nil, true, fmt.Errorf(\"fixed price cannot be represented as int64 price info\")\n\t}\n\treturn &net.PriceInfo{\n\t\tPricePerUnit:  fixedPrice.Num().Int64(),\n\t\tPixelsPerUnit: fixedPrice.Denom().Int64(),\n\t}, true, nil\n}\n\nfunc getOrchestrator(orch Orchestrator, req *net.OrchestratorRequest) (*net.OrchestratorInfo, error) {\n\taddr := ethcommon.BytesToAddress(req.Address)\n\tif err := verifyOrchestratorReq(orch, addr, req.Sig); err != nil {\n\t\treturn nil, fmt.Errorf(\"Invalid orchestrator request: %v\", err)\n\t}\n\n\tif _, err := authenticateBroadcaster(addr.Hex()); err != nil {\n\t\treturn nil, fmt.Errorf(\"authentication failed: %v\", err)\n\t}\n\n\tserviceURI := orch.ServiceURI().String()\n\n\t// currently, orchestrator == transcoder\n\tif req.Capabilities == nil || serviceURI == \"\" {\n\t\treturn orchestratorInfo(orch, addr, serviceURI, \"\")\n\t}\n\n\tif err := checkLiveVideoToVideoCapacity(orch, req); err != nil {\n\t\treturn nil, fmt.Errorf(\"Invalid orchestrator request: %v\", err)\n\t}\n"
+        },
+        {
+          "line_end": 696,
+          "line_start": 691,
+          "sha256": "2f1362d5108950efe6a5c841a4f744d20481531523e8039cf5f921fc0cf1b55d",
+          "text": "// authenticateBroadcaster returns an error if authentication fails\n// on success it caches the webhook response\nfunc authenticateBroadcaster(id string) (*discoveryAuthWebhookRes, error) {\n\tif AuthWebhookURL == nil {\n\t\treturn nil, nil\n\t}\n"
+        }
+      ],
+      "full_file_sha256": "4952860c7495786b4129d1d722b4083914f6f68cd22b4a687aae2096190bf37a",
+      "line_count": 846,
+      "path": "server/rpc.go",
+      "repository": "go-livepeer"
+    },
+    {
+      "commit": "9d4f55ecb183b969dbdf1caf0ac25f9c386530fd",
+      "excerpts": [
+        {
+          "line_end": 99,
+          "line_start": 95,
+          "sha256": "c13310a29238faab32b38f62dc04eb0588216e7832bb8831fb52ffc3c4c7fa8b",
+          "text": "// Enabled true if metrics was enabled in command line\nvar Enabled bool\nvar PerStreamMetrics bool\n\n// ExposeClientIP if true then Orchestrator exposes Broadcaster's IP address in metrics\n"
+        },
+        {
+          "line_end": 274,
+          "line_start": 271,
+          "sha256": "61cf76163a702f48c52f84893a6132b226da8e40dc20ebd90de508d6072a4b76",
+          "text": "// Exporter Prometheus exporter that handles `/metrics` endpoint\nvar Exporter *prometheus.Exporter\n\nvar census censusMetricsCounter\n"
+        },
+        {
+          "line_end": 455,
+          "line_start": 442,
+          "sha256": "8cc4a903b6eba4ddd51536702e073c3368b646af91a3cdccc31964f935fa61a7",
+          "text": "\tbaseTagsWithOrchInfo := baseTags\n\tbaseTagsWithGatewayInfo := baseTags\n\tif PerStreamMetrics {\n\t\tbaseTagsWithManifestID = []tag.Key{census.kNodeID, census.kNodeType, census.kManifestID}\n\t\tbaseTagsWithEthAddr = []tag.Key{census.kNodeID, census.kNodeType, census.kSender}\n\t\tbaseTagsWithManifestIDAndEthAddr = []tag.Key{census.kNodeID, census.kNodeType, census.kManifestID, census.kSender}\n\t}\n\tbaseTagsWithManifestIDAndIP := baseTagsWithManifestID\n\tif ExposeClientIP {\n\t\tbaseTagsWithManifestIDAndIP = append([]tag.Key{census.kClientIP}, baseTagsWithManifestID...)\n\t}\n\tbaseTagsWithOrchInfo = append([]tag.Key{census.kOrchestratorURI, census.kOrchestratorAddress, census.kOrchestratorVersion}, baseTags...)\n\tbaseTagsWithGatewayInfo = append([]tag.Key{census.kSender}, baseTags...)\n\tbaseTagsWithManifestIDAndOrchInfo := append([]tag.Key{census.kOrchestratorURI, census.kOrchestratorAddress, census.kOrchestratorVersion}, baseTagsWithManifestID...)\n"
+        }
+      ],
+      "full_file_sha256": "597e523567d4ed3b75b6279878ba2661aacfd7ae04a327bd11ba1ef8a60767d6",
+      "line_count": 2312,
+      "path": "monitor/census.go",
+      "repository": "go-livepeer"
+    },
+    {
+      "commit": "46c24fef8c7ccccfb4a55038bd80af7799c904c7",
+      "excerpts": [
+        {
+          "line_end": 302,
+          "line_start": 282,
+          "sha256": "f7a873573ace0ec575832fa2f38e0ef7a1f201f5d6dc0b531404e2c3945e5fa7",
+          "text": "    function requireValidWinningTicket(\n        Ticket memory _ticket,\n        bytes32 _ticketHash,\n        bytes memory _sig,\n        uint256 _recipientRand\n    ) internal view {\n        require(_ticket.recipient != address(0), \"ticket recipient is null address\");\n        require(_ticket.sender != address(0), \"ticket sender is null address\");\n\n        requireValidTicketAuxData(_ticket.auxData);\n\n        require(\n            keccak256(abi.encodePacked(_recipientRand)) == _ticket.recipientRandHash,\n            \"recipientRand does not match recipientRandHash\"\n        );\n\n        require(!usedTickets[_ticketHash], \"ticket is used\");\n\n        require(isValidTicketSig(_ticket.sender, _sig, _ticketHash), \"invalid signature over ticket hash\");\n\n        require(isWinningTicket(_sig, _recipientRand, _ticket.winProb), \"ticket did not win\");\n"
+        }
+      ],
+      "full_file_sha256": "4ead941d9330d5d734d6bb18a159384f2daac93f44f07c309f8e6e7c6efbdc03",
+      "line_count": 354,
+      "path": "contracts/pm/mixins/MixinTicketBrokerCore.sol",
+      "repository": "protocol"
+    }
+  ],
+  "files": [
+    {
+      "bytes": 7803,
+      "path": "README.md",
+      "sha256": "7023a86becc1997cff63aeab690a255ba4978a84de0ab675691bce74de91345f"
+    },
+    {
+      "bytes": 15936,
+      "path": "MILESTONES.md",
+      "sha256": "7c04fa82ee6197ddb339c456d27ce4f0b25210c15ba3c88292f84750155e6e14"
+    },
+    {
+      "bytes": 4834,
+      "path": "docs/WORKFLOW.md",
+      "sha256": "e090351587961b8f7654a01077fb9bb65c77e76bbdfb7960b714826f7b6c7f6c"
+    },
+    {
+      "bytes": 51017,
+      "path": "docs/m2/SPEC.md",
+      "sha256": "4f7cdb96bfb0c81863cda83ce2c94b2e5d1b481b1149b6acdd9434ef60712bdf"
+    },
+    {
+      "bytes": 29219,
+      "path": "docs/m2/RUNBOOK.md",
+      "sha256": "cad42aaa5fdd32822dbf748d682b2b8bb33da3ba1cda5cd7021dec6c3c0d194a"
+    },
+    {
+      "bytes": 6275,
+      "path": "docs/DECISIONS.md",
+      "sha256": "f79c8aa2cb4195fb5efb20b196a6060794361418168639a03d465875a3f27065"
+    },
+    {
+      "bytes": 45644,
+      "path": "docs/litepaper-2.0.md",
+      "sha256": "3e4a385ec19837f4b506b01989fac62cc33f99f28411bc1258f10c065e29240e"
+    },
+    {
+      "bytes": 214761,
+      "path": "docs/sources/litepaper-2026-10.pdf",
+      "sha256": "b438da2b7d25d3043a3387b9db262293c2a0ec7801a765e5a3a249759b41569a"
+    },
+    {
+      "bytes": 32814,
+      "path": "docs/sources/litepaper-2026-09.md",
+      "sha256": "5fc153408fb636d9750788ae987ada6daaa9fc3df3e44f70cadde51a6158fb71"
+    },
+    {
+      "bytes": 4153730,
+      "path": "validator-track-workbench.html",
+      "sha256": "89fb4a72114da276a658b573c3c66c4f8b863441c4029bfa23a206a1240321a9"
+    },
+    {
+      "bytes": 8981,
+      "path": "experiments/m2/evidence-self-funded/README.md",
+      "sha256": "a9dec9b0053b3902b1f61bdffd02fd322924264d3be526a37515641cb4055d72"
+    },
+    {
+      "bytes": 14394,
+      "path": "experiments/m2/evidence-self-funded/matrix.csv",
+      "sha256": "207037c09922317fe1a0f35b27ac9057ad92ffad6eb03b6aae81dcc926298ae2"
+    },
+    {
+      "bytes": 11876,
+      "path": "experiments/m2/evidence-self-funded/packets/sc07-sc23.md",
+      "sha256": "4cea41e44f05b25345bbaad1bc554df68bfbeff4619adac582fcf9e25dea2eb7"
+    },
+    {
+      "bytes": 10004,
+      "path": "experiments/m2/evidence-self-funded/tolerances.md",
+      "sha256": "da37fa01ac0252792e2dd365219f7996ff2d7ca43c63e2c1abeb6cd0d4869681"
+    },
+    {
+      "bytes": 5266,
+      "path": "experiments/m2/evidence-self-funded/verdicts.csv",
+      "sha256": "a97962a9a01a751cd09be72815614a6868e5795150cdff16f8a58f77906f895a"
+    },
+    {
+      "bytes": 5623,
+      "path": "experiments/m2/evidence-self-funded/verify.py",
+      "sha256": "00a69a39c5c38a634ca03ccf70829dc8df2f468e135ee6f9c3d3593cc994dfad"
+    },
+    {
+      "bytes": 14172,
+      "path": "experiments/m2/evidence-capability-pricing/README.md",
+      "sha256": "bbc310403c10b0c0a7414a60615692f87125841f698b51cb173c5d01a05c12c2"
+    },
+    {
+      "bytes": 3991,
+      "path": "experiments/m2/evidence-capability-pricing/config.json",
+      "sha256": "18f7cd44add6729a062a140292dec0f3365bb220754967e5ee3a459f3dc194f3"
+    },
+    {
+      "bytes": 66600,
+      "path": "experiments/m2/evidence-capability-pricing/matrix.csv",
+      "sha256": "3f1bf5daa4cebf30a389282ba30bc47ed394e4897210b4fe52ce03911913436f"
+    },
+    {
+      "bytes": 7685,
+      "path": "experiments/m2/evidence-capability-pricing/packets/discount.md",
+      "sha256": "b42a29d198ba4f42b0fe63323f1bdf5295639ec77dc1845432d3ab8f4152e1cd"
+    },
+    {
+      "bytes": 7665,
+      "path": "experiments/m2/evidence-capability-pricing/packets/niche.md",
+      "sha256": "3491b2da03b7bffa5f4be876037d39f32900cccb1e97c7a9678f62b6a06c86f7"
+    },
+    {
+      "bytes": 5453,
+      "path": "experiments/m2/evidence-capability-pricing/source-index.csv",
+      "sha256": "04734f2cb19ee4e1f9b4d4b3608f16699938911a42071219826da5ac3311263e"
+    },
+    {
+      "bytes": 270,
+      "path": "experiments/m2/evidence-capability-pricing/sources/G-DISPATCH.txt",
+      "sha256": "445d173c7531060c42a24b03f20bc52141dea8871e1e99186c529d5338bee45f"
+    },
+    {
+      "bytes": 379,
+      "path": "experiments/m2/evidence-capability-pricing/sources/G-TICKET.txt",
+      "sha256": "8dd72c2374a35f13c4746fd00b84a6208f9fee3edbc6111d95b9ba07d6df79dc"
+    },
+    {
+      "bytes": 267,
+      "path": "experiments/m2/evidence-capability-pricing/sources/P-TICKET.txt",
+      "sha256": "c824ae2fb5a737b7b86ac2044a2a4b63cb1dc0d5ff78a58b5abde72ddebb4275"
+    },
+    {
+      "bytes": 15805,
+      "path": "experiments/m2/evidence-capability-pricing/tolerances.md",
+      "sha256": "df904d04e7bc2c94f789510d9922ca3c633f1ddb6a90f92eff17f1d2a99162ac"
+    },
+    {
+      "bytes": 49231,
+      "path": "experiments/m2/evidence-capability-pricing/verdicts.csv",
+      "sha256": "9ff824bbe9454e8b13460150ec01f3f326b998b9c4fdd902c2a997d31af3ae26"
+    },
+    {
+      "bytes": 11577,
+      "path": "experiments/m2/evidence-capability-pricing/verify.py",
+      "sha256": "d3aa61c25a53647ed380c5bc14fb47661209ac922b17a0521a5101ea3bd0221f"
+    },
+    {
+      "bytes": 30541,
+      "path": "experiments/m2/strategic-self-funding/README.md",
+      "sha256": "dd48d09594da5daff8db182d1f4ed5d23cdc9780163763e1d38d9e71965a6d59"
+    },
+    {
+      "bytes": 8606,
+      "path": "experiments/m2/strategic-self-funding/evidence.py",
+      "sha256": "a208caf30e683b42c923258fbe4ce9271200046191eed8a445de7830af66a178"
+    },
+    {
+      "bytes": 23370,
+      "path": "experiments/m2/current-system-data-notes/README.md",
+      "sha256": "f8efdafc90a167fb369c4bac845e3c41da14575ca5b351fb1ca7ab64077f0bfc"
+    },
+    {
+      "bytes": 30328,
+      "path": "experiments/m2/current-system-data-notes/analyze.py",
+      "sha256": "91eba3a6dac3abe5e1c03086681842f4a6b6860424648c008e473c40a3c9ae91"
+    },
+    {
+      "bytes": 17778,
+      "path": "experiments/m2/current-system-data-notes/verify.py",
+      "sha256": "6ad3232d3dad601e4e1925f43c2a0e7b685d855cb030b4a28d91b437527561e5"
+    },
+    {
+      "bytes": 16886,
+      "path": "experiments/m2/current-system-data-notes/extract.py",
+      "sha256": "d172fd49db3ff8a3d77014176d7751f3b994ee1f8668e3a42bf6c28a5f1eb8d3"
+    },
+    {
+      "bytes": 9295,
+      "path": "experiments/m2/current-system-data-notes/selection-rule.md",
+      "sha256": "9cf3695a2acef9020f6b6cbbcc1d6b1338ea05282a43fb56ae87236bbcc8387f"
+    },
+    {
+      "bytes": 14394077,
+      "path": "experiments/m2/current-system-data-notes/livepeer-arbitrum-p1-20260717-20261015-v1.json",
+      "sha256": "b69e2b0949953b348470c772b4fc46f9c6510e37e3fb17b5f959a9fc7529d1c8"
+    }
+  ],
+  "format": "E2 prospective source manifest v1",
+  "limits": "Repository file hashes authenticate the frozen local inputs. Embedded code excerpts are reconstructed by git show at the stated pins; their hashes verify bytes, not independent upstream provenance or deployed identity. No practical holder access is established by this manifest.",
+  "p1": {
+    "complete_rounds": 100,
+    "content_sha256": "9f1a8e13b628f68ab65a2a796bc344e455cbbadc55f68221daf39bf75c49c414",
+    "end_l2_block": 514893852,
+    "end_utc_exclusive": "2026-10-15T00:00:00Z",
+    "fee_series": "raw redeemed winning-ticket faceValue summed by redemption round",
+    "partial_edges_excluded_from_ranking": true,
+    "path": "experiments/m2/current-system-data-notes/livepeer-arbitrum-p1-20260717-20261015-v1.json",
+    "rounds_intersecting": 102,
+    "start_l2_block": 484622260,
+    "start_utc": "2026-07-17T00:00:00Z",
+    "unit": "ETH, faceValue wei / 10^18; no USD/USDC conversion"
+  },
+  "repository_head": "229bb1a9ebff4cce7300e5f119002e23436f4c03",
+  "workbench_sha256": "89fb4a72114da276a658b573c3c66c4f8b863441c4029bfa23a206a1240321a9"
+}
