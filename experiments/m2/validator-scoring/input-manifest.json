@@ -1,0 +1,229 @@
+{
+  "version": "1.0",
+  "status": "prospective; source pins, no calculated outcomes",
+  "foundation": "ca44c8d67e57c32882003261c22f62dddb28bb3c",
+  "p1_foundation": "229bb1a9ebff4cce7300e5f119002e23436f4c03",
+  "p1_content_sha256": "9f1a8e13b628f68ab65a2a796bc344e455cbbadc55f68221daf39bf75c49c414",
+  "snapshot_id": "livepeer-arbitrum-2026-10-09-v1",
+  "snapshot_content_sha256": "b879cc73be95d0e5bdcd5c5bc2f2bc342a7319eb27cb6ffdd2ee6c25f4bb60e8",
+  "ledger_round": 4364,
+  "ledger_window": {
+    "start_utc": "2026-10-08T13:13:02Z",
+    "end_utc_exclusive": "2026-10-09T10:33:55Z"
+  },
+  "p1_window": {
+    "start_utc": "2026-07-17T00:00:00Z",
+    "end_utc_exclusive": "2026-10-15T00:00:00Z",
+    "l2_start": 484622260,
+    "l2_end": 514893852
+  },
+  "source_locators": {
+    "PDF p3": "L108-121, L123-151",
+    "PDF p4": "L176-208",
+    "PDF p5": "L218-258",
+    "PDF p6": "L271-307",
+    "PDF p7": "L388-402",
+    "PDF p8": "L413-416",
+    "PDF p9": "L462-470",
+    "PDF p10": "L522-529",
+    "PDF p12": "L578-584",
+    "PDF p13": "L646-670"
+  },
+  "files": [
+    {
+      "path": "docs/litepaper-2.0.md",
+      "sha256": "3e4a385ec19837f4b506b01989fac62cc33f99f28411bc1258f10c065e29240e",
+      "input_status": "October paper proposal"
+    },
+    {
+      "path": "docs/sources/litepaper-2026-10.pdf",
+      "sha256": "b438da2b7d25d3043a3387b9db262293c2a0ec7801a765e5a3a249759b41569a",
+      "input_status": "October paper proposal"
+    },
+    {
+      "path": "docs/sources/litepaper-2026-09.md",
+      "sha256": "5fc153408fb636d9750788ae987ada6daaa9fc3df3e44f70cadde51a6158fb71",
+      "input_status": "September historical source"
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "sha256": "f79c8aa2cb4195fb5efb20b196a6060794361418168639a03d465875a3f27065",
+      "input_status": "existing source-scoped research rules or dispositions; not protocol adoption"
+    },
+    {
+      "path": "docs/m2/SPEC.md",
+      "sha256": "4f7cdb96bfb0c81863cda83ce2c94b2e5d1b481b1149b6acdd9434ef60712bdf",
+      "input_status": "existing source-scoped research rules or dispositions; not protocol adoption"
+    },
+    {
+      "path": "docs/m2/RUNBOOK.md",
+      "sha256": "cad42aaa5fdd32822dbf748d682b2b8bb33da3ba1cda5cd7021dec6c3c0d194a",
+      "input_status": "existing source-scoped research rules or dispositions; not protocol adoption"
+    },
+    {
+      "path": "experiments/m2/network-snapshot/livepeer-arbitrum-2026-10-09-v1.json",
+      "sha256": "bc8b902aa568129c4be88eec952f13647f0f911b74ea71d5fcb38f82399d04d0",
+      "input_status": "frozen current-system measured input; no control/ownership inference"
+    },
+    {
+      "path": "experiments/m2/network-snapshot/read_snapshot.py",
+      "sha256": "56fbc40ddfd61a424c1cfe5e34e7a8418ff9146d3cc79f4b8ba8f00286373777",
+      "input_status": "existing source implementation; no generated output input"
+    },
+    {
+      "path": "experiments/m2/capability-pricing/build.py",
+      "sha256": "77ca2f5a57425e8968ce0dda70a0bb3c2ca3071e7d5dd068bd5349a4c8d9243b",
+      "input_status": "existing source implementation; no generated output input"
+    },
+    {
+      "path": "experiments/m2/capability-pricing/inputs.json",
+      "sha256": "bf518c99987c042821438b4ceea3689aae2122dd7956032b7a1efe2b03b8524f",
+      "input_status": "existing source-scoped research rules or dispositions; not protocol adoption"
+    },
+    {
+      "path": "experiments/m2/capability-pricing/scenarios.json",
+      "sha256": "7bf3f949d45570387674efe08f29f4ef47b8f7a7121f2ad9f606147d40a81aa5",
+      "input_status": "existing source-scoped research rules or dispositions; not protocol adoption"
+    },
+    {
+      "path": "experiments/m2/capability-pricing/verify.py",
+      "sha256": "2093250221f7be30dba3785e8ef5e1a29af766e7a5285c95f601d2c4a7b00a1e",
+      "input_status": "existing source implementation; no generated output input"
+    },
+    {
+      "path": "experiments/m2/strategic-self-funding/adapter.py",
+      "sha256": "3f3aa49b663a41e7af4fb850392743526b315e0022a2431788da1fff8f005c5d",
+      "input_status": "existing source implementation; no generated output input"
+    },
+    {
+      "path": "experiments/m2/strategic-self-funding/inputs.json",
+      "sha256": "1e4ab4b3a1cbfbfd83d9cb377e762a66f273f154eefeb8e28b33fd799de234db",
+      "input_status": "existing source-scoped research rules or dispositions; not protocol adoption"
+    },
+    {
+      "path": "experiments/m2/strategic-self-funding/fixtures.py",
+      "sha256": "1198d6b353a80800db5998f00cc474eb0f655b68d74e806efa96e25eec64148b",
+      "input_status": "existing source implementation; no generated output input"
+    },
+    {
+      "path": "experiments/m2/current-system-data-notes/livepeer-arbitrum-p1-20260717-20261015-v1.json",
+      "sha256": "b69e2b0949953b348470c772b4fc46f9c6510e37e3fb17b5f959a9fc7529d1c8",
+      "input_status": "frozen current-system measured input; no control/ownership inference"
+    },
+    {
+      "path": "experiments/m2/current-system-data-notes/analyze.py",
+      "sha256": "91eba3a6dac3abe5e1c03086681842f4a6b6860424648c008e473c40a3c9ae91",
+      "input_status": "existing source implementation; no generated output input"
+    },
+    {
+      "path": "experiments/m2/current-system-data-notes/extract.py",
+      "sha256": "d172fd49db3ff8a3d77014176d7751f3b994ee1f8668e3a42bf6c28a5f1eb8d3",
+      "input_status": "existing source implementation; no generated output input"
+    },
+    {
+      "path": "experiments/m2/current-system-data-notes/README.md",
+      "sha256": "f8efdafc90a167fb369c4bac845e3c41da14575ca5b351fb1ca7ab64077f0bfc",
+      "input_status": "existing source-scoped research rules or dispositions; not protocol adoption"
+    },
+    {
+      "path": "experiments/m2/evidence-operator-response/README.md",
+      "sha256": "6e02455c685b1dc6980664dda9b6a720cfd7b70b0948d1870a80076fd91ea945",
+      "input_status": "existing source-scoped research rules or dispositions; not protocol adoption"
+    },
+    {
+      "path": "experiments/m2/evidence-operator-response/slice3-inputs.md",
+      "sha256": "499ad99fe75bde890dbeb4759189734456ec9f7418052f07e01a021afedea9a8",
+      "input_status": "existing source-scoped research rules or dispositions; not protocol adoption"
+    },
+    {
+      "path": "experiments/m2/evidence-operator-response/tolerances.md",
+      "sha256": "3a9a8d968b6ba77e4e8342ca4b9fb630086b323bd1e0f9432eaf6e90d9d77176",
+      "input_status": "existing source-scoped research rules or dispositions; not protocol adoption"
+    },
+    {
+      "path": "experiments/m2/evidence-operator-response/reconstruction.md",
+      "sha256": "329366e6235d8e3065448bc48b083f5d29971333c6d1b66def0233b2a5eb60b4",
+      "input_status": "existing source-scoped research rules or dispositions; not protocol adoption"
+    },
+    {
+      "path": "experiments/m2/evidence-operator-response/source-manifest.json",
+      "sha256": "8cb6d44750826ee3ca29a3c4702ecfbd2c73147ec8fef42d7fc5764bb432416d",
+      "input_status": "existing source-scoped research rules or dispositions; not protocol adoption"
+    },
+    {
+      "path": "experiments/m2/evidence-operator-response/outcome-source-manifest.json",
+      "sha256": "2a062317ba78de7afc7fed3c990d6762b4893ecc54df5314169aa50a29f60d32",
+      "input_status": "existing source-scoped research rules or dispositions; not protocol adoption"
+    },
+    {
+      "path": "experiments/m2/evidence-operator-response/packets/sc10-sc11.md",
+      "sha256": "d9d7d7f657ea9b5f037fc51a3229afec4585d42b8262e481a71b471ba353543f",
+      "input_status": "synthetic evidence input with stipulated custody/access"
+    },
+    {
+      "path": "experiments/m2/evidence-operator-response/matrix.csv",
+      "sha256": "b0e9a7866930a22ea0cf61af73a7cb288e4ce042acd19f7f80e8f8ace5995425",
+      "input_status": "existing source-scoped research rules or dispositions; not protocol adoption"
+    },
+    {
+      "path": "experiments/m2/evidence-operator-response/verdicts.csv",
+      "sha256": "33e813e5491ce93c555109388c95a9fe66f312f7104263ea46fe77e2c297d9f7",
+      "input_status": "existing source-scoped research rules or dispositions; not protocol adoption"
+    },
+    {
+      "path": "experiments/m2/evidence-operator-response/inheritance.md",
+      "sha256": "74aa3a70e892616202dd2520dcc2d62ea41318c05eb896d81b1da1bb10fdc727",
+      "input_status": "existing source-scoped research rules or dispositions; not protocol adoption"
+    },
+    {
+      "path": "experiments/m2/evidence-self-funded/packets/sc07-sc23.md",
+      "sha256": "4cea41e44f05b25345bbaad1bc554df68bfbeff4619adac582fcf9e25dea2eb7",
+      "input_status": "synthetic evidence input with stipulated custody/access"
+    },
+    {
+      "path": "experiments/m2/evidence-operator-response/fixtures/bundle.json",
+      "sha256": "e3c5c1d6b8978d0eed7b76785a20b6cb0bb81c2214c7e655222c314250c60631",
+      "input_status": "synthetic evidence input with stipulated custody/access"
+    },
+    {
+      "path": "experiments/m2/evidence-operator-response/fixtures/input.txt",
+      "sha256": "ac36b636f5bcff2fb05892894a9dab2c9f2c5bc1cf46371a5a987a674beef17f",
+      "input_status": "synthetic evidence input with stipulated custody/access"
+    },
+    {
+      "path": "experiments/m2/evidence-operator-response/fixtures/sc10.png",
+      "sha256": "a85ff1809d87193f3655f14aa607381f83d0a7184d5f0e4c146c544d5beed6b7",
+      "input_status": "synthetic evidence input with stipulated custody/access"
+    },
+    {
+      "path": "experiments/m2/evidence-operator-response/fixtures/sc11.png",
+      "sha256": "cb8b8b6c5e8984af0011c26f0c31c0198013db6585422bd122ad0de1a7b1cf7b",
+      "input_status": "synthetic evidence input with stipulated custody/access"
+    },
+    {
+      "path": "experiments/m2/evidence-operator-response/fixtures/terms.json",
+      "sha256": "b3c31348b46642d361841e7f9ee7d391d23015c44675b1150d94b06e072e0510",
+      "input_status": "synthetic evidence input with stipulated custody/access"
+    },
+    {
+      "path": "experiments/m2/evidence-self-funded/matrix.csv",
+      "sha256": "207037c09922317fe1a0f35b27ac9057ad92ffad6eb03b6aae81dcc926298ae2",
+      "input_status": "existing source-scoped research rules or dispositions; not protocol adoption"
+    },
+    {
+      "path": "experiments/m2/evidence-self-funded/verdicts.csv",
+      "sha256": "a97962a9a01a751cd09be72815614a6868e5795150cdff16f8a58f77906f895a",
+      "input_status": "existing source-scoped research rules or dispositions; not protocol adoption"
+    },
+    {
+      "path": "experiments/m2/evidence-capability-pricing/matrix.csv",
+      "sha256": "3f1bf5daa4cebf30a389282ba30bc47ed394e4897210b4fe52ce03911913436f",
+      "input_status": "existing source-scoped research rules or dispositions; not protocol adoption"
+    },
+    {
+      "path": "experiments/m2/evidence-capability-pricing/verdicts.csv",
+      "sha256": "9ff824bbe9454e8b13460150ec01f3f326b998b9c4fdd902c2a997d31af3ae26",
+      "input_status": "existing source-scoped research rules or dispositions; not protocol adoption"
+    }
+  ]
+}

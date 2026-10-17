@@ -16,3 +16,5 @@ For each experiment, identify its task and question; input versions and access o
 Use bounded fixtures or existing authorized services. Do not upload credentials, customer payloads or unrelated datasets. Model-runner deployment is not a prerequisite for this coordination repository.
 
 - [EX-10: evidence and operator response](m2/evidence-operator-response/README.md) — bounded accepted-term correctness, frozen settlement/delay, inherited purpose, response paths and record access; practical authentication/access remains conditional.
+
+- [Validator scoring: prospective comparison](m2/validator-scoring/README.md) — conditioned evidence inputs, score/compensation interpretations, symbolic utility and finite conditional seat premises declared before calculation; no results yet.
