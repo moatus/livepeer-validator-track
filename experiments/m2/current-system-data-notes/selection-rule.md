@@ -1,0 +1,46 @@
+# Gateway discovery and selection at a pinned code version
+
+This is a reading of today's code, not observed routing: **today's system (Arbitrum One, pinned window), not a forecast for the litepaper**. Source: [go-livepeer `9d4f55ecb183b969dbdf1caf0ac25f9c386530fd`](https://github.com/livepeer/go-livepeer/tree/9d4f55ecb183b969dbdf1caf0ac25f9c386530fd). Every locator below refers to that commit. Protocol locators refer to [protocol `46c24fef8c7ccccfb4a55038bd80af7799c904c7`](https://github.com/livepeer/protocol/tree/46c24fef8c7ccccfb4a55038bd80af7799c904c7). Code defaults are stated source facts, not measured production configurations.
+
+## Entry into discovery
+
+For a broadcaster/gateway, `cmd/livepeer/starter/starter.go:1720–1767` chooses an explicit `-orchWebhookUrl` first, then the comma-separated `-orchAddr` list, then a remote signer's `/discover-orchestrators` callback if configured. In on-chain mode it always builds the DB cache; when neither explicit webhook nor list is supplied it assigns that cache as the discovery pool. Thus the remote-signer callback in this branch is overridden by the DB cache in on-chain mode. RemoteSignerNode has its own similar setup at `starter.go:1962–2023`, with DB discovery conditional on `RemoteDiscovery`.
+
+| Mode | What a new operator needs for this code path to consider it |
+| --- | --- |
+| Default on-chain DB discovery | A self-bonded registered transcoder, sufficient total delegated stake to enter the bounded pool, an activation round in force, a reachable service URI and a recent successful info poll. It must then pass ticket, price, capability, capacity and gateway-specific checks. |
+| `-orchAddr` | Its URL must be included by the gateway operator. The pool is marked trusted. This mode bypasses the default DB discovery list; it still needs a working compatible endpoint and valid session/payment information for paid on-chain work. |
+| `-orchWebhookUrl` | The configured callback must return its URL/score. Inclusion is that callback's policy, not permissionless on-chain discovery. The endpoint still faces compatibility and session checks. |
+| Remote signer discovery | Inclusion by the configured signer callback where that mode remains selected. RemoteSignerNode can instead use its on-chain cache when configured. No universal admission policy is established. |
+| Advertised extra nodes | A discovered endpoint may advertise first-level node URLs. The gateway must enable `-extraNodes` (default 0); recursion is limited to one level. This is not independent on-chain registration or a guarantee of inclusion. |
+| Off-chain mode | An explicit list or callback supplies URLs. With no stake reader, sessions follow their sorted order. It does not establish access to protocol-paid work. |
+
+Sources: `discovery/db_discovery.go:129–147` selects current-round entries updated in the last day; `:166–194` validates ETH address, ticket parameters and nonnegative valid price; `:235–303` caches the pool and current-round earnings-pool stake. `common/db.go:827–847` implements the round and freshness filters. `eth/client.go:986–1009` walks `getFirstTranscoderInPool`/`getNextTranscoderInPool`. `discovery/discovery.go:197–226` handles extra nodes; `cmd/livepeer/starter/starter.go:238` sets default extra nodes to 0. `discovery/wh_discovery.go:21–24`, `:85–121`, `:173–226` implement the callback request and URL/score list.
+
+The contract requires self-bonding for registered status (`contracts/bonding/BondingManager.sol:1231–1240`). `transcoderWithHint` sets commissions and attempts pool entry for the next round (`:504–549`). With a full pool, entry requires **strictly more** stake than its last member (`:1469–1511`). Pool maximum and actual size are measured from RPC in `tables/state-cross-checks.csv`. The measured end-block rank-100 stake is in `tables/stake-summary.csv` and the README. Measured end-block global rank 100 holds **10,663.285196345387790926 LPT**. It is not the entry cutoff: eight of the global top 100 indexed entities have inactive flags and NotRegistered status. The lowest current active-flag entity is global rank 111, with **2,787.792661621665397669 LPT**. Neither reading measures the next-round linked-list tail at every entry attempt. Full-pool admission is the contract predicate against the actual last member, followed by activation and gateway checks; a global indexed rank is not a sufficient condition for work. Current/next-round membership and live pool stakes can differ.
+
+## Selection and reuse
+
+For unknown sessions with a stake reader, `server/selection.go:254–314` collects distinct ticket-recipient addresses, price per pixel and database stakes, then calls the configured algorithm. Multiple endpoints sharing a recipient do not add independent recipient probabilities. It returns the first matching session for the selected recipient. The source of stake is the current-round earnings pool cached in `discovery/db_discovery.go:250–303`, rather than a measurement of operator self-stake or beneficial ownership.
+
+`server/selection_algorithm.go:27–121` first applies the performance filter and price cap, then calculates, over the surviving recipient addresses:
+
+```
+P(i) = w_price * exp(-price_i / f) / sum_j exp(-price_j / f)
+     + w_stake * stake_i / sum_j stake_j
+     + w_random / number_of_addresses
+```
+
+Defaults are `w_stake=0.7`, `w_price=0`, `w_random=0.3`, `f=100`, `minPerfScore=0` (`cmd/livepeer/starter/starter.go:229–238`). The `selectStakeWeight`, `selectPriceWeight`, `-selectRandFreq`, `selectPriceExpFactor` and `minPerfScore` flags change them (`flags.go:29–38`); the weights must sum to 1 within the source's 0.0001 tolerance (`starter.go:2541–2556`). A uniform pseudo-random draw selects from the cumulative probabilities (`selection_algorithm.go:123–148`). If total stake or total exponential price weight is zero, the corresponding term is assigned 1 for each address rather than normalized (`:102–117`); do not extrapolate the usual formula to that edge case. Price weight zero does not disable the price exclusion filter.
+
+Latency matters at several steps. Discovery queries the shuffled candidates concurrently, stops after sufficient responses or timeouts and sorts accepted responses by measured info-RPC latency (`discovery/discovery.go:251–311`); default discovery timeout is 500 ms (`starter.go:237`). This bounds the set the probability algorithm sees. Transcoding uses `MinLSSelector` with a latency-score threshold of 1.0 (`server/broadcast.go:558–559`): completed sessions enter a latency heap, the best known session is reused when good enough, and otherwise an unknown session is tried (`server/selection.go:184–239`). Thus stake weights describe exploration choices, not every segment's independently redrawn routing.
+
+Non-realtime AI uses warm and cold pools and the configured probability selector, with sessions sorted by latency score (`server/ai_session.go:208–240`). It tries a warm-model session before a cold one (`:360–368`). Realtime video AI instead uses `LiveSelectionAlgorithm`, which returns the first address satisfying its max-price filter (`server/selection_algorithm.go:150–160`), with sessions initially sorted by latency (`server/selection.go:105–109`). Its dedicated setup is `server/ai_session.go:224–233`; it does not apply the ordinary stake/price/random mixture or the performance-score filter.
+
+## Exclusion and gateway policy
+
+`server/selection_algorithm.go:38–57` applies the performance-score minimum when configured and scores exist; if nobody passes, it restores the original addresses. Scores come from the optional stats URL/region (`starter.go:1712–1716`), not a protocol honesty score. `selection_algorithm.go:60–93` excludes missing prices and prices above a configured maximum; `ignoreMaxPriceIfNeeded` (default false, `starter.go:288`) can restore all candidates if none pass. A nil cap or an empty price map disables that filter. Default `maxPricePerUnit` is 0, interpreted as accepting any price (`starter.go:286–288`, `:1175–1195`). Capability/model-specific caps are configured by `maxPricePerCapability` (`:1197–1235`); `server/broadcast.go:97–122` sums applicable caps and otherwise falls back to the global cap.
+
+`discovery/discovery.go:142–175` permits absent capability adverts only for legacy-only tasks; other requests require a compatible advert. It also checks the gateway's blacklist, capacity via GetOrchestratorInfo and successful endpoint responses (`:162–186`, `:228–240`). Capability/model constraints, warm status and compatible runner versions (`core/capabilities.go:316–335`), suspension and available session capacity further limit eligibility. The orchestrator verifies the request signature and, if it configures an auth webhook, applies that webhook's admission policy (`server/rpc.go:527–546`, `:691–696`). A low price or registered listing alone cannot override these checks. The source's separate trusted/untrusted pools (`server/broadcast.go:558–559`) and per-gateway flags leave room for different policies.
+
+Reading the code does not establish practical access for a new operator; it describes the default rules a gateway may run, not what gateways in production run or observe.

@@ -1,0 +1,264 @@
+{
+  "version": "1.0",
+  "status": "prospective; no results",
+  "core_count": 16,
+  "control_count": 12,
+  "seat_row_count": 32,
+  "actions": {
+    "E": {
+      "P": 1,
+      "K": 0,
+      "basis": "case review from E2 evidence"
+    },
+    "L": {
+      "P": 1,
+      "K": 1,
+      "basis": "lenient without case review"
+    },
+    "A": {
+      "P": null,
+      "K": null,
+      "basis": "no submission"
+    },
+    "U": {
+      "P": 0,
+      "K": 0,
+      "basis": "unsupported coordination without independent review"
+    }
+  },
+  "core": [
+    {
+      "id": "V01",
+      "evidence": "K",
+      "aggregation": "F",
+      "action": "E",
+      "others_zero": 16,
+      "others_one": 16,
+      "others_missing": 0
+    },
+    {
+      "id": "V02",
+      "evidence": "K",
+      "aggregation": "F",
+      "action": "L",
+      "others_zero": 16,
+      "others_one": 16,
+      "others_missing": 0
+    },
+    {
+      "id": "V03",
+      "evidence": "K",
+      "aggregation": "F",
+      "action": "A",
+      "others_zero": 16,
+      "others_one": 16,
+      "others_missing": 0
+    },
+    {
+      "id": "V04",
+      "evidence": "K",
+      "aggregation": "F",
+      "action": "U",
+      "others_zero": 16,
+      "others_one": 16,
+      "others_missing": 0
+    },
+    {
+      "id": "V05",
+      "evidence": "K",
+      "aggregation": "Q",
+      "action": "E",
+      "others_zero": 16,
+      "others_one": 16,
+      "others_missing": 0
+    },
+    {
+      "id": "V06",
+      "evidence": "K",
+      "aggregation": "Q",
+      "action": "L",
+      "others_zero": 16,
+      "others_one": 16,
+      "others_missing": 0
+    },
+    {
+      "id": "V07",
+      "evidence": "K",
+      "aggregation": "Q",
+      "action": "A",
+      "others_zero": 16,
+      "others_one": 16,
+      "others_missing": 0
+    },
+    {
+      "id": "V08",
+      "evidence": "K",
+      "aggregation": "Q",
+      "action": "U",
+      "others_zero": 16,
+      "others_one": 16,
+      "others_missing": 0
+    },
+    {
+      "id": "V09",
+      "evidence": "P",
+      "aggregation": "F",
+      "action": "E",
+      "others_zero": 16,
+      "others_one": 16,
+      "others_missing": 0
+    },
+    {
+      "id": "V10",
+      "evidence": "P",
+      "aggregation": "F",
+      "action": "L",
+      "others_zero": 16,
+      "others_one": 16,
+      "others_missing": 0
+    },
+    {
+      "id": "V11",
+      "evidence": "P",
+      "aggregation": "F",
+      "action": "A",
+      "others_zero": 16,
+      "others_one": 16,
+      "others_missing": 0
+    },
+    {
+      "id": "V12",
+      "evidence": "P",
+      "aggregation": "F",
+      "action": "U",
+      "others_zero": 16,
+      "others_one": 16,
+      "others_missing": 0
+    },
+    {
+      "id": "V13",
+      "evidence": "P",
+      "aggregation": "Q",
+      "action": "E",
+      "others_zero": 16,
+      "others_one": 16,
+      "others_missing": 0
+    },
+    {
+      "id": "V14",
+      "evidence": "P",
+      "aggregation": "Q",
+      "action": "L",
+      "others_zero": 16,
+      "others_one": 16,
+      "others_missing": 0
+    },
+    {
+      "id": "V15",
+      "evidence": "P",
+      "aggregation": "Q",
+      "action": "A",
+      "others_zero": 16,
+      "others_one": 16,
+      "others_missing": 0
+    },
+    {
+      "id": "V16",
+      "evidence": "P",
+      "aggregation": "Q",
+      "action": "U",
+      "others_zero": 16,
+      "others_one": 16,
+      "others_missing": 0
+    }
+  ],
+  "controls": [
+    {
+      "id": "C01",
+      "name": "Cooperative P",
+      "definition": "F; all 33 submit evidence-following 1"
+    },
+    {
+      "id": "C02",
+      "name": "Cooperative K",
+      "definition": "F; all 33 submit evidence-following 0 under K1 conditions"
+    },
+    {
+      "id": "C03",
+      "name": "Cooperative K quorum",
+      "definition": "Q; all 33 evidence-following 0 under K1 conditions"
+    },
+    {
+      "id": "C04",
+      "name": "Quorum failure",
+      "definition": "Q; 16 timely zeros, 17 missing; prior multiplier 1"
+    },
+    {
+      "id": "C05",
+      "name": "Quorum boundary",
+      "definition": "Q; 17 timely zeros, 16 missing"
+    },
+    {
+      "id": "C06",
+      "name": "Even tie",
+      "definition": "Q; 11 zeros, 11 ones, 11 missing; arithmetic middle-pair mean"
+    },
+    {
+      "id": "C07",
+      "name": "Full-set missing",
+      "definition": "F; 16 timely zeros, 17 missing default 1"
+    },
+    {
+      "id": "C08",
+      "name": "Pay split",
+      "definition": "Symbolic equal vs bonded-stake division of same full validator envelope; no cross product"
+    },
+    {
+      "id": "C09",
+      "name": "Pay eligibility",
+      "definition": "Symbolic registered-active vs timely-submitter pay, including empty eligible set minted balance"
+    },
+    {
+      "id": "C10",
+      "name": "Half-life",
+      "definition": "r=840 compensation/ceiling versus same r=0 cohort assumptions, not claim age"
+    },
+    {
+      "id": "C11",
+      "name": "Second half-life",
+      "definition": "r=1680 compensation/ceiling versus same r=0 cohort assumptions"
+    },
+    {
+      "id": "C12",
+      "name": "Later claim",
+      "definition": "same earning r=0; compare claim n+7 with n+8, changed median symbolic; unchanged earning ceiling"
+    }
+  ],
+  "seats": {
+    "N": 33,
+    "majority": 17,
+    "checkpoints": [
+      484622259,
+      494961555,
+      505240413,
+      514893852
+    ],
+    "k": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "d": [
+      0,
+      5,
+      10,
+      16
+    ],
+    "cross_product": false,
+    "distinct_added_capital_premises_per_checkpoint": 7,
+    "redistribution_premises_per_checkpoint": 1
+  },
+  "execution_order": "cooperative controls C01-C03, ordinary review/abstention, then strategic U beside E; IDs do not imply behavior order",
+  "no_outcomes": true
+}

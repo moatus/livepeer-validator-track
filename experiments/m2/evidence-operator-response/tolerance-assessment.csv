@@ -1,0 +1,193 @@
+comparison,standard,level,reading,tolerance,assessment,reason
+sc10-sc11,term-breach,public,a,T-FC-a,conditional,"No adverse evidence at public/late boundary; preserve unknown. With D1 SC-10 K contradicted, SC-11 term breach established only under selected standard; no unsupported cut permitted. Actual median unobserved."
+sc10-sc11,term-breach,public,a,T-MV-a,limited,Selected violation unsupported within available records; retain unknown as accepted inquiry limitation under a. Under b full reward for a hidden violation may miss it; silence cut proves no detection. No empirical rate.
+sc10-sc11,term-breach,public,a,T-FC-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc10-sc11,term-breach,public,a,T-MV-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc10-sc11,term-breach,public,a,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc10-sc11,term-breach,public,a,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc10-sc11,term-breach,public,a,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc10-sc11,term-breach,public,a,T-T,limited,Public complaint available n+1 but no decisive authenticated terms/bytes by n+7; delay alone supplies no evidence.
+sc10-sc11,term-breach,public,b,T-FC-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc10-sc11,term-breach,public,b,T-MV-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc10-sc11,term-breach,public,b,T-FC-b,not-met-if-cut,A silence-based claim-time cut can reach nonviolating SC-10 merits and exceeds strict false-cut tolerance; silence proves no K violation.
+sc10-sc11,term-breach,public,b,T-MV-b,limited,Selected violation unsupported within available records; retain unknown as accepted inquiry limitation under a. Under b full reward for a hidden violation may miss it; silence cut proves no detection. No empirical rate.
+sc10-sc11,term-breach,public,b,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc10-sc11,term-breach,public,b,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc10-sc11,term-breach,public,b,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc10-sc11,term-breach,public,b,T-T,limited,Public complaint available n+1 but no decisive authenticated terms/bytes by n+7; delay alone supplies no evidence.
+sc10-sc11,term-breach,public+disclosed,a,T-FC-a,conditional,"No adverse evidence at public/late boundary; preserve unknown. With D1 SC-10 K contradicted, SC-11 term breach established only under selected standard; no unsupported cut permitted. Actual median unobserved."
+sc10-sc11,term-breach,public+disclosed,a,T-MV-a,conditional,Obtainable conditional breach evidence cannot be ignored: full reward for SC-11 would exceed missed-violation tolerance. Evidence alone proves no score update.
+sc10-sc11,term-breach,public+disclosed,a,T-FC-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc10-sc11,term-breach,public+disclosed,a,T-MV-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc10-sc11,term-breach,public+disclosed,a,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc10-sc11,term-breach,public+disclosed,a,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc10-sc11,term-breach,public+disclosed,a,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc10-sc11,term-breach,public+disclosed,a,T-T,conditional,Response received n+5 and evidence check n+6 by assumption; score submission/current median before n+7 remains separate and unobserved.
+sc10-sc11,term-breach,public+disclosed,b,T-FC-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc10-sc11,term-breach,public+disclosed,b,T-MV-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc10-sc11,term-breach,public+disclosed,b,T-FC-b,conditional,Timely adequate response removes silence basis; no cut for SC-10 K1 variation if current median follows correction. Full semantic correctness not asserted.
+sc10-sc11,term-breach,public+disclosed,b,T-MV-b,conditional,Obtainable conditional breach evidence cannot be ignored: full reward for SC-11 would exceed missed-violation tolerance. Evidence alone proves no score update.
+sc10-sc11,term-breach,public+disclosed,b,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc10-sc11,term-breach,public+disclosed,b,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc10-sc11,term-breach,public+disclosed,b,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc10-sc11,term-breach,public+disclosed,b,T-T,conditional,Response received n+5 and evidence check n+6 by assumption; score submission/current median before n+7 remains separate and unobserved.
+sc10-sc11,knowledge-required,public,a,T-FC-a,conditional,"No adverse evidence at public/late boundary; preserve unknown. With D1 SC-10 K contradicted, SC-11 term breach established only under selected standard; no unsupported cut permitted. Actual median unobserved."
+sc10-sc11,knowledge-required,public,a,T-MV-a,limited,Selected violation unsupported within available records; retain unknown as accepted inquiry limitation under a. Under b full reward for a hidden violation may miss it; silence cut proves no detection. No empirical rate.
+sc10-sc11,knowledge-required,public,a,T-FC-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc10-sc11,knowledge-required,public,a,T-MV-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc10-sc11,knowledge-required,public,a,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc10-sc11,knowledge-required,public,a,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc10-sc11,knowledge-required,public,a,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc10-sc11,knowledge-required,public,a,T-T,limited,Public complaint available n+1 but no decisive authenticated terms/bytes by n+7; delay alone supplies no evidence.
+sc10-sc11,knowledge-required,public,b,T-FC-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc10-sc11,knowledge-required,public,b,T-MV-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc10-sc11,knowledge-required,public,b,T-FC-b,not-met-if-cut,A silence-based claim-time cut can reach nonviolating SC-10 merits and exceeds strict false-cut tolerance; silence proves no K violation.
+sc10-sc11,knowledge-required,public,b,T-MV-b,limited,Selected violation unsupported within available records; retain unknown as accepted inquiry limitation under a. Under b full reward for a hidden violation may miss it; silence cut proves no detection. No empirical rate.
+sc10-sc11,knowledge-required,public,b,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc10-sc11,knowledge-required,public,b,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc10-sc11,knowledge-required,public,b,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc10-sc11,knowledge-required,public,b,T-T,limited,Public complaint available n+1 but no decisive authenticated terms/bytes by n+7; delay alone supplies no evidence.
+sc10-sc11,knowledge-required,public+disclosed,a,T-FC-a,conditional,"No adverse evidence at public/late boundary; preserve unknown. With D1 SC-10 K contradicted, SC-11 term breach established only under selected standard; no unsupported cut permitted. Actual median unobserved."
+sc10-sc11,knowledge-required,public+disclosed,a,T-MV-a,limited,Selected violation unsupported within available records; retain unknown as accepted inquiry limitation under a. Under b full reward for a hidden violation may miss it; silence cut proves no detection. No empirical rate.
+sc10-sc11,knowledge-required,public+disclosed,a,T-FC-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc10-sc11,knowledge-required,public+disclosed,a,T-MV-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc10-sc11,knowledge-required,public+disclosed,a,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc10-sc11,knowledge-required,public+disclosed,a,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc10-sc11,knowledge-required,public+disclosed,a,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc10-sc11,knowledge-required,public+disclosed,a,T-T,conditional,Response received n+5 and evidence check n+6 by assumption; score submission/current median before n+7 remains separate and unobserved.
+sc10-sc11,knowledge-required,public+disclosed,b,T-FC-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc10-sc11,knowledge-required,public+disclosed,b,T-MV-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc10-sc11,knowledge-required,public+disclosed,b,T-FC-b,conditional,Timely adequate response removes silence basis; no cut for SC-10 K1 variation if current median follows correction. Full semantic correctness not asserted.
+sc10-sc11,knowledge-required,public+disclosed,b,T-MV-b,limited,Selected violation unsupported within available records; retain unknown as accepted inquiry limitation under a. Under b full reward for a hidden violation may miss it; silence cut proves no detection. No empirical rate.
+sc10-sc11,knowledge-required,public+disclosed,b,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc10-sc11,knowledge-required,public+disclosed,b,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc10-sc11,knowledge-required,public+disclosed,b,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc10-sc11,knowledge-required,public+disclosed,b,T-T,conditional,Response received n+5 and evidence check n+6 by assumption; score submission/current median before n+7 remains separate and unobserved.
+sc25,term-breach,public,a,T-FC-a,conditional,"No adverse evidence at public/late boundary; preserve unknown. With D1 SC-10 K contradicted, SC-11 term breach established only under selected standard; no unsupported cut permitted. Actual median unobserved."
+sc25,term-breach,public,a,T-MV-a,not-applicable,Same underlying legitimate K1 job; no K violation to miss. Lack of explanation must not be counted as detection.
+sc25,term-breach,public,a,T-FC-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc25,term-breach,public,a,T-MV-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc25,term-breach,public,a,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc25,term-breach,public,a,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc25,term-breach,public,a,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc25,term-breach,public,a,T-T,limited,Public complaint available n+1 but no decisive authenticated terms/bytes by n+7; delay alone supplies no evidence.
+sc25,term-breach,public,b,T-FC-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc25,term-breach,public,b,T-MV-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc25,term-breach,public,b,T-FC-b,not-met-if-cut,A silence-based claim-time cut can reach nonviolating SC-10 merits and exceeds strict false-cut tolerance; silence proves no K violation.
+sc25,term-breach,public,b,T-MV-b,not-applicable,Same underlying legitimate K1 job; no K violation to miss. Lack of explanation must not be counted as detection.
+sc25,term-breach,public,b,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc25,term-breach,public,b,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc25,term-breach,public,b,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc25,term-breach,public,b,T-T,limited,Public complaint available n+1 but no decisive authenticated terms/bytes by n+7; delay alone supplies no evidence.
+sc25,term-breach,public+disclosed,a,T-FC-a,conditional,"No adverse evidence at public/late boundary; preserve unknown. With D1 SC-10 K contradicted, SC-11 term breach established only under selected standard; no unsupported cut permitted. Actual median unobserved."
+sc25,term-breach,public+disclosed,a,T-MV-a,not-applicable,Same underlying legitimate K1 job; no K violation to miss. Lack of explanation must not be counted as detection.
+sc25,term-breach,public+disclosed,a,T-FC-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc25,term-breach,public+disclosed,a,T-MV-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc25,term-breach,public+disclosed,a,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc25,term-breach,public+disclosed,a,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc25,term-breach,public+disclosed,a,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc25,term-breach,public+disclosed,a,T-T,conditional,Response received n+5 and evidence check n+6 by assumption; score submission/current median before n+7 remains separate and unobserved.
+sc25,term-breach,public+disclosed,b,T-FC-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc25,term-breach,public+disclosed,b,T-MV-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc25,term-breach,public+disclosed,b,T-FC-b,conditional,Timely adequate response removes silence basis; no cut for SC-10 K1 variation if current median follows correction. Full semantic correctness not asserted.
+sc25,term-breach,public+disclosed,b,T-MV-b,not-applicable,Same underlying legitimate K1 job; no K violation to miss. Lack of explanation must not be counted as detection.
+sc25,term-breach,public+disclosed,b,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc25,term-breach,public+disclosed,b,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc25,term-breach,public+disclosed,b,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc25,term-breach,public+disclosed,b,T-T,conditional,Response received n+5 and evidence check n+6 by assumption; score submission/current median before n+7 remains separate and unobserved.
+sc25,knowledge-required,public,a,T-FC-a,conditional,"No adverse evidence at public/late boundary; preserve unknown. With D1 SC-10 K contradicted, SC-11 term breach established only under selected standard; no unsupported cut permitted. Actual median unobserved."
+sc25,knowledge-required,public,a,T-MV-a,not-applicable,Same underlying legitimate K1 job; no K violation to miss. Lack of explanation must not be counted as detection.
+sc25,knowledge-required,public,a,T-FC-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc25,knowledge-required,public,a,T-MV-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc25,knowledge-required,public,a,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc25,knowledge-required,public,a,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc25,knowledge-required,public,a,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc25,knowledge-required,public,a,T-T,limited,Public complaint available n+1 but no decisive authenticated terms/bytes by n+7; delay alone supplies no evidence.
+sc25,knowledge-required,public,b,T-FC-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc25,knowledge-required,public,b,T-MV-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc25,knowledge-required,public,b,T-FC-b,not-met-if-cut,A silence-based claim-time cut can reach nonviolating SC-10 merits and exceeds strict false-cut tolerance; silence proves no K violation.
+sc25,knowledge-required,public,b,T-MV-b,not-applicable,Same underlying legitimate K1 job; no K violation to miss. Lack of explanation must not be counted as detection.
+sc25,knowledge-required,public,b,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc25,knowledge-required,public,b,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc25,knowledge-required,public,b,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc25,knowledge-required,public,b,T-T,limited,Public complaint available n+1 but no decisive authenticated terms/bytes by n+7; delay alone supplies no evidence.
+sc25,knowledge-required,public+disclosed,a,T-FC-a,conditional,"No adverse evidence at public/late boundary; preserve unknown. With D1 SC-10 K contradicted, SC-11 term breach established only under selected standard; no unsupported cut permitted. Actual median unobserved."
+sc25,knowledge-required,public+disclosed,a,T-MV-a,not-applicable,Same underlying legitimate K1 job; no K violation to miss. Lack of explanation must not be counted as detection.
+sc25,knowledge-required,public+disclosed,a,T-FC-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc25,knowledge-required,public+disclosed,a,T-MV-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc25,knowledge-required,public+disclosed,a,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc25,knowledge-required,public+disclosed,a,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc25,knowledge-required,public+disclosed,a,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc25,knowledge-required,public+disclosed,a,T-T,conditional,Response received n+5 and evidence check n+6 by assumption; score submission/current median before n+7 remains separate and unobserved.
+sc25,knowledge-required,public+disclosed,b,T-FC-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc25,knowledge-required,public+disclosed,b,T-MV-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc25,knowledge-required,public+disclosed,b,T-FC-b,conditional,Timely adequate response removes silence basis; no cut for SC-10 K1 variation if current median follows correction. Full semantic correctness not asserted.
+sc25,knowledge-required,public+disclosed,b,T-MV-b,not-applicable,Same underlying legitimate K1 job; no K violation to miss. Lack of explanation must not be counted as detection.
+sc25,knowledge-required,public+disclosed,b,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc25,knowledge-required,public+disclosed,b,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc25,knowledge-required,public+disclosed,b,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc25,knowledge-required,public+disclosed,b,T-T,conditional,Response received n+5 and evidence check n+6 by assumption; score submission/current median before n+7 remains separate and unobserved.
+sc26,term-breach,public,a,T-FC-a,conditional,"No adverse evidence at public/late boundary; preserve unknown. With D1 SC-10 K contradicted, SC-11 term breach established only under selected standard; no unsupported cut permitted. Actual median unobserved."
+sc26,term-breach,public,a,T-MV-a,not-applicable,Same underlying legitimate K1 job; no K violation to miss. Lack of explanation must not be counted as detection.
+sc26,term-breach,public,a,T-FC-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc26,term-breach,public,a,T-MV-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc26,term-breach,public,a,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc26,term-breach,public,a,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc26,term-breach,public,a,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc26,term-breach,public,a,T-T,limited,Public complaint available n+1 but no decisive authenticated terms/bytes by n+7; delay alone supplies no evidence.
+sc26,term-breach,public,b,T-FC-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc26,term-breach,public,b,T-MV-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc26,term-breach,public,b,T-FC-b,not-met-if-cut,A silence-based claim-time cut can reach nonviolating SC-10 merits and exceeds strict false-cut tolerance; silence proves no K violation.
+sc26,term-breach,public,b,T-MV-b,not-applicable,Same underlying legitimate K1 job; no K violation to miss. Lack of explanation must not be counted as detection.
+sc26,term-breach,public,b,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc26,term-breach,public,b,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc26,term-breach,public,b,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc26,term-breach,public,b,T-T,limited,Public complaint available n+1 but no decisive authenticated terms/bytes by n+7; delay alone supplies no evidence.
+sc26,term-breach,public+disclosed,a,T-FC-a,conditional,"No adverse evidence at public/late boundary; preserve unknown. With D1 SC-10 K contradicted, SC-11 term breach established only under selected standard; no unsupported cut permitted. Actual median unobserved."
+sc26,term-breach,public+disclosed,a,T-MV-a,not-applicable,Same underlying legitimate K1 job; no K violation to miss. Lack of explanation must not be counted as detection.
+sc26,term-breach,public+disclosed,a,T-FC-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc26,term-breach,public+disclosed,a,T-MV-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc26,term-breach,public+disclosed,a,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc26,term-breach,public+disclosed,a,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc26,term-breach,public+disclosed,a,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc26,term-breach,public+disclosed,a,T-T,not-met,Single adequate response receipt n+8 misses n+7; underlying records existing earlier do not establish timely reviewer access.
+sc26,term-breach,public+disclosed,b,T-FC-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc26,term-breach,public+disclosed,b,T-MV-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc26,term-breach,public+disclosed,b,T-FC-b,not-met-if-cut,A silence-based claim-time cut can reach nonviolating SC-10 merits and exceeds strict false-cut tolerance; silence proves no K violation.
+sc26,term-breach,public+disclosed,b,T-MV-b,not-applicable,Same underlying legitimate K1 job; no K violation to miss. Lack of explanation must not be counted as detection.
+sc26,term-breach,public+disclosed,b,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc26,term-breach,public+disclosed,b,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc26,term-breach,public+disclosed,b,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc26,term-breach,public+disclosed,b,T-T,not-met,Single adequate response receipt n+8 misses n+7; underlying records existing earlier do not establish timely reviewer access.
+sc26,knowledge-required,public,a,T-FC-a,conditional,"No adverse evidence at public/late boundary; preserve unknown. With D1 SC-10 K contradicted, SC-11 term breach established only under selected standard; no unsupported cut permitted. Actual median unobserved."
+sc26,knowledge-required,public,a,T-MV-a,not-applicable,Same underlying legitimate K1 job; no K violation to miss. Lack of explanation must not be counted as detection.
+sc26,knowledge-required,public,a,T-FC-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc26,knowledge-required,public,a,T-MV-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc26,knowledge-required,public,a,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc26,knowledge-required,public,a,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc26,knowledge-required,public,a,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc26,knowledge-required,public,a,T-T,limited,Public complaint available n+1 but no decisive authenticated terms/bytes by n+7; delay alone supplies no evidence.
+sc26,knowledge-required,public,b,T-FC-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc26,knowledge-required,public,b,T-MV-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc26,knowledge-required,public,b,T-FC-b,not-met-if-cut,A silence-based claim-time cut can reach nonviolating SC-10 merits and exceeds strict false-cut tolerance; silence proves no K violation.
+sc26,knowledge-required,public,b,T-MV-b,not-applicable,Same underlying legitimate K1 job; no K violation to miss. Lack of explanation must not be counted as detection.
+sc26,knowledge-required,public,b,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc26,knowledge-required,public,b,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc26,knowledge-required,public,b,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc26,knowledge-required,public,b,T-T,limited,Public complaint available n+1 but no decisive authenticated terms/bytes by n+7; delay alone supplies no evidence.
+sc26,knowledge-required,public+disclosed,a,T-FC-a,conditional,"No adverse evidence at public/late boundary; preserve unknown. With D1 SC-10 K contradicted, SC-11 term breach established only under selected standard; no unsupported cut permitted. Actual median unobserved."
+sc26,knowledge-required,public+disclosed,a,T-MV-a,not-applicable,Same underlying legitimate K1 job; no K violation to miss. Lack of explanation must not be counted as detection.
+sc26,knowledge-required,public+disclosed,a,T-FC-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc26,knowledge-required,public+disclosed,a,T-MV-b,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc26,knowledge-required,public+disclosed,a,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc26,knowledge-required,public+disclosed,a,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc26,knowledge-required,public+disclosed,a,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc26,knowledge-required,public+disclosed,a,T-T,not-met,Single adequate response receipt n+8 misses n+7; underlying records existing earlier do not establish timely reviewer access.
+sc26,knowledge-required,public+disclosed,b,T-FC-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc26,knowledge-required,public+disclosed,b,T-MV-a,not-applicable,Different judgment reading; corresponding limit assessed separately.
+sc26,knowledge-required,public+disclosed,b,T-FC-b,not-met-if-cut,A silence-based claim-time cut can reach nonviolating SC-10 merits and exceeds strict false-cut tolerance; silence proves no K violation.
+sc26,knowledge-required,public+disclosed,b,T-MV-b,not-applicable,Same underlying legitimate K1 job; no K violation to miss. Lack of explanation must not be counted as detection.
+sc26,knowledge-required,public+disclosed,b,T-ER,within-by-construction,One pass over supplied public records/source/linkage; no measured human review time or universal feasibility.
+sc26,knowledge-required,public+disclosed,b,T-EC,within-by-construction,At most one focused question and one response with one evidence correction; no repeated demands or unrelated audits. Feasibility unmeasured.
+sc26,knowledge-required,public+disclosed,b,T-DP,within-by-construction,Only operator-authorized non-sensitive synthetic output/terms/digests/custody bundle; private payload/credentials excluded. Real safe disclosure unmeasured.
+sc26,knowledge-required,public+disclosed,b,T-T,not-met,Single adequate response receipt n+8 misses n+7; underlying records existing earlier do not establish timely reviewer access.
