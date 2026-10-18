@@ -1,0 +1,67 @@
+{
+  "classification": "Authored fixed fixtures/judgments, not regenerated output; local hashes do not authenticate delivery",
+  "files": [
+    {
+      "path": "fixtures/terms.json",
+      "sha256": "b3c31348b46642d361841e7f9ee7d391d23015c44675b1150d94b06e072e0510"
+    },
+    {
+      "path": "fixtures/input.txt",
+      "sha256": "ac36b636f5bcff2fb05892894a9dab2c9f2c5bc1cf46371a5a987a674beef17f"
+    },
+    {
+      "path": "fixtures/bundle.json",
+      "sha256": "e3c5c1d6b8978d0eed7b76785a20b6cb0bb81c2214c7e655222c314250c60631"
+    },
+    {
+      "path": "fixtures/sc10.png",
+      "sha256": "a85ff1809d87193f3655f14aa607381f83d0a7184d5f0e4c146c544d5beed6b7"
+    },
+    {
+      "path": "fixtures/sc11.png",
+      "sha256": "cb8b8b6c5e8984af0011c26f0c31c0198013db6585422bd122ad0de1a7b1cf7b"
+    },
+    {
+      "path": "packets/sc10-sc11.md",
+      "sha256": "d9d7d7f657ea9b5f037fc51a3229afec4585d42b8262e481a71b471ba353543f"
+    },
+    {
+      "path": "matrix.csv",
+      "sha256": "b0e9a7866930a22ea0cf61af73a7cb288e4ce042acd19f7f80e8f8ace5995425"
+    },
+    {
+      "path": "verdicts.csv",
+      "sha256": "33e813e5491ce93c555109388c95a9fe66f312f7104263ea46fe77e2c297d9f7"
+    },
+    {
+      "path": "record-inventory.csv",
+      "sha256": "9c3bb8b789ebfffa4046080dc540e32c0932756950513f3ea30b97eed50d95cb"
+    },
+    {
+      "path": "tolerance-assessment.csv",
+      "sha256": "eef6221ab41d9598a733e634c5e50511b0209170c29ef0f50e2c7f52c88b273d"
+    },
+    {
+      "path": "inheritance.md",
+      "sha256": "74aa3a70e892616202dd2520dcc2d62ea41318c05eb896d81b1da1bb10fdc727"
+    },
+    {
+      "path": "operator-response.md",
+      "sha256": "85eb1bfa067c86e1ae5a89efab1b323a36c2d54a34c1633d9ca16be16ecb594a"
+    },
+    {
+      "path": "fee-delay.md",
+      "sha256": "cb0fb2c8c1211c0797562db52f01cae29ea65a11ead186ae93697e6bb2474c0d"
+    },
+    {
+      "path": "slice3-inputs.md",
+      "sha256": "499ad99fe75bde890dbeb4759189734456ec9f7418052f07e01a021afedea9a8"
+    },
+    {
+      "path": "practitioner-dispositions.md",
+      "sha256": "6f26af7fa3bec83cfa15c4d5e35dfa129719bb7d25242832e0985f95e32b7fd9"
+    }
+  ],
+  "format": "EX-10 authored source slices v1",
+  "historical_manifest": "source-manifest.json remains unchanged"
+}

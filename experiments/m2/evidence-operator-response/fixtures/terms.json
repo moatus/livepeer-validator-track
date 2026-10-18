@@ -1,0 +1,10 @@
+{
+  "content": "variable; no exact draw or semantic guarantee tested",
+  "criterion": "K1",
+  "format": "PNG",
+  "height": 512,
+  "max_bytes": 1048576,
+  "memory_bytes": 268435456,
+  "timeout_seconds": 2,
+  "width": 512
+}

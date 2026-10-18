@@ -1,0 +1,474 @@
+{
+  "version": "1.2",
+  "experiment": "EX-08",
+  "status": "drafted",
+  "authority": "docs/m2/SLICE-02B.md v1.2",
+  "sources": {
+    "october_text": {
+      "path": "docs/litepaper-2.0.md",
+      "sha256": "3e4a385ec19837f4b506b01989fac62cc33f99f28411bc1258f10c065e29240e",
+      "locators": {
+        "honest_work": "L81-84",
+        "mfs": "L123-150",
+        "scoring": "L198-213",
+        "claim_split": "L271-307",
+        "schedule_nonminting": "L388-416",
+        "share_capture": "L462-470",
+        "appendix": "L646-670"
+      }
+    },
+    "october_pdf": {
+      "path": "docs/sources/litepaper-2026-10.pdf",
+      "sha256": "b438da2b7d25d3043a3387b9db262293c2a0ec7801a765e5a3a249759b41569a"
+    },
+    "snapshot": {
+      "path": "experiments/m2/network-snapshot/livepeer-arbitrum-2026-10-09-v1.json",
+      "id": "livepeer-arbitrum-2026-10-09-v1",
+      "content_sha256": "b879cc73be95d0e5bdcd5c5bc2f2bc342a7319eb27cb6ffdd2ee6c25f4bb60e8",
+      "round": 4364,
+      "round_pointer": "/rounds/34",
+      "fee_series": "fees_eth (raw completed round), scaled to fees_usd_indexed",
+      "window": {
+        "start_utc": "2026-10-08T13:13:02Z",
+        "end_utc_exclusive": "2026-10-09T10:33:55Z"
+      },
+      "ownership_pointer": "/orchestrators/*/operator_address_fraction_of_own_pool",
+      "ownership_observation": "capture block 513206238; apply backward to round as assumption",
+      "price_pointer": "/prices/lpt_usd_spot",
+      "price_observation_pointer": "/prices/retrieved_utc"
+    }
+  },
+  "dependencies": {
+    "experiments/m2/network-snapshot/read_snapshot.py": "56fbc40ddfd61a424c1cfe5e34e7a8418ff9146d3cc79f4b8ba8f00286373777",
+    "experiments/m2/october-reconciliation/build.py": "1b5f472cf255104bb4b1216cb48c947502f010023dc8bddc92752a9a3ac3c695",
+    "experiments/m2/capability-pricing/build.py": "77ca2f5a57425e8968ce0dda70a0bb3c2ca3071e7d5dd068bd5349a4c8d9243b",
+    "experiments/m2/capability-pricing/inputs.json": "bf518c99987c042821438b4ceea3689aae2122dd7956032b7a1efe2b03b8524f",
+    "experiments/m2/capability-pricing/scenarios.json": "7bf3f949d45570387674efe08f29f4ef47b8f7a7121f2ad9f606147d40a81aa5",
+    "experiments/m2/evidence-capability-pricing/config.json": "18f7cd44add6729a062a140292dec0f3365bb220754967e5ee3a459f3dc194f3",
+    "experiments/m2/evidence-capability-pricing/tolerances.md": "df904d04e7bc2c94f789510d9922ca3c633f1ddb6a90f92eff17f1d2a99162ac"
+  },
+  "parameters": {
+    "node_share": {
+      "value": ".94",
+      "unit": "fraction",
+      "status": "paper-stated",
+      "source": "October L646-653",
+      "scope": "stated premise"
+    },
+    "validator_share": {
+      "value": ".01",
+      "unit": "fraction",
+      "status": "paper-stated",
+      "source": "October L655-663",
+      "scope": "stated premise"
+    },
+    "treasury_share": {
+      "value": ".05",
+      "unit": "fraction",
+      "status": "paper-stated",
+      "source": "October L665-670",
+      "scope": "stated premise"
+    },
+    "node_fee_share": {
+      "value": ".5",
+      "unit": "fraction",
+      "status": "paper-stated",
+      "source": "October L298-307",
+      "scope": "stated premise"
+    },
+    "half_life": {
+      "value": "840",
+      "unit": "earning rounds",
+      "status": "paper-stated",
+      "source": "October L388-416",
+      "scope": "stated premise"
+    },
+    "claim_delay": {
+      "value": 7,
+      "unit": "rounds",
+      "status": "paper-stated",
+      "source": "October L271-278",
+      "scope": "stated premise"
+    },
+    "price": {
+      "value": "1",
+      "unit": "USDC/job",
+      "status": "illustrative",
+      "source": "docs/m2/SLICE-02B.md v1.2 §5.1",
+      "scope": "stated premise",
+      "role": "p_base=1 for core/base capacity construction; controlled invoice price is a separate input"
+    },
+    "cost": {
+      "value": ".30",
+      "unit": "USDC/job",
+      "status": "illustrative",
+      "source": "docs/m2/SLICE-02B.md v1.2 §5.1",
+      "scope": "stated premise"
+    },
+    "setup": {
+      "value": "0",
+      "unit": "USDC",
+      "status": "illustrative",
+      "source": "docs/m2/SLICE-02B.md v1.2 §5.1",
+      "scope": "stated premise"
+    },
+    "use_value": {
+      "value": "1",
+      "unit": "USDC-equivalent/job",
+      "status": "illustrative",
+      "source": "docs/m2/SLICE-02B.md v1.2 §2",
+      "scope": "stated premise"
+    },
+    "score": {
+      "value": "1",
+      "unit": "median fraction",
+      "status": "illustrative",
+      "source": "docs/m2/SLICE-02B.md v1.2 §2",
+      "scope": "stated premise"
+    },
+    "valuation": {
+      "value": "1.71765",
+      "unit": "USDC/LPT",
+      "status": "illustrative",
+      "source": "EX-06 inputs lpt_valuation_price; snapshot /prices/lpt_usd_spot replay assumption",
+      "scope": "stated premise"
+    },
+    "burn_price": {
+      "value": "1.71765",
+      "unit": "USDC/LPT",
+      "status": "illustrative",
+      "source": "EX-06 inputs burn_execution_price; fixed price replay assumption",
+      "scope": "stated premise"
+    },
+    "budget_fraction": {
+      "value": ".10",
+      "unit": "F per round or fixed stock",
+      "status": "illustrative",
+      "source": "docs/m2/SLICE-02B.md v1.2 §5.1/6",
+      "scope": "stated premise"
+    },
+    "capacity_fraction": {
+      "value": ".25",
+      "unit": "F/p_base jobs per earning round; p_base=1; price-only controls preserve parent physical job capacity",
+      "status": "illustrative",
+      "source": "docs/m2/SLICE-02B.md v1.2 §5.1",
+      "scope": "stated premise"
+    },
+    "actor_ranks": {
+      "value": [
+        1,
+        50,
+        90
+      ],
+      "unit": "source stake rank",
+      "status": "illustrative",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4.1",
+      "scope": "stated premise"
+    },
+    "business_starts": {
+      "value": {
+        "low": ".25",
+        "high": ".90"
+      },
+      "unit": "h; a=h*s",
+      "status": "illustrative",
+      "source": "docs/m2/SLICE-02B.md v1.2 §4.2",
+      "scope": "stated premise"
+    },
+    "demand_multiplier": {
+      "value": "2",
+      "unit": "outside jobs multiplier",
+      "status": "illustrative",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "scope": "stated premise"
+    },
+    "routing_fraction": {
+      "value": ".25",
+      "unit": "actor original outside jobs",
+      "status": "illustrative",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "scope": "stated premise"
+    },
+    "retention_ownership": {
+      "value": ".25",
+      "unit": "fraction",
+      "status": "illustrative",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "scope": "stated premise"
+    },
+    "cost_override": {
+      "value": "1.20",
+      "unit": "USDC/job",
+      "status": "illustrative",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "scope": "stated premise"
+    },
+    "valuation_multiplier": {
+      "value": ".10",
+      "unit": "P0 multiplier",
+      "status": "illustrative",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "scope": "stated premise"
+    },
+    "later_round": {
+      "value": 840,
+      "unit": "launch-relative round",
+      "status": "illustrative",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "scope": "stated premise"
+    },
+    "niche_cost": {
+      "value": ".20",
+      "unit": "USDC/job",
+      "status": "illustrative",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "scope": "stated premise"
+    },
+    "niche_setup": {
+      "value": "2",
+      "unit": "USDC once iff x>0",
+      "status": "illustrative",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "scope": "stated premise"
+    },
+    "competitor_price": {
+      "value": ".5",
+      "unit": "USDC/job",
+      "status": "illustrative",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "scope": "stated premise"
+    },
+    "controlled_price": {
+      "value": "10",
+      "unit": "USDC/job; niche only",
+      "status": "illustrative",
+      "source": "docs/m2/SLICE-02B.md v1.2 §6",
+      "scope": "stated premise"
+    },
+    "loss_targets": {
+      "value": [
+        ".05",
+        ".10",
+        ".20"
+      ],
+      "unit": "fraction",
+      "status": "illustrative",
+      "source": "docs/m2/SLICE-02B.md v1.2 §5.2",
+      "scope": "stated premise"
+    }
+  },
+  "claimant_map": {
+    "payer": "same illustrative organization as actor; internal invoice cancelled only by retained node fees",
+    "operator": "actor organization receives commission and its owned delegator fraction",
+    "external_delegators": "remaining fraction excluded from organization; native source proxies retained on every nonactor",
+    "claimant": "organization-authorized claim at earning_round + delay; no expiry or forfeiture",
+    "validators": "full envelope, no invented actor validator income",
+    "treasury": "full envelope, no actor receipt"
+  },
+  "rule_readings": {
+    "primary": "0.94 E(r) min(f_i/F,s_i) m_i; no normalization; unavailable MFS allowance never minted",
+    "appendix": "normalized fee-work at full scores; no stake cap; undefined at zero fee denominator",
+    "score": "full median 1 at claim; dishonest purpose is not an obtainable score or warranted sanction",
+    "claims": "delay 7 (one timeline delay 14), current median at claim; separate pending claims and unminted allowance",
+    "schedule": "E0 calibrated to completed-round ceiling, hypothetical launch-relative r=0; r is not deployed round 4364; E(r)=E0*2**(-r/840)"
+  },
+  "undefined_contracts": {
+    "zero_fees": "MFS fee share zero (EX-06 interface boundary); appendix normalization undefined",
+    "zero_initial_victim_reward": "relative loss undefined; absolute loss still reported in Phase 2",
+    "capped_actor": "zero primary headroom; no finite profitable critical ratio at fixed stake",
+    "zero_retention": "no finite profitable critical ratio",
+    "critical_ratio_equality": "zero first-order gain; no positive optimum by concavity, zero setup",
+    "zero_action": "setup absent; marginal versus accumulated return distinct; return per invoice undefined",
+    "zero_stake": "invalid whole-network denominator",
+    "negative_or_nonfinite": "reject"
+  },
+  "boundaries": {
+    "inclusive": "use <= for cash allowance and capacity, numeric tolerance 1e-18 only in verifier; never round display values before selection",
+    "one_round_budget": "B=0.10*parent F per earning round; incremental net cash loss after immediate fee recovery, includes setup iff x>0",
+    "advance_liquidity": "gross invoices and recovered fees separate; intra-job advance financing unmodeled",
+    "timelines": "B is ONE initial stock for four rounds; no replenishment, unsold-token sales or reward compounding",
+    "capacity": "nonactor assigned outside jobs; actor additional Qmax=.25 originalF/p_base with p_base=1; niche receives Qmax once; responses update outside capacity but keep original physical Qmax; controlled price changes fee capacity, not job capacity",
+    "victim_landmarks": "5%,10%,20% inclusive; fee-limited 20% core landmark equals original p*Qmax; recompute after responses",
+    "purpose": "reward-seeking real work without credited internal use is modeler-known premise, not observable evidence; useful pair identical inputs except use value",
+    "cost_override": "cost 1.20 applies to all actor generic jobs, including existing outside jobs; incremental comparisons use the matched same-override no-purchase reference; nonactor costs unchanged"
+  },
+  "evidence_boundary": {
+    "dependency": "EX-07 existing niche/discount packets only, accurate control/funding disclosure at n+1 and adequate authentic safe useful-case bundle at n+5",
+    "not_examined": [
+      "undisclosed common control",
+      "unpacketed generic full-price work at these volumes",
+      "new public evidence availability",
+      "detection rates",
+      "individual-score-to-median response"
+    ],
+    "invoice_price": "map only to EX-07 existing payment and price-related claims, record observability without inherited verdict"
+  },
+  "deferred": [
+    "E2 original evidence pairs",
+    "P1 HQ-01 movement speed",
+    "Slice 3 validator incentives",
+    "Slice 4 defense burden",
+    "delegation-in-time study (study 5) and P1 (HQ-01): added stake cost/availability/delay and delegation response",
+    "Slice 6 discovery/new-address access",
+    "Slice 7 pending rule changes",
+    "Slice 8 price/liquidity/manipulation",
+    "optimal multi-round allocation, financing, reinvestment, equilibrium and prevalence"
+  ],
+  "phase2_contract": {
+    "engine": "EX-06 account() only; closed forms locate candidates, not a second reward engine",
+    "crosscheck_tolerance": "1e-18",
+    "required_outputs": [
+      "unconstrained and feasible one-round optimum",
+      "gross reward headroom",
+      "critical ratio and override identity sign at measured/near-parity",
+      "nonzero break-even or explicit undefined/none",
+      "at most eight deduplicated progression points",
+      "100-pool effects and external-delegator effects",
+      "individual and collective loss landmarks",
+      "dcap, dB and min; harm-only/additional-funding labels",
+      "unminted-versus-peer-loss share at stopping points",
+      "fees, node claimable/actual mint, unminted, pending, validator/treasury mint, buyback, burn, net supply",
+      "matched useful internal references",
+      "fixed-stock cohort collection through final horizons",
+      "capped-position dS identity only"
+    ],
+    "stake_acquisition_identity": {
+      "domain": "actual a>=s only; equality gives 0; above cap gives positive identity; below-cap and high-business a=.90s starts are not applicable",
+      "formula": "dS=(a*S-S_i)/(1-a)",
+      "interpretation": "arithmetic only; no negative stake-purchase inference; cost, availability, delay and delegation response deferred to the delegation-in-time study (study 5) and P1 (HQ-01)"
+    },
+    "hypothetical_diagnostic_adapter": {
+      "eligibility": "only labelled hypothetical capacity-infeasible diagnostic states; includes beyond-capacity x=F, stake-cap boundaries, unconstrained optima and landmarks",
+      "engine_call_capacity": "for each capacity-infeasible offer, use max(declared per-offer capacity, stipulated q_out+q_self) on an engine-call-only copy passed to unchanged EX-06 account(); preserve original input state",
+      "declared_capacity_reporting": "report declared Qmax and declared per-offer capacity separately from engine-call-only capacity; never echo temporary engine capacity as feasible service capacity",
+      "feasible_states": "feasible optima and endpoints always pass declared capacity unchanged; capacity-feasible but cash-infeasible diagnostics also pass declared capacity unchanged",
+      "feasibility": "adapter independently checks exact inclusive cash and declared-capacity feasibility; account() does not check cash bounds",
+      "legacy_precondition": "before diagnostic use reproduce original EX-06 twelve cases and nine sensitivity groups with original declared capacities and unchanged engine bytes",
+      "label": "hypothetical execution beyond declared capacity; no inference of affordability, spare capacity or feasible conduct",
+      "implementation_status": "contract only; Phase 2 implements and verifies; no Phase 1 accounting or outcomes"
+    },
+    "controlled_invoice_capacity": {
+      "source": "docs/m2/SLICE-02B.md v1.2 §5.1/6; explicit price-only supplemental capacity definition",
+      "status": "illustrative",
+      "profiles": [
+        "invoice10-measured-fixed-parent-optimum",
+        "invoice10-measured-reoptimize",
+        "invoice10-near-parity-fixed-parent-optimum",
+        "invoice10-near-parity-reoptimize"
+      ],
+      "base_price_usdc_per_job": "1",
+      "controlled_price_usdc_per_job": "10",
+      "physical_capacity_jobs": "preserve parent Qmax=.25 originalF/p_base jobs, p_base=1, in both fixed-fee and reoptimized rows",
+      "fee_capacity_usdc": "p_controlled*Qmax=2.5 originalF; controlled price changes fee capacity, not physical jobs",
+      "quantity_jobs": "q_self=x/p_controlled=x/10; per-executed-job cost unchanged",
+      "offer_allocation": "niche receives original Qmax once; generic outside price/jobs unchanged and generic capacity outside-only",
+      "held_fixed": "original B, generic outside jobs/prices, controlled execution cost .30 USDC/job, setup zero",
+      "diagnostic_feasibility": "x=originalF is within declared invoice job capacity but exceeds cash-loss allowance; label cash and capacity independently; do not infer payoff or optimizer result"
+    }
+  },
+  "id_reservations": {
+    "experiment": "EX-08",
+    "fixtures": [
+      "EX-08.F1",
+      "EX-08.F2",
+      "EX-08.F3",
+      "EX-08.F4",
+      "EX-08.F5",
+      "EX-08.F6",
+      "EX-08.F7",
+      "EX-08.F8",
+      "EX-08.F9",
+      "EX-08.F10",
+      "EX-08.F11",
+      "EX-08.F12",
+      "EX-08.F13",
+      "EX-08.F14",
+      "EX-08.F15",
+      "EX-08.F16",
+      "EX-08.F17",
+      "EX-08.F18",
+      "EX-08.F19",
+      "EX-08.F20",
+      "EX-08.F21",
+      "EX-08.F22",
+      "EX-08.F23",
+      "EX-08.F24"
+    ],
+    "phase2_findings": [
+      "FR-62",
+      "FR-63",
+      "FR-64",
+      "FR-65",
+      "FR-66",
+      "FR-67",
+      "FR-68",
+      "FR-69"
+    ],
+    "phase1_conclusion": "CN-30",
+    "phase3_conclusions": [
+      "CN-31",
+      "CN-32",
+      "CN-33",
+      "CN-34"
+    ],
+    "phase1_register": [
+      "I-41",
+      "I-42",
+      "I-43",
+      "I-44",
+      "I-45",
+      "I-46",
+      "I-47",
+      "I-48",
+      "I-49",
+      "I-50",
+      "I-51",
+      "I-52",
+      "I-53",
+      "I-54",
+      "I-55",
+      "I-56",
+      "I-57",
+      "I-58",
+      "I-59",
+      "I-60"
+    ]
+  },
+  "source_quantities": {
+    "F0": {
+      "value": "/rounds/34/fees_usd_indexed",
+      "unit": "USDC/round replayed from indexed USD",
+      "status": "measured",
+      "source": "snapshot completed round 4364",
+      "scope": "stated premise"
+    },
+    "E0": {
+      "value": "/rounds/34/scheduled_mint_ceiling_lpt",
+      "unit": "LPT/round",
+      "status": "measured",
+      "source": "snapshot completed round 4364; launch calibration illustrative",
+      "scope": "stated premise"
+    },
+    "S0": {
+      "value": "/rounds/34/active_stake_lpt",
+      "unit": "LPT",
+      "status": "measured",
+      "source": "snapshot completed round 4364",
+      "scope": "stated premise"
+    },
+    "cuts": {
+      "value": "/rounds/34/pools/*/{operator_reward_cut_fraction,delegator_fee_share_fraction}",
+      "unit": "fractions",
+      "status": "measured",
+      "source": "snapshot matched pool; address join to capture ownership",
+      "scope": "stated premise"
+    },
+    "ownership": {
+      "value": "/orchestrators/*/operator_address_fraction_of_own_pool",
+      "unit": "fraction",
+      "status": "measured",
+      "source": "snapshot capture address proxy; NOT beneficial ownership",
+      "scope": "stated premise"
+    }
+  }
+}

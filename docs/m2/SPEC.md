@@ -1,8 +1,8 @@
 # M2 specification: test litepaper incentives and evidence limits
 
-Version **0.6 · 2026-10-06**. Status: **drafted**. Revision history is at the end. Owner: Shane (@moatus).
+Version **0.13 · 2026-10-15**. Status: **drafted**. Revision history is at the end. Owner: Shane (@moatus).
 
-This specification says what M2 must produce and specifies its first unit of work, Slice 1, in enough detail for an agent to carry it out. How the work is run, reviewed and handed between agents is in the [runbook](RUNBOOK.md). The milestone's definition is in [MILESTONES.md](../../MILESTONES.md#m2--test-litepaper-incentives-and-evidence-limits); this file does not change it.
+This specification defines M2 and its shared modeling contract. The completed September pilot is preserved in §5. Slices 1, [2](SLICE-02.md) and [2b](SLICE-02B.md) are complete and reviewed by the owner (2026-10-14). The remaining program is consolidated into topical slices under §4, with study identities preserved. How the work is run, reviewed and handed between agents is in the [runbook](RUNBOOK.md). The milestone's definition is in [MILESTONES.md](../../MILESTONES.md#m2--test-litepaper-incentives-and-evidence-limits); this file does not change it.
 
 ## 1. Purpose and boundary
 
@@ -10,7 +10,7 @@ M2 tests the litepaper. It reassembles the mechanisms M1 took apart, tests the c
 
 Boundaries that hold for every slice:
 
-- **Litepaper only.** M2 examines the paper's own mechanisms and the readings the paper allows. It does not describe or compare against a successor mechanism. A fixed emissions pool, where used, is an analytical control and not a proposed policy.
+- **Litepaper only.** M2 examines the paper's own mechanisms and the readings the paper allows. It does not describe or compare against a successor mechanism. The October paper proposes a fee-independent decaying emissions ceiling; a fixed one-round allowance may represent that schedule at a declared round. The September pilot’s fixed-pool control remains historical, not a claim about October policy.
 - **Small, not simulated.** A table, a calculation or a bounded case comparison that answers its question is enough. No network simulation, agent-based framework or Monte Carlo study is in scope for M2. If a question appears to need one, stop and record why in the run log; the owner decides.
 - **Conditional results.** Every result names the rules, interpretations and assumptions it holds under. A profitable deviation with everyone else held fixed is not an equilibrium and not evidence of prevalence. Modelled vulnerability and observed prevalence are reported separately.
 - **Distinct claims.** Payment, execution, correctness, availability, independent demand and economic value are separate claims (CL-01 to CL-06). The paper's multiplier concerns dishonesty, not service quality.
@@ -20,6 +20,20 @@ Boundaries that hold for every slice:
 
 M2 is complete when a reviewer can choose any of the nine critical questions (GT-01 to GT-04, GT-06 to GT-10) and find three things: an assessment under stated conditions, a result they can rerun or a table they can trace, and a disposition (build work, more evidence, incentive issue, policy choice, or M3).
 
+**Where each critical question gets its disposition**
+
+| Critical question | Closed by |
+| --- | --- |
+| GT-01 | Purpose half: Slices 1, 2, 2b and EX-04/EX-07 (does not separate). Correctness half: E2. |
+| GT-02 | Slice 3 |
+| GT-03 | Slices 1, 2, 2b |
+| GT-04 | Close pass: the SC-27/SC-28 one-table example runs whatever movement P1 measures; P1 calibrates its rates where it can |
+| GT-06 | E2 |
+| GT-07 | Close pass, using P1's selection-rule note and the EX-06/EX-08 rerouting controls |
+| GT-08 | Close pass, rule reading |
+| GT-09 | Slice 3, using P1 concentration data |
+| GT-10 | Close pass: unresolved, distinct from valuation sensitivity, routed to M4.1 |
+
 | Step | Artifact | Where it lives |
 | --- | --- | --- |
 | M2.1 How the mechanisms behave together | Rule-interpretation register; participant and control map; one timeline; for each intended relationship, an assessment (supported, conditional, contradicted, unresolved); a ranked test list that confirms or replaces each proposed test | Workbench step page M2.1 and CN records |
@@ -27,6 +41,8 @@ M2 is complete when a reviewer can choose any of the nine critical questions (GT
 | M2.3 What would resolve each concern? | Every design question and finding classified by what would resolve it; each concern assessed (finding status `supported`, `weakened` or `rejected`; critical-question status `significant`, `not-significant` or `unresolved`); plausible completions compared; M3 handoff list with the paper's retained strengths beside it | Workbench step page M2.3, FR updates and CN records |
 
 These support the three existing M2 deliverables. They are not a parallel report. Reviewed versions are recorded by commit in the [deliverable register](../../deliverables/README.md), as for M1.
+
+**Connected result required.** M2 also leaves one reusable scenario ledger that connects capability entry, price, outside demand and routing, controlled purchases, execution costs, stake, commissions and validator scores. Later studies amend this ledger or explicitly explain why they cannot. An inventory of independent tests is insufficient. Report job volume, customer spending, network fees, operator and delegator receipts and net income, buyback spending and tokens burned, scheduled ceiling, actual issuance and unminted node allowance, with effects on non-selected operators. [Slice 2](SLICE-02.md) establishes the first bounded implementation; remaining slices test its deferred assumptions.
 
 **"Unresolved" counts as a result** only when the inquiry has identified the missing rule or evidence that leaves it unresolved. A test that was proposed and never run does not count.
 
@@ -40,6 +56,12 @@ These support the three existing M2 deliverables. They are not a parallel report
 | **Rule reading** | Questions about governance or rule sequencing that need no numbers | A timeline or comparison table on the step page | The stated rule variants and where the result changes between them |
 
 Synthetic case packets can test the logic of a judgment. They cannot establish whether evidence exists in practice, how long review takes, or how often reviewers err. Claims of that kind need inspected sources or a real, bounded exercise.
+
+### Shared measured network baseline
+
+All network-grounded M2 modeling uses the single frozen artifact [`livepeer-arbitrum-2026-10-09-v1.json`](../../experiments/m2/network-snapshot/livepeer-arbitrum-2026-10-09-v1.json), through its [reader and usage contract](../../experiments/m2/network-snapshot/README.md). Record the snapshot ID, content hash, chosen fee series and observation window/round in each result. Keep all pools and relevant fee recipients in network denominators even when modeling only selected operators. Measured current-system facts stay separate from the model's declared litepaper version, costs, scores, ownership assumptions, strategic choices and overrides. Refreshes receive new versions; do not modify the baseline in place. The original Slice 1 illustrative cases and arithmetic fixtures retain their stated inputs and historical results; network-grounded extensions load this shared baseline. The snapshot remains drafted until separately reviewed.
+
+Agent readers use `experiments/m2/network-snapshot/query.py catalog` to discover fields and exact source paths, then retrieve bounded summaries, operator rows, round pools or evidence extracts. Do not ingest the whole snapshot into an agent's context. Bulk calculations use the Python reader locally and return only their outputs; every extract carries the snapshot identity/hash and selected source paths. The [agent access instructions](../../experiments/m2/network-snapshot/README.md#agent-access-without-loading-the-dataset-into-context) define pagination and output limits.
 
 ## 4. How M2 is executed: slices
 
@@ -56,22 +78,44 @@ Each slice has four stages:
 
 A slice may omit B or C where its question needs only one. Every stage ends at a review gate (runbook §6).
 
-### Slice catalogue (proposed order; Stage A of each slice may revise it)
+### Active sequence and preserved study identities
 
-| Slice | Critical questions | Cases | Main methods | Notes |
-| --- | --- | --- | --- | --- |
-| **1 — Self-funded real usage (pilot)** | GT-03; GT-01 for one pair only | SC-07 beside SC-23; SC-01 as the cooperative reference | Economic example; evidence tabletop | Specified in §5 |
-| 1b — Self-funded follow-up | GT-03 | As Slice 1 | Economic example | Run only if Slice 1 shows that a deferred variant (§5.9) could change a sign |
-| 2 — Evidence before the claim | GT-01 (remaining pairs) | SC-07 beside SC-06; SC-16 beside SC-17; SC-11 beside SC-10 | Evidence tabletop | Reuses the Slice 1 packet format |
-| 3 — Will validators score defensibly? | GT-02, GT-09 | SC-09, SC-19, SC-20, SC-21, SC-24, SC-35, SC-36, SC-37 | Small repeated payoff table; seat-control cost table | Uses Slice 1–2 evidence assumptions; GT-09 uses data note P1 |
-| 4 — Defending a reward | GT-06 | SC-25 beside SC-26 | Evidence tabletop; effort and access table | |
-| 5 — Delegation in time | GT-04 | SC-27 beside SC-28; SC-04, SC-08 | Round-by-round example | Uses data note P1 (HQ-01) |
-| 6 — Access to paid work | GT-07 | SC-29, SC-30, SC-31; SC-03, SC-12 | Selection comparison under stated rules | Needs a stated selection rule (CN-21) |
-| 7 — Rule changes while rewards are pending | GT-08 | SC-32, SC-33, SC-34 | Rule reading (timeline) | |
-| 8 — LPT price | GT-10 | SC-38 beside SC-39 | Sensitivity; manipulation cost only where a concrete price source and liquidity assumption exist | |
-| P1 — Current-system data notes | Supports GT-04, GT-09, HQ-03 | — | Data notes | Proposed as the second run, starting with stake movement speed (HQ-01), to test the data-note method and a light run. Then concentration of top stake and the shape of real fee spikes. Data access and any API keys are owner decisions |
+The October preparation was authorized; Slices 1, 2 and 2b are reviewed by the owner (2026-10-14), as the table below records. The second numbered slice is now the connected model. Historical references to “Slice 2 — Evidence before the claim” mean the deferred study **E2** below, not the new Slice 2. Existing case and experiment IDs retain their identities.
 
-## 5. Slice 1 — Self-funded real usage (pilot)
+| Slice / study | Critical questions | Cases and method | Sequence and dependency |
+| --- | --- | --- | --- |
+| **1 — Self-funded real usage (September pilot)** | GT-03; GT-01 pair | SC-07 / SC-23; SC-01; EX-03 and EX-04 | Completed; reviewed by the owner, 2026-10-14 ([#26](https://github.com/moatus/livepeer-validator-track/issues/26)). §5 preserves original source and scope. |
+| October reconciliation | GT-03 and affected M1/M2 claims | EX-05; `experiments/m2/october-reconciliation/` | Migration bridge: scheduled ceiling, MFS, non-minting and surviving evidence limits; does not relabel EX-03 as October. |
+| **2 — Capability, pricing and self-funded traffic** | GT-03, GT-07; bounded GT-01, GT-04, GT-10 inputs | [Full brief](SLICE-02.md); EX-06, EX-07 | Completed; reviewed by the owner, 2026-10-14 ([#27](https://github.com/moatus/livepeer-validator-track/issues/27)). Shared snapshot, cooperative → competition → strategic cases, focused evidence comparison and one bounded response. |
+| **2b — Strategic self-funding across network conditions** | GT-03; bounded GT-01, GT-04, GT-07, GT-10 inputs | [Defined study](SLICE-02B.md); [implementation phases](SLICE-02B-IMPLEMENTATION.md); largest/middle/lower stake, network structure, outside traffic, market scale from measured to fee-dominant, feasible optima and honest-party losses | Completed; reviewed by the owner, 2026-10-14 ([#28](https://github.com/moatus/livepeer-validator-track/issues/28)). Three sequential M2.1/M2.2/M2.3 workloads. Extends the shared ledger; preserves original results and E2/P1/studies 3–8. |
+| **P1 — Current-system data notes** | HQ-01, HQ-03; inputs to GT-04, GT-07, GT-09 | Stake movement over a recent window from BondingManager bond, unbond, rebond and transfer events. Stake concentration, and a conditional threshold for the stake that seats a majority of validators, with its assumptions stated: participation, declined seats passing down the rank, existing coordinated holdings, stake redistribution and new capital. The threshold is not an acquisition cost; the cost of acquiring control stays unknown unless evidence supports it. The raw redeemed-fee series, so a settlement spike has a measured shape; the series does not establish independent customer demand. Today's gateway selection rule, read from go-livepeer. Method: current-system data notes with query scripts and a dated extract. No model. | Runs first. Needs an owner data-access decision for chain history. Its movement result calibrates the GT-04 example in the close pass; it does not decide whether that example runs, because movement under today's incentives does not establish movement under the paper's. The frozen snapshot does not establish movement speed or capability demand. Tracked in [#29](https://github.com/moatus/livepeer-validator-track/issues/29). |
+| **E2 — Evidence and operator response (absorbs study 4)** | GT-01 correctness half; GT-06 | SC-11 / SC-10 as a tabletop in the EX-04 packet format. SC-16 / SC-17 answered from P1's fee series plus a reading of what the seven-round delay can observe. SC-07 / SC-06 recorded as inheriting the release-testing verdict, with the reason stated. SC-25 / SC-26 followed through notice, response, disclosure and correction before the claim boundary. An inventory of records that exist today (probabilistic tickets, winning tickets, transcoding verification, capability adverts, orchestrator statistics, invoice price per job): who holds each, whether it is public, and which claim CL-01 to CL-07 it bears on. The inventory separates records that exist in code from records a validator can obtain, authenticate and use before the claim. The practitioner questions on gateway visibility and customer disclosure receive a disposition, even if outreach waits for M4. E2 supplies Slice 3 with two evidence inputs: an inconclusive case and a case where the evidence is sufficient under declared criteria. | Opens after P1. The record inventory, the incorrect-result criteria, notice, response access and correction timing do not wait for VD-19. Conclusions that depend on what rewards must require wait for the VD-19 decision or carry an explicitly conditional branch. The brief distinguishes the research premise it adopts from any adopted protocol rule. No new synthetic purpose matrices. Bridges directly to M4.2 ([#19](https://github.com/moatus/livepeer-validator-track/issues/19)). Keeps "defense burden" as its own conclusion. Tracked in [#30](https://github.com/moatus/livepeer-validator-track/issues/30). |
+| **3 — Will validators score defensibly?** | GT-02, GT-09 | SC-09, SC-19–SC-21, SC-24, SC-35–SC-37. One payoff table for a validator choosing to score from evidence, stay lenient, abstain, or join an unsupported low score, under the full-set median and a quorum variant. It states the 1% share split, with compensation declining on the 840-round half-life. A seat-control cost table from P1 concentration. Separates shared tooling costs from private review costs, states the missing-score rule, and includes operator and delegator interests. Uses the EX-08 result that unminted node allowance is not redistributed, so zeroing a rival yields no direct reward gain; that removes one direct reward-transfer incentive and does not settle every incentive to cooperate, retaliate or avoid review. | Opens after P1 and E2. Its evidence inputs are both E2 cases: the established "does not separate" result and a case where the evidence is sufficient under declared criteria. The payoff table compares the same validator choices across both, so it tests whether validators act on sufficient evidence as well as how they score when it is inconclusive. Feeds tested scores and costs into the shared ledger. Tracked in [#31](https://github.com/moatus/livepeer-validator-track/issues/31). |
+| **Close — M2 consolidation pass** | GT-04, GT-07, GT-08, GT-10; final M3 handoff | Dispositions for studies 5 to 8 below, assembled from rule readings, P1 and existing results. Final M3 handoff list with the paper's retained strengths beside it. Carries GT-10 into M4.1 ([#18](https://github.com/moatus/livepeer-validator-track/issues/18)) and E2's correctness bridge into M4.2 by name, so neither is lost between milestones. Schedules owner review of the shared network snapshot, which stays drafted. | Last. Satisfies §2 for every critical question. Tracked in [#32](https://github.com/moatus/livepeer-validator-track/issues/32). |
+| 4 — Defending a reward | GT-06 | Merged into E2. | Identity retained; no separate run. |
+| 5 — Delegation in time | GT-04 | SC-27 / SC-28 as a one-table round-by-round example: productive activity beside controlled purchases, when existing bonded stake and fresh stake could arrive, whether the opportunity persists, and what information guides the choice. Uses the EX-08 added-stake arithmetic and the 21-round lock, with P1's measured rates where P1 can supply them. | In the close pass. Runs whatever movement P1 measures: movement under today's incentives does not establish how delegators would respond under MFS, and the example tests the tension between attracting stake and the 21-round lock. Where P1 shows negligible movement, record that beside the example with the measurement cited. |
+| 6 — Access to paid work | GT-07 | Disposition from P1's selection-rule note and the EX-06/EX-08 rerouting controls. | In the close pass. No demand, elasticity or discovery model. Reading today's selection code and reusing the rerouting controls does not establish practical access for a new operator; the disposition states that limit. |
+| 7 — Rule changes while rewards are pending | GT-08 | SC-32–SC-34 as a rule-reading timeline, no numbers. | In the close pass. Procedure design belongs to M4.3. |
+| 8 — LPT price | GT-10 | Carries EX-08's valuation sensitivity. Disposition: unresolved, distinct from valuation sensitivity; needs a buyback execution design and liquidity evidence. The September mint-price-oracle branch is retired under October, which removes that dependency. | In the close pass; routed to M4.1 ([#18](https://github.com/moatus/livepeer-validator-track/issues/18)). |
+| 1b — Historical follow-up | GT-03 | Deferred. Slice 2b's retention, cost, valuation and schedule overrides cover the §5.9 variants under October. | Runs only for an explicit historical question. |
+
+**Stop rule for remaining briefs.** Every remaining brief states three things: the decision the slice could change; the new evidence or mechanism it examines that existing work does not; and the result that would end the inquiry. No further GT-03 modeling runs unless P1 shows stake acquisition is cheap and fast enough to reopen the stake-cap defense. Any closed question reopens when materially different evidence or a materially different rule reading appears; cheap stake acquisition is one trigger, not the only one. A stop on the purpose examples means enough evidence for the present conditional conclusion, not that the practical evidence questions are settled.
+
+### Source and interpretation contract
+
+Active work cites [October source](../litepaper-2.0.md), [authoritative PDF](../sources/litepaper-2026-10.pdf), and the source hash. Use PDF page plus section/quotation; line locators refer to that exact extraction only. September `L…` references in §5–6 refer exclusively to [the archived September text](../sources/litepaper-2026-09.md). Never reuse them against October.
+
+October resolves the choice among September emissions concepts by stating a decaying token ceiling, but its appendix still describes work-proportional rewards weighted by scores. Register the surviving main-text/appendix mismatch; do not call it resolved. Main-text MFS is the base reading; keep a bounded appendix comparison or explicitly document which conclusions remain reading-dependent. Distinguish scheduled emission allowance, claimable node rewards, eventual actual mint and unminted node allowance. Validator and treasury portions mint in full under the paper; score application and claim timing must be declared.
+
+Every register row labels scope as **computed**, **stated premise** or **deferred**. Separate sweep inputs from alternate rule readings. A test cannot confirm its own premise. Compare paper-stated or plainly implied completions; identify exploratory choices separately and never credit an uncomputed destination as a defense.
+
+### Slice 2b execution contract
+
+The owner requested Slice 2b's design to be completed before its implementation phases. SLICE-02B.md fixes the finite network/actor/market comparisons and affordable strategic question. Its inputs are materialized in M2.1, tested in M2.2 and consolidated in M2.3; there is no design phase. Each phase has one fresh `gpt-6.1-sol` writer and one fresh `claude-opus-5-5` reviewer. The integrator alone imports and commits. The defined budget is 54 core profiles across three market scales from the measured ratio to near parity, plus named controls and finite supplements, not an open-ended simulation. Agent gates do not confer owner research review. Exact phases, acceptance and boundary rules are in SLICE-02B-IMPLEMENTATION.md.
+
+## 5. Slice 1 — Self-funded real usage (historical September pilot)
+
+**Historical specification.** This section records the rules and IDs under which EX-03/EX-04 were produced. Its September source lines, emissions concepts, original slice numbering and future-tense instructions are retained for reproducibility, not as the active work order. The October reconciliation and §4 supersede its current-source assumptions and next-run sequence. Evidence verdicts mean obtainable evidence separates the pair; a procedural cut for failure to explain is a consequence, not proof of separation. Read that clarification with the original §5.5 schema.
 
 Slice 1 has two purposes. Its research purpose is the core stake-cap (MFS) question: does the stake ceiling limit the payoff from paying one's own node for real work, under each reading of the node reward and each emissions concept? Its process purpose is to exercise every part of the runbook once (§5.10). Where the two pull apart, the scope stays small and the deferred items are listed in §5.9.
 
@@ -285,7 +329,9 @@ Each stage's retrospective (runbook §9) reports on the runbook parts it used. B
 | Step-page status fields across M2.1, M2.2 and M2.3 | A, B, C, D |
 | Owner review, then retrospective and runbook update | End of slice |
 
-## 6. Owner decisions for Slice 1
+## 6. Historical owner decisions for Slice 1
+
+These decisions record the pilot. The October migration and Slice 2 preparation supersede the old proposed run order; they do not confer review or publication status.
 
 | Decision | Status |
 | --- | --- |
@@ -296,7 +342,7 @@ Each stage's retrospective (runbook §9) reports on the runbook parts it used. B
 | Branching | Work stays off `main`. `m2` is the integration branch; each slice runs on `m2-slice-NN-<slug>` and merges into `m2` after owner review. Decided by the owner, 2026-10-05 |
 | Publishing | The integrator commits to the slice branch locally; pushes, PRs and issue comments only with owner approval |
 | `carried_to` for M2.3 conclusions | Open. Default: `carried_to: M2`, with the disposition in the statement. Alternative: add an M3 stage page to the workbench so that conclusions can name M3 |
-| Order of runs | Slice 1 (pilot), then P1 (stake movement speed) as a short second run, subject to a data-access decision; then Slice 2 onward |
+| Order of runs | Slices 1, 2 and 2b completed; then P1, E2, Slice 3, close pass. Decided by the owner, 2026-10-14 |
 
 ## Revision history
 
@@ -308,3 +354,10 @@ Each stage's retrospective (runbook §9) reports on the runbook parts it used. B
 | 0.4 | 2026-10-05 | Fixes from an independent review: ID blocks for parallel stages, register column written by Stage D, `R_y` handling, concrete fixtures, marginal and average returns, `q*` defined, emissions labels, validator share assumption, Stage C files and columns, `carried_to` default, pilot outputs as CSV/Markdown |
 | 0.5 | 2026-10-05 | Branching decision recorded (§6) |
 | 0.6 | 2026-10-06 | Roles and run-log decisions recorded; FR-42 and the paper's key passages added to Stage A; defense-by-defense assessment added to Stage D |
+| 0.7 | 2026-10-09 | Owner requested a single reusable measured network snapshot for M2; added the shared baseline and model citation requirements, preserving the original illustrative pilot |
+| 0.8 | 2026-10-09 | October source boundary and pilot reconciliation; connected scenario accounting; next numbered Slice 2 specified; E2/P1 and all remaining studies preserved; pilot retrospective incorporated without inventing human acceptance |
+| 0.9 | 2026-10-12 | Registered defined Slice 2b and its three implementation workloads; multiple network structures, strategic optima and honest-party impacts; GPT-6.1-Sol writers and Opus 5.5 reviewers; original source-scoped studies and human review boundaries preserved |
+| 0.10 | 2026-10-12 | Slice 2b amended before Phase 1 (SLICE-02B.md 1.2): measured and near-parity market scales in the core, headroom identity, budget convention, equal-total pacing, controlled invoice price, deferred stake acquisition |
+| 0.11 | 2026-10-14 | Remaining program consolidated into topical slices: P1 first, E2 absorbs study 4 and adds operator response and a record inventory, Slice 3 adds declining compensation and seat cost from P1, studies 5–8 move to a close pass with stated dispositions, 1b deferred; per-question disposition table in §2; stop rule for remaining briefs; VD-19 decision required before E2. Owner direction, 2026-10-14 |
+| 0.12 | 2026-10-14 | Slices 1, 2 and 2b and the M2 framework recorded as reviewed by the owner; task issues linked for P1, E2, Slice 3 and the consolidation pass. Owner research review, 2026-10-14 |
+| 0.13 | 2026-10-15 | Remaining program adjusted after a second review: the delegation example runs whatever P1 measures; Slice 3 takes an inconclusive and a sufficient-evidence case from E2; P1 states what its measurements cannot claim; VD-19 blocks only the E2 conclusions that depend on it; GT-10 and the E2 bridge named in M4 tasks; snapshot review scheduled; reopen clause added to the stop rule. Directed by the owner, 2026-10-15 |

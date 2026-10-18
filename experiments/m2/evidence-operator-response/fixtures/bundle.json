@@ -1,0 +1,37 @@
+{
+  "cases": [
+    {
+      "acceptance_round": "n",
+      "case": "SC-10",
+      "customer": "C-SC-10",
+      "delivery_round": "n",
+      "disclosure_arrival": "n+5",
+      "execution": "Independent competent observation of requested execution and delivery stipulated",
+      "job_id": "SC-10-K1",
+      "key_identity": "stipulated O/C identity, no key supplied",
+      "operator": "O-SC-10",
+      "output_path": "fixtures/sc10.png",
+      "output_sha256": "a85ff1809d87193f3655f14aa607381f83d0a7184d5f0e4c146c544d5beed6b7",
+      "payment": "No authenticated USDC settlement supplied"
+    },
+    {
+      "acceptance_round": "n",
+      "case": "SC-11",
+      "customer": "C-SC-11",
+      "delivery_round": "n",
+      "disclosure_arrival": "n+5",
+      "execution": "Independent competent observation of requested execution and delivery stipulated",
+      "job_id": "SC-11-K1",
+      "key_identity": "stipulated O/C identity, no key supplied",
+      "operator": "O-SC-11",
+      "output_path": "fixtures/sc11.png",
+      "output_sha256": "cb8b8b6c5e8984af0011c26f0c31c0198013db6585422bd122ad0de1a7b1cf7b",
+      "payment": "No authenticated USDC settlement supplied"
+    }
+  ],
+  "classification": "authored fixed synthetic bundle; all identity, agreement and delivery custody assertions stipulated, not cryptographically demonstrated",
+  "custody_method": "Stipulated independent customer observer watched execution and received the same output bytes, then acknowledged digest with job/node/accepted terms; not demonstrated by this JSON",
+  "identity_method": "Stipulated operator identity O and customer C; no actual signing key, signature, authenticated endpoint or real job exists",
+  "input_sha256": "ac36b636f5bcff2fb05892894a9dab2c9f2c5bc1cf46371a5a987a674beef17f",
+  "terms_sha256": "b3c31348b46642d361841e7f9ee7d391d23015c44675b1150d94b06e072e0510"
+}

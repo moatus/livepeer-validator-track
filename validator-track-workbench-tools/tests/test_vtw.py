@@ -571,3 +571,32 @@ class ShellWarnings(unittest.TestCase):
         self.assertEqual(len(warns), 2)
         self.assertTrue(warns[0].startswith("$:/vtw/agent-note: text is not in the file's <head>"))
         self.assertTrue(warns[1].startswith("$:/SiteTitle: the file's <title>"))
+
+class VersionedSources(unittest.TestCase):
+    """A valid citation must use its version's bounds, and snapshots cannot swap."""
+    @classmethod
+    def setUpClass(cls):
+        import hashlib
+        cls.base = vtw.load_tiddlers(MAIN)
+        for title, (source, path) in vtw.SOURCE_SNAPSHOTS.items():
+            text = path.read_text()
+            cls.base[source] = {'title': source, 'sha256': hashlib.sha256(path.read_bytes()).hexdigest(), 'lines': str(len(text.splitlines()))}
+            cls.base[title] = {'title': title, 'type': 'text/plain', 'source_of': source, 'text': text}
+
+    def test_both_snapshots_verify_independently(self):
+        for title in vtw.SOURCE_SNAPSHOTS:
+            self.assertTrue(vtw.verified_snapshot(title, self.base[title], self.base))
+
+    def test_october_cannot_replace_historical_text(self):
+        title = '$:/vtw/source/SRC-LP20'
+        swapped = dict(self.base[title], text=vtw.OCTOBER_PAPER.read_text())
+        self.assertFalse(vtw.verified_snapshot(title, swapped, self.base))
+        self.assertTrue(any('sha256' in p for p in vtw.snapshot_problems(title, swapped, self.base)))
+
+    def test_each_citation_has_its_own_line_bounds(self):
+        for source, line, valid in [('SRC-LP20', 388, False), ('SRC-LP20-OCT', 388, True), ('SRC-LP20-OCT', 9999, False)]:
+            with self.subTest(source=source, line=line):
+                store = dict(self.base)
+                store['RL-10'] = dict(store['RL-10'], source_ref=f'{source} L{line}')
+                errors, _, _ = vtw.lint_tiddlers(store)
+                self.assertEqual(not any(e.startswith('RL-10:') and 'line range' in e for e in errors), valid)

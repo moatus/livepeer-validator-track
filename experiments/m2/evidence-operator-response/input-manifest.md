@@ -1,0 +1,35 @@
+# E2 prospective input manifest
+
+Status: Stage A reconstruction only; no E2 outcomes. The exact byte inventory is [source-manifest.json](source-manifest.json). Research question, finite plans and prospective K1 criterion are in [reconstruction.md](reconstruction.md); tolerances are fixed separately in [tolerances.md](tolerances.md).
+
+## Source identity and authority
+
+- October extraction SHA-256 `3e4a385ec19837f4b506b01989fac62cc33f99f28411bc1258f10c065e29240e`; PDF SHA-256 `b438da2b7d25d3043a3387b9db262293c2a0ec7801a765e5a3a249759b41569a`. PDF p3 L123–150: adverts/MFS; p4 L193–208: accountability and dishonesty median, not quality grading; p5 L218–221: shared published investigation; p6 L271–278: delay/median at claim; L282–284: USD prices/USDC. Appendix L646–670 has a separate reward reading, not adjudicated by E2. PDF figures retain authority over extraction.
+- SPEC 0.13 and RUNBOOK 0.12, dated 2026-10-15, govern the remaining E2 scope. DECISIONS' 2026-10-15 research entry supersedes older awaiting-VD-19 wording. M2 research premise: real, correctly executed, honestly represented paid work is owed rewards; reward-only self-purchase is treated as dishonest. This is not an adopted protocol rule. Stricter beyond-paid-work contribution remains conditional where material.
+- Starting repository head `229bb1a9ebff4cce7300e5f119002e23436f4c03`, with P1 artifacts at `d908b26`. P1 is locally technically complete and pending owner review; E2's unpublished continuation does not accept or merge P1. Workbench input SHA-256 `89fb4a72114da276a658b573c3c66c4f8b863441c4029bfa23a206a1240321a9`. Records and historical September locators retain their source identities.
+- Current-system reconstruction pins go-livepeer `9d4f55ecb183b969dbdf1caf0ac25f9c386530fd` and protocol `46c24fef8c7ccccfb4a55038bd80af7799c904c7`. Full-file hashes and bounded excerpts/ranges appear in the manifest. Code existence does not establish deployment, practical public access, retention, authenticated job receipts or a proposed USDC feed. P1 did not prove that the deployed BondingManager was built from the pinned protocol source.
+
+## Frozen P1 interface
+
+Use only `experiments/m2/current-system-data-notes/livepeer-arbitrum-p1-20260717-20261015-v1.json`, file SHA-256 `b69e2b0949953b348470c772b4fc46f9c6510e37e3fb17b5f959a9fc7529d1c8`, payload/content SHA-256 `9f1a8e13b628f68ab65a2a796bc344e455cbbadc55f68221daf39bf75c49c414`. Fixed UTC window: 2026-07-17 inclusive to 2026-10-15 exclusive, L2 blocks 484622260 through 514893852 as pinned by the collector. Raw redeemed winning-ticket face values in ETH, divided from wei by 10^18; no indexed-USD substitution or USDC conversion. Select the series grouped by **redemption round**, including all recipients, not selected job/operator demand.
+
+Offline interface: `python3 experiments/m2/current-system-data-notes/analyze.py` regenerates `tables/`; `verify.py` checks frozen integrity and fixtures. Stage C should reproduce only needed fee summaries plus required integrity checks, without online `extract.py`. `fees-by-round.csv`, `fee-spikes.csv`, `fees-by-day.csv` and sender/recipient tables are derived, not independent sources. P1's FR-73 reports 102 intersecting rounds with 100 complete rounds entering spike ranking; exclude both partial edge rounds from that ranking. Keep redemption distinct from job/creation time. No settlement recipient is identified as dishonest, no observed spike establishes independent demand, and extra elapsed rounds cannot reveal unspecified private evidence by themselves.
+
+## Inherited evidence and transfer limits
+
+| Input | Existing result and its boundary, not a new E2 judgment |
+| --- | --- |
+| EX-04 | Historical September SC-07/SC-23 packet at `packets/sc07-sc23.md`, matrix, verdicts, verifier and tolerance hash pinned in manifest. Existing outcomes do not separate the allegation at public or public-plus-disclosed levels under narrow/broad and a/b readings. Disclosure can clear testing without proving the paired allegation. Authenticity, adequate safe redaction, access and illustrative arrival were assumptions, not measured. September tolerance commit `3019f43` remains historical. |
+| EX-07 | October useful niche/internal production and discount-routing evidence retains its own older code pins and predeclared tolerances (`fc5d202501a413cb7b4009a12c49919f58c22500`). Existing results do not separate under both standards/levels/readings. Accurate outside-funding evidence and the useful-case disclosure have limited exonerating reach. No purpose oracle, general availability, actual disclosure channel or median update was established. |
+| EX-08 | Existing evidence-scope mapping reuses only EX-07's packeted observations; supplies no new observations or adverse verdict. Economic purpose is modeler-known, not validator evidence. E2 must not promote generic price/volume mappings into detection evidence. |
+| EX-09 / FR-73 | Frozen current-system settlement data, not demand, misconduct, job correctness, acquisition cost or a forecast for October. Pending owner review remains explicit. |
+
+SC-06/07 inheritance must state why useful affiliate production and release testing share the relevant purpose evidence limits, and where different use records/control/custody prevent automatic transfer. Only materially changed evidence or rule readings justify reopening an inherited result, with a logged reason. No new purpose matrix or economic study is authorized.
+
+## Comparisons, rule readings and claim boundary
+
+Read SC-10/11 for K1 correctness, SC-17/16 for redemption and delay, SC-06/07 with SC-23 for inheritance, and SC-25/26 for the same merits question with response-resource/access differences. Claims CL-01–CL-07 remain distinct; availability is not an honesty score. VD-09 sets adverse-evidence questions, VD-22 accepted terms/variation, VD-11 claim-time/finality, VD-19 the recorded research premise and conditional stronger objective, and VD-29 independence is not inferred from addresses. Carry a evidence-required and b explanation-burden readings separately. A procedural cut is not proof of violation, and sufficient evidence does not establish scorer incentives or a changed median.
+
+Illustrative evidence schedule: public n+1, notice/reasons n+2, response n+5, possible correction n+6; paper-proposed first claim n+7 uses the median at actual claim. Source time, validator availability, operator receipt and score update are distinct. Later claims and persistence remain conditional. No wall-clock response guarantee follows from seven rounds.
+
+Stop after all four bounded dispositions, six record-access assessments, two response paths and two conditioned Slice 3 inputs. Stage A supplies only criteria/plans. Outcome work waits for Gate A and the integrator's tolerance-only commit, then a separate reconstruction commit. Do not create packets, matrices or verdicts before that boundary. Practical requests go to M4.2; detailed procedure design remains M4.3. No new numeric economics or score magnitudes enter the shared ledger; only evidence conditions for later score tests are handed forward.

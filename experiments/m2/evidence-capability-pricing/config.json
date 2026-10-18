@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "shared_sources": {
+    "experiments/m2/capability-pricing/inputs.json": "bf518c99987c042821438b4ceea3689aae2122dd7956032b7a1efe2b03b8524f",
+    "experiments/m2/capability-pricing/scenarios.json": "7bf3f949d45570387674efe08f29f4ef47b8f7a7121f2ad9f606147d40a81aa5"
+  },
+  "families": {
+    "niche": {
+      "cases": [
+        "S04",
+        "S05",
+        "S06",
+        "S06-N"
+      ],
+      "outside": "S04",
+      "useful": "S05",
+      "unmodified": "S06",
+      "variant": "S06-N",
+      "bundle": "linked production/test plan and output use"
+    },
+    "discount": {
+      "cases": [
+        "S02",
+        "S07",
+        "S08",
+        "S08-N"
+      ],
+      "outside": "S02",
+      "useful": "S07",
+      "unmodified": "S08",
+      "variant": "S08-N",
+      "bundle": "selection rule/routing log linked to the internal test plan"
+    }
+  },
+  "standards": [
+    "narrow",
+    "broad"
+  ],
+  "levels": [
+    "public",
+    "public+disclosed"
+  ],
+  "claims": [
+    "CL-01",
+    "CL-02",
+    "CL-03",
+    "CL-05",
+    "CL-06",
+    "CL-07"
+  ],
+  "readings": [
+    "a",
+    "b"
+  ],
+  "horizon": 7,
+  "tolerance_sha256": "df904d04e7bc2c94f789510d9922ca3c633f1ddb6a90f92eff17f1d2a99162ac",
+  "tolerance_commit": "fc5d202501a413cb7b4009a12c49919f58c22500",
+  "paper_path": "docs/litepaper-2.0.md",
+  "paper_sha256": "3e4a385ec19837f4b506b01989fac62cc33f99f28411bc1258f10c065e29240e",
+  "pdf_path": "docs/sources/litepaper-2026-10.pdf",
+  "pdf_sha256": "b438da2b7d25d3043a3387b9db262293c2a0ec7801a765e5a3a249759b41569a",
+  "packet_files": {
+    "niche": "packets/niche.md",
+    "discount": "packets/discount.md"
+  },
+  "evidence_records": {
+    "P-LIST": {
+      "arrival_round": "n+1",
+      "source_ids": [
+        "O-LIST",
+        "U-LIST"
+      ],
+      "access": "public"
+    },
+    "P-PAY": {
+      "arrival_round": "n+1",
+      "source_ids": [
+        "O-PAY",
+        "U-PAY",
+        "G-TICKET",
+        "P-TICKET"
+      ],
+      "access": "public"
+    },
+    "P-CTRL": {
+      "arrival_round": "n+1",
+      "source_ids": [
+        "U-CTRL"
+      ],
+      "access": "public"
+    },
+    "P-REP": {
+      "arrival_round": "n+1",
+      "source_ids": [
+        "U-REP"
+      ],
+      "access": "public"
+    },
+    "P-TERMS": {
+      "arrival_round": "n+2",
+      "source_ids": [
+        "U-TERMS"
+      ],
+      "access": "public"
+    },
+    "P-OBS": {
+      "arrival_round": "n+2",
+      "source_ids": [
+        "O-OBS",
+        "U-OBS",
+        "G-DISPATCH"
+      ],
+      "access": "public"
+    },
+    "Q": {
+      "arrival_round": "n+2",
+      "source_ids": [
+        "U-Q"
+      ],
+      "access": "public"
+    },
+    "D-N": {
+      "arrival_round": "n+5",
+      "source_ids": [
+        "U-D-N"
+      ],
+      "access": "disclosed"
+    },
+    "D-D": {
+      "arrival_round": "n+5",
+      "source_ids": [
+        "U-D-D"
+      ],
+      "access": "disclosed"
+    },
+    "CLOSE": {
+      "arrival_round": "n+7",
+      "source_ids": [
+        "O-CLAIM",
+        "U-CLOSE"
+      ],
+      "access": "public"
+    }
+  },
+  "disclosed_records": {
+    "niche": "D-N",
+    "discount": "D-D"
+  },
+  "matrix_note_requirements": [
+    {
+      "selector": {
+        "case": "S06-N",
+        "claim": "CL-07"
+      },
+      "required": [
+        "representation = established (P-REP; U-REP; n+1)",
+        "falsity = unknown (U-REP; U-CLOSE; not specified by the paper)",
+        "knowledge = unknown (U-REP; U-CLOSE; not specified by the paper)",
+        "eligibility purpose = unknown (U-REP; U-CLOSE; not specified by the paper)"
+      ]
+    },
+    {
+      "selector": {
+        "case": "S08-N",
+        "claim": "CL-07"
+      },
+      "required": [
+        "representation = established (P-REP; U-REP; n+1)",
+        "falsity = unknown (U-REP; U-CLOSE; not specified by the paper)",
+        "knowledge = unknown (U-REP; U-CLOSE; not specified by the paper)",
+        "eligibility purpose = unknown (U-REP; U-CLOSE; not specified by the paper)"
+      ]
+    }
+  ]
+}

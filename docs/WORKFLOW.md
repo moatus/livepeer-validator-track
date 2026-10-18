@@ -3,7 +3,7 @@
 ## Task to deliverable
 
 1. State the question and expected artifact in a task issue; link the milestone and prerequisites.
-2. Produce the smallest artifact that answers the question. Research reports, diagrams, models, datasets, specifications and test results are all valid outputs. A few transparent litepaper examples can establish a conditional concern. Broader cooperative, market and adversarial cases belong in M3, where they inform whether and where to expand the litepaper.
+2. Produce the smallest artifact that answers the question. Research reports, diagrams, models, datasets, specifications and test results are all valid outputs. A few transparent litepaper examples can establish a conditional concern. M2 connects bounded cooperative, ordinary-market and strategic cases under the paper’s rules in one accounting model; it does not require a network simulation. Broader studies of possible changes belong in M3, where they inform whether and where to expand the litepaper.
 3. Record methods, sources, assumptions, findings, limitations and reproduction instructions where applicable.
 4. Review the artifact. Its status moves from drafted to reviewed only when the review is complete; never infer a review from silence.
 5. Add the reviewed artifact version to the issue's Deliverables table, the Project Artifact field and the deliverable register.
@@ -29,7 +29,7 @@ Keep a path from source to recommendation: litepaper objective or provision, ass
 
 ## Milestones and dates
 
-Native repository milestones are the grouping and due-date record. Overview issues summarize the outcome and link their task sub-issues. Keep the Markdown overview consistent at reporting points. Target dates are not yet agreed; do not interpret the reporting setup deadline as every milestone's delivery date.
+Native repository milestones are the grouping and due-date record. Overview issues summarize the outcome and link their task sub-issues. Keep the Markdown overview consistent at reporting points. M2–M5 target dates are agreed and listed in [MILESTONES.md](../MILESTONES.md). The Project Target date field mirrors milestone deadlines on overview cards; task dates can be set separately when agreed. Milestone budgets are listed in the native milestone descriptions, overview issues and Markdown overview, and mirrored in the Project Budget (USD) field on overview cards. Do not interpret the reporting setup deadline as every milestone's delivery date.
 
 This repository is the validator track's research and reporting hub. Tasks implemented elsewhere need one reporting issue here linking the authoritative external work. Do not duplicate full milestones or artifacts across repositories simply to show them on a board.
 

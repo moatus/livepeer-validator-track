@@ -1,0 +1,5 @@
+        require(!usedTickets[_ticketHash], "ticket is used");
+
+        require(isValidTicketSig(_ticket.sender, _sig, _ticketHash), "invalid signature over ticket hash");
+
+        require(isWinningTicket(_sig, _recipientRand, _ticket.winProb), "ticket did not win");

@@ -1,0 +1,8 @@
+	switch v := req.(type) {
+	case worker.GenTextToImageJSONRequestBody:
+		pipeline = "text-to-image"
+		cap = core.Capability_TextToImage
+		modelID = *v.ModelId
+		submitFn = func(ctx context.Context) (interface{}, error) {
+			return orch.TextToImage(ctx, requestID, v)
+		}

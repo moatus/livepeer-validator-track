@@ -1,4 +1,4 @@
-"""Build the M1.1 litepaper accounting workbook from docs/litepaper-2.0.md. Requires XlsxWriter."""
+"""Build the M1.1 litepaper accounting workbook from docs/sources/litepaper-2026-09.md. Requires XlsxWriter."""
 
 from __future__ import annotations
 
@@ -9,7 +9,7 @@ import xlsxwriter
 
 
 ROOT = Path(__file__).resolve().parents[3]
-SOURCE = ROOT / "docs" / "litepaper-2.0.md"
+SOURCE = ROOT / "docs" / "sources" / "litepaper-2026-09.md"
 OUTPUT = Path(__file__).resolve().parent / "litepaper-baseline-accounting.xlsx"
 SOURCE_SHA256 = "5fc153408fb636d9750788ae987ada6daaa9fc3df3e44f70cadde51a6158fb71"
 UNDEFINED = "undefined/needs rule"
@@ -313,7 +313,7 @@ def build():
     src = wb.add_worksheet("Source & decisions")
     setup(src, {0: 25, 1: 28, 2: 78, 3: 80}, (5, 1), "A1:D29")
     src.write("A1", "Source, interpretation, missing rules", title)
-    src.merge_range("A2:D3", f"Primary source: Doug Petkanics, Livepeer 2.0 Litepaper (Sept 2026), snapshot docs/litepaper-2.0.md in the livepeer-validator-track repository; SHA-256 {actual}. Line references are to that snapshot.", subtitle)
+    src.merge_range("A2:D3", f"Primary source: Doug Petkanics, Livepeer 2.0 Litepaper (Sept 2026), snapshot docs/sources/litepaper-2026-09.md in the livepeer-validator-track repository; SHA-256 {actual}. Line references are to that snapshot.", subtitle)
     for c, h in enumerate(("Classification", "Paper heading / lines", "What the paper says", "Workbook treatment or decision needed")): src.write(4, c, h, head)
     source_rows = [
         ("Explicit paper", "Design Principles, 31–38", "Rewards should follow honest work; active roles; governance adjustability; explainable mechanisms.", "Objective only. Payment and execution are not themselves proof of independent demand or economic value."),
@@ -335,7 +335,7 @@ def build():
     for row, values in enumerate(source_rows, 6):
         for col, value in enumerate(values): src.write(row-1, col, value, note)
         src.set_row(row-1, 61)
-    src.merge_range("A22:D24", "This baseline distinguishes the litepaper's provisions from accounting interpretations and research hypotheses. It identifies missing rules without proposing successor mechanisms. Heading and line references to the docs/litepaper-2.0.md snapshot, with its SHA-256, are supplied for reproducibility.", note_yellow)
+    src.merge_range("A22:D24", "This baseline distinguishes the litepaper's provisions from accounting interpretations and research hypotheses. It identifies missing rules without proposing successor mechanisms. Heading and line references to the docs/sources/litepaper-2026-09.md snapshot, with its SHA-256, are supplied for reproducibility.", note_yellow)
     wb.close()
     return OUTPUT
 
