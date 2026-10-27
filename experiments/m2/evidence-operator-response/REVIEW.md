@@ -4,4 +4,4 @@ Reviewed 2026-10-18. [Exact reviewed EX-10 artifact](https://github.com/moatus/l
 
 Conditional correctness distinction and operator-response burden; custody and timely access remain stipulated, purpose and knowledge-required judgments inconclusive.
 
-The [deliverable register](../../../deliverables/README.md) records acceptance. Frozen source files and prospective manifests retain their preparation-time wording and hashes for reproduction. Their pending-review wording is historical. The shared network snapshot remains pending separate review. Acceptance of this research is not protocol adoption.
+The [deliverable register](../../../deliverables/README.md) records acceptance. Frozen source files and prospective manifests retain their preparation-time wording and hashes for reproduction. Their pending-review wording is historical. The shared network snapshot was subsequently accepted on 2026-10-27; see the [deliverable register](../../../deliverables/README.md). Acceptance of this research is not protocol adoption.

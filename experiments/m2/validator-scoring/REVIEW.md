@@ -4,4 +4,4 @@ Reviewed 2026-10-18. [Exact reviewed EX-11 artifact](https://github.com/moatus/l
 
 Conditional validator payoffs and seat thresholds; private costs, actual scoring, beneficial control and acquisition costs remain unknown.
 
-The [deliverable register](../../../deliverables/README.md) records acceptance. Frozen source files and prospective manifests retain their preparation-time wording and hashes for reproduction. Their pending-review wording is historical. The shared network snapshot remains pending separate review. Acceptance of this research is not protocol adoption.
+The [deliverable register](../../../deliverables/README.md) records acceptance. Frozen source files and prospective manifests retain their preparation-time wording and hashes for reproduction. Their pending-review wording is historical. The shared network snapshot was subsequently accepted on 2026-10-27; see the [deliverable register](../../../deliverables/README.md). Acceptance of this research is not protocol adoption.
