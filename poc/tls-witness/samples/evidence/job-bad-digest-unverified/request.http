@@ -1,0 +1,9 @@
+POST /jobs HTTP/1.1
+Host: router
+Content-Type: application/json
+X-Client-Nonce: bad-digest
+X-Client-Require-Witness: true
+Content-Length: 68
+Connection: close
+
+{"model":"fixture","input":"bad-digest","fixture_mode":"bad-digest"}

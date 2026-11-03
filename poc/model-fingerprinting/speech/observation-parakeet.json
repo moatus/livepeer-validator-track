@@ -1,0 +1,18 @@
+{
+  "indices": [
+    6,
+    12,
+    23
+  ],
+  "module_classes": [
+    "ConformerLayer",
+    "ConformerLayer",
+    "ConformerLayer"
+  ],
+  "parameter_count": 627008134,
+  "parameter_dtypes": [
+    "torch.float32"
+  ],
+  "seed": 42,
+  "threads": 4
+}

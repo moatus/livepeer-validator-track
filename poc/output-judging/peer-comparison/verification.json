@@ -1,0 +1,13 @@
+{
+  "equal_abstention": true,
+  "separated_outlier": true,
+  "permutations": 24,
+  "feature_schema": "peer receives only a finite 4xD numeric matrix and scalar threshold; no metadata",
+  "generation_accounting": true,
+  "finite_features": true,
+  "frozen_code_consistency": true,
+  "thresholds_unchanged": true,
+  "blind_decisions_sha256": "481c98f0171124b7e2004208f524f283afdec9ba158f339eaea965522f71a4f3",
+  "real_group_permutations": 7488,
+  "threshold_dependency": "only calibration honest groups; labels opened after decisions-blind.json persisted"
+}

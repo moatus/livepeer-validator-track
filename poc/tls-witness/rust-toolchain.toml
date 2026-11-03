@@ -1,0 +1,3 @@
+[toolchain]
+# tlsn v0.1.0-alpha.15 depends on mpz v0.1.0-alpha.6, which declares rust-version 1.95.
+channel = "1.97.1"

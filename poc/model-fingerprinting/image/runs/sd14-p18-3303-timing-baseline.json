@@ -1,0 +1,24 @@
+{
+  "key": "sd14-p18-3303-timing-baseline",
+  "label": "sd14",
+  "prompt_id": "p18",
+  "group": "botanical",
+  "split": "evaluation",
+  "seed": 3303,
+  "tag": "timing-baseline",
+  "instrumented": false,
+  "seconds": 1.2911499720066786,
+  "memory": {
+    "allocated": 3440806912,
+    "reserved": 4043309056
+  },
+  "latent_sha256": "6bfbe808ab9fa7d4ef730f0af704217448407a90f1f7b0f4c5d23de7bb9d8d07",
+  "image_sha256": "bfa52de59cae6f7d84517d2da450ceea4260c5b6dc9c0839d43197310189d4b3",
+  "nsfw": [
+    false
+  ],
+  "timestamp": "2026-10-25T15:38:30.601153+00:00",
+  "fingerprint": null,
+  "image": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/images/sd14-p18-3303-timing-baseline.png",
+  "write_seconds": 0.039790443144738674
+}

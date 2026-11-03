@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "image_hashes_verified": 480,
+  "exact_schedule_record_matches": 240,
+  "model_counts": {
+    "sd14": 160,
+    "sd15": 40,
+    "sdxl": 40
+  },
+  "unique_seeds": 240,
+  "prompt_families": 40,
+  "prior_prompt_and_family_disjoint": true,
+  "freeze_before_first_generation": true,
+  "threshold_before_blind_before_evaluated_mtime": true,
+  "frozen_sources_unchanged": true
+}

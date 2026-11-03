@@ -1,0 +1,21 @@
+{
+  "key": "im236",
+  "prompt_id": "q39",
+  "prompt": "An artichoke and a halved lemon on a slate board, food photography.",
+  "model": "sd14",
+  "seed": 730392,
+  "timestamp": "2026-10-27T12:13:39.117800+00:00",
+  "status": "ok",
+  "latent_sha256": "f44a663432ea56f61ed4337e12c0d79a92969a3f2da17da2a81d9571eaf245f6",
+  "raw": "raw/im236.png",
+  "normalized": "normalized/im236.png",
+  "raw_sha256": "f71bead82b336b8a7279583d00e5bd22e925ad5a522c864c45c7140faa65d3cf",
+  "normalized_sha256": "f71bead82b336b8a7279583d00e5bd22e925ad5a522c864c45c7140faa65d3cf",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.4428532123565674
+}

@@ -1,0 +1,11 @@
+--- a/src/lib.rs
++++ b/src/lib.rs
+@@ -85,7 +85,7 @@
+     fn default() -> Self {
+         Config {
+             max_connection_receive_window: Some(GIB),
+-            max_num_streams: 512,
++            max_num_streams: 4096,
+             read_after_close: true,
+             split_send_size: DEFAULT_SPLIT_SEND_SIZE,
+             close_sync: false,

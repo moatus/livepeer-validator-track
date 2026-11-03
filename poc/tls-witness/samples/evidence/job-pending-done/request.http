@@ -1,0 +1,9 @@
+POST /jobs HTTP/1.1
+Host: router
+Content-Type: application/json
+X-Client-Nonce: pending
+X-Client-Require-Witness: true
+Content-Length: 62
+Connection: close
+
+{"model":"fixture","input":"pending","fixture_mode":"pending"}

@@ -1,0 +1,21 @@
+{
+  "key": "im022",
+  "prompt_id": "q03",
+  "prompt": "An old library aisle with a rolling wooden ladder and warm lamps, architectural photograph.",
+  "model": "sd15",
+  "seed": 730034,
+  "timestamp": "2026-10-27T12:14:20.356740+00:00",
+  "status": "ok",
+  "latent_sha256": "1c2ebe6e4977e3286fc3b0468c6f448d01b183d63542d314f57f22ce6b60d3a9",
+  "raw": "raw/im022.png",
+  "normalized": "normalized/im022.png",
+  "raw_sha256": "b7d63f849c9a0d008c511aaae5e87314fceb37b9eae9d478c95acf1002fa898a",
+  "normalized_sha256": "b7d63f849c9a0d008c511aaae5e87314fceb37b9eae9d478c95acf1002fa898a",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.4225664138793945
+}

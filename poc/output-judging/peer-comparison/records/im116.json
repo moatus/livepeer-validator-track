@@ -1,0 +1,21 @@
+{
+  "key": "im116",
+  "prompt_id": "q19",
+  "prompt": "Fresh radishes with leafy tops on a kitchen cutting board, food photography.",
+  "model": "sd14",
+  "seed": 730192,
+  "timestamp": "2026-10-27T12:11:49.346227+00:00",
+  "status": "ok",
+  "latent_sha256": "a103b87f4f05b4797025794baad9015d1766d94069082de7a3f553704d401cdd",
+  "raw": "raw/im116.png",
+  "normalized": "normalized/im116.png",
+  "raw_sha256": "a8e7f96dd201de48e1bb4d3356235bc74f19153aeb3a4626830a692f89d34373",
+  "normalized_sha256": "a8e7f96dd201de48e1bb4d3356235bc74f19153aeb3a4626830a692f89d34373",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.349754810333252
+}

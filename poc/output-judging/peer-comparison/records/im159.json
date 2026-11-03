@@ -1,0 +1,21 @@
+{
+  "key": "im159",
+  "prompt_id": "q26",
+  "prompt": "A macro photograph of a dragonfly perched on a blade of grass covered in dew.",
+  "model": "sd14",
+  "seed": 730263,
+  "timestamp": "2026-10-27T12:12:29.591165+00:00",
+  "status": "ok",
+  "latent_sha256": "7b3502fb8b1882d9ce958edb831beedf78e1b9cacb09e6d9d62061df319a21d7",
+  "raw": "raw/im159.png",
+  "normalized": "normalized/im159.png",
+  "raw_sha256": "7a30a827b3140341464188a0f57da5ce05680cbdfaef119d6bc3d724314257db",
+  "normalized_sha256": "7a30a827b3140341464188a0f57da5ce05680cbdfaef119d6bc3d724314257db",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.4256563186645508
+}

@@ -1,0 +1,21 @@
+# Session channel frame limit: 128 MiB, on tlsn v0.1.0-alpha.15.
+# Covers the largest planned max-sent + max-recv (32 MiB + 17 KiB),
+# including serialization overhead, and even two 32 MiB directions.
+# mpz at 6ebfe619 exposes only a temporary public with_limit guard;
+# from_io_with_limit is pub(crate) and test-only. Keep the setting at
+# this tlsn call site by forgetting the allocation-free restoration guard.
+--- a/src/session.rs
++++ b/src/session.rs
+@@ -303,7 +303,11 @@
+ impl Mux for MuxHandle {
+     fn open(&self, id: &[u8]) -> Result<Io, std::io::Error> {
+         let stream = self.handle.new_stream(id).map_err(std::io::Error::other)?;
+-        let io = Io::from_io(stream);
++        let mut io = Io::from_io(stream);
++        // with_limit restores the old limit on drop. This guard owns only a
++        // borrow and the old limit; forgetting it keeps the setting for the
++        // channel's lifetime without leaking an allocation.
++        std::mem::forget(io.with_limit(128 * 1024 * 1024));
+ 
+         Ok(io)
+     }

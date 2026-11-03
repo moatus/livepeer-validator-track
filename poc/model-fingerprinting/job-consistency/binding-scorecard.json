@@ -1,0 +1,162 @@
+{
+  "copied_reference_no_fresh_execution": {
+    "fingerprint_only": 1,
+    "signature_valid": 1,
+    "receipt_valid": 1,
+    "output_claim_matches": 1,
+    "observed_output_matches": 0,
+    "commitment_receipt_only": 1,
+    "combined": 1,
+    "n": 1
+  },
+  "identical_effective_input": {
+    "fingerprint_only": 1,
+    "signature_valid": 1,
+    "receipt_valid": 1,
+    "output_claim_matches": 1,
+    "observed_output_matches": 1,
+    "commitment_receipt_only": 1,
+    "combined": 1,
+    "n": 1
+  },
+  "receipt_unchanged": {
+    "fingerprint_only": 1,
+    "signature_valid": 1,
+    "receipt_valid": 1,
+    "output_claim_matches": 1,
+    "observed_output_matches": 1,
+    "commitment_receipt_only": 1,
+    "combined": 1,
+    "n": 1
+  },
+  "signed_wrong_fingerprint": {
+    "fingerprint_only": 0,
+    "signature_valid": 1,
+    "receipt_valid": 1,
+    "output_claim_matches": 1,
+    "observed_output_matches": 1,
+    "commitment_receipt_only": 1,
+    "combined": 0,
+    "n": 1
+  },
+  "signed_wrong_output": {
+    "fingerprint_only": 1,
+    "signature_valid": 1,
+    "receipt_valid": 1,
+    "output_claim_matches": 0,
+    "observed_output_matches": 0,
+    "commitment_receipt_only": 0,
+    "combined": 0,
+    "n": 1
+  },
+  "stale_other_job_receipt": {
+    "fingerprint_only": 0,
+    "signature_valid": 1,
+    "receipt_valid": 0,
+    "output_claim_matches": 0,
+    "observed_output_matches": 1,
+    "commitment_receipt_only": 0,
+    "combined": 0,
+    "n": 1
+  },
+  "unsigned_edit_fingerprint_digest": {
+    "fingerprint_only": 1,
+    "signature_valid": 0,
+    "receipt_valid": 0,
+    "output_claim_matches": 1,
+    "observed_output_matches": 1,
+    "commitment_receipt_only": 0,
+    "combined": 0,
+    "n": 1
+  },
+  "unsigned_edit_input_commitment": {
+    "fingerprint_only": 1,
+    "signature_valid": 0,
+    "receipt_valid": 0,
+    "output_claim_matches": 1,
+    "observed_output_matches": 1,
+    "commitment_receipt_only": 0,
+    "combined": 0,
+    "n": 1
+  },
+  "unsigned_edit_job_id": {
+    "fingerprint_only": 1,
+    "signature_valid": 0,
+    "receipt_valid": 0,
+    "output_claim_matches": 1,
+    "observed_output_matches": 1,
+    "commitment_receipt_only": 0,
+    "combined": 0,
+    "n": 1
+  },
+  "unsigned_edit_measurement_version": {
+    "fingerprint_only": 1,
+    "signature_valid": 0,
+    "receipt_valid": 0,
+    "output_claim_matches": 1,
+    "observed_output_matches": 1,
+    "commitment_receipt_only": 0,
+    "combined": 0,
+    "n": 1
+  },
+  "unsigned_edit_model_profile": {
+    "fingerprint_only": 1,
+    "signature_valid": 0,
+    "receipt_valid": 0,
+    "output_claim_matches": 1,
+    "observed_output_matches": 1,
+    "commitment_receipt_only": 0,
+    "combined": 0,
+    "n": 1
+  },
+  "unsigned_edit_output_commitment": {
+    "fingerprint_only": 1,
+    "signature_valid": 0,
+    "receipt_valid": 0,
+    "output_claim_matches": 0,
+    "observed_output_matches": 1,
+    "commitment_receipt_only": 0,
+    "combined": 0,
+    "n": 1
+  },
+  "unsigned_edit_settings_commitment": {
+    "fingerprint_only": 1,
+    "signature_valid": 0,
+    "receipt_valid": 0,
+    "output_claim_matches": 1,
+    "observed_output_matches": 1,
+    "commitment_receipt_only": 0,
+    "combined": 0,
+    "n": 1
+  },
+  "unsigned_edit_version": {
+    "fingerprint_only": 1,
+    "signature_valid": 0,
+    "receipt_valid": 0,
+    "output_claim_matches": 1,
+    "observed_output_matches": 1,
+    "commitment_receipt_only": 0,
+    "combined": 0,
+    "n": 1
+  },
+  "wrong_delivery_no_observer": {
+    "fingerprint_only": 1,
+    "signature_valid": 1,
+    "receipt_valid": 1,
+    "output_claim_matches": 1,
+    "observed_output_matches": 0,
+    "commitment_receipt_only": 1,
+    "combined": 1,
+    "n": 1
+  },
+  "wrong_delivery_with_observer": {
+    "fingerprint_only": 1,
+    "signature_valid": 1,
+    "receipt_valid": 1,
+    "output_claim_matches": 1,
+    "observed_output_matches": 0,
+    "commitment_receipt_only": 0,
+    "combined": 0,
+    "n": 1
+  }
+}

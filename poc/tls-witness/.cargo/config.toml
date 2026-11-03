@@ -1,0 +1,5 @@
+# barretenberg-rs links the static library in BB_LIB_DIR. Without it, its build
+# script downloads one with no checksum; build.rs refuses any library other
+# than the pinned one.
+[env]
+BB_LIB_DIR = { value = "target/barretenberg", relative = true }

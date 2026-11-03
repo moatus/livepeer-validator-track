@@ -80,7 +80,7 @@ What remains is specific. The reward formula and claim accounting need authorita
 
 ## Source notes — outside the spoken narrative
 
-- Governing study: [SLICE-02B v1.2](../m2/SLICE-02B.md) and [implementation scope](../m2/SLICE-02B-IMPLEMENTATION.md). M2 remains drafted/in progress.
+- Governing study: [SLICE-02B v1.2](../m2/SLICE-02B.md) and [strategic self-funding implementation](../../experiments/m2/strategic-self-funding/README.md). M2 remains drafted/in progress.
 - Results and reproduction: [EX-08 reader](../../experiments/m2/strategic-self-funding/README.md). Run its unchanged reproduce command to generate the linked result tables. Principal rows are `native-measured-1`, `native-measured-50` and `native-measured-90` in `generated/full/profiles.json`; spending and all-pool receipts are in `progressions.jsonl` and `pool-effects.jsonl`. Values use 1.71765 USDC/LPT, full scores, fixed stake, price 1, cost .30/job and native cuts/ownership proxies.
 - Standardized comparisons: 54 `core` rows; nine `aligned` rows; three `fee-leaning` confirmations; `one-factor` valuation controls; `comparisons.json` for appendix, funding, invoice-price and response controls. These do not estimate source participants’ conduct.
 - Fixed schedules and collection: `generated/full/timelines.json`, earning/horizon/cohort ledgers; constant/equal-total pair for pacing, escalating schedule for spending escalation; final collection horizons 10/17.

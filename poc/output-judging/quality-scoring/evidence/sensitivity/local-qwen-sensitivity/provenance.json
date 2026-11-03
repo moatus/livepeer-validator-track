@@ -1,0 +1,65 @@
+{
+  "source_files": {
+    "research/judge-score-fingerprinting-poc/2026-10-25/REPORT.md": {
+      "copy": "source/baseline-REPORT.md",
+      "sha256": "cbeb55e124dbeb7fa851b4e9b5ddcac3c096eb037c3e6fcadfba386a8778e01d"
+    },
+    "research/judge-score-fingerprinting-poc/2026-10-25/INDEPENDENT-REVIEW.md": {
+      "copy": "source/baseline-INDEPENDENT-REVIEW.md",
+      "sha256": "d7b22b5caba6bf6a207e832b48fcace7fbbd99cb9d7bd8e04564eccfbb8b606d"
+    },
+    "research/judge-score-fingerprinting-poc/2026-10-25/artifact-checksums.sha256": {
+      "copy": "source/baseline-artifact-checksums.sha256",
+      "sha256": "c1fa78ee50a2f07ab8d5dd84151cca3a613909221c43ab3e8429ee61ae1223b3"
+    },
+    "research/judge-score-fingerprinting-poc/2026-10-25-local-qwen/REPORT.md": {
+      "copy": "source/qwen-REPORT.md",
+      "sha256": "f9b63b6ee6387de69ffccd5b86f1c5c84394f8ae401a1a95bf8c45306a19ce94"
+    },
+    "research/judge-score-fingerprinting-poc/2026-10-25-local-qwen/INDEPENDENT-REVIEW.md": {
+      "copy": "source/qwen-INDEPENDENT-REVIEW.md",
+      "sha256": "e3be4c686327957b2b0ee203e34ec643fe14fb8a73879685f9cee3c2b37b15d2"
+    },
+    "research/judge-score-fingerprinting-poc/2026-10-25-local-qwen/artifact-hashes.json": {
+      "copy": "source/qwen-artifact-hashes.json",
+      "sha256": "07cc6abbf7d263bb22742ce17de349b737713c696c4dee1b16471e2ea4a7a1da"
+    },
+    "research/judge-score-fingerprinting-2026-10-25/research-inputs/experiment-brief.md": {
+      "copy": "source/experiment-brief.md",
+      "sha256": "8d5160195ec956cb28f90d5acee6d1f1f501fca3c0e51e4be3d5f30e1b5b8f4f"
+    }
+  },
+  "source_snapshots": {
+    "original-prompts.json": "59b1f2ab279544bb14db4c8e9350752eee19366b44ae036d837a26ab8e79a247",
+    "model-lock.json": "fb56beb313841e8990a013c0a58e34117e5100ccb374110742ffd501f913f19c",
+    "execution-lock.json": "80355172ed964ab1b60327b479812d2136bc926131943fa2697ac263c769aba5",
+    "baseline-INDEPENDENT-REVIEW.md": "d7b22b5caba6bf6a207e832b48fcace7fbbd99cb9d7bd8e04564eccfbb8b606d",
+    "experiment-brief.md": "8d5160195ec956cb28f90d5acee6d1f1f501fca3c0e51e4be3d5f30e1b5b8f4f",
+    "raw-responses.jsonl": "6dfba4d99fe8bbc64170b46eb19ef0163df9f5bfe23dc6c0b1fefc1bda38d9f2",
+    "inputs.json": "18585a9974c321801f282cbce849899a162d991fec74b4ed5c52321e712aebff",
+    "qwen-artifact-hashes.json": "07cc6abbf7d263bb22742ce17de349b737713c696c4dee1b16471e2ea4a7a1da",
+    "original-records.json": "8d3039cdd7d0233e1727a13ce5613cd09eff0154e23cad08deec755264f7bdc5",
+    "requirements.lock": "9ea6000a00f86a251581666db7e14f737cbd5648a60d538892e1ac359ec7c81f",
+    "baseline-scores.npz": "f687042177dd489061acdc06902318047e9bb9eb871c3fe252254ba7309d8204",
+    "baseline-artifact-checksums.sha256": "c1fa78ee50a2f07ab8d5dd84151cca3a613909221c43ab3e8429ee61ae1223b3",
+    "qwen-INDEPENDENT-REVIEW.md": "e3be4c686327957b2b0ee203e34ec643fe14fb8a73879685f9cee3c2b37b15d2",
+    "PROTOCOL.json": "39aa7452c173c5d4ecd07de61a54788bfb3d4ca1e1561a92741af8d574d38350",
+    "baseline-REPORT.md": "cbeb55e124dbeb7fa851b4e9b5ddcac3c096eb037c3e6fcadfba386a8778e01d",
+    "qwen-REPORT.md": "f9b63b6ee6387de69ffccd5b86f1c5c84394f8ae401a1a95bf8c45306a19ce94"
+  },
+  "plan_sha256": "fb14d813fa00f49cadc44898a49bcffadb95d886b4b1ba48bd623471f4c1d698",
+  "original_integrity_snapshot": "original-start-hashes.json",
+  "original_files_changed": 0,
+  "environment": "../2026-10-25-local-qwen/.venv; unchanged; no installation",
+  "new_inference_calls": 0,
+  "cumulative_local_calls": 251,
+  "hosted_usd": 0,
+  "bundle_excludes": [
+    "models",
+    "venvs",
+    "images",
+    "secrets",
+    "caches"
+  ],
+  "recorded_limitations": "Hashes are consistency evidence; no independent timestamp or packet/account audit."
+}

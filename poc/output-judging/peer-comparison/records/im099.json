@@ -1,0 +1,21 @@
+{
+  "key": "im099",
+  "prompt_id": "q16",
+  "prompt": "A small waterfall flowing over dark basalt into a misty forest pool.",
+  "model": "sd14",
+  "seed": 730163,
+  "timestamp": "2026-10-27T12:11:34.274270+00:00",
+  "status": "ok",
+  "latent_sha256": "258d0995ad1a1b3231626aba292923546df92578eaa98e812a618b4fe5530c34",
+  "raw": "raw/im099.png",
+  "normalized": "normalized/im099.png",
+  "raw_sha256": "ec55e8d0d2fd0e9738809c5a7ed0a79d4dffde54517242bbc1f931bce9846392",
+  "normalized_sha256": "ec55e8d0d2fd0e9738809c5a7ed0a79d4dffde54517242bbc1f931bce9846392",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.2937161922454834
+}

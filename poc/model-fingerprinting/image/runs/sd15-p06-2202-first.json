@@ -1,0 +1,24 @@
+{
+  "key": "sd15-p06-2202-first",
+  "label": "sd15",
+  "prompt_id": "p06",
+  "group": "libraries",
+  "split": "calibration",
+  "seed": 2202,
+  "tag": "first",
+  "instrumented": true,
+  "seconds": 1.2936043969821185,
+  "memory": {
+    "allocated": 3440806912,
+    "reserved": 4043309056
+  },
+  "latent_sha256": "c31f668521586854e5eb92e022a75b41c0c974f09bd8298054c0621f41759e01",
+  "image_sha256": "158fbdc16ea19d6a9ba4e3524bc21966ef9e3169f4dfc7aaf335be4c1825be95",
+  "nsfw": [
+    false
+  ],
+  "timestamp": "2026-10-25T15:36:50.456802+00:00",
+  "fingerprint": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/fingerprints/sd15-p06-2202-first.f32",
+  "image": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/images/sd15-p06-2202-first.png",
+  "write_seconds": 0.07609637593850493
+}

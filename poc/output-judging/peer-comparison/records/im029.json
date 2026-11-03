@@ -1,0 +1,19 @@
+{
+  "key": "im029",
+  "prompt_id": "q04",
+  "prompt": "A violin and bow resting in an open velvet lined case, still life oil painting.",
+  "model": "sdxl",
+  "seed": 730045,
+  "timestamp": "2026-10-27T12:16:16.481095+00:00",
+  "status": "ok",
+  "latent_sha256": "db4bbdc99c6b046f818218ffe3aa8da86773907e80ff5492ec821144ec953c61",
+  "raw": "raw/im029.png",
+  "normalized": "normalized/im029.png",
+  "raw_sha256": "c120ac8574491a4c097efc13eaee9d6c781d47958a46b5b0d4efd86ab1cfea6d",
+  "normalized_sha256": "a0e8531b67d0d4cd4005e5618f2db45cec506735362795006e61a1a44d2b8e90",
+  "black": false,
+  "nsfw": null,
+  "width": 1024,
+  "height": 1024,
+  "seconds": 7.138205528259277
+}

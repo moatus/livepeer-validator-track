@@ -1,0 +1,16 @@
+--- a/crates/server-fixture/server/src/lib.rs
++++ b/crates/server-fixture/server/src/lib.rs
+@@ -101,7 +101,13 @@
+ async fn bytes(
+     State(state): State<Arc<Mutex<AppState>>>,
+     Query(params): Query<HashMap<String, String>>,
++    request: Request<axum::body::Body>,
+ ) -> Result<Bytes, StatusCode> {
++    let mut body = request.into_body().into_data_stream();
++    while let Some(chunk) = futures::StreamExt::next(&mut body).await {
++        chunk.map_err(|_| StatusCode::BAD_REQUEST)?;
++    }
++
+     info!("Handling /bytes with params: {:?}", params);
+ 
+     let size = params

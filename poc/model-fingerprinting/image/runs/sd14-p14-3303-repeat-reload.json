@@ -1,0 +1,24 @@
+{
+  "key": "sd14-p14-3303-repeat-reload",
+  "label": "sd14",
+  "prompt_id": "p14",
+  "group": "birds",
+  "split": "evaluation",
+  "seed": 3303,
+  "tag": "repeat-reload",
+  "instrumented": true,
+  "seconds": 1.2877495610155165,
+  "memory": {
+    "allocated": 3440806912,
+    "reserved": 4043309056
+  },
+  "latent_sha256": "6bfbe808ab9fa7d4ef730f0af704217448407a90f1f7b0f4c5d23de7bb9d8d07",
+  "image_sha256": "f089481e15a641dc25131cabdfdf9ef2c9f4243ba0b5b2a0ae4dbad0d8ce12d9",
+  "nsfw": [
+    false
+  ],
+  "timestamp": "2026-10-25T15:40:38.360286+00:00",
+  "fingerprint": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/fingerprints/sd14-p14-3303-repeat-reload.f32",
+  "image": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/images/sd14-p14-3303-repeat-reload.png",
+  "write_seconds": 0.06992251705378294
+}

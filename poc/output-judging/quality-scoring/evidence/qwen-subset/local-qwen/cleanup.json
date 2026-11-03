@@ -1,0 +1,10 @@
+{
+  "inference_finished": true,
+  "gpu_process_exited": true,
+  "no_unrelated_processes_stopped": true,
+  "no_deletions": true,
+  "weights_retained": "model/; excluded from bundle",
+  "environment_retained": ".venv/; excluded from bundle",
+  "hosted_spend_usd": 0,
+  "finished_epoch": 1792976738.1500938
+}

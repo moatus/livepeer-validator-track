@@ -1,0 +1,60 @@
+{
+  "timestamp": "2026-10-25T17:47:43.599792+00:00",
+  "families": 15,
+  "calibration_families": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "heldout_families": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "seeds": {
+    "calibration": [
+      5101,
+      5202
+    ],
+    "heldout": [
+      6303,
+      6404
+    ]
+  },
+  "positive": "independent candidate for every ABC job",
+  "negative_pairs": [
+    [
+      "A",
+      "B",
+      "close"
+    ],
+    [
+      "B",
+      "A",
+      "close"
+    ],
+    [
+      "A",
+      "C",
+      "distant"
+    ],
+    [
+      "C",
+      "A",
+      "distant"
+    ]
+  ],
+  "reload": "all ABC, first seed, families 0,1,5,6; 12 jobs",
+  "threshold_rule": "scale = calibration reference feature population std floored 1e-6; distance = RMS standardized delta; tolerance=max(1e-5,10*max calibration positive including reload); proceed with 54 if all calibration negatives exceed tolerance; otherwise stop for one alternate decision before heldout",
+  "collision": "two actual generations with equal effective tokens; exclude from fitting",
+  "no_zero_tolerance": true
+}

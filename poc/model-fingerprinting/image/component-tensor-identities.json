@@ -1,0 +1,46 @@
+{
+  "records": {
+    "sd14": {
+      "safety_checker/model.fp16.safetensors": {
+        "tensor_content_sha256": "ef984e566a47871687756f80a4eafc239229a549ec192b37e8fe3e4bb931466e",
+        "parameters": 303981845
+      },
+      "text_encoder/model.fp16.safetensors": {
+        "tensor_content_sha256": "138c1b79ecaf770d1312918e08c1aa63abea669308d0e2c4bbb93bc5c09cf774",
+        "parameters": 123060557
+      },
+      "unet/diffusion_pytorch_model.fp16.safetensors": {
+        "tensor_content_sha256": "a7b312a206ce2c121427c42b043b177f306c7150b1ed96b8d454f13f4864cb98",
+        "parameters": 859520964
+      },
+      "vae/diffusion_pytorch_model.fp16.safetensors": {
+        "tensor_content_sha256": "2022514c89dd2815e996259a52fa989d9d9741824eca681e098b6b332443817c",
+        "parameters": 83653863
+      }
+    },
+    "sd15": {
+      "safety_checker/model.fp16.safetensors": {
+        "tensor_content_sha256": "ef984e566a47871687756f80a4eafc239229a549ec192b37e8fe3e4bb931466e",
+        "parameters": 303981845
+      },
+      "text_encoder/model.fp16.safetensors": {
+        "tensor_content_sha256": "138c1b79ecaf770d1312918e08c1aa63abea669308d0e2c4bbb93bc5c09cf774",
+        "parameters": 123060557
+      },
+      "unet/diffusion_pytorch_model.fp16.safetensors": {
+        "tensor_content_sha256": "87bf34a7ae4e7fcd630ba5be89d14f85007af3dcc81d32faff9d436ef9f6cc7d",
+        "parameters": 859520964
+      },
+      "vae/diffusion_pytorch_model.fp16.safetensors": {
+        "tensor_content_sha256": "2022514c89dd2815e996259a52fa989d9d9741824eca681e098b6b332443817c",
+        "parameters": 83653863
+      }
+    }
+  },
+  "matches": {
+    "safety_checker/model.fp16.safetensors": true,
+    "text_encoder/model.fp16.safetensors": true,
+    "unet/diffusion_pytorch_model.fp16.safetensors": false,
+    "vae/diffusion_pytorch_model.fp16.safetensors": true
+  }
+}

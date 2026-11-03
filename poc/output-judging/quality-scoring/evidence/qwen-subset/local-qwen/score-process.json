@@ -1,0 +1,7 @@
+{
+  "pid": 2518697,
+  "process_started_epoch": 1792975997.23,
+  "post_import_started_epoch": 1792976190.567348,
+  "runtime_import_seconds": 193.33734798431396,
+  "source": "Linux /proc pid stat starttime and /proc/stat btime"
+}

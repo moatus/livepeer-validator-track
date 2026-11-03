@@ -19,4 +19,6 @@ Use bounded fixtures or existing authorized services. Do not upload credentials,
 
 - [EX-11: validator choices and conditional seat control](m2/validator-scoring/README.md) — 16 conditional action comparisons, 12 named controls and 32 exact-wei seat rows, through the unchanged shared ledger; symbolic effort, overlapping interests and participation thresholds; frozen P1 checkpoint reproduction. Evidence custody/access and acquisition/control costs remain unknown.
 
-- [M2 consolidation: prospective delegation and rule-reading contract](m2/consolidation/README.md) — fixed source/assumption boundary; outcomes pending.
+- [M2 consolidation: delegation and rule readings](m2/consolidation/README.md) — bounded comparisons and the accepted M2 handoff.
+
+- [M3 economic studies](m3/README.md) — exploratory profitability-window and sensitivity calculations supporting the workbench’s mechanism evaluation.

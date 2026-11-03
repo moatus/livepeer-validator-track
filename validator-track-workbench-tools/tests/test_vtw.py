@@ -5,8 +5,8 @@ Stage rule: reserved vocabulary is allowed only on a
 non-system record whose stage field is exactly "M3", "M4" or "M5".
 "m3", "M3x", "M6" and any padded value such as " M3" are protected
 (unrecognized). A missing, empty or whitespace-only stage is protected
-(no stage). Shared pages, step pages and system tiddlers stay protected
-even if their stage field is M3 or later.
+(no stage). Shared pages, M1/M2 step pages and system tiddlers stay protected
+even if their stage field is M3 or later. Later step titles must match their stage.
 
 Tests copy the main workbench into a temp directory and lint in memory.
 They do not write the main workbench.
@@ -152,6 +152,15 @@ class ScopeAndDependsOn(unittest.TestCase):
         store = self.edited({"M1.1": {"stage": "M5"}}, ("M1.1",))
         errs = self.scope_errors(store, "M1.1")
         self.assertEqual(errs, ["M1.1: reserved term in step page: 'expansion'"])
+
+    def test_later_step_requires_matching_stage(self):
+        for title, stage, allowed in (("M3.1", "M3", True), ("M4.2", "M4", True),
+                                      ("M5.1", "M5", True), ("M3.1", "M2", False),
+                                      ("M3.1", "M4", False), ("M3.1", " M3", False),
+                                      ("M3.1", "", False), ("M6.1", "M6", False)):
+            with self.subTest(title=title, stage=stage):
+                store = self.edited({title: {"stage": stage, "tags": "Task"}}, (title,))
+                self.assertEqual(bool(self.scope_errors(store, title)), not allowed)
 
     def test_shared_view_and_context_pages(self):
         cases = (

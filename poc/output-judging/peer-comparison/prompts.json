@@ -1,0 +1,562 @@
+[
+  {
+    "id": "q00",
+    "split": "calibration",
+    "family": "observatory",
+    "prompt": "A watercolor of a mountain observatory beneath a violet evening sky.",
+    "seeds": [
+      730000,
+      730001,
+      730002,
+      730003,
+      730004,
+      730005
+    ]
+  },
+  {
+    "id": "q01",
+    "split": "calibration",
+    "family": "teapot",
+    "prompt": "A porcelain teapot decorated with tiny blue leaves on a linen tablecloth, product photography.",
+    "seeds": [
+      730010,
+      730011,
+      730012,
+      730013,
+      730014,
+      730015
+    ]
+  },
+  {
+    "id": "q02",
+    "split": "calibration",
+    "family": "otter",
+    "prompt": "A river otter resting on a smooth rock beside reeds, wildlife photograph.",
+    "seeds": [
+      730020,
+      730021,
+      730022,
+      730023,
+      730024,
+      730025
+    ]
+  },
+  {
+    "id": "q03",
+    "split": "calibration",
+    "family": "library",
+    "prompt": "An old library aisle with a rolling wooden ladder and warm lamps, architectural photograph.",
+    "seeds": [
+      730030,
+      730031,
+      730032,
+      730033,
+      730034,
+      730035
+    ]
+  },
+  {
+    "id": "q04",
+    "split": "calibration",
+    "family": "violin",
+    "prompt": "A violin and bow resting in an open velvet lined case, still life oil painting.",
+    "seeds": [
+      730040,
+      730041,
+      730042,
+      730043,
+      730044,
+      730045
+    ]
+  },
+  {
+    "id": "q05",
+    "split": "calibration",
+    "family": "canyon",
+    "prompt": "A winding river through a sandstone canyon viewed from above at sunrise.",
+    "seeds": [
+      730050,
+      730051,
+      730052,
+      730053,
+      730054,
+      730055
+    ]
+  },
+  {
+    "id": "q06",
+    "split": "calibration",
+    "family": "mushroom",
+    "prompt": "A macro photograph of a small mushroom under fallen autumn leaves.",
+    "seeds": [
+      730060,
+      730061,
+      730062,
+      730063,
+      730064,
+      730065
+    ]
+  },
+  {
+    "id": "q07",
+    "split": "calibration",
+    "family": "astronaut",
+    "prompt": "A whimsical ceramic astronaut figurine tending a miniature garden, studio photo.",
+    "seeds": [
+      730070,
+      730071,
+      730072,
+      730073,
+      730074,
+      730075
+    ]
+  },
+  {
+    "id": "q08",
+    "split": "calibration",
+    "family": "tram",
+    "prompt": "A vintage turquoise tram crossing a cobbled square on a rainy morning.",
+    "seeds": [
+      730080,
+      730081,
+      730082,
+      730083,
+      730084,
+      730085
+    ]
+  },
+  {
+    "id": "q09",
+    "split": "calibration",
+    "family": "pears",
+    "prompt": "Three ripe pears in a shallow ceramic bowl, charcoal and pastel drawing.",
+    "seeds": [
+      730090,
+      730091,
+      730092,
+      730093,
+      730094,
+      730095
+    ]
+  },
+  {
+    "id": "q10",
+    "split": "calibration",
+    "family": "telescope",
+    "prompt": "A brass telescope beside a round attic window, detailed pencil illustration.",
+    "seeds": [
+      730100,
+      730101,
+      730102,
+      730103,
+      730104,
+      730105
+    ]
+  },
+  {
+    "id": "q11",
+    "split": "calibration",
+    "family": "lagoon",
+    "prompt": "A tropical lagoon with a wooden footbridge and distant limestone cliffs, travel photograph.",
+    "seeds": [
+      730110,
+      730111,
+      730112,
+      730113,
+      730114,
+      730115
+    ]
+  },
+  {
+    "id": "q12",
+    "split": "calibration",
+    "family": "weaving",
+    "prompt": "Close view of colorful wool being woven on a hand loom, documentary photograph.",
+    "seeds": [
+      730120,
+      730121,
+      730122,
+      730123,
+      730124,
+      730125
+    ]
+  },
+  {
+    "id": "q13",
+    "split": "calibration",
+    "family": "fox",
+    "prompt": "A fox curled up beneath a snow covered pine tree, storybook illustration.",
+    "seeds": [
+      730130,
+      730131,
+      730132,
+      730133,
+      730134,
+      730135
+    ]
+  },
+  {
+    "id": "q14",
+    "split": "calibration",
+    "family": "greenhouse",
+    "prompt": "A sunlit greenhouse filled with hanging ferns and a stone path.",
+    "seeds": [
+      730140,
+      730141,
+      730142,
+      730143,
+      730144,
+      730145
+    ]
+  },
+  {
+    "id": "q15",
+    "split": "calibration",
+    "family": "camera",
+    "prompt": "A vintage film camera beside a folded map on a wooden desk, studio photograph.",
+    "seeds": [
+      730150,
+      730151,
+      730152,
+      730153,
+      730154,
+      730155
+    ]
+  },
+  {
+    "id": "q16",
+    "split": "calibration",
+    "family": "waterfall",
+    "prompt": "A small waterfall flowing over dark basalt into a misty forest pool.",
+    "seeds": [
+      730160,
+      730161,
+      730162,
+      730163,
+      730164,
+      730165
+    ]
+  },
+  {
+    "id": "q17",
+    "split": "calibration",
+    "family": "origami",
+    "prompt": "An origami crane made of patterned orange paper on a black surface, photograph.",
+    "seeds": [
+      730170,
+      730171,
+      730172,
+      730173,
+      730174,
+      730175
+    ]
+  },
+  {
+    "id": "q18",
+    "split": "calibration",
+    "family": "harp",
+    "prompt": "A golden harp in a quiet marble room lit by a high window, oil painting.",
+    "seeds": [
+      730180,
+      730181,
+      730182,
+      730183,
+      730184,
+      730185
+    ]
+  },
+  {
+    "id": "q19",
+    "split": "calibration",
+    "family": "radish",
+    "prompt": "Fresh radishes with leafy tops on a kitchen cutting board, food photography.",
+    "seeds": [
+      730190,
+      730191,
+      730192,
+      730193,
+      730194,
+      730195
+    ]
+  },
+  {
+    "id": "q20",
+    "split": "heldout",
+    "family": "lighthouse",
+    "prompt": "A striped lighthouse on a rocky headland during a calm pink sunset, watercolor.",
+    "seeds": [
+      730200,
+      730201,
+      730202,
+      730203,
+      730204,
+      730205
+    ]
+  },
+  {
+    "id": "q21",
+    "split": "heldout",
+    "family": "terrarium",
+    "prompt": "A glass terrarium with moss and smooth pebbles on a bookshelf, product photograph.",
+    "seeds": [
+      730210,
+      730211,
+      730212,
+      730213,
+      730214,
+      730215
+    ]
+  },
+  {
+    "id": "q22",
+    "split": "heldout",
+    "family": "badger",
+    "prompt": "A badger walking along a woodland path in soft morning light, wildlife photograph.",
+    "seeds": [
+      730220,
+      730221,
+      730222,
+      730223,
+      730224,
+      730225
+    ]
+  },
+  {
+    "id": "q23",
+    "split": "heldout",
+    "family": "diner",
+    "prompt": "An empty retro diner with mint booths and a tiled floor, interior photograph.",
+    "seeds": [
+      730230,
+      730231,
+      730232,
+      730233,
+      730234,
+      730235
+    ]
+  },
+  {
+    "id": "q24",
+    "split": "heldout",
+    "family": "accordion",
+    "prompt": "A red accordion on a wooden chair beside a curtain, still life painting.",
+    "seeds": [
+      730240,
+      730241,
+      730242,
+      730243,
+      730244,
+      730245
+    ]
+  },
+  {
+    "id": "q25",
+    "split": "heldout",
+    "family": "dunes",
+    "prompt": "Wind sculpted sand dunes with a single curving trail at dawn, landscape photograph.",
+    "seeds": [
+      730250,
+      730251,
+      730252,
+      730253,
+      730254,
+      730255
+    ]
+  },
+  {
+    "id": "q26",
+    "split": "heldout",
+    "family": "dragonfly",
+    "prompt": "A macro photograph of a dragonfly perched on a blade of grass covered in dew.",
+    "seeds": [
+      730260,
+      730261,
+      730262,
+      730263,
+      730264,
+      730265
+    ]
+  },
+  {
+    "id": "q27",
+    "split": "heldout",
+    "family": "clayhouse",
+    "prompt": "A miniature clay cottage with a moss roof, handcrafted stop motion style.",
+    "seeds": [
+      730270,
+      730271,
+      730272,
+      730273,
+      730274,
+      730275
+    ]
+  },
+  {
+    "id": "q28",
+    "split": "heldout",
+    "family": "ferry",
+    "prompt": "A small passenger ferry approaching a quiet misty harbor, documentary photograph.",
+    "seeds": [
+      730280,
+      730281,
+      730282,
+      730283,
+      730284,
+      730285
+    ]
+  },
+  {
+    "id": "q29",
+    "split": "heldout",
+    "family": "plums",
+    "prompt": "Purple plums scattered on cream fabric, soft pastel still life.",
+    "seeds": [
+      730290,
+      730291,
+      730292,
+      730293,
+      730294,
+      730295
+    ]
+  },
+  {
+    "id": "q30",
+    "split": "heldout",
+    "family": "compass",
+    "prompt": "An antique compass on a weathered sailing chart, detailed ink illustration.",
+    "seeds": [
+      730300,
+      730301,
+      730302,
+      730303,
+      730304,
+      730305
+    ]
+  },
+  {
+    "id": "q31",
+    "split": "heldout",
+    "family": "glacier",
+    "prompt": "A blue glacier meeting a still alpine lake beneath overcast skies, photograph.",
+    "seeds": [
+      730310,
+      730311,
+      730312,
+      730313,
+      730314,
+      730315
+    ]
+  },
+  {
+    "id": "q32",
+    "split": "heldout",
+    "family": "pottery",
+    "prompt": "Hands shaping a clay bowl on a pottery wheel, documentary photograph.",
+    "seeds": [
+      730320,
+      730321,
+      730322,
+      730323,
+      730324,
+      730325
+    ]
+  },
+  {
+    "id": "q33",
+    "split": "heldout",
+    "family": "hedgehog",
+    "prompt": "A hedgehog nestled beside fallen apples in a garden, storybook illustration.",
+    "seeds": [
+      730330,
+      730331,
+      730332,
+      730333,
+      730334,
+      730335
+    ]
+  },
+  {
+    "id": "q34",
+    "split": "heldout",
+    "family": "courtyard",
+    "prompt": "A quiet courtyard with tiled arches and a central stone fountain, architectural photograph.",
+    "seeds": [
+      730340,
+      730341,
+      730342,
+      730343,
+      730344,
+      730345
+    ]
+  },
+  {
+    "id": "q35",
+    "split": "heldout",
+    "family": "typewriter",
+    "prompt": "A manual typewriter beside a cup of tea on an oak desk, studio photograph.",
+    "seeds": [
+      730350,
+      730351,
+      730352,
+      730353,
+      730354,
+      730355
+    ]
+  },
+  {
+    "id": "q36",
+    "split": "heldout",
+    "family": "cavern",
+    "prompt": "A limestone cavern with a clear underground pool, dramatic landscape photograph.",
+    "seeds": [
+      730360,
+      730361,
+      730362,
+      730363,
+      730364,
+      730365
+    ]
+  },
+  {
+    "id": "q37",
+    "split": "heldout",
+    "family": "kite",
+    "prompt": "A diamond shaped patchwork kite above a grassy hill, paper collage illustration.",
+    "seeds": [
+      730370,
+      730371,
+      730372,
+      730373,
+      730374,
+      730375
+    ]
+  },
+  {
+    "id": "q38",
+    "split": "heldout",
+    "family": "cello",
+    "prompt": "A cello resting beside a tall arched window in an empty rehearsal room, oil painting.",
+    "seeds": [
+      730380,
+      730381,
+      730382,
+      730383,
+      730384,
+      730385
+    ]
+  },
+  {
+    "id": "q39",
+    "split": "heldout",
+    "family": "artichoke",
+    "prompt": "An artichoke and a halved lemon on a slate board, food photography.",
+    "seeds": [
+      730390,
+      730391,
+      730392,
+      730393,
+      730394,
+      730395
+    ]
+  }
+]

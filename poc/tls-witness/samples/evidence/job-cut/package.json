@@ -1,0 +1,50 @@
+{
+  "created_at": "2026-11-02T12:22:36.886Z",
+  "credential_cleanup": [
+    {
+      "outcome": {
+        "disable_accepted": true,
+        "state": "dead_confirmed"
+      },
+      "step": 1
+    },
+    {
+      "outcome": {
+        "disable_accepted": true,
+        "state": "dead_confirmed"
+      },
+      "step": 2
+    }
+  ],
+  "deadline_seconds": 90,
+  "delivery": {
+    "cancelled": false,
+    "client_disconnected": false,
+    "complete": false,
+    "first_chunk_ms": null,
+    "rule": "body",
+    "socket_accepted_body_bytes": 0,
+    "socket_accepted_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "total_ms": null
+  },
+  "kind": "job",
+  "reason": "job step 2 unverified: 1 response(s) delivered; the connection had not finished after 255 bytes received: witnessed TLS session failed: internal error caused by: execution error: (Stream a3a0e28a/75d539f6b8252b4e): connection is closed; no automatic repeat",
+  "receipt_id": "ea86ae1500974a965c279f82bdb5892c",
+  "state": "unverified",
+  "terminal_at": "2026-11-02T12:22:41.558Z",
+  "v": 1,
+  "provenance": {
+    "run": "runs/phase-28/fixture-20261102T122224Z",
+    "build_identity": {
+      "source_commit": "18436d4448635cf276e321fd9a65f1a18d8cc308",
+      "binary_sha256": "ff954f808c7785178e901ac57f583bd6e633f84f07eb6c67ab98ae8d398909c9",
+      "cargo_lock_sha256": "fc9f401d24355f4ad44e7fed40e079db1bb0a867b33de13421dba86b781466a0",
+      "tlsn_tag": "v0.1.0-alpha.15",
+      "allowed_diffs": [
+        "patch/tlsn-mux-stream-cap.diff",
+        "patch/tlsn-session-frame-limit.diff"
+      ],
+      "new_crates": 0
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "checks": {
+    "protocol_prompt_hashes": true,
+    "same_frozen_protocol_all_generator_runs": true,
+    "whole_family_split_and_disjoint_seeds": true,
+    "no_generator_names_in_prompt_text": true,
+    "stability_families_disjoint_by_manifest": true,
+    "image_hashes_normalization_no_metadata_no_duplicate_usable_images": true,
+    "matched_sd1x_noise": true,
+    "explicit_feature_allowlist_and_independent_pixel_embedding_checks": true,
+    "offline_result_recomputation_and_frozen_fit": true,
+    "no_hosted_calls_or_spend": true,
+    "scorer_code_lock_before_scoring": true,
+    "terminal_artifact_hashes": true
+  },
+  "scheduled_images": 216,
+  "usable_images": 215,
+  "generation_failures": [],
+  "limitations": [
+    "Semantic-family separation depends on authored manifest; names alone do not prove conceptual independence",
+    "Feature checks enforce explicit numeric allowlist and metadata removal, not absence of all visual provenance clues",
+    "Saved PickScore embeddings share the preference encoder and are not an independent judge"
+  ]
+}

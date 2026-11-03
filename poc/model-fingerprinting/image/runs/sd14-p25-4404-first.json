@@ -1,0 +1,24 @@
+{
+  "key": "sd14-p25-4404-first",
+  "label": "sd14",
+  "prompt_id": "p25",
+  "group": "dogs",
+  "split": "evaluation",
+  "seed": 4404,
+  "tag": "first",
+  "instrumented": true,
+  "seconds": 1.301218275912106,
+  "memory": {
+    "allocated": 3440806912,
+    "reserved": 4043309056
+  },
+  "latent_sha256": "7b90c0f5e4ec57a8a477e294537a26dea105fb59883ec0c9d292f78fb6729f0d",
+  "image_sha256": "386d1a0815ea0ed50e82e433490624ea15a09036caff37e7975d9924223be555",
+  "nsfw": [
+    false
+  ],
+  "timestamp": "2026-10-25T15:37:48.818807+00:00",
+  "fingerprint": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/fingerprints/sd14-p25-4404-first.f32",
+  "image": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/images/sd14-p25-4404-first.png",
+  "write_seconds": 0.057693483075127006
+}

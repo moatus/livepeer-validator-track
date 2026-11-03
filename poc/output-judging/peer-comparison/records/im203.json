@@ -1,0 +1,19 @@
+{
+  "key": "im203",
+  "prompt_id": "q33",
+  "prompt": "A hedgehog nestled beside fallen apples in a garden, storybook illustration.",
+  "model": "sdxl",
+  "seed": 730335,
+  "timestamp": "2026-10-27T12:19:48.476804+00:00",
+  "status": "ok",
+  "latent_sha256": "48c17f589d43d2e521409a55862f132c4bc788a94c7ae1557c0a072bbdc9adde",
+  "raw": "raw/im203.png",
+  "normalized": "normalized/im203.png",
+  "raw_sha256": "8810c68fa5de5cf691e9f3d7680a9c9f112ad74d3be1c6d75f53f8dc2a8d4faf",
+  "normalized_sha256": "1671f24865d6de27181ad92cd53be964e03fa9ed2ae575481984c179abe0c156",
+  "black": false,
+  "nsfw": null,
+  "width": 1024,
+  "height": 1024,
+  "seconds": 8.337387800216675
+}

@@ -1,0 +1,5 @@
+[
+  {"stage":"first sd14 smoke load provenance logging","outcome":"failed before generation","error":"ValueError: dictionary update sequence element #0 has length 11; 2 is required","cause":"dict(Transformers PretrainedConfig) is not supported","fix":"serialize Transformers config using to_dict(); preserve dict() for Diffusers FrozenDict","protocol_changed":false,"log_note":"successful retry overwrote smoke-sd14.log; original failure is recorded here and in the orchestration transcript"},
+  {"stage":"environment inventory","outcome":"system Python had no torch; private uv venv installed successfully","protocol_changed":false},
+  {"stage":"environment lock inventory","outcome":"uv-created venv has no pip module; used uv pip freeze instead","protocol_changed":false}
+]

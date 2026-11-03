@@ -1,0 +1,24 @@
+{
+  "key": "sd14-p04-2202-first",
+  "label": "sd14",
+  "prompt_id": "p04",
+  "group": "cats",
+  "split": "calibration",
+  "seed": 2202,
+  "tag": "first",
+  "instrumented": true,
+  "seconds": 1.2859550518915057,
+  "memory": {
+    "allocated": 3440806912,
+    "reserved": 4043309056
+  },
+  "latent_sha256": "c31f668521586854e5eb92e022a75b41c0c974f09bd8298054c0621f41759e01",
+  "image_sha256": "c813911ea06519a25b91cc35f6994e02f9b7084b9a7265f36c5017f749423c4a",
+  "nsfw": [
+    false
+  ],
+  "timestamp": "2026-10-25T15:36:10.284272+00:00",
+  "fingerprint": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/fingerprints/sd14-p04-2202-first.f32",
+  "image": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/images/sd14-p04-2202-first.png",
+  "write_seconds": 0.0613386370241642
+}

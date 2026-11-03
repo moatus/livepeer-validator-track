@@ -1,6 +1,6 @@
 # M2 consolidation — finite delegation and source readings (EX-12)
 
-Status: reviewed and accepted on 2026-10-27. This package completes the bounded inquiries for studies 5–8; the workbench records the complete M2 assessment and handoff. Research acceptance does not adopt protocol policy.
+Status: reviewed and accepted. This package completes the bounded inquiries for studies 5–8; the workbench records the complete M2 assessment and handoff. Research acceptance does not adopt protocol policy.
 
 The accepted prospective [assumptions](assumptions.md) and [cases](cases.json) are preserved byte-for-byte from foundation `c421f028183c54c00f1f169e39d7e18fd8429fe0`. The [input manifest](input-manifest.json) retains the 103 source/contract pins used for reproduction. The original deliverable-register pin and its later publication identity are preserved separately as historical reporting metadata; that register supplies no calculation input and changes as research is accepted. Their “no computed outcomes” / `no_outcomes` declarations describe the prospective phase when the comparison was frozen. They are historical contract declarations, not assertions that this later package lacks results. The checker validates the source/contract pins; current acceptance status is recorded in the deliverable register. No source, selection, clock or rule pin was changed to obtain an outcome.
 
@@ -72,4 +72,4 @@ python3 experiments/m2/consolidation/verify.py
 
 ## Complete M2 assessment
 
-[Workbench M2.3](../../../validator-track-workbench.html#M2.3) contains the complete assessment and M3 handoff, including retained strengths and concrete M4.1/M4.2 evidence destinations. Its linked critical-question records contain the source/result chains. The study-specific result text above retains its calculation boundary. The synthesis and shared network snapshot were reviewed and accepted on 2026-10-27. Exact reviewed versions are recorded in the [deliverable register](../../../deliverables/README.md). No protocol policy is adopted.
+[Workbench M2.3](../../../validator-track-workbench.html#M2.3) contains the complete assessment and M3 handoff, including retained strengths and concrete M4.1/M4.2 evidence destinations. Its linked critical-question records contain the source/result chains. The study-specific result text above retains its calculation boundary. The synthesis and shared network snapshot were reviewed and accepted. Exact reviewed versions are recorded in the [deliverable register](../../../deliverables/README.md). No protocol policy is adopted.

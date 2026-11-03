@@ -1,0 +1,21 @@
+{
+  "key": "im006",
+  "prompt_id": "q01",
+  "prompt": "A porcelain teapot decorated with tiny blue leaves on a linen tablecloth, product photography.",
+  "model": "sd14",
+  "seed": 730010,
+  "timestamp": "2026-10-27T12:10:09.037586+00:00",
+  "status": "ok",
+  "latent_sha256": "227b79a14de24e5f4b072d80d248f3e2b4c3b239041bf74a26ee05051b40f795",
+  "raw": "raw/im006.png",
+  "normalized": "normalized/im006.png",
+  "raw_sha256": "2f76af3a5f7cc8a3a6f5a178e9dedefc57a3e9d9c477c0ef1fd67f6951553d4c",
+  "normalized_sha256": "2f76af3a5f7cc8a3a6f5a178e9dedefc57a3e9d9c477c0ef1fd67f6951553d4c",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.339897632598877
+}

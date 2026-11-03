@@ -1,0 +1,90 @@
+{
+  "experiment": "IMG-002",
+  "frozen_at": "2026-10-25T15:32:51.775782+00:00",
+  "steps": 25,
+  "guidance_scale": 7.5,
+  "height": 512,
+  "width": 512,
+  "negative_prompt": "",
+  "precision": "float16",
+  "batch_size": 1,
+  "observed_steps": [
+    0,
+    12,
+    24
+  ],
+  "layers": [
+    "down_blocks.1.resnets.1",
+    "mid_block.resnets.1",
+    "up_blocks.2.resnets.1"
+  ],
+  "branch": "conditional: CFG batch index 1; unconditional index 0 excluded",
+  "features": [
+    "mean",
+    "std_population",
+    "mean_absolute",
+    "rms",
+    "standardized_third_moment",
+    "standardized_fourth_moment"
+  ],
+  "feature_count": 54,
+  "fingerprint_bytes": 216,
+  "scheduler": {
+    "_class_name": "DDIMScheduler",
+    "num_train_timesteps": 1000,
+    "beta_start": 0.00085,
+    "beta_end": 0.012,
+    "beta_schedule": "scaled_linear",
+    "clip_sample": false,
+    "set_alpha_to_one": false,
+    "steps_offset": 1,
+    "prediction_type": "epsilon",
+    "timestep_spacing": "leading",
+    "rescale_betas_zero_snr": false
+  },
+  "eta": 0.0,
+  "classifier": "nearest centroid; pooled within-class population std floor 1e-6; no selection",
+  "repeat_jobs": [
+    {
+      "id": "p00",
+      "seed": 1101
+    },
+    {
+      "id": "p02",
+      "seed": 1101
+    },
+    {
+      "id": "p04",
+      "seed": 1101
+    },
+    {
+      "id": "p06",
+      "seed": 1101
+    },
+    {
+      "id": "p08",
+      "seed": 1101
+    },
+    {
+      "id": "p10",
+      "seed": 3303
+    },
+    {
+      "id": "p14",
+      "seed": 3303
+    },
+    {
+      "id": "p18",
+      "seed": 3303
+    },
+    {
+      "id": "p22",
+      "seed": 3303
+    },
+    {
+      "id": "p28",
+      "seed": 3303
+    }
+  ],
+  "timing_jobs": "same 10 balanced prompt/seed jobs; alternate baseline/instrumented order per pair; one warmup per load"
+}

@@ -1,0 +1,21 @@
+{
+  "key": "im192",
+  "prompt_id": "q32",
+  "prompt": "Hands shaping a clay bowl on a pottery wheel, documentary photograph.",
+  "model": "sd14",
+  "seed": 730320,
+  "timestamp": "2026-10-27T12:12:58.367589+00:00",
+  "status": "ok",
+  "latent_sha256": "f0b8ffc6372695e7f8830d593d37e93fb2cf0c27c7a7fd8ecd777f4351c49486",
+  "raw": "raw/im192.png",
+  "normalized": "normalized/im192.png",
+  "raw_sha256": "6fd956d3d303f6e5a5c3ea9eccbe731bf9714b3d01fa46c89bffaf0321ba2ea8",
+  "normalized_sha256": "6fd956d3d303f6e5a5c3ea9eccbe731bf9714b3d01fa46c89bffaf0321ba2ea8",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.5438439846038818
+}

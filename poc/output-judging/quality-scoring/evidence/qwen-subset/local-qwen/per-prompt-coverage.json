@@ -1,0 +1,506 @@
+{
+  "p00": {
+    "family": "toy_trains",
+    "split": "train",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sd15": {
+        "attempted": 3,
+        "parsed": 1,
+        "failed": 2
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 1,
+        "failed": 2
+      }
+    }
+  },
+  "p01": {
+    "family": "umbrellas",
+    "split": "train",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sd15": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      }
+    }
+  },
+  "p02": {
+    "family": "bakery",
+    "split": "train",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sd15": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      }
+    }
+  },
+  "p03": {
+    "family": "bicycles",
+    "split": "train",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sd15": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      }
+    }
+  },
+  "p04": {
+    "family": "fishbowl",
+    "split": "train",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 1,
+        "failed": 2
+      },
+      "sd15": {
+        "attempted": 3,
+        "parsed": 1,
+        "failed": 2
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 1,
+        "failed": 2
+      }
+    }
+  },
+  "p05": {
+    "family": "robot",
+    "split": "train",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 2,
+        "failed": 1
+      },
+      "sd15": {
+        "attempted": 3,
+        "parsed": 2,
+        "failed": 1
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      }
+    }
+  },
+  "p06": {
+    "family": "traffic_sign",
+    "split": "train",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sd15": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      }
+    }
+  },
+  "p07": {
+    "family": "laundry",
+    "split": "train",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 2,
+        "failed": 1
+      },
+      "sd15": {
+        "attempted": 3,
+        "parsed": 2,
+        "failed": 1
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      }
+    }
+  },
+  "p08": {
+    "family": "cactus",
+    "split": "train",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sd15": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      }
+    }
+  },
+  "p09": {
+    "family": "sailboats",
+    "split": "train",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sd15": {
+        "attempted": 3,
+        "parsed": 1,
+        "failed": 2
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      }
+    }
+  },
+  "p10": {
+    "family": "clock",
+    "split": "train",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sd15": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      }
+    }
+  },
+  "p11": {
+    "family": "shoes",
+    "split": "train",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sd15": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      }
+    }
+  },
+  "p12": {
+    "family": "chess",
+    "split": "calibration",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sd15": {
+        "attempted": 3,
+        "parsed": 1,
+        "failed": 2
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      }
+    }
+  },
+  "p13": {
+    "family": "medicine",
+    "split": "calibration",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sd15": {
+        "attempted": 3,
+        "parsed": 2,
+        "failed": 1
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      }
+    }
+  },
+  "p14": {
+    "family": "donuts",
+    "split": "calibration",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sd15": {
+        "attempted": 2,
+        "parsed": 0,
+        "failed": 2
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      }
+    }
+  },
+  "p15": {
+    "family": "bus",
+    "split": "calibration",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sd15": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      }
+    }
+  },
+  "p16": {
+    "family": "suitcase",
+    "split": "calibration",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 1,
+        "failed": 2
+      },
+      "sd15": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      }
+    }
+  },
+  "p17": {
+    "family": "jellyfish",
+    "split": "calibration",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 3,
+        "failed": 0
+      },
+      "sd15": {
+        "attempted": 3,
+        "parsed": 2,
+        "failed": 1
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 1,
+        "failed": 2
+      }
+    }
+  },
+  "p18": {
+    "family": "windmills",
+    "split": "heldout",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 1,
+        "failed": 2
+      },
+      "sd15": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      }
+    }
+  },
+  "p19": {
+    "family": "mailbox",
+    "split": "heldout",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sd15": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      }
+    }
+  },
+  "p20": {
+    "family": "piano",
+    "split": "heldout",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sd15": {
+        "attempted": 3,
+        "parsed": 1,
+        "failed": 2
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 1,
+        "failed": 2
+      }
+    }
+  },
+  "p21": {
+    "family": "fire_engine",
+    "split": "heldout",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sd15": {
+        "attempted": 3,
+        "parsed": 1,
+        "failed": 2
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      }
+    }
+  },
+  "p22": {
+    "family": "penguins",
+    "split": "heldout",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sd15": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      }
+    }
+  },
+  "p23": {
+    "family": "toolbox",
+    "split": "heldout",
+    "by_class": {
+      "sd14": {
+        "attempted": 3,
+        "parsed": 0,
+        "failed": 3
+      },
+      "sd15": {
+        "attempted": 3,
+        "parsed": 1,
+        "failed": 2
+      },
+      "sdxl": {
+        "attempted": 3,
+        "parsed": 1,
+        "failed": 2
+      }
+    }
+  }
+}

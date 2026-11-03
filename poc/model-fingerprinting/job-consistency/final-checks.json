@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-10-25T17:56:49.360230+00:00",
+  "main_scorecards_expected": true,
+  "all_controls_expected": true,
+  "audited_decisions_equal": true,
+  "exported_code_matches_frozen_source": true,
+  "bundle_exactly_five_files": true,
+  "no_remaining_generation_processes": true
+}

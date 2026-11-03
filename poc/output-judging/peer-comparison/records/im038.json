@@ -1,0 +1,21 @@
+{
+  "key": "im038",
+  "prompt_id": "q06",
+  "prompt": "A macro photograph of a small mushroom under fallen autumn leaves.",
+  "model": "sd14",
+  "seed": 730062,
+  "timestamp": "2026-10-27T12:10:38.520885+00:00",
+  "status": "ok",
+  "latent_sha256": "b5bc981d1d9fbd74b9fd4b29b10f240b50b0f967ea359ae0d637630278e16fb5",
+  "raw": "raw/im038.png",
+  "normalized": "normalized/im038.png",
+  "raw_sha256": "0ef30ca657f8760a2aa301c1e324f7900c799b02651e3dfe7ff9044a6d1d0a31",
+  "normalized_sha256": "0ef30ca657f8760a2aa301c1e324f7900c799b02651e3dfe7ff9044a6d1d0a31",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.391979455947876
+}

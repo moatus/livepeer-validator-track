@@ -1,0 +1,17 @@
+{
+  "issuer": "independently-pinned-test-upstream",
+  "payload": {
+    "version": "receipt005-v1",
+    "job_id": "honest_sse",
+    "challenge": "d465c35de9a748b619f9c136abb721e4744b9884ab9d16ae4714c59cfaacf610",
+    "provider": "mock-expensive-provider",
+    "canonical_model": "mock-model",
+    "model_version": "frozen-v1",
+    "request_sha256": "1fc9192a097a40979a10120ace5ed499fc550c68fd6dd24816b31eef1f5a2188",
+    "response_sha256": "5e6f0b7068eefaef0ea0134e1f8e6f4476e44851dbe2a9df5b45cca444614b4a",
+    "terminal_status": "complete",
+    "format": "sse",
+    "assets": {}
+  },
+  "signature": "60072f114769908ed8a48702ecb793088df7a6acc59c3f654f142374a664c044da4d8d8e8208d1138c3d704ad4989dd3d0b00bc2d40b898670a7d23e5bfa4407"
+}

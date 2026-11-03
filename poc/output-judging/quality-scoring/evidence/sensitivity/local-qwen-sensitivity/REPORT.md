@@ -1,0 +1,112 @@
+# JUDGE-004: bounded offline Qwen sensitivity
+
+**Conclusion: weak, inconsistent exploratory signal; incremental value for the primary SD1.4 versus SD1.5 question remains inconclusive.** Exact fence removal recovers a small positive matched result; the separately frozen two-number arm does not improve the close pair. Neither is confirmation. Both arms were adopted and frozen before recovered classifier performance, and both are reported regardless of outcome. All previous heldout outcomes had already been seen.
+
+No inference, model loading, generator calls, images, downloads, installs, other models, agents, Livepeer, uploads, commits, product edits or publication. Only this new sibling directory was written. The pinned existing local Qwen numerical environment was reused. Cumulative accounting remains **251 local Qwen calls, zero new calls, $0 attributable hosted inference**; local hardware/electricity costs are unmeasured. Original Qwen BF16 peak allocation was 15.57 GiB on the RTX 3090; no GPU was used here.
+
+## Historical mistake and preserved record
+
+Main scoring continued after a failed calibration/smoke interface: only 12/36 stability votes parsed strictly, yet all 215 main judgments followed. This was a procedural and engineering mistake, not a justified calibration decision. Nothing here hides or replaces the original strict 30/215 results, including only 4 primary and 6 three-way heldout cases. Those cases are too small and selected to decide whether Qwen contains signal. The original reports, raw responses, statuses, manifests and bundles remain unchanged.
+
+## Frozen arms and coverage
+
+`sensitivity-plan.md` and its SHA256 were written before deriving classifier performance. A independently applies only the reviewer’s exact outer JSON-fence extraction, then original six-key enum/null-applicability and exact integer 0–10 validation. B applies the identical extraction and duplicate-key rejection, then retains only literal craft and aesthetics integers 0–10; categorical grades and masks never enter B. Booleans, numeric words, descriptive strings and missing values are never converted or invented. B is a different feature definition, not recovered full profiles or reconstructed quality. Every response’s original raw text/status/parsed result and derived acceptance are retained in `response-audit.json`. No reviewer recovered export was used for fitting.
+
+| Arm | Main usable | Train/cal/heldout | Heldout SD1.4/SD1.5/SDXL | Valid stability votes/images |
+|---|---:|---|---|---|
+| A | 102/215 | 38/34/30 | 11/10/9 | 21/7 |
+| B | 180/215 | 94/46/40 | 12/13/15 | 36/12 |
+
+Coverage independently matches the review diagnostics exactly: A gains 72 fence-only main responses over 30 strict passes; 113 remain invalid. B retains 150 originally rejected main rating pairs plus the 30 strict passes. All 36 stability raw votes remain byte-identical within their 12 image triplicates; valid within-image feature variance is zero. A has seven valid triplicates, B twelve; these deterministic repeats are not independent identification n or judge reliability evidence. Between-image variances are saved in `results.json`.
+
+| Arm | Split | SD1.4 | SD1.5 | SDXL |
+|---|---|---:|---:|---:|
+| A | train | 12 | 12 | 14 |
+| A | calibration | 11 | 11 | 12 |
+| A | heldout | 11 | 10 | 9 |
+| B | train | 33 | 30 | 31 |
+| B | calibration | 15 | 14 | 17 |
+| B | heldout | 12 | 13 | 15 |
+
+The original 216 generated images include one black/safety SD1.5 calibration replacement, already excluded; it is not restored. SD1.x safety checking was enabled. SDXL had no built-in checker and its optional watermark was disabled in the original protocol. A keeps 102/215 and B 180/215 usable responses, with task- and generator-dependent selection. Full-vector heldout retains only four of six authored families (p18,p20,p21,p23); numeric heldout retains five (adds p22, only one SD1.x image). Neither retains p19. Missingness is never a feature. Applicability masks in A describe fixed tasks, but nonrandom task selection can induce apparent model separation or leakage through task composition. Comparisons within each arm share exact train/cal/test keys; arms have different coverage and cannot be ranked directly.
+
+## Classification results
+
+Training alone fits standardization and ridge coefficients. Calibration alone selects alpha [100,10,1,0.1], retaining the first/largest tie. There is no train+cal refit, feature search or heldout selection. Majority uses training class counts with lexical ties; it is not the test-set oracle majority. Numeric arrays explicitly use float64 for stable independent verification. A uses the original ten-dimensional profile and also the prespecified original quality scalar (.6 applicable-grade mean + .25 craft/10 + .15 aesthetics/10); B uses two normalized literal ratings only.
+
+| Arm | Task | Features | Correct/n | Accuracy | Conditional cluster interval | Alpha |
+|---|---|---|---:|---:|---|---:|
+| A | sd1x | majority | 11/21 | 52.4% | 50.0–60.0% | — |
+| A | sd1x | pickscore | 12/21 | 57.1% | 44.4–66.7% | 100 |
+| A | sd1x | visual | 11/21 | 52.4% | 50.0–60.0% | 100 |
+| A | sd1x | visual+pickscore | 10/21 | 47.6% | 40.0–50.0% | 1 |
+| A | sd1x | judge | 12/21 | 57.1% | 44.4–66.7% | 1 |
+| A | sd1x | judge+pickscore | 13/21 | 61.9% | 44.4–76.2% | 100 |
+| A | sd1x | judge+visual+pickscore | 13/21 | 61.9% | 54.2–66.7% | 0.1 |
+| A | sd1x | judge_quality | 12/21 | 57.1% | 44.4–66.7% | 100 |
+| A | threeway | majority | 9/30 | 30.0% | 16.7–33.3% | — |
+| A | threeway | pickscore | 15/30 | 50.0% | 38.9–61.1% | 100 |
+| A | threeway | visual | 10/30 | 33.3% | 25.0–41.7% | 1 |
+| A | threeway | visual+pickscore | 16/30 | 53.3% | 44.4–55.6% | 10 |
+| A | threeway | judge | 15/30 | 50.0% | 27.8–61.1% | 1 |
+| A | threeway | judge+pickscore | 16/30 | 53.3% | 41.7–63.3% | 10 |
+| A | threeway | judge+visual+pickscore | 17/30 | 56.7% | 44.4–63.9% | 100 |
+| A | threeway | judge_quality | 16/30 | 53.3% | 41.7–63.3% | 100 |
+| B | sd1x | majority | 12/25 | 48.0% | 40.0–50.0% | — |
+| B | sd1x | pickscore | 13/25 | 52.0% | 36.0–64.0% | 100 |
+| B | sd1x | visual | 12/25 | 48.0% | 40.0–50.0% | 1 |
+| B | sd1x | visual+pickscore | 13/25 | 52.0% | 40.0–60.0% | 10 |
+| B | sd1x | judge | 11/25 | 44.0% | 30.0–56.7% | 10 |
+| B | sd1x | judge+pickscore | 12/25 | 48.0% | 35.0–60.0% | 100 |
+| B | sd1x | judge+visual+pickscore | 12/25 | 48.0% | 35.0–60.0% | 100 |
+| B | threeway | majority | 12/40 | 30.0% | 20.0–33.3% | — |
+| B | threeway | pickscore | 20/40 | 50.0% | 45.0–55.0% | 100 |
+| B | threeway | visual | 18/40 | 45.0% | 37.8–51.4% | 100 |
+| B | threeway | visual+pickscore | 19/40 | 47.5% | 37.8–57.8% | 10 |
+| B | threeway | judge | 6/40 | 15.0% | 2.9–25.0% | 10 |
+| B | threeway | judge+pickscore | 20/40 | 50.0% | 45.0–55.0% | 100 |
+| B | threeway | judge+visual+pickscore | 22/40 | 55.0% | 42.5–65.7% | 10 |
+
+Primary A: judge+PickScore improves 12/21 to 13/21 versus PickScore (2 corrections, 1 reversal); judge+visual+PickScore improves 10/21 to 13/21 versus visual+PickScore (3 corrections, 0 reversals). This is a weak positive indication on four format-selected families, not a dependable gain. Primary B: both augmented comparisons lose one correct image, 13/25 to 12/25. Thus literal subjective craft/aesthetic ratings show no added primary value here; this does not prove they contain no signal. A’s standalone judge is 12/21, versus training-majority 11/21; B’s is 11/25 versus 12/25 majority.
+
+Secondary A adds one correct image to each corresponding baseline. Secondary B adds none to PickScore, and three to visual+PickScore. B judge alone is only 6/40; the combined result is an interaction in this fitted exploratory comparison, not proof that numeric ratings identify generators. SDXL architecture, native 1024 generation versus SD1.x 512, and settings remain confounded despite normalized scorer inputs. Secondary improvements do not establish close-pair identification.
+
+## Paired additions and corrected uncertainty
+
+| Arm | Task | Addition to baseline | Improved/worsened | Difference | Conditional paired interval |
+|---|---|---|---:|---:|---|
+| A | sd1x | judge+pickscore minus pickscore | 2/1 | +4.8 pp | -11.1 to +16.7 pp |
+| A | sd1x | judge+visual+pickscore minus visual+pickscore | 3/0 | +14.3 pp | +4.2 to +26.7 pp |
+| A | threeway | judge+pickscore minus pickscore | 1/0 | +3.3 pp | +0.0 to +8.3 pp |
+| A | threeway | judge+visual+pickscore minus visual+pickscore | 3/2 | +3.3 pp | +0.0 to +8.3 pp |
+| B | sd1x | judge+pickscore minus pickscore | 1/2 | -4.0 pp | -12.0 to +0.0 pp |
+| B | sd1x | judge+visual+pickscore minus visual+pickscore | 3/4 | -4.0 pp | -12.0 to +0.0 pp |
+| B | threeway | judge+pickscore minus pickscore | 1/1 | +0.0 pp | -6.7 to +6.7 pp |
+| B | threeway | judge+visual+pickscore minus visual+pickscore | 4/1 | +7.5 pp | +2.2 to +14.3 pp |
+
+The estimand is displayed **image accuracy**, sum(correct)/sum(n), including unequal family sizes. Each of 2,000 seed-904 draws resamples whole surviving prompt families with replacement, including multiplicities; the ratio is recomputed from summed counts. The same cluster draw is used for both members of every paired difference. This fixes the prior equal-prompt-mean/image-accuracy mismatch. `paired.csv` includes every judge comparison against majority, PickScore, visual and visual+PickScore, with both-correct/both-wrong as well as improvements/reversals.
+
+Intervals are conditional descriptions of four or five surviving authored families, shared seed realizations, a selected output interface and an already-inspected corpus. The primary A combined interval excludes zero within this limited resampling distribution; it is not a broad significance guarantee. The bootstrap cannot restore discarded tasks, remove shared-seed dependence, cover model/rubric choice or make these convenience families representative. No sweeping significance, hidden-execution proof, unknown-generator rejection, counting/OCR reliability or Nemotron conclusion follows.
+
+Historical full-corpus baselines, **separate context only**: primary PickScore 21/36, visual 18/36, visual+PickScore 22/36; three-way 31/54,29/54,35/54. The independently reviewed primary combined gain was only one image and not established. Those historical fits and denominators are not matched controls for either sensitivity arm.
+
+## Feature interpretation
+
+Both numeric axes are heavily compressed. Across B’s 180 main cases, craft is 8 or 9 on 174/180 (other values: five 7s and one 2); aesthetics ranges only 6–9. Raw-unit means/variances: craft 8.378 / 0.524; aesthetics 7.739 / 0.615. A’s 102 cases have craft mean 8.294, variance 0.659; aesthetics mean 7.676, variance 0.591. `distributions.csv` reports exact distributions/variances overall, by split and by class (features normalized by 10); `correlations.csv` reports every judge-axis/PickScore and judge-axis/visual Pearson correlation overall and by split. Null correlation means constant axis; no replacement/imputation is made. These are descriptive after-fitting summaries, never selection criteria.
+
+| Arm | Split | craft–PickScore r | aesthetics–PickScore r |
+|---|---|---:|---:|
+| A | all | 0.322 | 0.167 |
+| A | train | 0.421 | 0.324 |
+| B | all | 0.314 | 0.168 |
+| B | train | 0.347 | 0.183 |
+
+These limited correlations describe overlap, not causality or independent information. Raw subjective scores are not calibrated human quality. Full categorical profiles can reflect prompt compliance, applicability and task selection as well as visual content. All full distributions, individual feature rows, every split prediction/confusion, class counts and per-prompt accuracy are included; no favorable prompt subset is promoted to a new test.
+
+## Verification, files and stopping point
+
+Independent verification re-parsed raw responses, checked literal value preservation, splits/seeds, exact coverage and baseline provenance, and rebuilt centered dual ridge fits without sklearn fitting. All **3431 train/cal/heldout predictions**, selected alphas, confusion/per-prompt counts and 86 uncertainty intervals reproduce. Maximum coefficient discrepancy 7.4e-14; decision-score discrepancy 1.7e-13. Continuous checks use rtol=1e-7/atol=1e-9; discrete outputs are exact. 126 original top-level files and 990 entries across both original terminal manifests rehash unchanged. This is consistency evidence, not independently timestamped preregistration.
+
+See `README.md` and `RUN-COMMANDS.sh` for offline reproduction, `provenance.json` for source identities, `runtime.json` for wall time. The bundle includes raw/derived data, frozen plan, numerical scripts, source protocol/manifests and reports; it excludes images, models, environments and secrets.
+
+**Recommendation only:** before any future inference, establish an explicit six-key output-shaped schema/example or constrained output on the old calibration inputs, with a fail-closed smoke gate that prevents main scoring on interface failure. Any later confirmation would require separate authorization and an untouched family evaluation. No new run is authorized or launched here; this completes the bounded offline analysis.

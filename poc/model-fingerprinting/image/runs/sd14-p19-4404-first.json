@@ -1,0 +1,24 @@
+{
+  "key": "sd14-p19-4404-first",
+  "label": "sd14",
+  "prompt_id": "p19",
+  "group": "botanical",
+  "split": "evaluation",
+  "seed": 4404,
+  "tag": "first",
+  "instrumented": true,
+  "seconds": 1.2957181490492076,
+  "memory": {
+    "allocated": 3440806912,
+    "reserved": 4043309056
+  },
+  "latent_sha256": "7b90c0f5e4ec57a8a477e294537a26dea105fb59883ec0c9d292f78fb6729f0d",
+  "image_sha256": "c1507b3b70bc596c0c18c89cf2f56ad96945284dbc7392ff28db3060aa86057f",
+  "nsfw": [
+    false
+  ],
+  "timestamp": "2026-10-25T15:37:32.648550+00:00",
+  "fingerprint": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/fingerprints/sd14-p19-4404-first.f32",
+  "image": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/images/sd14-p19-4404-first.png",
+  "write_seconds": 0.05694053089246154
+}

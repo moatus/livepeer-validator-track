@@ -1,0 +1,36 @@
+{
+  "created_at": "2026-11-02T17:46:57.047Z",
+  "credential_cleanup": {
+    "profile": "full-disclosure-fixture",
+    "state": "not_applicable"
+  },
+  "deadline_seconds": 150,
+  "delivery": {
+    "cancelled": false,
+    "client_disconnected": false,
+    "complete": true,
+    "first_chunk_ms": 13,
+    "rule": "body",
+    "socket_accepted_body_bytes": 20,
+    "socket_accepted_body_sha256": "5300cb38acaf60d166a9c59d00f4cb62ebd2caea30e36ba8105f1274c950b779",
+    "total_ms": 13
+  },
+  "operator_statement": {
+    "body_bytes": 65,
+    "body_sha256": "28d80979bcf2011518c8e36193b517d681684bca5b950fe7b84f7f2e0d57ac63",
+    "forwarded_headers_sha256": "662903ccab4bc3974711cbe646af195d32351ad4e3f5a5503f24e7a6ea5377dc",
+    "host": "test-server.io",
+    "method": "POST",
+    "operator_pub": "9a2fd55e0a7f6ec1caf3a294d65e480a7ca8c0565e86de6c8cfceb6ba855627e",
+    "path": "/api/v1/chat/completions",
+    "receipt_id": "c8a6d475b9d1e7a8bc926101e7f66931",
+    "session_id": "20261102T174657Z-566bcf",
+    "sig": "b90fc4c98450cc38f09af9aaabeda0cff6a7250a63b17329613d808f602754394cd3c45ca7ef37362f3aaadbcc047da1226e616466bfc2c145bf4dbd02ca1607",
+    "v": 1
+  },
+  "reason": "witness refused before commit: server name is not on the upstream allowlist",
+  "receipt_id": "c8a6d475b9d1e7a8bc926101e7f66931",
+  "state": "unverified",
+  "terminal_at": "2026-11-02T17:46:57.059Z",
+  "v": 1
+}

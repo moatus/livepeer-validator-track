@@ -10,17 +10,21 @@ The project tests the litepaper's protocol mechanics: rewards, validation, deleg
 - [Task issues](https://github.com/moatus/livepeer-validator-track/issues?q=is%3Aissue+label%3Atrack%3Atask)
 - [Deliverable register](deliverables/README.md)
 - [Artifact and review workflow](docs/WORKFLOW.md)
-- [Monthly updates](updates/README.md)
-- [Decision log](docs/DECISIONS.md)
+- [Forum updates](https://forum.livepeer.org/t/pre-proposal-network-engineering-spe-ii/3344)
+- [Research premises](docs/DECISIONS.md)
 - [SPE pre-proposal](https://forum.livepeer.org/t/pre-proposal-network-engineering-spe-ii/3344)
 
-M2 is complete, and M3.1–M3.2 are in progress. The M1 and M2 research is recorded in the [research workbench](#research-workbench). M1's September steps have reviewed versions. The October source migration is a new draft. The M2 framework and Slices 1, 2 and 2b are reviewed by the owner (see the [deliverable register](deliverables/README.md)). P1, E2 and Slice 3 (M2.7–M2.9) were reviewed on 2026-10-18 at the exact versions in the [deliverable register](deliverables/README.md). The M2.10 consolidation and shared network snapshot were reviewed and accepted on 2026-10-27. The [milestone overview](MILESTONES.md) tracks the M3 handoff. M2–M5 deadlines are agreed for 2026: October 19, November 9, December 7 and December 31 respectively. The combined M2–M5 budget is $30,000 USD; per-milestone amounts are listed in the overview. External research reviewers remain to be agreed.
+M2 is complete; M3.1 and M3.2 are in progress. The [workbench](#research-workbench) holds the research and current drafts. The [deliverable register](deliverables/README.md) identifies reviewed versions and their limits; the [milestone overview](MILESTONES.md) describes the remaining work. Research acceptance does not adopt protocol rules. Scheduling and budgets are maintained on the [project board](https://github.com/users/moatus/projects/1).
+
+## Current M3 work and verification prototypes
+
+[M3.1](validator-track-workbench.html#M3.1) and [M3.2](validator-track-workbench.html#M3.2) are editable workbench pages linked to their supporting evidence. They begin the gaps → options → scenarios → implementation sequence from accepted M2 findings; M3.3 and M3.4 are planned to continue in the workbench. The [PoC index](poc/README.md) organizes model fingerprinting, output judging, request/delivery receipts and TLS witnessing, with code, reports and explicit reproduction limits. [M3 modeling](experiments/m3/README.md) contains subsequent exploratory economic studies. These local drafts and imported experiments are not newly reviewed milestone deliverables or adopted protocol rules.
 
 ## Research workbench
 
-[`validator-track-workbench.html`](validator-track-workbench.html) holds the M1 and M2 research as one linked, browsable record set. It is a single TiddlyWiki file: download it and open it in a web browser; nothing needs to be installed. It works offline.
+[`validator-track-workbench.html`](validator-track-workbench.html) holds the M1/M2 research and M3.1/M3.2 drafts as one linked, browsable record set. It is a single TiddlyWiki file: download it and open it in a web browser; nothing needs to be installed. It works offline.
 
-It follows the litepaper through the milestone steps M1.1 to M2.3:
+It follows the litepaper from M1.1 through the current M3.1 and M3.2 drafts:
 
 | Step | Task | Workbench status |
 | --- | --- | --- |
@@ -28,9 +32,11 @@ It follows the litepaper through the milestone steps M1.1 to M2.3:
 | M1.2 What each mechanism depends on, and its critical questions | [#7](https://github.com/moatus/livepeer-validator-track/issues/7) | September reviewed; October revision drafted |
 | M1.3 Which cases matter most | [#8](https://github.com/moatus/livepeer-validator-track/issues/8) | September reviewed; October revision drafted |
 | M1.4 What exists today, and what would need to be built | [#14](https://github.com/moatus/livepeer-validator-track/issues/14) | September reviewed; October revision drafted; deployed mapping remains version-bound |
-| M2.1 How the mechanisms behave together | [#10](https://github.com/moatus/livepeer-validator-track/issues/10) | Reviewed through M2.10; complete 2026-10-27 |
-| M2.2 Testing the critical questions | [#9](https://github.com/moatus/livepeer-validator-track/issues/9) | Reviewed through M2.10; complete 2026-10-27 |
-| M2.3 What would resolve each concern? | [#15](https://github.com/moatus/livepeer-validator-track/issues/15) | Reviewed through M2.10; complete 2026-10-27 |
+| M2.1 How the mechanisms behave together | [#10](https://github.com/moatus/livepeer-validator-track/issues/10) | Reviewed through M2.10; complete |
+| M2.2 Testing the critical questions | [#9](https://github.com/moatus/livepeer-validator-track/issues/9) | Reviewed through M2.10; complete |
+| M2.3 What would resolve each concern? | [#15](https://github.com/moatus/livepeer-validator-track/issues/15) | Reviewed through M2.10; complete |
+| [M3.1 Evidence for economic integrity and reliable service](validator-track-workbench.html#M3.1) | [#11](https://github.com/moatus/livepeer-validator-track/issues/11) | In progress; draft, not accepted |
+| [M3.2 Building and testing validator evidence](validator-track-workbench.html#M3.2) | [#12](https://github.com/moatus/livepeer-validator-track/issues/12) | In progress; partial evaluation, not accepted |
 
 Inside, the litepaper is described as twelve mechanisms. Each mechanism page explains the mechanism in plain words, lists its parts, and marks what the paper states and what is still to be defined or decided (design questions). It also asks whether the mechanism could work as intended (critical questions, tested against concrete cases and their legitimate lookalikes), and records what exists in today's Livepeer system. Step pages tell the story of each milestone step; role guides summarise what changes for node operators, delegators and validators. The current source is the [October paper](docs/litepaper-2.0.md), extracted from its [archived PDF](docs/sources/litepaper-2026-10.pdf). Its [provenance](docs/sources/README.md) separates original text, editorial extraction wrappers and the preserved September version. Historical September citations and results remain version-labelled; October citations use their own source record. PDF figures remain authoritative in the PDF. Start with "How to read this workbench" on its home page.
 
@@ -57,4 +63,4 @@ Research conclusions and protocol adoption are different decisions. Record evide
 
 ## Research and deliverables
 
-Use task issues to frame questions and link results. The M1 and M2 research lives in the [research workbench](#research-workbench); a reviewed version is recorded by commit. Put other reports, specifications and diagrams in [`deliverables/`](deliverables/), and reproducible models, fixtures and tests in [`experiments/`](experiments/). The [deliverable register](deliverables/README.md) links reviewed results to milestones; the Project board shows current work. Cite sources, assumptions, versions and limits so others can inspect or reproduce the findings.
+Use task issues to frame questions and link results. The M1/M2 research and M3.1/M3.2 drafts live in the [research workbench](#research-workbench); a reviewed version is recorded by commit. Put other reports, specifications and diagrams in [`deliverables/`](deliverables/), and reproducible models, fixtures and tests in [`experiments/`](experiments/). The [deliverable register](deliverables/README.md) links reviewed results to milestones; the Project board shows current work. Cite sources, assumptions, versions and limits so others can inspect or reproduce the findings.

@@ -1,0 +1,21 @@
+{
+  "key": "im111",
+  "prompt_id": "q18",
+  "prompt": "A golden harp in a quiet marble room lit by a high window, oil painting.",
+  "model": "sd14",
+  "seed": 730183,
+  "timestamp": "2026-10-27T12:11:45.234506+00:00",
+  "status": "ok",
+  "latent_sha256": "9c6022eb3098725d5b6d4b7a37f13ea14d21c70dc8b03ee9902d0d0104194657",
+  "raw": "raw/im111.png",
+  "normalized": "normalized/im111.png",
+  "raw_sha256": "ff0dd4f585b08a3ff13749cad2ad53faf00175d484207724fffecb26021a7b65",
+  "normalized_sha256": "ff0dd4f585b08a3ff13749cad2ad53faf00175d484207724fffecb26021a7b65",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.3731398582458496
+}

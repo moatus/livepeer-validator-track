@@ -1,0 +1,24 @@
+{
+  "key": "sd14-p08-1101-repeat-inprocess",
+  "label": "sd14",
+  "prompt_id": "p08",
+  "group": "geometric",
+  "split": "calibration",
+  "seed": 1101,
+  "tag": "repeat-inprocess",
+  "instrumented": true,
+  "seconds": 1.29855583794415,
+  "memory": {
+    "allocated": 3440806912,
+    "reserved": 4043309056
+  },
+  "latent_sha256": "7b239e2f3b04554c558bff4a816bc3fca674a414fe0d66d716424c4027556799",
+  "image_sha256": "68a233a745a6989f3d0c0186cdf5e4d417deb525c9faf4b9ff86e9bba8a8250f",
+  "nsfw": [
+    false
+  ],
+  "timestamp": "2026-10-25T15:38:19.808115+00:00",
+  "fingerprint": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/fingerprints/sd14-p08-1101-repeat-inprocess.f32",
+  "image": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/images/sd14-p08-1101-repeat-inprocess.png",
+  "write_seconds": 0.03622660296969116
+}

@@ -1,0 +1,19 @@
+{
+  "key": "im053",
+  "prompt_id": "q08",
+  "prompt": "A vintage turquoise tram crossing a cobbled square on a rainy morning.",
+  "model": "sdxl",
+  "seed": 730085,
+  "timestamp": "2026-10-27T12:16:44.883536+00:00",
+  "status": "ok",
+  "latent_sha256": "0453cfd0b0c3bec5dbd835e2b4a188914cbdd641fa769d55855c9ad7033115d3",
+  "raw": "raw/im053.png",
+  "normalized": "normalized/im053.png",
+  "raw_sha256": "42e31222c9efe3e029733017a5638f38dca85421c1fc345bdc2d188903a3ac69",
+  "normalized_sha256": "7f5895398ac39d5b288ad341a59aadd290a01e1f801fcd9c08f1272d4ecc24fa",
+  "black": false,
+  "nsfw": null,
+  "width": 1024,
+  "height": 1024,
+  "seconds": 7.06095814704895
+}

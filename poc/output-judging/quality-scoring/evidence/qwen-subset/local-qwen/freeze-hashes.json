@@ -1,0 +1,7 @@
+{
+  "PROTOCOL.json": "39aa7452c173c5d4ecd07de61a54788bfb3d4ca1e1561a92741af8d574d38350",
+  "inputs.json": "18585a9974c321801f282cbce849899a162d991fec74b4ed5c52321e712aebff",
+  "original-records.json": "8d3039cdd7d0233e1727a13ce5613cd09eff0154e23cad08deec755264f7bdc5",
+  "original-prompts.json": "59b1f2ab279544bb14db4c8e9350752eee19366b44ae036d837a26ab8e79a247",
+  "freeze.py": "6935a10f7efa3d6c42cdc02f2b1b18fc469ea0d244daec7d9d3701fb7323c255"
+}

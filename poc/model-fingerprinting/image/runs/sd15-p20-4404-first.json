@@ -1,0 +1,24 @@
+{
+  "key": "sd15-p20-4404-first",
+  "label": "sd15",
+  "prompt_id": "p20",
+  "group": "bicycles",
+  "split": "evaluation",
+  "seed": 4404,
+  "tag": "first",
+  "instrumented": true,
+  "seconds": 1.3018878910224885,
+  "memory": {
+    "allocated": 3440806912,
+    "reserved": 4043309056
+  },
+  "latent_sha256": "7b90c0f5e4ec57a8a477e294537a26dea105fb59883ec0c9d292f78fb6729f0d",
+  "image_sha256": "a491325320488c315a3551688302e02ac44298f46287a51bda4759b03b15f8c8",
+  "nsfw": [
+    false
+  ],
+  "timestamp": "2026-10-25T15:39:16.856402+00:00",
+  "fingerprint": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/fingerprints/sd15-p20-4404-first.f32",
+  "image": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/images/sd15-p20-4404-first.png",
+  "write_seconds": 0.03029399993829429
+}

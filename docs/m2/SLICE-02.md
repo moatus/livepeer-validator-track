@@ -1,8 +1,8 @@
 # Slice 2: capability, pricing and self-funded traffic
 
-Status: **reviewed by the owner, 2026-10-14 ([#27](https://github.com/moatus/livepeer-validator-track/issues/27)): connected accounting (EX-06) and evidence results (EX-07) consolidated in M2.3** · 2026-10-10 (prepared 2026-10-09). This is the next numbered M2 slice under [SPEC.md](SPEC.md) and [RUNBOOK.md](RUNBOOK.md). It builds on October reconciliation EX-05 and preserves September EX-03/EX-04. Preparation does not confer human review or protocol adoption.
+Status: **reviewed ([#27](https://github.com/moatus/livepeer-validator-track/issues/27)): connected accounting (EX-06) and evidence results (EX-07) consolidated in M2.3**. This is the next numbered M2 slice under [SPEC.md](SPEC.md) and [artifact workflow](../WORKFLOW.md). It builds on October reconciliation EX-05 and preserves September EX-03/EX-04. Preparation does not confer human review or protocol adoption.
 
-The defined follow-up, [Slice 2b](SLICE-02B.md), extends these results with strategic spending, actor ranks and multiple whole-network conditions. Its [implementation plan](SLICE-02B-IMPLEMENTATION.md) has separate M2.1, M2.2 and M2.3 workloads. It preserves this slice's frozen inputs and source-scoped results; no broader test is retrospectively attributed to EX-06 or EX-07.
+The defined follow-up, [Slice 2b](SLICE-02B.md), extends these results with strategic spending, actor ranks and multiple whole-network conditions. Its [strategic self-funding implementation](../../experiments/m2/strategic-self-funding/README.md) has separate M2.1, M2.2 and M2.3 workloads. It preserves this slice's frozen inputs and source-scoped results; no broader test is retrospectively attributed to EX-06 or EX-07.
 
 ## Question and bounded outcome
 

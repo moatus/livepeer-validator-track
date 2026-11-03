@@ -1,0 +1,13 @@
+# Private: never commit
+.env
+.env.*
+PRE-START.md
+*.key
+
+# Build and run outputs
+target/
+runs/
+patch/apply.sh.out/
+
+# Python bytecode
+__pycache__/

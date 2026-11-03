@@ -1,0 +1,21 @@
+{
+  "key": "im188",
+  "prompt_id": "q31",
+  "prompt": "A blue glacier meeting a still alpine lake beneath overcast skies, photograph.",
+  "model": "sd14",
+  "seed": 730312,
+  "timestamp": "2026-10-27T12:12:55.653972+00:00",
+  "status": "ok",
+  "latent_sha256": "3f3fff25951368f0793f6e58c7d00728f26497774948772be73f7b09fd5d4fc3",
+  "raw": "raw/im188.png",
+  "normalized": "normalized/im188.png",
+  "raw_sha256": "5d0b2cc24e1824000a19d197ec5bc67c9660ffe79cf6d73c3a35e1ae79c7d9aa",
+  "normalized_sha256": "5d0b2cc24e1824000a19d197ec5bc67c9660ffe79cf6d73c3a35e1ae79c7d9aa",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.3608994483947754
+}

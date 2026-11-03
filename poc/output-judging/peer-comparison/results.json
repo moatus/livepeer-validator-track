@@ -1,0 +1,525 @@
+{
+  "experiment": "CONSENSUS-007",
+  "scientific_review": "pending",
+  "thresholds": {
+    "rpa": 3.2503236283685695,
+    "pickscore": 1.7875478725623397
+  },
+  "heldout": {
+    "rpa": {
+      "honest": {
+        "correct": 0,
+        "wrong_honest_slot": 0,
+        "false_accusation": 0,
+        "abstention": 19,
+        "invalid": 1,
+        "scheduled": 20,
+        "valid": 19,
+        "rank_correct": 0,
+        "rank_denominator": null,
+        "wilson95_valid_false_accusation": [
+          0,
+          0.16817922405260854
+        ]
+      },
+      "close": {
+        "correct": 0,
+        "wrong_honest_slot": 0,
+        "false_accusation": 0,
+        "abstention": 19,
+        "invalid": 1,
+        "scheduled": 20,
+        "valid": 19,
+        "rank_correct": 3,
+        "rank_denominator": 19,
+        "wilson95_valid_correct": [
+          0,
+          0.16817922405260854
+        ]
+      },
+      "broad": {
+        "correct": 14,
+        "wrong_honest_slot": 0,
+        "false_accusation": 0,
+        "abstention": 5,
+        "invalid": 1,
+        "scheduled": 20,
+        "valid": 19,
+        "rank_correct": 19,
+        "rank_denominator": 19,
+        "wilson95_valid_correct": [
+          0.5120844910218552,
+          0.8819358765321723
+        ]
+      },
+      "jpeg75": {
+        "correct": 0,
+        "wrong_honest_slot": 0,
+        "false_accusation": 18,
+        "abstention": 1,
+        "invalid": 1,
+        "scheduled": 20,
+        "valid": 19,
+        "rank_correct": 0,
+        "rank_denominator": null,
+        "wilson95_valid_false_accusation": [
+          0.7536126883310192,
+          0.9906480059376992
+        ]
+      }
+    },
+    "pickscore": {
+      "honest": {
+        "correct": 0,
+        "wrong_honest_slot": 0,
+        "false_accusation": 2,
+        "abstention": 17,
+        "invalid": 1,
+        "scheduled": 20,
+        "valid": 19,
+        "rank_correct": 0,
+        "rank_denominator": null,
+        "wilson95_valid_false_accusation": [
+          0.029358560298871045,
+          0.31394082711108295
+        ]
+      },
+      "close": {
+        "correct": 0,
+        "wrong_honest_slot": 2,
+        "false_accusation": 0,
+        "abstention": 17,
+        "invalid": 1,
+        "scheduled": 20,
+        "valid": 19,
+        "rank_correct": 2,
+        "rank_denominator": 19,
+        "wilson95_valid_correct": [
+          0,
+          0.16817922405260854
+        ]
+      },
+      "broad": {
+        "correct": 4,
+        "wrong_honest_slot": 2,
+        "false_accusation": 0,
+        "abstention": 13,
+        "invalid": 1,
+        "scheduled": 20,
+        "valid": 19,
+        "rank_correct": 15,
+        "rank_denominator": 19,
+        "wilson95_valid_correct": [
+          0.08507676632916455,
+          0.43334278443813506
+        ]
+      },
+      "jpeg75": {
+        "correct": 0,
+        "wrong_honest_slot": 0,
+        "false_accusation": 1,
+        "abstention": 18,
+        "invalid": 1,
+        "scheduled": 20,
+        "valid": 19,
+        "rank_correct": 0,
+        "rank_denominator": null,
+        "wilson95_valid_false_accusation": [
+          0.009351994062300709,
+          0.2463873116689806
+        ]
+      }
+    }
+  },
+  "repeated_job_rank_only": [
+    {
+      "method": "rpa",
+      "condition": "honest",
+      "block": 0,
+      "scheduled": 5,
+      "valid": 5,
+      "role_means": [
+        0.7580583547706463,
+        1.4822380221620202,
+        0.4995222819784989,
+        0.46135119031657323
+      ],
+      "rank_candidate": 1,
+      "substitute_role": null,
+      "correct": null,
+      "honest_score_range": [
+        0.19505005428319425,
+        2.6106135080062067
+      ]
+    },
+    {
+      "method": "rpa",
+      "condition": "honest",
+      "block": 1,
+      "scheduled": 5,
+      "valid": 4
+    },
+    {
+      "method": "rpa",
+      "condition": "honest",
+      "block": 2,
+      "scheduled": 5,
+      "valid": 5,
+      "role_means": [
+        0.47536892729536706,
+        0.8751247382964404,
+        1.1465932274066262,
+        0.7183792499101889
+      ],
+      "rank_candidate": 2,
+      "substitute_role": null,
+      "correct": null,
+      "honest_score_range": [
+        0.31061837816148524,
+        2.1549674583376857
+      ]
+    },
+    {
+      "method": "rpa",
+      "condition": "honest",
+      "block": 3,
+      "scheduled": 5,
+      "valid": 5,
+      "role_means": [
+        0.8414643262620087,
+        0.7569574031834199,
+        0.7201943506219031,
+        0.6984755942052269
+      ],
+      "rank_candidate": 0,
+      "substitute_role": null,
+      "correct": null,
+      "honest_score_range": [
+        0.29715674826450444,
+        1.5222430630529404
+      ]
+    },
+    {
+      "method": "rpa",
+      "condition": "close",
+      "block": 0,
+      "scheduled": 5,
+      "valid": 5,
+      "role_means": [
+        0.4052490643263825,
+        1.7860077186335999,
+        0.6132161052966123,
+        0.5147208748643692
+      ],
+      "rank_candidate": 1,
+      "substitute_role": 0,
+      "correct": false,
+      "honest_score_range": null
+    },
+    {
+      "method": "rpa",
+      "condition": "close",
+      "block": 1,
+      "scheduled": 5,
+      "valid": 4
+    },
+    {
+      "method": "rpa",
+      "condition": "close",
+      "block": 2,
+      "scheduled": 5,
+      "valid": 5,
+      "role_means": [
+        0.4849550763576872,
+        0.8879804579430115,
+        0.8959509604881291,
+        0.6241121463622042
+      ],
+      "rank_candidate": 2,
+      "substitute_role": 2,
+      "correct": true,
+      "honest_score_range": null
+    },
+    {
+      "method": "rpa",
+      "condition": "close",
+      "block": 3,
+      "scheduled": 5,
+      "valid": 5,
+      "role_means": [
+        0.6967030315592437,
+        0.8064553474835353,
+        0.7492250666057814,
+        0.9034357413857581
+      ],
+      "rank_candidate": 3,
+      "substitute_role": 3,
+      "correct": true,
+      "honest_score_range": null
+    },
+    {
+      "method": "rpa",
+      "condition": "broad",
+      "block": 0,
+      "scheduled": 5,
+      "valid": 5,
+      "role_means": [
+        5.084902628021466,
+        0.2378462688920476,
+        0.16174598466965834,
+        0.1611571724629003
+      ],
+      "rank_candidate": 0,
+      "substitute_role": 0,
+      "correct": true,
+      "honest_score_range": null
+    },
+    {
+      "method": "rpa",
+      "condition": "broad",
+      "block": 1,
+      "scheduled": 5,
+      "valid": 4
+    },
+    {
+      "method": "rpa",
+      "condition": "broad",
+      "block": 2,
+      "scheduled": 5,
+      "valid": 5,
+      "role_means": [
+        0.06381208590342831,
+        0.08721966049515457,
+        10.070947503000692,
+        0.09448650394419741
+      ],
+      "rank_candidate": 2,
+      "substitute_role": 2,
+      "correct": true,
+      "honest_score_range": null
+    },
+    {
+      "method": "rpa",
+      "condition": "broad",
+      "block": 3,
+      "scheduled": 5,
+      "valid": 5,
+      "role_means": [
+        0.1105571386565943,
+        0.13952592689993765,
+        0.1480064597152715,
+        6.6894132023357455
+      ],
+      "rank_candidate": 3,
+      "substitute_role": 3,
+      "correct": true,
+      "honest_score_range": null
+    },
+    {
+      "method": "pickscore",
+      "condition": "honest",
+      "block": 0,
+      "scheduled": 5,
+      "valid": 5,
+      "role_means": [
+        0.7629590945293725,
+        0.7980982334456295,
+        1.0469975964068818,
+        0.682701334368131
+      ],
+      "rank_candidate": 2,
+      "substitute_role": null,
+      "correct": null,
+      "honest_score_range": [
+        0.2522191518570149,
+        2.0068019749113972
+      ]
+    },
+    {
+      "method": "pickscore",
+      "condition": "honest",
+      "block": 1,
+      "scheduled": 5,
+      "valid": 4
+    },
+    {
+      "method": "pickscore",
+      "condition": "honest",
+      "block": 2,
+      "scheduled": 5,
+      "valid": 5,
+      "role_means": [
+        0.895104059693152,
+        0.9104200141743151,
+        0.6419813719312729,
+        0.7596056760291716
+      ],
+      "rank_candidate": 1,
+      "substitute_role": null,
+      "correct": null,
+      "honest_score_range": [
+        0.47132724734758713,
+        1.3189552422782764
+      ]
+    },
+    {
+      "method": "pickscore",
+      "condition": "honest",
+      "block": 3,
+      "scheduled": 5,
+      "valid": 5,
+      "role_means": [
+        0.8618424711888926,
+        0.8539311850468886,
+        0.7431653133875111,
+        0.9354698013494506
+      ],
+      "rank_candidate": 3,
+      "substitute_role": null,
+      "correct": null,
+      "honest_score_range": [
+        0.5324980959260176,
+        1.1116977245864963
+      ]
+    },
+    {
+      "method": "pickscore",
+      "condition": "close",
+      "block": 0,
+      "scheduled": 5,
+      "valid": 5,
+      "role_means": [
+        0.5855115292191623,
+        0.8220271783331672,
+        1.0989679232854832,
+        0.8056241828614429
+      ],
+      "rank_candidate": 2,
+      "substitute_role": 0,
+      "correct": false,
+      "honest_score_range": null
+    },
+    {
+      "method": "pickscore",
+      "condition": "close",
+      "block": 1,
+      "scheduled": 5,
+      "valid": 4
+    },
+    {
+      "method": "pickscore",
+      "condition": "close",
+      "block": 2,
+      "scheduled": 5,
+      "valid": 5,
+      "role_means": [
+        1.050230535789887,
+        0.8682791541248237,
+        0.774603028673063,
+        0.6792977419951275
+      ],
+      "rank_candidate": 0,
+      "substitute_role": 2,
+      "correct": false,
+      "honest_score_range": null
+    },
+    {
+      "method": "pickscore",
+      "condition": "close",
+      "block": 3,
+      "scheduled": 5,
+      "valid": 5,
+      "role_means": [
+        0.9138189233884327,
+        0.7270641581987471,
+        0.6341000687568554,
+        1.0820201275430805
+      ],
+      "rank_candidate": 3,
+      "substitute_role": 3,
+      "correct": true,
+      "honest_score_range": null
+    },
+    {
+      "method": "pickscore",
+      "condition": "broad",
+      "block": 0,
+      "scheduled": 5,
+      "valid": 5,
+      "role_means": [
+        1.276050435103058,
+        0.558820049587698,
+        0.9104467088699495,
+        0.5343226641896719
+      ],
+      "rank_candidate": 0,
+      "substitute_role": 0,
+      "correct": true,
+      "honest_score_range": null
+    },
+    {
+      "method": "pickscore",
+      "condition": "broad",
+      "block": 1,
+      "scheduled": 5,
+      "valid": 4
+    },
+    {
+      "method": "pickscore",
+      "condition": "broad",
+      "block": 2,
+      "scheduled": 5,
+      "valid": 5,
+      "role_means": [
+        0.6259867309238585,
+        0.7445509726889799,
+        1.2105897822662322,
+        0.6129900741263348
+      ],
+      "rank_candidate": 2,
+      "substitute_role": 2,
+      "correct": true,
+      "honest_score_range": null
+    },
+    {
+      "method": "pickscore",
+      "condition": "broad",
+      "block": 3,
+      "scheduled": 5,
+      "valid": 5,
+      "role_means": [
+        0.5056895351402112,
+        0.5599389585230039,
+        0.46084409492117634,
+        1.7422786376253125
+      ],
+      "rank_candidate": 3,
+      "substitute_role": 3,
+      "correct": true,
+      "honest_score_range": null
+    }
+  ],
+  "accounting": {
+    "scheduled": 240,
+    "terminal": 240,
+    "ok": 240,
+    "black": 1,
+    "safety": 1,
+    "failed": 0,
+    "generation_seconds": 648.309451341629
+  },
+  "random_choice_context": 0.25,
+  "verification": {
+    "equal_abstention": true,
+    "separated_outlier": true,
+    "permutations": 24,
+    "feature_schema": "peer receives only a finite 4xD numeric matrix and scalar threshold; no metadata",
+    "generation_accounting": true,
+    "finite_features": true,
+    "frozen_code_consistency": true,
+    "thresholds_unchanged": true,
+    "blind_decisions_sha256": "481c98f0171124b7e2004208f524f283afdec9ba158f339eaea965522f71a4f3",
+    "real_group_permutations": 7488,
+    "threshold_dependency": "only calibration honest groups; labels opened after decisions-blind.json persisted"
+  }
+}

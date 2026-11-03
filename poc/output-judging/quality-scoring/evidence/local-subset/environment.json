@@ -1,0 +1,14 @@
+{
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+  "kernel": "7.0.0-38-generic",
+  "machine": "x86_64",
+  "package_environment": ".venv isolated using Python3.12.15; requirements.lock authoritative",
+  "gpu_driver": "580.178.04",
+  "gpu": "NVIDIA GeForce RTX3090 24GiB",
+  "cuda_runtime": "Torch2.9.1 CUDA12.8; driver reports CUDA13.0 compatibility",
+  "prior_environment": "IMG-002 venv reused as dependency-version precedent only; not modified",
+  "weight_cache": "SD1.x existing exact files read-only, new model weights and HF cache inside experiment",
+  "installation_cache_deviation": "Initial uv install used default shared cache which may have new entries; no shared cache deletion attempted",
+  "system_python": "3.14.4",
+  "experiment_python": "3.12.15"
+}

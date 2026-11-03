@@ -1,0 +1,10 @@
+{
+  "status": "blocked",
+  "raw_responses": [],
+  "parsed_votes": [],
+  "attempts": 0,
+  "stability_completed": 0,
+  "main_completed": 0,
+  "coverage": 0,
+  "reason": "No configured user-owned Livepeer Agent bearer, no verified current price bound or sampling support"
+}

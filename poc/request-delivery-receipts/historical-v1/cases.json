@@ -1,0 +1,85 @@
+[
+  {
+    "id": "honest_json",
+    "preconsume": false,
+    "group": "core"
+  },
+  {
+    "id": "honest_sse",
+    "preconsume": false,
+    "group": "core"
+  },
+  {
+    "id": "honest_media",
+    "preconsume": false,
+    "group": "core"
+  },
+  {
+    "id": "changed_user_input",
+    "preconsume": false,
+    "group": "core"
+  },
+  {
+    "id": "changed_instruction_settings",
+    "preconsume": false,
+    "group": "core"
+  },
+  {
+    "id": "changed_delivery",
+    "preconsume": false,
+    "group": "core"
+  },
+  {
+    "id": "old_nonce_new_job",
+    "preconsume": false,
+    "group": "core"
+  },
+  {
+    "id": "duplicate_job_replay",
+    "preconsume": true,
+    "group": "core"
+  },
+  {
+    "id": "expensive_provider_decoy_substitute",
+    "preconsume": false,
+    "simulation_note": "Genuine upstream signature covers real synthetic expensive-provider contact/output; independent customer sees substitute bytes. Zero inference.",
+    "group": "core"
+  },
+  {
+    "id": "truncated_sse",
+    "preconsume": false,
+    "group": "core"
+  },
+  {
+    "id": "gateway_signature_as_upstream",
+    "preconsume": false,
+    "group": "core"
+  },
+  {
+    "id": "missing_signature",
+    "preconsume": false,
+    "group": "core"
+  },
+  {
+    "id": "trusted_signer_wrong_hidden_backend",
+    "preconsume": false,
+    "simulation_note": "Executed local byte lookup mock-cheap-backend, while trusted signer asserts frozen-v1. No actual model runs.",
+    "group": "boundary"
+  },
+  {
+    "id": "replay_no_independent_freshness",
+    "preconsume": false,
+    "group": "boundary"
+  },
+  {
+    "id": "missing_independent_delivery",
+    "preconsume": false,
+    "simulation_note": "Same substitution as changed_delivery, but independent observation absent; gateway could deliver arbitrary bytes.",
+    "group": "boundary"
+  },
+  {
+    "id": "attacker_chosen_issuer_key",
+    "preconsume": false,
+    "group": "boundary"
+  }
+]

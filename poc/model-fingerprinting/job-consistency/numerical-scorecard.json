@@ -1,0 +1,78 @@
+{
+  "calibration": {
+    "correct": {
+      "n": 30,
+      "accepted": 30,
+      "false_rejections": 0,
+      "false_acceptances": null,
+      "distance_min": 0.0,
+      "distance_median": 0.0,
+      "distance_max": 0.0
+    },
+    "close": {
+      "n": 20,
+      "accepted": 0,
+      "false_rejections": null,
+      "false_acceptances": 0,
+      "distance_min": 0.30704720704625726,
+      "distance_median": 0.6794931570079494,
+      "distance_max": 1.104063074170876
+    },
+    "distant": {
+      "n": 20,
+      "accepted": 0,
+      "false_rejections": null,
+      "false_acceptances": 0,
+      "distance_min": 0.9581317022748078,
+      "distance_median": 1.440635106191273,
+      "distance_max": 2.0292155975353734
+    },
+    "reload": {
+      "n": 6,
+      "accepted": 6,
+      "false_rejections": 0,
+      "false_acceptances": null,
+      "distance_min": 0.0,
+      "distance_median": 0.0,
+      "distance_max": 0.0
+    }
+  },
+  "heldout": {
+    "correct": {
+      "n": 60,
+      "accepted": 60,
+      "false_rejections": 0,
+      "false_acceptances": null,
+      "distance_min": 0.0,
+      "distance_median": 0.0,
+      "distance_max": 0.0
+    },
+    "close": {
+      "n": 40,
+      "accepted": 0,
+      "false_rejections": null,
+      "false_acceptances": 0,
+      "distance_min": 0.2842026660664619,
+      "distance_median": 0.6341740925799955,
+      "distance_max": 1.2045238766058621
+    },
+    "distant": {
+      "n": 40,
+      "accepted": 0,
+      "false_rejections": null,
+      "false_acceptances": 0,
+      "distance_min": 0.7959698209366418,
+      "distance_median": 1.528602419785929,
+      "distance_max": 3.2088540424015064
+    },
+    "reload": {
+      "n": 6,
+      "accepted": 6,
+      "false_rejections": 0,
+      "false_acceptances": null,
+      "distance_min": 0.0,
+      "distance_median": 0.0,
+      "distance_max": 0.0
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "status": "Exploratory lever sensitivity; hypothetical extremes are not recommendations",
+  "snapshot_id": "livepeer-arbitrum-2026-10-09-v1",
+  "snapshot_sha256": "b879cc73be95d0e5bdcd5c5bc2f2bc342a7319eb27cb6ffdd2ee6c25f4bb60e8",
+  "round_id": 4364,
+  "inherited_assumptions": {
+    "rule": "October main-text non-normalized MFS; 94% node allowance; 50% node fee share",
+    "calibration": "E0 set to measured round 4364 ceiling at hypothetical launch r=0",
+    "invoice_per_job": "1",
+    "execution_cost_per_job": ".30",
+    "score": "1, unchanged from baseline",
+    "setup_cost": "0",
+    "price_usdc_per_lpt": "1.71765",
+    "ownership": "Capture-time operator-address stake proxy and round cuts; not beneficial ownership",
+    "constraints": "No cash/capacity limit, fractional work allowed; all other pools fixed",
+    "exclusions": "No financing, execution risk, claim discount, price impact, beneficial-owner consolidation or opportunity cost"
+  },
+  "headroom_definition": "Artificially replace all stake shares with a+alpha*(s-a), conserving total stake. Retention fractions are held fixed to isolate cap geometry. No feasible delegation path, ownership reconstruction, migration cost or actual stake decision is modeled.",
+  "denial_definition": "Conditional on a positive controlled purchase, probability q of score zero on the entire modeled earning-cohort node reward; otherwise score one. No-action baseline retains score one. No fee recovery, principal slash, future punishment or measured detection ability is assumed. Legitimate internal work has no automatic adverse judgment.",
+  "scope": "All pools act independently. Costs .30 per $1 invoice, fixed price and fees, no cash or capacity cap, no setup cost. Node allowance reduction does not specify reallocation of foregone rewards.",
+  "validation": "900 optima checked against original full-network reward ledger with explicit fee-split and action-contingent score adjustments",
+  "scenarios": [
+    {
+      "case": "Baseline",
+      "allowance_factor": "1",
+      "network_fee": "0.5",
+      "remaining_headroom_factor": "1",
+      "denial_probability": "0",
+      "profitable_pools": 79,
+      "above_10_pools": 60,
+      "median_peak_all_100": "15.1520270532869155616707472596629184308688165730123910264326",
+      "active_stake_share": "0.881700474771618416440554430565648472512607502502109163602532"
+    },
+    {
+      "case": "Node allowance -50%",
+      "allowance_factor": "0.5",
+      "network_fee": "0.5",
+      "remaining_headroom_factor": "1",
+      "denial_probability": "0",
+      "profitable_pools": 75,
+      "above_10_pools": 40,
+      "median_peak_all_100": "6.0672830837836532048436809479588052275451438539758269775362",
+      "active_stake_share": "0.819364913104198934496074106072146045007111077542753441206624"
+    },
+    {
+      "case": "Node allowance -90%",
+      "allowance_factor": "0.1",
+      "network_fee": "0.5",
+      "remaining_headroom_factor": "1",
+      "denial_probability": "0",
+      "profitable_pools": 47,
+      "above_10_pools": 1,
+      "median_peak_all_100": "0",
+      "active_stake_share": "0.255405453141399300919703131211796650339780308950471839103865"
+    },
+    {
+      "case": "Network fee 75%",
+      "allowance_factor": "1",
+      "network_fee": "0.75",
+      "remaining_headroom_factor": "1",
+      "denial_probability": "0",
+      "profitable_pools": 79,
+      "above_10_pools": 59,
+      "median_peak_all_100": "15.1109157573514291541433722079513412185022560215469445016302",
+      "active_stake_share": "0.881700474771618416440554430565648472512607502502109163602532"
+    },
+    {
+      "case": "Network fee 100%",
+      "allowance_factor": "1",
+      "network_fee": "1",
+      "remaining_headroom_factor": "1",
+      "denial_probability": "0",
+      "profitable_pools": 79,
+      "above_10_pools": 59,
+      "median_peak_all_100": "15.0766128455353736413038502367081729423060857216351139391990",
+      "active_stake_share": "0.881700474771618416440554430565648472512607502502109163602532"
+    },
+    {
+      "case": "Headroom reduced 90%",
+      "allowance_factor": "1",
+      "network_fee": "0.5",
+      "remaining_headroom_factor": "0.1",
+      "denial_probability": "0",
+      "profitable_pools": 79,
+      "above_10_pools": 11,
+      "median_peak_all_100": "1.51527651258416549656848127537019119391193512705950799944590",
+      "active_stake_share": "0.202162659836396017737994482025776621341956035595344672118619"
+    },
+    {
+      "case": "Exact fee/stake alignment",
+      "allowance_factor": "1",
+      "network_fee": "0.5",
+      "remaining_headroom_factor": "0",
+      "denial_probability": "0",
+      "profitable_pools": 0,
+      "above_10_pools": 0,
+      "median_peak_all_100": "0",
+      "active_stake_share": "0"
+    },
+    {
+      "case": "50% chance of action-triggered reward denial",
+      "allowance_factor": "1",
+      "network_fee": "0.5",
+      "remaining_headroom_factor": "1",
+      "denial_probability": "0.5",
+      "profitable_pools": 67,
+      "above_10_pools": 37,
+      "median_peak_all_100": "4.78327943471761720157704448832612161710052943841925336721826",
+      "active_stake_share": "0.611447456140268442705546210079823275258988983745546500458383"
+    },
+    {
+      "case": "90% chance of action-triggered reward denial",
+      "allowance_factor": "1",
+      "network_fee": "0.5",
+      "remaining_headroom_factor": "1",
+      "denial_probability": "0.9",
+      "profitable_pools": 41,
+      "above_10_pools": 1,
+      "median_peak_all_100": "0",
+      "active_stake_share": "0.209573873158201230565830964590758887242441163575505905049028"
+    }
+  ]
+}

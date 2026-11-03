@@ -1,0 +1,70 @@
+{
+  "calibration": {
+    "correct": {
+      "n": 30,
+      "fingerprint_only": 30,
+      "signature_valid": 30,
+      "receipt_valid": 30,
+      "commitment_receipt_only": 30,
+      "combined": 30
+    },
+    "reload": {
+      "n": 6,
+      "fingerprint_only": 6,
+      "signature_valid": 6,
+      "receipt_valid": 6,
+      "commitment_receipt_only": 6,
+      "combined": 6
+    },
+    "close": {
+      "n": 20,
+      "fingerprint_only": 0,
+      "signature_valid": 20,
+      "receipt_valid": 20,
+      "commitment_receipt_only": 20,
+      "combined": 0
+    },
+    "distant": {
+      "n": 20,
+      "fingerprint_only": 0,
+      "signature_valid": 20,
+      "receipt_valid": 20,
+      "commitment_receipt_only": 20,
+      "combined": 0
+    }
+  },
+  "heldout": {
+    "correct": {
+      "n": 60,
+      "fingerprint_only": 60,
+      "signature_valid": 60,
+      "receipt_valid": 60,
+      "commitment_receipt_only": 60,
+      "combined": 60
+    },
+    "reload": {
+      "n": 6,
+      "fingerprint_only": 6,
+      "signature_valid": 6,
+      "receipt_valid": 6,
+      "commitment_receipt_only": 6,
+      "combined": 6
+    },
+    "close": {
+      "n": 40,
+      "fingerprint_only": 0,
+      "signature_valid": 40,
+      "receipt_valid": 40,
+      "commitment_receipt_only": 40,
+      "combined": 0
+    },
+    "distant": {
+      "n": 40,
+      "fingerprint_only": 0,
+      "signature_valid": 40,
+      "receipt_valid": 40,
+      "commitment_receipt_only": 40,
+      "combined": 0
+    }
+  }
+}

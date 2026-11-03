@@ -1,0 +1,9 @@
+POST /api/v1/chat/completions HTTP/1.1
+Host: router
+Content-Type: application/json
+X-Client-Nonce: normal
+X-Client-Require-Witness: true
+Content-Length: 131
+Connection: close
+
+{"model":"fixture","stream":true,"max_tokens":48,"fixture_mode":"normal","messages":[{"role":"user","content":"alpha beta gamma"}]}

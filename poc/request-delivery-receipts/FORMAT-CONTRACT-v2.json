@@ -1,0 +1,7 @@
+{
+  "artifact_revision": "receipt-binding-v2",
+  "wire_protocol": "receipt005-v1 unchanged",
+  "original_protocol_sha256": "3b9a572827fb0575cbefcd1a288212735af69ddde9f8bfb2b2e6c96ea4df9e4a",
+  "clarification": "JSON and media response bodies, as well as all SSE bytes/events, must decode as strict UTF-8 and use standard JSON values; NaN, Infinity and -Infinity are rejected. No normalization. Duplicate-key policy unchanged; no new restriction introduced.",
+  "signed_payload_change": false
+}

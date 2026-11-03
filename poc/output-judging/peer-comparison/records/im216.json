@@ -1,0 +1,21 @@
+{
+  "key": "im216",
+  "prompt_id": "q36",
+  "prompt": "A limestone cavern with a clear underground pool, dramatic landscape photograph.",
+  "model": "sd14",
+  "seed": 730360,
+  "timestamp": "2026-10-27T12:13:20.192321+00:00",
+  "status": "ok",
+  "latent_sha256": "7b3297d5f2e887a9bdc527732a5a6dc58da22fc2c59e19eb32f75b646422a939",
+  "raw": "raw/im216.png",
+  "normalized": "normalized/im216.png",
+  "raw_sha256": "3168dc6f30854a19da1967b8c27d01a18ed332d219facd532b38f45c102a39da",
+  "normalized_sha256": "3168dc6f30854a19da1967b8c27d01a18ed332d219facd532b38f45c102a39da",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.3202111721038818
+}

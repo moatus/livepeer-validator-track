@@ -1,0 +1,21 @@
+{
+  "key": "im076",
+  "prompt_id": "q12",
+  "prompt": "Close view of colorful wool being woven on a hand loom, documentary photograph.",
+  "model": "sd15",
+  "seed": 730124,
+  "timestamp": "2026-10-27T12:14:32.732155+00:00",
+  "status": "ok",
+  "latent_sha256": "a265eb0f1cc94120718002126a5a49f24f827c53cb4a93f09ca57072de4e4747",
+  "raw": "raw/im076.png",
+  "normalized": "normalized/im076.png",
+  "raw_sha256": "b2c74fa04a44af45ead1b9fa1e623f33c2d03ef2b5d7ee29a9520acb66806741",
+  "normalized_sha256": "b2c74fa04a44af45ead1b9fa1e623f33c2d03ef2b5d7ee29a9520acb66806741",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.3744220733642578
+}

@@ -1,0 +1,21 @@
+{
+  "key": "im105",
+  "prompt_id": "q17",
+  "prompt": "An origami crane made of patterned orange paper on a black surface, photograph.",
+  "model": "sd14",
+  "seed": 730173,
+  "timestamp": "2026-10-27T12:11:39.712504+00:00",
+  "status": "ok",
+  "latent_sha256": "0528c867ced5bd7206391ab47e254d8a9da3d99ff737026b558479e094cb6c2f",
+  "raw": "raw/im105.png",
+  "normalized": "normalized/im105.png",
+  "raw_sha256": "78d98e36137fcc544bf8a8c3bfc34014da1b152538fbc27924657f21bc20ad8a",
+  "normalized_sha256": "78d98e36137fcc544bf8a8c3bfc34014da1b152538fbc27924657f21bc20ad8a",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.3878087997436523
+}

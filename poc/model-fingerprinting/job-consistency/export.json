@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-10-25T17:55:15.615294+00:00",
+  "cases": 238,
+  "files": [
+    "cases.json",
+    "common.py",
+    "public-key.hex",
+    "rule.json",
+    "verifier.py"
+  ],
+  "notes": "No prompt, seed, tokenizer IDs, images, embeddings, secret blinding, private key, manifest path, ground truth, family or variant exported. Opaque job ID selects expected reference."
+}

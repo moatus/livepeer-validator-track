@@ -1,0 +1,722 @@
+[
+  {
+    "key": "p00-0-sd15",
+    "vector": [
+      0.5,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.8,
+      0.7
+    ],
+    "quality": 0.8049999999999999,
+    "parsed": {
+      "object_count": "partial",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 8,
+      "aesthetics": 7
+    }
+  },
+  {
+    "key": "p00-2-sdxl",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.8,
+      0.7
+    ],
+    "quality": 0.905,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 8,
+      "aesthetics": 7
+    }
+  },
+  {
+    "key": "p04-0-sdxl",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.9,
+      0.8
+    ],
+    "quality": 0.945,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 9,
+      "aesthetics": 8
+    }
+  },
+  {
+    "key": "p04-2-sd14",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.9,
+      0.8
+    ],
+    "quality": 0.945,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 9,
+      "aesthetics": 8
+    }
+  },
+  {
+    "key": "p04-2-sd15",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.9,
+      0.8
+    ],
+    "quality": 0.945,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 9,
+      "aesthetics": 8
+    }
+  },
+  {
+    "key": "p05-1-sd14",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.8,
+      0.7
+    ],
+    "quality": 0.905,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 8,
+      "aesthetics": 7
+    }
+  },
+  {
+    "key": "p05-1-sd15",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.8,
+      0.7
+    ],
+    "quality": 0.905,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 8,
+      "aesthetics": 7
+    }
+  },
+  {
+    "key": "p05-2-sd14",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.8,
+      0.7
+    ],
+    "quality": 0.905,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 8,
+      "aesthetics": 7
+    }
+  },
+  {
+    "key": "p05-2-sd15",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.8,
+      0.7
+    ],
+    "quality": 0.905,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 8,
+      "aesthetics": 7
+    }
+  },
+  {
+    "key": "p07-0-sd14",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.9,
+      0.8
+    ],
+    "quality": 0.945,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 9,
+      "aesthetics": 8
+    }
+  },
+  {
+    "key": "p07-1-sd14",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.9,
+      0.8
+    ],
+    "quality": 0.945,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 9,
+      "aesthetics": 8
+    }
+  },
+  {
+    "key": "p07-1-sd15",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.9,
+      0.8
+    ],
+    "quality": 0.945,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 9,
+      "aesthetics": 8
+    }
+  },
+  {
+    "key": "p07-2-sd15",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.8,
+      0.7
+    ],
+    "quality": 0.905,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 8,
+      "aesthetics": 7
+    }
+  },
+  {
+    "key": "p09-1-sd15",
+    "vector": [
+      0.5,
+      0.5,
+      0.5,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.8,
+      0.9
+    ],
+    "quality": 0.635,
+    "parsed": {
+      "object_count": "partial",
+      "color_binding": "partial",
+      "spatial": "partial",
+      "typography": null,
+      "craft": 8,
+      "aesthetics": 9
+    }
+  },
+  {
+    "key": "p12-0-sd15",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.9,
+      0.8
+    ],
+    "quality": 0.945,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 9,
+      "aesthetics": 8
+    }
+  },
+  {
+    "key": "p13-1-sd15",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.8,
+      0.7
+    ],
+    "quality": 0.905,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 8,
+      "aesthetics": 7
+    }
+  },
+  {
+    "key": "p13-2-sd15",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.8,
+      0.7
+    ],
+    "quality": 0.905,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 8,
+      "aesthetics": 7
+    }
+  },
+  {
+    "key": "p16-1-sd14",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.8,
+      0.7
+    ],
+    "quality": 0.905,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 8,
+      "aesthetics": 7
+    }
+  },
+  {
+    "key": "p17-0-sd14",
+    "vector": [
+      1.0,
+      0.5,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.8,
+      0.9
+    ],
+    "quality": 0.835,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "partial",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 8,
+      "aesthetics": 9
+    }
+  },
+  {
+    "key": "p17-1-sd14",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.9,
+      0.9
+    ],
+    "quality": 0.96,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 9,
+      "aesthetics": 9
+    }
+  },
+  {
+    "key": "p17-1-sd15",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.9,
+      0.9
+    ],
+    "quality": 0.96,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 9,
+      "aesthetics": 9
+    }
+  },
+  {
+    "key": "p17-1-sdxl",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.9,
+      0.9
+    ],
+    "quality": 0.96,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 9,
+      "aesthetics": 9
+    }
+  },
+  {
+    "key": "p17-2-sd14",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.8,
+      0.9
+    ],
+    "quality": 0.935,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 8,
+      "aesthetics": 9
+    }
+  },
+  {
+    "key": "p17-2-sd15",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.9,
+      0.9
+    ],
+    "quality": 0.96,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 9,
+      "aesthetics": 9
+    }
+  },
+  {
+    "key": "p18-0-sd14",
+    "vector": [
+      0.5,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.8,
+      0.9
+    ],
+    "quality": 0.835,
+    "parsed": {
+      "object_count": "partial",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 8,
+      "aesthetics": 9
+    }
+  },
+  {
+    "key": "p20-1-sd15",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.9,
+      0.8
+    ],
+    "quality": 0.945,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 9,
+      "aesthetics": 8
+    }
+  },
+  {
+    "key": "p20-1-sdxl",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.9,
+      0.8
+    ],
+    "quality": 0.945,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 9,
+      "aesthetics": 8
+    }
+  },
+  {
+    "key": "p21-0-sd15",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.9,
+      0.8
+    ],
+    "quality": 0.945,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 9,
+      "aesthetics": 8
+    }
+  },
+  {
+    "key": "p23-0-sd15",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.8,
+      0.7
+    ],
+    "quality": 0.905,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 8,
+      "aesthetics": 7
+    }
+  },
+  {
+    "key": "p23-1-sdxl",
+    "vector": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.9,
+      0.8
+    ],
+    "quality": 0.945,
+    "parsed": {
+      "object_count": "yes",
+      "color_binding": "yes",
+      "spatial": "yes",
+      "typography": null,
+      "craft": 9,
+      "aesthetics": 8
+    }
+  }
+]

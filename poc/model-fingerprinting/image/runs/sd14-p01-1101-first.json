@@ -1,0 +1,24 @@
+{
+  "key": "sd14-p01-1101-first",
+  "label": "sd14",
+  "prompt_id": "p01",
+  "group": "tableware",
+  "split": "calibration",
+  "seed": 1101,
+  "tag": "first",
+  "instrumented": true,
+  "seconds": 1.2753302168566734,
+  "memory": {
+    "allocated": 3440806912,
+    "reserved": 4043309056
+  },
+  "latent_sha256": "7b239e2f3b04554c558bff4a816bc3fca674a414fe0d66d716424c4027556799",
+  "image_sha256": "07295bddeb009fff9ac487127257cadf0015b767345e5d49ce8d04370443c890",
+  "nsfw": [
+    false
+  ],
+  "timestamp": "2026-10-25T15:36:00.951852+00:00",
+  "fingerprint": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/fingerprints/sd14-p01-1101-first.f32",
+  "image": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/images/sd14-p01-1101-first.png",
+  "write_seconds": 0.04585948493331671
+}

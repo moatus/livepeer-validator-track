@@ -1,0 +1,2882 @@
+[
+  {
+    "group": "g000",
+    "prompt_id": "q00",
+    "split": "calibration",
+    "condition": "honest",
+    "members": [
+      "im001",
+      "im000",
+      "im003",
+      "im002"
+    ],
+    "roles": [
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  {
+    "group": "g001",
+    "prompt_id": "q00",
+    "split": "calibration",
+    "condition": "close",
+    "members": [
+      "im001",
+      "im000",
+      "im003",
+      "im004"
+    ],
+    "roles": [
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  {
+    "group": "g002",
+    "prompt_id": "q00",
+    "split": "calibration",
+    "condition": "broad",
+    "members": [
+      "im001",
+      "im000",
+      "im003",
+      "im005"
+    ],
+    "roles": [
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  {
+    "group": "g003",
+    "prompt_id": "q00",
+    "split": "calibration",
+    "condition": "jpeg75",
+    "members": [
+      "im001",
+      "im000",
+      "im003",
+      "im002j"
+    ],
+    "roles": [
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  {
+    "group": "g004",
+    "prompt_id": "q01",
+    "split": "calibration",
+    "condition": "honest",
+    "members": [
+      "im006",
+      "im008",
+      "im009",
+      "im007"
+    ],
+    "roles": [
+      0,
+      2,
+      3,
+      1
+    ]
+  },
+  {
+    "group": "g005",
+    "prompt_id": "q01",
+    "split": "calibration",
+    "condition": "close",
+    "members": [
+      "im006",
+      "im010",
+      "im009",
+      "im007"
+    ],
+    "roles": [
+      0,
+      2,
+      3,
+      1
+    ]
+  },
+  {
+    "group": "g006",
+    "prompt_id": "q01",
+    "split": "calibration",
+    "condition": "broad",
+    "members": [
+      "im006",
+      "im011",
+      "im009",
+      "im007"
+    ],
+    "roles": [
+      0,
+      2,
+      3,
+      1
+    ]
+  },
+  {
+    "group": "g007",
+    "prompt_id": "q01",
+    "split": "calibration",
+    "condition": "jpeg75",
+    "members": [
+      "im006",
+      "im008j",
+      "im009",
+      "im007"
+    ],
+    "roles": [
+      0,
+      2,
+      3,
+      1
+    ]
+  },
+  {
+    "group": "g008",
+    "prompt_id": "q02",
+    "split": "calibration",
+    "condition": "honest",
+    "members": [
+      "im012",
+      "im014",
+      "im015",
+      "im013"
+    ],
+    "roles": [
+      0,
+      2,
+      3,
+      1
+    ]
+  },
+  {
+    "group": "g009",
+    "prompt_id": "q02",
+    "split": "calibration",
+    "condition": "close",
+    "members": [
+      "im012",
+      "im014",
+      "im016",
+      "im013"
+    ],
+    "roles": [
+      0,
+      2,
+      3,
+      1
+    ]
+  },
+  {
+    "group": "g010",
+    "prompt_id": "q02",
+    "split": "calibration",
+    "condition": "broad",
+    "members": [
+      "im012",
+      "im014",
+      "im017",
+      "im013"
+    ],
+    "roles": [
+      0,
+      2,
+      3,
+      1
+    ]
+  },
+  {
+    "group": "g011",
+    "prompt_id": "q02",
+    "split": "calibration",
+    "condition": "jpeg75",
+    "members": [
+      "im012",
+      "im014",
+      "im015j",
+      "im013"
+    ],
+    "roles": [
+      0,
+      2,
+      3,
+      1
+    ]
+  },
+  {
+    "group": "g012",
+    "prompt_id": "q03",
+    "split": "calibration",
+    "condition": "honest",
+    "members": [
+      "im020",
+      "im018",
+      "im019",
+      "im021"
+    ],
+    "roles": [
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "group": "g013",
+    "prompt_id": "q03",
+    "split": "calibration",
+    "condition": "close",
+    "members": [
+      "im022",
+      "im018",
+      "im019",
+      "im021"
+    ],
+    "roles": [
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "group": "g014",
+    "prompt_id": "q03",
+    "split": "calibration",
+    "condition": "broad",
+    "members": [
+      "im023",
+      "im018",
+      "im019",
+      "im021"
+    ],
+    "roles": [
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "group": "g015",
+    "prompt_id": "q03",
+    "split": "calibration",
+    "condition": "jpeg75",
+    "members": [
+      "im020j",
+      "im018",
+      "im019",
+      "im021"
+    ],
+    "roles": [
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "group": "g016",
+    "prompt_id": "q04",
+    "split": "calibration",
+    "condition": "honest",
+    "members": [
+      "im027",
+      "im025",
+      "im026",
+      "im024"
+    ],
+    "roles": [
+      3,
+      1,
+      2,
+      0
+    ]
+  },
+  {
+    "group": "g017",
+    "prompt_id": "q04",
+    "split": "calibration",
+    "condition": "close",
+    "members": [
+      "im028",
+      "im025",
+      "im026",
+      "im024"
+    ],
+    "roles": [
+      3,
+      1,
+      2,
+      0
+    ]
+  },
+  {
+    "group": "g018",
+    "prompt_id": "q04",
+    "split": "calibration",
+    "condition": "broad",
+    "members": [
+      "im029",
+      "im025",
+      "im026",
+      "im024"
+    ],
+    "roles": [
+      3,
+      1,
+      2,
+      0
+    ]
+  },
+  {
+    "group": "g019",
+    "prompt_id": "q04",
+    "split": "calibration",
+    "condition": "jpeg75",
+    "members": [
+      "im027j",
+      "im025",
+      "im026",
+      "im024"
+    ],
+    "roles": [
+      3,
+      1,
+      2,
+      0
+    ]
+  },
+  {
+    "group": "g020",
+    "prompt_id": "q05",
+    "split": "calibration",
+    "condition": "honest",
+    "members": [
+      "im030",
+      "im033",
+      "im032",
+      "im031"
+    ],
+    "roles": [
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g021",
+    "prompt_id": "q05",
+    "split": "calibration",
+    "condition": "close",
+    "members": [
+      "im030",
+      "im033",
+      "im034",
+      "im031"
+    ],
+    "roles": [
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g022",
+    "prompt_id": "q05",
+    "split": "calibration",
+    "condition": "broad",
+    "members": [
+      "im030",
+      "im033",
+      "im035",
+      "im031"
+    ],
+    "roles": [
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g023",
+    "prompt_id": "q05",
+    "split": "calibration",
+    "condition": "jpeg75",
+    "members": [
+      "im030",
+      "im033",
+      "im032j",
+      "im031"
+    ],
+    "roles": [
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g024",
+    "prompt_id": "q06",
+    "split": "calibration",
+    "condition": "honest",
+    "members": [
+      "im037",
+      "im036",
+      "im039",
+      "im038"
+    ],
+    "roles": [
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  {
+    "group": "g025",
+    "prompt_id": "q06",
+    "split": "calibration",
+    "condition": "close",
+    "members": [
+      "im037",
+      "im036",
+      "im040",
+      "im038"
+    ],
+    "roles": [
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  {
+    "group": "g026",
+    "prompt_id": "q06",
+    "split": "calibration",
+    "condition": "broad",
+    "members": [
+      "im037",
+      "im036",
+      "im041",
+      "im038"
+    ],
+    "roles": [
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  {
+    "group": "g027",
+    "prompt_id": "q06",
+    "split": "calibration",
+    "condition": "jpeg75",
+    "members": [
+      "im037",
+      "im036",
+      "im039j",
+      "im038"
+    ],
+    "roles": [
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  {
+    "group": "g028",
+    "prompt_id": "q07",
+    "split": "calibration",
+    "condition": "honest",
+    "members": [
+      "im045",
+      "im042",
+      "im044",
+      "im043"
+    ],
+    "roles": [
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g029",
+    "prompt_id": "q07",
+    "split": "calibration",
+    "condition": "close",
+    "members": [
+      "im046",
+      "im042",
+      "im044",
+      "im043"
+    ],
+    "roles": [
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g030",
+    "prompt_id": "q07",
+    "split": "calibration",
+    "condition": "broad",
+    "members": [
+      "im047",
+      "im042",
+      "im044",
+      "im043"
+    ],
+    "roles": [
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g031",
+    "prompt_id": "q07",
+    "split": "calibration",
+    "condition": "jpeg75",
+    "members": [
+      "im045j",
+      "im042",
+      "im044",
+      "im043"
+    ],
+    "roles": [
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g032",
+    "prompt_id": "q08",
+    "split": "calibration",
+    "condition": "honest",
+    "members": [
+      "im051",
+      "im050",
+      "im049",
+      "im048"
+    ],
+    "roles": [
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "group": "g033",
+    "prompt_id": "q08",
+    "split": "calibration",
+    "condition": "close",
+    "members": [
+      "im052",
+      "im050",
+      "im049",
+      "im048"
+    ],
+    "roles": [
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "group": "g034",
+    "prompt_id": "q08",
+    "split": "calibration",
+    "condition": "broad",
+    "members": [
+      "im053",
+      "im050",
+      "im049",
+      "im048"
+    ],
+    "roles": [
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "group": "g035",
+    "prompt_id": "q08",
+    "split": "calibration",
+    "condition": "jpeg75",
+    "members": [
+      "im051j",
+      "im050",
+      "im049",
+      "im048"
+    ],
+    "roles": [
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "group": "g036",
+    "prompt_id": "q09",
+    "split": "calibration",
+    "condition": "honest",
+    "members": [
+      "im054",
+      "im057",
+      "im056",
+      "im055"
+    ],
+    "roles": [
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g037",
+    "prompt_id": "q09",
+    "split": "calibration",
+    "condition": "close",
+    "members": [
+      "im054",
+      "im058",
+      "im056",
+      "im055"
+    ],
+    "roles": [
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g038",
+    "prompt_id": "q09",
+    "split": "calibration",
+    "condition": "broad",
+    "members": [
+      "im054",
+      "im059",
+      "im056",
+      "im055"
+    ],
+    "roles": [
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g039",
+    "prompt_id": "q09",
+    "split": "calibration",
+    "condition": "jpeg75",
+    "members": [
+      "im054",
+      "im057j",
+      "im056",
+      "im055"
+    ],
+    "roles": [
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g040",
+    "prompt_id": "q10",
+    "split": "calibration",
+    "condition": "honest",
+    "members": [
+      "im060",
+      "im061",
+      "im062",
+      "im063"
+    ],
+    "roles": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "group": "g041",
+    "prompt_id": "q10",
+    "split": "calibration",
+    "condition": "close",
+    "members": [
+      "im060",
+      "im064",
+      "im062",
+      "im063"
+    ],
+    "roles": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "group": "g042",
+    "prompt_id": "q10",
+    "split": "calibration",
+    "condition": "broad",
+    "members": [
+      "im060",
+      "im065",
+      "im062",
+      "im063"
+    ],
+    "roles": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "group": "g043",
+    "prompt_id": "q10",
+    "split": "calibration",
+    "condition": "jpeg75",
+    "members": [
+      "im060",
+      "im061j",
+      "im062",
+      "im063"
+    ],
+    "roles": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "group": "g044",
+    "prompt_id": "q11",
+    "split": "calibration",
+    "condition": "honest",
+    "members": [
+      "im069",
+      "im068",
+      "im067",
+      "im066"
+    ],
+    "roles": [
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "group": "g045",
+    "prompt_id": "q11",
+    "split": "calibration",
+    "condition": "close",
+    "members": [
+      "im069",
+      "im068",
+      "im067",
+      "im070"
+    ],
+    "roles": [
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "group": "g046",
+    "prompt_id": "q11",
+    "split": "calibration",
+    "condition": "broad",
+    "members": [
+      "im069",
+      "im068",
+      "im067",
+      "im071"
+    ],
+    "roles": [
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "group": "g047",
+    "prompt_id": "q11",
+    "split": "calibration",
+    "condition": "jpeg75",
+    "members": [
+      "im069",
+      "im068",
+      "im067",
+      "im066j"
+    ],
+    "roles": [
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "group": "g048",
+    "prompt_id": "q12",
+    "split": "calibration",
+    "condition": "honest",
+    "members": [
+      "im075",
+      "im072",
+      "im074",
+      "im073"
+    ],
+    "roles": [
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g049",
+    "prompt_id": "q12",
+    "split": "calibration",
+    "condition": "close",
+    "members": [
+      "im075",
+      "im072",
+      "im076",
+      "im073"
+    ],
+    "roles": [
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g050",
+    "prompt_id": "q12",
+    "split": "calibration",
+    "condition": "broad",
+    "members": [
+      "im075",
+      "im072",
+      "im077",
+      "im073"
+    ],
+    "roles": [
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g051",
+    "prompt_id": "q12",
+    "split": "calibration",
+    "condition": "jpeg75",
+    "members": [
+      "im075",
+      "im072",
+      "im074j",
+      "im073"
+    ],
+    "roles": [
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g052",
+    "prompt_id": "q13",
+    "split": "calibration",
+    "condition": "honest",
+    "members": [
+      "im081",
+      "im080",
+      "im078",
+      "im079"
+    ],
+    "roles": [
+      3,
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "group": "g053",
+    "prompt_id": "q13",
+    "split": "calibration",
+    "condition": "close",
+    "members": [
+      "im082",
+      "im080",
+      "im078",
+      "im079"
+    ],
+    "roles": [
+      3,
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "group": "g054",
+    "prompt_id": "q13",
+    "split": "calibration",
+    "condition": "broad",
+    "members": [
+      "im083",
+      "im080",
+      "im078",
+      "im079"
+    ],
+    "roles": [
+      3,
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "group": "g055",
+    "prompt_id": "q13",
+    "split": "calibration",
+    "condition": "jpeg75",
+    "members": [
+      "im081j",
+      "im080",
+      "im078",
+      "im079"
+    ],
+    "roles": [
+      3,
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "group": "g056",
+    "prompt_id": "q14",
+    "split": "calibration",
+    "condition": "honest",
+    "members": [
+      "im087",
+      "im085",
+      "im086",
+      "im084"
+    ],
+    "roles": [
+      3,
+      1,
+      2,
+      0
+    ]
+  },
+  {
+    "group": "g057",
+    "prompt_id": "q14",
+    "split": "calibration",
+    "condition": "close",
+    "members": [
+      "im087",
+      "im085",
+      "im088",
+      "im084"
+    ],
+    "roles": [
+      3,
+      1,
+      2,
+      0
+    ]
+  },
+  {
+    "group": "g058",
+    "prompt_id": "q14",
+    "split": "calibration",
+    "condition": "broad",
+    "members": [
+      "im087",
+      "im085",
+      "im089",
+      "im084"
+    ],
+    "roles": [
+      3,
+      1,
+      2,
+      0
+    ]
+  },
+  {
+    "group": "g059",
+    "prompt_id": "q14",
+    "split": "calibration",
+    "condition": "jpeg75",
+    "members": [
+      "im087",
+      "im085",
+      "im086j",
+      "im084"
+    ],
+    "roles": [
+      3,
+      1,
+      2,
+      0
+    ]
+  },
+  {
+    "group": "g060",
+    "prompt_id": "q15",
+    "split": "calibration",
+    "condition": "honest",
+    "members": [
+      "im092",
+      "im091",
+      "im093",
+      "im090"
+    ],
+    "roles": [
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  {
+    "group": "g061",
+    "prompt_id": "q15",
+    "split": "calibration",
+    "condition": "close",
+    "members": [
+      "im094",
+      "im091",
+      "im093",
+      "im090"
+    ],
+    "roles": [
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  {
+    "group": "g062",
+    "prompt_id": "q15",
+    "split": "calibration",
+    "condition": "broad",
+    "members": [
+      "im095",
+      "im091",
+      "im093",
+      "im090"
+    ],
+    "roles": [
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  {
+    "group": "g063",
+    "prompt_id": "q15",
+    "split": "calibration",
+    "condition": "jpeg75",
+    "members": [
+      "im092j",
+      "im091",
+      "im093",
+      "im090"
+    ],
+    "roles": [
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  {
+    "group": "g064",
+    "prompt_id": "q16",
+    "split": "calibration",
+    "condition": "honest",
+    "members": [
+      "im097",
+      "im098",
+      "im096",
+      "im099"
+    ],
+    "roles": [
+      1,
+      2,
+      0,
+      3
+    ]
+  },
+  {
+    "group": "g065",
+    "prompt_id": "q16",
+    "split": "calibration",
+    "condition": "close",
+    "members": [
+      "im097",
+      "im098",
+      "im100",
+      "im099"
+    ],
+    "roles": [
+      1,
+      2,
+      0,
+      3
+    ]
+  },
+  {
+    "group": "g066",
+    "prompt_id": "q16",
+    "split": "calibration",
+    "condition": "broad",
+    "members": [
+      "im097",
+      "im098",
+      "im101",
+      "im099"
+    ],
+    "roles": [
+      1,
+      2,
+      0,
+      3
+    ]
+  },
+  {
+    "group": "g067",
+    "prompt_id": "q16",
+    "split": "calibration",
+    "condition": "jpeg75",
+    "members": [
+      "im097",
+      "im098",
+      "im096j",
+      "im099"
+    ],
+    "roles": [
+      1,
+      2,
+      0,
+      3
+    ]
+  },
+  {
+    "group": "g068",
+    "prompt_id": "q17",
+    "split": "calibration",
+    "condition": "honest",
+    "members": [
+      "im104",
+      "im102",
+      "im105",
+      "im103"
+    ],
+    "roles": [
+      2,
+      0,
+      3,
+      1
+    ]
+  },
+  {
+    "group": "g069",
+    "prompt_id": "q17",
+    "split": "calibration",
+    "condition": "close",
+    "members": [
+      "im106",
+      "im102",
+      "im105",
+      "im103"
+    ],
+    "roles": [
+      2,
+      0,
+      3,
+      1
+    ]
+  },
+  {
+    "group": "g070",
+    "prompt_id": "q17",
+    "split": "calibration",
+    "condition": "broad",
+    "members": [
+      "im107",
+      "im102",
+      "im105",
+      "im103"
+    ],
+    "roles": [
+      2,
+      0,
+      3,
+      1
+    ]
+  },
+  {
+    "group": "g071",
+    "prompt_id": "q17",
+    "split": "calibration",
+    "condition": "jpeg75",
+    "members": [
+      "im104j",
+      "im102",
+      "im105",
+      "im103"
+    ],
+    "roles": [
+      2,
+      0,
+      3,
+      1
+    ]
+  },
+  {
+    "group": "g072",
+    "prompt_id": "q18",
+    "split": "calibration",
+    "condition": "honest",
+    "members": [
+      "im108",
+      "im111",
+      "im110",
+      "im109"
+    ],
+    "roles": [
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g073",
+    "prompt_id": "q18",
+    "split": "calibration",
+    "condition": "close",
+    "members": [
+      "im112",
+      "im111",
+      "im110",
+      "im109"
+    ],
+    "roles": [
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g074",
+    "prompt_id": "q18",
+    "split": "calibration",
+    "condition": "broad",
+    "members": [
+      "im113",
+      "im111",
+      "im110",
+      "im109"
+    ],
+    "roles": [
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g075",
+    "prompt_id": "q18",
+    "split": "calibration",
+    "condition": "jpeg75",
+    "members": [
+      "im108j",
+      "im111",
+      "im110",
+      "im109"
+    ],
+    "roles": [
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g076",
+    "prompt_id": "q19",
+    "split": "calibration",
+    "condition": "honest",
+    "members": [
+      "im116",
+      "im115",
+      "im117",
+      "im114"
+    ],
+    "roles": [
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  {
+    "group": "g077",
+    "prompt_id": "q19",
+    "split": "calibration",
+    "condition": "close",
+    "members": [
+      "im116",
+      "im118",
+      "im117",
+      "im114"
+    ],
+    "roles": [
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  {
+    "group": "g078",
+    "prompt_id": "q19",
+    "split": "calibration",
+    "condition": "broad",
+    "members": [
+      "im116",
+      "im119",
+      "im117",
+      "im114"
+    ],
+    "roles": [
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  {
+    "group": "g079",
+    "prompt_id": "q19",
+    "split": "calibration",
+    "condition": "jpeg75",
+    "members": [
+      "im116",
+      "im115j",
+      "im117",
+      "im114"
+    ],
+    "roles": [
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  {
+    "group": "g080",
+    "prompt_id": "q20",
+    "split": "heldout",
+    "condition": "honest",
+    "members": [
+      "im122",
+      "im121",
+      "im120",
+      "im123"
+    ],
+    "roles": [
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  {
+    "group": "g081",
+    "prompt_id": "q20",
+    "split": "heldout",
+    "condition": "close",
+    "members": [
+      "im122",
+      "im121",
+      "im124",
+      "im123"
+    ],
+    "roles": [
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  {
+    "group": "g082",
+    "prompt_id": "q20",
+    "split": "heldout",
+    "condition": "broad",
+    "members": [
+      "im122",
+      "im121",
+      "im125",
+      "im123"
+    ],
+    "roles": [
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  {
+    "group": "g083",
+    "prompt_id": "q20",
+    "split": "heldout",
+    "condition": "jpeg75",
+    "members": [
+      "im122",
+      "im121",
+      "im120j",
+      "im123"
+    ],
+    "roles": [
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  {
+    "group": "g084",
+    "prompt_id": "q21",
+    "split": "heldout",
+    "condition": "honest",
+    "members": [
+      "im129",
+      "im126",
+      "im128",
+      "im127"
+    ],
+    "roles": [
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g085",
+    "prompt_id": "q21",
+    "split": "heldout",
+    "condition": "close",
+    "members": [
+      "im129",
+      "im130",
+      "im128",
+      "im127"
+    ],
+    "roles": [
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g086",
+    "prompt_id": "q21",
+    "split": "heldout",
+    "condition": "broad",
+    "members": [
+      "im129",
+      "im131",
+      "im128",
+      "im127"
+    ],
+    "roles": [
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g087",
+    "prompt_id": "q21",
+    "split": "heldout",
+    "condition": "jpeg75",
+    "members": [
+      "im129",
+      "im126j",
+      "im128",
+      "im127"
+    ],
+    "roles": [
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "group": "g088",
+    "prompt_id": "q22",
+    "split": "heldout",
+    "condition": "honest",
+    "members": [
+      "im134",
+      "im135",
+      "im133",
+      "im132"
+    ],
+    "roles": [
+      2,
+      3,
+      1,
+      0
+    ]
+  },
+  {
+    "group": "g089",
+    "prompt_id": "q22",
+    "split": "heldout",
+    "condition": "close",
+    "members": [
+      "im134",
+      "im135",
+      "im133",
+      "im136"
+    ],
+    "roles": [
+      2,
+      3,
+      1,
+      0
+    ]
+  },
+  {
+    "group": "g090",
+    "prompt_id": "q22",
+    "split": "heldout",
+    "condition": "broad",
+    "members": [
+      "im134",
+      "im135",
+      "im133",
+      "im137"
+    ],
+    "roles": [
+      2,
+      3,
+      1,
+      0
+    ]
+  },
+  {
+    "group": "g091",
+    "prompt_id": "q22",
+    "split": "heldout",
+    "condition": "jpeg75",
+    "members": [
+      "im134",
+      "im135",
+      "im133",
+      "im132j"
+    ],
+    "roles": [
+      2,
+      3,
+      1,
+      0
+    ]
+  },
+  {
+    "group": "g092",
+    "prompt_id": "q23",
+    "split": "heldout",
+    "condition": "honest",
+    "members": [
+      "im139",
+      "im140",
+      "im138",
+      "im141"
+    ],
+    "roles": [
+      1,
+      2,
+      0,
+      3
+    ]
+  },
+  {
+    "group": "g093",
+    "prompt_id": "q23",
+    "split": "heldout",
+    "condition": "close",
+    "members": [
+      "im139",
+      "im140",
+      "im142",
+      "im141"
+    ],
+    "roles": [
+      1,
+      2,
+      0,
+      3
+    ]
+  },
+  {
+    "group": "g094",
+    "prompt_id": "q23",
+    "split": "heldout",
+    "condition": "broad",
+    "members": [
+      "im139",
+      "im140",
+      "im143",
+      "im141"
+    ],
+    "roles": [
+      1,
+      2,
+      0,
+      3
+    ]
+  },
+  {
+    "group": "g095",
+    "prompt_id": "q23",
+    "split": "heldout",
+    "condition": "jpeg75",
+    "members": [
+      "im139",
+      "im140",
+      "im138j",
+      "im141"
+    ],
+    "roles": [
+      1,
+      2,
+      0,
+      3
+    ]
+  },
+  {
+    "group": "g096",
+    "prompt_id": "q24",
+    "split": "heldout",
+    "condition": "honest",
+    "members": [
+      "im146",
+      "im147",
+      "im145",
+      "im144"
+    ],
+    "roles": [
+      2,
+      3,
+      1,
+      0
+    ]
+  },
+  {
+    "group": "g097",
+    "prompt_id": "q24",
+    "split": "heldout",
+    "condition": "close",
+    "members": [
+      "im146",
+      "im147",
+      "im145",
+      "im148"
+    ],
+    "roles": [
+      2,
+      3,
+      1,
+      0
+    ]
+  },
+  {
+    "group": "g098",
+    "prompt_id": "q24",
+    "split": "heldout",
+    "condition": "broad",
+    "members": [
+      "im146",
+      "im147",
+      "im145",
+      "im149"
+    ],
+    "roles": [
+      2,
+      3,
+      1,
+      0
+    ]
+  },
+  {
+    "group": "g099",
+    "prompt_id": "q24",
+    "split": "heldout",
+    "condition": "jpeg75",
+    "members": [
+      "im146",
+      "im147",
+      "im145",
+      "im144j"
+    ],
+    "roles": [
+      2,
+      3,
+      1,
+      0
+    ]
+  },
+  {
+    "group": "g100",
+    "prompt_id": "q25",
+    "split": "heldout",
+    "condition": "honest",
+    "members": [
+      "im152",
+      "im151",
+      "im150",
+      "im153"
+    ],
+    "roles": [
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  {
+    "group": "g101",
+    "prompt_id": "q25",
+    "split": "heldout",
+    "condition": "close",
+    "members": [
+      "im152",
+      "im154",
+      "im150",
+      "im153"
+    ],
+    "roles": [
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  {
+    "group": "g102",
+    "prompt_id": "q25",
+    "split": "heldout",
+    "condition": "broad",
+    "members": [
+      "im152",
+      "im155",
+      "im150",
+      "im153"
+    ],
+    "roles": [
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  {
+    "group": "g103",
+    "prompt_id": "q25",
+    "split": "heldout",
+    "condition": "jpeg75",
+    "members": [
+      "im152",
+      "im151j",
+      "im150",
+      "im153"
+    ],
+    "roles": [
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  {
+    "group": "g104",
+    "prompt_id": "q26",
+    "split": "heldout",
+    "condition": "honest",
+    "members": [
+      "im159",
+      "im158",
+      "im156",
+      "im157"
+    ],
+    "roles": [
+      3,
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "group": "g105",
+    "prompt_id": "q26",
+    "split": "heldout",
+    "condition": "close",
+    "members": [
+      "im159",
+      "im158",
+      "im156",
+      "im160"
+    ],
+    "roles": [
+      3,
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "group": "g106",
+    "prompt_id": "q26",
+    "split": "heldout",
+    "condition": "broad",
+    "members": [
+      "im159",
+      "im158",
+      "im156",
+      "im161"
+    ],
+    "roles": [
+      3,
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "group": "g107",
+    "prompt_id": "q26",
+    "split": "heldout",
+    "condition": "jpeg75",
+    "members": [
+      "im159",
+      "im158",
+      "im156",
+      "im157j"
+    ],
+    "roles": [
+      3,
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "group": "g108",
+    "prompt_id": "q27",
+    "split": "heldout",
+    "condition": "honest",
+    "members": [
+      "im163",
+      "im165",
+      "im162",
+      "im164"
+    ],
+    "roles": [
+      1,
+      3,
+      0,
+      2
+    ]
+  },
+  {
+    "group": "g109",
+    "prompt_id": "q27",
+    "split": "heldout",
+    "condition": "close",
+    "members": [
+      "im166",
+      "im165",
+      "im162",
+      "im164"
+    ],
+    "roles": [
+      1,
+      3,
+      0,
+      2
+    ]
+  },
+  {
+    "group": "g110",
+    "prompt_id": "q27",
+    "split": "heldout",
+    "condition": "broad",
+    "members": [
+      "im167",
+      "im165",
+      "im162",
+      "im164"
+    ],
+    "roles": [
+      1,
+      3,
+      0,
+      2
+    ]
+  },
+  {
+    "group": "g111",
+    "prompt_id": "q27",
+    "split": "heldout",
+    "condition": "jpeg75",
+    "members": [
+      "im163j",
+      "im165",
+      "im162",
+      "im164"
+    ],
+    "roles": [
+      1,
+      3,
+      0,
+      2
+    ]
+  },
+  {
+    "group": "g112",
+    "prompt_id": "q28",
+    "split": "heldout",
+    "condition": "honest",
+    "members": [
+      "im169",
+      "im168",
+      "im170",
+      "im171"
+    ],
+    "roles": [
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  {
+    "group": "g113",
+    "prompt_id": "q28",
+    "split": "heldout",
+    "condition": "close",
+    "members": [
+      "im172",
+      "im168",
+      "im170",
+      "im171"
+    ],
+    "roles": [
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  {
+    "group": "g114",
+    "prompt_id": "q28",
+    "split": "heldout",
+    "condition": "broad",
+    "members": [
+      "im173",
+      "im168",
+      "im170",
+      "im171"
+    ],
+    "roles": [
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  {
+    "group": "g115",
+    "prompt_id": "q28",
+    "split": "heldout",
+    "condition": "jpeg75",
+    "members": [
+      "im169j",
+      "im168",
+      "im170",
+      "im171"
+    ],
+    "roles": [
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  {
+    "group": "g116",
+    "prompt_id": "q29",
+    "split": "heldout",
+    "condition": "honest",
+    "members": [
+      "im175",
+      "im174",
+      "im177",
+      "im176"
+    ],
+    "roles": [
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  {
+    "group": "g117",
+    "prompt_id": "q29",
+    "split": "heldout",
+    "condition": "close",
+    "members": [
+      "im178",
+      "im174",
+      "im177",
+      "im176"
+    ],
+    "roles": [
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  {
+    "group": "g118",
+    "prompt_id": "q29",
+    "split": "heldout",
+    "condition": "broad",
+    "members": [
+      "im179",
+      "im174",
+      "im177",
+      "im176"
+    ],
+    "roles": [
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  {
+    "group": "g119",
+    "prompt_id": "q29",
+    "split": "heldout",
+    "condition": "jpeg75",
+    "members": [
+      "im175j",
+      "im174",
+      "im177",
+      "im176"
+    ],
+    "roles": [
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  {
+    "group": "g120",
+    "prompt_id": "q30",
+    "split": "heldout",
+    "condition": "honest",
+    "members": [
+      "im182",
+      "im180",
+      "im181",
+      "im183"
+    ],
+    "roles": [
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "group": "g121",
+    "prompt_id": "q30",
+    "split": "heldout",
+    "condition": "close",
+    "members": [
+      "im184",
+      "im180",
+      "im181",
+      "im183"
+    ],
+    "roles": [
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "group": "g122",
+    "prompt_id": "q30",
+    "split": "heldout",
+    "condition": "broad",
+    "members": [
+      "im185",
+      "im180",
+      "im181",
+      "im183"
+    ],
+    "roles": [
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "group": "g123",
+    "prompt_id": "q30",
+    "split": "heldout",
+    "condition": "jpeg75",
+    "members": [
+      "im182j",
+      "im180",
+      "im181",
+      "im183"
+    ],
+    "roles": [
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "group": "g124",
+    "prompt_id": "q31",
+    "split": "heldout",
+    "condition": "honest",
+    "members": [
+      "im188",
+      "im189",
+      "im186",
+      "im187"
+    ],
+    "roles": [
+      2,
+      3,
+      0,
+      1
+    ]
+  },
+  {
+    "group": "g125",
+    "prompt_id": "q31",
+    "split": "heldout",
+    "condition": "close",
+    "members": [
+      "im190",
+      "im189",
+      "im186",
+      "im187"
+    ],
+    "roles": [
+      2,
+      3,
+      0,
+      1
+    ]
+  },
+  {
+    "group": "g126",
+    "prompt_id": "q31",
+    "split": "heldout",
+    "condition": "broad",
+    "members": [
+      "im191",
+      "im189",
+      "im186",
+      "im187"
+    ],
+    "roles": [
+      2,
+      3,
+      0,
+      1
+    ]
+  },
+  {
+    "group": "g127",
+    "prompt_id": "q31",
+    "split": "heldout",
+    "condition": "jpeg75",
+    "members": [
+      "im188j",
+      "im189",
+      "im186",
+      "im187"
+    ],
+    "roles": [
+      2,
+      3,
+      0,
+      1
+    ]
+  },
+  {
+    "group": "g128",
+    "prompt_id": "q32",
+    "split": "heldout",
+    "condition": "honest",
+    "members": [
+      "im194",
+      "im192",
+      "im193",
+      "im195"
+    ],
+    "roles": [
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "group": "g129",
+    "prompt_id": "q32",
+    "split": "heldout",
+    "condition": "close",
+    "members": [
+      "im196",
+      "im192",
+      "im193",
+      "im195"
+    ],
+    "roles": [
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "group": "g130",
+    "prompt_id": "q32",
+    "split": "heldout",
+    "condition": "broad",
+    "members": [
+      "im197",
+      "im192",
+      "im193",
+      "im195"
+    ],
+    "roles": [
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "group": "g131",
+    "prompt_id": "q32",
+    "split": "heldout",
+    "condition": "jpeg75",
+    "members": [
+      "im194j",
+      "im192",
+      "im193",
+      "im195"
+    ],
+    "roles": [
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "group": "g132",
+    "prompt_id": "q33",
+    "split": "heldout",
+    "condition": "honest",
+    "members": [
+      "im200",
+      "im198",
+      "im199",
+      "im201"
+    ],
+    "roles": [
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "group": "g133",
+    "prompt_id": "q33",
+    "split": "heldout",
+    "condition": "close",
+    "members": [
+      "im202",
+      "im198",
+      "im199",
+      "im201"
+    ],
+    "roles": [
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "group": "g134",
+    "prompt_id": "q33",
+    "split": "heldout",
+    "condition": "broad",
+    "members": [
+      "im203",
+      "im198",
+      "im199",
+      "im201"
+    ],
+    "roles": [
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "group": "g135",
+    "prompt_id": "q33",
+    "split": "heldout",
+    "condition": "jpeg75",
+    "members": [
+      "im200j",
+      "im198",
+      "im199",
+      "im201"
+    ],
+    "roles": [
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "group": "g136",
+    "prompt_id": "q34",
+    "split": "heldout",
+    "condition": "honest",
+    "members": [
+      "im204",
+      "im206",
+      "im205",
+      "im207"
+    ],
+    "roles": [
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  {
+    "group": "g137",
+    "prompt_id": "q34",
+    "split": "heldout",
+    "condition": "close",
+    "members": [
+      "im204",
+      "im208",
+      "im205",
+      "im207"
+    ],
+    "roles": [
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  {
+    "group": "g138",
+    "prompt_id": "q34",
+    "split": "heldout",
+    "condition": "broad",
+    "members": [
+      "im204",
+      "im209",
+      "im205",
+      "im207"
+    ],
+    "roles": [
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  {
+    "group": "g139",
+    "prompt_id": "q34",
+    "split": "heldout",
+    "condition": "jpeg75",
+    "members": [
+      "im204",
+      "im206j",
+      "im205",
+      "im207"
+    ],
+    "roles": [
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  {
+    "group": "g140",
+    "prompt_id": "q35",
+    "split": "heldout",
+    "condition": "honest",
+    "members": [
+      "im213",
+      "im212",
+      "im210",
+      "im211"
+    ],
+    "roles": [
+      3,
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "group": "g141",
+    "prompt_id": "q35",
+    "split": "heldout",
+    "condition": "close",
+    "members": [
+      "im214",
+      "im212",
+      "im210",
+      "im211"
+    ],
+    "roles": [
+      3,
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "group": "g142",
+    "prompt_id": "q35",
+    "split": "heldout",
+    "condition": "broad",
+    "members": [
+      "im215",
+      "im212",
+      "im210",
+      "im211"
+    ],
+    "roles": [
+      3,
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "group": "g143",
+    "prompt_id": "q35",
+    "split": "heldout",
+    "condition": "jpeg75",
+    "members": [
+      "im213j",
+      "im212",
+      "im210",
+      "im211"
+    ],
+    "roles": [
+      3,
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "group": "g144",
+    "prompt_id": "q36",
+    "split": "heldout",
+    "condition": "honest",
+    "members": [
+      "im216",
+      "im217",
+      "im219",
+      "im218"
+    ],
+    "roles": [
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  {
+    "group": "g145",
+    "prompt_id": "q36",
+    "split": "heldout",
+    "condition": "close",
+    "members": [
+      "im216",
+      "im217",
+      "im220",
+      "im218"
+    ],
+    "roles": [
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  {
+    "group": "g146",
+    "prompt_id": "q36",
+    "split": "heldout",
+    "condition": "broad",
+    "members": [
+      "im216",
+      "im217",
+      "im221",
+      "im218"
+    ],
+    "roles": [
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  {
+    "group": "g147",
+    "prompt_id": "q36",
+    "split": "heldout",
+    "condition": "jpeg75",
+    "members": [
+      "im216",
+      "im217",
+      "im219j",
+      "im218"
+    ],
+    "roles": [
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  {
+    "group": "g148",
+    "prompt_id": "q37",
+    "split": "heldout",
+    "condition": "honest",
+    "members": [
+      "im224",
+      "im223",
+      "im225",
+      "im222"
+    ],
+    "roles": [
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  {
+    "group": "g149",
+    "prompt_id": "q37",
+    "split": "heldout",
+    "condition": "close",
+    "members": [
+      "im224",
+      "im223",
+      "im226",
+      "im222"
+    ],
+    "roles": [
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  {
+    "group": "g150",
+    "prompt_id": "q37",
+    "split": "heldout",
+    "condition": "broad",
+    "members": [
+      "im224",
+      "im223",
+      "im227",
+      "im222"
+    ],
+    "roles": [
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  {
+    "group": "g151",
+    "prompt_id": "q37",
+    "split": "heldout",
+    "condition": "jpeg75",
+    "members": [
+      "im224",
+      "im223",
+      "im225j",
+      "im222"
+    ],
+    "roles": [
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  {
+    "group": "g152",
+    "prompt_id": "q38",
+    "split": "heldout",
+    "condition": "honest",
+    "members": [
+      "im231",
+      "im230",
+      "im229",
+      "im228"
+    ],
+    "roles": [
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "group": "g153",
+    "prompt_id": "q38",
+    "split": "heldout",
+    "condition": "close",
+    "members": [
+      "im232",
+      "im230",
+      "im229",
+      "im228"
+    ],
+    "roles": [
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "group": "g154",
+    "prompt_id": "q38",
+    "split": "heldout",
+    "condition": "broad",
+    "members": [
+      "im233",
+      "im230",
+      "im229",
+      "im228"
+    ],
+    "roles": [
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "group": "g155",
+    "prompt_id": "q38",
+    "split": "heldout",
+    "condition": "jpeg75",
+    "members": [
+      "im231j",
+      "im230",
+      "im229",
+      "im228"
+    ],
+    "roles": [
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "group": "g156",
+    "prompt_id": "q39",
+    "split": "heldout",
+    "condition": "honest",
+    "members": [
+      "im236",
+      "im234",
+      "im237",
+      "im235"
+    ],
+    "roles": [
+      2,
+      0,
+      3,
+      1
+    ]
+  },
+  {
+    "group": "g157",
+    "prompt_id": "q39",
+    "split": "heldout",
+    "condition": "close",
+    "members": [
+      "im236",
+      "im234",
+      "im238",
+      "im235"
+    ],
+    "roles": [
+      2,
+      0,
+      3,
+      1
+    ]
+  },
+  {
+    "group": "g158",
+    "prompt_id": "q39",
+    "split": "heldout",
+    "condition": "broad",
+    "members": [
+      "im236",
+      "im234",
+      "im239",
+      "im235"
+    ],
+    "roles": [
+      2,
+      0,
+      3,
+      1
+    ]
+  },
+  {
+    "group": "g159",
+    "prompt_id": "q39",
+    "split": "heldout",
+    "condition": "jpeg75",
+    "members": [
+      "im236",
+      "im234",
+      "im237j",
+      "im235"
+    ],
+    "roles": [
+      2,
+      0,
+      3,
+      1
+    ]
+  }
+]

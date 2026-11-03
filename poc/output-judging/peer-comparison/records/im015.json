@@ -1,0 +1,21 @@
+{
+  "key": "im015",
+  "prompt_id": "q02",
+  "prompt": "A river otter resting on a smooth rock beside reeds, wildlife photograph.",
+  "model": "sd14",
+  "seed": 730023,
+  "timestamp": "2026-10-27T12:10:18.413495+00:00",
+  "status": "ok",
+  "latent_sha256": "af9ab751e603b43e8834c3538be2c74fc53d538dd9c5573f79b8f8979f0564db",
+  "raw": "raw/im015.png",
+  "normalized": "normalized/im015.png",
+  "raw_sha256": "99c5e6e7ea9b6396a122c803dc323c1cbeb0420da1ff00994380140cf2d2696e",
+  "normalized_sha256": "99c5e6e7ea9b6396a122c803dc323c1cbeb0420da1ff00994380140cf2d2696e",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.3503942489624023
+}

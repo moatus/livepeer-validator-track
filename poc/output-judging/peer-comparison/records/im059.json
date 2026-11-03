@@ -1,0 +1,19 @@
+{
+  "key": "im059",
+  "prompt_id": "q09",
+  "prompt": "Three ripe pears in a shallow ceramic bowl, charcoal and pastel drawing.",
+  "model": "sdxl",
+  "seed": 730095,
+  "timestamp": "2026-10-27T12:16:51.946111+00:00",
+  "status": "ok",
+  "latent_sha256": "6eb1ec7117fd0286b45536c106f1a38c347f193dbba663f0e39559a28b63b77e",
+  "raw": "raw/im059.png",
+  "normalized": "normalized/im059.png",
+  "raw_sha256": "3b26c8c2e1337136dd74eb8b864ba29252258a9bdcb2104e5e2d1a38fba5f31a",
+  "normalized_sha256": "cc04d7ec9448dd5e4234b2d02c0d9bbd603180c16491b534c5f16af6b1f36c71",
+  "black": false,
+  "nsfw": null,
+  "width": 1024,
+  "height": 1024,
+  "seconds": 7.158608436584473
+}

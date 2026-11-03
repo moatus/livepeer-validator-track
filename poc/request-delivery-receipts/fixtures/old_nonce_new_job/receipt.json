@@ -1,0 +1,17 @@
+{
+  "issuer": "independently-pinned-test-upstream",
+  "payload": {
+    "version": "receipt005-v1",
+    "job_id": "old_nonce_new_job",
+    "challenge": "9a5f349633e7af781e1082359b3dba0593f213572e40381469469304a38cc935",
+    "provider": "mock-expensive-provider",
+    "canonical_model": "mock-model",
+    "model_version": "frozen-v1",
+    "request_sha256": "1fc9192a097a40979a10120ace5ed499fc550c68fd6dd24816b31eef1f5a2188",
+    "response_sha256": "5f3fc22766b558d5a38cc64dc0dc7f8ba1d8bfb073763e3f177adc387d1f6fd0",
+    "terminal_status": "complete",
+    "format": "json",
+    "assets": {}
+  },
+  "signature": "3abc1e491e6b2c00c5eb6eff90b95ab9ba01f7c3fac90a40965e658168cfbab74208fd7007cbce10e71ba3d11342ba1fadbebd15b73c7113866dd29dde725801"
+}

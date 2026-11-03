@@ -1,0 +1,9 @@
+{
+  "load_seconds": 39.974031925201416,
+  "process_seconds": 414.815993309021,
+  "calls": 251,
+  "peak_allocated_bytes": 16719920640,
+  "peak_reserved_bytes": 16796090368,
+  "hosted_usd": 0,
+  "process_peak_rss_kib": 3627460
+}

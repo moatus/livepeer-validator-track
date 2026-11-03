@@ -1,0 +1,13 @@
+diff --git a/crates/server-fixture/server/src/lib.rs b/crates/server-fixture/server/src/lib.rs
+index 7af12ba..d521351 100644
+--- a/crates/server-fixture/server/src/lib.rs
++++ b/crates/server-fixture/server/src/lib.rs
+@@ -90,7 +90,7 @@ pub async fn bind<T: AsyncRead + AsyncWrite + Send + Unpin + 'static>(
+ 
+     tokio::select! {
+         _ = http1::Builder::new()
+-                .keep_alive(false)
++                .keep_alive(true)
+                 .serve_connection(io, hyper_service) => {},
+         _ = receiver => {},
+     }

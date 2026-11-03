@@ -1,0 +1,21 @@
+{
+  "key": "im229",
+  "prompt_id": "q38",
+  "prompt": "A cello resting beside a tall arched window in an empty rehearsal room, oil painting.",
+  "model": "sd14",
+  "seed": 730381,
+  "timestamp": "2026-10-27T12:13:32.245763+00:00",
+  "status": "ok",
+  "latent_sha256": "ae623000d7908c85e8cecdc5d9351c30142770f956024b652912ff327539d05c",
+  "raw": "raw/im229.png",
+  "normalized": "normalized/im229.png",
+  "raw_sha256": "e4c00508f41dca850b26f188b271cc283b1b962d97fe6830e99f284c1727f1f7",
+  "normalized_sha256": "e4c00508f41dca850b26f188b271cc283b1b962d97fe6830e99f284c1727f1f7",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.4023337364196777
+}

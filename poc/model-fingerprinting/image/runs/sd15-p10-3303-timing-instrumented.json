@@ -1,0 +1,24 @@
+{
+  "key": "sd15-p10-3303-timing-instrumented",
+  "label": "sd15",
+  "prompt_id": "p10",
+  "group": "boats",
+  "split": "evaluation",
+  "seed": 3303,
+  "tag": "timing-instrumented",
+  "instrumented": true,
+  "seconds": 1.296129705850035,
+  "memory": {
+    "allocated": 3440806912,
+    "reserved": 4043309056
+  },
+  "latent_sha256": "6bfbe808ab9fa7d4ef730f0af704217448407a90f1f7b0f4c5d23de7bb9d8d07",
+  "image_sha256": "4fa282985fb4bf290a20a944a11b84d9892005f846edcc753addf6d1a45e6c53",
+  "nsfw": [
+    false
+  ],
+  "timestamp": "2026-10-25T15:40:02.677101+00:00",
+  "fingerprint": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/fingerprints/sd15-p10-3303-timing-instrumented.f32",
+  "image": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/images/sd15-p10-3303-timing-instrumented.png",
+  "write_seconds": 0.0566214791033417
+}

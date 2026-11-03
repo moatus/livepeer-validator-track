@@ -1,0 +1,2 @@
+{ "method": "GET", "host": "openrouter.ai", "path": "/api/v1/models",
+  "headers": { "Accept": "application/json", "User-Agent": "witness/0.1" } }

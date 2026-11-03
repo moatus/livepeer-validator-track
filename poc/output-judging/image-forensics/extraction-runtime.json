@@ -1,0 +1,8 @@
+{
+  "seconds": 32.277873516082764,
+  "peak_gpu_allocated_bytes": 167416832,
+  "images": 215,
+  "feature_rows": 323,
+  "gpu_hours": 0.00896611253420512,
+  "smoke_preceded_main": true
+}

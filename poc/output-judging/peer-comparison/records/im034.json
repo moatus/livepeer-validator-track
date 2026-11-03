@@ -1,0 +1,21 @@
+{
+  "key": "im034",
+  "prompt_id": "q05",
+  "prompt": "A winding river through a sandstone canyon viewed from above at sunrise.",
+  "model": "sd15",
+  "seed": 730054,
+  "timestamp": "2026-10-27T12:14:23.155383+00:00",
+  "status": "ok",
+  "latent_sha256": "e4840499cf2094dd97382d1a35e7001bb9f6b98ada02f1aa560686ab0f99e91a",
+  "raw": "raw/im034.png",
+  "normalized": "normalized/im034.png",
+  "raw_sha256": "b0ad5fed21016629373905f5b2541259df46022449f051c66bb0f61c15ec9814",
+  "normalized_sha256": "b0ad5fed21016629373905f5b2541259df46022449f051c66bb0f61c15ec9814",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.314798355102539
+}

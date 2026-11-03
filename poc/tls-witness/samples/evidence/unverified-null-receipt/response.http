@@ -1,0 +1,7 @@
+HTTP/1.1 503 Response
+Content-Length: 20
+Connection: close
+X-Witness-Receipt: c8a6d475b9d1e7a8bc926101e7f66931
+Content-Type: text/plain
+
+no witness available

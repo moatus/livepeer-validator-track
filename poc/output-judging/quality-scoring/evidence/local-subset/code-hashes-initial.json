@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-10-26T00:18:33.314008+00:00",
+  "files": {
+    "generate.py": "b4b8dfa79e0c717aeb4017a14454f2793a2b5f9c86a2fbc220d5adbb9d5d50f8",
+    "preflight_records.py": "1fa476b7b11a9caf5215d36fb725eb1d3dde20b911b0e5d68b597239d3ac6e08",
+    "score_local.py": "1ebe805271c4c1d6c9ec9ac4a3a3dfdbf4cc75d3962c4a25642759d68b2d5c8c",
+    "analyze.py": "735c58020fe884007b6ccfa6bb6eabca3540e0a9d6535b5bcaa4a24198293c97",
+    "prepare.py": "ebbc1bc43700928b424c248a20ca738f081a28c2a09e46614a74c1296630e65d",
+    "download.py": "03b42b4c015454ec495a271d865d861a17f567361500dc13eb91f6bd81610672"
+  },
+  "note": "Protocol/prompts hashed before main generation; this script hash record captured during generation. No claim of an earlier code freeze."
+}

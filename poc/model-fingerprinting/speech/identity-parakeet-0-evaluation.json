@@ -1,0 +1,10 @@
+{
+  "model": "parakeet",
+  "round": 0,
+  "load_seconds": 29.349007852142677,
+  "device": "NVIDIA GeForce RTX 3090",
+  "torch": "2.9.1+cu128",
+  "cuda": "12.8",
+  "precision": "whisper fp16 / parakeet fp32",
+  "pid": 1306232
+}

@@ -1,0 +1,12 @@
+HTTP/1.1 200 Response
+Transfer-Encoding: chunked
+Connection: close
+X-Witness-Receipt: 459e1c48942b027613bb91e654344280
+Content-Type: text/event-stream
+
+64
+: fixture-comment alpha
+
+data: {"id":"gen-fixture-main","choices":[{"delta":{"content":"alpha"}}]}
+
+

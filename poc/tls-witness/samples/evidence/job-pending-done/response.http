@@ -1,0 +1,7 @@
+HTTP/1.1 200 Response
+Content-Length: 47
+Connection: close
+X-Witness-Receipt: a67c33d94b3f9c410400c88af10ff7fb
+Content-Type: application/octet-stream
+
+fixture result cb0ac6b97e26fd5d576b08d4 pending

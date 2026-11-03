@@ -1,0 +1,24 @@
+{
+  "key": "sd15-p04-1101-timing-instrumented",
+  "label": "sd15",
+  "prompt_id": "p04",
+  "group": "cats",
+  "split": "calibration",
+  "seed": 1101,
+  "tag": "timing-instrumented",
+  "instrumented": true,
+  "seconds": 1.3054592551197857,
+  "memory": {
+    "allocated": 3440806912,
+    "reserved": 4043309056
+  },
+  "latent_sha256": "7b239e2f3b04554c558bff4a816bc3fca674a414fe0d66d716424c4027556799",
+  "image_sha256": "e80d60a7909beb39586e2604043a8aa555bfcc298a4a8d3d47b230153243df3d",
+  "nsfw": [
+    false
+  ],
+  "timestamp": "2026-10-25T15:39:51.982962+00:00",
+  "fingerprint": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/fingerprints/sd15-p04-1101-timing-instrumented.f32",
+  "image": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/images/sd15-p04-1101-timing-instrumented.png",
+  "write_seconds": 0.04331958806142211
+}

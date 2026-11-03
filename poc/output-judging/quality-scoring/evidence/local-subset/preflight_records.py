@@ -1,0 +1,17 @@
+import pathlib,json,hashlib,datetime,subprocess
+from PIL import Image
+import numpy as np
+P=pathlib.Path(__file__).resolve().parent;OLD=P.parents[1]/'image-fingerprinting-poc/2026-10-25'
+def dump(n,x):(P/n).write_text(json.dumps(x,indent=2)+'\n')
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+oldprompts=json.loads((OLD/'manifest.json').read_text());pilot=[];(P/'stability-inputs').mkdir(exist_ok=True)
+for i,p in enumerate(oldprompts[:6]):
+ for label in ['sd14','sd15']:
+  candidates=sorted((OLD/'runs').glob(f"{label}-{p['id']}-*-first.json"));r=json.loads(candidates[0].read_text());im=Image.open(r['image']).convert('RGB').resize((512,512),Image.Resampling.LANCZOS);dest=P/'stability-inputs'/f'input-{len(pilot):02}.png';Image.fromarray(np.array(im)).save(dest)
+  pilot.append(dict(id=dest.stem,source_record=str(candidates[0]),source_sha256=sha(pathlib.Path(r['image'])),input=str(dest.relative_to(P)),input_sha256=sha(dest),true_prompt=p['prompt'],prior_family=p['group'],generator_label_private=label,requested_repeats=3,completed_repeats=0,status='blocked: no supported authenticated judge route'))
+dump('stability-manifest.json',pilot)
+dump('blockers.json',dict(nemotron=dict(status='blocked',installed_cli='not on PATH',python_module='No module named livepeer_roboflow',plugin_launcher='cli_unavailable: no installed module or bundled wheel',mcp=dict(endpoint='https://agent.livepeer.org/api/mcp',discovery='succeeded unauthenticated/read-only',capability='nemotron-omni-vision',model_id='nvidia/nemotron-3-nano-omni/vision',bearer='not configured in environment, storyboard .env/.env.local (absent), codex MCP config, or Claude settings',price='static-registry $0.0063/1000 tokens; live_price_usd null; not a bounded current meter',max_tokens_default=1024,requested_max_tokens=256,effective_sampling_config='not verified'),loc='canonical GET /v1/capabilities returns HTTP404 with configured LOC credential; no Nemotron contract exposed',paid_calls=0,uploads=0,public_demo_credits_used=False,next_action='Configure user-owned Livepeer Agent bearer and verify bounded current meter/config; rerun judge smoke and stability before a new main judge evaluation; no alternate provider substituted'),geneval=dict(status='not attempted',reason='optional; no existing original framework/environment; avoid legacy detector setup while required local stages run'),parent_notification=dict(thread_id='012384a6-1659-47bb-9d6a-c665e362b160',result='thread_not_found',message_delivered=False),protocol_deviation='Judge smoke and stability could not precede local generation. Local stages completed independently as authorized. Nemotron schema is prespecified but never empirically calibrated or finalized. Main judge hypothesis remains unanswered.'))
+for n,args in [('host-during-preflight.txt',['nvidia-smi']),('memory-during-preflight.txt',['free','-h']),('disk-during-preflight.txt',['df','-h',str(P)]),('requirements.lock',['uv','pip','freeze','--python',str(P/'.venv/bin/python')])]:
+ try:(P/n).write_text(subprocess.check_output(args,text=True,stderr=subprocess.STDOUT))
+ except Exception as e:(P/n).write_text(str(e))
+dump('code-hashes-initial.json',dict(timestamp=datetime.datetime.now(datetime.timezone.utc).isoformat(),files={p.name:sha(p) for p in P.glob('*.py')},note='Protocol/prompts hashed before main generation; this script hash record captured during generation. No claim of an earlier code freeze.'))

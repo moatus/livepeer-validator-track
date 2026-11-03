@@ -1,0 +1,21 @@
+{
+  "key": "im183",
+  "prompt_id": "q30",
+  "prompt": "An antique compass on a weathered sailing chart, detailed ink illustration.",
+  "model": "sd14",
+  "seed": 730303,
+  "timestamp": "2026-10-27T12:12:51.418123+00:00",
+  "status": "ok",
+  "latent_sha256": "e79c9a182a62d5813b259414cf7ecfb10e341b25ecd5395d5cc12d80d2680710",
+  "raw": "raw/im183.png",
+  "normalized": "normalized/im183.png",
+  "raw_sha256": "50d18db7e87d3b4af569d71e35ce3d514bf28e3cd9b067bfba1da33dcfcf078e",
+  "normalized_sha256": "50d18db7e87d3b4af569d71e35ce3d514bf28e3cd9b067bfba1da33dcfcf078e",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.331491231918335
+}

@@ -1,0 +1,33 @@
+{
+  "packages": {
+    "torch": "2.9.1",
+    "nemo_toolkit": "2.6.2",
+    "openai-whisper": "20250625",
+    "numpy": "2.5.4",
+    "huggingface_hub": "0.36.2",
+    "torchaudio": "2.9.1",
+    "torchvision": "0.24.1"
+  },
+  "whisper_url": "https://openaipublic.azureedge.net/main/whisper/models/d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f/medium.en.pt",
+  "whisper_sha256": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+  "whisper_sources": {
+    "triton_ops.py": "26c5082f029bbd2b7ae77ecf5a3f7f196f220e5850e2c9d0ec42961caf0dde4c",
+    "utils.py": "c25990446ab7dd5ba30bd52bd4f0e6537f11b5e361a015f02c21355d41027b05",
+    "decoding.py": "94084fedc5af74cabf8e1883a85552700057081f00ea669ad49435ecb29039db",
+    "model.py": "473491a97554ad1d0beaaef6fe91d965f12785b466b93ebb61024307b50ad683",
+    "__init__.py": "79ecbed714783b6230931a3dba6d5da6d386e2d44f9fc27256e4fc72751e1f62",
+    "timing.py": "bb091c973c428697012f0f8d1b4f5f3a605cd93c5d1c129957f712a6a878a59c",
+    "audio.py": "36ed287b2de3eaf40207cd2a44a8d45d57ea5c212a39df07401d4fcb4d5a5a1a",
+    "__main__.py": "c519d586c3a6b639f64e59d2d6fd6b591a67ecd739f9727492911fc4ce4d545a",
+    "version.py": "c4d27ecccdd52a9cded762f1a82da3152db12cbc0aa6ea781f945446a143cfaf",
+    "transcribe.py": "848b82877500d6fb8f0b91bee7a08ac67ef670a113591d11b494848d263ad0f6",
+    "tokenizer.py": "3b48e361a7e95b4ec0356ca6d72bba635778aa10269153136ee7bc34cae30b85"
+  },
+  "cuda_tensor": [
+    2.0,
+    2.0,
+    2.0
+  ],
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 3090"
+}

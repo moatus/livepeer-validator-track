@@ -1,0 +1,82 @@
+{
+  "created_at": "2026-11-02T11:09:29.515Z",
+  "credential_cleanup": {
+    "disable_accepted": null,
+    "state": "dead_confirmed"
+  },
+  "deadline_seconds": 30,
+  "delivery": {
+    "cancelled": false,
+    "client_disconnected": true,
+    "complete": false,
+    "first_chunk_ms": 321,
+    "rule": "body",
+    "socket_accepted_body_bytes": 100,
+    "socket_accepted_body_sha256": "1f18f63b8bc7f5701abff00faf6c339dd003040c9a38f42b1cf7848dfb8c0303",
+    "total_ms": 3298
+  },
+  "operator_statement": {
+    "body_bytes": 131,
+    "body_sha256": "887bc3c7ab7a68894ad8ded81aa6fedb30426591273c1e455c80c067145710db",
+    "forwarded_headers_sha256": "0da44cdafc419343d613c9645a02598d8ebb5138b23827a66d57fcb87da47df8",
+    "host": "test-server.io",
+    "method": "POST",
+    "operator_pub": "fa440bde5df1ba7c7017c4f4853d00457454b06a6b1f0eb2be6a19d5edcf97fb",
+    "path": "/api/v1/chat/completions",
+    "receipt_id": "459e1c48942b027613bb91e654344280",
+    "session_id": "20261102T110929Z-76d537",
+    "sig": "7ada38e6376a2cb8095487aa7ddd5b62880c95e62c1cffca7b2839bdbf155ac9a85c1b7dee9ebf40164c48f3e77ce12e621c29537ec7f1fad320be1f8444d90c",
+    "v": 1
+  },
+  "reason": "client_disconnected; upstream read to completion unless witness/deadline interrupted it",
+  "receipt_id": "459e1c48942b027613bb91e654344280",
+  "state": "unverified",
+  "terminal_at": "2026-11-02T11:09:33.416Z",
+  "v": 1,
+  "witness_key_id": "5976e135cc970155b06371a87020ed992812e743cfa6312f22f98465f59266c3",
+  "witnessed_receipt": {
+    "path": [],
+    "record": {
+      "job_id": "459e1c48942b027613bb91e654344280",
+      "n": 1,
+      "operator_pub": "fa440bde5df1ba7c7017c4f4853d00457454b06a6b1f0eb2be6a19d5edcf97fb",
+      "operator_statement_sha256": "7ecf054edca94a42a45510352374c6f420aef677d463b72cff7ced0e6b21ce76",
+      "outcome": "verified",
+      "request": {
+        "body_bytes": 131,
+        "body_sha256": "887bc3c7ab7a68894ad8ded81aa6fedb30426591273c1e455c80c067145710db",
+        "forwarded_headers_sha256": "0da44cdafc419343d613c9645a02598d8ebb5138b23827a66d57fcb87da47df8",
+        "host": "test-server.io",
+        "method": "POST",
+        "path": "/api/v1/chat/completions"
+      },
+      "response": {
+        "body_bytes": 239,
+        "body_sha256": "6057f9678ca4060728e7bc65a85193e0bbce5baf702c3296de82cc335a50ebe9",
+        "content_type": "text/event-stream",
+        "status": 200,
+        "transfer": "chunked"
+      },
+      "salt": "fceb0902622a0f0ec2c1cbce3bb76df0fa944b9d5329f4b41550b092f64abde4",
+      "session_id": "20261102T110929Z-76d537"
+    },
+    "v": 1,
+    "verdict": {
+      "exchanges": 1,
+      "limits": {
+        "max_recv": 262144,
+        "max_sent": 65536
+      },
+      "mode": "proxy",
+      "root": "5a5bf22a13749530526f297567800d248fa04acc38a226f8c2c6f70d5e441d33",
+      "server_name": "test-server.io",
+      "session_id": "20261102T110929Z-76d537",
+      "sig": "7dfddc57f795c92a6460c07dc73ab85089245372be3092e85100bc546c51b8d271a3772d0b2181b700684ed96874f6c70407f94321e19af902fc4814de0b700d",
+      "v": 5,
+      "verified_at": "2026-11-02T11:09:33Z",
+      "verifier_pub": "5976e135cc970155b06371a87020ed992812e743cfa6312f22f98465f59266c3",
+      "profile": "credential-sequence"
+    }
+  },
+  "format_refresh": "Historical fixture exchange; verdict re-signed with explicit credential-sequence profile, not a new TLS observation."
+}

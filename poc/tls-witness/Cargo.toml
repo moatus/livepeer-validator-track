@@ -1,0 +1,49 @@
+[package]
+name = "witness"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+tlsn = { git = "https://github.com/tlsnotary/tlsn", tag = "v0.1.0-alpha.15", features = ["mozilla-certs"] }
+# noir-rs v1.0.0-beta.19: Noir witness generation and barretenberg (UltraHonk).
+noir = { git = "https://github.com/zkmopro/noir-rs", rev = "0e4fdc9fc0cb383fcada7d3864dd2424f137316b", features = ["barretenberg"] }
+
+anyhow = "1"
+base64 = "0.22"
+chrono = { version = "0.4", default-features = false, features = ["clock", "std"] }
+clap = { version = "4.5", features = ["derive"] }
+ed25519-dalek = "2"
+futures = "0.3"
+hex = "0.4"
+httparse = "1"
+libc = "0.2"
+reqwest = { version = "0.12.28", default-features = false, features = ["rustls-tls", "json"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["raw_value"] }
+sha2 = "0.10"
+tokio = { version = "1.38", features = ["rt-multi-thread", "macros", "net", "io-util", "fs", "time"] }
+tokio-util = { version = "0.7", features = ["compat"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[build-dependencies]
+sha2 = "0.10"
+
+# The allowed stream-cap patch (SPEC section 3, rule 2): tlsn-mux's stream cap per
+# connection raised from 512 to 4096, patch/tlsn-mux-stream-cap.diff. The
+# patched source is not committed; `sh patch/apply.sh` builds it offline from
+# the cargo cache. patch/tlsn-mux/ is the crate's manifest, pointing at that
+# source; until it exists the crate's build script stops the build naming
+# `sh patch/apply.sh`, and build.rs refuses any copy whose lib.rs is not the
+# patched one.
+[patch."https://github.com/tlsnotary/tlsn-utils"]
+tlsn-mux = { path = "patch/tlsn-mux" }
+
+# Second allowed diff (SPEC section 3, rule 2): patch/tlsn-session-frame-limit.diff
+# sets the session channel frame limit to 128 MiB. This carries max-sent +
+# max-recv for the planned 32 MiB payloads with serialization overhead, and
+# even two 32 MiB directions. Same pinned v0.1.0-alpha.15 tag. The wrapper
+# manifest resolves inherited dependencies; build.rs hash-checks session.rs.
+[patch."https://github.com/tlsnotary/tlsn"]
+tlsn = { path = "patch/tlsn" }

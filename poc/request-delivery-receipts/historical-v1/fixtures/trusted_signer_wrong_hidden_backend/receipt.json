@@ -1,0 +1,17 @@
+{
+  "issuer": "independently-pinned-test-upstream",
+  "payload": {
+    "version": "receipt005-v1",
+    "job_id": "trusted_signer_wrong_hidden_backend",
+    "challenge": "565b57608811aa52651311751b416998b6a37c9c5b5dbce57b8052720c0573e4",
+    "provider": "mock-expensive-provider",
+    "canonical_model": "mock-model",
+    "model_version": "frozen-v1",
+    "request_sha256": "1fc9192a097a40979a10120ace5ed499fc550c68fd6dd24816b31eef1f5a2188",
+    "response_sha256": "2c314146e51a34a4966c6f6bee8242b1ab9babaac6496a5068ec2ba1aac2d576",
+    "terminal_status": "complete",
+    "format": "json",
+    "assets": {}
+  },
+  "signature": "95d3c818deaec6becd3f8b437cc19807af069587025b93ba17f8c653df1c1b9a4d151378a7747427b3088e58cec8169f517d527bb3c68315193602ac4c804f02"
+}

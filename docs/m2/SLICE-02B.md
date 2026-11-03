@@ -1,8 +1,8 @@
 # Slice 2b: strategic self-funding across network conditions
 
-Version **1.2 · 2026-10-12**. Definition status before implementation: **defined; implementation pending; amended before Phase 1 (revision history in §9)**. Owner: Shane (@moatus). This definition records the requested follow-up to [Slice 2](SLICE-02.md); it is not a research result, human acceptance or protocol decision. Its three implementation workloads are in [SLICE-02B-IMPLEMENTATION.md](SLICE-02B-IMPLEMENTATION.md).
+Version **1.2**. Definition status before implementation: **defined; implementation pending; amended before Phase 1 (revision history in §9)**. Owner: Shane (@moatus). This definition records the requested follow-up to [Slice 2](SLICE-02.md); it is not a research result, human acceptance or protocol decision. Its three implementation workloads are in [strategic self-funding implementation](../../experiments/m2/strategic-self-funding/README.md).
 
-**Execution status:** Inputs are reconstructed and [EX-08 accounting](../../experiments/m2/strategic-self-funding/README.md) is implemented and technically checked. Consolidation and the [three-story guide](../reviewer-resources/m2-slice-02b-story-listening-guide.md) were reviewed by the owner, 2026-10-14 ([#28](https://github.com/moatus/livepeer-validator-track/issues/28)). The v1.2 definition, economic contract and revision history below are unchanged.
+**Execution status:** Inputs are reconstructed and [EX-08 accounting](../../experiments/m2/strategic-self-funding/README.md) is implemented and technically checked. Consolidation and the [three-story guide](../reviewer-resources/m2-slice-02b-story-listening-guide.md) were reviewed ([#28](https://github.com/moatus/livepeer-validator-track/issues/28)). The v1.2 definition, economic contract and revision history below are unchanged.
 
 ## 1. Question and precedent
 
@@ -135,11 +135,3 @@ Reserve experiment/record IDs from the actual registry during M2.1; EX-08 is a p
 Acceptance requires original-case reproduction, independently hand-checked optimum and dilution fixtures, all-pool conservation, feasibility and cash-ledger checks, correct cap/zero/undefined cases, aligned-network defense, the headroom identity `dcap` and budget-convention labels, equal-total pacing comparisons, the invoice-price leakage floor, identical matched capability/use accounting, correct schedule and cohort claims, and a clean-checkout rebuild. Verifiers check recorded evidence scope and provenance; they do not establish hidden purpose or practical reviewer performance.
 
 Stop once the finite questions have conditional signs and boundaries. Any need for new behavioral rules, empirical control identification, a large simulation or a successor mechanism is reported as a dependency rather than silently implemented.
-
-## 9. Revision history
-
-| Version | Date | Change |
-| --- | --- | --- |
-| 1.0 | 2026-10-12 | Defined study: 36 core profiles, controls, supplements, timelines |
-| 1.1 | 2026-10-12 | Independent preparation review: EX-07 disclosure premise, budget period, market labels, capacity boundary, comparison details, candidate ordering |
-| 1.2 | 2026-10-12 | Owner-directed amendment before Phase 1: three core market scales including the measured ratio (54 profiles) with fee-leaning reduced to confirmations; headroom identity `dcap` and unminted-share reporting; budget stated as a convention with a 12-row funding supplement; equal-total pacing schedule; controlled invoice-price comparison; stake acquisition named as a deferred arithmetic dependency; three-story narrative requirement |

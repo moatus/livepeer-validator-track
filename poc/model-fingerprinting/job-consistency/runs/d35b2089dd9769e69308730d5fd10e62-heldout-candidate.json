@@ -1,0 +1,19 @@
+{
+  "id": "d35b2089dd9769e69308730d5fd10e62",
+  "family": 14,
+  "variant": "A",
+  "seed": 6303,
+  "split": "heldout",
+  "phase": "heldout",
+  "role": "candidate",
+  "key": "d35b2089dd9769e69308730d5fd10e62-heldout-candidate",
+  "seconds": 1.29268240602687,
+  "latent_sha256": "38348e2121ee8e87cfd91e69cd0d726e2621346f265d3225093425f3700f7304",
+  "output_commitment": "ee28caa2d5d5677cfef3bb2195acadfa1a6e37313cbd0042b2e403201f787dc4",
+  "pixel_digest": "63403b17a85128b754f8bfcbeb970b9cbf501bb7b531c1bf96bc72949d273a7c",
+  "nsfw": [
+    false
+  ],
+  "peak_allocated": 3440806912,
+  "timestamp": "2026-10-25T17:53:42.198015+00:00"
+}

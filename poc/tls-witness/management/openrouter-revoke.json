@@ -1,0 +1,7 @@
+{
+  "method": "PATCH",
+  "host": "openrouter.ai",
+  "path": "/api/v1/keys/{obtain:/data/hash}",
+  "headers": {"Authorization": "Bearer {env:OPENROUTER_MANAGEMENT_KEY}"},
+  "body": {"disabled": true}
+}

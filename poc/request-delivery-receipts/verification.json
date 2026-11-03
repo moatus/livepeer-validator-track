@@ -1,0 +1,29 @@
+{
+  "original_directory_unchanged": true,
+  "original_files_checked": 48,
+  "original_bundle_sha256": "62d1403d17846775204b5f08d2679c3d7c60b50dfee16f2066544f64d6be76c4",
+  "original_protocol_and_fixture_identifiers_unchanged": true,
+  "core": {
+    "total": 12,
+    "honest_accepted": 3,
+    "invalid_accepted": 0,
+    "passed": 12
+  },
+  "boundary": {
+    "total": 4,
+    "passed": 4
+  },
+  "original_mutation_tests": {
+    "total": 7,
+    "passed": 7
+  },
+  "signed_format_cases": {
+    "total": 17,
+    "invalid_rejected": 14,
+    "valid_accepted": 3,
+    "failures": 0
+  },
+  "benchmark": "not rerun; original-results.json historical only",
+  "spend_usd": 0,
+  "actual_model_executions": 0
+}

@@ -1,0 +1,28 @@
+# tlsn-mux as Cargo.toml's [patch] section sees it. The source is not
+# committed: `sh patch/apply.sh` extracts it from the cargo cache and applies
+# ../tlsn-mux-stream-cap.diff into the ignored ../apply.sh.out/tlsn-mux/.
+# Package and dependencies are tlsn-mux's own at the revision apply.sh pins,
+# without its dev-dependencies.
+[package]
+name = "tlsn-mux"
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+build = "build.rs"
+
+[lib]
+path = "../apply.sh.out/tlsn-mux/src/lib.rs"
+
+[dependencies]
+futures = { version = "0.3.12", default-features = false, features = [
+    "std",
+    "executor",
+] }
+log = "0.4.8"
+nohash-hasher = "0.2"
+parking_lot = "0.12"
+rand = "0.9.0"
+static_assertions = "1"
+pin-project = "1.1.0"
+web-time = "1.1.0"
+blake3 = { version = "1.8" }

@@ -1,0 +1,24 @@
+{
+  "key": "sd15-p08-1101-repeat-reload",
+  "label": "sd15",
+  "prompt_id": "p08",
+  "group": "geometric",
+  "split": "calibration",
+  "seed": 1101,
+  "tag": "repeat-reload",
+  "instrumented": true,
+  "seconds": 1.286592325894162,
+  "memory": {
+    "allocated": 3440806912,
+    "reserved": 4043309056
+  },
+  "latent_sha256": "7b239e2f3b04554c558bff4a816bc3fca674a414fe0d66d716424c4027556799",
+  "image_sha256": "599c1bb5ffd4b87229a81958f33f1060821cd01cd7aa7ccafa0d862f4522f3f6",
+  "nsfw": [
+    true
+  ],
+  "timestamp": "2026-10-25T15:40:56.261795+00:00",
+  "fingerprint": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/fingerprints/sd15-p08-1101-repeat-reload.f32",
+  "image": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/images/sd15-p08-1101-repeat-reload.png",
+  "write_seconds": 0.0033045809250324965
+}

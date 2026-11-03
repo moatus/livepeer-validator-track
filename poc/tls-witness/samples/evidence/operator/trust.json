@@ -1,0 +1,32 @@
+{
+  "v": 1,
+  "witnesses": [
+    {
+      "label": "local fixture witness; shares host; no enclave",
+      "public_key": "c864b49e88acfa6695727af4281f4cca68f1b159ef11f24cc5e643b27b7d2dae",
+      "profiles": [
+        "full-disclosure-fixture"
+      ]
+    },
+    {
+      "label": "local fixture witness; shares host; no enclave",
+      "public_key": "43426bacd070ec23139e837959cd429fb95e80f512803038e3308aa09f7f5a98",
+      "profiles": [
+        "credential-hidden"
+      ]
+    },
+    {
+      "label": "local fixture witness; shares host; no enclave",
+      "public_key": "951c5b68071f677d63cc9c12065fe8a9c02fb4f2cd1115c7904ad22d02f3a9f2",
+      "profiles": [
+        "credential-hidden"
+      ]
+    }
+  ],
+  "operators": [
+    "43426bacd070ec23139e837959cd429fb95e80f512803038e3308aa09f7f5a98",
+    "2c12a5cf956d9f6c4c6e85c4716d9f3a47509ef71e07db65d4d456955c62b857"
+  ],
+  "server_name": "test-server.io",
+  "path": "/api/v1/chat/completions"
+}

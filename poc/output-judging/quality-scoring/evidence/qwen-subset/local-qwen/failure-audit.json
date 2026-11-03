@@ -1,0 +1,11 @@
+{
+  "parse_failures_by_surface": {
+    "fenced": 143,
+    "other": 66
+  },
+  "strict_syntax": {
+    "json_syntax_invalid": 143,
+    "json_syntax_valid_but_schema_invalid": 66
+  },
+  "note": "Descriptive failure audit only. No output extraction, corrections, retries or recovered feature vectors."
+}

@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-10-25T15:42:39.885360+00:00",
+  "checks": {
+    "protocol_config.json": true,
+    "protocol_manifest.json": true,
+    "protocol_models.json": true,
+    "frozen_files": true,
+    "count_saved_202": true,
+    "all_float32_54_finite": true,
+    "all_images_512_actual_hash": true,
+    "matched_latents_across_models_repeats": true,
+    "disjoint_prompt_groups": true,
+    "disjoint_split_seeds": true,
+    "fit_before_heldout": true,
+    "fit_only_calibration_20_each": true,
+    "same_effective_scheduler_every_load": true,
+    "all_eight_phases_completed": true,
+    "safety_replacements_consistent": true,
+    "heldout_images_not_safety_replaced": true,
+    "model_files_unchanged": true
+  },
+  "passed": true,
+  "counts": {
+    "saved_generations": 202,
+    "numerical_fingerprints": 182,
+    "baseline_generations": 20
+  },
+  "notes": "Count excludes 8 warmups. No work is accepted based on accuracy threshold."
+}

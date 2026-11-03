@@ -130,9 +130,9 @@ with sync_playwright() as p:
           nxt == [page.evaluate("s => $tw.wiki.getTiddler(s).fields.step_next || '—'", s) for s in path]
           and not any(n == c for n, c in zip(nxt, caps[1:])), str(nxt))
     linked = h.locator("table.vtw-stand .vtw-produced a, table.vtw-stand .vtw-produced button").count()
-    # The zero case must not depend on some step still lacking outputs: empty the last step's
+    # The zero case must not depend on some step still lacking outputs: empty a record step's
     # outputs in the page, check the zero rendering, then restore the field.
-    last, stand = path[-1], '[data-tiddler-title="Home"] table.vtw-stand'
+    last, stand = "M2.3", '[data-tiddler-title="Home"] table.vtw-stand'
     saved_outputs = page.evaluate("s => $tw.wiki.getTiddler(s).fields.step_outputs || ''", last)
     page.evaluate("s => $tw.wiki.addTiddler(new $tw.Tiddler($tw.wiki.getTiddler(s), {step_outputs: ''}))", last)
     try:
@@ -206,6 +206,13 @@ with sync_playwright() as p:
         if ids != want or s.locator(".vtw-contribute").count() != 1 or badge != status[step] or wrapped_badges(page, step):
             missing.append(f"{step}: {ids} badge={badge!r}")
     check("every step page has the five beats in order, its status and a contribution block", not missing, "; ".join(missing))
+    for step in ("M3.1", "M3.2"):
+        frame = navigate(page, step)
+        check(f"{step}: native draft narrative with accessible evidence and working internal links",
+              status[step] == "in progress"
+              and frame.locator(".tc-tiddler-body details.vtw-details").count() >= 6
+              and frame.locator(".tc-tiddler-body .tc-tiddlylink-missing").count() == 0
+              and "not" in frame.inner_text())
     scoped = []
     for step in path:
         navigate(page, step)

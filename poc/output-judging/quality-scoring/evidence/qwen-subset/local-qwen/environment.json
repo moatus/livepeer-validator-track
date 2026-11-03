@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-10-26T00:56:38.241212+00:00",
+  "host": "smart-nv",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+  "python_executable": "/opt/t3-listen-python/cpython-3.12.15-linux-x86_64-gnu/bin/python3.12",
+  "isolated_environment": "research/judge-score-fingerprinting-poc/2026-10-25-local-qwen/.venv",
+  "dependencies": "requirements.lock",
+  "public_downloads_only": true,
+  "hosted_inference_calls": 0,
+  "original": "read-only sibling ../2026-10-25",
+  "cache": "uv shared dependency cache used; HF local_dir model/ plus possible shared Xet transport cache; no prior env mutation"
+}

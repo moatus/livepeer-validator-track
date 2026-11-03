@@ -1,0 +1,19 @@
+{
+  "key": "im071",
+  "prompt_id": "q11",
+  "prompt": "A tropical lagoon with a wooden footbridge and distant limestone cliffs, travel photograph.",
+  "model": "sdxl",
+  "seed": 730115,
+  "timestamp": "2026-10-27T12:17:06.204397+00:00",
+  "status": "ok",
+  "latent_sha256": "08c7c761f285558dfd3d163227309dcf87947e50a10f02ffeaae99119ae24de2",
+  "raw": "raw/im071.png",
+  "normalized": "normalized/im071.png",
+  "raw_sha256": "cefff552a11e728021f4ca85efb670681319a963c8c87cc7b967113dbce385e0",
+  "normalized_sha256": "182e0288b06d2fca6e385d9336e6c1ddc3b864ba0bfa6a612c2e7e4c6ca29ba7",
+  "black": false,
+  "nsfw": null,
+  "width": 1024,
+  "height": 1024,
+  "seconds": 7.133296728134155
+}

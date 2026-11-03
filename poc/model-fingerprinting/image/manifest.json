@@ -1,0 +1,302 @@
+[
+  {
+    "id": "p00",
+    "split": "calibration",
+    "group": "tableware",
+    "prompt": "A blue ceramic teapot on a wooden table",
+    "seeds": [
+      1101,
+      2202
+    ]
+  },
+  {
+    "id": "p01",
+    "split": "calibration",
+    "group": "tableware",
+    "prompt": "A glass bowl filled with green apples",
+    "seeds": [
+      1101,
+      2202
+    ]
+  },
+  {
+    "id": "p02",
+    "split": "calibration",
+    "group": "mountains",
+    "prompt": "Snow covered mountains beneath a clear sky",
+    "seeds": [
+      1101,
+      2202
+    ]
+  },
+  {
+    "id": "p03",
+    "split": "calibration",
+    "group": "mountains",
+    "prompt": "A winding trail on a rocky mountain",
+    "seeds": [
+      1101,
+      2202
+    ]
+  },
+  {
+    "id": "p04",
+    "split": "calibration",
+    "group": "cats",
+    "prompt": "An orange cat sleeping on a cushion",
+    "seeds": [
+      1101,
+      2202
+    ]
+  },
+  {
+    "id": "p05",
+    "split": "calibration",
+    "group": "cats",
+    "prompt": "A gray kitten sitting beside a window",
+    "seeds": [
+      1101,
+      2202
+    ]
+  },
+  {
+    "id": "p06",
+    "split": "calibration",
+    "group": "libraries",
+    "prompt": "A quiet library with wooden bookshelves",
+    "seeds": [
+      1101,
+      2202
+    ]
+  },
+  {
+    "id": "p07",
+    "split": "calibration",
+    "group": "libraries",
+    "prompt": "A reading room with a desk and a green lamp",
+    "seeds": [
+      1101,
+      2202
+    ]
+  },
+  {
+    "id": "p08",
+    "split": "calibration",
+    "group": "geometric",
+    "prompt": "A watercolor illustration of colorful geometric shapes",
+    "seeds": [
+      1101,
+      2202
+    ]
+  },
+  {
+    "id": "p09",
+    "split": "calibration",
+    "group": "geometric",
+    "prompt": "A paper collage of circles and triangles",
+    "seeds": [
+      1101,
+      2202
+    ]
+  },
+  {
+    "id": "p10",
+    "split": "evaluation",
+    "group": "boats",
+    "prompt": "A small sailboat on a calm blue lake",
+    "seeds": [
+      3303,
+      4404
+    ]
+  },
+  {
+    "id": "p11",
+    "split": "evaluation",
+    "group": "boats",
+    "prompt": "A red fishing boat resting in a harbor",
+    "seeds": [
+      3303,
+      4404
+    ]
+  },
+  {
+    "id": "p12",
+    "split": "evaluation",
+    "group": "forests",
+    "prompt": "Sunlight passing through a pine forest",
+    "seeds": [
+      3303,
+      4404
+    ]
+  },
+  {
+    "id": "p13",
+    "split": "evaluation",
+    "group": "forests",
+    "prompt": "A mossy log in a green woodland",
+    "seeds": [
+      3303,
+      4404
+    ]
+  },
+  {
+    "id": "p14",
+    "split": "evaluation",
+    "group": "birds",
+    "prompt": "A robin perched on a garden fence",
+    "seeds": [
+      3303,
+      4404
+    ]
+  },
+  {
+    "id": "p15",
+    "split": "evaluation",
+    "group": "birds",
+    "prompt": "A white heron standing beside a pond",
+    "seeds": [
+      3303,
+      4404
+    ]
+  },
+  {
+    "id": "p16",
+    "split": "evaluation",
+    "group": "kitchens",
+    "prompt": "A bright kitchen with copper pans",
+    "seeds": [
+      3303,
+      4404
+    ]
+  },
+  {
+    "id": "p17",
+    "split": "evaluation",
+    "group": "kitchens",
+    "prompt": "A rustic kitchen with a stone floor",
+    "seeds": [
+      3303,
+      4404
+    ]
+  },
+  {
+    "id": "p18",
+    "split": "evaluation",
+    "group": "botanical",
+    "prompt": "A botanical watercolor of wildflowers",
+    "seeds": [
+      3303,
+      4404
+    ]
+  },
+  {
+    "id": "p19",
+    "split": "evaluation",
+    "group": "botanical",
+    "prompt": "An ink illustration of fern leaves",
+    "seeds": [
+      3303,
+      4404
+    ]
+  },
+  {
+    "id": "p20",
+    "split": "evaluation",
+    "group": "bicycles",
+    "prompt": "A yellow bicycle leaning against a brick wall",
+    "seeds": [
+      3303,
+      4404
+    ]
+  },
+  {
+    "id": "p21",
+    "split": "evaluation",
+    "group": "bicycles",
+    "prompt": "A vintage bicycle beside a country road",
+    "seeds": [
+      3303,
+      4404
+    ]
+  },
+  {
+    "id": "p22",
+    "split": "evaluation",
+    "group": "deserts",
+    "prompt": "Sand dunes under a pink evening sky",
+    "seeds": [
+      3303,
+      4404
+    ]
+  },
+  {
+    "id": "p23",
+    "split": "evaluation",
+    "group": "deserts",
+    "prompt": "A cactus in a wide rocky desert",
+    "seeds": [
+      3303,
+      4404
+    ]
+  },
+  {
+    "id": "p24",
+    "split": "evaluation",
+    "group": "dogs",
+    "prompt": "A golden dog playing in a grassy field",
+    "seeds": [
+      3303,
+      4404
+    ]
+  },
+  {
+    "id": "p25",
+    "split": "evaluation",
+    "group": "dogs",
+    "prompt": "A small brown dog resting on a rug",
+    "seeds": [
+      3303,
+      4404
+    ]
+  },
+  {
+    "id": "p26",
+    "split": "evaluation",
+    "group": "workshops",
+    "prompt": "A tidy woodworking workshop with hand tools",
+    "seeds": [
+      3303,
+      4404
+    ]
+  },
+  {
+    "id": "p27",
+    "split": "evaluation",
+    "group": "workshops",
+    "prompt": "An artists studio with brushes and blank canvases",
+    "seeds": [
+      3303,
+      4404
+    ]
+  },
+  {
+    "id": "p28",
+    "split": "evaluation",
+    "group": "fantasy",
+    "prompt": "A storybook illustration of a floating garden",
+    "seeds": [
+      3303,
+      4404
+    ]
+  },
+  {
+    "id": "p29",
+    "split": "evaluation",
+    "group": "fantasy",
+    "prompt": "A whimsical illustration of a tiny tree house",
+    "seeds": [
+      3303,
+      4404
+    ]
+  }
+]

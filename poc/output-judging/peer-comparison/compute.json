@@ -1,0 +1,11 @@
+{
+  "generation_and_analysis_enclosing_seconds": 1580.2645840644836,
+  "gpu_hours_upper_bound": 0.4389623844623566,
+  "generation_call_seconds": 648.309451341629,
+  "extraction_seconds": 104.851722240448,
+  "hosted_spend_usd": 0,
+  "hardware_cost": "not priced; zero hosted spend does not imply free hardware",
+  "end_utc": "2026-10-27T12:35:53.144147+00:00",
+  "preflight_utc": "2026-10-27T12:06:00Z",
+  "wall_since_first_gpu_preflight_seconds": 1793.144155740738
+}

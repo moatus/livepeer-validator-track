@@ -1,0 +1,25 @@
+{
+  "question": "Can Vouch Studio's actual judge and other scoring models provide identifying score profiles?",
+  "status": "completed",
+  "agents": [
+    {
+      "agent": "/root/vouch_judge_signal",
+      "model": "gpt-6.1-sol",
+      "report": "vouch-judge-analysis.md",
+      "status": "completed"
+    },
+    {
+      "agent": "/root/ranking_signal_catalog",
+      "model": "gpt-6.1-sol",
+      "report": "ranking-signal-catalog.md",
+      "status": "completed"
+    },
+    {
+      "taskId": "node:delegated-task:command%3Amcp%3A528030d7-9bec-4c5a-9140-d7bb097ef282%3Adelegate-task%3Ajudge-score-fingerprint-grok-20261025-r1",
+      "model": "grok-4.7",
+      "report": "recent-ranking-sources.md",
+      "status": "completed"
+    }
+  ],
+  "next": "Research complete. index.html synthesizes inventory and source corrections. No generation or scoring experiments run."
+}

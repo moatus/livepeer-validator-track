@@ -1,0 +1,33 @@
+{
+  "scheduler": {
+    "num_train_timesteps": 1000,
+    "beta_start": 0.00085,
+    "beta_end": 0.012,
+    "beta_schedule": "scaled_linear",
+    "trained_betas": null,
+    "clip_sample": false,
+    "set_alpha_to_one": false,
+    "steps_offset": 1,
+    "prediction_type": "epsilon",
+    "thresholding": false,
+    "dynamic_thresholding_ratio": 0.995,
+    "clip_sample_range": 1.0,
+    "sample_max_value": 1.0,
+    "timestep_spacing": "leading",
+    "rescale_betas_zero_snr": false,
+    "_use_default_values": [
+      "trained_betas",
+      "sample_max_value",
+      "dynamic_thresholding_ratio",
+      "clip_sample_range",
+      "thresholding"
+    ],
+    "_class_name": "DDIMScheduler"
+  },
+  "safety_checker": "StableDiffusionSafetyChecker",
+  "watermark": "None",
+  "protocol_sha256": "d405581eeeb8cc420964497d909d7c7e8cbc364849bf3dc64b2e0ae295bcefaf",
+  "torch": "2.9.1+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 3090"
+}

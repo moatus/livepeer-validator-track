@@ -1,0 +1,24 @@
+{
+  "key": "sd15-p00-1101-timing-instrumented",
+  "label": "sd15",
+  "prompt_id": "p00",
+  "group": "tableware",
+  "split": "calibration",
+  "seed": 1101,
+  "tag": "timing-instrumented",
+  "instrumented": true,
+  "seconds": 1.2977890700567514,
+  "memory": {
+    "allocated": 3440806912,
+    "reserved": 4043309056
+  },
+  "latent_sha256": "7b239e2f3b04554c558bff4a816bc3fca674a414fe0d66d716424c4027556799",
+  "image_sha256": "89eba9704747a9daa15804f95e645405f0462887f023a38ecf7ad14e91c2716c",
+  "nsfw": [
+    false
+  ],
+  "timestamp": "2026-10-25T15:39:43.882751+00:00",
+  "fingerprint": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/fingerprints/sd15-p00-1101-timing-instrumented.f32",
+  "image": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/images/sd15-p00-1101-timing-instrumented.png",
+  "write_seconds": 0.06025750492699444
+}

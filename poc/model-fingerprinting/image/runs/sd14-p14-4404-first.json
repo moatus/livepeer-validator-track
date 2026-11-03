@@ -1,0 +1,24 @@
+{
+  "key": "sd14-p14-4404-first",
+  "label": "sd14",
+  "prompt_id": "p14",
+  "group": "birds",
+  "split": "evaluation",
+  "seed": 4404,
+  "tag": "first",
+  "instrumented": true,
+  "seconds": 1.285247917054221,
+  "memory": {
+    "allocated": 3440806912,
+    "reserved": 4043309056
+  },
+  "latent_sha256": "7b90c0f5e4ec57a8a477e294537a26dea105fb59883ec0c9d292f78fb6729f0d",
+  "image_sha256": "17f01314050e8044a95775a61e245ff1bdd57fe5447deac7ac3b251696fd89b5",
+  "nsfw": [
+    false
+  ],
+  "timestamp": "2026-10-25T15:37:19.115289+00:00",
+  "fingerprint": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/fingerprints/sd14-p14-4404-first.f32",
+  "image": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/images/sd14-p14-4404-first.png",
+  "write_seconds": 0.055528974859043956
+}

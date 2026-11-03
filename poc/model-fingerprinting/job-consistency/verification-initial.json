@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-10-25T17:55:24.469013+00:00",
+  "checks": {
+    "protocol_hashes": true,
+    "preheldout_hashes": true,
+    "92_private_jobs_194_real_generations": true,
+    "all_54_float32_finite": true,
+    "all_images_pixels_and_commitments": true,
+    "safety_flags_are_black": true,
+    "matched_latents_per_seed": true,
+    "split_families_and_seeds_disjoint": true,
+    "freeze_before_heldout": true,
+    "requests_before_first_load": true,
+    "five_process_completions": true,
+    "checkpoint_files_unchanged": true,
+    "main_prompts_fit_token_limit": true,
+    "close_distant_tokens_differ": true,
+    "collision_raw_diff_tokens_equal": true,
+    "collision_vectors_equal": true,
+    "collision_pixels_equal": true,
+    "bundle_exact_case_schema": true,
+    "no_private_content_or_blindings_in_bundle": true,
+    "private_key_not_exported": true,
+    "private_files_restricted": true,
+    "numerical_negatives_preserve_metadata": true,
+    "independent_positive_records": true,
+    "same_effective_scheduler": false
+  },
+  "passed": false,
+  "token_lengths_main": [
+    9,
+    14
+  ],
+  "collision_full_token_lengths": [
+    152,
+    152
+  ],
+  "safety_replacements": 2
+}

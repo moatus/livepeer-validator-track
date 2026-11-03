@@ -2,7 +2,7 @@
 
 **Historical September experiment.** Its original assumptions, arithmetic and line citations are preserved. October supersedes the open emissions concepts and clarifies that unused MFS node allowances are never minted; see the [October reconciliation](../../m2/october-reconciliation/README.md). This experiment is not a current-paper result.
 
-Version: **v0.3 · 2026-09-26**. Status: **Drafted**. Automated QA is reported below. This workbook supports workbench step M1.1; it is not an accepted economic rule or an empirical finding.
+Version: **v0.3**. Status: **Drafted**. Automated QA is reported below. This workbook supports workbench step M1.1; it is not an accepted economic rule or an empirical finding.
 
 ## Source and scope
 
@@ -34,7 +34,7 @@ The third command is an **optional spreadsheet recalculation regression check** 
 
 **v0.3 scope revision:** wording is confined to the litepaper baseline and its unresolved questions. The fixed input budget is an analytical control, not a proposed replacement rule. Accounting formulas and scenarios are unchanged.
 
-**2026-10-09 source migration:** `build.py` now reads the exact archived September source at `docs/sources/litepaper-2026-09.md` (same SHA-256); the previous path was `docs/litepaper-2.0.md`. Formulas, inputs and results are unchanged.
+**Source mapping:** `build.py` now reads the exact archived September source at `docs/sources/litepaper-2026-09.md` (same SHA-256); the previous path was `docs/litepaper-2.0.md`. Formulas, inputs and results are unchanged.
 
 ## Default one-round example
 

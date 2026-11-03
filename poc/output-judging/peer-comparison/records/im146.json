@@ -1,0 +1,21 @@
+{
+  "key": "im146",
+  "prompt_id": "q24",
+  "prompt": "A red accordion on a wooden chair beside a curtain, still life painting.",
+  "model": "sd14",
+  "seed": 730242,
+  "timestamp": "2026-10-27T12:12:16.811459+00:00",
+  "status": "ok",
+  "latent_sha256": "abc5add2a416401d56473b1ddf8bed749fc57e3cff458e2980069cb8ad5f5ffa",
+  "raw": "raw/im146.png",
+  "normalized": "normalized/im146.png",
+  "raw_sha256": "9a1ce8672ab3de466c005dc7d1d03e955ede9f0c68d17e9fe128b78c2c076ce5",
+  "normalized_sha256": "9a1ce8672ab3de466c005dc7d1d03e955ede9f0c68d17e9fe128b78c2c076ce5",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.410187005996704
+}

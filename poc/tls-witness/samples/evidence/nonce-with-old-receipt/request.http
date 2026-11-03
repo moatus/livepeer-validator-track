@@ -1,0 +1,10 @@
+POST /api/v1/chat/completions HTTP/1.1
+Host: router
+Content-Type: application/json
+X-Client-Note: first
+X-Client-Require-Witness: true
+Content-Length: 65
+Connection: close
+X-Client-Nonce: 8c1869b78f5e4a41a5ee32f6f6b866d2
+
+{"model":"fixture","messages":[{"role":"user","content":"pong"}]}

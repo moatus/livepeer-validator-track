@@ -1,0 +1,5 @@
+HTTP/1.1 502 Response
+Content-Length: 0
+Connection: close
+X-Witness-Receipt: ea86ae1500974a965c279f82bdb5892c
+

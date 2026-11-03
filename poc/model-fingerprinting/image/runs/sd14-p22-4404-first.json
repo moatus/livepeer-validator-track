@@ -1,0 +1,24 @@
+{
+  "key": "sd14-p22-4404-first",
+  "label": "sd14",
+  "prompt_id": "p22",
+  "group": "deserts",
+  "split": "evaluation",
+  "seed": 4404,
+  "tag": "first",
+  "instrumented": true,
+  "seconds": 1.2985904330853373,
+  "memory": {
+    "allocated": 3440806912,
+    "reserved": 4043309056
+  },
+  "latent_sha256": "7b90c0f5e4ec57a8a477e294537a26dea105fb59883ec0c9d292f78fb6729f0d",
+  "image_sha256": "0f053743e96d50ab465a821ecc4942b6b06e45e84adab51e30c1d8c4877d875e",
+  "nsfw": [
+    false
+  ],
+  "timestamp": "2026-10-25T15:37:40.741080+00:00",
+  "fingerprint": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/fingerprints/sd14-p22-4404-first.f32",
+  "image": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/images/sd14-p22-4404-first.png",
+  "write_seconds": 0.07963451882824302
+}

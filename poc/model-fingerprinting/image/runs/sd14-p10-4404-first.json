@@ -1,0 +1,24 @@
+{
+  "key": "sd14-p10-4404-first",
+  "label": "sd14",
+  "prompt_id": "p10",
+  "group": "boats",
+  "split": "evaluation",
+  "seed": 4404,
+  "tag": "first",
+  "instrumented": true,
+  "seconds": 1.2880202219821513,
+  "memory": {
+    "allocated": 3440806912,
+    "reserved": 4043309056
+  },
+  "latent_sha256": "7b90c0f5e4ec57a8a477e294537a26dea105fb59883ec0c9d292f78fb6729f0d",
+  "image_sha256": "af850fb38244e5d190c7a836e601988d37c750b79dd0d80bd15b27d3ab533cd9",
+  "nsfw": [
+    false
+  ],
+  "timestamp": "2026-10-25T15:37:08.460072+00:00",
+  "fingerprint": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/fingerprints/sd14-p10-4404-first.f32",
+  "image": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/images/sd14-p10-4404-first.png",
+  "write_seconds": 0.05551535007543862
+}

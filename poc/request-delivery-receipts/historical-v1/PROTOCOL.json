@@ -1,0 +1,20 @@
+{
+  "version": "receipt005-v1",
+  "status": "frozen before fixture generation and outcomes",
+  "contract": "Synthetic offline /mock/v1/exchange; no API or NEAR interoperability claim",
+  "signed_fields": ["version", "job_id", "challenge", "provider", "canonical_model", "model_version", "request_sha256", "response_sha256", "terminal_status", "format", "assets"],
+  "signed_encoding": "JOB-003 canonical JSON: sorted keys, compact separators, UTF-8, ensure_ascii=false, NaN forbidden. Ed25519 over JOB-003 style uint64 big-endian length framing of version, receipt, canonical payload. Version is receipt005-v1.",
+  "hash": "SHA-256 of exact raw bytes, lowercase hex. Full request body includes all instructions/settings. No normalization or transforms.",
+  "trust": "Provider identity, model/version and Ed25519 public key come exclusively from trust.json provisioned independently of receipt metadata. customer.json is independently retained intended request and actual delivery, outside gateway control. Attacker-provided issuer/key metadata never adds trust.",
+  "freshness": "Independent customer record must carry fresh_challenge_issued=true, intended job_id and unpredictable synthetic client challenge. Signed values must match. Consume accepted job IDs in caller-owned local set. This proves challenge binding and replay policy, never new inference/caching semantics. Offline runs reset state; persistence across sessions is deployment responsibility.",
+  "formats": {
+    "json": "Exact bytes; valid JSON object; terminal_status=complete.",
+    "sse": "Exact UTF-8 byte stream, order and LF LF delimiters retained. Mock grammar: one or more data: <JSON object> LF LF events then exactly data: [DONE] LF LF, no trailing bytes. No prefix acceptance.",
+    "media": "Exact JSON record with sole key asset_url. Synthetic mock:// URI is resolved only in independent delivered_assets map, never fetched. Signed assets map has exactly that URI and raw asset SHA-256. Asset bytes required; URL equality alone insufficient."
+  },
+  "verification_order": ["exact schema/types", "pinned issuer and asymmetric signature", "independent freshness evidence", "job/challenge binding", "consumed job guard", "pinned provider/model/version", "intended request hash", "independent delivery present", "delivered response hash", "terminal format completeness", "media byte digest", "consume job"],
+  "scope": "exchange_verified only. Honest upstream model assertion assumed; hidden model weights/backend execution, billing, quality, demand and fresh computation remain outside guarantee.",
+  "core_cases": ["honest_json", "honest_sse", "honest_media", "changed_user_input", "changed_instruction_settings", "changed_delivery", "old_nonce_new_job", "duplicate_job_replay", "expensive_provider_decoy_substitute", "truncated_sse", "gateway_signature_as_upstream", "missing_signature"],
+  "boundary_controls": ["trusted_signer_wrong_hidden_backend", "replay_no_independent_freshness", "missing_independent_delivery", "attacker_chosen_issuer_key"],
+  "acceptance": "3 honest core exchange_verified; 9 invalid core rejected/unverified; zero false acceptance. Wrong hidden backend deliberately exchange_verified within narrow scope; other boundaries unverified/rejected."
+}

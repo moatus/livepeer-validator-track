@@ -1,0 +1,19 @@
+{
+  "key": "im089",
+  "prompt_id": "q14",
+  "prompt": "A sunlit greenhouse filled with hanging ferns and a stone path.",
+  "model": "sdxl",
+  "seed": 730145,
+  "timestamp": "2026-10-27T12:17:27.724186+00:00",
+  "status": "ok",
+  "latent_sha256": "6c11a91a899dc03f70ff3e1d6e4bb601fa611a8c9ed34b858100aaeaf64794c0",
+  "raw": "raw/im089.png",
+  "normalized": "normalized/im089.png",
+  "raw_sha256": "1a01f13781fbb41b45a3c444657046c144cd03f2bb249a02188a5807b0cda7b4",
+  "normalized_sha256": "42509b64befeb79060150edfcefdce3678c8bf1389d8728bdff8a2ea4a1a8566",
+  "black": false,
+  "nsfw": null,
+  "width": 1024,
+  "height": 1024,
+  "seconds": 7.139565467834473
+}

@@ -1,0 +1,21 @@
+{
+  "key": "im090",
+  "prompt_id": "q15",
+  "prompt": "A vintage film camera beside a folded map on a wooden desk, studio photograph.",
+  "model": "sd14",
+  "seed": 730150,
+  "timestamp": "2026-10-27T12:11:24.756421+00:00",
+  "status": "ok",
+  "latent_sha256": "48d8d43e3422c4067b05981b3e93ed85d7798190b9bd82f8bd35b4a8fc9f86cf",
+  "raw": "raw/im090.png",
+  "normalized": "normalized/im090.png",
+  "raw_sha256": "7fe6f69a2ff08c7fe85e8e3d31d026ec84b6681484fd5c8363ef98bfea9af969",
+  "normalized_sha256": "7fe6f69a2ff08c7fe85e8e3d31d026ec84b6681484fd5c8363ef98bfea9af969",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.4228112697601318
+}

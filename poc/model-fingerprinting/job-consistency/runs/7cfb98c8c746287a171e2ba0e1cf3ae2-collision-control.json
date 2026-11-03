@@ -1,0 +1,19 @@
+{
+  "id": "7cfb98c8c746287a171e2ba0e1cf3ae2",
+  "family": 15,
+  "variant": "X",
+  "seed": 7505,
+  "split": "collision",
+  "phase": "collision",
+  "role": "control",
+  "key": "7cfb98c8c746287a171e2ba0e1cf3ae2-collision-control",
+  "seconds": 1.7859065730590373,
+  "latent_sha256": "cae70a7db13a0e8e31ac57d3c4e0b93cc4fd152a4c66f0362887a967d92e91cd",
+  "output_commitment": "8d51ab825a078823f84cdf2432b905c4595e1e9a046783886ae0b38798068ea2",
+  "pixel_digest": "b0cbb9c0e64a173ca8fa10864e16c557db170b9c58f9e44e11c879acc5e3f8e8",
+  "nsfw": [
+    false
+  ],
+  "peak_allocated": 3440806912,
+  "timestamp": "2026-10-25T17:54:46.515799+00:00"
+}

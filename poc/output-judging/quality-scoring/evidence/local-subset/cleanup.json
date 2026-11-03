@@ -1,0 +1,19 @@
+{
+  "closed_at": "2026-10-26T00:35:54.423401+00:00",
+  "generated_attempts": 216,
+  "paid_calls": 0,
+  "uploads": 0,
+  "rerolls": 0,
+  "model_processes": "All experiment generation and scoring subprocesses exited; inspect host-after.txt",
+  "other_jobs": "No other process stopped, restarted or reconfigured",
+  "old_artifacts": "Read only; exact SD1.x files rehashed against prior identities",
+  "product_changes": false,
+  "git_commits": false,
+  "publication": false,
+  "driver_system_changes": false,
+  "containers": false,
+  "new_models_env": "Retained in this experiment for reproduction; excluded from review bundle",
+  "temporary_files": "No experiment service, model container or background job remains; temporary downloads managed inside local models/.cache",
+  "containment_deviation": "Initial uv dependency install used shared default cache; new entries may have been added there. Old venvs and model caches not mutated. Shared cache entries not deleted to preserve concurrent jobs.",
+  "cleanup_policy": "Retain all experiment artifacts; no destructive cleanup"
+}

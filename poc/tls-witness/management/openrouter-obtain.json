@@ -1,0 +1,8 @@
+{
+  "method": "POST",
+  "host": "openrouter.ai",
+  "path": "/api/v1/keys",
+  "headers": {"Authorization": "Bearer {env:OPENROUTER_MANAGEMENT_KEY}"},
+  "body": {"name": "{session}", "limit": 0.05, "include_byok_in_limit": true},
+  "credential_field": "/key"
+}

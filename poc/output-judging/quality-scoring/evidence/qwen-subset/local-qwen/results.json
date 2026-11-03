@@ -1,0 +1,1746 @@
+{
+  "status": "partial",
+  "coverage": {
+    "sd14": {
+      "usable_original": 72,
+      "attempted": 72,
+      "parsed": 10,
+      "parse_failures": 62,
+      "runtime_failures": 0,
+      "splits": {
+        "train": 5,
+        "calibration": 4,
+        "heldout": 1
+      }
+    },
+    "sd15": {
+      "usable_original": 71,
+      "attempted": 71,
+      "parsed": 15,
+      "parse_failures": 56,
+      "runtime_failures": 0,
+      "splits": {
+        "train": 7,
+        "calibration": 5,
+        "heldout": 3
+      }
+    },
+    "sdxl": {
+      "usable_original": 72,
+      "attempted": 72,
+      "parsed": 5,
+      "parse_failures": 67,
+      "runtime_failures": 0,
+      "splits": {
+        "train": 2,
+        "calibration": 1,
+        "heldout": 2
+      }
+    }
+  },
+  "calls": 251,
+  "hosted_usd": 0,
+  "results": {
+    "sd1x": {
+      "pickscore": {
+        "train_n": 12,
+        "calibration_n": 9,
+        "n": 4,
+        "correct": 2,
+        "accuracy": 0.5,
+        "prompt_cluster_ci95": [
+          0.0,
+          1.0
+        ],
+        "classes": [
+          "sd14",
+          "sd15"
+        ],
+        "confusion": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "per_prompt": {
+          "p18": {
+            "n": 1,
+            "correct": 0
+          },
+          "p20": {
+            "n": 1,
+            "correct": 0
+          },
+          "p21": {
+            "n": 1,
+            "correct": 1
+          },
+          "p23": {
+            "n": 1,
+            "correct": 1
+          }
+        },
+        "train_summary": {
+          "n": 12,
+          "correct": 6,
+          "confusion": [
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              6
+            ]
+          ]
+        },
+        "calibration_summary": {
+          "n": 9,
+          "correct": 6,
+          "confusion": [
+            [
+              1,
+              3
+            ],
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        "heldout_summary": {
+          "n": 4,
+          "correct": 2,
+          "confusion": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        }
+      },
+      "visual": {
+        "train_n": 12,
+        "calibration_n": 9,
+        "n": 4,
+        "correct": 3,
+        "accuracy": 0.75,
+        "prompt_cluster_ci95": [
+          0.25,
+          1.0
+        ],
+        "classes": [
+          "sd14",
+          "sd15"
+        ],
+        "confusion": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "per_prompt": {
+          "p18": {
+            "n": 1,
+            "correct": 0
+          },
+          "p20": {
+            "n": 1,
+            "correct": 1
+          },
+          "p21": {
+            "n": 1,
+            "correct": 1
+          },
+          "p23": {
+            "n": 1,
+            "correct": 1
+          }
+        },
+        "train_summary": {
+          "n": 12,
+          "correct": 7,
+          "confusion": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              7
+            ]
+          ]
+        },
+        "calibration_summary": {
+          "n": 9,
+          "correct": 4,
+          "confusion": [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              4
+            ]
+          ]
+        },
+        "heldout_summary": {
+          "n": 4,
+          "correct": 3,
+          "confusion": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        }
+      },
+      "visual+pickscore": {
+        "train_n": 12,
+        "calibration_n": 9,
+        "n": 4,
+        "correct": 1,
+        "accuracy": 0.25,
+        "prompt_cluster_ci95": [
+          0.0,
+          0.75
+        ],
+        "classes": [
+          "sd14",
+          "sd15"
+        ],
+        "confusion": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "per_prompt": {
+          "p18": {
+            "n": 1,
+            "correct": 0
+          },
+          "p20": {
+            "n": 1,
+            "correct": 1
+          },
+          "p21": {
+            "n": 1,
+            "correct": 0
+          },
+          "p23": {
+            "n": 1,
+            "correct": 0
+          }
+        },
+        "train_summary": {
+          "n": 12,
+          "correct": 8,
+          "confusion": [
+            [
+              2,
+              3
+            ],
+            [
+              1,
+              6
+            ]
+          ]
+        },
+        "calibration_summary": {
+          "n": 9,
+          "correct": 5,
+          "confusion": [
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        },
+        "heldout_summary": {
+          "n": 4,
+          "correct": 1,
+          "confusion": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      "qwen": {
+        "train_n": 12,
+        "calibration_n": 9,
+        "n": 4,
+        "correct": 3,
+        "accuracy": 0.75,
+        "prompt_cluster_ci95": [
+          0.25,
+          1.0
+        ],
+        "classes": [
+          "sd14",
+          "sd15"
+        ],
+        "confusion": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "per_prompt": {
+          "p18": {
+            "n": 1,
+            "correct": 0
+          },
+          "p20": {
+            "n": 1,
+            "correct": 1
+          },
+          "p21": {
+            "n": 1,
+            "correct": 1
+          },
+          "p23": {
+            "n": 1,
+            "correct": 1
+          }
+        },
+        "train_summary": {
+          "n": 12,
+          "correct": 7,
+          "confusion": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              7
+            ]
+          ]
+        },
+        "calibration_summary": {
+          "n": 9,
+          "correct": 5,
+          "confusion": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        "heldout_summary": {
+          "n": 4,
+          "correct": 3,
+          "confusion": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        }
+      },
+      "qwen+pickscore": {
+        "train_n": 12,
+        "calibration_n": 9,
+        "n": 4,
+        "correct": 1,
+        "accuracy": 0.25,
+        "prompt_cluster_ci95": [
+          0.0,
+          0.75
+        ],
+        "classes": [
+          "sd14",
+          "sd15"
+        ],
+        "confusion": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "per_prompt": {
+          "p18": {
+            "n": 1,
+            "correct": 0
+          },
+          "p20": {
+            "n": 1,
+            "correct": 0
+          },
+          "p21": {
+            "n": 1,
+            "correct": 0
+          },
+          "p23": {
+            "n": 1,
+            "correct": 1
+          }
+        },
+        "train_summary": {
+          "n": 12,
+          "correct": 8,
+          "confusion": [
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              5
+            ]
+          ]
+        },
+        "calibration_summary": {
+          "n": 9,
+          "correct": 6,
+          "confusion": [
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        },
+        "heldout_summary": {
+          "n": 4,
+          "correct": 1,
+          "confusion": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      "qwen+visual+pickscore": {
+        "train_n": 12,
+        "calibration_n": 9,
+        "n": 4,
+        "correct": 2,
+        "accuracy": 0.5,
+        "prompt_cluster_ci95": [
+          0.0,
+          1.0
+        ],
+        "classes": [
+          "sd14",
+          "sd15"
+        ],
+        "confusion": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "per_prompt": {
+          "p18": {
+            "n": 1,
+            "correct": 0
+          },
+          "p20": {
+            "n": 1,
+            "correct": 1
+          },
+          "p21": {
+            "n": 1,
+            "correct": 0
+          },
+          "p23": {
+            "n": 1,
+            "correct": 1
+          }
+        },
+        "train_summary": {
+          "n": 12,
+          "correct": 12,
+          "confusion": [
+            [
+              5,
+              0
+            ],
+            [
+              0,
+              7
+            ]
+          ]
+        },
+        "calibration_summary": {
+          "n": 9,
+          "correct": 5,
+          "confusion": [
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        },
+        "heldout_summary": {
+          "n": 4,
+          "correct": 2,
+          "confusion": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        }
+      },
+      "qwen_quality": {
+        "train_n": 12,
+        "calibration_n": 9,
+        "n": 4,
+        "correct": 3,
+        "accuracy": 0.75,
+        "prompt_cluster_ci95": [
+          0.25,
+          1.0
+        ],
+        "classes": [
+          "sd14",
+          "sd15"
+        ],
+        "confusion": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "per_prompt": {
+          "p18": {
+            "n": 1,
+            "correct": 0
+          },
+          "p20": {
+            "n": 1,
+            "correct": 1
+          },
+          "p21": {
+            "n": 1,
+            "correct": 1
+          },
+          "p23": {
+            "n": 1,
+            "correct": 1
+          }
+        },
+        "train_summary": {
+          "n": 12,
+          "correct": 7,
+          "confusion": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              7
+            ]
+          ]
+        },
+        "calibration_summary": {
+          "n": 9,
+          "correct": 5,
+          "confusion": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        "heldout_summary": {
+          "n": 4,
+          "correct": 3,
+          "confusion": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        }
+      }
+    },
+    "threeway": {
+      "pickscore": {
+        "train_n": 14,
+        "calibration_n": 10,
+        "n": 6,
+        "correct": 4,
+        "accuracy": 0.6666666666666666,
+        "prompt_cluster_ci95": [
+          0.25,
+          1.0
+        ],
+        "classes": [
+          "sd14",
+          "sd15",
+          "sdxl"
+        ],
+        "confusion": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "per_prompt": {
+          "p18": {
+            "n": 1,
+            "correct": 0
+          },
+          "p20": {
+            "n": 2,
+            "correct": 2
+          },
+          "p21": {
+            "n": 1,
+            "correct": 1
+          },
+          "p23": {
+            "n": 2,
+            "correct": 1
+          }
+        },
+        "train_summary": {
+          "n": 14,
+          "correct": 6,
+          "confusion": [
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              1,
+              6,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ]
+          ]
+        },
+        "calibration_summary": {
+          "n": 10,
+          "correct": 6,
+          "confusion": [
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        "heldout_summary": {
+          "n": 6,
+          "correct": 4,
+          "confusion": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              3,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ]
+        }
+      },
+      "visual": {
+        "train_n": 14,
+        "calibration_n": 10,
+        "n": 6,
+        "correct": 1,
+        "accuracy": 0.16666666666666666,
+        "prompt_cluster_ci95": [
+          0.0,
+          0.375
+        ],
+        "classes": [
+          "sd14",
+          "sd15",
+          "sdxl"
+        ],
+        "confusion": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ]
+        ],
+        "per_prompt": {
+          "p18": {
+            "n": 1,
+            "correct": 0
+          },
+          "p20": {
+            "n": 2,
+            "correct": 1
+          },
+          "p21": {
+            "n": 1,
+            "correct": 0
+          },
+          "p23": {
+            "n": 2,
+            "correct": 0
+          }
+        },
+        "train_summary": {
+          "n": 14,
+          "correct": 12,
+          "confusion": [
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              0,
+              7,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ]
+          ]
+        },
+        "calibration_summary": {
+          "n": 10,
+          "correct": 5,
+          "confusion": [
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        "heldout_summary": {
+          "n": 6,
+          "correct": 1,
+          "confusion": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              2,
+              1,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "visual+pickscore": {
+        "train_n": 14,
+        "calibration_n": 10,
+        "n": 6,
+        "correct": 1,
+        "accuracy": 0.16666666666666666,
+        "prompt_cluster_ci95": [
+          0.0,
+          0.375
+        ],
+        "classes": [
+          "sd14",
+          "sd15",
+          "sdxl"
+        ],
+        "confusion": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ]
+        ],
+        "per_prompt": {
+          "p18": {
+            "n": 1,
+            "correct": 0
+          },
+          "p20": {
+            "n": 2,
+            "correct": 1
+          },
+          "p21": {
+            "n": 1,
+            "correct": 0
+          },
+          "p23": {
+            "n": 2,
+            "correct": 0
+          }
+        },
+        "train_summary": {
+          "n": 14,
+          "correct": 10,
+          "confusion": [
+            [
+              2,
+              3,
+              0
+            ],
+            [
+              1,
+              6,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ]
+          ]
+        },
+        "calibration_summary": {
+          "n": 10,
+          "correct": 5,
+          "confusion": [
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              2,
+              3,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        "heldout_summary": {
+          "n": 6,
+          "correct": 1,
+          "confusion": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              2,
+              1,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "qwen": {
+        "train_n": 14,
+        "calibration_n": 10,
+        "n": 6,
+        "correct": 3,
+        "accuracy": 0.5,
+        "prompt_cluster_ci95": [
+          0.125,
+          0.75
+        ],
+        "classes": [
+          "sd14",
+          "sd15",
+          "sdxl"
+        ],
+        "confusion": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            2,
+            0
+          ]
+        ],
+        "per_prompt": {
+          "p18": {
+            "n": 1,
+            "correct": 0
+          },
+          "p20": {
+            "n": 2,
+            "correct": 1
+          },
+          "p21": {
+            "n": 1,
+            "correct": 1
+          },
+          "p23": {
+            "n": 2,
+            "correct": 1
+          }
+        },
+        "train_summary": {
+          "n": 14,
+          "correct": 7,
+          "confusion": [
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              0,
+              7,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ]
+          ]
+        },
+        "calibration_summary": {
+          "n": 10,
+          "correct": 5,
+          "confusion": [
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        "heldout_summary": {
+          "n": 6,
+          "correct": 3,
+          "confusion": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ]
+          ]
+        }
+      },
+      "qwen+pickscore": {
+        "train_n": 14,
+        "calibration_n": 10,
+        "n": 6,
+        "correct": 3,
+        "accuracy": 0.5,
+        "prompt_cluster_ci95": [
+          0.125,
+          0.75
+        ],
+        "classes": [
+          "sd14",
+          "sd15",
+          "sdxl"
+        ],
+        "confusion": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            2,
+            0
+          ]
+        ],
+        "per_prompt": {
+          "p18": {
+            "n": 1,
+            "correct": 0
+          },
+          "p20": {
+            "n": 2,
+            "correct": 1
+          },
+          "p21": {
+            "n": 1,
+            "correct": 1
+          },
+          "p23": {
+            "n": 2,
+            "correct": 1
+          }
+        },
+        "train_summary": {
+          "n": 14,
+          "correct": 7,
+          "confusion": [
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              0,
+              7,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ]
+          ]
+        },
+        "calibration_summary": {
+          "n": 10,
+          "correct": 5,
+          "confusion": [
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        "heldout_summary": {
+          "n": 6,
+          "correct": 3,
+          "confusion": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ]
+          ]
+        }
+      },
+      "qwen+visual+pickscore": {
+        "train_n": 14,
+        "calibration_n": 10,
+        "n": 6,
+        "correct": 0,
+        "accuracy": 0.0,
+        "prompt_cluster_ci95": [
+          0.0,
+          0.0
+        ],
+        "classes": [
+          "sd14",
+          "sd15",
+          "sdxl"
+        ],
+        "confusion": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ]
+        ],
+        "per_prompt": {
+          "p18": {
+            "n": 1,
+            "correct": 0
+          },
+          "p20": {
+            "n": 2,
+            "correct": 0
+          },
+          "p21": {
+            "n": 1,
+            "correct": 0
+          },
+          "p23": {
+            "n": 2,
+            "correct": 0
+          }
+        },
+        "train_summary": {
+          "n": 14,
+          "correct": 11,
+          "confusion": [
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              1,
+              6,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ]
+          ]
+        },
+        "calibration_summary": {
+          "n": 10,
+          "correct": 5,
+          "confusion": [
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        "heldout_summary": {
+          "n": 6,
+          "correct": 0,
+          "confusion": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "qwen_quality": {
+        "train_n": 14,
+        "calibration_n": 10,
+        "n": 6,
+        "correct": 3,
+        "accuracy": 0.5,
+        "prompt_cluster_ci95": [
+          0.125,
+          0.75
+        ],
+        "classes": [
+          "sd14",
+          "sd15",
+          "sdxl"
+        ],
+        "confusion": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            2,
+            0
+          ]
+        ],
+        "per_prompt": {
+          "p18": {
+            "n": 1,
+            "correct": 0
+          },
+          "p20": {
+            "n": 2,
+            "correct": 1
+          },
+          "p21": {
+            "n": 1,
+            "correct": 1
+          },
+          "p23": {
+            "n": 2,
+            "correct": 1
+          }
+        },
+        "train_summary": {
+          "n": 14,
+          "correct": 7,
+          "confusion": [
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              0,
+              7,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ]
+          ]
+        },
+        "calibration_summary": {
+          "n": 10,
+          "correct": 5,
+          "confusion": [
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        "heldout_summary": {
+          "n": 6,
+          "correct": 3,
+          "confusion": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "paired": {
+    "sd1x": {
+      "qwen minus pickscore": {
+        "n": 4,
+        "both_correct": 2,
+        "both_wrong": 1,
+        "improved": 1,
+        "worsened": 0,
+        "accuracy_delta": 0.25,
+        "paired_prompt_cluster_ci95": [
+          0.0,
+          0.75
+        ]
+      },
+      "qwen minus visual+pickscore": {
+        "n": 4,
+        "both_correct": 1,
+        "both_wrong": 1,
+        "improved": 2,
+        "worsened": 0,
+        "accuracy_delta": 0.5,
+        "paired_prompt_cluster_ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "qwen+pickscore minus pickscore": {
+        "n": 4,
+        "both_correct": 1,
+        "both_wrong": 2,
+        "improved": 0,
+        "worsened": 1,
+        "accuracy_delta": -0.25,
+        "paired_prompt_cluster_ci95": [
+          -0.75,
+          0.0
+        ]
+      },
+      "qwen+pickscore minus visual+pickscore": {
+        "n": 4,
+        "both_correct": 0,
+        "both_wrong": 2,
+        "improved": 1,
+        "worsened": 1,
+        "accuracy_delta": 0.0,
+        "paired_prompt_cluster_ci95": [
+          -0.75,
+          0.75
+        ]
+      },
+      "qwen+visual+pickscore minus pickscore": {
+        "n": 4,
+        "both_correct": 1,
+        "both_wrong": 1,
+        "improved": 1,
+        "worsened": 1,
+        "accuracy_delta": 0.0,
+        "paired_prompt_cluster_ci95": [
+          -0.75,
+          0.75
+        ]
+      },
+      "qwen+visual+pickscore minus visual+pickscore": {
+        "n": 4,
+        "both_correct": 1,
+        "both_wrong": 2,
+        "improved": 1,
+        "worsened": 0,
+        "accuracy_delta": 0.25,
+        "paired_prompt_cluster_ci95": [
+          0.0,
+          0.75
+        ]
+      }
+    },
+    "threeway": {
+      "qwen minus pickscore": {
+        "n": 6,
+        "both_correct": 3,
+        "both_wrong": 2,
+        "improved": 0,
+        "worsened": 1,
+        "accuracy_delta": -0.16666666666666666,
+        "paired_prompt_cluster_ci95": [
+          -0.375,
+          0.0
+        ]
+      },
+      "qwen minus visual+pickscore": {
+        "n": 6,
+        "both_correct": 1,
+        "both_wrong": 3,
+        "improved": 2,
+        "worsened": 0,
+        "accuracy_delta": 0.3333333333333333,
+        "paired_prompt_cluster_ci95": [
+          0.0,
+          0.75
+        ]
+      },
+      "qwen+pickscore minus pickscore": {
+        "n": 6,
+        "both_correct": 3,
+        "both_wrong": 2,
+        "improved": 0,
+        "worsened": 1,
+        "accuracy_delta": -0.16666666666666666,
+        "paired_prompt_cluster_ci95": [
+          -0.375,
+          0.0
+        ]
+      },
+      "qwen+pickscore minus visual+pickscore": {
+        "n": 6,
+        "both_correct": 1,
+        "both_wrong": 3,
+        "improved": 2,
+        "worsened": 0,
+        "accuracy_delta": 0.3333333333333333,
+        "paired_prompt_cluster_ci95": [
+          0.0,
+          0.75
+        ]
+      },
+      "qwen+visual+pickscore minus pickscore": {
+        "n": 6,
+        "both_correct": 0,
+        "both_wrong": 2,
+        "improved": 0,
+        "worsened": 4,
+        "accuracy_delta": -0.6666666666666666,
+        "paired_prompt_cluster_ci95": [
+          -1.0,
+          -0.25
+        ]
+      },
+      "qwen+visual+pickscore minus visual+pickscore": {
+        "n": 6,
+        "both_correct": 0,
+        "both_wrong": 5,
+        "improved": 0,
+        "worsened": 1,
+        "accuracy_delta": -0.16666666666666666,
+        "paired_prompt_cluster_ci95": [
+          -0.375,
+          0.0
+        ]
+      }
+    }
+  },
+  "stability": {
+    "input-00": {
+      "attempts": 3,
+      "parsed": 0,
+      "all_raw_identical": true,
+      "all_votes_identical": true,
+      "axis_variance": null
+    },
+    "input-01": {
+      "attempts": 3,
+      "parsed": 0,
+      "all_raw_identical": true,
+      "all_votes_identical": true,
+      "axis_variance": null
+    },
+    "input-02": {
+      "attempts": 3,
+      "parsed": 3,
+      "all_raw_identical": true,
+      "all_votes_identical": true,
+      "axis_variance": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.232595164407831e-32
+      ]
+    },
+    "input-03": {
+      "attempts": 3,
+      "parsed": 3,
+      "all_raw_identical": true,
+      "all_votes_identical": true,
+      "axis_variance": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.232595164407831e-32
+      ]
+    },
+    "input-04": {
+      "attempts": 3,
+      "parsed": 0,
+      "all_raw_identical": true,
+      "all_votes_identical": true,
+      "axis_variance": null
+    },
+    "input-05": {
+      "attempts": 3,
+      "parsed": 0,
+      "all_raw_identical": true,
+      "all_votes_identical": true,
+      "axis_variance": null
+    },
+    "input-06": {
+      "attempts": 3,
+      "parsed": 3,
+      "all_raw_identical": true,
+      "all_votes_identical": true,
+      "axis_variance": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.232595164407831e-32,
+        0.0
+      ]
+    },
+    "input-07": {
+      "attempts": 3,
+      "parsed": 3,
+      "all_raw_identical": true,
+      "all_votes_identical": true,
+      "axis_variance": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.232595164407831e-32
+      ]
+    },
+    "input-08": {
+      "attempts": 3,
+      "parsed": 0,
+      "all_raw_identical": true,
+      "all_votes_identical": true,
+      "axis_variance": null
+    },
+    "input-09": {
+      "attempts": 3,
+      "parsed": 0,
+      "all_raw_identical": true,
+      "all_votes_identical": true,
+      "axis_variance": null
+    },
+    "input-10": {
+      "attempts": 3,
+      "parsed": 0,
+      "all_raw_identical": true,
+      "all_votes_identical": true,
+      "axis_variance": null
+    },
+    "input-11": {
+      "attempts": 3,
+      "parsed": 0,
+      "all_raw_identical": true,
+      "all_votes_identical": true,
+      "axis_variance": null
+    }
+  },
+  "stability_between_image_axis_variance": [
+    0.0,
+    0.25,
+    0.0,
+    0.0,
+    0.0,
+    0.25,
+    0.0,
+    0.0,
+    0.001874999999999995,
+    0.001874999999999995
+  ],
+  "vector_columns": [
+    "object_count",
+    "color_binding",
+    "spatial",
+    "typography",
+    "object_count_applicable",
+    "color_binding_applicable",
+    "spatial_applicable",
+    "typography_applicable",
+    "craft/10",
+    "aesthetics/10"
+  ]
+}

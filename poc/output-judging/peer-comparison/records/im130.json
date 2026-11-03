@@ -1,0 +1,21 @@
+{
+  "key": "im130",
+  "prompt_id": "q21",
+  "prompt": "A glass terrarium with moss and smooth pebbles on a bookshelf, product photograph.",
+  "model": "sd15",
+  "seed": 730214,
+  "timestamp": "2026-10-27T12:14:44.959290+00:00",
+  "status": "ok",
+  "latent_sha256": "cea97028f8bf34c59ceecdb1c7c65b9c2224c6f1c96e5c1afee8a30eb092cb54",
+  "raw": "raw/im130.png",
+  "normalized": "normalized/im130.png",
+  "raw_sha256": "240441fa462804477a03e70ef1fa8547099d3f13c1a041b91e833b5831fd5833",
+  "normalized_sha256": "240441fa462804477a03e70ef1fa8547099d3f13c1a041b91e833b5831fd5833",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.3633592128753662
+}

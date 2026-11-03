@@ -1,0 +1,14 @@
+{
+  "frozen_before_inference": "2026-10-25T15:08:00Z",
+  "split": "first 10 lexicographically sorted qualifying LibriSpeech test-clean speakers, 3 clips each; first 4 speakers calibration (12 clips), remaining 6 evaluation (18 clips)",
+  "layers": "floor(N/4), floor(N/2), N-1 encoder layers, first invocation during complete ASR",
+  "features_per_layer": ["mean", "population_std", "standardized_third_moment", "standardized_fourth_moment", "std_of_channel_time_means_over_global_std", "std_of_frame_channel_means_over_global_std", "adjacent_frame_rms_difference_over_rms", "mean_adjacent_frame_cosine"],
+  "feature_count":24,
+  "comparison": "calibration first instrumented run per clip, pooled within-class diagonal scale (floor 1e-6), nearest per-model centroid by mean standardized squared distance; no feature selection or threshold search",
+  "repeat_distance": "RMS standardized feature delta using calibration scale",
+  "baseline": "same calibration procedure on output-only numeric features: words per second, mean and std of word duration, mean positive interword gap; no formatting/identity/shape/runtime inputs",
+  "precision": "Parakeet float32, Whisper fp16 (official transcribe fp16=True)",
+  "decoding": "Parakeet greedy_batch; Whisper English transcription temperature 0, no fallback, no beam/best-of, no previous-text conditioning",
+  "seed":42,
+  "batch":1
+}

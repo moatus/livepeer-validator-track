@@ -1,0 +1,252 @@
+stage,key,vote,status,error,seconds
+stability,input-00,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),4.210116624832153
+stability,input-00,1,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.7526850700378418
+stability,input-00,2,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.7301232814788818
+stability,input-01,0,parse_error,AssertionError('object_count'),1.432265281677246
+stability,input-01,1,parse_error,AssertionError('object_count'),1.4471940994262695
+stability,input-01,2,parse_error,AssertionError('object_count'),1.4697113037109375
+stability,input-02,0,ok,,1.4129576683044434
+stability,input-02,1,ok,,1.415820598602295
+stability,input-02,2,ok,,1.408313512802124
+stability,input-03,0,ok,,1.4481627941131592
+stability,input-03,1,ok,,1.4174916744232178
+stability,input-03,2,ok,,1.4969515800476074
+stability,input-04,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.5420026779174805
+stability,input-04,1,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.5099148750305176
+stability,input-04,2,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4825479984283447
+stability,input-05,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4883193969726562
+stability,input-05,1,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.511272668838501
+stability,input-05,2,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4947295188903809
+stability,input-06,0,ok,,1.3790194988250732
+stability,input-06,1,ok,,1.3779828548431396
+stability,input-06,2,ok,,1.384408950805664
+stability,input-07,0,ok,,1.4029936790466309
+stability,input-07,1,ok,,1.4365191459655762
+stability,input-07,2,ok,,1.396824836730957
+stability,input-08,0,parse_error,AssertionError('object_count'),1.585726261138916
+stability,input-08,1,parse_error,AssertionError('object_count'),1.5077135562896729
+stability,input-08,2,parse_error,AssertionError('object_count'),1.6365087032318115
+stability,input-09,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.6131114959716797
+stability,input-09,1,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.496851921081543
+stability,input-09,2,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4945321083068848
+stability,input-10,0,parse_error,AssertionError('object_count'),1.6114349365234375
+stability,input-10,1,parse_error,AssertionError('object_count'),1.5452075004577637
+stability,input-10,2,parse_error,AssertionError('object_count'),1.5478427410125732
+stability,input-11,0,parse_error,AssertionError('object_count'),1.656048059463501
+stability,input-11,1,parse_error,AssertionError('object_count'),1.5657012462615967
+stability,input-11,2,parse_error,AssertionError('object_count'),1.5507009029388428
+main,p00-0-sd14,0,parse_error,AssertionError('object_count'),1.4311821460723877
+main,p00-0-sd15,0,ok,,1.4285619258880615
+main,p00-0-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.6151490211486816
+main,p00-1-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.495710849761963
+main,p00-1-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.5991802215576172
+main,p00-1-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.604459285736084
+main,p00-2-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.6040828227996826
+main,p00-2-sd15,0,parse_error,AssertionError('object_count'),1.4311254024505615
+main,p00-2-sdxl,0,ok,,1.5053794384002686
+main,p01-0-sd14,0,parse_error,AssertionError('color_binding'),1.6435832977294922
+main,p01-0-sd15,0,parse_error,AssertionError('object_count'),1.8269438743591309
+main,p01-0-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.8277478218078613
+main,p01-1-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.8088746070861816
+main,p01-1-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.6141612529754639
+main,p01-1-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.7490663528442383
+main,p01-2-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.7689628601074219
+main,p01-2-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),2.108410120010376
+main,p01-2-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.730475664138794
+main,p02-0-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.5886414051055908
+main,p02-0-sd15,0,parse_error,AssertionError('object_count'),1.4865539073944092
+main,p02-0-sdxl,0,parse_error,AssertionError('keys'),1.0045702457427979
+main,p02-1-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.456939697265625
+main,p02-1-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.212622880935669
+main,p02-1-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.503476858139038
+main,p02-2-sd14,0,parse_error,AssertionError('object_count'),1.572200059890747
+main,p02-2-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.104942798614502
+main,p02-2-sdxl,0,parse_error,AssertionError('keys'),1.00799560546875
+main,p03-0-sd14,0,parse_error,AssertionError('object_count'),1.5657246112823486
+main,p03-0-sd15,0,parse_error,AssertionError('object_count'),1.6093165874481201
+main,p03-0-sdxl,0,parse_error,AssertionError('object_count'),1.6037139892578125
+main,p03-1-sd14,0,parse_error,AssertionError('object_count'),1.5603880882263184
+main,p03-1-sd15,0,parse_error,AssertionError('object_count'),1.557605504989624
+main,p03-1-sdxl,0,parse_error,AssertionError('object_count'),1.556830883026123
+main,p03-2-sd14,0,parse_error,AssertionError('object_count'),1.5613327026367188
+main,p03-2-sd15,0,parse_error,AssertionError('object_count'),1.5602335929870605
+main,p03-2-sdxl,0,parse_error,AssertionError('object_count'),1.5696589946746826
+main,p04-0-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.5048553943634033
+main,p04-0-sd15,0,parse_error,AssertionError('object_count'),1.394322156906128
+main,p04-0-sdxl,0,ok,,1.399141550064087
+main,p04-1-sd14,0,parse_error,AssertionError('object_count'),1.4031555652618408
+main,p04-1-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.665783166885376
+main,p04-1-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.5522680282592773
+main,p04-2-sd14,0,ok,,1.420823574066162
+main,p04-2-sd15,0,ok,,1.3933825492858887
+main,p04-2-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.485473871231079
+main,p05-0-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4939632415771484
+main,p05-0-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4910593032836914
+main,p05-0-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4816384315490723
+main,p05-1-sd14,0,ok,,1.3877685070037842
+main,p05-1-sd15,0,ok,,1.3868517875671387
+main,p05-1-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4857699871063232
+main,p05-2-sd14,0,ok,,1.3903796672821045
+main,p05-2-sd15,0,ok,,1.3918039798736572
+main,p05-2-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4808101654052734
+main,p06-0-sd14,0,parse_error,AssertionError('keys'),1.2293219566345215
+main,p06-0-sd15,0,parse_error,AssertionError('keys'),1.2472867965698242
+main,p06-0-sdxl,0,parse_error,AssertionError('keys'),1.1362571716308594
+main,p06-1-sd14,0,parse_error,AssertionError('keys'),1.1104817390441895
+main,p06-1-sd15,0,parse_error,AssertionError('keys'),1.1506869792938232
+main,p06-1-sdxl,0,parse_error,AssertionError('keys'),1.1499121189117432
+main,p06-2-sd14,0,parse_error,AssertionError('keys'),1.1493873596191406
+main,p06-2-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.2240867614746094
+main,p06-2-sdxl,0,parse_error,AssertionError('keys'),1.137937068939209
+main,p07-0-sd14,0,ok,,1.39658784866333
+main,p07-0-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4738492965698242
+main,p07-0-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4889674186706543
+main,p07-1-sd14,0,ok,,1.3909714221954346
+main,p07-1-sd15,0,ok,,1.3964910507202148
+main,p07-1-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4867947101593018
+main,p07-2-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4730303287506104
+main,p07-2-sd15,0,ok,,1.3830864429473877
+main,p07-2-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4747223854064941
+main,p08-0-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4543776512145996
+main,p08-0-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4555160999298096
+main,p08-0-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4530208110809326
+main,p08-1-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4603896141052246
+main,p08-1-sd15,0,parse_error,AssertionError('keys'),1.0011179447174072
+main,p08-1-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4572062492370605
+main,p08-2-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4523847103118896
+main,p08-2-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4539496898651123
+main,p08-2-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4661800861358643
+main,p09-0-sd14,0,parse_error,AssertionError('object_count'),1.6301372051239014
+main,p09-0-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4960370063781738
+main,p09-0-sdxl,0,parse_error,AssertionError('object_count'),1.613762617111206
+main,p09-1-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4938604831695557
+main,p09-1-sd15,0,ok,,1.392324686050415
+main,p09-1-sdxl,0,parse_error,AssertionError('object_count'),1.6845502853393555
+main,p09-2-sd14,0,parse_error,AssertionError('object_count'),1.6203408241271973
+main,p09-2-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.708488941192627
+main,p09-2-sdxl,0,parse_error,AssertionError('object_count'),1.6467223167419434
+main,p10-0-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.5132403373718262
+main,p10-0-sd15,0,parse_error,AssertionError('object_count'),1.5363843441009521
+main,p10-0-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.525785207748413
+main,p10-1-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.5319879055023193
+main,p10-1-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.5484740734100342
+main,p10-1-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),2.0998265743255615
+main,p10-2-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.544567584991455
+main,p10-2-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.5132997035980225
+main,p10-2-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.499115228652954
+main,p11-0-sd14,0,parse_error,AssertionError('object_count'),1.596193790435791
+main,p11-0-sd15,0,parse_error,AssertionError('object_count'),1.5930442810058594
+main,p11-0-sdxl,0,parse_error,AssertionError('object_count'),1.6019682884216309
+main,p11-1-sd14,0,parse_error,AssertionError('object_count'),1.5962939262390137
+main,p11-1-sd15,0,parse_error,AssertionError('object_count'),1.6329057216644287
+main,p11-1-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.7163822650909424
+main,p11-2-sd14,0,parse_error,AssertionError('object_count'),1.6174776554107666
+main,p11-2-sd15,0,parse_error,AssertionError('object_count'),1.6125729084014893
+main,p11-2-sdxl,0,parse_error,AssertionError('object_count'),1.608476161956787
+main,p12-0-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.522496223449707
+main,p12-0-sd15,0,ok,,1.461500883102417
+main,p12-0-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.501131296157837
+main,p12-1-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.6031534671783447
+main,p12-1-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.493433952331543
+main,p12-1-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.5258815288543701
+main,p12-2-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4789328575134277
+main,p12-2-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.494823932647705
+main,p12-2-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4867889881134033
+main,p13-0-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4846951961517334
+main,p13-0-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4814121723175049
+main,p13-0-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4817111492156982
+main,p13-1-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4775152206420898
+main,p13-1-sd15,0,ok,,1.3930156230926514
+main,p13-1-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4744699001312256
+main,p13-2-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4812355041503906
+main,p13-2-sd15,0,ok,,1.385389804840088
+main,p13-2-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4742252826690674
+main,p14-0-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.6839115619659424
+main,p14-0-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.6981043815612793
+main,p14-0-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4761221408843994
+main,p14-1-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.633265733718872
+main,p14-1-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.6530025005340576
+main,p14-1-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4987058639526367
+main,p14-2-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4877262115478516
+main,p14-2-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.48065185546875
+main,p15-0-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.1919336318969727
+main,p15-0-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.2819249629974365
+main,p15-0-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.6448075771331787
+main,p15-1-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.2090718746185303
+main,p15-1-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.2783048152923584
+main,p15-1-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.6442124843597412
+main,p15-2-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.291254997253418
+main,p15-2-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.2725026607513428
+main,p15-2-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.2763090133666992
+main,p16-0-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.712010145187378
+main,p16-0-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4837398529052734
+main,p16-0-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.6670005321502686
+main,p16-1-sd14,0,ok,,1.3915932178497314
+main,p16-1-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4843487739562988
+main,p16-1-sdxl,0,parse_error,AssertionError('object_count'),1.5416948795318604
+main,p16-2-sd14,0,parse_error,AssertionError('object_count'),1.544910192489624
+main,p16-2-sd15,0,parse_error,AssertionError('object_count'),1.5475986003875732
+main,p16-2-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.6423933506011963
+main,p17-0-sd14,0,ok,,1.3960986137390137
+main,p17-0-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4761686325073242
+main,p17-0-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.5008206367492676
+main,p17-1-sd14,0,ok,,1.3973920345306396
+main,p17-1-sd15,0,ok,,1.3931994438171387
+main,p17-1-sdxl,0,ok,,1.3863794803619385
+main,p17-2-sd14,0,ok,,1.3965587615966797
+main,p17-2-sd15,0,ok,,1.3973889350891113
+main,p17-2-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.520493984222412
+main,p18-0-sd14,0,ok,,1.3938767910003662
+main,p18-0-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.7605009078979492
+main,p18-0-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.7069759368896484
+main,p18-1-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4765541553497314
+main,p18-1-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4778172969818115
+main,p18-1-sdxl,0,parse_error,AssertionError('object_count'),1.6897261142730713
+main,p18-2-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.7154290676116943
+main,p18-2-sd15,0,parse_error,AssertionError('object_count'),1.7034125328063965
+main,p18-2-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.7136473655700684
+main,p19-0-sd14,0,parse_error,AssertionError('keys'),1.1918790340423584
+main,p19-0-sd15,0,parse_error,AssertionError('keys'),1.1897351741790771
+main,p19-0-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.285984754562378
+main,p19-1-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.2809484004974365
+main,p19-1-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.2807691097259521
+main,p19-1-sdxl,0,parse_error,AssertionError('keys'),1.1878385543823242
+main,p19-2-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.3135738372802734
+main,p19-2-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.3116028308868408
+main,p19-2-sdxl,0,parse_error,AssertionError('keys'),1.2180302143096924
+main,p20-0-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.489567518234253
+main,p20-0-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.503403663635254
+main,p20-0-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.5400569438934326
+main,p20-1-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.5491139888763428
+main,p20-1-sd15,0,ok,,1.509528636932373
+main,p20-1-sdxl,0,ok,,1.4705026149749756
+main,p20-2-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.5376050472259521
+main,p20-2-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.5678603649139404
+main,p20-2-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.5645177364349365
+main,p21-0-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.5017201900482178
+main,p21-0-sd15,0,ok,,1.476585865020752
+main,p21-0-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.5500104427337646
+main,p21-1-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.5339934825897217
+main,p21-1-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.526190996170044
+main,p21-1-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.487442970275879
+main,p21-2-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4820609092712402
+main,p21-2-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.498359203338623
+main,p21-2-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.5019302368164062
+main,p22-0-sd14,0,parse_error,AssertionError('keys'),1.0020499229431152
+main,p22-0-sd15,0,parse_error,AssertionError('object_count'),1.3772332668304443
+main,p22-0-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.5159640312194824
+main,p22-1-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.2334022521972656
+main,p22-1-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.2314355373382568
+main,p22-1-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4997670650482178
+main,p22-2-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.2350997924804688
+main,p22-2-sd15,0,parse_error,AssertionError('keys'),1.0012552738189697
+main,p22-2-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.504286289215088
+main,p23-0-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4894564151763916
+main,p23-0-sd15,0,ok,,1.4385602474212646
+main,p23-0-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4966466426849365
+main,p23-1-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4798030853271484
+main,p23-1-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.489616870880127
+main,p23-1-sdxl,0,ok,,1.413243055343628
+main,p23-2-sd14,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4878084659576416
+main,p23-2-sd15,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.489412546157837
+main,p23-2-sdxl,0,parse_error,JSONDecodeError('Expecting value: line 1 column 1 (char 0)'),1.4803690910339355

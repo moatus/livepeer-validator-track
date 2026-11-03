@@ -1,0 +1,3 @@
+{ "method": "GET", "host": "test-server.io", "path": "/formats/json?size=4",
+  "headers": { "Accept": "application/json", "Content-Type": "application/json" },
+  "body": { "probe": "fixture", "note": "body bytes are hashed exactly as written here", "n": 1 } }

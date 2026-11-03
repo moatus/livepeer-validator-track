@@ -1,0 +1,12 @@
+--- a/crates/server-fixture/server/src/lib.rs
++++ b/crates/server-fixture/server/src/lib.rs
+@@ -43,7 +43,8 @@
+ fn app(state: AppState) -> Router {
+     Router::new()
+         .route("/", get(|| async { "Hello, World!" }))
+-        .route("/bytes", get(bytes))
++        .route("/bytes", get(bytes).post(bytes))
++        .route("/api/v1/chat/completions", axum::routing::post(bytes))
+         .route("/formats/json", get(json))
+         .route("/formats/html", get(html))
+         .route("/protected", get(protected_route))

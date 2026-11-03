@@ -1,0 +1,11 @@
+{
+  "model_revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+  "started_epoch": 1792976190.567348,
+  "protocol_sha256": "39aa7452c173c5d4ecd07de61a54788bfb3d4ca1e1561a92741af8d574d38350",
+  "code_sha256": {
+    "score.py": "541be5701abf8fcdaf16d3aa176ab70e0252877c7a65fe73b5c7dd698e1bde67",
+    "analyze.py": "8854ebee76851d172a5bb0011aabbdf12858a29fd8fe2097a587b2ca1b0d2282",
+    "verify.py": "d5e5bdb3c06d2fed2cc6258076855eb8241aba8af611f2ec7248f06f3b247dad"
+  },
+  "dependencies_sha256": "9ea6000a00f86a251581666db7e14f737cbd5648a60d538892e1ac359ec7c81f"
+}

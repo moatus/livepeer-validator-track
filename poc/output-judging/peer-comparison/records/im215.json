@@ -1,0 +1,19 @@
+{
+  "key": "im215",
+  "prompt_id": "q35",
+  "prompt": "A manual typewriter beside a cup of tea on an oak desk, studio photograph.",
+  "model": "sdxl",
+  "seed": 730355,
+  "timestamp": "2026-10-27T12:20:43.497601+00:00",
+  "status": "ok",
+  "latent_sha256": "1f4b89250cbfdba588e953494a360ab30ae5ff0ae16e0a179ea11a36e4d3ffd4",
+  "raw": "raw/im215.png",
+  "normalized": "normalized/im215.png",
+  "raw_sha256": "7c2721a148d04fc48a3e5c1155717d02f4bac5fc3a9e7994826214ace91ab245",
+  "normalized_sha256": "392fdda92fb21b219e4386714a07825b43bef95355d26f1f0b39c39f19c45cce",
+  "black": false,
+  "nsfw": null,
+  "width": 1024,
+  "height": 1024,
+  "seconds": 9.314176797866821
+}

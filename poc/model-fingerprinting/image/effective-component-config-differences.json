@@ -1,0 +1,146 @@
+{
+  "vae": {
+    "_diffusers_version": [
+      "0.2.2",
+      "0.6.0"
+    ],
+    "_use_default_values": [
+      [
+        "use_post_quant_conv",
+        "mid_block_add_attention",
+        "latents_mean",
+        "norm_num_groups",
+        "latents_std",
+        "force_upcast",
+        "use_quant_conv",
+        "shift_factor"
+      ],
+      [
+        "shift_factor",
+        "latents_mean",
+        "use_post_quant_conv",
+        "latents_std",
+        "force_upcast",
+        "mid_block_add_attention",
+        "use_quant_conv",
+        "scaling_factor"
+      ]
+    ],
+    "_name_or_path": [
+      "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/models/sd14/vae",
+      "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/models/sd15/vae"
+    ]
+  },
+  "text_encoder": {
+    "projection_dim": [
+      512,
+      768
+    ],
+    "_name_or_path": [
+      "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/models/sd14/text_encoder",
+      "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/models/sd15/text_encoder"
+    ]
+  },
+  "unet": {
+    "_use_default_values": [
+      [
+        "time_embedding_dim",
+        "resnet_skip_time_act",
+        "reverse_transformer_layers_per_block",
+        "time_embedding_type",
+        "attention_type",
+        "transformer_layers_per_block",
+        "resnet_time_scale_shift",
+        "projection_class_embeddings_input_dim",
+        "upcast_attention",
+        "mid_block_type",
+        "resnet_out_scale_factor",
+        "encoder_hid_dim",
+        "mid_block_only_cross_attention",
+        "encoder_hid_dim_type",
+        "time_embedding_act_fn",
+        "conv_in_kernel",
+        "time_cond_proj_dim",
+        "class_embed_type",
+        "dual_cross_attention",
+        "num_class_embeds",
+        "addition_embed_type",
+        "timestep_post_act",
+        "addition_embed_type_num_heads",
+        "class_embeddings_concat",
+        "use_linear_projection",
+        "conv_out_kernel",
+        "dropout",
+        "only_cross_attention",
+        "addition_time_embed_dim",
+        "cross_attention_norm",
+        "num_attention_heads"
+      ],
+      [
+        "time_cond_proj_dim",
+        "encoder_hid_dim",
+        "dual_cross_attention",
+        "upcast_attention",
+        "resnet_out_scale_factor",
+        "projection_class_embeddings_input_dim",
+        "use_linear_projection",
+        "dropout",
+        "time_embedding_dim",
+        "num_class_embeds",
+        "addition_embed_type",
+        "cross_attention_norm",
+        "timestep_post_act",
+        "time_embedding_type",
+        "class_embed_type",
+        "reverse_transformer_layers_per_block",
+        "mid_block_type",
+        "conv_in_kernel",
+        "only_cross_attention",
+        "num_attention_heads",
+        "addition_embed_type_num_heads",
+        "encoder_hid_dim_type",
+        "addition_time_embed_dim",
+        "attention_type",
+        "mid_block_only_cross_attention",
+        "transformer_layers_per_block",
+        "resnet_time_scale_shift",
+        "conv_out_kernel",
+        "resnet_skip_time_act",
+        "class_embeddings_concat",
+        "time_embedding_act_fn"
+      ]
+    ],
+    "_diffusers_version": [
+      "0.2.2",
+      "0.6.0"
+    ],
+    "_name_or_path": [
+      "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/models/sd14/unet",
+      "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/models/sd15/unet"
+    ]
+  },
+  "scheduler": {
+    "_use_default_values": [
+      [
+        "dynamic_thresholding_ratio",
+        "trained_betas",
+        "clip_sample_range",
+        "thresholding",
+        "sample_max_value"
+      ],
+      [
+        "thresholding",
+        "clip_sample_range",
+        "sample_max_value",
+        "trained_betas",
+        "dynamic_thresholding_ratio"
+      ]
+    ]
+  },
+  "safety_checker": {
+    "_name_or_path": [
+      "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/models/sd14/safety_checker",
+      "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/models/sd15/safety_checker"
+    ]
+  }
+}

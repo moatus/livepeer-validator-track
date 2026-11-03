@@ -1,0 +1,21 @@
+{
+  "key": "im224",
+  "prompt_id": "q37",
+  "prompt": "A diamond shaped patchwork kite above a grassy hill, paper collage illustration.",
+  "model": "sd14",
+  "seed": 730372,
+  "timestamp": "2026-10-27T12:13:28.176860+00:00",
+  "status": "ok",
+  "latent_sha256": "97aff5d05a2c19fe933c156e4e8d2a3f6c3708dc68ef9bde13135f410634fdba",
+  "raw": "raw/im224.png",
+  "normalized": "normalized/im224.png",
+  "raw_sha256": "7430b0692716e95e5236ae120047fb477095a27d474b9c9b322e5daa6a66c77c",
+  "normalized_sha256": "7430b0692716e95e5236ae120047fb477095a27d474b9c9b322e5daa6a66c77c",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.3703572750091553
+}

@@ -1,0 +1,11 @@
+{
+  "recorded_start_utc": "2026-10-26T01:14:13.812574+00:00",
+  "finished_utc": "2026-10-26T01:19:29.089893+00:00",
+  "seconds_from_plan_freeze_to_finalization": 315.27731585502625,
+  "initial_document_reading": "before recorded start; not separately timed; total task comfortably under 30-minute ceiling",
+  "new_inference_calls": 0,
+  "cumulative_local_qwen_calls": 251,
+  "hosted_usd": 0,
+  "environment_reused": "../2026-10-25-local-qwen/.venv",
+  "no_installs_downloads_models_or_gpu": true
+}

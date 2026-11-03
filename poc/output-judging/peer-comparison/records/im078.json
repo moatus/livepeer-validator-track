@@ -1,0 +1,21 @@
+{
+  "key": "im078",
+  "prompt_id": "q13",
+  "prompt": "A fox curled up beneath a snow covered pine tree, storybook illustration.",
+  "model": "sd14",
+  "seed": 730130,
+  "timestamp": "2026-10-27T12:11:14.195542+00:00",
+  "status": "ok",
+  "latent_sha256": "29a1148c6ce9709b1168af86915599bf993578813470fcf19207dd4f1f8ee34d",
+  "raw": "raw/im078.png",
+  "normalized": "normalized/im078.png",
+  "raw_sha256": "6f966a508ce33393ec2483ae71b7f6c393c44381cc945d1d624ad25387014013",
+  "normalized_sha256": "6f966a508ce33393ec2483ae71b7f6c393c44381cc945d1d624ad25387014013",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.3062348365783691
+}

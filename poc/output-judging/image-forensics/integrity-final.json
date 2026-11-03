@@ -1,0 +1,8 @@
+{
+  "original_files_checked": 1156,
+  "unchanged": true,
+  "excluded": "original .venv, models directory and __pycache__; named Qwen model directory included in hash verification",
+  "verification": "PASS: independent fits, selected alphas, tolerant floats, exact predictions/counts, conditional paired bootstrap, artifact hashes; original sources unchanged\n",
+  "wall_seconds": 303.43440413475037,
+  "independent_review": "pending parent; no child workers launched"
+}

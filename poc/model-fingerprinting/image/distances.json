@@ -1,0 +1,1082 @@
+[
+  {
+    "key": "sd14-p00-1101-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.7579340979892542,
+      36.93454370843056
+    ]
+  },
+  {
+    "key": "sd14-p00-2202-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.1012751762073945,
+      39.080365862397734
+    ]
+  },
+  {
+    "key": "sd14-p01-1101-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.40968864268311894,
+      33.12167080651514
+    ]
+  },
+  {
+    "key": "sd14-p01-2202-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.358815744700416,
+      36.64153539674687
+    ]
+  },
+  {
+    "key": "sd14-p02-1101-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.025504091419146,
+      36.098107878914945
+    ]
+  },
+  {
+    "key": "sd14-p02-2202-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.9078621811927534,
+      34.16035438797169
+    ]
+  },
+  {
+    "key": "sd14-p03-1101-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.8093443669347392,
+      35.74773273490893
+    ]
+  },
+  {
+    "key": "sd14-p03-2202-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.9613240529951205,
+      34.42264826606776
+    ]
+  },
+  {
+    "key": "sd14-p04-1101-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.1867066428225537,
+      30.64075094860962
+    ]
+  },
+  {
+    "key": "sd14-p04-2202-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.8845352002597283,
+      33.33135386311277
+    ]
+  },
+  {
+    "key": "sd14-p05-1101-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.8844421057367887,
+      38.15081964857894
+    ]
+  },
+  {
+    "key": "sd14-p05-2202-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.8196621273400831,
+      37.10273198424811
+    ]
+  },
+  {
+    "key": "sd14-p06-1101-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.7064641818383203,
+      38.23184478075372
+    ]
+  },
+  {
+    "key": "sd14-p06-2202-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.6033349835628047,
+      36.32598292529254
+    ]
+  },
+  {
+    "key": "sd14-p07-1101-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.4143174109927883,
+      40.34613627981667
+    ]
+  },
+  {
+    "key": "sd14-p07-2202-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.8085392637589146,
+      41.234406505108794
+    ]
+  },
+  {
+    "key": "sd14-p08-1101-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.1362698481144327,
+      40.93251769575787
+    ]
+  },
+  {
+    "key": "sd14-p08-2202-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      2.4734335581321214,
+      39.50007173130604
+    ]
+  },
+  {
+    "key": "sd14-p09-1101-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.1349384949460648,
+      35.11936572266762
+    ]
+  },
+  {
+    "key": "sd14-p09-2202-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      2.7307539758906274,
+      31.92426894792249
+    ]
+  },
+  {
+    "key": "sd15-p00-1101-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      37.780587222721465,
+      1.7099121612134356
+    ]
+  },
+  {
+    "key": "sd15-p00-2202-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      34.347197550458674,
+      0.8262461930898238
+    ]
+  },
+  {
+    "key": "sd15-p01-1101-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      37.91223487741359,
+      0.4016933067348721
+    ]
+  },
+  {
+    "key": "sd15-p01-2202-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      36.398286634382615,
+      0.47386584237941215
+    ]
+  },
+  {
+    "key": "sd15-p02-1101-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      37.96867508019979,
+      0.677704740911168
+    ]
+  },
+  {
+    "key": "sd15-p02-2202-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      40.289572390081894,
+      0.7643480844896269
+    ]
+  },
+  {
+    "key": "sd15-p03-1101-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      34.99868289790913,
+      0.5883753225419751
+    ]
+  },
+  {
+    "key": "sd15-p03-2202-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      34.891418456876515,
+      0.844541795979991
+    ]
+  },
+  {
+    "key": "sd15-p04-1101-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      43.48276556399608,
+      1.4797701544407136
+    ]
+  },
+  {
+    "key": "sd15-p04-2202-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      38.69671954919403,
+      1.4202176259535841
+    ]
+  },
+  {
+    "key": "sd15-p05-1101-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      35.18362594028162,
+      0.46258137638239283
+    ]
+  },
+  {
+    "key": "sd15-p05-2202-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      34.740031628761045,
+      0.9282293155864779
+    ]
+  },
+  {
+    "key": "sd15-p06-1101-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      33.818252487425035,
+      0.9518253587371818
+    ]
+  },
+  {
+    "key": "sd15-p06-2202-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      36.35667578660451,
+      0.5068929197586842
+    ]
+  },
+  {
+    "key": "sd15-p07-1101-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      30.66044435225376,
+      0.5101416458389724
+    ]
+  },
+  {
+    "key": "sd15-p07-2202-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      30.92306422508406,
+      0.3556566438015825
+    ]
+  },
+  {
+    "key": "sd15-p08-1101-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      32.812036710980536,
+      0.7638218739373348
+    ]
+  },
+  {
+    "key": "sd15-p08-2202-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      36.3929707370559,
+      2.108653419274921
+    ]
+  },
+  {
+    "key": "sd15-p09-1101-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      37.506332570531626,
+      1.273091498907859
+    ]
+  },
+  {
+    "key": "sd15-p09-2202-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      43.65788888508673,
+      2.837284572522823
+    ]
+  },
+  {
+    "key": "sd14-p10-3303-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.8051231398779873,
+      37.03143193602893
+    ]
+  },
+  {
+    "key": "sd14-p10-4404-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.8074699072038034,
+      43.01155827895156
+    ]
+  },
+  {
+    "key": "sd14-p11-3303-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.041979150020344,
+      41.137232800893294
+    ]
+  },
+  {
+    "key": "sd14-p11-4404-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.1696467549594776,
+      37.83774785944956
+    ]
+  },
+  {
+    "key": "sd14-p12-3303-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.5983748534885117,
+      37.11911061636721
+    ]
+  },
+  {
+    "key": "sd14-p12-4404-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.7282647496613092,
+      35.405010467954625
+    ]
+  },
+  {
+    "key": "sd14-p13-3303-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      2.005767222023089,
+      38.04808450903095
+    ]
+  },
+  {
+    "key": "sd14-p13-4404-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.8925288865524448,
+      37.32247615915555
+    ]
+  },
+  {
+    "key": "sd14-p14-3303-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.8038026479222469,
+      35.86400756762804
+    ]
+  },
+  {
+    "key": "sd14-p14-4404-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.8921976352114908,
+      36.62381775519305
+    ]
+  },
+  {
+    "key": "sd14-p15-3303-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.6742186808774167,
+      37.1700821326412
+    ]
+  },
+  {
+    "key": "sd14-p15-4404-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      6.861385629935187,
+      42.3797347109616
+    ]
+  },
+  {
+    "key": "sd14-p16-3303-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.8836753461713036,
+      39.95160826991764
+    ]
+  },
+  {
+    "key": "sd14-p16-4404-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.6210610890363933,
+      37.26863047575184
+    ]
+  },
+  {
+    "key": "sd14-p17-3303-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.3884342954556501,
+      41.26230614922789
+    ]
+  },
+  {
+    "key": "sd14-p17-4404-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.5696750913230357,
+      42.633823960155844
+    ]
+  },
+  {
+    "key": "sd14-p18-3303-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.2251665865109576,
+      35.47919300990747
+    ]
+  },
+  {
+    "key": "sd14-p18-4404-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.3770190552313741,
+      35.0146289714124
+    ]
+  },
+  {
+    "key": "sd14-p19-3303-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.6853451195327371,
+      28.400133721686384
+    ]
+  },
+  {
+    "key": "sd14-p19-4404-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.5368083532489447,
+      29.84007838424557
+    ]
+  },
+  {
+    "key": "sd14-p20-3303-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.3322639955202764,
+      40.67457528329467
+    ]
+  },
+  {
+    "key": "sd14-p20-4404-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.4872484492290023,
+      41.189217693012324
+    ]
+  },
+  {
+    "key": "sd14-p21-3303-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.0205488261886495,
+      39.65138568149553
+    ]
+  },
+  {
+    "key": "sd14-p21-4404-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.0350360907295626,
+      39.17356546833347
+    ]
+  },
+  {
+    "key": "sd14-p22-3303-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.182946411328221,
+      31.277642468397953
+    ]
+  },
+  {
+    "key": "sd14-p22-4404-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.206477237788937,
+      30.52853337867
+    ]
+  },
+  {
+    "key": "sd14-p23-3303-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.8566913697345562,
+      32.45461526068798
+    ]
+  },
+  {
+    "key": "sd14-p23-4404-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.8113583136551745,
+      33.25028083267236
+    ]
+  },
+  {
+    "key": "sd14-p24-3303-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.0228845498973758,
+      38.990870960797054
+    ]
+  },
+  {
+    "key": "sd14-p24-4404-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.8578552547707409,
+      38.463754301087484
+    ]
+  },
+  {
+    "key": "sd14-p25-3303-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.8376527433067809,
+      34.923820618226394
+    ]
+  },
+  {
+    "key": "sd14-p25-4404-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.6909165232728687,
+      37.11076612207566
+    ]
+  },
+  {
+    "key": "sd14-p26-3303-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.6578695313656411,
+      38.15694099904085
+    ]
+  },
+  {
+    "key": "sd14-p26-4404-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.6942058882950484,
+      37.54488806031197
+    ]
+  },
+  {
+    "key": "sd14-p27-3303-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.567039880060422,
+      36.96209766753617
+    ]
+  },
+  {
+    "key": "sd14-p27-4404-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.6042941034398488,
+      35.96481896938673
+    ]
+  },
+  {
+    "key": "sd14-p28-3303-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.8151666700082523,
+      39.772083107513104
+    ]
+  },
+  {
+    "key": "sd14-p28-4404-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      0.8211391744931343,
+      39.04272835267287
+    ]
+  },
+  {
+    "key": "sd14-p29-3303-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.1557527548087383,
+      35.72811341907453
+    ]
+  },
+  {
+    "key": "sd14-p29-4404-first",
+    "truth": "sd14",
+    "prediction": "sd14",
+    "squared_distances": [
+      1.3152959125044499,
+      36.86850955659477
+    ]
+  },
+  {
+    "key": "sd15-p10-3303-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      34.95464714189307,
+      1.0695237046375763
+    ]
+  },
+  {
+    "key": "sd15-p10-4404-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      30.900154977117452,
+      1.8368069929868387
+    ]
+  },
+  {
+    "key": "sd15-p11-3303-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      30.948924218730408,
+      0.9790806928193679
+    ]
+  },
+  {
+    "key": "sd15-p11-4404-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      34.859063778867636,
+      1.3159621475468404
+    ]
+  },
+  {
+    "key": "sd15-p12-3303-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      33.84098442995757,
+      0.6334776513918592
+    ]
+  },
+  {
+    "key": "sd15-p12-4404-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      35.391518490980786,
+      0.7244495206256054
+    ]
+  },
+  {
+    "key": "sd15-p13-3303-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      34.35982077785809,
+      1.5799443598211969
+    ]
+  },
+  {
+    "key": "sd15-p13-4404-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      35.028974819843334,
+      1.7065479292508667
+    ]
+  },
+  {
+    "key": "sd15-p14-3303-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      33.3888528499649,
+      0.8253158709579481
+    ]
+  },
+  {
+    "key": "sd15-p14-4404-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      35.08826635364662,
+      0.833114894929136
+    ]
+  },
+  {
+    "key": "sd15-p15-3303-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      37.7880544246855,
+      1.7049182779752161
+    ]
+  },
+  {
+    "key": "sd15-p15-4404-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      44.16830571469676,
+      9.020427455763063
+    ]
+  },
+  {
+    "key": "sd15-p16-3303-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      33.800438937008714,
+      0.8056701915344523
+    ]
+  },
+  {
+    "key": "sd15-p16-4404-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      34.66871398500681,
+      0.7492539787946931
+    ]
+  },
+  {
+    "key": "sd15-p17-3303-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      31.51493996780137,
+      1.2986646913353792
+    ]
+  },
+  {
+    "key": "sd15-p17-4404-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      30.792962634933453,
+      1.5327190549881256
+    ]
+  },
+  {
+    "key": "sd15-p18-3303-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      35.682497537804565,
+      1.2527936543565512
+    ]
+  },
+  {
+    "key": "sd15-p18-4404-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      37.110484587710665,
+      2.3923330908826417
+    ]
+  },
+  {
+    "key": "sd15-p19-3303-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      39.50730787448529,
+      0.9521849718334571
+    ]
+  },
+  {
+    "key": "sd15-p19-4404-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      78.14110908945884,
+      37.5767495980723
+    ]
+  },
+  {
+    "key": "sd15-p20-3303-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      31.551949196715732,
+      1.5556161979218581
+    ]
+  },
+  {
+    "key": "sd15-p20-4404-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      31.486199707752355,
+      1.317621853740073
+    ]
+  },
+  {
+    "key": "sd15-p21-3303-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      32.289648419102754,
+      1.2967998959482907
+    ]
+  },
+  {
+    "key": "sd15-p21-4404-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      33.636585127922864,
+      1.0583340104036665
+    ]
+  },
+  {
+    "key": "sd15-p22-3303-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      39.298407277462374,
+      0.7467595325428625
+    ]
+  },
+  {
+    "key": "sd15-p22-4404-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      39.567473375425834,
+      1.2844037256636396
+    ]
+  },
+  {
+    "key": "sd15-p23-3303-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      39.62426115196701,
+      1.023771789455994
+    ]
+  },
+  {
+    "key": "sd15-p23-4404-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      41.2783493844907,
+      2.170947795155413
+    ]
+  },
+  {
+    "key": "sd15-p24-3303-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      34.98818590053379,
+      1.4245483631762557
+    ]
+  },
+  {
+    "key": "sd15-p24-4404-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      34.48861395780764,
+      0.9300072707321559
+    ]
+  },
+  {
+    "key": "sd15-p25-3303-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      35.589627805811844,
+      1.3215342850651177
+    ]
+  },
+  {
+    "key": "sd15-p25-4404-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      34.52192506651433,
+      0.8507204693353886
+    ]
+  },
+  {
+    "key": "sd15-p26-3303-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      33.87292062605006,
+      0.6075970597486061
+    ]
+  },
+  {
+    "key": "sd15-p26-4404-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      34.79682589572719,
+      0.7917829593903597
+    ]
+  },
+  {
+    "key": "sd15-p27-3303-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      34.78849014346152,
+      0.5892905830291587
+    ]
+  },
+  {
+    "key": "sd15-p27-4404-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      33.77597110762621,
+      0.6232509102711273
+    ]
+  },
+  {
+    "key": "sd15-p28-3303-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      40.442029263426974,
+      7.741630705210535
+    ]
+  },
+  {
+    "key": "sd15-p28-4404-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      35.11673390537407,
+      1.6644528306635518
+    ]
+  },
+  {
+    "key": "sd15-p29-3303-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      36.5887243776091,
+      0.8977026732465506
+    ]
+  },
+  {
+    "key": "sd15-p29-4404-first",
+    "truth": "sd15",
+    "prediction": "sd15",
+    "squared_distances": [
+      36.43546139475233,
+      1.4654400228343505
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "key": "sd14-p09-1101-first",
+  "label": "sd14",
+  "prompt_id": "p09",
+  "group": "geometric",
+  "split": "calibration",
+  "seed": 1101,
+  "tag": "first",
+  "instrumented": true,
+  "seconds": 1.2862919080071151,
+  "memory": {
+    "allocated": 3440806912,
+    "reserved": 4043309056
+  },
+  "latent_sha256": "7b239e2f3b04554c558bff4a816bc3fca674a414fe0d66d716424c4027556799",
+  "image_sha256": "e8c622bfc64e43b82ee8e90fe3d967db45dbfc116c4374468fc393c8c7d79218",
+  "nsfw": [
+    false
+  ],
+  "timestamp": "2026-10-25T15:36:22.420146+00:00",
+  "fingerprint": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/fingerprints/sd14-p09-1101-first.f32",
+  "image": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/images/sd14-p09-1101-first.png",
+  "write_seconds": 0.04523554700426757
+}

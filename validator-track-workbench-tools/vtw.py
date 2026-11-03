@@ -41,7 +41,7 @@ from html import unescape
 from pathlib import Path
 
 STORE_RE = re.compile(r'(<script class="tiddlywiki-tiddler-store" type="application/json">)(.*?)(</script>)', re.S)
-BACKUP_DIR = Path(__file__).resolve().parent / "backups"
+BACKUP_DIR = Path(__file__).resolve().parents[2] / "validator-track-development-archive" / "workbench-backups"
 # The litepaper snapshot the workbench cites (docs/litepaper-2.0.md in this repository).
 LITEPAPER = Path(__file__).resolve().parents[1] / "docs" / "sources" / "litepaper-2026-09.md"
 OCTOBER_PAPER = Path(__file__).resolve().parents[1] / "docs" / "litepaper-2.0.md"
@@ -87,7 +87,7 @@ def write_store(path: Path, tiddlers: list[dict], expect_sha: str | None) -> Non
         sys.exit(f"{path} changed since you last inspected it (sha {before[:12]} != expected {expect_sha[:12]}). "
                  "Reload the browser copy and re-check before writing.")
     html, m, _ = read_store(path)
-    BACKUP_DIR.mkdir(exist_ok=True)
+    BACKUP_DIR.mkdir(parents=True, exist_ok=True)
     stamp = dt.datetime.now().strftime("%Y%m%dT%H%M%S")
     backup = BACKUP_DIR / f"{path.stem}.{stamp}.{before[:12]}.html"
     shutil.copy2(path, backup)
@@ -239,7 +239,8 @@ def scope_protection(title: str, fields: dict, record_types) -> str | None:
 
     Workbench system pages ($:/vtw/) are always protected; other $:/ tiddlers
     are TiddlyWiki runtime, not workbench prose, and are not scanned (as before).
-    Step, view, context and shared pages are protected whatever their fields say.
+    M1/M2 step, view, context and shared pages stay protected. A later step
+    is open only when its exact M3/M4/M5 title prefix matches its stage.
     A record is exempt only when its title is an ID of its own record type and its
     stage is exactly M3, M4 or M5.
     """
@@ -247,6 +248,9 @@ def scope_protection(title: str, fields: dict, record_types) -> str | None:
         return "system tiddler" if title.startswith("$:/vtw/") else None
     tags = set(parse_list(fields.get("tags")))
     if "Task" in tags or re.fullmatch(r"M\d+\.\d+", title):
+        later_step = re.fullmatch(r"(M[345])\.[1-9]\d*", title)
+        if later_step and fields.get("stage") == later_step.group(1):
+            return None
         return "step page"
     if "View" in tags or title == "View" or title.startswith("View:"):
         return "view page"

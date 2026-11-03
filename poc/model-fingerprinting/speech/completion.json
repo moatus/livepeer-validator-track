@@ -1,0 +1,13 @@
+{
+  "completed_at": "2026-10-25T15:21:45.659012+00:00",
+  "host": "smart-nv",
+  "account": "smart",
+  "artifact_directory": "/home/smart/repos/livepeer/research/asr-fingerprinting-poc/2026-10-25",
+  "experiment_processes_remaining": [],
+  "verification": "verification.json",
+  "paid_api_calls": 0,
+  "models_completed": [
+    "nvidia/parakeet-tdt-0.6b-v3",
+    "openai-whisper medium.en"
+  ]
+}

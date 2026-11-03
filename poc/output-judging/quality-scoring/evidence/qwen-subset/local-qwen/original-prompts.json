@@ -1,0 +1,410 @@
+[
+  {
+    "id": "p00",
+    "split": "train",
+    "family": "toy_trains",
+    "prompt": "A studio photograph of exactly three yellow toy trains on a plain gray floor.",
+    "requirements": {
+      "object_count": "three toy trains",
+      "color_binding": "yellow trains",
+      "spatial": "on gray floor",
+      "typography": null
+    },
+    "seeds": [
+      41001,
+      41002,
+      41003
+    ]
+  },
+  {
+    "id": "p01",
+    "split": "train",
+    "family": "umbrellas",
+    "prompt": "A red umbrella to the left of a blue umbrella against a white wall.",
+    "requirements": {
+      "object_count": "two umbrellas",
+      "color_binding": "red left umbrella and blue right umbrella",
+      "spatial": "red umbrella left of blue",
+      "typography": null
+    },
+    "seeds": [
+      41001,
+      41002,
+      41003
+    ]
+  },
+  {
+    "id": "p02",
+    "split": "train",
+    "family": "bakery",
+    "prompt": "A bakery display containing exactly four croissants on a white tray.",
+    "requirements": {
+      "object_count": "four croissants",
+      "color_binding": null,
+      "spatial": "croissants on white tray",
+      "typography": null
+    },
+    "seeds": [
+      41001,
+      41002,
+      41003
+    ]
+  },
+  {
+    "id": "p03",
+    "split": "train",
+    "family": "bicycles",
+    "prompt": "A green bicycle leaning against a red brick wall.",
+    "requirements": {
+      "object_count": "one bicycle",
+      "color_binding": "green bicycle",
+      "spatial": "bicycle leaning against brick wall",
+      "typography": null
+    },
+    "seeds": [
+      41001,
+      41002,
+      41003
+    ]
+  },
+  {
+    "id": "p04",
+    "split": "train",
+    "family": "fishbowl",
+    "prompt": "Two orange goldfish swimming in a round clear fishbowl.",
+    "requirements": {
+      "object_count": "two goldfish",
+      "color_binding": "orange fish",
+      "spatial": "fish inside round bowl",
+      "typography": null
+    },
+    "seeds": [
+      41001,
+      41002,
+      41003
+    ]
+  },
+  {
+    "id": "p05",
+    "split": "train",
+    "family": "robot",
+    "prompt": "A friendly silver robot holding a purple balloon in a clean cartoon illustration.",
+    "requirements": {
+      "object_count": "robot and balloon",
+      "color_binding": "silver robot and purple balloon",
+      "spatial": "robot holding balloon",
+      "typography": null
+    },
+    "seeds": [
+      41001,
+      41002,
+      41003
+    ]
+  },
+  {
+    "id": "p06",
+    "split": "train",
+    "family": "traffic_sign",
+    "prompt": "A yellow rectangular road sign with the word SLOW in black capital letters.",
+    "requirements": {
+      "object_count": "one rectangular sign",
+      "color_binding": "yellow sign and black letters",
+      "spatial": null,
+      "typography": "word SLOW"
+    },
+    "seeds": [
+      41001,
+      41002,
+      41003
+    ]
+  },
+  {
+    "id": "p07",
+    "split": "train",
+    "family": "laundry",
+    "prompt": "A wicker laundry basket containing blue towels beside a washing machine.",
+    "requirements": {
+      "object_count": "basket and washing machine",
+      "color_binding": "blue towels",
+      "spatial": "towels inside basket beside machine",
+      "typography": null
+    },
+    "seeds": [
+      41001,
+      41002,
+      41003
+    ]
+  },
+  {
+    "id": "p08",
+    "split": "train",
+    "family": "cactus",
+    "prompt": "Exactly three small cacti in separate terracotta pots arranged in a row.",
+    "requirements": {
+      "object_count": "three cacti in three pots",
+      "color_binding": null,
+      "spatial": "pots arranged in a row",
+      "typography": null
+    },
+    "seeds": [
+      41001,
+      41002,
+      41003
+    ]
+  },
+  {
+    "id": "p09",
+    "split": "train",
+    "family": "sailboats",
+    "prompt": "A white sailboat to the right of a red sailboat on calm water.",
+    "requirements": {
+      "object_count": "two sailboats",
+      "color_binding": "white right boat and red left boat",
+      "spatial": "white boat right of red",
+      "typography": null
+    },
+    "seeds": [
+      41001,
+      41002,
+      41003
+    ]
+  },
+  {
+    "id": "p10",
+    "split": "train",
+    "family": "clock",
+    "prompt": "A round wall clock with clearly readable numbers and two black hands.",
+    "requirements": {
+      "object_count": "one round clock",
+      "color_binding": "black hands",
+      "spatial": null,
+      "typography": "readable clock numbers"
+    },
+    "seeds": [
+      41001,
+      41002,
+      41003
+    ]
+  },
+  {
+    "id": "p11",
+    "split": "train",
+    "family": "shoes",
+    "prompt": "A pair of red sneakers with white laces on a pale concrete floor.",
+    "requirements": {
+      "object_count": "two sneakers",
+      "color_binding": "red sneakers and white laces",
+      "spatial": "shoes on floor",
+      "typography": null
+    },
+    "seeds": [
+      41001,
+      41002,
+      41003
+    ]
+  },
+  {
+    "id": "p12",
+    "split": "calibration",
+    "family": "chess",
+    "prompt": "A black chess knight beside a white chess rook on a wooden chessboard.",
+    "requirements": {
+      "object_count": "knight and rook",
+      "color_binding": "black knight and white rook",
+      "spatial": "pieces beside each other on chessboard",
+      "typography": null
+    },
+    "seeds": [
+      52001,
+      52002,
+      52003
+    ]
+  },
+  {
+    "id": "p13",
+    "split": "calibration",
+    "family": "medicine",
+    "prompt": "A green first aid box with a white cross on its front on a shelf.",
+    "requirements": {
+      "object_count": "first aid box",
+      "color_binding": "green box and white cross",
+      "spatial": "cross on front of box",
+      "typography": null
+    },
+    "seeds": [
+      52001,
+      52002,
+      52003
+    ]
+  },
+  {
+    "id": "p14",
+    "split": "calibration",
+    "family": "donuts",
+    "prompt": "Exactly five pink frosted donuts arranged on a blue plate.",
+    "requirements": {
+      "object_count": "five donuts",
+      "color_binding": "pink frosting and blue plate",
+      "spatial": "donuts on plate",
+      "typography": null
+    },
+    "seeds": [
+      52001,
+      52002,
+      52003
+    ]
+  },
+  {
+    "id": "p15",
+    "split": "calibration",
+    "family": "bus",
+    "prompt": "A yellow city bus stopped beneath a sign reading BUS STOP.",
+    "requirements": {
+      "object_count": "one city bus",
+      "color_binding": "yellow bus",
+      "spatial": null,
+      "typography": "words BUS STOP above bus"
+    },
+    "seeds": [
+      52001,
+      52002,
+      52003
+    ]
+  },
+  {
+    "id": "p16",
+    "split": "calibration",
+    "family": "suitcase",
+    "prompt": "A purple suitcase standing to the left of a green suitcase in an airport.",
+    "requirements": {
+      "object_count": "two suitcases",
+      "color_binding": "purple left and green right",
+      "spatial": "purple left of green",
+      "typography": null
+    },
+    "seeds": [
+      52001,
+      52002,
+      52003
+    ]
+  },
+  {
+    "id": "p17",
+    "split": "calibration",
+    "family": "jellyfish",
+    "prompt": "A luminous blue jellyfish floating above a red coral reef underwater.",
+    "requirements": {
+      "object_count": "jellyfish and coral",
+      "color_binding": "blue jellyfish and red coral",
+      "spatial": "jellyfish above reef",
+      "typography": null
+    },
+    "seeds": [
+      52001,
+      52002,
+      52003
+    ]
+  },
+  {
+    "id": "p18",
+    "split": "heldout",
+    "family": "windmills",
+    "prompt": "Exactly two white windmills standing behind a yellow field of flowers.",
+    "requirements": {
+      "object_count": "two windmills",
+      "color_binding": "white windmills and yellow flowers",
+      "spatial": "windmills behind field",
+      "typography": null
+    },
+    "seeds": [
+      63001,
+      63002,
+      63003
+    ]
+  },
+  {
+    "id": "p19",
+    "split": "heldout",
+    "family": "mailbox",
+    "prompt": "A blue mailbox with the word MAIL in white capital letters in a suburban street.",
+    "requirements": {
+      "object_count": "one mailbox",
+      "color_binding": "blue box and white lettering",
+      "spatial": null,
+      "typography": "word MAIL"
+    },
+    "seeds": [
+      63001,
+      63002,
+      63003
+    ]
+  },
+  {
+    "id": "p20",
+    "split": "heldout",
+    "family": "piano",
+    "prompt": "A black grand piano with a red stool in an empty concert hall.",
+    "requirements": {
+      "object_count": "grand piano and stool",
+      "color_binding": "black piano and red stool",
+      "spatial": "stool beside piano",
+      "typography": null
+    },
+    "seeds": [
+      63001,
+      63002,
+      63003
+    ]
+  },
+  {
+    "id": "p21",
+    "split": "heldout",
+    "family": "fire_engine",
+    "prompt": "A red fire engine parked to the right of a yellow fire hydrant.",
+    "requirements": {
+      "object_count": "engine and hydrant",
+      "color_binding": "red engine and yellow hydrant",
+      "spatial": "engine right of hydrant",
+      "typography": null
+    },
+    "seeds": [
+      63001,
+      63002,
+      63003
+    ]
+  },
+  {
+    "id": "p22",
+    "split": "heldout",
+    "family": "penguins",
+    "prompt": "Exactly four penguins standing in a row on pale blue ice.",
+    "requirements": {
+      "object_count": "four penguins",
+      "color_binding": null,
+      "spatial": "penguins in a row",
+      "typography": null
+    },
+    "seeds": [
+      63001,
+      63002,
+      63003
+    ]
+  },
+  {
+    "id": "p23",
+    "split": "heldout",
+    "family": "toolbox",
+    "prompt": "An open orange toolbox containing a silver hammer and blue pliers.",
+    "requirements": {
+      "object_count": "toolbox hammer and pliers",
+      "color_binding": "orange box silver hammer blue pliers",
+      "spatial": "tools inside open toolbox",
+      "typography": null
+    },
+    "seeds": [
+      63001,
+      63002,
+      63003
+    ]
+  }
+]

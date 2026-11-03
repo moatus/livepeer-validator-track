@@ -1,0 +1,81 @@
+{
+  "created_at": "2026-11-02T11:09:25.339Z",
+  "credential_cleanup": {
+    "disable_accepted": null,
+    "state": "dead_confirmed"
+  },
+  "deadline_seconds": 30,
+  "delivery": {
+    "cancelled": false,
+    "client_disconnected": false,
+    "complete": true,
+    "first_chunk_ms": 298,
+    "rule": "body",
+    "socket_accepted_body_bytes": 239,
+    "socket_accepted_body_sha256": "6057f9678ca4060728e7bc65a85193e0bbce5baf702c3296de82cc335a50ebe9",
+    "total_ms": 3276
+  },
+  "operator_statement": {
+    "body_bytes": 131,
+    "body_sha256": "887bc3c7ab7a68894ad8ded81aa6fedb30426591273c1e455c80c067145710db",
+    "forwarded_headers_sha256": "929805f9f6053a4fccfd596327f741ea42d1fd02428e2ccff4d37d8c965aa721",
+    "host": "test-server.io",
+    "method": "POST",
+    "operator_pub": "fa440bde5df1ba7c7017c4f4853d00457454b06a6b1f0eb2be6a19d5edcf97fb",
+    "path": "/api/v1/chat/completions",
+    "receipt_id": "af7225aafbc24decfcc5d3bd3ff85af7",
+    "session_id": "20261102T110925Z-fe5eea",
+    "sig": "836f90e05d0355f0804fc29d3911156fac05d8115767dd566453b47a37df1bf00c41a802cf50dfed166a320b858ad51d0c48364777393ce569acb73bfb3a5300",
+    "v": 1
+  },
+  "receipt": {
+    "path": [],
+    "record": {
+      "job_id": "af7225aafbc24decfcc5d3bd3ff85af7",
+      "n": 1,
+      "operator_pub": "fa440bde5df1ba7c7017c4f4853d00457454b06a6b1f0eb2be6a19d5edcf97fb",
+      "operator_statement_sha256": "acd8a64e25c51bb28956c523d8f2980b249b7d358203258f51c23d795ddc23a8",
+      "outcome": "verified",
+      "request": {
+        "body_bytes": 131,
+        "body_sha256": "887bc3c7ab7a68894ad8ded81aa6fedb30426591273c1e455c80c067145710db",
+        "forwarded_headers_sha256": "929805f9f6053a4fccfd596327f741ea42d1fd02428e2ccff4d37d8c965aa721",
+        "host": "test-server.io",
+        "method": "POST",
+        "path": "/api/v1/chat/completions"
+      },
+      "response": {
+        "body_bytes": 239,
+        "body_sha256": "6057f9678ca4060728e7bc65a85193e0bbce5baf702c3296de82cc335a50ebe9",
+        "content_type": "text/event-stream",
+        "status": 200,
+        "transfer": "chunked"
+      },
+      "salt": "c5b3a6d4aca5d1714b1dd6801db157cf3a63ed268857e1041ca75c43a97c34e6",
+      "session_id": "20261102T110925Z-fe5eea"
+    },
+    "v": 1,
+    "verdict": {
+      "exchanges": 1,
+      "limits": {
+        "max_recv": 262144,
+        "max_sent": 65536
+      },
+      "mode": "proxy",
+      "root": "bc6f7c5190131a4e484d7b27004013fb89266005c2ac27951b265762b0182f1b",
+      "server_name": "test-server.io",
+      "session_id": "20261102T110925Z-fe5eea",
+      "sig": "66ce149d17ffee3de598cedb28119079805c825b40490838c86a43c01eec27bebb45bec97e0174bf8591cf48c17ee564eaba77651f88276c50eca6ad4d3ed801",
+      "v": 5,
+      "verified_at": "2026-11-02T11:09:29Z",
+      "verifier_pub": "5976e135cc970155b06371a87020ed992812e743cfa6312f22f98465f59266c3",
+      "profile": "credential-sequence"
+    }
+  },
+  "receipt_id": "af7225aafbc24decfcc5d3bd3ff85af7",
+  "state": "verified",
+  "terminal_at": "2026-11-02T11:09:29.219Z",
+  "v": 1,
+  "witness_key_id": "5976e135cc970155b06371a87020ed992812e743cfa6312f22f98465f59266c3",
+  "format_refresh": "Historical fixture exchange; verdict re-signed with explicit credential-sequence profile, not a new TLS observation."
+}

@@ -1,0 +1,21 @@
+{
+  "key": "im150",
+  "prompt_id": "q25",
+  "prompt": "Wind sculpted sand dunes with a single curving trail at dawn, landscape photograph.",
+  "model": "sd14",
+  "seed": 730250,
+  "timestamp": "2026-10-27T12:12:19.635553+00:00",
+  "status": "ok",
+  "latent_sha256": "2f89e75dab785ed628749d31f4a79f6c65636d0c88b9bac789db860bfcfbec94",
+  "raw": "raw/im150.png",
+  "normalized": "normalized/im150.png",
+  "raw_sha256": "476ff5b3dfd06bdcf140dc33ec3e710865243e7c7413836316934713ea510d52",
+  "normalized_sha256": "476ff5b3dfd06bdcf140dc33ec3e710865243e7c7413836316934713ea510d52",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.389782428741455
+}

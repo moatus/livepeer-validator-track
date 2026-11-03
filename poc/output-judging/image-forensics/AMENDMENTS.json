@@ -1,0 +1,9 @@
+[
+  {
+    "at": "2026-10-26T03:50:12.592173+00:00",
+    "stage": "analysis serialization before any heldout result",
+    "reason": "Installed sklearn1.9 binary RidgeClassifier coef_ is 1D; old [0] indexing serialized one scalar and matmul failed. Flatten coef instead. No feature extraction, fit, alpha, rejection or threshold changes.",
+    "old_code_sha256": "d382477f1e40a7b600f189e143e7cd9e4dc04362101d00bf3be5617b5d4bcc27",
+    "new_code_sha256": "6c4eb0f5f7dabef7f98bb1dbe8b965362f8f95e5bb4801a2f5f610aa53f0836c"
+  }
+]

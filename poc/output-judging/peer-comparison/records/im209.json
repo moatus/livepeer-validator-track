@@ -1,0 +1,19 @@
+{
+  "key": "im209",
+  "prompt_id": "q34",
+  "prompt": "A quiet courtyard with tiled arches and a central stone fountain, architectural photograph.",
+  "model": "sdxl",
+  "seed": 730345,
+  "timestamp": "2026-10-27T12:19:56.873798+00:00",
+  "status": "ok",
+  "latent_sha256": "023a0e0c8309ff351857e19d31679d9dfabd4eaccfd6f83147cab57bfd8cff2c",
+  "raw": "raw/im209.png",
+  "normalized": "normalized/im209.png",
+  "raw_sha256": "b1265a89d37fb51e9e7dcbb0d507288504b52b90eb9b48df039c643d599484e1",
+  "normalized_sha256": "54647b2fb442bc7c858c8d2cc83331ed33ee61f6b5c42936d0c28da0838a88ee",
+  "black": false,
+  "nsfw": null,
+  "width": 1024,
+  "height": 1024,
+  "seconds": 46.569886207580566
+}

@@ -1,0 +1,31 @@
+--- receipt-binding/verifier.py
++++ receipt-binding-v2/verifier.py
+@@ -8,6 +8,11 @@
+     return b''.join(struct.pack('>Q',len(p))+p for p in [VERSION.encode(),domain.encode(),*parts])
+ def sha(b): return hashlib.sha256(b).hexdigest()
+ def raw(s): return bytes.fromhex(s)
++def reject_constant(value):
++    raise ValueError('Non-JSON numeric constant: '+value)
++def strict_json(data):
++    # Artifact v2 profile: body/event bytes are strict UTF-8, finite JSON only.
++    return json.loads(data.decode('utf-8'),parse_constant=reject_constant)
+ def verify(envelope,customer,trust,consumed):
+     def fail(reason,status='rejected'): return dict(scope=status,reason=reason)
+     try:
+@@ -28,13 +33,14 @@
+         if sha(delivery)!=r['response_sha256']: return fail('DELIVERY_MISMATCH')
+         if r['terminal_status']!='complete': return fail('NONTERMINAL')
+         if r['format']=='sse':
++            delivery.decode('utf-8')  # Validate entire stream before byte-exact framing.
+             events=delivery.split(b'\n\n')
+             if len(events)<3 or events[-1]!=b'' or events[-2]!=b'data: [DONE]': return fail('SSE_INCOMPLETE')
+             for event in events[:-2]:
+-                if not event.startswith(b'data: ') or not isinstance(json.loads(event[6:]),dict): return fail('SSE_GRAMMAR')
++                if not event.startswith(b'data: ') or not isinstance(strict_json(event[6:]),dict): return fail('SSE_GRAMMAR')
+             if r['assets']: return fail('UNEXPECTED_ASSETS')
+         elif r['format'] in ('json','media'):
+-            obj=json.loads(delivery)
++            obj=strict_json(delivery)
+             if not isinstance(obj,dict): return fail('JSON_OBJECT_REQUIRED')
+             if r['format']=='media':
+                 if set(obj)!={'asset_url'} or not isinstance(obj['asset_url'],str) or not obj['asset_url'].startswith('mock://') or set(r['assets'])!={obj['asset_url']}: return fail('MEDIA_RECORD')

@@ -1,0 +1,19 @@
+{
+  "wall_seconds_so_far": 260.89055371284485,
+  "extraction": {
+    "seconds": 32.277873516082764,
+    "peak_gpu_allocated_bytes": 167416832,
+    "images": 215,
+    "feature_rows": 323,
+    "gpu_hours": 0.00896611253420512,
+    "smoke_preceded_main": true
+  },
+  "analysis_seconds": 0.6509733200073242,
+  "python": "3.12.15",
+  "readiness_minutes_upper_bound": 2.002241023381551,
+  "checkpoint_downloads": 1,
+  "new_environments": 0,
+  "packages_installed": 0,
+  "judges": 0,
+  "generators": 0
+}

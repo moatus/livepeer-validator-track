@@ -1,0 +1,10 @@
+{
+  "model": "whisper",
+  "round": 1,
+  "load_seconds": 11.593322441913188,
+  "device": "NVIDIA GeForce RTX 3090",
+  "torch": "2.9.1+cu128",
+  "cuda": "12.8",
+  "precision": "whisper fp16 / parakeet fp32",
+  "pid": 1356500
+}

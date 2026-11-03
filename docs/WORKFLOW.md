@@ -7,13 +7,14 @@
 3. Record methods, sources, assumptions, findings, limitations and reproduction instructions where applicable.
 4. Review the artifact. Its status moves from drafted to reviewed only when the review is complete; never infer a review from silence.
 5. Add the reviewed artifact version to the issue's Deliverables table, the Project Artifact field and the deliverable register.
-6. Close the task after its definition of done is met. Update the milestone overview and the monthly outcome summary.
+6. Close the task after its definition of done is met. Update the milestone overview and the forum outcome summary.
 
 ## Where artifacts live
 
-- M1 and M2 research: the research workbench, `validator-track-workbench.html` at the repository root. Each milestone step is a workbench page backed by linked records. Cite a reviewed step by commit permalink to the file plus the step name.
-- Reports, diagrams and specifications: under `deliverables/`, organized by milestone and linked from their task issues. Later milestones may still use separate files.
+- M1, M2 and M3 research narratives: the research workbench, `validator-track-workbench.html` at the repository root. Each milestone step is a workbench page backed by linked records. Cite a reviewed step by commit permalink to the file plus the step name.
+- Standalone reports, diagrams and specifications: under `deliverables/`, organized by milestone and linked from their task issues when a separate artifact is needed. M3.1 and M3.2 use native workbench pages, with M3.3/M3.4 planned to follow there. Link directly to those pages and their supporting evidence; no separate M3 deliverables directory or pointer documents are needed. Superseded drafting and navigation documents are archived outside the repository.
 - Reproducible models, scripts and bounded fixtures: under `experiments/`, with an explanation and result link.
+- Work-verification prototypes: under `poc/`, indexed by method with implementation, bounded evidence and result links. M3 synthesizes their implications; a PoC does not itself select a protocol mechanism. Keep the PoC index linked to the relevant workbench step, and update both when new evidence changes the assessment.
 - PDFs, recordings and large datasets: a suitable release asset or durable external location. Record access, version and any retention limits. A temporary CI download is not a durable record.
 - Implementation elsewhere: link the upstream issue or PR and the actual delivered artifact or release from the track's delivery issue.
 

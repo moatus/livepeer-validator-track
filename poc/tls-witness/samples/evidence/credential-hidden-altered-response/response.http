@@ -1,0 +1,7 @@
+HTTP/1.1 200 Response
+Content-Length: 24
+Connection: close
+X-Witness-Receipt: 83578af49a61ae0c12958be0b020ded2
+Content-Type: application/json
+
+{"reply":"fixture ping"}

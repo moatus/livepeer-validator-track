@@ -1,0 +1,43 @@
+import json,pathlib,hashlib,datetime
+P=pathlib.Path(__file__).resolve().parent
+OLD=P.parents[1]/'image-fingerprinting-poc/2026-10-25'
+assert not (P/'PROTOCOL.json').exists(), 'never overwrite a frozen experiment protocol'
+def dump(n,x): (P/n).write_text(json.dumps(x,indent=2)+'\n')
+# Each family has one authored probe. Requirements are fixed without consulting outputs.
+rows=[
+('train','toy_trains','A studio photograph of exactly three yellow toy trains on a plain gray floor.','three toy trains','yellow trains','on gray floor'),
+('train','umbrellas','A red umbrella to the left of a blue umbrella against a white wall.','two umbrellas','red left umbrella and blue right umbrella','red umbrella left of blue'),
+('train','bakery','A bakery display containing exactly four croissants on a white tray.','four croissants',None,'croissants on white tray'),
+('train','bicycles','A green bicycle leaning against a red brick wall.','one bicycle','green bicycle','bicycle leaning against brick wall'),
+('train','fishbowl','Two orange goldfish swimming in a round clear fishbowl.','two goldfish','orange fish','fish inside round bowl'),
+('train','robot','A friendly silver robot holding a purple balloon in a clean cartoon illustration.','robot and balloon','silver robot and purple balloon','robot holding balloon'),
+('train','traffic_sign','A yellow rectangular road sign with the word SLOW in black capital letters.','one rectangular sign','yellow sign and black letters','word SLOW'),
+('train','laundry','A wicker laundry basket containing blue towels beside a washing machine.','basket and washing machine','blue towels','towels inside basket beside machine'),
+('train','cactus','Exactly three small cacti in separate terracotta pots arranged in a row.','three cacti in three pots',None,'pots arranged in a row'),
+('train','sailboats','A white sailboat to the right of a red sailboat on calm water.','two sailboats','white right boat and red left boat','white boat right of red'),
+('train','clock','A round wall clock with clearly readable numbers and two black hands.','one round clock','black hands','readable clock numbers'),
+('train','shoes','A pair of red sneakers with white laces on a pale concrete floor.','two sneakers','red sneakers and white laces','shoes on floor'),
+('calibration','chess','A black chess knight beside a white chess rook on a wooden chessboard.','knight and rook','black knight and white rook','pieces beside each other on chessboard'),
+('calibration','medicine','A green first aid box with a white cross on its front on a shelf.','first aid box','green box and white cross','cross on front of box'),
+('calibration','donuts','Exactly five pink frosted donuts arranged on a blue plate.','five donuts','pink frosting and blue plate','donuts on plate'),
+('calibration','bus','A yellow city bus stopped beneath a sign reading BUS STOP.','one city bus','yellow bus','words BUS STOP above bus'),
+('calibration','suitcase','A purple suitcase standing to the left of a green suitcase in an airport.','two suitcases','purple left and green right','purple left of green'),
+('calibration','jellyfish','A luminous blue jellyfish floating above a red coral reef underwater.','jellyfish and coral','blue jellyfish and red coral','jellyfish above reef'),
+('heldout','windmills','Exactly two white windmills standing behind a yellow field of flowers.','two windmills','white windmills and yellow flowers','windmills behind field'),
+('heldout','mailbox','A blue mailbox with the word MAIL in white capital letters in a suburban street.','one mailbox','blue box and white lettering','word MAIL'),
+('heldout','piano','A black grand piano with a red stool in an empty concert hall.','grand piano and stool','black piano and red stool','stool beside piano'),
+('heldout','fire_engine','A red fire engine parked to the right of a yellow fire hydrant.','engine and hydrant','red engine and yellow hydrant','engine right of hydrant'),
+('heldout','penguins','Exactly four penguins standing in a row on pale blue ice.','four penguins',None,'penguins in a row'),
+('heldout','toolbox','An open orange toolbox containing a silver hammer and blue pliers.','toolbox hammer and pliers','orange box silver hammer blue pliers','tools inside open toolbox')]
+axes=['object_count','color_binding','spatial','typography']
+manifest=[]
+for i,(split,family,prompt,obj,col,rel) in enumerate(rows):
+ typo=family in ['traffic_sign','clock','bus','mailbox']
+ requirements={'object_count':obj,'color_binding':col,'spatial':None if typo else rel,'typography':rel if typo else None}
+ manifest.append(dict(id=f'p{i:02}',split=split,family=family,prompt=prompt,requirements=requirements,seeds={'train':[41001,41002,41003],'calibration':[52001,52002,52003],'heldout':[63001,63002,63003]}[split]))
+dump('prompts.json',manifest)
+proto=dict(experiment='JUDGE-004',frozen_at=datetime.datetime.now(datetime.timezone.utc).isoformat(),status='Nemotron blocked before paid smoke; independent local stages authorized',caps=dict(images=216,nemotron_calls_including_retries=280,hosted_usd=8),generators={'sd14':json.loads((OLD/'identity-sd14.json').read_text()),'sd15':json.loads((OLD/'identity-sd15.json').read_text()),'sdxl':{'repo':'stabilityai/stable-diffusion-xl-base-1.0','revision':'resolve immutable before generation','refiner':False}},generation=dict(sd1x=dict(width=512,height=512,precision='float16',steps=25,scheduler=json.loads((OLD/'config.json').read_text())['scheduler'],guidance=7.5,eta=0,negative_prompt='',safety_checker=True,paired_cpu_fp16_noise=True),sdxl=dict(width=1024,height=1024,precision='float16',steps=25,scheduler='DDIM from model config',guidance=7.5,eta=0,negative_prompt='',safety='standard SDXL pipeline; no built-in safety checker provided by base distribution; no safety disabled',watermarker='disabled to avoid generator identity leakage; record explicitly'),no_rerolls=True),preprocess='RGB Pillow LANCZOS resize 512x512; new PNG without metadata; judge receives anonymous image filename',judge=dict(capability='nemotron-omni-vision',model_id='nvidia/nemotron-3-nano-omni/vision',immutable_backend='unobservable',axes=axes+['craft','aesthetics'],requirement_values=[0,0.5,1],quality='.6*mean(applicable requirements)+.25*craft/10+.15*aesthetics/10',sampling={'requested_temperature':0,'requested_top_p':1,'requested_max_tokens':256,'effective_support':'not verified; no calls authorized until supported price and access established'},missing='explicit missing; no imputation of malformed response; complete-case equal-coverage comparisons only',stability='12 existing images x3 same bytes and rubric; individual votes retained; calibration-only schema; blocked, not measured'),local=dict(pickscore='yuvalkirstain/PickScore_v1; raw pre-softmax exp(logit_scale)*cosine; encoder embedding supplementary shared source',visual='fixed 12-vector RGB means/stds, luminance mean/std, horizontal/vertical abs differences, saturation mean/std',robustness=['JPEG quality75 round trip','256 resize then512 LANCZOS']),analysis=dict(classifier='ridge one-vs-rest classifier with intercept; train standardization; alpha chosen on calibration from [0.1,1,10,100], ties favor100; heldout evaluated once after freeze',comparisons=['chance/majority','PickScore scalar','Nemotron quality scalar when available','Nemotron vector when available','visual','visual+PickScore','PickScore image embedding','visual+PickScore+Nemotron when available'],primary='sd14 vs sd15',secondary='3way',uncertainty='2000 prompt-cluster bootstrap replicates, fixed seed904; interval 2.5/97.5 percentiles; six heldout prompt clusters',quality_overlap='training pooled PickScore tertile cuts; calibration model common-range intersection; fixed heldout central training band intersect calibration common range; report attrition',no_unknown_rejection=True,failures='black/safety/failures retained and reported; content classifiers exclude black safety replacements with shared complete-case coverage; robustness same base classifier'),limits=['native SDXL resolution/configuration confounds broader contrast','no hidden execution proof','no text KBF/IRIS','repeat votes not independent test samples','no runtime hooks used','GenEval optional: not installed; no legacy build planned'])
+dump('PROTOCOL.json',proto)
+for f in ['PROTOCOL.json','prompts.json']:
+ (P/(f+'.sha256')).write_text(hashlib.sha256((P/f).read_bytes()).hexdigest()+'  '+f+'\n')
+(P/'spend.jsonl').write_text(json.dumps(dict(event='preflight',hosted_calls=0,estimated_usd=0,actual_usd=0,unobservable_spend=False,reason='No MCP credential; static pricing only; no uploads or paid calls'))+'\n')

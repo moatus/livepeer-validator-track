@@ -8,7 +8,7 @@ Helpers for `validator-track-workbench.html` at the repository root. They are no
 - `shots.py` — full-page screenshots of a copy, for reviewing layout.
 - `twpage.py` — shared Playwright helpers for the three scripts above.
 - `tests/` — unit tests for `vtw.py`.
-- `backups/` — automatic copies that `vtw.py import` and `remove` write before changing the file. Not tracked by git.
+- Automatic backups are written outside this repository to `../validator-track-development-archive/workbench-backups/` before `vtw.py import` or `remove` changes the workbench.
 
 ## How to edit the workbench
 

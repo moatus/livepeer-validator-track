@@ -1,0 +1,299 @@
+{
+  "timestamp": "2026-10-25T17:55:30.016230+00:00",
+  "numerical": {
+    "calibration": {
+      "correct": {
+        "n": 30,
+        "accepted": 30,
+        "false_rejections": 0,
+        "false_acceptances": null,
+        "distance_min": 0.0,
+        "distance_median": 0.0,
+        "distance_max": 0.0
+      },
+      "close": {
+        "n": 20,
+        "accepted": 0,
+        "false_rejections": null,
+        "false_acceptances": 0,
+        "distance_min": 0.30704720704625726,
+        "distance_median": 0.6794931570079494,
+        "distance_max": 1.104063074170876
+      },
+      "distant": {
+        "n": 20,
+        "accepted": 0,
+        "false_rejections": null,
+        "false_acceptances": 0,
+        "distance_min": 0.9581317022748078,
+        "distance_median": 1.440635106191273,
+        "distance_max": 2.0292155975353734
+      },
+      "reload": {
+        "n": 6,
+        "accepted": 6,
+        "false_rejections": 0,
+        "false_acceptances": null,
+        "distance_min": 0.0,
+        "distance_median": 0.0,
+        "distance_max": 0.0
+      }
+    },
+    "heldout": {
+      "correct": {
+        "n": 60,
+        "accepted": 60,
+        "false_rejections": 0,
+        "false_acceptances": null,
+        "distance_min": 0.0,
+        "distance_median": 0.0,
+        "distance_max": 0.0
+      },
+      "close": {
+        "n": 40,
+        "accepted": 0,
+        "false_rejections": null,
+        "false_acceptances": 0,
+        "distance_min": 0.2842026660664619,
+        "distance_median": 0.6341740925799955,
+        "distance_max": 1.2045238766058621
+      },
+      "distant": {
+        "n": 40,
+        "accepted": 0,
+        "false_rejections": null,
+        "false_acceptances": 0,
+        "distance_min": 0.7959698209366418,
+        "distance_median": 1.528602419785929,
+        "distance_max": 3.2088540424015064
+      },
+      "reload": {
+        "n": 6,
+        "accepted": 6,
+        "false_rejections": 0,
+        "false_acceptances": null,
+        "distance_min": 0.0,
+        "distance_median": 0.0,
+        "distance_max": 0.0
+      }
+    }
+  },
+  "controls": {
+    "copied_reference_no_fresh_execution": {
+      "fingerprint_only": 1,
+      "signature_valid": 1,
+      "receipt_valid": 1,
+      "output_claim_matches": 1,
+      "observed_output_matches": 0,
+      "commitment_receipt_only": 1,
+      "combined": 1,
+      "n": 1
+    },
+    "identical_effective_input": {
+      "fingerprint_only": 1,
+      "signature_valid": 1,
+      "receipt_valid": 1,
+      "output_claim_matches": 1,
+      "observed_output_matches": 1,
+      "commitment_receipt_only": 1,
+      "combined": 1,
+      "n": 1
+    },
+    "receipt_unchanged": {
+      "fingerprint_only": 1,
+      "signature_valid": 1,
+      "receipt_valid": 1,
+      "output_claim_matches": 1,
+      "observed_output_matches": 1,
+      "commitment_receipt_only": 1,
+      "combined": 1,
+      "n": 1
+    },
+    "signed_wrong_fingerprint": {
+      "fingerprint_only": 0,
+      "signature_valid": 1,
+      "receipt_valid": 1,
+      "output_claim_matches": 1,
+      "observed_output_matches": 1,
+      "commitment_receipt_only": 1,
+      "combined": 0,
+      "n": 1
+    },
+    "signed_wrong_output": {
+      "fingerprint_only": 1,
+      "signature_valid": 1,
+      "receipt_valid": 1,
+      "output_claim_matches": 0,
+      "observed_output_matches": 0,
+      "commitment_receipt_only": 0,
+      "combined": 0,
+      "n": 1
+    },
+    "stale_other_job_receipt": {
+      "fingerprint_only": 0,
+      "signature_valid": 1,
+      "receipt_valid": 0,
+      "output_claim_matches": 0,
+      "observed_output_matches": 1,
+      "commitment_receipt_only": 0,
+      "combined": 0,
+      "n": 1
+    },
+    "unsigned_edit_fingerprint_digest": {
+      "fingerprint_only": 1,
+      "signature_valid": 0,
+      "receipt_valid": 0,
+      "output_claim_matches": 1,
+      "observed_output_matches": 1,
+      "commitment_receipt_only": 0,
+      "combined": 0,
+      "n": 1
+    },
+    "unsigned_edit_input_commitment": {
+      "fingerprint_only": 1,
+      "signature_valid": 0,
+      "receipt_valid": 0,
+      "output_claim_matches": 1,
+      "observed_output_matches": 1,
+      "commitment_receipt_only": 0,
+      "combined": 0,
+      "n": 1
+    },
+    "unsigned_edit_job_id": {
+      "fingerprint_only": 1,
+      "signature_valid": 0,
+      "receipt_valid": 0,
+      "output_claim_matches": 1,
+      "observed_output_matches": 1,
+      "commitment_receipt_only": 0,
+      "combined": 0,
+      "n": 1
+    },
+    "unsigned_edit_measurement_version": {
+      "fingerprint_only": 1,
+      "signature_valid": 0,
+      "receipt_valid": 0,
+      "output_claim_matches": 1,
+      "observed_output_matches": 1,
+      "commitment_receipt_only": 0,
+      "combined": 0,
+      "n": 1
+    },
+    "unsigned_edit_model_profile": {
+      "fingerprint_only": 1,
+      "signature_valid": 0,
+      "receipt_valid": 0,
+      "output_claim_matches": 1,
+      "observed_output_matches": 1,
+      "commitment_receipt_only": 0,
+      "combined": 0,
+      "n": 1
+    },
+    "unsigned_edit_output_commitment": {
+      "fingerprint_only": 1,
+      "signature_valid": 0,
+      "receipt_valid": 0,
+      "output_claim_matches": 0,
+      "observed_output_matches": 1,
+      "commitment_receipt_only": 0,
+      "combined": 0,
+      "n": 1
+    },
+    "unsigned_edit_settings_commitment": {
+      "fingerprint_only": 1,
+      "signature_valid": 0,
+      "receipt_valid": 0,
+      "output_claim_matches": 1,
+      "observed_output_matches": 1,
+      "commitment_receipt_only": 0,
+      "combined": 0,
+      "n": 1
+    },
+    "unsigned_edit_version": {
+      "fingerprint_only": 1,
+      "signature_valid": 0,
+      "receipt_valid": 0,
+      "output_claim_matches": 1,
+      "observed_output_matches": 1,
+      "commitment_receipt_only": 0,
+      "combined": 0,
+      "n": 1
+    },
+    "wrong_delivery_no_observer": {
+      "fingerprint_only": 1,
+      "signature_valid": 1,
+      "receipt_valid": 1,
+      "output_claim_matches": 1,
+      "observed_output_matches": 0,
+      "commitment_receipt_only": 1,
+      "combined": 1,
+      "n": 1
+    },
+    "wrong_delivery_with_observer": {
+      "fingerprint_only": 1,
+      "signature_valid": 1,
+      "receipt_valid": 1,
+      "output_claim_matches": 1,
+      "observed_output_matches": 0,
+      "commitment_receipt_only": 0,
+      "combined": 0,
+      "n": 1
+    }
+  },
+  "repeats": {
+    "candidate": {
+      "n": 90,
+      "equal_vectors": 90,
+      "equal_pixels": 90
+    },
+    "reload": {
+      "n": 12,
+      "equal_vectors": 12,
+      "equal_pixels": 12
+    }
+  },
+  "generation_timing": {
+    "reference": {
+      "n": 90,
+      "total_seconds": 119.34774249256589,
+      "median_seconds": 1.2935396750690416,
+      "min_seconds": 1.2713226359337568,
+      "max_seconds": 2.5975720859132707
+    },
+    "candidate": {
+      "n": 90,
+      "total_seconds": 118.23826112155803,
+      "median_seconds": 1.2926921389298514,
+      "min_seconds": 1.2730913278646767,
+      "max_seconds": 1.8685352918691933
+    },
+    "reload": {
+      "n": 12,
+      "total_seconds": 16.452615811722353,
+      "median_seconds": 1.275116080418229,
+      "min_seconds": 1.2680236059240997,
+      "max_seconds": 1.8287806629668921
+    },
+    "control": {
+      "n": 2,
+      "total_seconds": 3.0542344141285866,
+      "median_seconds": 1.5271172070642933,
+      "min_seconds": 1.2683278410695493,
+      "max_seconds": 1.7859065730590373
+    }
+  },
+  "saved_generations": 194,
+  "safety_replacements": [
+    "2d78c56a259672052f00eeb63ae0de22-heldout-candidate",
+    "2d78c56a259672052f00eeb63ae0de22-heldout-reference"
+  ],
+  "payload_bytes": 216,
+  "bundle_bytes": 1106665,
+  "images_bytes": 88649953,
+  "vectors_bytes": 41904,
+  "verifier_cpu_us": {
+    "median": 114.4165,
+    "p95": 128.43314999999998,
+    "total": 0.028007838
+  }
+}

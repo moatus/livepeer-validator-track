@@ -1,0 +1,9 @@
+POST /jobs HTTP/1.1
+Host: router
+Content-Type: application/json
+X-Client-Nonce: cut
+X-Client-Require-Witness: true
+Content-Length: 54
+Connection: close
+
+{"model":"fixture","input":"cut","fixture_mode":"cut"}

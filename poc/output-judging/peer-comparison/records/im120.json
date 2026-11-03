@@ -1,0 +1,21 @@
+{
+  "key": "im120",
+  "prompt_id": "q20",
+  "prompt": "A striped lighthouse on a rocky headland during a calm pink sunset, watercolor.",
+  "model": "sd14",
+  "seed": 730200,
+  "timestamp": "2026-10-27T12:11:52.020753+00:00",
+  "status": "ok",
+  "latent_sha256": "2e05533315cef7289062457840c039d8c3c92858002aff1cffb2812cdf1f7199",
+  "raw": "raw/im120.png",
+  "normalized": "normalized/im120.png",
+  "raw_sha256": "a7906da697f1a0ce95a345b6f37672c75f2e5d6376ad35ba54d40f38e3ec5ca0",
+  "normalized_sha256": "a7906da697f1a0ce95a345b6f37672c75f2e5d6376ad35ba54d40f38e3ec5ca0",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.4045705795288086
+}

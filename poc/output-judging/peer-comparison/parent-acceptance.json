@@ -1,0 +1,18 @@
+{
+  "status": "accepted for completed private exploratory pilot",
+  "recorded_at": "2026-10-27T12:46:11.531409+00:00",
+  "scope": "Orchestrator inspected both reviews, confirmed report corrections SCI-01 and F1, checked corrected report hashes, and previewed inline presentation. Numerical outcomes accepted within stated review limits. Not protocol approval or deployed validator certification.",
+  "review_findings": {
+    "SCI-01": "resolved by explicit pretraining disclosure",
+    "F1": "resolved by erratum; frozen protocol preserved"
+  },
+  "artifacts_at_acceptance": {
+    "report-reviewed.html": "50c0a93b1e4b0022138bac3b6a2f3ff8fb34d325c66ce4cb844fa305d2c035c9",
+    "summary.html": "11519a8d7267707bfb7a26d81ddbfa00cbcb1a6030e464d83057544cb12f9ad4",
+    "review-disposition.json": "4a67ae6f0ba47fd3d4c11fcb179ee4b1b738a9884106cd8de47de1088f0cfa52",
+    "reporting-verification.json": "a84dee2cc8b3652cd7205996a3a3bc3303d86f67b34c59f99e1d67e5bc098114",
+    "review-bundle.tar.gz": "9add03382f7a18c4de27830ffab63dc63f35a8095991ba133efacba19a2a96d0"
+  },
+  "historical_status": "Worker files retain parent-acceptance-pending status at handoff; this later orchestration record closes that status.",
+  "further_runs_authorized_or_active": false
+}

@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-11-02T12:22:25.212Z",
+  "credential_cleanup": [
+    {
+      "outcome": {
+        "disable_accepted": true,
+        "state": "dead_confirmed"
+      },
+      "step": 1
+    },
+    {
+      "outcome": {
+        "disable_accepted": true,
+        "state": "dead_confirmed"
+      },
+      "step": 2
+    },
+    {
+      "outcome": {
+        "disable_accepted": true,
+        "state": "dead_confirmed"
+      },
+      "step": 3
+    }
+  ],
+  "deadline_seconds": 90,
+  "delivery": {
+    "cancelled": false,
+    "client_disconnected": false,
+    "complete": true,
+    "first_chunk_ms": 2667,
+    "rule": "body",
+    "socket_accepted_body_bytes": 48,
+    "socket_accepted_body_sha256": "fae368e6e1d3cfb690fc703825f3f2e2bd7a11ebc30e993fa3a8a0b705072795",
+    "total_ms": 2667
+  },
+  "kind": "job",
+  "receipt_id": "2d2c2991ad0b74ef5b2150334ffb880c",
+  "state": "verified",
+  "terminal_at": "2026-11-02T12:22:27.880Z",
+  "v": 1,
+  "provenance": {
+    "run": "runs/phase-28/fixture-20261102T122224Z",
+    "build_identity": {
+      "source_commit": "18436d4448635cf276e321fd9a65f1a18d8cc308",
+      "binary_sha256": "ff954f808c7785178e901ac57f583bd6e633f84f07eb6c67ab98ae8d398909c9",
+      "cargo_lock_sha256": "fc9f401d24355f4ad44e7fed40e079db1bb0a867b33de13421dba86b781466a0",
+      "tlsn_tag": "v0.1.0-alpha.15",
+      "allowed_diffs": [
+        "patch/tlsn-mux-stream-cap.diff",
+        "patch/tlsn-session-frame-limit.diff"
+      ],
+      "new_crates": 0
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-10-25T15:41:38.244917+00:00",
+  "active_experiment_processes": [],
+  "gpu_compute_processes_raw": "18470, /usr/libexec/xdg-desktop-portal-gnome, 72 MiB\n1875633, /usr/lib/diffusion-studio/diffusion-studio --type=gpu-process --enable-skia-graphite --ozone-platform=x11 --use-angle=vulkan --enable-crash-reporter=f50569c9-7623-4023-972f-588038100b95?no_channel --user-data-dir=/home/app/.config/Diffusion Studio --gpu-preferences=WAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAAQAAAAAAAAAADAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAABAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --field-trial-handle=3?i?2999436104848715400?4082838109669658189?262144 --enable-features=PdfUseShowSaveFilePicker?SharedArrayBuffer --disable-features=CalculateNativeWinOcclusion?DropInputEventsWhilePaintHolding?LocalNetworkAccessChecks?ScreenAIOCREna, 94 MiB\n",
+  "no_orphaned_experiment_jobs": true,
+  "processes_stopped": [],
+  "existing_gpu_processes_preserved": true,
+  "venv_and_downloads_retained": true,
+  "notes": "Every inference invocation exited normally; no kill or changes to other workloads were required."
+}

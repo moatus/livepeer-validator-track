@@ -1,0 +1,17 @@
+{
+  "issuer": "independently-pinned-test-upstream",
+  "payload": {
+    "version": "receipt005-v1",
+    "job_id": "gateway_signature_as_upstream",
+    "challenge": "594c8cbf4dc62308875eee13f9a0d4773f1f0b7ddd691276e90799c35d2270af",
+    "provider": "mock-expensive-provider",
+    "canonical_model": "mock-model",
+    "model_version": "frozen-v1",
+    "request_sha256": "1fc9192a097a40979a10120ace5ed499fc550c68fd6dd24816b31eef1f5a2188",
+    "response_sha256": "5f3fc22766b558d5a38cc64dc0dc7f8ba1d8bfb073763e3f177adc387d1f6fd0",
+    "terminal_status": "complete",
+    "format": "json",
+    "assets": {}
+  },
+  "signature": "b91ba142cb53d9b821315a60d7badf66608ff61d25ee9dd6d1a586f51594665a6a5ccad3301464b96ef62c9bbe9115cbd6a0467f2ac5fc26ba38cc0daeb7a90a"
+}

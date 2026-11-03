@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "examples": [
+    {
+      "key": "p00-0-sd14",
+      "split": "train",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "pixel_hash": "248a9be51ae180cc1bf365e962d4d19c07317d17187314833dd95a5e0c9270c9",
+      "feature_hash": "c2dc155240bde330eba2bf37eb4f71736cc5d6913f7db745db6c0239fd5e9706",
+      "repeat_exact": true,
+      "residual_dim": 40
+    },
+    {
+      "key": "p00-0-sd15",
+      "split": "train",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "pixel_hash": "d12c98620f739a95712c295bd09ccd02bceef76e1de78a2a85ea4bfe85a3fb86",
+      "feature_hash": "8fd8672f6659e8b4203c355a4778b1fe0a5e43391cbd8217167ce77f370a3059",
+      "repeat_exact": true,
+      "residual_dim": 40
+    },
+    {
+      "key": "p12-0-sd14",
+      "split": "calibration",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "pixel_hash": "75884a429528727536126c20356803d6e0b66e84cc47a196f4381406f5cb3a33",
+      "feature_hash": "4064fee1e8a8c5e8ac94f0671611018ce8ce894e1183885fcb10f0201aea5186",
+      "repeat_exact": true,
+      "residual_dim": 40
+    },
+    {
+      "key": "p12-0-sd15",
+      "split": "calibration",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "pixel_hash": "c4318d2e934af2d13c6875d128cad5ed3251e5abc1d3aaa5ee2926740ff782e1",
+      "feature_hash": "d605263ecd59e038761d2d90b385bf336ab5ffa0e229db5629ecc03241c4863c",
+      "repeat_exact": true,
+      "residual_dim": 40
+    }
+  ],
+  "interface": "uint8 RGB arrays only; no path, prompt, label or text passed to learned()",
+  "seconds": 1.1334600448608398
+}

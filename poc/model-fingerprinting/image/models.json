@@ -1,0 +1,10 @@
+{
+  "sd14": {
+    "repo": "CompVis/stable-diffusion-v1-4",
+    "revision": "133a221b8aa7292a167afc5127cb63fb5005638b"
+  },
+  "sd15": {
+    "repo": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "scientific_method_amendments": [],
+  "cleanup_interruption": {
+    "process": "pilot SDXL generate.py, PID185230, running as smart",
+    "observation": "All40 SDXL outputs and all240 total terminal generation records persisted. Process spent several minutes in uninterruptible I/O state during model cleanup, with GPU idle and host memory pressure.",
+    "action": "SIGTERM only to own completed generator; observed original shell exit143 and GPU memory released. No other process terminated.",
+    "recovery": "Manually started frozen extract.py followed by frozen analyze.py on existing saved images. No new generation, no rerolls, no scientific code changes.",
+    "time_utc_approximate_minute": "2026-10-27T12:25Z"
+  },
+  "supplemental_scripts": [
+    "verify_snapshot.py",
+    "verify_delivery.py",
+    "finalize.py"
+  ],
+  "supplemental_scope": "Independent replay, integrity checks, report packaging only; excluded from initial scientific freeze and explicitly distinguished.",
+  "recorded_at_utc": "2026-10-27T12:27:22.664415+00:00"
+}

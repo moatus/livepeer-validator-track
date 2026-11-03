@@ -1,0 +1,58 @@
+{
+  "config": {
+    "dataset": {
+      "patch": 64,
+      "label_map": "configs/label_maps/dragon_25class.json"
+    },
+    "model": {
+      "conv_channels": [
+        256,
+        512,
+        1024
+      ],
+      "dropout": 0.5
+    }
+  },
+  "classes": [
+    "Flash_PixArt",
+    "Flash_SD",
+    "Flash_SD3",
+    "Flash_SDXL",
+    "Flux_1",
+    "Hyper_SD",
+    "IF",
+    "JuggernautXL",
+    "Kandinsky",
+    "Kolors",
+    "LCM_SDXL",
+    "LCM_SSD_1B",
+    "Lumina",
+    "Mobius",
+    "PixArt_Alpha",
+    "PixArt_Sigma",
+    "Realistic_Stock_Photo",
+    "SDXL",
+    "SDXL_Lightning",
+    "SDXL_Turbo",
+    "SD_1.5",
+    "SD_2.1",
+    "SD_3",
+    "SD_Cascade",
+    "SSD_1B"
+  ],
+  "mean": [
+    0.47167858481407166,
+    0.43171828985214233,
+    0.3577938675880432
+  ],
+  "std": [
+    0.2863176167011261,
+    0.2716895043849945,
+    0.2786242663860321
+  ],
+  "feature_dim": 1024,
+  "torch": "2.9.1+cu128",
+  "numpy": "2.5.4",
+  "precision": "float32",
+  "device": "NVIDIA GeForce RTX 3090"
+}

@@ -1,0 +1,21 @@
+{
+  "key": "im142",
+  "prompt_id": "q23",
+  "prompt": "An empty retro diner with mint booths and a tiled floor, interior photograph.",
+  "model": "sd15",
+  "seed": 730234,
+  "timestamp": "2026-10-27T12:14:47.673390+00:00",
+  "status": "ok",
+  "latent_sha256": "5d69c0c0c5bc04fe493ee64b7e4e9aaed1af59e3914d8d06c1286ff621af976e",
+  "raw": "raw/im142.png",
+  "normalized": "normalized/im142.png",
+  "raw_sha256": "d8aae62fcb70161e164d041652e6716e9effc96d9e1a5d66a2028132f6f22f4c",
+  "normalized_sha256": "d8aae62fcb70161e164d041652e6716e9effc96d9e1a5d66a2028132f6f22f4c",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.3874588012695312
+}

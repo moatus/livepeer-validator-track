@@ -1,0 +1,19 @@
+{
+  "id": "56c503044e9e6567247ba8ff68afc6ec",
+  "family": 7,
+  "variant": "A",
+  "seed": 6404,
+  "split": "heldout",
+  "phase": "heldout",
+  "role": "reference",
+  "key": "56c503044e9e6567247ba8ff68afc6ec-heldout-reference",
+  "seconds": 1.284443587064743,
+  "latent_sha256": "fedd2b578ba8cab34ccf764c6c9d76ddfd235ff90e5efbbbf77c9e0c2ee6b2b7",
+  "output_commitment": "568e1f2ecd028a06f0115160e8bdbb7365278d9faa248b10a422b57571424389",
+  "pixel_digest": "5f51d80000c858705eeb737637058543b423c6f0778faa5e5a314055b1a4028b",
+  "nsfw": [
+    false
+  ],
+  "peak_allocated": 3440806912,
+  "timestamp": "2026-10-25T17:51:55.925212+00:00"
+}

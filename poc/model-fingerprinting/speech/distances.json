@@ -1,0 +1,1598 @@
+{
+  "repeat": [
+    {
+      "model": "parakeet",
+      "clip": "1089-134686-0000",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1089-134686-0000",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1089-134686-0000",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1089-134686-0002",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1089-134686-0002",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1089-134686-0002",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1089-134686-0004",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1089-134686-0004",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1089-134686-0004",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1188-133604-0000",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1188-133604-0000",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1188-133604-0000",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1188-133604-0001",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1188-133604-0001",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1188-133604-0001",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1188-133604-0002",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1188-133604-0002",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1188-133604-0002",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "121-121726-0000",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "121-121726-0000",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "121-121726-0000",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "121-121726-0001",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "121-121726-0001",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "121-121726-0001",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "121-121726-0003",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "121-121726-0003",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "121-121726-0003",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1221-135766-0000",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1221-135766-0000",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1221-135766-0000",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1221-135766-0001",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1221-135766-0001",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1221-135766-0001",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1221-135766-0003",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1221-135766-0003",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1221-135766-0003",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1284-1180-0000",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1284-1180-0000",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1284-1180-0000",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1284-1180-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1284-1180-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1284-1180-0001",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1284-1180-0002",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1284-1180-0002",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1284-1180-0002",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1320-122612-0000",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1320-122612-0000",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1320-122612-0000",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1320-122612-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1320-122612-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1320-122612-0001",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1320-122612-0002",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1320-122612-0002",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1320-122612-0002",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1580-141083-0000",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1580-141083-0000",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1580-141083-0000",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1580-141083-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1580-141083-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1580-141083-0001",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1580-141083-0002",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1580-141083-0002",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1580-141083-0002",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1995-1826-0000",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1995-1826-0000",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1995-1826-0000",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1995-1826-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1995-1826-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1995-1826-0001",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1995-1826-0005",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1995-1826-0005",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "1995-1826-0005",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "2094-142345-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "2094-142345-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "2094-142345-0001",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "2094-142345-0002",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "2094-142345-0002",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "2094-142345-0002",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "2094-142345-0003",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "2094-142345-0003",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "2094-142345-0003",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "2300-131720-0000",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "2300-131720-0000",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "2300-131720-0000",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "2300-131720-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "2300-131720-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "2300-131720-0001",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "2300-131720-0002",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "2300-131720-0002",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "parakeet",
+      "clip": "2300-131720-0002",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1089-134686-0000",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1089-134686-0000",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1089-134686-0000",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1089-134686-0002",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1089-134686-0002",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1089-134686-0002",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1089-134686-0004",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1089-134686-0004",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1089-134686-0004",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1188-133604-0000",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1188-133604-0000",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1188-133604-0000",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1188-133604-0001",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1188-133604-0001",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1188-133604-0001",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1188-133604-0002",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1188-133604-0002",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1188-133604-0002",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "121-121726-0000",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "121-121726-0000",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "121-121726-0000",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "121-121726-0001",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "121-121726-0001",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "121-121726-0001",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "121-121726-0003",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "121-121726-0003",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "121-121726-0003",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1221-135766-0000",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1221-135766-0000",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1221-135766-0000",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1221-135766-0001",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1221-135766-0001",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1221-135766-0001",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1221-135766-0003",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1221-135766-0003",
+      "split": "calibration",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1221-135766-0003",
+      "split": "calibration",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1284-1180-0000",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1284-1180-0000",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1284-1180-0000",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1284-1180-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1284-1180-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1284-1180-0001",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1284-1180-0002",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1284-1180-0002",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1284-1180-0002",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1320-122612-0000",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1320-122612-0000",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1320-122612-0000",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1320-122612-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1320-122612-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1320-122612-0001",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1320-122612-0002",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1320-122612-0002",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1320-122612-0002",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1580-141083-0000",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1580-141083-0000",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1580-141083-0000",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1580-141083-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1580-141083-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1580-141083-0001",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1580-141083-0002",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1580-141083-0002",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1580-141083-0002",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1995-1826-0000",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1995-1826-0000",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1995-1826-0000",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1995-1826-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1995-1826-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1995-1826-0001",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1995-1826-0005",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1995-1826-0005",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "1995-1826-0005",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "2094-142345-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "2094-142345-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "2094-142345-0001",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "2094-142345-0002",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "2094-142345-0002",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "2094-142345-0002",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "2094-142345-0003",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "2094-142345-0003",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "2094-142345-0003",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "2300-131720-0000",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "2300-131720-0000",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "2300-131720-0000",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "2300-131720-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "2300-131720-0001",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "2300-131720-0001",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "2300-131720-0002",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "2300-131720-0002",
+      "split": "evaluation",
+      "reload": true,
+      "distance": 0.0
+    },
+    {
+      "model": "whisper",
+      "clip": "2300-131720-0002",
+      "split": "evaluation",
+      "reload": false,
+      "distance": 0.0
+    }
+  ],
+  "cross": [
+    {
+      "clip": "1089-134686-0000",
+      "split": "calibration",
+      "distance": 43.05134076188466
+    },
+    {
+      "clip": "1089-134686-0002",
+      "split": "calibration",
+      "distance": 43.13803481268312
+    },
+    {
+      "clip": "1089-134686-0004",
+      "split": "calibration",
+      "distance": 43.430242407280645
+    },
+    {
+      "clip": "1188-133604-0000",
+      "split": "calibration",
+      "distance": 43.61744781580032
+    },
+    {
+      "clip": "1188-133604-0001",
+      "split": "calibration",
+      "distance": 43.73272257687398
+    },
+    {
+      "clip": "1188-133604-0002",
+      "split": "calibration",
+      "distance": 43.23389479857688
+    },
+    {
+      "clip": "121-121726-0000",
+      "split": "calibration",
+      "distance": 43.21406737855732
+    },
+    {
+      "clip": "121-121726-0001",
+      "split": "calibration",
+      "distance": 42.89796749485906
+    },
+    {
+      "clip": "121-121726-0003",
+      "split": "calibration",
+      "distance": 43.372028681954085
+    },
+    {
+      "clip": "1221-135766-0000",
+      "split": "calibration",
+      "distance": 42.82236060350043
+    },
+    {
+      "clip": "1221-135766-0001",
+      "split": "calibration",
+      "distance": 42.67416727406645
+    },
+    {
+      "clip": "1221-135766-0003",
+      "split": "calibration",
+      "distance": 42.51055959469735
+    },
+    {
+      "clip": "1284-1180-0000",
+      "split": "evaluation",
+      "distance": 42.97196919237853
+    },
+    {
+      "clip": "1284-1180-0001",
+      "split": "evaluation",
+      "distance": 43.0756727182023
+    },
+    {
+      "clip": "1284-1180-0002",
+      "split": "evaluation",
+      "distance": 43.20407062303066
+    },
+    {
+      "clip": "1320-122612-0000",
+      "split": "evaluation",
+      "distance": 43.109595467208436
+    },
+    {
+      "clip": "1320-122612-0001",
+      "split": "evaluation",
+      "distance": 43.4551586597209
+    },
+    {
+      "clip": "1320-122612-0002",
+      "split": "evaluation",
+      "distance": 43.688107853834815
+    },
+    {
+      "clip": "1580-141083-0000",
+      "split": "evaluation",
+      "distance": 42.864742162856736
+    },
+    {
+      "clip": "1580-141083-0001",
+      "split": "evaluation",
+      "distance": 42.735030799630856
+    },
+    {
+      "clip": "1580-141083-0002",
+      "split": "evaluation",
+      "distance": 43.24411907587804
+    },
+    {
+      "clip": "1995-1826-0000",
+      "split": "evaluation",
+      "distance": 43.2570225255661
+    },
+    {
+      "clip": "1995-1826-0001",
+      "split": "evaluation",
+      "distance": 43.33752179577556
+    },
+    {
+      "clip": "1995-1826-0005",
+      "split": "evaluation",
+      "distance": 43.67656495671536
+    },
+    {
+      "clip": "2094-142345-0001",
+      "split": "evaluation",
+      "distance": 43.71446493312495
+    },
+    {
+      "clip": "2094-142345-0002",
+      "split": "evaluation",
+      "distance": 42.907484855746624
+    },
+    {
+      "clip": "2094-142345-0003",
+      "split": "evaluation",
+      "distance": 42.50130069314519
+    },
+    {
+      "clip": "2300-131720-0000",
+      "split": "evaluation",
+      "distance": 43.525342112278196
+    },
+    {
+      "clip": "2300-131720-0001",
+      "split": "evaluation",
+      "distance": 42.780773683427356
+    },
+    {
+      "clip": "2300-131720-0002",
+      "split": "evaluation",
+      "distance": 42.992452446964535
+    }
+  ],
+  "agreement": [
+    {
+      "clip": "1089-134686-0000",
+      "split": "calibration",
+      "edit_fraction": 0.0,
+      "identical": true
+    },
+    {
+      "clip": "1089-134686-0002",
+      "split": "calibration",
+      "edit_fraction": 0.0,
+      "identical": true
+    },
+    {
+      "clip": "1089-134686-0004",
+      "split": "calibration",
+      "edit_fraction": 0.09090909090909091,
+      "identical": false
+    },
+    {
+      "clip": "1188-133604-0000",
+      "split": "calibration",
+      "edit_fraction": 0.0,
+      "identical": true
+    },
+    {
+      "clip": "1188-133604-0001",
+      "split": "calibration",
+      "edit_fraction": 0.05555555555555555,
+      "identical": false
+    },
+    {
+      "clip": "1188-133604-0002",
+      "split": "calibration",
+      "edit_fraction": 0.06666666666666667,
+      "identical": false
+    },
+    {
+      "clip": "121-121726-0000",
+      "split": "calibration",
+      "edit_fraction": 0.11764705882352941,
+      "identical": false
+    },
+    {
+      "clip": "121-121726-0001",
+      "split": "calibration",
+      "edit_fraction": 0.125,
+      "identical": false
+    },
+    {
+      "clip": "121-121726-0003",
+      "split": "calibration",
+      "edit_fraction": 0.14285714285714285,
+      "identical": false
+    },
+    {
+      "clip": "1221-135766-0000",
+      "split": "calibration",
+      "edit_fraction": 0.0,
+      "identical": true
+    },
+    {
+      "clip": "1221-135766-0001",
+      "split": "calibration",
+      "edit_fraction": 0.020833333333333332,
+      "identical": false
+    },
+    {
+      "clip": "1221-135766-0003",
+      "split": "calibration",
+      "edit_fraction": 0.058823529411764705,
+      "identical": false
+    },
+    {
+      "clip": "1284-1180-0000",
+      "split": "evaluation",
+      "edit_fraction": 0.0,
+      "identical": true
+    },
+    {
+      "clip": "1284-1180-0001",
+      "split": "evaluation",
+      "edit_fraction": 0.038461538461538464,
+      "identical": false
+    },
+    {
+      "clip": "1284-1180-0002",
+      "split": "evaluation",
+      "edit_fraction": 0.0,
+      "identical": true
+    },
+    {
+      "clip": "1320-122612-0000",
+      "split": "evaluation",
+      "edit_fraction": 0.0,
+      "identical": true
+    },
+    {
+      "clip": "1320-122612-0001",
+      "split": "evaluation",
+      "edit_fraction": 0.03333333333333333,
+      "identical": false
+    },
+    {
+      "clip": "1320-122612-0002",
+      "split": "evaluation",
+      "edit_fraction": 0.0,
+      "identical": true
+    },
+    {
+      "clip": "1580-141083-0000",
+      "split": "evaluation",
+      "edit_fraction": 0.03333333333333333,
+      "identical": false
+    },
+    {
+      "clip": "1580-141083-0001",
+      "split": "evaluation",
+      "edit_fraction": 0.0,
+      "identical": true
+    },
+    {
+      "clip": "1580-141083-0002",
+      "split": "evaluation",
+      "edit_fraction": 0.0,
+      "identical": true
+    },
+    {
+      "clip": "1995-1826-0000",
+      "split": "evaluation",
+      "edit_fraction": 0.037037037037037035,
+      "identical": false
+    },
+    {
+      "clip": "1995-1826-0001",
+      "split": "evaluation",
+      "edit_fraction": 0.0,
+      "identical": true
+    },
+    {
+      "clip": "1995-1826-0005",
+      "split": "evaluation",
+      "edit_fraction": 0.0,
+      "identical": true
+    },
+    {
+      "clip": "2094-142345-0001",
+      "split": "evaluation",
+      "edit_fraction": 0.0,
+      "identical": true
+    },
+    {
+      "clip": "2094-142345-0002",
+      "split": "evaluation",
+      "edit_fraction": 0.023809523809523808,
+      "identical": false
+    },
+    {
+      "clip": "2094-142345-0003",
+      "split": "evaluation",
+      "edit_fraction": 0.0,
+      "identical": true
+    },
+    {
+      "clip": "2300-131720-0000",
+      "split": "evaluation",
+      "edit_fraction": 0.0,
+      "identical": true
+    },
+    {
+      "clip": "2300-131720-0001",
+      "split": "evaluation",
+      "edit_fraction": 0.06060606060606061,
+      "identical": false
+    },
+    {
+      "clip": "2300-131720-0002",
+      "split": "evaluation",
+      "edit_fraction": 0.05555555555555555,
+      "identical": false
+    }
+  ]
+}

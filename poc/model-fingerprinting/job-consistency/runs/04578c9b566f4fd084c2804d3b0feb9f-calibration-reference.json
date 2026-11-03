@@ -1,0 +1,19 @@
+{
+  "id": "04578c9b566f4fd084c2804d3b0feb9f",
+  "family": 4,
+  "variant": "B",
+  "seed": 5101,
+  "split": "calibration",
+  "phase": "calibration",
+  "role": "reference",
+  "key": "04578c9b566f4fd084c2804d3b0feb9f-calibration-reference",
+  "seconds": 1.4826671450864524,
+  "latent_sha256": "30feba0711b946d51d544035962e98d21d25831cad4c8a997d5e367e7236e89c",
+  "output_commitment": "facc8004dc3742d25d3f3dd07ed93842a83aa8191d05dd2699afb39c4c9ba594",
+  "pixel_digest": "dff7ea2577629ee4337a73c211229b89c152d2084c851f7d7e08c18c83bf5ebe",
+  "nsfw": [
+    false
+  ],
+  "peak_allocated": 3440806912,
+  "timestamp": "2026-10-25T17:50:07.137510+00:00"
+}

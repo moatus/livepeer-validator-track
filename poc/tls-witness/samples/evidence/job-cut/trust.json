@@ -1,0 +1,17 @@
+{
+  "v": 1,
+  "witnesses": [
+    {
+      "label": "local witness shares operator host; not independent",
+      "public_key": "5976e135cc970155b06371a87020ed992812e743cfa6312f22f98465f59266c3",
+      "profiles": [
+        "credential-sequence"
+      ]
+    }
+  ],
+  "operators": [
+    "fa440bde5df1ba7c7017c4f4853d00457454b06a6b1f0eb2be6a19d5edcf97fb"
+  ],
+  "server_name": "test-server.io",
+  "path": "/jobs"
+}

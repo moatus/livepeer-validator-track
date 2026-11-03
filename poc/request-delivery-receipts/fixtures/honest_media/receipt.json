@@ -1,0 +1,19 @@
+{
+  "issuer": "independently-pinned-test-upstream",
+  "payload": {
+    "version": "receipt005-v1",
+    "job_id": "honest_media",
+    "challenge": "3d6a578637211e83905f903bf3fea23c1ef0a91a4fb8da21fe28fdda21033385",
+    "provider": "mock-expensive-provider",
+    "canonical_model": "mock-model",
+    "model_version": "frozen-v1",
+    "request_sha256": "1fc9192a097a40979a10120ace5ed499fc550c68fd6dd24816b31eef1f5a2188",
+    "response_sha256": "19e80c2084f6563ca6cdf6ffa703dc29fd43d5545f4dc8973b6276dd69707f09",
+    "terminal_status": "complete",
+    "format": "media",
+    "assets": {
+      "mock://asset/one": "43a948748507468aa398b2c37b9e94bfa1f6f8062a98b3aa000e752dcb0b3adf"
+    }
+  },
+  "signature": "723504f88153caa4ab7540fa02bf7a5d96b2be54db5cd794a251d14cb30d37e3bbff70ed4b073b46b20d51a3ab548844d3fc5559a074d0ccce621f8a24cb9f0a"
+}

@@ -1,0 +1,19 @@
+{
+  "key": "im047",
+  "prompt_id": "q07",
+  "prompt": "A whimsical ceramic astronaut figurine tending a miniature garden, studio photo.",
+  "model": "sdxl",
+  "seed": 730075,
+  "timestamp": "2026-10-27T12:16:37.837993+00:00",
+  "status": "ok",
+  "latent_sha256": "30a8338e7e1d5cec57fa46aaaa5093ce1415dc7e0cafbc5c5f0a9323948f0926",
+  "raw": "raw/im047.png",
+  "normalized": "normalized/im047.png",
+  "raw_sha256": "cdc4e1d4a6ed8ba9fb281e1c1b6486b65c46bca54a7f0a12504c947f7df44e07",
+  "normalized_sha256": "5bc87d3789c4aafa25d336ecfccff24ea602a4bab6124d88b2ba1c7378584903",
+  "black": false,
+  "nsfw": null,
+  "width": 1024,
+  "height": 1024,
+  "seconds": 7.043670177459717
+}

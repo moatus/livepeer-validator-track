@@ -1,0 +1,16 @@
+{
+  "issuer": "independently-pinned-test-upstream",
+  "payload": {
+    "version": "receipt005-v1",
+    "job_id": "missing_signature",
+    "challenge": "c1c9b6ca16394541d55060d2d6e2970e3ddc9812d21e9252f8e1e03cf530016a",
+    "provider": "mock-expensive-provider",
+    "canonical_model": "mock-model",
+    "model_version": "frozen-v1",
+    "request_sha256": "1fc9192a097a40979a10120ace5ed499fc550c68fd6dd24816b31eef1f5a2188",
+    "response_sha256": "5f3fc22766b558d5a38cc64dc0dc7f8ba1d8bfb073763e3f177adc387d1f6fd0",
+    "terminal_status": "complete",
+    "format": "json",
+    "assets": {}
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "total_signed_cases": 17,
+  "invalid_rejected": 14,
+  "valid_accepted": 3,
+  "failures": 0,
+  "observations": [
+    {
+      "case": "valid_nonascii_json",
+      "format": "json",
+      "body_hex": "7b2272c3a9706f6e7365223a22e8939de889b2e59c86e59c88227d",
+      "matching_delivery_hash": true,
+      "signature_verified_independently": true,
+      "expected_acceptance": true,
+      "result": {
+        "scope": "exchange_verified",
+        "reason": "EXACT_EXCHANGE_BOUND"
+      }
+    },
+    {
+      "case": "valid_nonascii_sse",
+      "format": "sse",
+      "body_hex": "646174613a207b2264656c7461223a22e8939de889b2e59c86e59c88227d0a0a646174613a205b444f4e455d0a0a",
+      "matching_delivery_hash": true,
+      "signature_verified_independently": true,
+      "expected_acceptance": true,
+      "result": {
+        "scope": "exchange_verified",
+        "reason": "EXACT_EXCHANGE_BOUND"
+      }
+    },
+    {
+      "case": "valid_nonascii_media",
+      "format": "media",
+      "body_hex": "7b2261737365745f75726c223a226d6f636b3a2f2f61737365742fe8939de889b2227d",
+      "matching_delivery_hash": true,
+      "signature_verified_independently": true,
+      "expected_acceptance": true,
+      "result": {
+        "scope": "exchange_verified",
+        "reason": "EXACT_EXCHANGE_BOUND"
+      }
+    },
+    {
+      "case": "review_a_utf16_sse",
+      "format": "sse",
+      "body_hex": "646174613a20fffe7b002200780022003a0031007d000a0a646174613a205b444f4e455d0a0a",
+      "matching_delivery_hash": true,
+      "signature_verified_independently": true,
+      "expected_acceptance": false,
+      "result": {
+        "scope": "rejected",
+        "reason": "MALFORMED_EVIDENCE"
+      }
+    },
+    {
+      "case": "utf-16_json",
+      "format": "json",
+      "body_hex": "fffe7b002200780022003a0031007d00",
+      "matching_delivery_hash": true,
+      "signature_verified_independently": true,
+      "expected_acceptance": false,
+      "result": {
+        "scope": "rejected",
+        "reason": "MALFORMED_EVIDENCE"
+      }
+    },
+    {
+      "case": "utf-16_media",
+      "format": "media",
+      "body_hex": "fffe7b002200610073007300650074005f00750072006c0022003a0022006d006f0063006b003a002f002f00610073007300650074002f006f006e00650022007d00",
+      "matching_delivery_hash": true,
+      "signature_verified_independently": true,
+      "expected_acceptance": false,
+      "result": {
+        "scope": "rejected",
+        "reason": "MALFORMED_EVIDENCE"
+      }
+    },
+    {
+      "case": "utf-32_json",
+      "format": "json",
+      "body_hex": "fffe00007b0000002200000078000000220000003a000000310000007d000000",
+      "matching_delivery_hash": true,
+      "signature_verified_independently": true,
+      "expected_acceptance": false,
+      "result": {
+        "scope": "rejected",
+        "reason": "MALFORMED_EVIDENCE"
+      }
+    },
+    {
+      "case": "utf-32_media",
+      "format": "media",
+      "body_hex": "fffe00007b0000002200000061000000730000007300000065000000740000005f00000075000000720000006c000000220000003a000000220000006d0000006f000000630000006b0000003a0000002f0000002f00000061000000730000007300000065000000740000002f0000006f0000006e00000065000000220000007d000000",
+      "matching_delivery_hash": true,
+      "signature_verified_independently": true,
+      "expected_acceptance": false,
+      "result": {
+        "scope": "rejected",
+        "reason": "MALFORMED_EVIDENCE"
+      }
+    },
+    {
+      "case": "NaN_json",
+      "format": "json",
+      "body_hex": "7b2278223a4e614e7d",
+      "matching_delivery_hash": true,
+      "signature_verified_independently": true,
+      "expected_acceptance": false,
+      "result": {
+        "scope": "rejected",
+        "reason": "MALFORMED_EVIDENCE"
+      }
+    },
+    {
+      "case": "NaN_sse",
+      "format": "sse",
+      "body_hex": "646174613a207b2278223a4e614e7d0a0a646174613a205b444f4e455d0a0a",
+      "matching_delivery_hash": true,
+      "signature_verified_independently": true,
+      "expected_acceptance": false,
+      "result": {
+        "scope": "rejected",
+        "reason": "MALFORMED_EVIDENCE"
+      }
+    },
+    {
+      "case": "NaN_media",
+      "format": "media",
+      "body_hex": "7b2261737365745f75726c223a4e614e7d",
+      "matching_delivery_hash": true,
+      "signature_verified_independently": true,
+      "expected_acceptance": false,
+      "result": {
+        "scope": "rejected",
+        "reason": "MALFORMED_EVIDENCE"
+      }
+    },
+    {
+      "case": "Infinity_json",
+      "format": "json",
+      "body_hex": "7b2278223a496e66696e6974797d",
+      "matching_delivery_hash": true,
+      "signature_verified_independently": true,
+      "expected_acceptance": false,
+      "result": {
+        "scope": "rejected",
+        "reason": "MALFORMED_EVIDENCE"
+      }
+    },
+    {
+      "case": "Infinity_sse",
+      "format": "sse",
+      "body_hex": "646174613a207b2278223a496e66696e6974797d0a0a646174613a205b444f4e455d0a0a",
+      "matching_delivery_hash": true,
+      "signature_verified_independently": true,
+      "expected_acceptance": false,
+      "result": {
+        "scope": "rejected",
+        "reason": "MALFORMED_EVIDENCE"
+      }
+    },
+    {
+      "case": "Infinity_media",
+      "format": "media",
+      "body_hex": "7b2261737365745f75726c223a496e66696e6974797d",
+      "matching_delivery_hash": true,
+      "signature_verified_independently": true,
+      "expected_acceptance": false,
+      "result": {
+        "scope": "rejected",
+        "reason": "MALFORMED_EVIDENCE"
+      }
+    },
+    {
+      "case": "-Infinity_json",
+      "format": "json",
+      "body_hex": "7b2278223a2d496e66696e6974797d",
+      "matching_delivery_hash": true,
+      "signature_verified_independently": true,
+      "expected_acceptance": false,
+      "result": {
+        "scope": "rejected",
+        "reason": "MALFORMED_EVIDENCE"
+      }
+    },
+    {
+      "case": "-Infinity_sse",
+      "format": "sse",
+      "body_hex": "646174613a207b2278223a2d496e66696e6974797d0a0a646174613a205b444f4e455d0a0a",
+      "matching_delivery_hash": true,
+      "signature_verified_independently": true,
+      "expected_acceptance": false,
+      "result": {
+        "scope": "rejected",
+        "reason": "MALFORMED_EVIDENCE"
+      }
+    },
+    {
+      "case": "-Infinity_media",
+      "format": "media",
+      "body_hex": "7b2261737365745f75726c223a2d496e66696e6974797d",
+      "matching_delivery_hash": true,
+      "signature_verified_independently": true,
+      "expected_acceptance": false,
+      "result": {
+        "scope": "rejected",
+        "reason": "MALFORMED_EVIDENCE"
+      }
+    }
+  ]
+}

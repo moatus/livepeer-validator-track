@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-10-25T17:54:44.677831+00:00",
+  "seconds": 0.990303514059633,
+  "scheduler": {
+    "num_train_timesteps": 1000,
+    "beta_start": 0.00085,
+    "beta_end": 0.012,
+    "beta_schedule": "scaled_linear",
+    "trained_betas": null,
+    "clip_sample": false,
+    "set_alpha_to_one": false,
+    "steps_offset": 1,
+    "prediction_type": "epsilon",
+    "thresholding": false,
+    "dynamic_thresholding_ratio": 0.995,
+    "clip_sample_range": 1.0,
+    "sample_max_value": 1.0,
+    "timestep_spacing": "leading",
+    "rescale_betas_zero_snr": false,
+    "_use_default_values": [
+      "thresholding",
+      "trained_betas",
+      "dynamic_thresholding_ratio",
+      "clip_sample_range",
+      "sample_max_value"
+    ],
+    "_class_name": "DDIMScheduler"
+  },
+  "torch": "2.9.1+cu128",
+  "cuda": "12.8",
+  "diffusers": "0.35.2"
+}

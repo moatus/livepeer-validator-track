@@ -1,0 +1,87 @@
+{
+  "created_at": "2026-11-02T17:46:57.929Z",
+  "credential_cleanup": {
+    "profile": "credential-hidden",
+    "state": "not_applicable"
+  },
+  "deadline_seconds": 150,
+  "delivery": {
+    "cancelled": false,
+    "client_disconnected": false,
+    "complete": true,
+    "first_chunk_ms": 1401,
+    "rule": "body",
+    "socket_accepted_body_bytes": 24,
+    "socket_accepted_body_sha256": "3d9d0d0cea89b7edf86ebcd51562ce1d288cb45b5f133aaf7110efe3f6dc1f0a",
+    "total_ms": 1401
+  },
+  "operator_statement": {
+    "body_bytes": 65,
+    "body_sha256": "28d80979bcf2011518c8e36193b517d681684bca5b950fe7b84f7f2e0d57ac63",
+    "forwarded_headers_sha256": "662903ccab4bc3974711cbe646af195d32351ad4e3f5a5503f24e7a6ea5377dc",
+    "host": "test-server.io",
+    "method": "POST",
+    "operator_pub": "82cf4bdfb7b2d16e0a1e7f1345ed7107f661b07a10c5603de0ecbfae5533986a",
+    "path": "/api/v1/chat/completions",
+    "receipt_id": "83578af49a61ae0c12958be0b020ded2",
+    "session_id": "20261102T174659Z-52ee02",
+    "sig": "0fc6d39adbd74a7a16a30e7268f7087f3bdd661a77b94b38595da9847f83cd1e2acc0a704e20adb09ac00309d96a94c7ca86ca26a70919b00bd1ae96acddbd0b",
+    "v": 1
+  },
+  "receipt": {
+    "path": [],
+    "record": {
+      "job_id": "83578af49a61ae0c12958be0b020ded2",
+      "n": 1,
+      "operator_pub": "82cf4bdfb7b2d16e0a1e7f1345ed7107f661b07a10c5603de0ecbfae5533986a",
+      "operator_statement_sha256": "f4a7c4a91ed1ec8613d0c5bbc5f08e29b1a6c1300244d75a0d396fbbab4c8e8f",
+      "outcome": "verified",
+      "request": {
+        "body_bytes": 65,
+        "body_sha256": "28d80979bcf2011518c8e36193b517d681684bca5b950fe7b84f7f2e0d57ac63",
+        "forwarded_headers_sha256": "662903ccab4bc3974711cbe646af195d32351ad4e3f5a5503f24e7a6ea5377dc",
+        "host": "test-server.io",
+        "method": "POST",
+        "path": "/api/v1/chat/completions",
+        "withheld": {
+          "end": 234,
+          "header": "Authorization",
+          "no_cr_lf": "431064964f5d2f0f987d2f1a4d38e1c946065a0de9f9e2fbff2a09082a1edd1c",
+          "start": 190
+        }
+      },
+      "response": {
+        "body_bytes": 24,
+        "body_sha256": "3d9d0d0cea89b7edf86ebcd51562ce1d288cb45b5f133aaf7110efe3f6dc1f0a",
+        "content_type": "application/json",
+        "status": 200,
+        "transfer": "identity"
+      },
+      "salt": "5ec7b6dce350edf9436dfef2a4ad8c85efbaff6444cad5747b6d7e0ea1565f97",
+      "session_id": "20261102T174659Z-52ee02"
+    },
+    "v": 1,
+    "verdict": {
+      "exchanges": 1,
+      "limits": {
+        "max_recv": 16384,
+        "max_sent": 16384
+      },
+      "mode": "proxy",
+      "profile": "credential-hidden",
+      "root": "13d36548f57283384932ba4def03381482091e82ee3c9dc606f9df64b3f9aa5a",
+      "server_name": "test-server.io",
+      "session_id": "20261102T174659Z-52ee02",
+      "v": 5,
+      "verified_at": "2026-11-02T17:47:01Z",
+      "verifier_pub": "5011f2e4b5f52357d455eefb0f5eb1d152e880dbb4c1d293876effb39b06a92b",
+      "sig": "a576bc67950ea1c8f2ccbfd41a487c47e62a7c52da46013fd7ef54c31b99ed2515b051f96d6651abfd599759e90d5a376aaaa24c4ed51bd7966bc3311078820a"
+    }
+  },
+  "receipt_id": "83578af49a61ae0c12958be0b020ded2",
+  "state": "verified",
+  "terminal_at": "2026-11-02T17:47:01.108Z",
+  "v": 1,
+  "witness_key_id": "5011f2e4b5f52357d455eefb0f5eb1d152e880dbb4c1d293876effb39b06a92b",
+  "test_only": "TEST ONLY: local fixture test key; re-signed metadata policy control, not a TLS observation"
+}

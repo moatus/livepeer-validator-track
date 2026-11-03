@@ -1,0 +1,10 @@
+{
+  "seconds": 104.851722240448,
+  "rows": 279,
+  "valid_images": 239,
+  "rpa_dimension": 1024,
+  "pickscore_dimension": 1024,
+  "finite": true,
+  "interface": "RGB512 arrays only, no text or labels",
+  "peak_cuda_bytes": 4068423680
+}

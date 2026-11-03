@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "runs": 240,
+  "instrumented": 180,
+  "speakers": {
+    "calibration": [
+      "1089",
+      "1188",
+      "121",
+      "1221"
+    ],
+    "evaluation": [
+      "1284",
+      "1320",
+      "1580",
+      "1995",
+      "2094",
+      "2300"
+    ]
+  },
+  "audio_hashes_checked": 30,
+  "binary_fingerprints_checked": 180
+}

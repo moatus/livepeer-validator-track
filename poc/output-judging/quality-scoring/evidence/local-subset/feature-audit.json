@@ -1,0 +1,14 @@
+{
+  "identity_features": {
+    "pickscore": "one raw scaled image/text cosine, no softmax across generators",
+    "visual": "12 fixed values derived solely from normalized pixels",
+    "visual+pickscore": "concatenation of those 13 values",
+    "pickscore_image_embedding": "normalized image embedding from the same PickScore model; supplementary, not independent"
+  },
+  "metadata_used_only_for_partition_and_targets": ["generator_label", "family", "prompt_id", "split", "seed", "draw"],
+  "never_in_identity_features": ["filename", "URL", "price", "latency", "image_hash", "dimensions", "PNG_metadata", "prompt_id", "generator_label", "seed"],
+  "text": "Prompt is used by PickScore scalar; text embeddings are stored for score audit but never a standalone identity feature. All generators have identical prompt allocation.",
+  "missingness": "No missingness indicator is a feature. Black/safety outputs excluded explicitly. No Nemotron vectors fabricated.",
+  "resolution": "Judge/local images standardized to RGB 512 square. This does not remove native generation-resolution effects.",
+  "watermark": "SDXL invisible watermarker explicitly disabled before generation. Standard SD1.x safety checks remain enabled. SDXL base distribution has no built-in safety checker."
+}

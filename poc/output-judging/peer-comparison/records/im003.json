@@ -1,0 +1,21 @@
+{
+  "key": "im003",
+  "prompt_id": "q00",
+  "prompt": "A watercolor of a mountain observatory beneath a violet evening sky.",
+  "model": "sd14",
+  "seed": 730003,
+  "timestamp": "2026-10-27T12:10:07.718604+00:00",
+  "status": "ok",
+  "latent_sha256": "862c8802364f462345275ea78745af34be48aa87de222be8580c9f83a8db0f44",
+  "raw": "raw/im003.png",
+  "normalized": "normalized/im003.png",
+  "raw_sha256": "307507f44df2c8c79adb68df8434e0ab2feecc2e875cf64d900c8c049be2c319",
+  "normalized_sha256": "307507f44df2c8c79adb68df8434e0ab2feecc2e875cf64d900c8c049be2c319",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.3182268142700195
+}

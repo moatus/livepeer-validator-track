@@ -1,0 +1,24 @@
+{
+  "key": "sd14-p04-1101-timing-baseline",
+  "label": "sd14",
+  "prompt_id": "p04",
+  "group": "cats",
+  "split": "calibration",
+  "seed": 1101,
+  "tag": "timing-baseline",
+  "instrumented": false,
+  "seconds": 1.2931568319909275,
+  "memory": {
+    "allocated": 3440806912,
+    "reserved": 4043309056
+  },
+  "latent_sha256": "7b239e2f3b04554c558bff4a816bc3fca674a414fe0d66d716424c4027556799",
+  "image_sha256": "1cd240472a6d6f0dbccb311a11e04172d2e90c9fa51b5e8c3b96b648cdd141d8",
+  "nsfw": [
+    false
+  ],
+  "timestamp": "2026-10-25T15:38:09.039240+00:00",
+  "fingerprint": null,
+  "image": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/images/sd14-p04-1101-timing-baseline.png",
+  "write_seconds": 0.049281898187473416
+}

@@ -1,0 +1,24 @@
+{
+  "key": "sd14-p03-1101-first",
+  "label": "sd14",
+  "prompt_id": "p03",
+  "group": "mountains",
+  "split": "calibration",
+  "seed": 1101,
+  "tag": "first",
+  "instrumented": true,
+  "seconds": 1.2851922111585736,
+  "memory": {
+    "allocated": 3440806912,
+    "reserved": 4043309056
+  },
+  "latent_sha256": "7b239e2f3b04554c558bff4a816bc3fca674a414fe0d66d716424c4027556799",
+  "image_sha256": "2f69fa38b5dd95bf94b5a70edb71d1f2c301e074e69ad4a44b98616561aa8000",
+  "nsfw": [
+    false
+  ],
+  "timestamp": "2026-10-25T15:36:06.278159+00:00",
+  "fingerprint": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/fingerprints/sd14-p03-1101-first.f32",
+  "image": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/images/sd14-p03-1101-first.png",
+  "write_seconds": 0.02715547289699316
+}

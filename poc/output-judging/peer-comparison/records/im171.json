@@ -1,0 +1,21 @@
+{
+  "key": "im171",
+  "prompt_id": "q28",
+  "prompt": "A small passenger ferry approaching a quiet misty harbor, documentary photograph.",
+  "model": "sd14",
+  "seed": 730283,
+  "timestamp": "2026-10-27T12:12:40.684339+00:00",
+  "status": "ok",
+  "latent_sha256": "9af36752a0fce5db60c92b0ef219aafa7f1b35c57e7e02eb4f6b2e4640b4a282",
+  "raw": "raw/im171.png",
+  "normalized": "normalized/im171.png",
+  "raw_sha256": "dff70704a7c76f99e70bdd7e350704c0e7d65753df25cbf065482ff00fac1478",
+  "normalized_sha256": "dff70704a7c76f99e70bdd7e350704c0e7d65753df25cbf065482ff00fac1478",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.3503756523132324
+}

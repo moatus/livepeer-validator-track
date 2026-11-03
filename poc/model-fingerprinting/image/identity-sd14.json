@@ -1,0 +1,23 @@
+{
+  "repo": "CompVis/stable-diffusion-v1-4",
+  "revision": "133a221b8aa7292a167afc5127cb63fb5005638b",
+  "files": {
+    "model_index.json": "c7cc314014486aa2f7f17ab8f90197fe0412c818cdefb9e15601ae58752b5001",
+    "README.md": "4eb72f9e6bdbfcf359ad66cdd7e26984449f47692069f81205f2217c9a821ba2",
+    "safety_checker/config.json": "a069f3ab23e39f3d608b220d9ae6067a94e43405557e575cf7f98d7e8d2a255c",
+    "safety_checker/model.fp16.safetensors": "08902f19b1cfebd7c989f152fc0507bef6898c706a91d666509383122324b511",
+    "text_encoder/config.json": "aa210e6d6abd239a466af57a1dadb62d5ced63295064d295a549e08a6c4a2020",
+    "text_encoder/model.fp16.safetensors": "77795e2023adcf39bc29a884661950380bd093cf0750a966d473d1718dc9ef4e",
+    "tokenizer/vocab.json": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+    "tokenizer/merges.txt": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+    "tokenizer/tokenizer_config.json": "00439066fcba73de57644cf41e4e3b9f2dbb09d7f3fc2005898ba52399045882",
+    "tokenizer/special_tokens_map.json": "c4864a9376a8401918425bed71fc14fc0e81f9b59ec45c1cf96cccb2df508eac",
+    "vae/config.json": "0e5966d4d52c8077648754ffd2c14ab5e0b26a4bdfa6af1d207c27550fa6d2af",
+    "vae/diffusion_pytorch_model.fp16.safetensors": "4fbcf0ebe55a0984f5a5e00d8c4521d52359af7229bb4d81890039d2aa16dd7c",
+    "unet/config.json": "d6749baad843798f21da6c2d3dd9d642e5ebb73455ade4763158f5c6d3e95b03",
+    "unet/diffusion_pytorch_model.fp16.safetensors": "a35404d03ec8f977715a4d2a080ddf72e2144f2ee49bb1ee213258bc64f9cc87",
+    "scheduler/scheduler_config.json": "8335df29b53da12e9aeca35b1c2e60d88b23eae4cc5ad3d07efdcd7f003cc343",
+    "feature_extractor/preprocessor_config.json": "2a1da83b5e1032aaeef397552ddb408dca0d8cd1dc58f61bf6abf38d6f33a0a2"
+  },
+  "download_seconds": 50.258246183395386
+}

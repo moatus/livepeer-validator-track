@@ -1,0 +1,21 @@
+{
+  "key": "im166",
+  "prompt_id": "q27",
+  "prompt": "A miniature clay cottage with a moss roof, handcrafted stop motion style.",
+  "model": "sd15",
+  "seed": 730274,
+  "timestamp": "2026-10-27T12:14:53.307655+00:00",
+  "status": "ok",
+  "latent_sha256": "d32564120dd74d7c1edfa8808278f73d82b2e6d312fea6142a7710eba626c16e",
+  "raw": "raw/im166.png",
+  "normalized": "normalized/im166.png",
+  "raw_sha256": "2a857d87801cfd6c7fbcccba163e929ec8507c37d6c077eadfcdb053785bf7f6",
+  "normalized_sha256": "2a857d87801cfd6c7fbcccba163e929ec8507c37d6c077eadfcdb053785bf7f6",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.3593518733978271
+}

@@ -1,0 +1,36 @@
+{
+  "nemotron": {
+    "status": "blocked",
+    "installed_cli": "not on PATH",
+    "python_module": "No module named livepeer_roboflow",
+    "plugin_launcher": "cli_unavailable: no installed module or bundled wheel",
+    "mcp": {
+      "endpoint": "https://agent.livepeer.org/api/mcp",
+      "discovery": "succeeded unauthenticated/read-only",
+      "capability": "nemotron-omni-vision",
+      "model_id": "nvidia/nemotron-3-nano-omni/vision",
+      "bearer": "not configured in environment, storyboard .env/.env.local (absent), codex MCP config, or Claude settings",
+      "price": "describe static-registry $0.0063/1000 tokens; uncached get_pricing confirms same amount with price_source=static_fallback, not live meter",
+      "max_tokens_default": 1024,
+      "requested_max_tokens": 256,
+      "effective_sampling_config": "not verified",
+      "invocation_contract": "describe says create_media action analyze, but tools/list action enum has no analyze; example generate with exact model_override may be supported, never smoke-tested without user-owned bearer",
+      "registered_run_capability": false
+    },
+    "loc": "canonical GET /v1/capabilities returns HTTP404 with configured LOC credential; no Nemotron contract exposed",
+    "paid_calls": 0,
+    "uploads": 0,
+    "public_demo_credits_used": false,
+    "next_action": "Configure user-owned Livepeer Agent bearer and verify bounded current meter/config; rerun judge smoke and stability before a new main judge evaluation; no alternate provider substituted"
+  },
+  "geneval": {
+    "status": "not attempted",
+    "reason": "optional; no existing original framework/environment; avoid legacy detector setup while required local stages run"
+  },
+  "parent_notification": {
+    "thread_id": "012384a6-1659-47bb-9d6a-c665e362b160",
+    "result": "thread_not_found",
+    "message_delivered": false
+  },
+  "protocol_deviation": "Judge smoke and stability could not precede local generation. Local stages completed independently as authorized. Nemotron schema is prespecified but never empirically calibrated or finalized. Main judge hypothesis remains unanswered."
+}

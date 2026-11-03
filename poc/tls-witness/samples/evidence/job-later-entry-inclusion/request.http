@@ -1,0 +1,9 @@
+POST /jobs HTTP/1.1
+Host: router
+Content-Type: application/json
+X-Client-Nonce: normal-a
+X-Client-Require-Witness: true
+Content-Length: 64
+Connection: close
+
+{"model":"fixture","input":"normal-a","fixture_mode":"normal-a"}

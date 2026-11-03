@@ -1,0 +1,2730 @@
+{
+  "stability": [
+    {
+      "key": "input-00",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/stability-inputs/input-00.png",
+      "image_sha256": "e3f46eecf05f9375c7ddb7b8ea3ae0a1e301335ad5578e5960bc7294a8727c9a",
+      "prompt": "A blue ceramic teapot on a wooden table",
+      "requirements": {
+        "object_count": "one ceramic teapot",
+        "color_binding": "blue teapot",
+        "spatial": "teapot on wooden table",
+        "typography": null
+      }
+    },
+    {
+      "key": "input-01",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/stability-inputs/input-01.png",
+      "image_sha256": "29b7f805aa90df75eb5bcf246fec59cadced12899dd9c09cf2279d22662f3e73",
+      "prompt": "A blue ceramic teapot on a wooden table",
+      "requirements": {
+        "object_count": "one ceramic teapot",
+        "color_binding": "blue teapot",
+        "spatial": "teapot on wooden table",
+        "typography": null
+      }
+    },
+    {
+      "key": "input-02",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/stability-inputs/input-02.png",
+      "image_sha256": "af91748ba30e6dcc1d257fc20ddebaae5fbcd4a3b1341f06715a105442749fc5",
+      "prompt": "A glass bowl filled with green apples",
+      "requirements": {
+        "object_count": "glass bowl with apples",
+        "color_binding": "green apples",
+        "spatial": "apples inside bowl",
+        "typography": null
+      }
+    },
+    {
+      "key": "input-03",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/stability-inputs/input-03.png",
+      "image_sha256": "712ecaf64c0b03e16b9a840de7a32395f76f4356b59a1ca1a595f5f8f0a1c060",
+      "prompt": "A glass bowl filled with green apples",
+      "requirements": {
+        "object_count": "glass bowl with apples",
+        "color_binding": "green apples",
+        "spatial": "apples inside bowl",
+        "typography": null
+      }
+    },
+    {
+      "key": "input-04",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/stability-inputs/input-04.png",
+      "image_sha256": "ce743123ed9855494386f7cd25aedcdee24caf6195fffaef477833ee19f373c4",
+      "prompt": "Snow covered mountains beneath a clear sky",
+      "requirements": {
+        "object_count": "mountains",
+        "color_binding": "clear sky",
+        "spatial": "snow on mountains",
+        "typography": null
+      }
+    },
+    {
+      "key": "input-05",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/stability-inputs/input-05.png",
+      "image_sha256": "bc976df9ce3e1f4fe2e1a507cbbaa865fa53ebe6acfab72ce842efd5ed4489d4",
+      "prompt": "Snow covered mountains beneath a clear sky",
+      "requirements": {
+        "object_count": "mountains",
+        "color_binding": "clear sky",
+        "spatial": "snow on mountains",
+        "typography": null
+      }
+    },
+    {
+      "key": "input-06",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/stability-inputs/input-06.png",
+      "image_sha256": "ea51c20803d710dc36576c4b3baf29134de7a41454bdb36e275832af9bb50913",
+      "prompt": "A winding trail on a rocky mountain",
+      "requirements": {
+        "object_count": "a trail",
+        "color_binding": null,
+        "spatial": "winding trail on rocky mountain",
+        "typography": null
+      }
+    },
+    {
+      "key": "input-07",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/stability-inputs/input-07.png",
+      "image_sha256": "d80f420a89af5681c922254fe14f264adb93a1f0a829687b0ddc3cf40837fa82",
+      "prompt": "A winding trail on a rocky mountain",
+      "requirements": {
+        "object_count": "a trail",
+        "color_binding": null,
+        "spatial": "winding trail on rocky mountain",
+        "typography": null
+      }
+    },
+    {
+      "key": "input-08",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/stability-inputs/input-08.png",
+      "image_sha256": "5fd4dca1f83108dfaa1c7b87e7dd7ead3604d14f834c86d1a6156fd37a05e508",
+      "prompt": "An orange cat sleeping on a cushion",
+      "requirements": {
+        "object_count": "one cat",
+        "color_binding": "orange cat",
+        "spatial": "cat sleeping on cushion",
+        "typography": null
+      }
+    },
+    {
+      "key": "input-09",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/stability-inputs/input-09.png",
+      "image_sha256": "b6570b95b028a281a401134d9a5208e9b57c86e76fea0fc71eb19fdfc5c8486d",
+      "prompt": "An orange cat sleeping on a cushion",
+      "requirements": {
+        "object_count": "one cat",
+        "color_binding": "orange cat",
+        "spatial": "cat sleeping on cushion",
+        "typography": null
+      }
+    },
+    {
+      "key": "input-10",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/stability-inputs/input-10.png",
+      "image_sha256": "7beff0ce7286da813a16db4f1ca791f43db7e6c52c2e73afdceed2882861d255",
+      "prompt": "A gray kitten sitting beside a window",
+      "requirements": {
+        "object_count": "one kitten",
+        "color_binding": "gray kitten",
+        "spatial": "kitten sitting beside window",
+        "typography": null
+      }
+    },
+    {
+      "key": "input-11",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/stability-inputs/input-11.png",
+      "image_sha256": "649a15bd3a3c490657f966d78e17a70d806f0353d0d0dc80d66295a666564f36",
+      "prompt": "A gray kitten sitting beside a window",
+      "requirements": {
+        "object_count": "one kitten",
+        "color_binding": "gray kitten",
+        "spatial": "kitten sitting beside window",
+        "typography": null
+      }
+    }
+  ],
+  "main": [
+    {
+      "key": "p00-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p00-0-sd14.png",
+      "image_sha256": "15ad7c582b149b6a0381bcf8b9624049108e45b8e622d373e8cae17d60a33950",
+      "prompt": "A studio photograph of exactly three yellow toy trains on a plain gray floor.",
+      "requirements": {
+        "object_count": "three toy trains",
+        "color_binding": "yellow trains",
+        "spatial": "on gray floor",
+        "typography": null
+      }
+    },
+    {
+      "key": "p00-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p00-0-sd15.png",
+      "image_sha256": "0c5bac02d8fda4abcdca1b500fdf6ae20f26c915069bfd49d431f141cb3aec97",
+      "prompt": "A studio photograph of exactly three yellow toy trains on a plain gray floor.",
+      "requirements": {
+        "object_count": "three toy trains",
+        "color_binding": "yellow trains",
+        "spatial": "on gray floor",
+        "typography": null
+      }
+    },
+    {
+      "key": "p00-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p00-0-sdxl.png",
+      "image_sha256": "09afb98edd40f7c20ceadc89cdb55a5f5df489a3f497a9dc76dd23d41bbcbfe3",
+      "prompt": "A studio photograph of exactly three yellow toy trains on a plain gray floor.",
+      "requirements": {
+        "object_count": "three toy trains",
+        "color_binding": "yellow trains",
+        "spatial": "on gray floor",
+        "typography": null
+      }
+    },
+    {
+      "key": "p00-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p00-1-sd14.png",
+      "image_sha256": "11d2f05ad73039cd3ac39faa534f3132a36344c77273bb818a55acc4b249ee54",
+      "prompt": "A studio photograph of exactly three yellow toy trains on a plain gray floor.",
+      "requirements": {
+        "object_count": "three toy trains",
+        "color_binding": "yellow trains",
+        "spatial": "on gray floor",
+        "typography": null
+      }
+    },
+    {
+      "key": "p00-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p00-1-sd15.png",
+      "image_sha256": "ee2e6320e4b323e15f823fccd14ba34ae9c0e8d909d155780d5ae1ce502c28d4",
+      "prompt": "A studio photograph of exactly three yellow toy trains on a plain gray floor.",
+      "requirements": {
+        "object_count": "three toy trains",
+        "color_binding": "yellow trains",
+        "spatial": "on gray floor",
+        "typography": null
+      }
+    },
+    {
+      "key": "p00-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p00-1-sdxl.png",
+      "image_sha256": "def4fa740a185cba921db9aa3a62cca9d1bb0e19994f64bcf6b17f5e2d6ebc61",
+      "prompt": "A studio photograph of exactly three yellow toy trains on a plain gray floor.",
+      "requirements": {
+        "object_count": "three toy trains",
+        "color_binding": "yellow trains",
+        "spatial": "on gray floor",
+        "typography": null
+      }
+    },
+    {
+      "key": "p00-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p00-2-sd14.png",
+      "image_sha256": "f5f28b99fa1317ca2a346a68a4f758c70fed17e8ff7d5678654e30fc518c1634",
+      "prompt": "A studio photograph of exactly three yellow toy trains on a plain gray floor.",
+      "requirements": {
+        "object_count": "three toy trains",
+        "color_binding": "yellow trains",
+        "spatial": "on gray floor",
+        "typography": null
+      }
+    },
+    {
+      "key": "p00-2-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p00-2-sd15.png",
+      "image_sha256": "8f1c939ee1300df01bec3b012bd8fcf0d33bb9f508e8554730a20bbb63c66f76",
+      "prompt": "A studio photograph of exactly three yellow toy trains on a plain gray floor.",
+      "requirements": {
+        "object_count": "three toy trains",
+        "color_binding": "yellow trains",
+        "spatial": "on gray floor",
+        "typography": null
+      }
+    },
+    {
+      "key": "p00-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p00-2-sdxl.png",
+      "image_sha256": "f1d61538bf478c8020175ad4ea507ae4c87c2bd735eedbaa41940ecacd30aa0c",
+      "prompt": "A studio photograph of exactly three yellow toy trains on a plain gray floor.",
+      "requirements": {
+        "object_count": "three toy trains",
+        "color_binding": "yellow trains",
+        "spatial": "on gray floor",
+        "typography": null
+      }
+    },
+    {
+      "key": "p01-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p01-0-sd14.png",
+      "image_sha256": "d3b478db470af449e401c6273970dcd151cb308616ecdfaa064e9fc397587aeb",
+      "prompt": "A red umbrella to the left of a blue umbrella against a white wall.",
+      "requirements": {
+        "object_count": "two umbrellas",
+        "color_binding": "red left umbrella and blue right umbrella",
+        "spatial": "red umbrella left of blue",
+        "typography": null
+      }
+    },
+    {
+      "key": "p01-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p01-0-sd15.png",
+      "image_sha256": "7d8b7f819a5870346d50f22963bafefed91a1f7df84a8cbebc5fb6287da5e5a6",
+      "prompt": "A red umbrella to the left of a blue umbrella against a white wall.",
+      "requirements": {
+        "object_count": "two umbrellas",
+        "color_binding": "red left umbrella and blue right umbrella",
+        "spatial": "red umbrella left of blue",
+        "typography": null
+      }
+    },
+    {
+      "key": "p01-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p01-0-sdxl.png",
+      "image_sha256": "4c6fe1c072f6e6578786586b14c3211249a91053a22b5543363446235e518e6d",
+      "prompt": "A red umbrella to the left of a blue umbrella against a white wall.",
+      "requirements": {
+        "object_count": "two umbrellas",
+        "color_binding": "red left umbrella and blue right umbrella",
+        "spatial": "red umbrella left of blue",
+        "typography": null
+      }
+    },
+    {
+      "key": "p01-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p01-1-sd14.png",
+      "image_sha256": "b3d41a89030d858bd28b8036e3d7ee7141fd4544bb74782ee9ea77000b1734cb",
+      "prompt": "A red umbrella to the left of a blue umbrella against a white wall.",
+      "requirements": {
+        "object_count": "two umbrellas",
+        "color_binding": "red left umbrella and blue right umbrella",
+        "spatial": "red umbrella left of blue",
+        "typography": null
+      }
+    },
+    {
+      "key": "p01-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p01-1-sd15.png",
+      "image_sha256": "0f7ac917c660ae553693f45bf16ca4d8faebd55e461ceb35d9f4e38d672e4423",
+      "prompt": "A red umbrella to the left of a blue umbrella against a white wall.",
+      "requirements": {
+        "object_count": "two umbrellas",
+        "color_binding": "red left umbrella and blue right umbrella",
+        "spatial": "red umbrella left of blue",
+        "typography": null
+      }
+    },
+    {
+      "key": "p01-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p01-1-sdxl.png",
+      "image_sha256": "1431cbb963ac7c752f6d2ee1222e92878d7c9eb1aa8aad5bb2028b179828bc3f",
+      "prompt": "A red umbrella to the left of a blue umbrella against a white wall.",
+      "requirements": {
+        "object_count": "two umbrellas",
+        "color_binding": "red left umbrella and blue right umbrella",
+        "spatial": "red umbrella left of blue",
+        "typography": null
+      }
+    },
+    {
+      "key": "p01-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p01-2-sd14.png",
+      "image_sha256": "e7dc79a6d055637b61c86b6d7304209038f0e9c3450606a1b3b2388ed17cab28",
+      "prompt": "A red umbrella to the left of a blue umbrella against a white wall.",
+      "requirements": {
+        "object_count": "two umbrellas",
+        "color_binding": "red left umbrella and blue right umbrella",
+        "spatial": "red umbrella left of blue",
+        "typography": null
+      }
+    },
+    {
+      "key": "p01-2-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p01-2-sd15.png",
+      "image_sha256": "4df143aa4a7184fc2ae7894b3ca9bc9120e72f17ac6f1bdfe8af958041b265ce",
+      "prompt": "A red umbrella to the left of a blue umbrella against a white wall.",
+      "requirements": {
+        "object_count": "two umbrellas",
+        "color_binding": "red left umbrella and blue right umbrella",
+        "spatial": "red umbrella left of blue",
+        "typography": null
+      }
+    },
+    {
+      "key": "p01-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p01-2-sdxl.png",
+      "image_sha256": "6f29859f2c4eeb2d8d3340b47dae9d21e768a262f12be62481403751cd919eb7",
+      "prompt": "A red umbrella to the left of a blue umbrella against a white wall.",
+      "requirements": {
+        "object_count": "two umbrellas",
+        "color_binding": "red left umbrella and blue right umbrella",
+        "spatial": "red umbrella left of blue",
+        "typography": null
+      }
+    },
+    {
+      "key": "p02-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p02-0-sd14.png",
+      "image_sha256": "3e19ffd41ad6b97d4e5fef892a4855fa335c9e48d21c8ec46a0e7741d980ddba",
+      "prompt": "A bakery display containing exactly four croissants on a white tray.",
+      "requirements": {
+        "object_count": "four croissants",
+        "color_binding": null,
+        "spatial": "croissants on white tray",
+        "typography": null
+      }
+    },
+    {
+      "key": "p02-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p02-0-sd15.png",
+      "image_sha256": "a5881971e2343c867036e148bd5ec7d8ea94de7c2f75c095ebffc2b10ab3d709",
+      "prompt": "A bakery display containing exactly four croissants on a white tray.",
+      "requirements": {
+        "object_count": "four croissants",
+        "color_binding": null,
+        "spatial": "croissants on white tray",
+        "typography": null
+      }
+    },
+    {
+      "key": "p02-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p02-0-sdxl.png",
+      "image_sha256": "c16833c3f03d704594f84e090a4c2f9ae8b0f7b4ec697b093cf965d985dff4db",
+      "prompt": "A bakery display containing exactly four croissants on a white tray.",
+      "requirements": {
+        "object_count": "four croissants",
+        "color_binding": null,
+        "spatial": "croissants on white tray",
+        "typography": null
+      }
+    },
+    {
+      "key": "p02-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p02-1-sd14.png",
+      "image_sha256": "10d72237445cafb83a22b40607b5a725f0c2201d506bcda455213e1e8a3b2175",
+      "prompt": "A bakery display containing exactly four croissants on a white tray.",
+      "requirements": {
+        "object_count": "four croissants",
+        "color_binding": null,
+        "spatial": "croissants on white tray",
+        "typography": null
+      }
+    },
+    {
+      "key": "p02-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p02-1-sd15.png",
+      "image_sha256": "609703448d1f8c24de716d2dcf2b00568d882b71d3c9699e66ca8b4f0af1c5ce",
+      "prompt": "A bakery display containing exactly four croissants on a white tray.",
+      "requirements": {
+        "object_count": "four croissants",
+        "color_binding": null,
+        "spatial": "croissants on white tray",
+        "typography": null
+      }
+    },
+    {
+      "key": "p02-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p02-1-sdxl.png",
+      "image_sha256": "b26d37fe2c8eb8f097dd9af9b3a09fb25adb89c738df4776e223c61315222514",
+      "prompt": "A bakery display containing exactly four croissants on a white tray.",
+      "requirements": {
+        "object_count": "four croissants",
+        "color_binding": null,
+        "spatial": "croissants on white tray",
+        "typography": null
+      }
+    },
+    {
+      "key": "p02-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p02-2-sd14.png",
+      "image_sha256": "b33a5006f8117c519d8ac79495d1844977391cf882db5b834a78e6bedd9dc7da",
+      "prompt": "A bakery display containing exactly four croissants on a white tray.",
+      "requirements": {
+        "object_count": "four croissants",
+        "color_binding": null,
+        "spatial": "croissants on white tray",
+        "typography": null
+      }
+    },
+    {
+      "key": "p02-2-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p02-2-sd15.png",
+      "image_sha256": "dcba8ddc69f471980c515bcdf579ead20380fd9a24dda163167d582a851c3d55",
+      "prompt": "A bakery display containing exactly four croissants on a white tray.",
+      "requirements": {
+        "object_count": "four croissants",
+        "color_binding": null,
+        "spatial": "croissants on white tray",
+        "typography": null
+      }
+    },
+    {
+      "key": "p02-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p02-2-sdxl.png",
+      "image_sha256": "4445a76cccb1ba0b5386c8ca3ea1956614d19ab72be54c74c6044220428a6684",
+      "prompt": "A bakery display containing exactly four croissants on a white tray.",
+      "requirements": {
+        "object_count": "four croissants",
+        "color_binding": null,
+        "spatial": "croissants on white tray",
+        "typography": null
+      }
+    },
+    {
+      "key": "p03-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p03-0-sd14.png",
+      "image_sha256": "0a7a224fdccebe262a9d107d41d919172c1e94ec0bb1d76db8e9eebf538d2dbd",
+      "prompt": "A green bicycle leaning against a red brick wall.",
+      "requirements": {
+        "object_count": "one bicycle",
+        "color_binding": "green bicycle",
+        "spatial": "bicycle leaning against brick wall",
+        "typography": null
+      }
+    },
+    {
+      "key": "p03-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p03-0-sd15.png",
+      "image_sha256": "7a1cfd84d7c646d69fa7cc1ff61a47a1d36be39d4f4a810f32f22bcdf80a43b2",
+      "prompt": "A green bicycle leaning against a red brick wall.",
+      "requirements": {
+        "object_count": "one bicycle",
+        "color_binding": "green bicycle",
+        "spatial": "bicycle leaning against brick wall",
+        "typography": null
+      }
+    },
+    {
+      "key": "p03-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p03-0-sdxl.png",
+      "image_sha256": "64b844abc695ab8a0be2ae1da9669e39c047c3779947cbd1f86a4f5ef3aa7737",
+      "prompt": "A green bicycle leaning against a red brick wall.",
+      "requirements": {
+        "object_count": "one bicycle",
+        "color_binding": "green bicycle",
+        "spatial": "bicycle leaning against brick wall",
+        "typography": null
+      }
+    },
+    {
+      "key": "p03-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p03-1-sd14.png",
+      "image_sha256": "b5c3182cbaf887351728cf41803d721f3aac76c332bb433a973819ef0cb4c235",
+      "prompt": "A green bicycle leaning against a red brick wall.",
+      "requirements": {
+        "object_count": "one bicycle",
+        "color_binding": "green bicycle",
+        "spatial": "bicycle leaning against brick wall",
+        "typography": null
+      }
+    },
+    {
+      "key": "p03-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p03-1-sd15.png",
+      "image_sha256": "97414728bc0f0a3fcce9376c73f9ba4c71389f511e15071e2af6998d3019f083",
+      "prompt": "A green bicycle leaning against a red brick wall.",
+      "requirements": {
+        "object_count": "one bicycle",
+        "color_binding": "green bicycle",
+        "spatial": "bicycle leaning against brick wall",
+        "typography": null
+      }
+    },
+    {
+      "key": "p03-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p03-1-sdxl.png",
+      "image_sha256": "4b611ad24c8a6e5439a49116f7718704c80055925e741f1d14f60a2d1a784fab",
+      "prompt": "A green bicycle leaning against a red brick wall.",
+      "requirements": {
+        "object_count": "one bicycle",
+        "color_binding": "green bicycle",
+        "spatial": "bicycle leaning against brick wall",
+        "typography": null
+      }
+    },
+    {
+      "key": "p03-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p03-2-sd14.png",
+      "image_sha256": "ec9ada15be3aad625c128c18e48b1feee7331791674c2a6b247854301dac02ba",
+      "prompt": "A green bicycle leaning against a red brick wall.",
+      "requirements": {
+        "object_count": "one bicycle",
+        "color_binding": "green bicycle",
+        "spatial": "bicycle leaning against brick wall",
+        "typography": null
+      }
+    },
+    {
+      "key": "p03-2-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p03-2-sd15.png",
+      "image_sha256": "04380e12d0bb45a2e3574ce4cbfd90679ae8651761fed3ea50396f0e18b5b654",
+      "prompt": "A green bicycle leaning against a red brick wall.",
+      "requirements": {
+        "object_count": "one bicycle",
+        "color_binding": "green bicycle",
+        "spatial": "bicycle leaning against brick wall",
+        "typography": null
+      }
+    },
+    {
+      "key": "p03-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p03-2-sdxl.png",
+      "image_sha256": "34e204d3a05ae72ce0c97563f7b6e92594b65b742c7493556d1292c83c663b6d",
+      "prompt": "A green bicycle leaning against a red brick wall.",
+      "requirements": {
+        "object_count": "one bicycle",
+        "color_binding": "green bicycle",
+        "spatial": "bicycle leaning against brick wall",
+        "typography": null
+      }
+    },
+    {
+      "key": "p04-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p04-0-sd14.png",
+      "image_sha256": "34108e7a3b5a289568ffdd67df1d705186885ec04dc7f256c1160d6525688f0c",
+      "prompt": "Two orange goldfish swimming in a round clear fishbowl.",
+      "requirements": {
+        "object_count": "two goldfish",
+        "color_binding": "orange fish",
+        "spatial": "fish inside round bowl",
+        "typography": null
+      }
+    },
+    {
+      "key": "p04-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p04-0-sd15.png",
+      "image_sha256": "eec794d178524bdea1631fe9a34184fda5c85cba64808ca6d8fbf816bc198503",
+      "prompt": "Two orange goldfish swimming in a round clear fishbowl.",
+      "requirements": {
+        "object_count": "two goldfish",
+        "color_binding": "orange fish",
+        "spatial": "fish inside round bowl",
+        "typography": null
+      }
+    },
+    {
+      "key": "p04-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p04-0-sdxl.png",
+      "image_sha256": "1c77e7e355b7b2b571ad359a3b0852846385aa6e685ef45bb7c4c3186e0a4284",
+      "prompt": "Two orange goldfish swimming in a round clear fishbowl.",
+      "requirements": {
+        "object_count": "two goldfish",
+        "color_binding": "orange fish",
+        "spatial": "fish inside round bowl",
+        "typography": null
+      }
+    },
+    {
+      "key": "p04-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p04-1-sd14.png",
+      "image_sha256": "75f1282dabdd3c017f72c9543c53ef080d103d1930659c110fde38dac2a8266d",
+      "prompt": "Two orange goldfish swimming in a round clear fishbowl.",
+      "requirements": {
+        "object_count": "two goldfish",
+        "color_binding": "orange fish",
+        "spatial": "fish inside round bowl",
+        "typography": null
+      }
+    },
+    {
+      "key": "p04-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p04-1-sd15.png",
+      "image_sha256": "65bffa6b8c5ea72b58637d86b2e4946501b40470d542c9b15b32e0dbdbf6bee4",
+      "prompt": "Two orange goldfish swimming in a round clear fishbowl.",
+      "requirements": {
+        "object_count": "two goldfish",
+        "color_binding": "orange fish",
+        "spatial": "fish inside round bowl",
+        "typography": null
+      }
+    },
+    {
+      "key": "p04-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p04-1-sdxl.png",
+      "image_sha256": "174111d0b669cbd6fa3bfc7439baf9914dda297dd585a04dd8ce8b1fbbdc5cf4",
+      "prompt": "Two orange goldfish swimming in a round clear fishbowl.",
+      "requirements": {
+        "object_count": "two goldfish",
+        "color_binding": "orange fish",
+        "spatial": "fish inside round bowl",
+        "typography": null
+      }
+    },
+    {
+      "key": "p04-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p04-2-sd14.png",
+      "image_sha256": "3703e7259221f35b6d8f927cecaf21703b6b7fe2178f66afabb00774ab6873d3",
+      "prompt": "Two orange goldfish swimming in a round clear fishbowl.",
+      "requirements": {
+        "object_count": "two goldfish",
+        "color_binding": "orange fish",
+        "spatial": "fish inside round bowl",
+        "typography": null
+      }
+    },
+    {
+      "key": "p04-2-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p04-2-sd15.png",
+      "image_sha256": "4b77a702f912f8f775ae9cfcf8b4fe8e260e901f320d00bd45311821b1520252",
+      "prompt": "Two orange goldfish swimming in a round clear fishbowl.",
+      "requirements": {
+        "object_count": "two goldfish",
+        "color_binding": "orange fish",
+        "spatial": "fish inside round bowl",
+        "typography": null
+      }
+    },
+    {
+      "key": "p04-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p04-2-sdxl.png",
+      "image_sha256": "01c3150adbc7c22c27549678f1ace0ae040d4919c741ae8c66d9c96986b58740",
+      "prompt": "Two orange goldfish swimming in a round clear fishbowl.",
+      "requirements": {
+        "object_count": "two goldfish",
+        "color_binding": "orange fish",
+        "spatial": "fish inside round bowl",
+        "typography": null
+      }
+    },
+    {
+      "key": "p05-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p05-0-sd14.png",
+      "image_sha256": "fa09a2a78e4a9a5039b38b725ce0a539e2700c439d652e923cbad019e7d9d867",
+      "prompt": "A friendly silver robot holding a purple balloon in a clean cartoon illustration.",
+      "requirements": {
+        "object_count": "robot and balloon",
+        "color_binding": "silver robot and purple balloon",
+        "spatial": "robot holding balloon",
+        "typography": null
+      }
+    },
+    {
+      "key": "p05-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p05-0-sd15.png",
+      "image_sha256": "5d05ee2f752bc6ba491a8ee25f28e179ee7c8cd69dbf903a4981a98d15f2bce1",
+      "prompt": "A friendly silver robot holding a purple balloon in a clean cartoon illustration.",
+      "requirements": {
+        "object_count": "robot and balloon",
+        "color_binding": "silver robot and purple balloon",
+        "spatial": "robot holding balloon",
+        "typography": null
+      }
+    },
+    {
+      "key": "p05-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p05-0-sdxl.png",
+      "image_sha256": "8fe973d555c456e574eadb4260f5fd2ffccbfe06eff013bfbe2c03e602358f7d",
+      "prompt": "A friendly silver robot holding a purple balloon in a clean cartoon illustration.",
+      "requirements": {
+        "object_count": "robot and balloon",
+        "color_binding": "silver robot and purple balloon",
+        "spatial": "robot holding balloon",
+        "typography": null
+      }
+    },
+    {
+      "key": "p05-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p05-1-sd14.png",
+      "image_sha256": "99f39e34cafe25cc4401d1896fe6f09df70297e358d849cfcd90e0fc73f29a0b",
+      "prompt": "A friendly silver robot holding a purple balloon in a clean cartoon illustration.",
+      "requirements": {
+        "object_count": "robot and balloon",
+        "color_binding": "silver robot and purple balloon",
+        "spatial": "robot holding balloon",
+        "typography": null
+      }
+    },
+    {
+      "key": "p05-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p05-1-sd15.png",
+      "image_sha256": "88ca2bd743107d4caac3b1ec1aa825bc6dac55c5893cc35e9d6f06fd4e494821",
+      "prompt": "A friendly silver robot holding a purple balloon in a clean cartoon illustration.",
+      "requirements": {
+        "object_count": "robot and balloon",
+        "color_binding": "silver robot and purple balloon",
+        "spatial": "robot holding balloon",
+        "typography": null
+      }
+    },
+    {
+      "key": "p05-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p05-1-sdxl.png",
+      "image_sha256": "d3397a3feca44f79e27aeb8b06b595ef24d19bf413a1c2dacda10152bc657586",
+      "prompt": "A friendly silver robot holding a purple balloon in a clean cartoon illustration.",
+      "requirements": {
+        "object_count": "robot and balloon",
+        "color_binding": "silver robot and purple balloon",
+        "spatial": "robot holding balloon",
+        "typography": null
+      }
+    },
+    {
+      "key": "p05-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p05-2-sd14.png",
+      "image_sha256": "78919d0ccc9836eccdd7e7229793dd990a2fc5b2098e522c78ba6ccb494538e7",
+      "prompt": "A friendly silver robot holding a purple balloon in a clean cartoon illustration.",
+      "requirements": {
+        "object_count": "robot and balloon",
+        "color_binding": "silver robot and purple balloon",
+        "spatial": "robot holding balloon",
+        "typography": null
+      }
+    },
+    {
+      "key": "p05-2-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p05-2-sd15.png",
+      "image_sha256": "10412767798b14a68413c3dc8d885454d675d353f6ecffcd0e9fb2123f6f73d9",
+      "prompt": "A friendly silver robot holding a purple balloon in a clean cartoon illustration.",
+      "requirements": {
+        "object_count": "robot and balloon",
+        "color_binding": "silver robot and purple balloon",
+        "spatial": "robot holding balloon",
+        "typography": null
+      }
+    },
+    {
+      "key": "p05-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p05-2-sdxl.png",
+      "image_sha256": "f625abc5b4f1f61c5a2649d3be7475daf689f2d2065c888b464510995b2bf29b",
+      "prompt": "A friendly silver robot holding a purple balloon in a clean cartoon illustration.",
+      "requirements": {
+        "object_count": "robot and balloon",
+        "color_binding": "silver robot and purple balloon",
+        "spatial": "robot holding balloon",
+        "typography": null
+      }
+    },
+    {
+      "key": "p06-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p06-0-sd14.png",
+      "image_sha256": "302ee7c17133302f584897063a2c13c56f0f154d9813c534a9032855866c54e9",
+      "prompt": "A yellow rectangular road sign with the word SLOW in black capital letters.",
+      "requirements": {
+        "object_count": "one rectangular sign",
+        "color_binding": "yellow sign and black letters",
+        "spatial": null,
+        "typography": "word SLOW"
+      }
+    },
+    {
+      "key": "p06-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p06-0-sd15.png",
+      "image_sha256": "ee5df6048bbe801d84496c68a1209b0cdeb61770f350cbc12140ac1768d8ed04",
+      "prompt": "A yellow rectangular road sign with the word SLOW in black capital letters.",
+      "requirements": {
+        "object_count": "one rectangular sign",
+        "color_binding": "yellow sign and black letters",
+        "spatial": null,
+        "typography": "word SLOW"
+      }
+    },
+    {
+      "key": "p06-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p06-0-sdxl.png",
+      "image_sha256": "28328e86832d2b0be95d00b5a1636c2318a7aa570ee6e8f2e02fd320985dacaa",
+      "prompt": "A yellow rectangular road sign with the word SLOW in black capital letters.",
+      "requirements": {
+        "object_count": "one rectangular sign",
+        "color_binding": "yellow sign and black letters",
+        "spatial": null,
+        "typography": "word SLOW"
+      }
+    },
+    {
+      "key": "p06-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p06-1-sd14.png",
+      "image_sha256": "108b6a543639612d08ab246002fa40044ac0f1f07e8a747232b02422d4282316",
+      "prompt": "A yellow rectangular road sign with the word SLOW in black capital letters.",
+      "requirements": {
+        "object_count": "one rectangular sign",
+        "color_binding": "yellow sign and black letters",
+        "spatial": null,
+        "typography": "word SLOW"
+      }
+    },
+    {
+      "key": "p06-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p06-1-sd15.png",
+      "image_sha256": "cb4134428d557a0e5b748cccffc68f2a7e0672b195ac202e2e37e1c2a3b98ac6",
+      "prompt": "A yellow rectangular road sign with the word SLOW in black capital letters.",
+      "requirements": {
+        "object_count": "one rectangular sign",
+        "color_binding": "yellow sign and black letters",
+        "spatial": null,
+        "typography": "word SLOW"
+      }
+    },
+    {
+      "key": "p06-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p06-1-sdxl.png",
+      "image_sha256": "17a324621628c2765b09163bebfa5dedfeb682040a57d9591808c527053ecabf",
+      "prompt": "A yellow rectangular road sign with the word SLOW in black capital letters.",
+      "requirements": {
+        "object_count": "one rectangular sign",
+        "color_binding": "yellow sign and black letters",
+        "spatial": null,
+        "typography": "word SLOW"
+      }
+    },
+    {
+      "key": "p06-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p06-2-sd14.png",
+      "image_sha256": "c32334a2ebb7b156d72342135d74dbc00ce7ca5f5da448bd0a17734349c1e798",
+      "prompt": "A yellow rectangular road sign with the word SLOW in black capital letters.",
+      "requirements": {
+        "object_count": "one rectangular sign",
+        "color_binding": "yellow sign and black letters",
+        "spatial": null,
+        "typography": "word SLOW"
+      }
+    },
+    {
+      "key": "p06-2-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p06-2-sd15.png",
+      "image_sha256": "d68d617f436e264c0b276adf320fb69ffe6e14eb95e1abbc99151d61e5d457aa",
+      "prompt": "A yellow rectangular road sign with the word SLOW in black capital letters.",
+      "requirements": {
+        "object_count": "one rectangular sign",
+        "color_binding": "yellow sign and black letters",
+        "spatial": null,
+        "typography": "word SLOW"
+      }
+    },
+    {
+      "key": "p06-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p06-2-sdxl.png",
+      "image_sha256": "0c7d0143014a48e998595db7812781b3267f288bc46884aaa65e0ba14c655c70",
+      "prompt": "A yellow rectangular road sign with the word SLOW in black capital letters.",
+      "requirements": {
+        "object_count": "one rectangular sign",
+        "color_binding": "yellow sign and black letters",
+        "spatial": null,
+        "typography": "word SLOW"
+      }
+    },
+    {
+      "key": "p07-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p07-0-sd14.png",
+      "image_sha256": "0123118812142b1839d2f6e9e8581b34a5e8e9205d8ae3d0cb0e92a50318b283",
+      "prompt": "A wicker laundry basket containing blue towels beside a washing machine.",
+      "requirements": {
+        "object_count": "basket and washing machine",
+        "color_binding": "blue towels",
+        "spatial": "towels inside basket beside machine",
+        "typography": null
+      }
+    },
+    {
+      "key": "p07-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p07-0-sd15.png",
+      "image_sha256": "a4134eea1f4f14e776714df54c29e0d50298d191cf2c18522c7c46885e904963",
+      "prompt": "A wicker laundry basket containing blue towels beside a washing machine.",
+      "requirements": {
+        "object_count": "basket and washing machine",
+        "color_binding": "blue towels",
+        "spatial": "towels inside basket beside machine",
+        "typography": null
+      }
+    },
+    {
+      "key": "p07-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p07-0-sdxl.png",
+      "image_sha256": "6081785d8f56d4eacb918239f64f78fe66b9437c75dcf472f07c5518e1a50a95",
+      "prompt": "A wicker laundry basket containing blue towels beside a washing machine.",
+      "requirements": {
+        "object_count": "basket and washing machine",
+        "color_binding": "blue towels",
+        "spatial": "towels inside basket beside machine",
+        "typography": null
+      }
+    },
+    {
+      "key": "p07-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p07-1-sd14.png",
+      "image_sha256": "0c396a782b8ae1249e5c76af96583912f5d9150206f22d8d748cdaa2acdd3633",
+      "prompt": "A wicker laundry basket containing blue towels beside a washing machine.",
+      "requirements": {
+        "object_count": "basket and washing machine",
+        "color_binding": "blue towels",
+        "spatial": "towels inside basket beside machine",
+        "typography": null
+      }
+    },
+    {
+      "key": "p07-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p07-1-sd15.png",
+      "image_sha256": "5704aab25bd065d1cbcb901f1957d41cfb5b85b44d84906a8c914522328ed83f",
+      "prompt": "A wicker laundry basket containing blue towels beside a washing machine.",
+      "requirements": {
+        "object_count": "basket and washing machine",
+        "color_binding": "blue towels",
+        "spatial": "towels inside basket beside machine",
+        "typography": null
+      }
+    },
+    {
+      "key": "p07-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p07-1-sdxl.png",
+      "image_sha256": "e1a7bba8c9d582c4dc3f6385428d78c5d7969b4c81fe02640de5bce654f7b571",
+      "prompt": "A wicker laundry basket containing blue towels beside a washing machine.",
+      "requirements": {
+        "object_count": "basket and washing machine",
+        "color_binding": "blue towels",
+        "spatial": "towels inside basket beside machine",
+        "typography": null
+      }
+    },
+    {
+      "key": "p07-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p07-2-sd14.png",
+      "image_sha256": "a791f915c51e7be49943d0b9068e0b141257fba0da22b473a8300245723d6332",
+      "prompt": "A wicker laundry basket containing blue towels beside a washing machine.",
+      "requirements": {
+        "object_count": "basket and washing machine",
+        "color_binding": "blue towels",
+        "spatial": "towels inside basket beside machine",
+        "typography": null
+      }
+    },
+    {
+      "key": "p07-2-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p07-2-sd15.png",
+      "image_sha256": "4504fdd47900455c2142466e79ba3107b3d516c97d7384d58240de82b48a7d49",
+      "prompt": "A wicker laundry basket containing blue towels beside a washing machine.",
+      "requirements": {
+        "object_count": "basket and washing machine",
+        "color_binding": "blue towels",
+        "spatial": "towels inside basket beside machine",
+        "typography": null
+      }
+    },
+    {
+      "key": "p07-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p07-2-sdxl.png",
+      "image_sha256": "486cdddb8d58af164f4873f67f68b449db8e1c416ad78f74cf70d4dbaa4f3610",
+      "prompt": "A wicker laundry basket containing blue towels beside a washing machine.",
+      "requirements": {
+        "object_count": "basket and washing machine",
+        "color_binding": "blue towels",
+        "spatial": "towels inside basket beside machine",
+        "typography": null
+      }
+    },
+    {
+      "key": "p08-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p08-0-sd14.png",
+      "image_sha256": "643ddd74156d62d12c8ed667c4ecf5a930e6c2146ca8f181dc0c2fdef209ae76",
+      "prompt": "Exactly three small cacti in separate terracotta pots arranged in a row.",
+      "requirements": {
+        "object_count": "three cacti in three pots",
+        "color_binding": null,
+        "spatial": "pots arranged in a row",
+        "typography": null
+      }
+    },
+    {
+      "key": "p08-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p08-0-sd15.png",
+      "image_sha256": "52af5d0b16b029b521399cc767756229f0dff9555fe0953b8d6e7b968dc9fb1b",
+      "prompt": "Exactly three small cacti in separate terracotta pots arranged in a row.",
+      "requirements": {
+        "object_count": "three cacti in three pots",
+        "color_binding": null,
+        "spatial": "pots arranged in a row",
+        "typography": null
+      }
+    },
+    {
+      "key": "p08-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p08-0-sdxl.png",
+      "image_sha256": "876e7ba44b1f1075e587a37587770ce633f56f1c9c405895a48d8b24eddf46c4",
+      "prompt": "Exactly three small cacti in separate terracotta pots arranged in a row.",
+      "requirements": {
+        "object_count": "three cacti in three pots",
+        "color_binding": null,
+        "spatial": "pots arranged in a row",
+        "typography": null
+      }
+    },
+    {
+      "key": "p08-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p08-1-sd14.png",
+      "image_sha256": "927c4162578ddf359ad4e66f45e8e1d2eb2d9536014e88aac5d357ddfd6b8bdf",
+      "prompt": "Exactly three small cacti in separate terracotta pots arranged in a row.",
+      "requirements": {
+        "object_count": "three cacti in three pots",
+        "color_binding": null,
+        "spatial": "pots arranged in a row",
+        "typography": null
+      }
+    },
+    {
+      "key": "p08-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p08-1-sd15.png",
+      "image_sha256": "4aa84ee979342279df475b9a6c696d9431bc7619ce9de578e8647d6b24ba856b",
+      "prompt": "Exactly three small cacti in separate terracotta pots arranged in a row.",
+      "requirements": {
+        "object_count": "three cacti in three pots",
+        "color_binding": null,
+        "spatial": "pots arranged in a row",
+        "typography": null
+      }
+    },
+    {
+      "key": "p08-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p08-1-sdxl.png",
+      "image_sha256": "79a0fb99b03a0bc1fb4157acf647db43190b00484ed49b516e1bdb9bb979ff04",
+      "prompt": "Exactly three small cacti in separate terracotta pots arranged in a row.",
+      "requirements": {
+        "object_count": "three cacti in three pots",
+        "color_binding": null,
+        "spatial": "pots arranged in a row",
+        "typography": null
+      }
+    },
+    {
+      "key": "p08-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p08-2-sd14.png",
+      "image_sha256": "ee17bbc4aec2e690a497c88fde284ce4d9ba58434374ddf2c86d009b2caae218",
+      "prompt": "Exactly three small cacti in separate terracotta pots arranged in a row.",
+      "requirements": {
+        "object_count": "three cacti in three pots",
+        "color_binding": null,
+        "spatial": "pots arranged in a row",
+        "typography": null
+      }
+    },
+    {
+      "key": "p08-2-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p08-2-sd15.png",
+      "image_sha256": "2945b09a1ae677557a109bd1d6797469e05e76bc70c838c8dfa45c848aaa03a9",
+      "prompt": "Exactly three small cacti in separate terracotta pots arranged in a row.",
+      "requirements": {
+        "object_count": "three cacti in three pots",
+        "color_binding": null,
+        "spatial": "pots arranged in a row",
+        "typography": null
+      }
+    },
+    {
+      "key": "p08-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p08-2-sdxl.png",
+      "image_sha256": "adf0b38b36417f20bb1573ecc980a4b0ce75373414eecfe597f311c5df05016a",
+      "prompt": "Exactly three small cacti in separate terracotta pots arranged in a row.",
+      "requirements": {
+        "object_count": "three cacti in three pots",
+        "color_binding": null,
+        "spatial": "pots arranged in a row",
+        "typography": null
+      }
+    },
+    {
+      "key": "p09-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p09-0-sd14.png",
+      "image_sha256": "c3f9ae15faafa31b6f6b3039ad2c62b94f78b8116c843c4c37d8f7893d25aca0",
+      "prompt": "A white sailboat to the right of a red sailboat on calm water.",
+      "requirements": {
+        "object_count": "two sailboats",
+        "color_binding": "white right boat and red left boat",
+        "spatial": "white boat right of red",
+        "typography": null
+      }
+    },
+    {
+      "key": "p09-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p09-0-sd15.png",
+      "image_sha256": "9c42a947f6f9539188ce554df50ccb2653edd34e3d0234aca9fb39a1bc6dbb84",
+      "prompt": "A white sailboat to the right of a red sailboat on calm water.",
+      "requirements": {
+        "object_count": "two sailboats",
+        "color_binding": "white right boat and red left boat",
+        "spatial": "white boat right of red",
+        "typography": null
+      }
+    },
+    {
+      "key": "p09-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p09-0-sdxl.png",
+      "image_sha256": "c95e3e61e06563e93a1f7c2215dc80bd6797a8d280675b65fd7d403a32481201",
+      "prompt": "A white sailboat to the right of a red sailboat on calm water.",
+      "requirements": {
+        "object_count": "two sailboats",
+        "color_binding": "white right boat and red left boat",
+        "spatial": "white boat right of red",
+        "typography": null
+      }
+    },
+    {
+      "key": "p09-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p09-1-sd14.png",
+      "image_sha256": "418a3f5a173db7e6ed92c5397e73863617be660d5b51d40bbb00ccd9292faec0",
+      "prompt": "A white sailboat to the right of a red sailboat on calm water.",
+      "requirements": {
+        "object_count": "two sailboats",
+        "color_binding": "white right boat and red left boat",
+        "spatial": "white boat right of red",
+        "typography": null
+      }
+    },
+    {
+      "key": "p09-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p09-1-sd15.png",
+      "image_sha256": "e60854831dd5ce0a39e330b9a9444dff109baf71b1656a8063726a2f8c3bd7d1",
+      "prompt": "A white sailboat to the right of a red sailboat on calm water.",
+      "requirements": {
+        "object_count": "two sailboats",
+        "color_binding": "white right boat and red left boat",
+        "spatial": "white boat right of red",
+        "typography": null
+      }
+    },
+    {
+      "key": "p09-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p09-1-sdxl.png",
+      "image_sha256": "138869f8a4b81d1b4cc18b0dff4f727d44f315d3ecdec30346abcc3c5da74a35",
+      "prompt": "A white sailboat to the right of a red sailboat on calm water.",
+      "requirements": {
+        "object_count": "two sailboats",
+        "color_binding": "white right boat and red left boat",
+        "spatial": "white boat right of red",
+        "typography": null
+      }
+    },
+    {
+      "key": "p09-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p09-2-sd14.png",
+      "image_sha256": "e474438813ecb2d44fa0fa6cf9b5079ec4d14889a80f47fec73b46e75b45d6dc",
+      "prompt": "A white sailboat to the right of a red sailboat on calm water.",
+      "requirements": {
+        "object_count": "two sailboats",
+        "color_binding": "white right boat and red left boat",
+        "spatial": "white boat right of red",
+        "typography": null
+      }
+    },
+    {
+      "key": "p09-2-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p09-2-sd15.png",
+      "image_sha256": "867dd1eb9e49bf24eebc2dedb8090c2c4f3c6d94298cc88cc0a970c554bc82da",
+      "prompt": "A white sailboat to the right of a red sailboat on calm water.",
+      "requirements": {
+        "object_count": "two sailboats",
+        "color_binding": "white right boat and red left boat",
+        "spatial": "white boat right of red",
+        "typography": null
+      }
+    },
+    {
+      "key": "p09-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p09-2-sdxl.png",
+      "image_sha256": "67c813d60a5b9fbcd482e20296f7b2ce85893bfa0bdc649a2d555c8145351a96",
+      "prompt": "A white sailboat to the right of a red sailboat on calm water.",
+      "requirements": {
+        "object_count": "two sailboats",
+        "color_binding": "white right boat and red left boat",
+        "spatial": "white boat right of red",
+        "typography": null
+      }
+    },
+    {
+      "key": "p10-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p10-0-sd14.png",
+      "image_sha256": "ab8d6b39c7b153bbd4e959dc6c951cc28bcfc9e5afbbf39c27c17178b49ece9d",
+      "prompt": "A round wall clock with clearly readable numbers and two black hands.",
+      "requirements": {
+        "object_count": "one round clock",
+        "color_binding": "black hands",
+        "spatial": null,
+        "typography": "readable clock numbers"
+      }
+    },
+    {
+      "key": "p10-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p10-0-sd15.png",
+      "image_sha256": "f14462e5482e74277cbcf29972124a6705e5df5480477f2d9267ed71dde7939e",
+      "prompt": "A round wall clock with clearly readable numbers and two black hands.",
+      "requirements": {
+        "object_count": "one round clock",
+        "color_binding": "black hands",
+        "spatial": null,
+        "typography": "readable clock numbers"
+      }
+    },
+    {
+      "key": "p10-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p10-0-sdxl.png",
+      "image_sha256": "930f83bc29c5968e3241cc43bf6f25eeab175261200f9b4fda0f6d22c68d540a",
+      "prompt": "A round wall clock with clearly readable numbers and two black hands.",
+      "requirements": {
+        "object_count": "one round clock",
+        "color_binding": "black hands",
+        "spatial": null,
+        "typography": "readable clock numbers"
+      }
+    },
+    {
+      "key": "p10-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p10-1-sd14.png",
+      "image_sha256": "f0ef799ce19131429b263f3734d82eeeb5a06fae52049daed5d33d08c0d26fd6",
+      "prompt": "A round wall clock with clearly readable numbers and two black hands.",
+      "requirements": {
+        "object_count": "one round clock",
+        "color_binding": "black hands",
+        "spatial": null,
+        "typography": "readable clock numbers"
+      }
+    },
+    {
+      "key": "p10-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p10-1-sd15.png",
+      "image_sha256": "34cb54994936ba7bc4ab0544a3b7fa16547d35204dcb73054680418f4655cd28",
+      "prompt": "A round wall clock with clearly readable numbers and two black hands.",
+      "requirements": {
+        "object_count": "one round clock",
+        "color_binding": "black hands",
+        "spatial": null,
+        "typography": "readable clock numbers"
+      }
+    },
+    {
+      "key": "p10-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p10-1-sdxl.png",
+      "image_sha256": "8b30ed52868fc686ca51033e7199d524546c790e457f1d40bba5563c74edb5f9",
+      "prompt": "A round wall clock with clearly readable numbers and two black hands.",
+      "requirements": {
+        "object_count": "one round clock",
+        "color_binding": "black hands",
+        "spatial": null,
+        "typography": "readable clock numbers"
+      }
+    },
+    {
+      "key": "p10-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p10-2-sd14.png",
+      "image_sha256": "f9a5b4f33be8e780c6f804b8df532845776dced039ce31de0f2f2f0980fea30c",
+      "prompt": "A round wall clock with clearly readable numbers and two black hands.",
+      "requirements": {
+        "object_count": "one round clock",
+        "color_binding": "black hands",
+        "spatial": null,
+        "typography": "readable clock numbers"
+      }
+    },
+    {
+      "key": "p10-2-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p10-2-sd15.png",
+      "image_sha256": "ef9820fc1bb90cf840ac3b0b437a68d8407e01b0c77744ee9fc139dbc7740442",
+      "prompt": "A round wall clock with clearly readable numbers and two black hands.",
+      "requirements": {
+        "object_count": "one round clock",
+        "color_binding": "black hands",
+        "spatial": null,
+        "typography": "readable clock numbers"
+      }
+    },
+    {
+      "key": "p10-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p10-2-sdxl.png",
+      "image_sha256": "938f26c94cc4245cdcc5898629eb08251b891e425d7539c5948d6899ab397678",
+      "prompt": "A round wall clock with clearly readable numbers and two black hands.",
+      "requirements": {
+        "object_count": "one round clock",
+        "color_binding": "black hands",
+        "spatial": null,
+        "typography": "readable clock numbers"
+      }
+    },
+    {
+      "key": "p11-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p11-0-sd14.png",
+      "image_sha256": "3600f9308b79d03556f9023cbf1cacbf43b762d68fdcc43cbeab8ff1e2474243",
+      "prompt": "A pair of red sneakers with white laces on a pale concrete floor.",
+      "requirements": {
+        "object_count": "two sneakers",
+        "color_binding": "red sneakers and white laces",
+        "spatial": "shoes on floor",
+        "typography": null
+      }
+    },
+    {
+      "key": "p11-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p11-0-sd15.png",
+      "image_sha256": "609d4ac72dba7d4335e0569c224168c5be2becb87b7a54ca91809e1d60f8867b",
+      "prompt": "A pair of red sneakers with white laces on a pale concrete floor.",
+      "requirements": {
+        "object_count": "two sneakers",
+        "color_binding": "red sneakers and white laces",
+        "spatial": "shoes on floor",
+        "typography": null
+      }
+    },
+    {
+      "key": "p11-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p11-0-sdxl.png",
+      "image_sha256": "7fcb2a7ab9a628812562d8ee4e6a7a1f8eb6e2a7150775b04c3341d3e3ae832a",
+      "prompt": "A pair of red sneakers with white laces on a pale concrete floor.",
+      "requirements": {
+        "object_count": "two sneakers",
+        "color_binding": "red sneakers and white laces",
+        "spatial": "shoes on floor",
+        "typography": null
+      }
+    },
+    {
+      "key": "p11-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p11-1-sd14.png",
+      "image_sha256": "e008b5fc11c17a857364ebb464d61fa0d3f13ddf190424637e8eca0928bc248c",
+      "prompt": "A pair of red sneakers with white laces on a pale concrete floor.",
+      "requirements": {
+        "object_count": "two sneakers",
+        "color_binding": "red sneakers and white laces",
+        "spatial": "shoes on floor",
+        "typography": null
+      }
+    },
+    {
+      "key": "p11-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p11-1-sd15.png",
+      "image_sha256": "5bb15ba32fa21842b451ab1c17b638f6855d2191bc6365816d3d5bc62bc3d67b",
+      "prompt": "A pair of red sneakers with white laces on a pale concrete floor.",
+      "requirements": {
+        "object_count": "two sneakers",
+        "color_binding": "red sneakers and white laces",
+        "spatial": "shoes on floor",
+        "typography": null
+      }
+    },
+    {
+      "key": "p11-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p11-1-sdxl.png",
+      "image_sha256": "ec20686a0a87f42b66a7b4157712b9d2c83d681f4daca10185517e684facf920",
+      "prompt": "A pair of red sneakers with white laces on a pale concrete floor.",
+      "requirements": {
+        "object_count": "two sneakers",
+        "color_binding": "red sneakers and white laces",
+        "spatial": "shoes on floor",
+        "typography": null
+      }
+    },
+    {
+      "key": "p11-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p11-2-sd14.png",
+      "image_sha256": "5f89167fcabb6831bb41c66485173549626bb7958c69f2d83fcec8b9900faaa4",
+      "prompt": "A pair of red sneakers with white laces on a pale concrete floor.",
+      "requirements": {
+        "object_count": "two sneakers",
+        "color_binding": "red sneakers and white laces",
+        "spatial": "shoes on floor",
+        "typography": null
+      }
+    },
+    {
+      "key": "p11-2-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p11-2-sd15.png",
+      "image_sha256": "50bddc92868f4550a135b3db2955bc544c5cc8cca6b0ee7221cb9443c0fa22ba",
+      "prompt": "A pair of red sneakers with white laces on a pale concrete floor.",
+      "requirements": {
+        "object_count": "two sneakers",
+        "color_binding": "red sneakers and white laces",
+        "spatial": "shoes on floor",
+        "typography": null
+      }
+    },
+    {
+      "key": "p11-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p11-2-sdxl.png",
+      "image_sha256": "fe1c316d21ad5b27fc08c8ebc5a5adef117462ad2f47709ee10e317747ed9fc4",
+      "prompt": "A pair of red sneakers with white laces on a pale concrete floor.",
+      "requirements": {
+        "object_count": "two sneakers",
+        "color_binding": "red sneakers and white laces",
+        "spatial": "shoes on floor",
+        "typography": null
+      }
+    },
+    {
+      "key": "p12-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p12-0-sd14.png",
+      "image_sha256": "2fc9939d2b75d36af9173a9c54538e6e5144415c0a4f121aed716ae5acfd0a33",
+      "prompt": "A black chess knight beside a white chess rook on a wooden chessboard.",
+      "requirements": {
+        "object_count": "knight and rook",
+        "color_binding": "black knight and white rook",
+        "spatial": "pieces beside each other on chessboard",
+        "typography": null
+      }
+    },
+    {
+      "key": "p12-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p12-0-sd15.png",
+      "image_sha256": "850b5bc383ecf787ca3fafa2edbdbff743f4f68bd935a5d03e7f58a4b3df3658",
+      "prompt": "A black chess knight beside a white chess rook on a wooden chessboard.",
+      "requirements": {
+        "object_count": "knight and rook",
+        "color_binding": "black knight and white rook",
+        "spatial": "pieces beside each other on chessboard",
+        "typography": null
+      }
+    },
+    {
+      "key": "p12-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p12-0-sdxl.png",
+      "image_sha256": "1ae051c7e7ad1d0059e3acd3d3138b39c59748f8ccfef011cd7b841936a2f026",
+      "prompt": "A black chess knight beside a white chess rook on a wooden chessboard.",
+      "requirements": {
+        "object_count": "knight and rook",
+        "color_binding": "black knight and white rook",
+        "spatial": "pieces beside each other on chessboard",
+        "typography": null
+      }
+    },
+    {
+      "key": "p12-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p12-1-sd14.png",
+      "image_sha256": "f05c6db5a328b4a49547c75ad92c73660aacae37fc2cc42a3ae27c480dc41886",
+      "prompt": "A black chess knight beside a white chess rook on a wooden chessboard.",
+      "requirements": {
+        "object_count": "knight and rook",
+        "color_binding": "black knight and white rook",
+        "spatial": "pieces beside each other on chessboard",
+        "typography": null
+      }
+    },
+    {
+      "key": "p12-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p12-1-sd15.png",
+      "image_sha256": "ae29e66653b69040b4059daded909d0aa980f01b607d8582e903b09d6974cea2",
+      "prompt": "A black chess knight beside a white chess rook on a wooden chessboard.",
+      "requirements": {
+        "object_count": "knight and rook",
+        "color_binding": "black knight and white rook",
+        "spatial": "pieces beside each other on chessboard",
+        "typography": null
+      }
+    },
+    {
+      "key": "p12-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p12-1-sdxl.png",
+      "image_sha256": "27aae817ff7cb0e6ae9692eb5a80a5551375ad2a792ea7041e92baf3470b0632",
+      "prompt": "A black chess knight beside a white chess rook on a wooden chessboard.",
+      "requirements": {
+        "object_count": "knight and rook",
+        "color_binding": "black knight and white rook",
+        "spatial": "pieces beside each other on chessboard",
+        "typography": null
+      }
+    },
+    {
+      "key": "p12-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p12-2-sd14.png",
+      "image_sha256": "457a44a14770923229dc3e1624ff29eb265ffa73ba0742862f1a0254158ba347",
+      "prompt": "A black chess knight beside a white chess rook on a wooden chessboard.",
+      "requirements": {
+        "object_count": "knight and rook",
+        "color_binding": "black knight and white rook",
+        "spatial": "pieces beside each other on chessboard",
+        "typography": null
+      }
+    },
+    {
+      "key": "p12-2-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p12-2-sd15.png",
+      "image_sha256": "704b9473476da27b3e1beb3f02144a2100e119df64fa2208256ef22d1c8dbb9d",
+      "prompt": "A black chess knight beside a white chess rook on a wooden chessboard.",
+      "requirements": {
+        "object_count": "knight and rook",
+        "color_binding": "black knight and white rook",
+        "spatial": "pieces beside each other on chessboard",
+        "typography": null
+      }
+    },
+    {
+      "key": "p12-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p12-2-sdxl.png",
+      "image_sha256": "17e62c6c5483cda501f8dac52ba3269e112c7adbd3da43a565a15140f22a9742",
+      "prompt": "A black chess knight beside a white chess rook on a wooden chessboard.",
+      "requirements": {
+        "object_count": "knight and rook",
+        "color_binding": "black knight and white rook",
+        "spatial": "pieces beside each other on chessboard",
+        "typography": null
+      }
+    },
+    {
+      "key": "p13-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p13-0-sd14.png",
+      "image_sha256": "bdd9105e5dc840cee7d04e630874be13c67b29259fe3720d3bce9b3acdb36013",
+      "prompt": "A green first aid box with a white cross on its front on a shelf.",
+      "requirements": {
+        "object_count": "first aid box",
+        "color_binding": "green box and white cross",
+        "spatial": "cross on front of box",
+        "typography": null
+      }
+    },
+    {
+      "key": "p13-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p13-0-sd15.png",
+      "image_sha256": "15abb2555f8fb02709cdb038864f701c3d207da6b27cdca72367e97dfd583976",
+      "prompt": "A green first aid box with a white cross on its front on a shelf.",
+      "requirements": {
+        "object_count": "first aid box",
+        "color_binding": "green box and white cross",
+        "spatial": "cross on front of box",
+        "typography": null
+      }
+    },
+    {
+      "key": "p13-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p13-0-sdxl.png",
+      "image_sha256": "4f5e5bc202984c4705cdd831f25a4bb9a2e059469e59be2a8e11ca3bcde0785c",
+      "prompt": "A green first aid box with a white cross on its front on a shelf.",
+      "requirements": {
+        "object_count": "first aid box",
+        "color_binding": "green box and white cross",
+        "spatial": "cross on front of box",
+        "typography": null
+      }
+    },
+    {
+      "key": "p13-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p13-1-sd14.png",
+      "image_sha256": "1583398a4655c0d6f93d12ec1d1f56d07fa2863adf31d750afaac15a006e9612",
+      "prompt": "A green first aid box with a white cross on its front on a shelf.",
+      "requirements": {
+        "object_count": "first aid box",
+        "color_binding": "green box and white cross",
+        "spatial": "cross on front of box",
+        "typography": null
+      }
+    },
+    {
+      "key": "p13-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p13-1-sd15.png",
+      "image_sha256": "3d04c8bb76cbeb9c1290bd85b987c5b93f529109352eb8426417de7860c1fe99",
+      "prompt": "A green first aid box with a white cross on its front on a shelf.",
+      "requirements": {
+        "object_count": "first aid box",
+        "color_binding": "green box and white cross",
+        "spatial": "cross on front of box",
+        "typography": null
+      }
+    },
+    {
+      "key": "p13-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p13-1-sdxl.png",
+      "image_sha256": "ace5435a757721f5c5d8fa85a02c35ea01a6f9d3a28385c0839430046adb2f17",
+      "prompt": "A green first aid box with a white cross on its front on a shelf.",
+      "requirements": {
+        "object_count": "first aid box",
+        "color_binding": "green box and white cross",
+        "spatial": "cross on front of box",
+        "typography": null
+      }
+    },
+    {
+      "key": "p13-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p13-2-sd14.png",
+      "image_sha256": "8dc016e32159ae7453ab355b705e192391be7def7df2533ddfea1194ce447739",
+      "prompt": "A green first aid box with a white cross on its front on a shelf.",
+      "requirements": {
+        "object_count": "first aid box",
+        "color_binding": "green box and white cross",
+        "spatial": "cross on front of box",
+        "typography": null
+      }
+    },
+    {
+      "key": "p13-2-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p13-2-sd15.png",
+      "image_sha256": "d14eaf27296d9c79f665e415fa8320e2bc0859cd0007f700d402dcfcd7673fe4",
+      "prompt": "A green first aid box with a white cross on its front on a shelf.",
+      "requirements": {
+        "object_count": "first aid box",
+        "color_binding": "green box and white cross",
+        "spatial": "cross on front of box",
+        "typography": null
+      }
+    },
+    {
+      "key": "p13-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p13-2-sdxl.png",
+      "image_sha256": "93d150d2d70db1a33166900a55a1a611f4ba83342ec5fd15c71b5a85b0803bb5",
+      "prompt": "A green first aid box with a white cross on its front on a shelf.",
+      "requirements": {
+        "object_count": "first aid box",
+        "color_binding": "green box and white cross",
+        "spatial": "cross on front of box",
+        "typography": null
+      }
+    },
+    {
+      "key": "p14-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p14-0-sd14.png",
+      "image_sha256": "86afd86706e642a355126149161cc392f46ce1c07c50092ace6f59f74d1a0de7",
+      "prompt": "Exactly five pink frosted donuts arranged on a blue plate.",
+      "requirements": {
+        "object_count": "five donuts",
+        "color_binding": "pink frosting and blue plate",
+        "spatial": "donuts on plate",
+        "typography": null
+      }
+    },
+    {
+      "key": "p14-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p14-0-sd15.png",
+      "image_sha256": "fd129d23d98add03e8ddd8965c3df8661eca2bf0d7484b4ab431a3819fc96f67",
+      "prompt": "Exactly five pink frosted donuts arranged on a blue plate.",
+      "requirements": {
+        "object_count": "five donuts",
+        "color_binding": "pink frosting and blue plate",
+        "spatial": "donuts on plate",
+        "typography": null
+      }
+    },
+    {
+      "key": "p14-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p14-0-sdxl.png",
+      "image_sha256": "b798b5d906f08aecf4298e40357a8c5f4657eda5ad9dc7d72636e5cb9d6aff32",
+      "prompt": "Exactly five pink frosted donuts arranged on a blue plate.",
+      "requirements": {
+        "object_count": "five donuts",
+        "color_binding": "pink frosting and blue plate",
+        "spatial": "donuts on plate",
+        "typography": null
+      }
+    },
+    {
+      "key": "p14-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p14-1-sd14.png",
+      "image_sha256": "11f6a6dc90c0e2e1af74fc8a4265d8c40315a30b4193eaf05c9c1e246644775d",
+      "prompt": "Exactly five pink frosted donuts arranged on a blue plate.",
+      "requirements": {
+        "object_count": "five donuts",
+        "color_binding": "pink frosting and blue plate",
+        "spatial": "donuts on plate",
+        "typography": null
+      }
+    },
+    {
+      "key": "p14-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p14-1-sd15.png",
+      "image_sha256": "64562789865df6909f74c914e1614b02d2f837d5a854c6de5ddeb75d9daa73c3",
+      "prompt": "Exactly five pink frosted donuts arranged on a blue plate.",
+      "requirements": {
+        "object_count": "five donuts",
+        "color_binding": "pink frosting and blue plate",
+        "spatial": "donuts on plate",
+        "typography": null
+      }
+    },
+    {
+      "key": "p14-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p14-1-sdxl.png",
+      "image_sha256": "b365fccb3b9b685cbee0ef79e4c9d481bb850067b779790d30e148a9b17483a1",
+      "prompt": "Exactly five pink frosted donuts arranged on a blue plate.",
+      "requirements": {
+        "object_count": "five donuts",
+        "color_binding": "pink frosting and blue plate",
+        "spatial": "donuts on plate",
+        "typography": null
+      }
+    },
+    {
+      "key": "p14-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p14-2-sd14.png",
+      "image_sha256": "df44fce38c8d022be8af97fe427e9a519b11c634cfbfc42a2cc51658e5ff9ab7",
+      "prompt": "Exactly five pink frosted donuts arranged on a blue plate.",
+      "requirements": {
+        "object_count": "five donuts",
+        "color_binding": "pink frosting and blue plate",
+        "spatial": "donuts on plate",
+        "typography": null
+      }
+    },
+    {
+      "key": "p14-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p14-2-sdxl.png",
+      "image_sha256": "7a53391419b1c780d86c37507c151426bde68b554e54b77ad683b6644684d36c",
+      "prompt": "Exactly five pink frosted donuts arranged on a blue plate.",
+      "requirements": {
+        "object_count": "five donuts",
+        "color_binding": "pink frosting and blue plate",
+        "spatial": "donuts on plate",
+        "typography": null
+      }
+    },
+    {
+      "key": "p15-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p15-0-sd14.png",
+      "image_sha256": "a90fe06f6b99193863d9f94ab37f6964edbe77a8e698884f5a352869405c0cb8",
+      "prompt": "A yellow city bus stopped beneath a sign reading BUS STOP.",
+      "requirements": {
+        "object_count": "one city bus",
+        "color_binding": "yellow bus",
+        "spatial": null,
+        "typography": "words BUS STOP above bus"
+      }
+    },
+    {
+      "key": "p15-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p15-0-sd15.png",
+      "image_sha256": "173d33f03febf2fc666758054face782ab50759428d0dcf9b23925cade281c78",
+      "prompt": "A yellow city bus stopped beneath a sign reading BUS STOP.",
+      "requirements": {
+        "object_count": "one city bus",
+        "color_binding": "yellow bus",
+        "spatial": null,
+        "typography": "words BUS STOP above bus"
+      }
+    },
+    {
+      "key": "p15-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p15-0-sdxl.png",
+      "image_sha256": "6b948f3a159e4f74cec23256c5ef57348a79a1f90111129fac29f2814c85cd60",
+      "prompt": "A yellow city bus stopped beneath a sign reading BUS STOP.",
+      "requirements": {
+        "object_count": "one city bus",
+        "color_binding": "yellow bus",
+        "spatial": null,
+        "typography": "words BUS STOP above bus"
+      }
+    },
+    {
+      "key": "p15-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p15-1-sd14.png",
+      "image_sha256": "2014bfedd4c3f19d22e72e6f0d23083e2496ca91234b5d8a19fe445b161a6db5",
+      "prompt": "A yellow city bus stopped beneath a sign reading BUS STOP.",
+      "requirements": {
+        "object_count": "one city bus",
+        "color_binding": "yellow bus",
+        "spatial": null,
+        "typography": "words BUS STOP above bus"
+      }
+    },
+    {
+      "key": "p15-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p15-1-sd15.png",
+      "image_sha256": "3ec6c59d9b67ac8fe70f3062c1d3c9c109c4b9c5c5d7f5aaca98fdaff77d4b27",
+      "prompt": "A yellow city bus stopped beneath a sign reading BUS STOP.",
+      "requirements": {
+        "object_count": "one city bus",
+        "color_binding": "yellow bus",
+        "spatial": null,
+        "typography": "words BUS STOP above bus"
+      }
+    },
+    {
+      "key": "p15-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p15-1-sdxl.png",
+      "image_sha256": "bb87ecafb2614ebd43498a77e44aaae84f2e078b4c4a35ffcbb60f3b53d799e1",
+      "prompt": "A yellow city bus stopped beneath a sign reading BUS STOP.",
+      "requirements": {
+        "object_count": "one city bus",
+        "color_binding": "yellow bus",
+        "spatial": null,
+        "typography": "words BUS STOP above bus"
+      }
+    },
+    {
+      "key": "p15-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p15-2-sd14.png",
+      "image_sha256": "144c0fec6647660bc79e965811b72793a194e5829d1b7d66b9455356d09eeece",
+      "prompt": "A yellow city bus stopped beneath a sign reading BUS STOP.",
+      "requirements": {
+        "object_count": "one city bus",
+        "color_binding": "yellow bus",
+        "spatial": null,
+        "typography": "words BUS STOP above bus"
+      }
+    },
+    {
+      "key": "p15-2-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p15-2-sd15.png",
+      "image_sha256": "7a43616b7eca5178f9355f02b4e5612d1ecef9dc3903ff5bacfc26275f878a7c",
+      "prompt": "A yellow city bus stopped beneath a sign reading BUS STOP.",
+      "requirements": {
+        "object_count": "one city bus",
+        "color_binding": "yellow bus",
+        "spatial": null,
+        "typography": "words BUS STOP above bus"
+      }
+    },
+    {
+      "key": "p15-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p15-2-sdxl.png",
+      "image_sha256": "d522c5b8146a2a1b95afb1566cecace5b59bd89d5efef9cd4de420063d9aab06",
+      "prompt": "A yellow city bus stopped beneath a sign reading BUS STOP.",
+      "requirements": {
+        "object_count": "one city bus",
+        "color_binding": "yellow bus",
+        "spatial": null,
+        "typography": "words BUS STOP above bus"
+      }
+    },
+    {
+      "key": "p16-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p16-0-sd14.png",
+      "image_sha256": "82dcadb26f8c2d549c13e4a23eeb8e02abdf0557918e2c92f36d617a48d6dba9",
+      "prompt": "A purple suitcase standing to the left of a green suitcase in an airport.",
+      "requirements": {
+        "object_count": "two suitcases",
+        "color_binding": "purple left and green right",
+        "spatial": "purple left of green",
+        "typography": null
+      }
+    },
+    {
+      "key": "p16-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p16-0-sd15.png",
+      "image_sha256": "d64da36e7525718d357f02c3b7ea9a719620613851c6e087c13c19d990850a86",
+      "prompt": "A purple suitcase standing to the left of a green suitcase in an airport.",
+      "requirements": {
+        "object_count": "two suitcases",
+        "color_binding": "purple left and green right",
+        "spatial": "purple left of green",
+        "typography": null
+      }
+    },
+    {
+      "key": "p16-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p16-0-sdxl.png",
+      "image_sha256": "b39acb58b5b856c47335552a9bd77e5ad46f0d49aefafc2d1407c8517e080603",
+      "prompt": "A purple suitcase standing to the left of a green suitcase in an airport.",
+      "requirements": {
+        "object_count": "two suitcases",
+        "color_binding": "purple left and green right",
+        "spatial": "purple left of green",
+        "typography": null
+      }
+    },
+    {
+      "key": "p16-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p16-1-sd14.png",
+      "image_sha256": "7294ebbe58d76623f5cb2712f10e82aee7fbf27be9b92fc834c359ed847677bc",
+      "prompt": "A purple suitcase standing to the left of a green suitcase in an airport.",
+      "requirements": {
+        "object_count": "two suitcases",
+        "color_binding": "purple left and green right",
+        "spatial": "purple left of green",
+        "typography": null
+      }
+    },
+    {
+      "key": "p16-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p16-1-sd15.png",
+      "image_sha256": "c2c1520097696149b1c2c7586dcb63f05d380f0e43cca48fdea579439eeef5a2",
+      "prompt": "A purple suitcase standing to the left of a green suitcase in an airport.",
+      "requirements": {
+        "object_count": "two suitcases",
+        "color_binding": "purple left and green right",
+        "spatial": "purple left of green",
+        "typography": null
+      }
+    },
+    {
+      "key": "p16-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p16-1-sdxl.png",
+      "image_sha256": "0677f3bb6fde7e5dcac4db1fdba71807761d689abc1706a66943ce01508296c0",
+      "prompt": "A purple suitcase standing to the left of a green suitcase in an airport.",
+      "requirements": {
+        "object_count": "two suitcases",
+        "color_binding": "purple left and green right",
+        "spatial": "purple left of green",
+        "typography": null
+      }
+    },
+    {
+      "key": "p16-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p16-2-sd14.png",
+      "image_sha256": "6f6074abd93311e2a2d05840423b8dadd85d046a08e22ae2e64a112744f31217",
+      "prompt": "A purple suitcase standing to the left of a green suitcase in an airport.",
+      "requirements": {
+        "object_count": "two suitcases",
+        "color_binding": "purple left and green right",
+        "spatial": "purple left of green",
+        "typography": null
+      }
+    },
+    {
+      "key": "p16-2-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p16-2-sd15.png",
+      "image_sha256": "ecda151c58c8dfb0177bca5c326eab947939e98c3e5ec3e6f7a8c832fb369e6a",
+      "prompt": "A purple suitcase standing to the left of a green suitcase in an airport.",
+      "requirements": {
+        "object_count": "two suitcases",
+        "color_binding": "purple left and green right",
+        "spatial": "purple left of green",
+        "typography": null
+      }
+    },
+    {
+      "key": "p16-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p16-2-sdxl.png",
+      "image_sha256": "3fe1c1b61ffbceb101142c47ec87aca6396373e317cde20a8af63a0a726a8c3c",
+      "prompt": "A purple suitcase standing to the left of a green suitcase in an airport.",
+      "requirements": {
+        "object_count": "two suitcases",
+        "color_binding": "purple left and green right",
+        "spatial": "purple left of green",
+        "typography": null
+      }
+    },
+    {
+      "key": "p17-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p17-0-sd14.png",
+      "image_sha256": "b09b9500df8545a8fc2d19ab9352751265282be8a5590c7cc8e3c2e745667166",
+      "prompt": "A luminous blue jellyfish floating above a red coral reef underwater.",
+      "requirements": {
+        "object_count": "jellyfish and coral",
+        "color_binding": "blue jellyfish and red coral",
+        "spatial": "jellyfish above reef",
+        "typography": null
+      }
+    },
+    {
+      "key": "p17-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p17-0-sd15.png",
+      "image_sha256": "0b8b48af7bd60644605da2ae05b67c83b75e4d31d937e2a098ec27ab52cfc4ef",
+      "prompt": "A luminous blue jellyfish floating above a red coral reef underwater.",
+      "requirements": {
+        "object_count": "jellyfish and coral",
+        "color_binding": "blue jellyfish and red coral",
+        "spatial": "jellyfish above reef",
+        "typography": null
+      }
+    },
+    {
+      "key": "p17-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p17-0-sdxl.png",
+      "image_sha256": "9c0e8bd30d9bbed93bce9d4045969b0298d3e606b58e3893f2a06f195683b424",
+      "prompt": "A luminous blue jellyfish floating above a red coral reef underwater.",
+      "requirements": {
+        "object_count": "jellyfish and coral",
+        "color_binding": "blue jellyfish and red coral",
+        "spatial": "jellyfish above reef",
+        "typography": null
+      }
+    },
+    {
+      "key": "p17-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p17-1-sd14.png",
+      "image_sha256": "cf03ba09f7b696245a2ced8a406162f738641375343747843833d62cc2f69cfc",
+      "prompt": "A luminous blue jellyfish floating above a red coral reef underwater.",
+      "requirements": {
+        "object_count": "jellyfish and coral",
+        "color_binding": "blue jellyfish and red coral",
+        "spatial": "jellyfish above reef",
+        "typography": null
+      }
+    },
+    {
+      "key": "p17-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p17-1-sd15.png",
+      "image_sha256": "2a9a8786864960bb7dd0ca41ff9604f2de98f6f07370ae7df5b8fcedd540d71e",
+      "prompt": "A luminous blue jellyfish floating above a red coral reef underwater.",
+      "requirements": {
+        "object_count": "jellyfish and coral",
+        "color_binding": "blue jellyfish and red coral",
+        "spatial": "jellyfish above reef",
+        "typography": null
+      }
+    },
+    {
+      "key": "p17-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p17-1-sdxl.png",
+      "image_sha256": "1e1ad72b943c5ba194e78be449bf3c8bc85990f995846bf8763f740c11dcc339",
+      "prompt": "A luminous blue jellyfish floating above a red coral reef underwater.",
+      "requirements": {
+        "object_count": "jellyfish and coral",
+        "color_binding": "blue jellyfish and red coral",
+        "spatial": "jellyfish above reef",
+        "typography": null
+      }
+    },
+    {
+      "key": "p17-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p17-2-sd14.png",
+      "image_sha256": "fc996b55171c91ef0ab92372ab58edef9787da94956635aa2f8a377d1a19b8b8",
+      "prompt": "A luminous blue jellyfish floating above a red coral reef underwater.",
+      "requirements": {
+        "object_count": "jellyfish and coral",
+        "color_binding": "blue jellyfish and red coral",
+        "spatial": "jellyfish above reef",
+        "typography": null
+      }
+    },
+    {
+      "key": "p17-2-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p17-2-sd15.png",
+      "image_sha256": "b2d5eed3f9267a9d1ce82951bce1e7b86ddfabf7da83fc97945af1996f3d10a0",
+      "prompt": "A luminous blue jellyfish floating above a red coral reef underwater.",
+      "requirements": {
+        "object_count": "jellyfish and coral",
+        "color_binding": "blue jellyfish and red coral",
+        "spatial": "jellyfish above reef",
+        "typography": null
+      }
+    },
+    {
+      "key": "p17-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p17-2-sdxl.png",
+      "image_sha256": "71a5d0ad0df18abc313fb7c189abff8d05bb5079a9935395b7a2660082f871b2",
+      "prompt": "A luminous blue jellyfish floating above a red coral reef underwater.",
+      "requirements": {
+        "object_count": "jellyfish and coral",
+        "color_binding": "blue jellyfish and red coral",
+        "spatial": "jellyfish above reef",
+        "typography": null
+      }
+    },
+    {
+      "key": "p18-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p18-0-sd14.png",
+      "image_sha256": "308cf1cc62fbab6f895f944f5a88c77da3d4270e24c894570d3a472d90117641",
+      "prompt": "Exactly two white windmills standing behind a yellow field of flowers.",
+      "requirements": {
+        "object_count": "two windmills",
+        "color_binding": "white windmills and yellow flowers",
+        "spatial": "windmills behind field",
+        "typography": null
+      }
+    },
+    {
+      "key": "p18-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p18-0-sd15.png",
+      "image_sha256": "fe6b1b3cb71555ddf115fd59ccb642f235a54c152df71eeeeae0e402b482fdd1",
+      "prompt": "Exactly two white windmills standing behind a yellow field of flowers.",
+      "requirements": {
+        "object_count": "two windmills",
+        "color_binding": "white windmills and yellow flowers",
+        "spatial": "windmills behind field",
+        "typography": null
+      }
+    },
+    {
+      "key": "p18-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p18-0-sdxl.png",
+      "image_sha256": "b8a8177cc1e3b1f50e1f195de5fc32dd0a447f196e21eaff239e96a5d268f460",
+      "prompt": "Exactly two white windmills standing behind a yellow field of flowers.",
+      "requirements": {
+        "object_count": "two windmills",
+        "color_binding": "white windmills and yellow flowers",
+        "spatial": "windmills behind field",
+        "typography": null
+      }
+    },
+    {
+      "key": "p18-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p18-1-sd14.png",
+      "image_sha256": "beee389b9dfeb447cf508364f5a7ff90006b3eb42ffe98cc604ba8b7bcfb2e1b",
+      "prompt": "Exactly two white windmills standing behind a yellow field of flowers.",
+      "requirements": {
+        "object_count": "two windmills",
+        "color_binding": "white windmills and yellow flowers",
+        "spatial": "windmills behind field",
+        "typography": null
+      }
+    },
+    {
+      "key": "p18-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p18-1-sd15.png",
+      "image_sha256": "a20df3ac63d23c4f5770a15a7d8306a59ffa19df38de9e933e906c63b4e49194",
+      "prompt": "Exactly two white windmills standing behind a yellow field of flowers.",
+      "requirements": {
+        "object_count": "two windmills",
+        "color_binding": "white windmills and yellow flowers",
+        "spatial": "windmills behind field",
+        "typography": null
+      }
+    },
+    {
+      "key": "p18-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p18-1-sdxl.png",
+      "image_sha256": "534309ab7701fe0e72976c2b84a8afb77a2af341895ae26183a4e0c62ea95ea2",
+      "prompt": "Exactly two white windmills standing behind a yellow field of flowers.",
+      "requirements": {
+        "object_count": "two windmills",
+        "color_binding": "white windmills and yellow flowers",
+        "spatial": "windmills behind field",
+        "typography": null
+      }
+    },
+    {
+      "key": "p18-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p18-2-sd14.png",
+      "image_sha256": "dca9cab23611722b42becb35f5b075d85cc953ceba0f0c2a85403f9817c1b103",
+      "prompt": "Exactly two white windmills standing behind a yellow field of flowers.",
+      "requirements": {
+        "object_count": "two windmills",
+        "color_binding": "white windmills and yellow flowers",
+        "spatial": "windmills behind field",
+        "typography": null
+      }
+    },
+    {
+      "key": "p18-2-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p18-2-sd15.png",
+      "image_sha256": "4a36d7d3f832fa939db6849a85bb1f27d7dc6401d067d6dd33d5d109eefb24d6",
+      "prompt": "Exactly two white windmills standing behind a yellow field of flowers.",
+      "requirements": {
+        "object_count": "two windmills",
+        "color_binding": "white windmills and yellow flowers",
+        "spatial": "windmills behind field",
+        "typography": null
+      }
+    },
+    {
+      "key": "p18-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p18-2-sdxl.png",
+      "image_sha256": "c4c954a43dba61643e71f0609036465f28ed009b6c5a94ea4204f546ff9a7445",
+      "prompt": "Exactly two white windmills standing behind a yellow field of flowers.",
+      "requirements": {
+        "object_count": "two windmills",
+        "color_binding": "white windmills and yellow flowers",
+        "spatial": "windmills behind field",
+        "typography": null
+      }
+    },
+    {
+      "key": "p19-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p19-0-sd14.png",
+      "image_sha256": "c55bd527f5a5b34355e1b046fafbe6ee01033dd65cc5a32fdd36ed0869bcfe54",
+      "prompt": "A blue mailbox with the word MAIL in white capital letters in a suburban street.",
+      "requirements": {
+        "object_count": "one mailbox",
+        "color_binding": "blue box and white lettering",
+        "spatial": null,
+        "typography": "word MAIL"
+      }
+    },
+    {
+      "key": "p19-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p19-0-sd15.png",
+      "image_sha256": "f981da0bcd745159895529c0640f222bea1641603d8766842e38e212bb5975ab",
+      "prompt": "A blue mailbox with the word MAIL in white capital letters in a suburban street.",
+      "requirements": {
+        "object_count": "one mailbox",
+        "color_binding": "blue box and white lettering",
+        "spatial": null,
+        "typography": "word MAIL"
+      }
+    },
+    {
+      "key": "p19-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p19-0-sdxl.png",
+      "image_sha256": "a3fc291670feb836a86526aadcd4e3bcc811b155b255baef3ac24ae55d3a973f",
+      "prompt": "A blue mailbox with the word MAIL in white capital letters in a suburban street.",
+      "requirements": {
+        "object_count": "one mailbox",
+        "color_binding": "blue box and white lettering",
+        "spatial": null,
+        "typography": "word MAIL"
+      }
+    },
+    {
+      "key": "p19-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p19-1-sd14.png",
+      "image_sha256": "adf53264044877e2b5c598c6dbdc1840e177d41471504be505923e73d674ff64",
+      "prompt": "A blue mailbox with the word MAIL in white capital letters in a suburban street.",
+      "requirements": {
+        "object_count": "one mailbox",
+        "color_binding": "blue box and white lettering",
+        "spatial": null,
+        "typography": "word MAIL"
+      }
+    },
+    {
+      "key": "p19-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p19-1-sd15.png",
+      "image_sha256": "cec22c3bc825976a50c71d69db0da7ceee5f7d2aee89afc8d4bd6048a4fde804",
+      "prompt": "A blue mailbox with the word MAIL in white capital letters in a suburban street.",
+      "requirements": {
+        "object_count": "one mailbox",
+        "color_binding": "blue box and white lettering",
+        "spatial": null,
+        "typography": "word MAIL"
+      }
+    },
+    {
+      "key": "p19-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p19-1-sdxl.png",
+      "image_sha256": "9fd71b319a843fc8ab45b2403c4b655d8bcf9682172565ae0ac8adadf4aefa6c",
+      "prompt": "A blue mailbox with the word MAIL in white capital letters in a suburban street.",
+      "requirements": {
+        "object_count": "one mailbox",
+        "color_binding": "blue box and white lettering",
+        "spatial": null,
+        "typography": "word MAIL"
+      }
+    },
+    {
+      "key": "p19-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p19-2-sd14.png",
+      "image_sha256": "c4a5b464c2b8080f23877bad268bc6b95b0e91609b64d93154634df5fbb33f90",
+      "prompt": "A blue mailbox with the word MAIL in white capital letters in a suburban street.",
+      "requirements": {
+        "object_count": "one mailbox",
+        "color_binding": "blue box and white lettering",
+        "spatial": null,
+        "typography": "word MAIL"
+      }
+    },
+    {
+      "key": "p19-2-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p19-2-sd15.png",
+      "image_sha256": "22c8bf0329d96929aadd6cff65aa134e6b4e7fa30ce4b2d02fe62e34fbf44ea5",
+      "prompt": "A blue mailbox with the word MAIL in white capital letters in a suburban street.",
+      "requirements": {
+        "object_count": "one mailbox",
+        "color_binding": "blue box and white lettering",
+        "spatial": null,
+        "typography": "word MAIL"
+      }
+    },
+    {
+      "key": "p19-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p19-2-sdxl.png",
+      "image_sha256": "6a85ead3943fcc87677b7c97f7c8e2e6a763f87002b91b0c6ebd1ec7cd25b52a",
+      "prompt": "A blue mailbox with the word MAIL in white capital letters in a suburban street.",
+      "requirements": {
+        "object_count": "one mailbox",
+        "color_binding": "blue box and white lettering",
+        "spatial": null,
+        "typography": "word MAIL"
+      }
+    },
+    {
+      "key": "p20-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p20-0-sd14.png",
+      "image_sha256": "b859974c03c27f694289e2d62a4246938ffe7d047a9d6cbb41b702e5ae339718",
+      "prompt": "A black grand piano with a red stool in an empty concert hall.",
+      "requirements": {
+        "object_count": "grand piano and stool",
+        "color_binding": "black piano and red stool",
+        "spatial": "stool beside piano",
+        "typography": null
+      }
+    },
+    {
+      "key": "p20-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p20-0-sd15.png",
+      "image_sha256": "907b278b519bb2ed5ab947ade044ededd7f576498fbbf190d0d7feb1237fb9d0",
+      "prompt": "A black grand piano with a red stool in an empty concert hall.",
+      "requirements": {
+        "object_count": "grand piano and stool",
+        "color_binding": "black piano and red stool",
+        "spatial": "stool beside piano",
+        "typography": null
+      }
+    },
+    {
+      "key": "p20-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p20-0-sdxl.png",
+      "image_sha256": "4d8da7f5b009e32dc9e0b0f0b56823746c8faf078d235b2c1f986d7177100e78",
+      "prompt": "A black grand piano with a red stool in an empty concert hall.",
+      "requirements": {
+        "object_count": "grand piano and stool",
+        "color_binding": "black piano and red stool",
+        "spatial": "stool beside piano",
+        "typography": null
+      }
+    },
+    {
+      "key": "p20-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p20-1-sd14.png",
+      "image_sha256": "37870e407d5aabf0cfb02a248c758e3239444973f4ec4e0b2ddae4316abf63e1",
+      "prompt": "A black grand piano with a red stool in an empty concert hall.",
+      "requirements": {
+        "object_count": "grand piano and stool",
+        "color_binding": "black piano and red stool",
+        "spatial": "stool beside piano",
+        "typography": null
+      }
+    },
+    {
+      "key": "p20-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p20-1-sd15.png",
+      "image_sha256": "1fe0b4181fcece0e6912fc65941f0712fe2d8d9d4f84c4a937a7033fce8d474a",
+      "prompt": "A black grand piano with a red stool in an empty concert hall.",
+      "requirements": {
+        "object_count": "grand piano and stool",
+        "color_binding": "black piano and red stool",
+        "spatial": "stool beside piano",
+        "typography": null
+      }
+    },
+    {
+      "key": "p20-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p20-1-sdxl.png",
+      "image_sha256": "9b4713c69034e3dd9212f9130a19d45ba815e7f5349d0edd04237f7af85a210a",
+      "prompt": "A black grand piano with a red stool in an empty concert hall.",
+      "requirements": {
+        "object_count": "grand piano and stool",
+        "color_binding": "black piano and red stool",
+        "spatial": "stool beside piano",
+        "typography": null
+      }
+    },
+    {
+      "key": "p20-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p20-2-sd14.png",
+      "image_sha256": "01cb79a62227210b384670aaea74bcecfb5c0e59ffebfddb341007d120741d48",
+      "prompt": "A black grand piano with a red stool in an empty concert hall.",
+      "requirements": {
+        "object_count": "grand piano and stool",
+        "color_binding": "black piano and red stool",
+        "spatial": "stool beside piano",
+        "typography": null
+      }
+    },
+    {
+      "key": "p20-2-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p20-2-sd15.png",
+      "image_sha256": "4135f45d7a3ac7f52efb80b6a95eef04ab8919ad9577f5552a08e45c46ab7cad",
+      "prompt": "A black grand piano with a red stool in an empty concert hall.",
+      "requirements": {
+        "object_count": "grand piano and stool",
+        "color_binding": "black piano and red stool",
+        "spatial": "stool beside piano",
+        "typography": null
+      }
+    },
+    {
+      "key": "p20-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p20-2-sdxl.png",
+      "image_sha256": "5158c55c6af929642583c614210044dc8623b6131b69198fcaf4fac14d6def35",
+      "prompt": "A black grand piano with a red stool in an empty concert hall.",
+      "requirements": {
+        "object_count": "grand piano and stool",
+        "color_binding": "black piano and red stool",
+        "spatial": "stool beside piano",
+        "typography": null
+      }
+    },
+    {
+      "key": "p21-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p21-0-sd14.png",
+      "image_sha256": "32605b341724682986cabe83369e69c54296adcd22f55f40064b0a1b92389968",
+      "prompt": "A red fire engine parked to the right of a yellow fire hydrant.",
+      "requirements": {
+        "object_count": "engine and hydrant",
+        "color_binding": "red engine and yellow hydrant",
+        "spatial": "engine right of hydrant",
+        "typography": null
+      }
+    },
+    {
+      "key": "p21-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p21-0-sd15.png",
+      "image_sha256": "5a27e48ac6e324ac102be5bfc2c774e000a1922459fca6bad3ea7469e346c066",
+      "prompt": "A red fire engine parked to the right of a yellow fire hydrant.",
+      "requirements": {
+        "object_count": "engine and hydrant",
+        "color_binding": "red engine and yellow hydrant",
+        "spatial": "engine right of hydrant",
+        "typography": null
+      }
+    },
+    {
+      "key": "p21-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p21-0-sdxl.png",
+      "image_sha256": "09c188a03c2d56526b7a872d6e1232c73a1b8fd80da7b62bf081e8d5897fea22",
+      "prompt": "A red fire engine parked to the right of a yellow fire hydrant.",
+      "requirements": {
+        "object_count": "engine and hydrant",
+        "color_binding": "red engine and yellow hydrant",
+        "spatial": "engine right of hydrant",
+        "typography": null
+      }
+    },
+    {
+      "key": "p21-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p21-1-sd14.png",
+      "image_sha256": "9596afddaf735f18812339bf446769790aed264b4cd71edd2134948051e65038",
+      "prompt": "A red fire engine parked to the right of a yellow fire hydrant.",
+      "requirements": {
+        "object_count": "engine and hydrant",
+        "color_binding": "red engine and yellow hydrant",
+        "spatial": "engine right of hydrant",
+        "typography": null
+      }
+    },
+    {
+      "key": "p21-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p21-1-sd15.png",
+      "image_sha256": "ec776d68796755189f77bf0f00dc0e72b654fb5bdf69324c5de0c460670cacec",
+      "prompt": "A red fire engine parked to the right of a yellow fire hydrant.",
+      "requirements": {
+        "object_count": "engine and hydrant",
+        "color_binding": "red engine and yellow hydrant",
+        "spatial": "engine right of hydrant",
+        "typography": null
+      }
+    },
+    {
+      "key": "p21-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p21-1-sdxl.png",
+      "image_sha256": "aaebfc0d0206dbed4a1df380e33696ce9ae447ffce753a0fabc5bd98046d1d0d",
+      "prompt": "A red fire engine parked to the right of a yellow fire hydrant.",
+      "requirements": {
+        "object_count": "engine and hydrant",
+        "color_binding": "red engine and yellow hydrant",
+        "spatial": "engine right of hydrant",
+        "typography": null
+      }
+    },
+    {
+      "key": "p21-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p21-2-sd14.png",
+      "image_sha256": "10a13e8711afe1ae94025173b23a72535bb6c9d9f2b3a7fe9d000377f2805053",
+      "prompt": "A red fire engine parked to the right of a yellow fire hydrant.",
+      "requirements": {
+        "object_count": "engine and hydrant",
+        "color_binding": "red engine and yellow hydrant",
+        "spatial": "engine right of hydrant",
+        "typography": null
+      }
+    },
+    {
+      "key": "p21-2-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p21-2-sd15.png",
+      "image_sha256": "bca1f3593682693e4f4f66ac5e59b7391b9fde84faf0e5901e2139c80146f7eb",
+      "prompt": "A red fire engine parked to the right of a yellow fire hydrant.",
+      "requirements": {
+        "object_count": "engine and hydrant",
+        "color_binding": "red engine and yellow hydrant",
+        "spatial": "engine right of hydrant",
+        "typography": null
+      }
+    },
+    {
+      "key": "p21-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p21-2-sdxl.png",
+      "image_sha256": "e59d736d5ae67783ff12f7c44157009f8eb0dd1ccad0ed6b45f7fc32648c768b",
+      "prompt": "A red fire engine parked to the right of a yellow fire hydrant.",
+      "requirements": {
+        "object_count": "engine and hydrant",
+        "color_binding": "red engine and yellow hydrant",
+        "spatial": "engine right of hydrant",
+        "typography": null
+      }
+    },
+    {
+      "key": "p22-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p22-0-sd14.png",
+      "image_sha256": "40cc134151888877ed8112b22f665572fbdc7114d4d0d605757893c1c111bf75",
+      "prompt": "Exactly four penguins standing in a row on pale blue ice.",
+      "requirements": {
+        "object_count": "four penguins",
+        "color_binding": null,
+        "spatial": "penguins in a row",
+        "typography": null
+      }
+    },
+    {
+      "key": "p22-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p22-0-sd15.png",
+      "image_sha256": "041e31e623fd78635cf567622721b037ef32d42cb6d02e4f168eb5bff9523eda",
+      "prompt": "Exactly four penguins standing in a row on pale blue ice.",
+      "requirements": {
+        "object_count": "four penguins",
+        "color_binding": null,
+        "spatial": "penguins in a row",
+        "typography": null
+      }
+    },
+    {
+      "key": "p22-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p22-0-sdxl.png",
+      "image_sha256": "499e263721132a2687da951093f3bb72985f2e7f1d376d6559cdd35b62e77717",
+      "prompt": "Exactly four penguins standing in a row on pale blue ice.",
+      "requirements": {
+        "object_count": "four penguins",
+        "color_binding": null,
+        "spatial": "penguins in a row",
+        "typography": null
+      }
+    },
+    {
+      "key": "p22-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p22-1-sd14.png",
+      "image_sha256": "b74da87e550f56c3f9aa87c5ad3cda0d497554cd1bd03fd55b86b585da2a5116",
+      "prompt": "Exactly four penguins standing in a row on pale blue ice.",
+      "requirements": {
+        "object_count": "four penguins",
+        "color_binding": null,
+        "spatial": "penguins in a row",
+        "typography": null
+      }
+    },
+    {
+      "key": "p22-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p22-1-sd15.png",
+      "image_sha256": "075eeb850ec30196a8ed21220788c46ebfe646bef16f44a247df5f0f41f09b2f",
+      "prompt": "Exactly four penguins standing in a row on pale blue ice.",
+      "requirements": {
+        "object_count": "four penguins",
+        "color_binding": null,
+        "spatial": "penguins in a row",
+        "typography": null
+      }
+    },
+    {
+      "key": "p22-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p22-1-sdxl.png",
+      "image_sha256": "4998a478beb1d48ff35730741fe107d74c75d723a73f80b147ea299a1702ce54",
+      "prompt": "Exactly four penguins standing in a row on pale blue ice.",
+      "requirements": {
+        "object_count": "four penguins",
+        "color_binding": null,
+        "spatial": "penguins in a row",
+        "typography": null
+      }
+    },
+    {
+      "key": "p22-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p22-2-sd14.png",
+      "image_sha256": "061ec213985e3467242c7f940a13183b3d6fe2b113f66c365b8eacdba14ffec0",
+      "prompt": "Exactly four penguins standing in a row on pale blue ice.",
+      "requirements": {
+        "object_count": "four penguins",
+        "color_binding": null,
+        "spatial": "penguins in a row",
+        "typography": null
+      }
+    },
+    {
+      "key": "p22-2-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p22-2-sd15.png",
+      "image_sha256": "f91fa48253a55d255e2a299c31a1cc95bc143b02cdf6d29f2bc4991a76767a58",
+      "prompt": "Exactly four penguins standing in a row on pale blue ice.",
+      "requirements": {
+        "object_count": "four penguins",
+        "color_binding": null,
+        "spatial": "penguins in a row",
+        "typography": null
+      }
+    },
+    {
+      "key": "p22-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p22-2-sdxl.png",
+      "image_sha256": "741990c8fb4a7b18ddd78c2f12f7e7976b9464669a24f06aa10ec022cfaf753f",
+      "prompt": "Exactly four penguins standing in a row on pale blue ice.",
+      "requirements": {
+        "object_count": "four penguins",
+        "color_binding": null,
+        "spatial": "penguins in a row",
+        "typography": null
+      }
+    },
+    {
+      "key": "p23-0-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p23-0-sd14.png",
+      "image_sha256": "9a0fae365d949d397675078d51a92831d8f0955ab7c09434c705428c3c571830",
+      "prompt": "An open orange toolbox containing a silver hammer and blue pliers.",
+      "requirements": {
+        "object_count": "toolbox hammer and pliers",
+        "color_binding": "orange box silver hammer blue pliers",
+        "spatial": "tools inside open toolbox",
+        "typography": null
+      }
+    },
+    {
+      "key": "p23-0-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p23-0-sd15.png",
+      "image_sha256": "478daad16eb383a734b6c03b7e332f4cdfb0fc06898e9351e33123eda8ca4f2a",
+      "prompt": "An open orange toolbox containing a silver hammer and blue pliers.",
+      "requirements": {
+        "object_count": "toolbox hammer and pliers",
+        "color_binding": "orange box silver hammer blue pliers",
+        "spatial": "tools inside open toolbox",
+        "typography": null
+      }
+    },
+    {
+      "key": "p23-0-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p23-0-sdxl.png",
+      "image_sha256": "7140bd389f1375bbf90286b3f577e984e1e64fa0edd75c62cfa8286a89ca9b42",
+      "prompt": "An open orange toolbox containing a silver hammer and blue pliers.",
+      "requirements": {
+        "object_count": "toolbox hammer and pliers",
+        "color_binding": "orange box silver hammer blue pliers",
+        "spatial": "tools inside open toolbox",
+        "typography": null
+      }
+    },
+    {
+      "key": "p23-1-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p23-1-sd14.png",
+      "image_sha256": "c6cd1a2ed60e11d301d6d90383c042f5af5845c54eae3d574a2d36068d930412",
+      "prompt": "An open orange toolbox containing a silver hammer and blue pliers.",
+      "requirements": {
+        "object_count": "toolbox hammer and pliers",
+        "color_binding": "orange box silver hammer blue pliers",
+        "spatial": "tools inside open toolbox",
+        "typography": null
+      }
+    },
+    {
+      "key": "p23-1-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p23-1-sd15.png",
+      "image_sha256": "f3662819f7a8c3b9312ce2b5dc9678327fbc9da8cb2b6912b4df56f716d179c9",
+      "prompt": "An open orange toolbox containing a silver hammer and blue pliers.",
+      "requirements": {
+        "object_count": "toolbox hammer and pliers",
+        "color_binding": "orange box silver hammer blue pliers",
+        "spatial": "tools inside open toolbox",
+        "typography": null
+      }
+    },
+    {
+      "key": "p23-1-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p23-1-sdxl.png",
+      "image_sha256": "71ebe456fb6633b61f434d15bcaf48ee667f4d32e82ada8ca5981aa14a1845f0",
+      "prompt": "An open orange toolbox containing a silver hammer and blue pliers.",
+      "requirements": {
+        "object_count": "toolbox hammer and pliers",
+        "color_binding": "orange box silver hammer blue pliers",
+        "spatial": "tools inside open toolbox",
+        "typography": null
+      }
+    },
+    {
+      "key": "p23-2-sd14",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p23-2-sd14.png",
+      "image_sha256": "1ad08418c599fe7b8a26daebba82f639c43fb38d77870e186579bed391f28ff2",
+      "prompt": "An open orange toolbox containing a silver hammer and blue pliers.",
+      "requirements": {
+        "object_count": "toolbox hammer and pliers",
+        "color_binding": "orange box silver hammer blue pliers",
+        "spatial": "tools inside open toolbox",
+        "typography": null
+      }
+    },
+    {
+      "key": "p23-2-sd15",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p23-2-sd15.png",
+      "image_sha256": "e99052b9e560d7f934485eb1012784cdbcb11593b05e6c4a75fd41121a5d7d00",
+      "prompt": "An open orange toolbox containing a silver hammer and blue pliers.",
+      "requirements": {
+        "object_count": "toolbox hammer and pliers",
+        "color_binding": "orange box silver hammer blue pliers",
+        "spatial": "tools inside open toolbox",
+        "typography": null
+      }
+    },
+    {
+      "key": "p23-2-sdxl",
+      "image": "/home/smart/repos/livepeer/research/judge-score-fingerprinting-poc/2026-10-25/normalized/p23-2-sdxl.png",
+      "image_sha256": "0e9d1a836b47ee4cdf6f043e32058352a217653c8581becffc26399a45d09955",
+      "prompt": "An open orange toolbox containing a silver hammer and blue pliers.",
+      "requirements": {
+        "object_count": "toolbox hammer and pliers",
+        "color_binding": "orange box silver hammer blue pliers",
+        "spatial": "tools inside open toolbox",
+        "typography": null
+      }
+    }
+  ]
+}

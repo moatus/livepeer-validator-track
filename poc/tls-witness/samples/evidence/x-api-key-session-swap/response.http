@@ -1,0 +1,7 @@
+HTTP/1.1 200 Response
+Content-Length: 24
+Connection: close
+X-Witness-Receipt: 14fff419192a7dca8152cfa206d2251b
+Content-Type: application/json
+
+{"reply":"fixture pong"}

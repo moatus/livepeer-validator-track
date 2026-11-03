@@ -1,0 +1,24 @@
+{
+  "key": "sd15-p27-3303-first",
+  "label": "sd15",
+  "prompt_id": "p27",
+  "group": "workshops",
+  "split": "evaluation",
+  "seed": 3303,
+  "tag": "first",
+  "instrumented": true,
+  "seconds": 1.2970449139829725,
+  "memory": {
+    "allocated": 3440806912,
+    "reserved": 4043309056
+  },
+  "latent_sha256": "6bfbe808ab9fa7d4ef730f0af704217448407a90f1f7b0f4c5d23de7bb9d8d07",
+  "image_sha256": "178c8ac2f0a2e9fae1ff63f697dccc9c8036dc4625ab3bbcb53d55f3605151ac",
+  "nsfw": [
+    false
+  ],
+  "timestamp": "2026-10-25T15:39:34.477606+00:00",
+  "fingerprint": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/fingerprints/sd15-p27-3303-first.f32",
+  "image": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/images/sd15-p27-3303-first.png",
+  "write_seconds": 0.05925199599005282
+}

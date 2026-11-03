@@ -1,0 +1,19 @@
+{
+  "key": "im179",
+  "prompt_id": "q29",
+  "prompt": "Purple plums scattered on cream fabric, soft pastel still life.",
+  "model": "sdxl",
+  "seed": 730295,
+  "timestamp": "2026-10-27T12:19:16.307429+00:00",
+  "status": "ok",
+  "latent_sha256": "4fa6ff094ce3e2c11beb103eb1889ca3da2112c5ce8e2e78124ce7f949b53c8f",
+  "raw": "raw/im179.png",
+  "normalized": "normalized/im179.png",
+  "raw_sha256": "48b354c5d1dd970ac41b318f7406c7d6c92f17446e9db70ec34935d3c7391a30",
+  "normalized_sha256": "bbe4ff632c5370776ecfa491e719e82cef2d4db5526a9b13ece23a35f445b56d",
+  "black": false,
+  "nsfw": null,
+  "width": 1024,
+  "height": 1024,
+  "seconds": 7.303293943405151
+}

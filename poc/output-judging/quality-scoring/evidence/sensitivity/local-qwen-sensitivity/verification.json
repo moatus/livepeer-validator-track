@@ -1,0 +1,26 @@
+{
+  "offline_verified": true,
+  "coverage_A": [
+    38,
+    34,
+    30
+  ],
+  "coverage_B": [
+    94,
+    46,
+    40
+  ],
+  "stability_votes_A": 21,
+  "stability_votes_B": 36,
+  "discrete_predictions_verified": 3431,
+  "bootstrap_intervals_independently_verified": 86,
+  "max_coefficient_absolute_error": 7.394085344003543e-14,
+  "max_score_absolute_error": 1.6964207816272392e-13,
+  "float_rtol": 1e-07,
+  "float_atol": 1e-09,
+  "original_top_level_files_unchanged": 126,
+  "original_terminal_manifest_entries_verified": 990,
+  "new_inference_calls": 0,
+  "cumulative_calls": 251,
+  "hosted_usd": 0
+}

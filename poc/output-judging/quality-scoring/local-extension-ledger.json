@@ -1,0 +1,31 @@
+{
+  "goal": "Test whether local checklist judge vectors add generator identification signal beyond local PickScore and visual baselines.",
+  "nativeMapIssue": "milestone_map start rejected three attempts with opaque curated request field errors; preserving explicit local acceptance ledger instead.",
+  "milestones": [
+    {
+      "id": "local-baselines",
+      "status": "accepted",
+      "acceptance": "Independent numerical and protocol review reconciled.",
+      "evidence": "evidence/INDEPENDENT-REVIEW.md; every prediction independently reproduced; conditional uncertainty and no established combined-feature advantage."
+    },
+    {
+      "id": "local-rubric",
+      "status": "completed-with-disclosed-interface-failure-and-offline-recovery",
+      "acceptance": "Pinned local judge scores fixed corpus with stability/runtime and heldout comparisons, or bounded infeasibility evidence.",
+      "evidence": "evidence/QWEN-INDEPENDENT-REVIEW.md; strict measurements reproduced; failed smoke gating; recoverable raw scores."
+    },
+    {
+      "id": "final-evidence",
+      "status": "accepted-descriptive-exploratory-only",
+      "acceptance": "Fresh independent extension review reconciled; private journal and report state actual results and limitations.",
+      "taskId": "node:delegated-task:command%3Amcp%3A012384a6-1659-47bb-9d6a-c665e362b160%3Adelegate-task%3Ajudge004-offline-sensitivity-sol-20261026-r1",
+      "evidence": "Sensitivity report and parent offline replay:3431 predictions,86 intervals; no dependable attribution claim."
+    }
+  ],
+  "constraints": [
+    "Local judges only; no Livepeer",
+    "No new generated images",
+    "Exploratory extension; original heldout baselines already observed"
+  ],
+  "overall": "Completed bounded experiment; primary added value inconclusive."
+}

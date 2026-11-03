@@ -1,0 +1,5 @@
+{
+  "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "cryptography": "46.0.5",
+  "standard_library_numeric": true
+}

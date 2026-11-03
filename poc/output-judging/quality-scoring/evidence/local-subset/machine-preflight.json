@@ -1,0 +1,8 @@
+{
+  "source": "initial terminal preflight, 2026-10-25 20:13 EDT",
+  "gpu": "RTX3090 24576MiB; 544MiB graphics allocation; no active non-graphics CUDA computation",
+  "memory": "30GiB total,19GiB available;135GiB swap,12GiB used",
+  "disk": "1.1TiB available",
+  "other_jobs": "Concurrent Go compilation and desktop/browser jobs left intact",
+  "snapshot_note": "Saved nvidia-smi text was captured later during generation; named accordingly"
+}

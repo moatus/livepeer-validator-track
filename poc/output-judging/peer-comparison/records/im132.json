@@ -1,0 +1,21 @@
+{
+  "key": "im132",
+  "prompt_id": "q22",
+  "prompt": "A badger walking along a woodland path in soft morning light, wildlife photograph.",
+  "model": "sd14",
+  "seed": 730220,
+  "timestamp": "2026-10-27T12:12:03.175308+00:00",
+  "status": "ok",
+  "latent_sha256": "fe9f9c9a3d92e2957f6ae156636d01e82abb7128b25ba501ffec2712a6726564",
+  "raw": "raw/im132.png",
+  "normalized": "normalized/im132.png",
+  "raw_sha256": "957e1e9c133c3c98073d8d740c73269261a9819eb149ce078ab9de092d14e8c7",
+  "normalized_sha256": "957e1e9c133c3c98073d8d740c73269261a9819eb149ce078ab9de092d14e8c7",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.3142266273498535
+}

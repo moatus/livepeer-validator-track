@@ -1,0 +1,24 @@
+{
+  "key": "sd14-p13-4404-first",
+  "label": "sd14",
+  "prompt_id": "p13",
+  "group": "forests",
+  "split": "evaluation",
+  "seed": 4404,
+  "tag": "first",
+  "instrumented": true,
+  "seconds": 1.2847234960645437,
+  "memory": {
+    "allocated": 3440806912,
+    "reserved": 4043309056
+  },
+  "latent_sha256": "7b90c0f5e4ec57a8a477e294537a26dea105fb59883ec0c9d292f78fb6729f0d",
+  "image_sha256": "1480f105589f1270479232c8c48ad3f1bd36695459bcbbf389593c4299fdf568",
+  "nsfw": [
+    false
+  ],
+  "timestamp": "2026-10-25T15:37:16.415013+00:00",
+  "fingerprint": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/fingerprints/sd14-p13-4404-first.f32",
+  "image": "/home/smart/repos/livepeer/research/image-fingerprinting-poc/2026-10-25/images/sd14-p13-4404-first.png",
+  "write_seconds": 0.026811914052814245
+}

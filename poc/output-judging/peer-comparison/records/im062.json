@@ -1,0 +1,21 @@
+{
+  "key": "im062",
+  "prompt_id": "q10",
+  "prompt": "A brass telescope beside a round attic window, detailed pencil illustration.",
+  "model": "sd14",
+  "seed": 730102,
+  "timestamp": "2026-10-27T12:11:00.855738+00:00",
+  "status": "ok",
+  "latent_sha256": "b7f02eb2c50e9d48de657099697848f1083a0664c8797550d0c8792a4143e332",
+  "raw": "raw/im062.png",
+  "normalized": "normalized/im062.png",
+  "raw_sha256": "f9e7f8111c670dcbf773c56563fef14420cd7b2444dcc9dc701d6655c58f0618",
+  "normalized_sha256": "f9e7f8111c670dcbf773c56563fef14420cd7b2444dcc9dc701d6655c58f0618",
+  "black": false,
+  "nsfw": [
+    false
+  ],
+  "width": 512,
+  "height": 512,
+  "seconds": 1.311466932296753
+}

@@ -1,0 +1,18 @@
+{
+  "model_index.json": true,
+  "README.md": true,
+  "safety_checker/config.json": true,
+  "safety_checker/model.fp16.safetensors": true,
+  "text_encoder/config.json": true,
+  "text_encoder/model.fp16.safetensors": true,
+  "tokenizer/vocab.json": true,
+  "tokenizer/merges.txt": true,
+  "tokenizer/tokenizer_config.json": true,
+  "tokenizer/special_tokens_map.json": true,
+  "vae/config.json": true,
+  "vae/diffusion_pytorch_model.fp16.safetensors": true,
+  "unet/config.json": true,
+  "unet/diffusion_pytorch_model.fp16.safetensors": true,
+  "scheduler/scheduler_config.json": true,
+  "feature_extractor/preprocessor_config.json": true
+}

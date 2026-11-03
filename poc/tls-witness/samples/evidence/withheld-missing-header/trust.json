@@ -1,0 +1,19 @@
+{
+  "v": 1,
+  "witnesses": [
+    {
+      "label": "TEST ONLY: local fixture test key",
+      "public_key": "5011f2e4b5f52357d455eefb0f5eb1d152e880dbb4c1d293876effb39b06a92b",
+      "profiles": [
+        "credential-hidden"
+      ]
+    }
+  ],
+  "operators": [
+    "6e3dd3106b0d0931055c95bc02ac3f1623e117201e40bc76496e0ea65afc93d7",
+    "82cf4bdfb7b2d16e0a1e7f1345ed7107f661b07a10c5603de0ecbfae5533986a",
+    "2c12a5cf956d9f6c4c6e85c4716d9f3a47509ef71e07db65d4d456955c62b857"
+  ],
+  "server_name": "test-server.io",
+  "path": "/api/v1/chat/completions"
+}

@@ -1,0 +1,7 @@
+{
+  "issuer": "independently-pinned-test-upstream",
+  "provider": "mock-expensive-provider",
+  "canonical_model": "mock-model",
+  "model_version": "frozen-v1",
+  "public_key_hex": "b8adf5364b9f10c43e04665a61dc81cd04fc79af8044d691e2cc909baf89db4b"
+}

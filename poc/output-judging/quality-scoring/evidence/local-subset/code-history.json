@@ -1,0 +1,7 @@
+{
+  "sd1x_executed_sha256": "b4b8dfa79e0c717aeb4017a14454f2793a2b5f9c86a2fbc220d5adbb9d5d50f8",
+  "matches_initial_record": true,
+  "sdxl_executed_sha256": "dc5eea43752f471366737e819702205f985d329a13379b2bd480f0b6493f3ba1",
+  "change": "Added crash-restart guard after SD1.x processes started and before SDXL started; no image settings or outputs changed",
+  "download_change": "After downloads, added immutable lock reuse for reproduction; original resolved revisions retained in download-identities.json"
+}

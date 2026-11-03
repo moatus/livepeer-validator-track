@@ -1,0 +1,242 @@
+{
+  "chain": [
+    {
+      "operator_statement": {
+        "body_bytes": 64,
+        "body_sha256": "849a1f180c8238e895d5419067c9da90ed3c80f2bed8f3c3609b8f003dd2b83d",
+        "forwarded_headers_sha256": "e91ea2ea416eff3fb55ad6cf2d51e785885c55fd6508c0d6f0d87021cfca468c",
+        "host": "test-server.io",
+        "method": "POST",
+        "operator_pub": "fa440bde5df1ba7c7017c4f4853d00457454b06a6b1f0eb2be6a19d5edcf97fb",
+        "path": "/jobs",
+        "receipt_id": "2d2c2991ad0b74ef5b2150334ffb880c",
+        "session_id": "20261102T122225Z-2ae7bc",
+        "sig": "5f8108cba2f5f48a96eaeabdcf1bd6d96e2735917522514d089d7d8a60a789f6b217defb897d248315e3cdae2ad85ba746ffb05b604b1bc4c9c079e303da6e06",
+        "v": 1
+      },
+      "receipt": {
+        "path": [],
+        "record": {
+          "job_id": "2d2c2991ad0b74ef5b2150334ffb880c",
+          "n": 1,
+          "operator_pub": "fa440bde5df1ba7c7017c4f4853d00457454b06a6b1f0eb2be6a19d5edcf97fb",
+          "operator_statement_sha256": "06cb551b07aaac54bd8800b753c7a40f73b231e974568a57850af49bbfdff792",
+          "outcome": "verified",
+          "request": {
+            "body_bytes": 64,
+            "body_sha256": "849a1f180c8238e895d5419067c9da90ed3c80f2bed8f3c3609b8f003dd2b83d",
+            "forwarded_headers_sha256": "e91ea2ea416eff3fb55ad6cf2d51e785885c55fd6508c0d6f0d87021cfca468c",
+            "host": "test-server.io",
+            "method": "POST",
+            "path": "/jobs"
+          },
+          "response": {
+            "body_bytes": 37,
+            "body_sha256": "505ad32bbb02bcf4c0237bef79f61fbee6d0324f6aa05341312f29a603a38c03",
+            "content_type": "application/json",
+            "status": 201,
+            "transfer": "identity"
+          },
+          "salt": "8bdcce9c6d14b1daaa71cd7e7bdb327fc10851a643afe15bc9e6c055fcbf6fa8",
+          "session_id": "20261102T122225Z-2ae7bc"
+        },
+        "v": 1,
+        "verdict": {
+          "exchanges": 1,
+          "limits": {
+            "max_recv": 262144,
+            "max_sent": 65536
+          },
+          "mode": "proxy",
+          "root": "7b77f7e8df695904c80d68446a9dfce5789ebd1e6b9fb2ede9854441f1f86046",
+          "server_name": "test-server.io",
+          "session_id": "20261102T122225Z-2ae7bc",
+          "sig": "a3085f8b2284fb549bdea3655f49ee12241230ebd4f8ee0e4817fd6be2ba24d01eb19922925db41d971c3d0a2bf9180d1cb98842bf69fdeaffa8d021a4440a09",
+          "v": 5,
+          "verified_at": "2026-11-02T12:22:26Z",
+          "verifier_pub": "5976e135cc970155b06371a87020ed992812e743cfa6312f22f98465f59266c3",
+          "profile": "credential-sequence"
+        }
+      },
+      "request_hex": "504f5354202f6a6f627320485454502f312e310d0a486f73743a20726f757465720d0a436f6e74656e742d4c656e6774683a2036340d0a636f6e74656e742d747970653a206170706c69636174696f6e2f6a736f6e0d0a782d636c69656e742d6e6f6e63653a206e6f726d616c2d610d0a782d636c69656e742d726571756972652d7769746e6573733a20747275650d0a0d0a7b226d6f64656c223a2266697874757265222c22696e707574223a226e6f726d616c2d61222c22666978747572655f6d6f6465223a226e6f726d616c2d61227d",
+      "response_hex": "485454502f312e312032303120526573706f6e73650d0a436f6e74656e742d4c656e6774683a2033370d0a582d5769746e6573732d526563656970743a2032643263323939316164306237346566356232313530333334666662383830630d0a436f6e74656e742d547970653a206170706c69636174696f6e2f6a736f6e0d0a0d0a7b226a6f625f6964223a22323465313935386565303062626233356539303138386535227d"
+    },
+    {
+      "operator_statement": {
+        "body_bytes": 0,
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "forwarded_headers_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "host": "test-server.io",
+        "method": "GET",
+        "operator_pub": "fa440bde5df1ba7c7017c4f4853d00457454b06a6b1f0eb2be6a19d5edcf97fb",
+        "path": "/jobs/24e1958ee00bbb35e90188e5/poll",
+        "receipt_id": "2d2c2991ad0b74ef5b2150334ffb880c",
+        "session_id": "20261102T122226Z-52b0f3",
+        "sig": "b42435d3102eabce153e12fb793e03b1eb6329fe7d16ce1cfb4065ed418e3aa2e36b52fa8f1b5d01289e2b24d4fbe28181d3b05e61280e675f00f62633aa3806",
+        "v": 1
+      },
+      "receipt": {
+        "path": [],
+        "record": {
+          "job_id": "2d2c2991ad0b74ef5b2150334ffb880c",
+          "n": 1,
+          "operator_pub": "fa440bde5df1ba7c7017c4f4853d00457454b06a6b1f0eb2be6a19d5edcf97fb",
+          "operator_statement_sha256": "a9877971212570d9df72a78eca74862ca790075a2d6cef0a128f041deaa65c38",
+          "outcome": "verified",
+          "request": {
+            "body_bytes": 0,
+            "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "forwarded_headers_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "host": "test-server.io",
+            "method": "GET",
+            "path": "/jobs/24e1958ee00bbb35e90188e5/poll"
+          },
+          "response": {
+            "body_bytes": 93,
+            "body_sha256": "bc31f12b90fc82e0d3134b2be13e145616dc45b7a150c2be4a8cd34251493eac",
+            "content_type": "application/json",
+            "status": 200,
+            "transfer": "identity"
+          },
+          "salt": "b3086f3ad95025fd562edee7bf61a1f6eb529c0d19776ec17a411e3f2768104e",
+          "session_id": "20261102T122226Z-52b0f3"
+        },
+        "v": 1,
+        "verdict": {
+          "exchanges": 1,
+          "limits": {
+            "max_recv": 262144,
+            "max_sent": 65536
+          },
+          "mode": "proxy",
+          "root": "76f474f2bec85c41e8d88228d5ecbfd830bdacb12c78eba2120f1c3071b57b69",
+          "server_name": "test-server.io",
+          "session_id": "20261102T122226Z-52b0f3",
+          "sig": "ed06d9d77daf72d39d48e48b5160f20ada9d6588ddb6fbb8480980469e24f156be7afcc564d58815baa124e4fd10b9ce73e39059d892c86cb4d0e4a3b7331e0f",
+          "v": 5,
+          "verified_at": "2026-11-02T12:22:27Z",
+          "verifier_pub": "5976e135cc970155b06371a87020ed992812e743cfa6312f22f98465f59266c3",
+          "profile": "credential-sequence"
+        }
+      },
+      "request_hex": "474554202f6a6f62732f3234653139353865653030626262333565393031383865352f706f6c6c20485454502f312e310d0a486f73743a20726f757465720d0a436f6e74656e742d4c656e6774683a20300d0a0d0a",
+      "response_hex": "485454502f312e312032303020526573706f6e73650d0a436f6e74656e742d4c656e6774683a2039320d0a582d5769746e6573732d526563656970743a2032643263323939316164306237346566356232313530333334666662383830630d0a436f6e74656e742d547970653a206170706c69636174696f6e2f6a736f6e0d0a0d0a7b227374617465223a22646f6e65222c22646967657374223a2266616533363865366531643363666236393066633730333832356633663265326264376131316562633330653939336661336138613062373035303732373935227d"
+    },
+    {
+      "operator_statement": {
+        "body_bytes": 0,
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "forwarded_headers_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "host": "test-server.io",
+        "method": "GET",
+        "operator_pub": "fa440bde5df1ba7c7017c4f4853d00457454b06a6b1f0eb2be6a19d5edcf97fb",
+        "path": "/jobs/24e1958ee00bbb35e90188e5/result",
+        "receipt_id": "2d2c2991ad0b74ef5b2150334ffb880c",
+        "session_id": "20261102T122227Z-3e5f5a",
+        "sig": "321e82b9051cb19feee1bce7bc2ce09b7e8031fd28afe685d4cacd91fdf100389909cb5e480742b0ed75adfdd2413fbacdfd2945e2baaeedd94eb4801b785b02",
+        "v": 1
+      },
+      "receipt": {
+        "path": [],
+        "record": {
+          "job_id": "2d2c2991ad0b74ef5b2150334ffb880c",
+          "n": 1,
+          "operator_pub": "fa440bde5df1ba7c7017c4f4853d00457454b06a6b1f0eb2be6a19d5edcf97fb",
+          "operator_statement_sha256": "7756f3c6e0d51dc28e3ce438317bfeee6d3db07c0edc43e877cbd81b90b26c42",
+          "outcome": "verified",
+          "request": {
+            "body_bytes": 0,
+            "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "forwarded_headers_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "host": "test-server.io",
+            "method": "GET",
+            "path": "/jobs/24e1958ee00bbb35e90188e5/result"
+          },
+          "response": {
+            "body_bytes": 48,
+            "body_sha256": "fae368e6e1d3cfb690fc703825f3f2e2bd7a11ebc30e993fa3a8a0b705072795",
+            "content_type": "application/octet-stream",
+            "status": 200,
+            "transfer": "identity"
+          },
+          "salt": "6c728d06f1679c6a1d062bd6ba69bec4f7ec4016a630938fea45e86faf70d923",
+          "session_id": "20261102T122227Z-3e5f5a"
+        },
+        "v": 1,
+        "verdict": {
+          "exchanges": 1,
+          "limits": {
+            "max_recv": 262144,
+            "max_sent": 65536
+          },
+          "mode": "proxy",
+          "root": "a34e4938745c61b33177396974fcb66aa97973938c12e2e8f5c4c0ed609643b5",
+          "server_name": "test-server.io",
+          "session_id": "20261102T122227Z-3e5f5a",
+          "sig": "ed84065ab7cd5e40c9852cfd9069b30b2f4a6b2933937ddead0946d737322d50cd676c085f8751a7c6fa57e8ae55eee54ded1a25e12336f2a5388ecade89dc0e",
+          "v": 5,
+          "verified_at": "2026-11-02T12:22:27Z",
+          "verifier_pub": "5976e135cc970155b06371a87020ed992812e743cfa6312f22f98465f59266c3",
+          "profile": "credential-sequence"
+        }
+      },
+      "request_hex": "474554202f6a6f62732f3234653139353865653030626262333565393031383865352f726573756c7420485454502f312e310d0a486f73743a20726f757465720d0a436f6e74656e742d4c656e6774683a20300d0a0d0a"
+    }
+  ],
+  "created_at": "2026-11-02T12:22:25.212Z",
+  "credential_cleanup": [
+    {
+      "outcome": {
+        "disable_accepted": true,
+        "state": "dead_confirmed"
+      },
+      "step": 1
+    },
+    {
+      "outcome": {
+        "disable_accepted": true,
+        "state": "dead_confirmed"
+      },
+      "step": 2
+    },
+    {
+      "outcome": {
+        "disable_accepted": true,
+        "state": "dead_confirmed"
+      },
+      "step": 3
+    }
+  ],
+  "deadline_seconds": 90,
+  "delivery": {
+    "cancelled": false,
+    "client_disconnected": false,
+    "complete": true,
+    "first_chunk_ms": 2667,
+    "rule": "body",
+    "socket_accepted_body_bytes": 48,
+    "socket_accepted_body_sha256": "fae368e6e1d3cfb690fc703825f3f2e2bd7a11ebc30e993fa3a8a0b705072795",
+    "total_ms": 2667
+  },
+  "kind": "job",
+  "receipt_id": "2d2c2991ad0b74ef5b2150334ffb880c",
+  "state": "verified",
+  "terminal_at": "2026-11-02T12:22:27.880Z",
+  "v": 1,
+  "provenance": {
+    "run": "runs/phase-28/fixture-20261102T122224Z",
+    "build_identity": {
+      "source_commit": "18436d4448635cf276e321fd9a65f1a18d8cc308",
+      "binary_sha256": "ff954f808c7785178e901ac57f583bd6e633f84f07eb6c67ab98ae8d398909c9",
+      "cargo_lock_sha256": "fc9f401d24355f4ad44e7fed40e079db1bb0a867b33de13421dba86b781466a0",
+      "tlsn_tag": "v0.1.0-alpha.15",
+      "allowed_diffs": [
+        "patch/tlsn-mux-stream-cap.diff",
+        "patch/tlsn-session-frame-limit.diff"
+      ],
+      "new_crates": 0
+    }
+  },
+  "format_refresh": "Historical fixture exchange; verdict re-signed with explicit credential-sequence profile, not a new TLS observation.",
+  "test_only": "Unsigned later-entry failure control around committed genuine fixture captures"
+}
