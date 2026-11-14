@@ -1,18 +1,17 @@
 # Milestone overview
 
-Owner: Shane (@moatus). [Project board](https://github.com/users/moatus/projects/1). Scheduling is maintained on the project board. M1's September versions are reviewed; M1's October revisions are drafted. M2 is complete: the final consolidation and shared network snapshot were reviewed and accepted. M3.1 and M3.2 are in progress; M3.3–M5 remain planned. M1's four workbench steps and the reviewed M2 steps and slices are recorded in the [deliverable register](deliverables/README.md). The M1/M2 research and M3.1/M3.2 drafts are recorded in the [research workbench](validator-track-workbench.html) (see the [README](README.md#research-workbench)).
+Owner: Shane (@moatus). [Project board](https://github.com/users/moatus/projects/1). M1 September versions are reviewed; October revisions remain drafted. M2 is complete. M3 closed on 2026-11-13 as an evidence assessment and testnet handoff: M3.1 reviewed, M3.2 accepted only as a bounded contribution with its source still partial, and M3.3/M3.4 deferred. M4 planning and coordination are in progress; testnet results are not yet accepted. M5 is archived. Exact evidence and limits are in the [deliverable register](deliverables/README.md).
 
-Research path: **understand the litepaper → test its assumptions → evaluate whether and where to expand it → test what is recommended → hand off a validator workflow**. M3 takes two kinds of input: concerns the M2 tests leave unresolved after plausible completions of the paper are compared, and areas the litepaper leaves unaddressed or where its mechanisms work against its own goals. For each, it decides whether a litepaper expansion is warranted and what it would be. "No expansion needed" and "clarify the existing rule" are valid outcomes. Work may overlap across milestones.
+Research path: **understand the litepaper → test its assumptions → assess evidence and unresolved gaps → establish and test the litepaper baseline**. Expansion options remain open and return to evaluation when concrete proposals are ready for testing. Work may overlap across milestones.
 
 | Milestone | Intended outcome | Tracking | Budget (USD) | Accepted deliverables |
 | --- | --- | --- | ---: | --- |
 | [M1 — Objectives, assumptions and validation requirements](https://github.com/moatus/livepeer-validator-track/milestone/1) | Baseline, required claims, early threats and current-system map. | [#1](https://github.com/moatus/livepeer-validator-track/issues/1) | — | [M1.1–M1.4](deliverables/README.md) |
-| [M2 — Test litepaper incentives and evidence limits](https://github.com/moatus/livepeer-validator-track/milestone/2) | Substantiate material concerns and evidence limits. | [#2](https://github.com/moatus/livepeer-validator-track/issues/2) | $5,000 | [M2.1–M2.10 and shared snapshot](deliverables/README.md) |
-| [M3 — Evaluate where the litepaper could be expanded](https://github.com/moatus/livepeer-validator-track/milestone/3) | Decide whether and where a litepaper expansion is warranted, and what it would be. | [#3](https://github.com/moatus/livepeer-validator-track/issues/3) | $7,000 | None |
-| [M4 — Bounded economic and work-validation tests](https://github.com/moatus/livepeer-validator-track/milestone/4) | Test the litepaper's consequential assumptions, anything M3 recommends, and reviewer methods. | [#4](https://github.com/moatus/livepeer-validator-track/issues/4) | $8,000 | None |
-| [M5 — Validator workflow pilot and delivery handoff](https://github.com/moatus/livepeer-validator-track/milestone/5) | Exercise a bounded workflow and hand off supported recommendations. | [#5](https://github.com/moatus/livepeer-validator-track/issues/5) | $10,000 | None |
+| [M2 — Test litepaper incentives and evidence limits](https://github.com/moatus/livepeer-validator-track/milestone/2) | Substantiate material concerns and evidence limits. | [#2](https://github.com/moatus/livepeer-validator-track/issues/2) | $800 | [M2.1–M2.10 and shared snapshot](deliverables/README.md) |
+| [M3 — Evidence assessment and testnet handoff](https://github.com/moatus/livepeer-validator-track/milestone/3) | Evidence assessment and testnet handoff; no expansion selected. | [#3](https://github.com/moatus/livepeer-validator-track/issues/3) | $1,200 | M3.1 reviewed; M3.2 bounded contribution accepted |
+| [M4 — Full economic testnet environment](https://github.com/moatus/livepeer-validator-track/milestone/4) | Establish a working litepaper baseline and run bounded economic and service-evidence tests. | [#4](https://github.com/moatus/livepeer-validator-track/issues/4) | $9,000 | None |
 
-**Total M2–M5 budget: $30,000 USD.**
+**Total M2–M4 budget: $11,000 USD.** M5 has no separate allocation in this revised plan. Target dates: M2 2026-10-19 (completed 2026-10-27), M3 2026-11-22, M4 2026-12-31. The board and native milestones mirror these dates.
 
 ## M1 — Objectives, assumptions and validation requirements
 
@@ -50,44 +49,62 @@ M2 closed after acceptance of the final assessment and [shared snapshot](https:/
 
 The [M2 specification](docs/m2/SPEC.md) preserves every study identity. The M2 framework and Slices 1, 2 and 2b were reviewed. Specification 0.11 consolidates the remaining program into P1 (current-system data notes), E2 (evidence, with operator response), Slice 3 and a close pass, each tracked as a task issue. Studies 4–8 keep their identities: study 4 is merged into E2, and studies 5–8 receive dispositions in the close pass.
 
-## M3 — Evaluate where the litepaper could be expanded
+## M3 — Evidence assessment and testnet handoff
 
-Local drafting and evidence navigation: [Workbench M3.1](validator-track-workbench.html#M3.1), [Workbench M3.2](validator-track-workbench.html#M3.2), [verification PoCs](poc/README.md), and [exploratory models](experiments/m3/README.md). These additions do not change acceptance or task status.
+**Closed 2026-11-13, revised scope approved by Shane.** M3 closes under a revised scope: the gap assessment is reviewed, the available prototype findings and limitations are recorded, and the next testnet questions are identified. No expansion mechanism has been selected or validated. Broader option comparisons, expansion scenarios and expansion integration mapping remain deferred. M4 will establish and test the litepaper baseline.
 
-Start from the M1 and M2 findings. M3 receives two kinds of input: concerns the M2 tests leave unresolved after plausible completions of the paper are compared on their tradeoffs, and areas the litepaper leaves unaddressed or where its mechanisms work against its own goals: reward integrity, open market participation, participant incentives, credible validation and implementation. Specification details that the paper plainly implies remain design questions for build work; they enter M3 only if they amount to an unaddressed area. For each input, evaluate whether a litepaper expansion is warranted and what it would be. "No expansion needed" and "clarify the existing rule" are valid outcomes. Model scenarios only for the options worth pursuing, and only where they clarify a design choice or failure boundary.
+**Original completion criteria (preserved, not all met):** A list of the unresolved concerns, gaps and conflicts, with the evidence for each; an evaluation of the options for each, with participant incentives and a recommendation; small cooperative, ordinary-market and selected adversarial scenarios, or equivalent worked cases, for the options worth pursuing; and, for any recommended expansion, an integration map tracing **current system → litepaper**, **litepaper → recommended expansion** and **current system → recommended expansion** across contracts, off-chain components, workflows and migration considerations. Identify what M4 should test, and where a recommendation adjusts an existing mechanism.
 
-**Completion:** A list of the unresolved concerns, gaps and conflicts, with the evidence for each; an evaluation of the options for each, with participant incentives and a recommendation; small cooperative, ordinary-market and selected adversarial scenarios, or equivalent worked cases, for the options worth pursuing; and, for any recommended expansion, an integration map tracing **current system → litepaper**, **litepaper → recommended expansion** and **current system → recommended expansion** across contracts, off-chain components, workflows and migration considerations. Identify what M4 should test, and where a recommendation adjusts an existing mechanism.
+**Revised completion:** the reviewed gap assessment at an exact version; the bounded prototype findings and limitations accepted as input to M4; linked exploratory economic models without new validation claims; and explicit gap dispositions and return conditions below. The original option/incentive comparison remains partial. This scope change does not conclude that no expansion is needed.
 
-| Task | Planned artifact | Status |
+| Task | Artifact or disposition | Status |
 | --- | --- | --- |
-| [M3.1 — Identify gaps and conflicts that could warrant an expansion](https://github.com/moatus/livepeer-validator-track/issues/11) | [Workbench M3.1](validator-track-workbench.html#M3.1) | In progress; local draft, not accepted |
-| [M3.2 — Evaluate expansion options and participant incentives](https://github.com/moatus/livepeer-validator-track/issues/12) | [Workbench M3.2](validator-track-workbench.html#M3.2) | In progress; partial local draft, not accepted |
-| [M3.3 — Explore scenarios for the options worth pursuing](https://github.com/moatus/livepeer-validator-track/issues/17) | Workbench step M3.3 (planned) | Planned |
-| [M3.4 — Map any recommended expansion onto the current system](https://github.com/moatus/livepeer-validator-track/issues/13) | Workbench step M3.4 (planned) | Planned |
+| [M3.1 — Gap assessment](https://github.com/moatus/livepeer-validator-track/issues/11) | [Workbench M3.1](https://github.com/moatus/livepeer-validator-track/blob/1f096b7a8a23476c8a875ef826b31f7330265895/validator-track-workbench.html), `1f096b7` | Reviewed by Shane; complete |
+| [M3.2 — Prototype findings and limitations](https://github.com/moatus/livepeer-validator-track/issues/12) | [Workbench M3.2](https://github.com/moatus/livepeer-validator-track/blob/1f096b7a8a23476c8a875ef826b31f7330265895/validator-track-workbench.html), `1f096b7` | Bounded contribution accepted; source Drafted (partial); broader evaluation unfinished |
+| [M3.3 — Expansion scenarios](https://github.com/moatus/livepeer-validator-track/issues/17) | No completed expansion scenarios | Deferred; closed as not planned |
+| [M3.4 — Expansion integration map](https://github.com/moatus/livepeer-validator-track/issues/13) | No completed expansion integration map | Deferred; closed as not planned |
 
-## M4 — Bounded economic and work-validation tests
+Revisit the unfinished comparisons, scenarios and integration mapping when a concrete expansion is selected for testing. Baseline implementation and test cases do not fulfill those expansion deliverables. The [PoC index](https://github.com/moatus/livepeer-validator-track/blob/1f096b7a8a23476c8a875ef826b31f7330265895/poc/README.md) and [exploratory models](https://github.com/moatus/livepeer-validator-track/blob/1f096b7a8a23476c8a875ef826b31f7330265895/experiments/m3/README.md) retain their stated limits. No combined integrity/QoS scoring mechanism is selected.
 
-Test the litepaper's consequential assumptions, whatever M3 recommends (if anything), and validator judgments. A small table, calculation or targeted experiment suffices if it answers the question. Useful service-validation tests can begin before every economic choice is settled.
+### Gap dispositions
 
-**Completion:** Selected cooperative, market-pressure and adversarial cases; bounded work-integrity, quality or availability tests; and a draft procedure for evidence, uncertainty, disagreement and service failures. Record negative results, reviewer cost and relevant false positives.
+| Gap | Disposition for the initial testnet | Next work or return condition |
+| --- | --- | --- |
+| G01 — Reward objective and self-funded work | Keep the October baseline and measure its conditional exposure. Evidence of real execution does not resolve the reward incentive. Whether the reward objective must change remains open. | M4.1 ([#18](https://github.com/moatus/livepeer-validator-track/issues/18)); revisit expansion options when results support a concrete proposal. |
+| G02 — Job evidence and collection | Test bounded request/delivery records and claim-specific checks; evidence custody, cost and coverage remain unresolved. | M4.2 ([#19](https://github.com/moatus/livepeer-validator-track/issues/19)). |
+| G03 — Credible review and operator response | Measure actual evidence access and review on known cases; scripted scores do not demonstrate credible judgment. | M4.2 ([#19](https://github.com/moatus/livepeer-validator-track/issues/19)), M4.3 ([#20](https://github.com/moatus/livepeer-validator-track/issues/20)). |
+| G04 — Delegation, liquidity and control | State the test profile's stake/authority rules and test their consequences. Neither beneficial control nor a policy resolution is established. | M4.1 ([#18](https://github.com/moatus/livepeer-validator-track/issues/18)); exercise supported staking/unbonding paths, with bond transfers deferred. |
+| G05 — Service quality and availability | Combined integrity/QoS scoring remains a direction to evaluate, not a selected mechanism. Keep service performance distinct from dishonesty. | Bounded claim tests in M4.2 ([#19](https://github.com/moatus/livepeer-validator-track/issues/19)); any combined reward mechanism needs a later option comparison. |
+| G06 — Supply before demand | No protocol change proposed for the initial testnet; whether commercial provision suffices remains untested. | Retain in M4.6 ([#40](https://github.com/moatus/livepeer-validator-track/issues/40)); revisit when a concrete unmet service need is evidenced. |
+| G07 — Practical discovery | No protocol change proposed for the initial testnet; practical access and commercial adequacy remain untested. | Retain in M4.6 ([#40](https://github.com/moatus/livepeer-validator-track/issues/40)); revisit with operator/customer discovery evidence. |
+| G08 — Buyer remedies | No protocol change proposed for the initial testnet; adequacy of commercial remedies remains untested. | M4.3 ([#20](https://github.com/moatus/livepeer-validator-track/issues/20)) can expose response gaps; retain unresolved remedy design in M4.6 ([#40](https://github.com/moatus/livepeer-validator-track/issues/40)). |
+| G09 — Rules and pending rewards | Explicitly state and exercise the test profile's applicability and authority rules. No new protocol policy is adopted by this closeout. | M4.4 ([#38](https://github.com/moatus/livepeer-validator-track/issues/38)) and M4.5 ([#39](https://github.com/moatus/livepeer-validator-track/issues/39)). |
+| G10 — Executable buybacks | Execute purchase and burn through a declared controlled test pool. Real-market liquidity and manipulation resistance remain untested. | M4.5 ([#39](https://github.com/moatus/livepeer-validator-track/issues/39)); preserve GT-10 in M4.1 ([#18](https://github.com/moatus/livepeer-validator-track/issues/18)) and M4.6 ([#40](https://github.com/moatus/livepeer-validator-track/issues/40)) for 2027 or later. |
 
-| Task | Planned artifact |
+## M4 — Full economic testnet environment
+
+Run the October litepaper baseline on Arbitrum Sepolia with real paid jobs in test USDC, several independently operated nodes and a reconciled reward cycle. Budget: **$9,000**; target: **2026-12-31**. Planning and coordination are in progress; no M4 result is accepted yet.
+
+**Completion:** a real stake-free node registers and receives payment for a relayed job; a full reward cycle reconciles payments, scores, delayed claims, mint/unminted allowance and controlled-pool burns against the independent calculator; bounded cooperative, market-pressure and strategic economic cases run; actual evidence-checking methods or reviewers assess known service cases and report detection, false positives, effort and uncertainty; an evidence/dispute procedure is exercised; and a reviewed evidence package records results, limitations and remaining decisions.
+
+Try the unmodified node first, documenting minimal required changes if necessary. Scripted scores test accounting and reward consequences, not judgment quality. A declared controlled test pool must execute purchase and burn of test LPT; merely holding the network fee share is insufficient. This does not demonstrate real-market liquidity or manipulation resistance.
+
+Prepare cases and expected results now, run locally as capabilities become available, then repeat relevant cases on the shared testnet. Independent participation is required for final reward-cycle acceptance, not for starting preparation or local tests. List all test-profile interpretations, deviations and stand-ins. No expansion-specific mechanism is selected by this plan.
+
+| Task | Expected outcome |
 | --- | --- |
-| [M4.1 — Stress-test consequential economic assumptions](https://github.com/moatus/livepeer-validator-track/issues/18) | `deliverables/m4/economic-test-results.md` |
-| [M4.2 — Run bounded service-validation tests](https://github.com/moatus/livepeer-validator-track/issues/19) | `deliverables/m4/service-validation-results.md` |
-| [M4.3 — Draft the evidence review and dispute procedure](https://github.com/moatus/livepeer-validator-track/issues/20) | `deliverables/m4/reviewer-procedure.md` |
+| [M4.4 — Deploy the litepaper testnet with a paid node](https://github.com/moatus/livepeer-validator-track/issues/38) | Local paid-job path, then public test-chain deployment; source versions, setup and pending-claim rules recorded |
+| [M4.5 — Reconcile a multi-participant reward cycle](https://github.com/moatus/livepeer-validator-track/issues/39) | Several independently operated nodes, including an operator outside the implementation team; independent accounting and controlled-pool purchase/burn |
+| [M4.1 — Economic stress campaign](https://github.com/moatus/livepeer-validator-track/issues/18) | Cooperative, ordinary-market and strategic cases, including self-funded work and supported stake movement |
+| [M4.2 — Service-evidence and reviewer tests](https://github.com/moatus/livepeer-validator-track/issues/19) | Actual claim checks and reviewer performance, distinct from predetermined scores |
+| [M4.3 — Evidence review and dispute procedure](https://github.com/moatus/livepeer-validator-track/issues/20) | A bounded exercised procedure, operator response and unresolved authority/cost questions |
+| [M4.6 — Testnet evidence package](https://github.com/moatus/livepeer-validator-track/issues/40) | Exact result versions, operating responsibilities, interfaces, limitations and a follow-up backlog |
 
-## M5 — Validator workflow pilot and delivery handoff
+Upgradeability, real-market DEX buyback validation, Explorer/subgraph integration and bond transfers are deferred to 2027 or later. Preserve GT-10 in the evidence handoff; controlled-pool accounting does not close it. Expansion-specific scenarios and integration mapping return when an expansion is selected for testing.
 
-Exercise the supported claim-to-review-to-consequence workflow. Identify what the validation track can recommend, what adjacent tracks need, and what requires the separate protocol decision process.
+## M5 — Archived
 
-**Completion:** A bounded pilot with limitations, operating responsibilities and cross-track interfaces, and a prioritized backlog separating supported recommendations from unresolved decisions.
-
-| Task | Planned artifact |
-| --- | --- |
-| [M5.1 — Pilot an end-to-end validator workflow](https://github.com/moatus/livepeer-validator-track/issues/21) | `deliverables/m5/workflow-pilot.md` |
-| [M5.2 — Document operating roles and cross-track interfaces](https://github.com/moatus/livepeer-validator-track/issues/22) | `deliverables/m5/operating-handoff.md` |
-| [M5.3 — Deliver recommendations and implementation backlog](https://github.com/moatus/livepeer-validator-track/issues/23) | `deliverables/m5/recommendations-and-backlog.md` |
+Archived 2026-11-13 at Shane's direction; original work is retained in [#5](https://github.com/moatus/livepeer-validator-track/issues/5) and its tasks, closed as not planned. M4.3 exercises the bounded reviewer procedure and M4.6 replaces the evidence/operating handoff. A broader validator workflow pilot is deferred until a concrete workflow is ready for external testing. Archival is not acceptance of the original M5 criteria.
 
 ## Reporting and scope
 

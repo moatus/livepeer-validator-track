@@ -26,6 +26,15 @@ M2.7–M2.9 are reviewed at the exact versions above. Frozen source files retain
 
 Add a row when a reviewed deliverable is ready to be recorded. Use the [artifact template](_TEMPLATE.md) as a starting point and follow the [workflow](../docs/WORKFLOW.md). An expected file path in a task does not mean an artifact exists.
 
-## M3 drafting
+## M3 closeout — 2026-11-13
 
-[M3.1](../validator-track-workbench.html#M3.1) and [M3.2](../validator-track-workbench.html#M3.2) are drafted directly in the workbench, with supporting [PoCs](../poc/README.md) and [economic models](../experiments/m3/README.md). M3.3 and M3.4 are planned to continue there. Drafts are not part of the reviewed register above until their review is completed.
+Shane reviewed M3.1 and approved the revised M3 evidence assessment and testnet handoff. M3.2's existing prototype findings and limitations are accepted only as a bounded contribution to M4; the source remains a partial draft and the broader option/incentive comparison is unfinished.
+
+| Task | Artifact | Contribution and limits | Exact version | Status |
+| --- | --- | --- | --- | --- |
+| [M3.1](https://github.com/moatus/livepeer-validator-track/issues/11) | [Workbench M3.1](https://github.com/moatus/livepeer-validator-track/blob/1f096b7a8a23476c8a875ef826b31f7330265895/validator-track-workbench.html) | Ten gap identifiers with evidence, counterevidence and open questions; its scoring direction remains under evaluation | `1f096b7a8a23476c8a875ef826b31f7330265895` | Reviewed by Shane |
+| [M3.2](https://github.com/moatus/livepeer-validator-track/issues/12) | [Workbench M3.2](https://github.com/moatus/livepeer-validator-track/blob/1f096b7a8a23476c8a875ef826b31f7330265895/validator-track-workbench.html) and [PoC index](https://github.com/moatus/livepeer-validator-track/blob/1f096b7a8a23476c8a875ef826b31f7330265895/poc/README.md) | Fingerprinting, output judging, receipts, TLS witnessing and evidence-collection findings/limits; no complete cross-gap comparison, selected expansion or demonstrated combined scoring mechanism | `1f096b7a8a23476c8a875ef826b31f7330265895` | Drafted (partial); bounded contribution accepted by Shane |
+
+The source retains its preparation-time draft v0.3/v0.1 wording. This register records subsequent scoped acceptance, not new experiments, independent revalidation of every prototype or protocol adoption. The [economic models](https://github.com/moatus/livepeer-validator-track/blob/1f096b7a8a23476c8a875ef826b31f7330265895/experiments/m3/README.md) remain exploratory and are inputs to M4.1, not newly reviewed results.
+
+M3.3 and M3.4 have no completed deliverables. They are deferred, closed as not planned under this milestone, and return with the unfinished option comparisons when a concrete expansion is selected for testing. The baseline testnet does not fulfill them. See the [closeout and dispositions](../MILESTONES.md#m3--evidence-assessment-and-testnet-handoff) and [#3](https://github.com/moatus/livepeer-validator-track/issues/3).
