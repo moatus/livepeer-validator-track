@@ -14,7 +14,7 @@ The project tests the litepaper's protocol mechanics: rewards, validation, deleg
 - [Research premises](docs/DECISIONS.md)
 - [SPE pre-proposal](https://forum.livepeer.org/t/pre-proposal-network-engineering-spe-ii/3344)
 
-M2 is complete. M3 closed as an evidence assessment and testnet handoff; M4 economic testnet planning is in progress, with no results yet accepted. M5 is archived. The [workbench](#research-workbench) holds the research and current drafts. The [deliverable register](deliverables/README.md) identifies reviewed versions and their limits; the [milestone overview](MILESTONES.md) describes the remaining work. Research acceptance does not adopt protocol rules. Scheduling and budgets are maintained on the [project board](https://github.com/users/moatus/projects/1).
+M2 is complete. M3 closed as an evidence assessment and testnet handoff. Under the plan revised on 2026-11-18, M4 launches the economic testnet by 2026-12-31, M5 adds testnet simulation by the same date, and M6 adds an agent-run contribution pipeline in January 2027; the validation campaigns that need a running testnet are deferred to 2027. No testnet result is yet accepted. The original M5 is archived. The [workbench](#research-workbench) holds the research and current drafts. The [deliverable register](deliverables/README.md) identifies reviewed versions and their limits; the [milestone overview](MILESTONES.md) describes the remaining work. Research acceptance does not adopt protocol rules. Scheduling and budgets are maintained on the [project board](https://github.com/users/moatus/projects/1).
 
 ## M3 evidence and verification prototypes
 
@@ -55,7 +55,7 @@ These supporting review guides summarize M1.1–M1.4 for listening, each labeled
 
 ## Working structure
 
-Four milestones define the current program: litepaper foundation, incentive and evidence tests, evidence assessment and testnet handoff, then the full economic testnet. The historical M5 milestone is closed and archived; its bounded handoff moves into M4. M3.3/M3.4 remain deferred expansion work. Each has a tracking issue and a Project overview card. Task issues are linked as sub-issues and assigned to the same native milestone. Each task records a question, expected artifact, completion criteria, dependencies and reviewed deliverables. The milestones describe the reasoning path; useful work can overlap across them.
+Six milestones define the current program: litepaper foundation, incentive and evidence tests, evidence assessment and testnet handoff, the launched economic testnet, testnet simulation, and an agent-run contribution pipeline. The original M5 milestone is closed and archived as "Former M5"; its number is reused for testnet simulation. Validation campaigns deferred from M4 sit in a 2027 milestone. M3.3/M3.4 remain deferred expansion work. Each has a tracking issue and a Project overview card. Task issues are linked as sub-issues and assigned to the same native milestone. Each task records a question, expected artifact, completion criteria, dependencies and reviewed deliverables. The milestones describe the reasoning path; useful work can overlap across them.
 
 Implementation can live in other repositories. Keep one delivery issue here that links to the upstream issue, PR and resulting artifact; avoid copying the same discussion and progress into two trackers.
 
