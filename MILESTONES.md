@@ -1,6 +1,6 @@
 # Milestone overview
 
-Owner: Shane (@moatus). [Project board](https://github.com/users/moatus/projects/1). M1 September versions are reviewed; October revisions remain drafted. M2 is complete. M3 closed on 2026-11-13 as an evidence assessment and testnet handoff: M3.1 reviewed, M3.2 accepted only as a bounded contribution with its source still partial, and M3.3/M3.4 deferred. M4 planning and coordination are in progress; testnet results are not yet accepted. M5 is archived. Exact evidence and limits are in the [deliverable register](deliverables/README.md).
+Owner: Shane (@moatus). [Project board](https://github.com/users/moatus/projects/1). M1 September versions are reviewed; October revisions remain drafted. M2 is complete. M3 closed on 2026-11-13 as an evidence assessment and testnet handoff: M3.1 reviewed, M3.2 accepted only as a bounded contribution with its source still partial, and M3.3/M3.4 deferred. The plan was revised on 2026-11-18: M4 is the launched testnet, M5 is testnet simulation, M6 is an agent-run contribution pipeline, and the validation campaigns that need a running testnet are deferred to 2027. Testnet results are not yet accepted. The original M5 is archived. Exact evidence and limits are in the [deliverable register](deliverables/README.md).
 
 Research path: **understand the litepaper → test its assumptions → assess evidence and unresolved gaps → establish and test the litepaper baseline**. Expansion options remain open and return to evaluation when concrete proposals are ready for testing. Work may overlap across milestones.
 
@@ -9,9 +9,11 @@ Research path: **understand the litepaper → test its assumptions → assess ev
 | [M1 — Objectives, assumptions and validation requirements](https://github.com/moatus/livepeer-validator-track/milestone/1) | Baseline, required claims, early threats and current-system map. | [#1](https://github.com/moatus/livepeer-validator-track/issues/1) | — | [M1.1–M1.4](deliverables/README.md) |
 | [M2 — Test litepaper incentives and evidence limits](https://github.com/moatus/livepeer-validator-track/milestone/2) | Substantiate material concerns and evidence limits. | [#2](https://github.com/moatus/livepeer-validator-track/issues/2) | $800 | [M2.1–M2.10 and shared snapshot](deliverables/README.md) |
 | [M3 — Evidence assessment and testnet handoff](https://github.com/moatus/livepeer-validator-track/milestone/3) | Evidence assessment and testnet handoff; no expansion selected. | [#3](https://github.com/moatus/livepeer-validator-track/issues/3) | $1,200 | M3.1 reviewed; M3.2 bounded contribution accepted |
-| [M4 — Full economic testnet environment](https://github.com/moatus/livepeer-validator-track/milestone/4) | Establish a working litepaper baseline and run bounded economic and service-evidence tests. | [#4](https://github.com/moatus/livepeer-validator-track/issues/4) | $9,000 | None |
+| [M4 — Launched economic testnet](https://github.com/moatus/livepeer-validator-track/milestone/4) | Launch the litepaper baseline as a public testnet with a reconciled reward cycle, buy-and-burn and an outside operator. | [#4](https://github.com/moatus/livepeer-validator-track/issues/4) | $9,000 | None |
+| [M5 — Testnet simulation](https://github.com/moatus/livepeer-validator-track/milestone/6) | Switchable, parameter-driven simulated activity on the testnet. | [#44](https://github.com/moatus/livepeer-validator-track/issues/44) | Not set | None |
+| [M6 — Agent-run contribution pipeline](https://github.com/moatus/livepeer-validator-track/milestone/7) | Outside contributions checked, reviewed and summarized by agents for human maintainers. | [#47](https://github.com/moatus/livepeer-validator-track/issues/47) | Not set | None |
 
-**Total M2–M4 budget: $11,000 USD.** M5 has no separate allocation in this revised plan. Target dates: M2 2026-10-19 (completed 2026-10-27), M3 2026-11-22, M4 2026-12-31. The board and native milestones mirror these dates.
+**Total M2–M4 budget: $11,000 USD.** Budgets for M5 and M6 are not set in the 2026-11-18 revision. Target dates: M2 2026-10-19 (completed 2026-10-27), M3 2026-11-22, M4 2026-12-31, M5 2026-12-31, M6 2027-01-31. The board and native milestones mirror these dates.
 
 ## M1 — Objectives, assumptions and validation requirements
 
@@ -68,43 +70,76 @@ Revisit the unfinished comparisons, scenarios and integration mapping when a con
 
 ### Gap dispositions
 
+Task references in the last column were updated on 2026-11-18 to follow the revised plan; the dispositions themselves are unchanged.
+
 | Gap | Disposition for the initial testnet | Next work or return condition |
 | --- | --- | --- |
-| G01 — Reward objective and self-funded work | Keep the October baseline and measure its conditional exposure. Evidence of real execution does not resolve the reward incentive. Whether the reward objective must change remains open. | M4.1 ([#18](https://github.com/moatus/livepeer-validator-track/issues/18)); revisit expansion options when results support a concrete proposal. |
-| G02 — Job evidence and collection | Test bounded request/delivery records and claim-specific checks; evidence custody, cost and coverage remain unresolved. | M4.2 ([#19](https://github.com/moatus/livepeer-validator-track/issues/19)). |
-| G03 — Credible review and operator response | Measure actual evidence access and review on known cases; scripted scores do not demonstrate credible judgment. | M4.2 ([#19](https://github.com/moatus/livepeer-validator-track/issues/19)), M4.3 ([#20](https://github.com/moatus/livepeer-validator-track/issues/20)). |
-| G04 — Delegation, liquidity and control | State the test profile's stake/authority rules and test their consequences. Neither beneficial control nor a policy resolution is established. | M4.1 ([#18](https://github.com/moatus/livepeer-validator-track/issues/18)); exercise supported staking/unbonding paths, with bond transfers deferred. |
-| G05 — Service quality and availability | Combined integrity/QoS scoring remains a direction to evaluate, not a selected mechanism. Keep service performance distinct from dishonesty. | Bounded claim tests in M4.2 ([#19](https://github.com/moatus/livepeer-validator-track/issues/19)); any combined reward mechanism needs a later option comparison. |
-| G06 — Supply before demand | No protocol change proposed for the initial testnet; whether commercial provision suffices remains untested. | Retain in M4.6 ([#40](https://github.com/moatus/livepeer-validator-track/issues/40)); revisit when a concrete unmet service need is evidenced. |
-| G07 — Practical discovery | No protocol change proposed for the initial testnet; practical access and commercial adequacy remain untested. | Retain in M4.6 ([#40](https://github.com/moatus/livepeer-validator-track/issues/40)); revisit with operator/customer discovery evidence. |
-| G08 — Buyer remedies | No protocol change proposed for the initial testnet; adequacy of commercial remedies remains untested. | M4.3 ([#20](https://github.com/moatus/livepeer-validator-track/issues/20)) can expose response gaps; retain unresolved remedy design in M4.6 ([#40](https://github.com/moatus/livepeer-validator-track/issues/40)). |
-| G09 — Rules and pending rewards | Explicitly state and exercise the test profile's applicability and authority rules. No new protocol policy is adopted by this closeout. | M4.4 ([#38](https://github.com/moatus/livepeer-validator-track/issues/38)) and M4.5 ([#39](https://github.com/moatus/livepeer-validator-track/issues/39)). |
-| G10 — Executable buybacks | Execute purchase and burn through a declared controlled test pool. Real-market liquidity and manipulation resistance remain untested. | M4.5 ([#39](https://github.com/moatus/livepeer-validator-track/issues/39)); preserve GT-10 in M4.1 ([#18](https://github.com/moatus/livepeer-validator-track/issues/18)) and M4.6 ([#40](https://github.com/moatus/livepeer-validator-track/issues/40)) for 2027 or later. |
+| G01 — Reward objective and self-funded work | Keep the October baseline and measure its conditional exposure. Evidence of real execution does not resolve the reward incentive. Whether the reward objective must change remains open. | Deferred to 2027: [#18](https://github.com/moatus/livepeer-validator-track/issues/18); revisit expansion options when results support a concrete proposal. |
+| G02 — Job evidence and collection | Test bounded request/delivery records and claim-specific checks; evidence custody, cost and coverage remain unresolved. | Deferred to 2027: [#19](https://github.com/moatus/livepeer-validator-track/issues/19). |
+| G03 — Credible review and operator response | Measure actual evidence access and review on known cases; scripted scores do not demonstrate credible judgment. | Deferred to 2027: [#19](https://github.com/moatus/livepeer-validator-track/issues/19), [#20](https://github.com/moatus/livepeer-validator-track/issues/20). |
+| G04 — Delegation, liquidity and control | State the test profile's stake/authority rules and test their consequences. Neither beneficial control nor a policy resolution is established. | Deferred to 2027: [#18](https://github.com/moatus/livepeer-validator-track/issues/18); exercise supported staking/unbonding paths, with bond transfers deferred. |
+| G05 — Service quality and availability | Combined integrity/QoS scoring remains a direction to evaluate, not a selected mechanism. Keep service performance distinct from dishonesty. | Bounded claim tests deferred to 2027: [#19](https://github.com/moatus/livepeer-validator-track/issues/19); any combined reward mechanism needs a later option comparison. |
+| G06 — Supply before demand | No protocol change proposed for the initial testnet; whether commercial provision suffices remains untested. | Retain in the M4.4 results index ([#39](https://github.com/moatus/livepeer-validator-track/issues/39)); revisit when a concrete unmet service need is evidenced. |
+| G07 — Practical discovery | No protocol change proposed for the initial testnet; practical access and commercial adequacy remain untested. | Retain in the M4.4 results index ([#39](https://github.com/moatus/livepeer-validator-track/issues/39)); revisit with operator/customer discovery evidence. |
+| G08 — Buyer remedies | No protocol change proposed for the initial testnet; adequacy of commercial remedies remains untested. | The deferred dispute-procedure task ([#20](https://github.com/moatus/livepeer-validator-track/issues/20), 2027) can expose response gaps; retain unresolved remedy design in the M4.4 results index ([#39](https://github.com/moatus/livepeer-validator-track/issues/39)). |
+| G09 — Rules and pending rewards | Explicitly state and exercise the test profile's applicability and authority rules. No new protocol policy is adopted by this closeout. | M4.2 ([#38](https://github.com/moatus/livepeer-validator-track/issues/38)) and M4.3 ([#43](https://github.com/moatus/livepeer-validator-track/issues/43)). |
+| G10 — Executable buybacks | Execute purchase and burn through a declared controlled test pool. Real-market liquidity and manipulation resistance remain untested. | M4.3 ([#43](https://github.com/moatus/livepeer-validator-track/issues/43)); preserve GT-10 in the deferred economic campaign ([#18](https://github.com/moatus/livepeer-validator-track/issues/18)) and the M4.4 results index ([#39](https://github.com/moatus/livepeer-validator-track/issues/39)) for 2027 or later. |
 
-## M4 — Full economic testnet environment
+## M4 — Launched economic testnet
 
-Run the October litepaper baseline on Arbitrum Sepolia with real paid jobs in test USDC, several independently operated nodes and a reconciled reward cycle. Budget: **$9,000**; target: **2026-12-31**. Planning and coordination are in progress; no M4 result is accepted yet.
+**Revised 2026-11-18 at Shane's direction.** M4 now covers the launched testnet alone, in four dated steps. The economic stress campaign, the service-evidence and reviewer tests and the dispute procedure depend on a running testnet and are deferred to 2027 (below). The evidence package is the closing checklist of M4.4, not a separate task. Budget: **$9,000**; target: **2026-12-31**.
 
-**Completion:** a real stake-free node registers and receives payment for a relayed job; a full reward cycle reconciles payments, scores, delayed claims, mint/unminted allowance and controlled-pool burns against the independent calculator; bounded cooperative, market-pressure and strategic economic cases run; actual evidence-checking methods or reviewers assess known service cases and report detection, false positives, effort and uncertainty; an evidence/dispute procedure is exercised; and a reviewed evidence package records results, limitations and remaining decisions.
+Status at 2026-11-18: the implementation team reports the local paid-job path and local reward cycle complete (M4.1). Their source is not yet public, and no M4 result is reviewed or accepted.
 
-Try the unmodified node first, documenting minimal required changes if necessary. Scripted scores test accounting and reward consequences, not judgment quality. A declared controlled test pool must execute purchase and burn of test LPT; merely holding the network fee share is insufficient. This does not demonstrate real-market liquidity or manipulation resistance.
+| Task | Expected outcome | Target |
+| --- | --- | --- |
+| [M4.1 — Run a paid node and a full reward cycle locally](https://github.com/moatus/livepeer-validator-track/issues/42) | A stake-free node paid in test USDC and a full reward cycle reconciled against the independent calculator, on a local chain | Closes with M4.2 |
+| [M4.2 — First public deployment](https://github.com/moatus/livepeer-validator-track/issues/38) | Contracts on Arbitrum Sepolia; a team-run node paid; one reward cycle reconciled; implementation source public and its demonstration runnable from the published instructions | 2026-12-01 |
+| [M4.3 — Close the loop and survive trouble](https://github.com/moatus/livepeer-validator-track/issues/43) | Controlled-pool purchase and burn; accounting reconciles after a key rotation, a restart during settlement and a parameter change; redeployed | 2026-12-08 |
+| [M4.4 — Outside operators](https://github.com/moatus/livepeer-validator-track/issues/39) | At least one operator outside the implementation team registers, is paid and claims; balances reconcile; results index with limits and open decisions | 2026-12-15 |
 
-Prepare cases and expected results now, run locally as capabilities become available, then repeat relevant cases on the shared testnet. Independent participation is required for final reward-cycle acceptance, not for starting preparation or local tests. List all test-profile interpretations, deviations and stand-ins. No expansion-specific mechanism is selected by this plan.
+Task numbers changed in this revision: the former M4.4 is M4.2, the former M4.5 is split between M4.3 and M4.4, and the former M4.6 ([#40](https://github.com/moatus/livepeer-validator-track/issues/40)) is closed as not planned and folded into M4.4.
+
+Try the unmodified node first, documenting minimal required changes if necessary. Scripted scores test accounting and reward consequences, not judgment quality. A declared controlled test pool must execute purchase and burn of test LPT; merely holding the network fee share is insufficient. This does not demonstrate real-market liquidity or manipulation resistance. List all test-profile interpretations, deviations and stand-ins. No expansion-specific mechanism is selected by this plan.
+
+Upgradeability, real-market DEX buyback validation, Explorer/subgraph integration and bond transfers are deferred to 2027 or later. Preserve GT-10 in the M4.4 results index; controlled-pool accounting does not close it. Expansion-specific scenarios and integration mapping return when an expansion is selected for testing.
+
+## M5 — Testnet simulation
+
+Added 2026-11-18 at Shane's direction; target **2026-12-31**; budget not set in this revision. Give the testnet simulated activity that can be switched on and off, driven by parameters, with simulated work in place of real compute. The aim is to open the way to economic simulations on the testnet, especially of validation. Work has not started.
+
+| Task | Expected outcome | Target |
+| --- | --- | --- |
+| [M5.1 — Build the simulator and run it locally](https://github.com/moatus/livepeer-validator-track/issues/45) | A stand-in model service with settings for delay, failure and wrong answers; many participants driven by one scenario file; a local run reconciled against the independent calculator | 2026-12-22 |
+| [M5.2 — Run a live simulation on the testnet](https://github.com/moatus/livepeer-validator-track/issues/46) | The same scenarios run as a campaign on the public testnet, can be started and stopped, with a public read-only view | 2026-12-31 |
+
+Simulated work establishes nothing about service quality, and simulated activity is labelled as such. A client for outside participants is not in this milestone. Overview: [#44](https://github.com/moatus/livepeer-validator-track/issues/44).
+
+## M6 — Agent-run contribution pipeline
+
+Added 2026-11-18 at Shane's direction; target **2027-01-31**; budget not set in this revision. Let outside contributors open pull requests and issues against the testnet implementation, with an agent-run process that checks, reviews and summarizes each one for human maintainers. Work has not started.
+
+| Task | Expected outcome | Target |
+| --- | --- | --- |
+| [M6.1 — Open a public contribution path](https://github.com/moatus/livepeer-validator-track/issues/48) | Outside pull requests accepted, checked automatically, with a contributor guide | 2027-01-15 |
+| [M6.2 — Automated review report on every pull request](https://github.com/moatus/livepeer-validator-track/issues/49) | A report for maintainers on each pull request: what changed, what the checks and review found, what was not checked | 2027-01-22 |
+| [M6.3 — Automated issue triage](https://github.com/moatus/livepeer-validator-track/issues/50) | Each issue classified, reproduced where possible, labelled and answered | 2027-01-29 |
+
+Outside content is assessed, never treated as instructions. Checks on outside code run without credentials or write access. Automation has spending limits. A human maintainer decides what is merged. Agent-drafted fixes are a later step, not scheduled. Overview: [#47](https://github.com/moatus/livepeer-validator-track/issues/47).
+
+## 2027 — Validation campaigns on the testnet
+
+Deferred from M4 on 2026-11-18. These tasks stay open under the [2027 milestone](https://github.com/moatus/livepeer-validator-track/milestone/8) with the `deferred-2027` label; nothing in them has been run or accepted, and no dates or budget are set.
 
 | Task | Expected outcome |
 | --- | --- |
-| [M4.4 — Deploy the litepaper testnet with a paid node](https://github.com/moatus/livepeer-validator-track/issues/38) | Local paid-job path, then public test-chain deployment; source versions, setup and pending-claim rules recorded |
-| [M4.5 — Reconcile a multi-participant reward cycle](https://github.com/moatus/livepeer-validator-track/issues/39) | Several independently operated nodes, including an operator outside the implementation team; independent accounting and controlled-pool purchase/burn |
-| [M4.1 — Economic stress campaign](https://github.com/moatus/livepeer-validator-track/issues/18) | Cooperative, ordinary-market and strategic cases, including self-funded work and supported stake movement |
-| [M4.2 — Service-evidence and reviewer tests](https://github.com/moatus/livepeer-validator-track/issues/19) | Actual claim checks and reviewer performance, distinct from predetermined scores |
-| [M4.3 — Evidence review and dispute procedure](https://github.com/moatus/livepeer-validator-track/issues/20) | A bounded exercised procedure, operator response and unresolved authority/cost questions |
-| [M4.6 — Testnet evidence package](https://github.com/moatus/livepeer-validator-track/issues/40) | Exact result versions, operating responsibilities, interfaces, limitations and a follow-up backlog |
+| [Economic stress campaign](https://github.com/moatus/livepeer-validator-track/issues/18) (former M4.1) | Cooperative, ordinary-market and strategic cases, including self-funded work and supported stake movement |
+| [Service-evidence and reviewer tests](https://github.com/moatus/livepeer-validator-track/issues/19) (former M4.2) | Actual claim checks and reviewer performance, distinct from predetermined scores |
+| [Evidence review and dispute procedure](https://github.com/moatus/livepeer-validator-track/issues/20) (former M4.3) | A bounded exercised procedure, operator response and unresolved authority/cost questions |
 
-Upgradeability, real-market DEX buyback validation, Explorer/subgraph integration and bond transfers are deferred to 2027 or later. Preserve GT-10 in the evidence handoff; controlled-pool accounting does not close it. Expansion-specific scenarios and integration mapping return when an expansion is selected for testing.
+## Former M5 — Archived
 
-## M5 — Archived
-
-Archived 2026-11-13 at Shane's direction; original work is retained in [#5](https://github.com/moatus/livepeer-validator-track/issues/5) and its tasks, closed as not planned. M4.3 exercises the bounded reviewer procedure and M4.6 replaces the evidence/operating handoff. A broader validator workflow pilot is deferred until a concrete workflow is ready for external testing. Archival is not acceptance of the original M5 criteria.
+Archived 2026-11-13 at Shane's direction; original work is retained in [#5](https://github.com/moatus/livepeer-validator-track/issues/5) and its tasks, closed as not planned. A broader validator workflow pilot is deferred until a concrete workflow is ready for external testing. Archival is not acceptance of the original M5 criteria. The number M5 was reused on 2026-11-18 for the unrelated simulation milestone above.
 
 ## Reporting and scope
 
